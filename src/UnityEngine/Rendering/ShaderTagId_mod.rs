@@ -22,9 +22,9 @@ for crate::UnityEngine::Rendering::ShaderTagId {
 }
 #[cfg(feature = "UnityEngine+Rendering+ShaderTagId")]
 impl crate::UnityEngine::Rendering::ShaderTagId {
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -54,7 +54,7 @@ impl crate::UnityEngine::Rendering::ShaderTagId {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

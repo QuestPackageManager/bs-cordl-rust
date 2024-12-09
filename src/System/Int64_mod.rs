@@ -22,9 +22,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Int64 {
 impl crate::System::Int64 {
     pub const MaxValue: i64 = 9223372036854775807i64;
     pub const MinValue: i64 = -9223372036854775808i64;
-    pub fn CompareTo_Object0(
+    pub fn CompareTo_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -41,9 +41,9 @@ impl crate::System::Int64 {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -203,8 +203,8 @@ impl crate::System::Int64 {
         &mut self,
         _cordl_type: *mut crate::System::Type,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.IConvertible.ToType",
             (_cordl_type, provider),
@@ -246,8 +246,8 @@ impl crate::System::Int64 {
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -257,31 +257,31 @@ impl crate::System::Int64 {
     pub fn ToString_IFormatProvider1(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (provider),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String2(
+    pub fn ToString_Il2CppString2(
         &mut self,
-        format: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String_IFormatProvider3(
+    pub fn ToString_Il2CppString_IFormatProvider3(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, provider),

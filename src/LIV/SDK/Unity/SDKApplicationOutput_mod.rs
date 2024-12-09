@@ -3,14 +3,14 @@
 #[derive(Debug, Clone)]
 pub struct SDKApplicationOutput {
     pub supportedFeatures: crate::LIV::SDK::Unity::FEATURES,
-    pub engineName: *mut crate::System::String,
-    pub engineVersion: *mut crate::System::String,
-    pub applicationName: *mut crate::System::String,
-    pub applicationVersion: *mut crate::System::String,
-    pub xrDeviceName: *mut crate::System::String,
-    pub graphicsAPI: *mut crate::System::String,
-    pub sdkID: *mut crate::System::String,
-    pub sdkVersion: *mut crate::System::String,
+    pub engineName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub engineVersion: *mut quest_hook::libil2cpp::Il2CppString,
+    pub applicationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub applicationVersion: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xrDeviceName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub graphicsAPI: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sdkID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sdkVersion: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LIV+SDK+Unity+SDKApplicationOutput")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -32,8 +32,8 @@ for crate::LIV::SDK::Unity::SDKApplicationOutput {
 impl crate::LIV::SDK::Unity::SDKApplicationOutput {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

@@ -4,10 +4,10 @@
 pub struct WindowsIdentity {
     __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
     pub _token: crate::System::IntPtr,
-    pub _type: *mut crate::System::String,
+    pub _type: *mut quest_hook::libil2cpp::Il2CppString,
     pub _account: crate::System::Security::Principal::WindowsAccountType,
     pub _authenticated: bool,
-    pub _name: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _info: *mut crate::System::Runtime::Serialization::SerializationInfo,
 }
 #[cfg(feature = "System+Security+Principal+WindowsIdentity")]
@@ -84,9 +84,9 @@ impl crate::System::Security::Principal::WindowsIdentity {
             .invoke_void(".ctor", (claimsIdentity, userToken))?;
         Ok(__cordl_object)
     }
-    pub fn New_IntPtr_String_WindowsAccountType__cordl_bool0(
+    pub fn New_IntPtr_Il2CppString_WindowsAccountType__cordl_bool0(
         userToken: crate::System::IntPtr,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
         acctType: crate::System::Security::Principal::WindowsAccountType,
         isAuthenticated: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -119,7 +119,7 @@ impl crate::System::Security::Principal::WindowsIdentity {
     }
     pub fn System_Runtime_Serialization_IDeserializationCallback_OnDeserialization(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,10 +158,10 @@ impl crate::System::Security::Principal::WindowsIdentity {
             .invoke(".ctor", (claimsIdentity, userToken))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IntPtr_String_WindowsAccountType__cordl_bool0(
+    pub fn _ctor_IntPtr_Il2CppString_WindowsAccountType__cordl_bool0(
         &mut self,
         userToken: crate::System::IntPtr,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
         acctType: crate::System::Security::Principal::WindowsAccountType,
         isAuthenticated: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -186,21 +186,21 @@ impl crate::System::Security::Principal::WindowsIdentity {
     }
     pub fn get_AuthenticationType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AuthenticationType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

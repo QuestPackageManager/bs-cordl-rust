@@ -22,9 +22,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Yoga::Yo
 }
 #[cfg(feature = "UnityEngine+Yoga+YogaValue")]
 impl crate::UnityEngine::Yoga::YogaValue {
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

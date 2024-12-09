@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _socket: *mut crate::LiteNetLib::NetSocket,
     pub _logicThread: *mut crate::System::Threading::Thread,
     pub _netEventsQueue: *mut crate::System::Collections::Generic::Queue_1<
@@ -65,7 +65,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NetManager")]
 impl std::ops::Deref for crate::LiteNetLib::NetManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,6 +93,18 @@ impl crate::LiteNetLib::NetManager {
             .invoke("AddPeer", (peer))?;
         Ok(__cordl_ret)
     }
+    pub fn Connect_IPEndPoint_Il2CppString2(
+        &mut self,
+        target: *mut crate::System::Net::IPEndPoint,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPeer> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::LiteNetLib::NetPeer = __cordl_object
+            .invoke("Connect", (target, key))?;
+        Ok(__cordl_ret)
+    }
     pub fn Connect_IPEndPoint_NetDataWriter3(
         &mut self,
         target: *mut crate::System::Net::IPEndPoint,
@@ -105,21 +117,22 @@ impl crate::LiteNetLib::NetManager {
             .invoke("Connect", (target, connectionData))?;
         Ok(__cordl_ret)
     }
-    pub fn Connect_IPEndPoint_String2(
+    pub fn Connect_Il2CppString_i32_Il2CppString0(
         &mut self,
-        target: *mut crate::System::Net::IPEndPoint,
-        key: *mut crate::System::String,
+        address: *mut quest_hook::libil2cpp::Il2CppString,
+        port: i32,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPeer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::LiteNetLib::NetPeer = __cordl_object
-            .invoke("Connect", (target, key))?;
+            .invoke("Connect", (address, port, key))?;
         Ok(__cordl_ret)
     }
-    pub fn Connect_String_i32_NetDataWriter1(
+    pub fn Connect_Il2CppString_i32_NetDataWriter1(
         &mut self,
-        address: *mut crate::System::String,
+        address: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
         connectionData: *mut crate::LiteNetLib::Utils::NetDataWriter,
     ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPeer> {
@@ -128,19 +141,6 @@ impl crate::LiteNetLib::NetManager {
         );
         let __cordl_ret: *mut crate::LiteNetLib::NetPeer = __cordl_object
             .invoke("Connect", (address, port, connectionData))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Connect_String_i32_String0(
-        &mut self,
-        address: *mut crate::System::String,
-        port: i32,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::LiteNetLib::NetPeer> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::LiteNetLib::NetPeer = __cordl_object
-            .invoke("Connect", (address, port, key))?;
         Ok(__cordl_ret)
     }
     pub fn ConnectionLatencyUpdated(
@@ -166,7 +166,7 @@ impl crate::LiteNetLib::NetManager {
         connectionRequest: *mut crate::LiteNetLib::ConnectionRequest,
         deliveryMethod: crate::LiteNetLib::DeliveryMethod,
         readerSource: *mut crate::LiteNetLib::NetPacket,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -415,7 +415,7 @@ impl crate::LiteNetLib::NetManager {
     pub fn MessageDelivered(
         &mut self,
         fromPeer: *mut crate::LiteNetLib::NetPeer,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -814,10 +814,10 @@ impl crate::LiteNetLib::NetManager {
             .invoke("Start", (addressIPv4, addressIPv6, port))?;
         Ok(__cordl_ret)
     }
-    pub fn Start_String_String_i32_2(
+    pub fn Start_Il2CppString_Il2CppString_i32_2(
         &mut self,
-        addressIPv4: *mut crate::System::String,
-        addressIPv6: *mut crate::System::String,
+        addressIPv4: *mut quest_hook::libil2cpp::Il2CppString,
+        addressIPv6: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -993,7 +993,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NetManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetManager_IPEndPointComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1002,7 +1002,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NetManager+IPEndPointComparer")]
 impl std::ops::Deref for crate::LiteNetLib::NetManager_IPEndPointComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1119,8 +1119,8 @@ impl crate::LiteNetLib::NetManager_NetPeerEnumerator {
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),

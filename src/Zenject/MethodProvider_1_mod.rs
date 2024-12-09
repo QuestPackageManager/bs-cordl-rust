@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodProvider_1<TReturn: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _method: *mut crate::System::Func_2<*mut crate::Zenject::InjectContext, TReturn>,
     __cordl_phantom_TReturn: std::marker::PhantomData<TReturn>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+MethodProvider_1")]
 impl<TReturn: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MethodProvider_1<TReturn> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl<TReturn: quest_hook::libil2cpp::Type> crate::Zenject::MethodProvider_1<TRet
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

@@ -8,8 +8,8 @@ pub struct PyramidBloomRendererSO {
     pub _pyramid: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::PyramidBloomRendererSO_Level,
     >,
-    pub kIsScreenspaceEffectKeyword: *mut crate::System::String,
-    pub kLegacyAutoExposureKeyword: *mut crate::System::String,
+    pub kIsScreenspaceEffectKeyword: *mut quest_hook::libil2cpp::Il2CppString,
+    pub kLegacyAutoExposureKeyword: *mut quest_hook::libil2cpp::Il2CppString,
     pub _initialized: bool,
 }
 #[cfg(feature = "PyramidBloomRendererSO")]

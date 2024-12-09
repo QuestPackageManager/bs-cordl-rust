@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncStreamReader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stream: *mut crate::System::IO::Stream,
     pub encoding: *mut crate::System::Text::Encoding,
     pub decoder: *mut crate::System::Text::Decoder,
@@ -10,7 +10,7 @@ pub struct AsyncStreamReader {
     pub charBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     pub cancelOperation: bool,
     pub eofEvent: *mut crate::System::Threading::ManualResetEvent,
-    pub syncObject: *mut crate::System::Object,
+    pub syncObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub asyncReadResult: *mut crate::System::IAsyncResult,
 }
 #[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+AsyncStreamReader")]
 impl std::ops::Deref for crate::System::Diagnostics::AsyncStreamReader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

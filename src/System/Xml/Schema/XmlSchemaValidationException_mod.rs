@@ -44,21 +44,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_SerializationInfo_StreamingContext0(
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Il2CppArray_Exception_String_i32_i32_4(
-        res: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub fn New_Il2CppString_Il2CppArray_Exception_Il2CppString_i32_i32_4(
+        res: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         innerException: *mut crate::System::Exception,
-        sourceUri: *mut crate::System::String,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -71,10 +63,12 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray_String_i32_i32_3(
-        res: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        sourceUri: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray_Il2CppString_i32_i32_3(
+        res: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -84,10 +78,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             .invoke_void(".ctor", (res, args, sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_String_i32_i32_2(
-        res: *mut crate::System::String,
-        arg: *mut crate::System::String,
-        sourceUri: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_i32_i32_2(
+        res: *mut quest_hook::libil2cpp::Il2CppString,
+        arg: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -95,6 +89,16 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (res, arg, sourceUri, lineNumber, linePosition))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SerializationInfo_StreamingContext0(
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object)
     }
     pub fn _ctor_1(
@@ -107,24 +111,14 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SerializationInfo_StreamingContext0(
+    pub fn _ctor_Il2CppString_Il2CppArray_Exception_Il2CppString_i32_i32_4(
         &mut self,
-        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Il2CppArray_Exception_String_i32_i32_4(
-        &mut self,
-        res: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        res: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         innerException: *mut crate::System::Exception,
-        sourceUri: *mut crate::System::String,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -138,11 +132,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray_String_i32_i32_3(
+    pub fn _ctor_Il2CppString_Il2CppArray_Il2CppString_i32_i32_3(
         &mut self,
-        res: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        sourceUri: *mut crate::System::String,
+        res: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,11 +149,11 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
             .invoke(".ctor", (res, args, sourceUri, lineNumber, linePosition))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_String_i32_i32_2(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_i32_i32_2(
         &mut self,
-        res: *mut crate::System::String,
-        arg: *mut crate::System::String,
-        sourceUri: *mut crate::System::String,
+        res: *mut quest_hook::libil2cpp::Il2CppString,
+        arg: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -166,6 +162,18 @@ impl crate::System::Xml::Schema::XmlSchemaValidationException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (res, arg, sourceUri, lineNumber, linePosition))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext0(
+        &mut self,
+        info: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        context: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
 }

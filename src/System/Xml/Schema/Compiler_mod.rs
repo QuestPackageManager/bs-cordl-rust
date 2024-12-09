@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Compiler {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
-    pub restrictionErrorMsg: *mut crate::System::String,
+    pub restrictionErrorMsg: *mut quest_hook::libil2cpp::Il2CppString,
     pub attributes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
     pub attributeGroups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
     pub elements: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,

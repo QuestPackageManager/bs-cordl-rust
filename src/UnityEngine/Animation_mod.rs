@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::UnityEngine::Animation {
 impl crate::UnityEngine::Animation {
     #[cfg(feature = "UnityEngine+Animation+Enumerator")]
     pub type Enumerator = crate::UnityEngine::Animation_Enumerator;
-    pub fn AddClip_AnimationClip_String0(
+    pub fn AddClip_AnimationClip_Il2CppString0(
         &mut self,
         clip: *mut crate::UnityEngine::AnimationClip,
-        newName: *mut crate::System::String,
+        newName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::Animation {
     pub fn AddClip_i32_i32_1(
         &mut self,
         clip: *mut crate::UnityEngine::AnimationClip,
-        newName: *mut crate::System::String,
+        newName: *mut quest_hook::libil2cpp::Il2CppString,
         firstFrame: i32,
         lastFrame: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -55,7 +55,7 @@ impl crate::UnityEngine::Animation {
     pub fn AddClip_i32_i32__cordl_bool2(
         &mut self,
         clip: *mut crate::UnityEngine::AnimationClip,
-        newName: *mut crate::System::String,
+        newName: *mut quest_hook::libil2cpp::Il2CppString,
         firstFrame: i32,
         lastFrame: i32,
         addLoopFrame: bool,
@@ -67,9 +67,9 @@ impl crate::UnityEngine::Animation {
             .invoke("AddClip", (clip, newName, firstFrame, lastFrame, addLoopFrame))?;
         Ok(__cordl_ret)
     }
-    pub fn Blend_String0(
+    pub fn Blend_Il2CppString0(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn Blend_f32_1(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         targetWeight: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -92,7 +92,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn Blend_f32_f32_2(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         targetWeight: f32,
         fadeLength: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -103,9 +103,9 @@ impl crate::UnityEngine::Animation {
             .invoke("Blend", (animation, targetWeight, fadeLength))?;
         Ok(__cordl_ret)
     }
-    pub fn CrossFadeQueued_String0(
+    pub fn CrossFadeQueued_Il2CppString0(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,7 +116,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn CrossFadeQueued_f32_1(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         fadeLength: f32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -128,7 +128,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn CrossFadeQueued_f32_QueueMode2(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         fadeLength: f32,
         queue: crate::UnityEngine::QueueMode,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
@@ -141,7 +141,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn CrossFadeQueued_f32_QueueMode_PlayMode3(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         fadeLength: f32,
         queue: crate::UnityEngine::QueueMode,
         mode: crate::UnityEngine::PlayMode,
@@ -153,9 +153,9 @@ impl crate::UnityEngine::Animation {
             .invoke("CrossFadeQueued", (animation, fadeLength, queue, mode))?;
         Ok(__cordl_ret)
     }
-    pub fn CrossFade_String0(
+    pub fn CrossFade_Il2CppString0(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,7 +166,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn CrossFade_f32_1(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         fadeLength: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -178,7 +178,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn CrossFade_f32_PlayMode2(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         fadeLength: f32,
         mode: crate::UnityEngine::PlayMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -191,7 +191,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn GetClip(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationClip> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -219,7 +219,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn GetState(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -248,7 +248,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn IsPlaying(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,9 +273,20 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("PlayDefaultAnimation", (mode))?;
         Ok(__cordl_ret)
     }
+    pub fn PlayQueued_Il2CppString0(
+        &mut self,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::AnimationState = __cordl_object
+            .invoke("PlayQueued", (animation))?;
+        Ok(__cordl_ret)
+    }
     pub fn PlayQueued_QueueMode1(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         queue: crate::UnityEngine::QueueMode,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -287,7 +298,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn PlayQueued_QueueMode_PlayMode2(
         &mut self,
-        animation: *mut crate::System::String,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
         queue: crate::UnityEngine::QueueMode,
         mode: crate::UnityEngine::PlayMode,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
@@ -296,17 +307,6 @@ impl crate::UnityEngine::Animation {
         );
         let __cordl_ret: *mut crate::UnityEngine::AnimationState = __cordl_object
             .invoke("PlayQueued", (animation, queue, mode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn PlayQueued_String0(
-        &mut self,
-        animation: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::AnimationState = __cordl_object
-            .invoke("PlayQueued", (animation))?;
         Ok(__cordl_ret)
     }
     pub fn Play_0(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -326,6 +326,38 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("Play", (mode))?;
         Ok(__cordl_ret)
     }
+    pub fn Play_Il2CppString2(
+        &mut self,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Play", (animation))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Play_Il2CppString_AnimationPlayMode5(
+        &mut self,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
+        mode: crate::UnityEngine::AnimationPlayMode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Play", (animation, mode))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Play_Il2CppString_PlayMode3(
+        &mut self,
+        animation: *mut quest_hook::libil2cpp::Il2CppString,
+        mode: crate::UnityEngine::PlayMode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Play", (animation, mode))?;
+        Ok(__cordl_ret)
+    }
     pub fn Play_PlayMode1(
         &mut self,
         mode: crate::UnityEngine::PlayMode,
@@ -336,41 +368,9 @@ impl crate::UnityEngine::Animation {
         let __cordl_ret: bool = __cordl_object.invoke("Play", (mode))?;
         Ok(__cordl_ret)
     }
-    pub fn Play_String2(
-        &mut self,
-        animation: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Play", (animation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Play_String_AnimationPlayMode5(
-        &mut self,
-        animation: *mut crate::System::String,
-        mode: crate::UnityEngine::AnimationPlayMode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Play", (animation, mode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Play_String_PlayMode3(
-        &mut self,
-        animation: *mut crate::System::String,
-        mode: crate::UnityEngine::PlayMode,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Play", (animation, mode))?;
-        Ok(__cordl_ret)
-    }
     pub fn RemoveClipNamed(
         &mut self,
-        clipName: *mut crate::System::String,
+        clipName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -390,9 +390,9 @@ impl crate::UnityEngine::Animation {
             .invoke("RemoveClip", (clip))?;
         Ok(__cordl_ret)
     }
-    pub fn RemoveClip_String1(
+    pub fn RemoveClip_Il2CppString1(
         &mut self,
-        clipName: *mut crate::System::String,
+        clipName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -403,7 +403,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn RewindNamed(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -422,9 +422,9 @@ impl crate::UnityEngine::Animation {
             .invoke("Rewind", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Rewind_String1(
+    pub fn Rewind_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -445,7 +445,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn StopNamed(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -464,9 +464,9 @@ impl crate::UnityEngine::Animation {
             .invoke("Stop", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Stop_String1(
+    pub fn Stop_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -498,7 +498,7 @@ impl crate::UnityEngine::Animation {
     }
     pub fn get_Item(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AnimationState> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -688,7 +688,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Animation {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Animation_Enumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Outer: *mut crate::UnityEngine::Animation,
     pub m_CurrentIndex: i32,
 }
@@ -699,7 +699,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Animation+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Animation_Enumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -751,11 +751,11 @@ impl crate::UnityEngine::Animation_Enumerator {
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }

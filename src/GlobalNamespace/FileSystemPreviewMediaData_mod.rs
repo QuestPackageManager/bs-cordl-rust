@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemPreviewMediaData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
     pub _audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-    pub _coverSpritePath: *mut crate::System::String,
-    pub _previewAudioClipPath: *mut crate::System::String,
+    pub _coverSpritePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _previewAudioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "FileSystemPreviewMediaData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemPreviewMediaData")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemPreviewMediaData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,9 +59,9 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
     pub fn New(
         spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
         audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        rootPath: *mut crate::System::String,
-        coverSpritePath: *mut crate::System::String,
-        previewAudioClipPath: *mut crate::System::String,
+        rootPath: *mut quest_hook::libil2cpp::Il2CppString,
+        coverSpritePath: *mut quest_hook::libil2cpp::Il2CppString,
+        previewAudioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -92,9 +92,9 @@ impl crate::GlobalNamespace::FileSystemPreviewMediaData {
         &mut self,
         spriteAsyncLoader: *mut crate::GlobalNamespace::SpriteAsyncLoader,
         audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
-        rootPath: *mut crate::System::String,
-        coverSpritePath: *mut crate::System::String,
-        previewAudioClipPath: *mut crate::System::String,
+        rootPath: *mut quest_hook::libil2cpp::Il2CppString,
+        coverSpritePath: *mut quest_hook::libil2cpp::Il2CppString,
+        previewAudioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList {
-    __cordl_parent: crate::System::Object,
-    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _size: i32,
     pub _version: i32,
-    pub _syncRoot: *mut crate::System::Object,
+    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+ArrayList")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+ArrayList")]
 impl std::ops::Deref for crate::System::Collections::ArrayList {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +40,7 @@ impl crate::System::Collections::ArrayList {
     pub type ReadOnlyArrayList = crate::GlobalNamespace::ArrayList_ReadOnlyArrayList;
     pub fn Add(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,17 +71,17 @@ impl crate::System::Collections::ArrayList {
     }
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn Contains(
         &mut self,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -147,7 +149,7 @@ impl crate::System::Collections::ArrayList {
     }
     pub fn IndexOf(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +160,7 @@ impl crate::System::Collections::ArrayList {
     pub fn Insert(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -204,7 +206,7 @@ impl crate::System::Collections::ArrayList {
     }
     pub fn Remove(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -285,13 +287,13 @@ impl crate::System::Collections::ArrayList {
     pub fn ToArray_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("ToArray", ())?;
         Ok(__cordl_ret)
     }
@@ -369,21 +371,21 @@ impl crate::System::Collections::ArrayList {
     pub fn get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -401,7 +403,7 @@ impl crate::System::Collections::ArrayList {
     pub fn set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -424,7 +426,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::ArrayList
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ArrayListDebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -434,7 +436,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+ArrayList+ArrayListDebugView")]
 impl std::ops::Deref for crate::System::Collections::ArrayList_ArrayListDebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -461,11 +463,11 @@ for crate::System::Collections::ArrayList_ArrayListDebugView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArrayList_ArrayListEnumeratorSimple {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _list: *mut crate::System::Collections::ArrayList,
     pub _index: i32,
     pub _version: i32,
-    pub _currentElement: *mut crate::System::Object,
+    pub _currentElement: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _isArrayList: bool,
 }
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
@@ -477,7 +479,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+ArrayList+ArrayListEnumeratorSimple")]
 impl std::ops::Deref
 for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -493,11 +495,11 @@ for crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
 impl crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
@@ -540,11 +542,11 @@ impl crate::System::Collections::ArrayList_ArrayListEnumeratorSimple {
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }

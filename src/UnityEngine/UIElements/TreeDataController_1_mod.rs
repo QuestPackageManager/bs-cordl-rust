@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TreeDataController_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TreeData: crate::UnityEngine::UIElements::TreeData_1<T>,
     pub m_IteratorStack: *mut crate::System::Collections::Generic::Stack_1<
         *mut crate::System::Collections::Generic::IEnumerator_1<i32>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TreeDataController_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TreeDataController_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

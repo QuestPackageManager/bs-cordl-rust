@@ -245,7 +245,7 @@ impl crate::System::Text::RegularExpressions::RegexInterpreter {
     }
     pub fn Stringmatch(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

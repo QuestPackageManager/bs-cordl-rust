@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeDependencyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub typeName: *mut crate::System::String,
+    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,7 +29,7 @@ for crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
 #[cfg(feature = "System+Runtime+CompilerServices+TypeDependencyAttribute")]
 impl crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
     pub fn New(
-        typeName: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::System::Runtime::CompilerServices::TypeDependencyAttribute {
     }
     pub fn _ctor(
         &mut self,
-        typeName: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

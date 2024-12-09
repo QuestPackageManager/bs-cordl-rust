@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Finger {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _screen_k__BackingField: *mut crate::UnityEngine::InputSystem::Touchscreen,
     pub _index_k__BackingField: i32,
     pub m_StateHistory: *mut crate::UnityEngine::InputSystem::LowLevel::InputStateHistory_1<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+EnhancedTouch+Finger")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::EnhancedTouch::Finger {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

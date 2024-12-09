@@ -40,7 +40,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::IGenericProviderOp
     pub fn GetDependencies(
         &mut self,
         dstList: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

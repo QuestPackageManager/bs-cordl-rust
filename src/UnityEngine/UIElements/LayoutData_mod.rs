@@ -77,6 +77,17 @@ impl crate::UnityEngine::UIElements::LayoutData {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_LayoutData0(
         &mut self,
         other: crate::UnityEngine::UIElements::LayoutData,
@@ -85,17 +96,6 @@ impl crate::UnityEngine::UIElements::LayoutData {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
-    __cordl_parent: crate::System::Object,
-    pub loneValue: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub loneValue: *mut quest_hook::libil2cpp::Il2CppObject,
     pub position: i32,
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList+SingleObjectEnumerator")]
 impl std::ops::Deref
 for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator
         Ok(__cordl_ret)
     }
     pub fn New(
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -57,7 +57,7 @@ impl crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator
     }
     pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,11 +68,11 @@ impl crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }
@@ -91,7 +91,7 @@ for crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator 
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlNamedNodeMap {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parent: *mut crate::System::Xml::XmlNode,
     pub nodes: crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList,
 }
@@ -102,7 +102,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlNamedNodeMap")]
 impl std::ops::Deref for crate::System::Xml::XmlNamedNodeMap {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -140,9 +140,9 @@ impl crate::System::Xml::XmlNamedNodeMap {
             .invoke("AddNodeForLoad", (node, doc))?;
         Ok(__cordl_ret)
     }
-    pub fn FindNodeOffset_String0(
+    pub fn FindNodeOffset_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -150,10 +150,10 @@ impl crate::System::Xml::XmlNamedNodeMap {
         let __cordl_ret: i32 = __cordl_object.invoke("FindNodeOffset", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn FindNodeOffset_String1(
+    pub fn FindNodeOffset_Il2CppString1(
         &mut self,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -174,7 +174,7 @@ impl crate::System::Xml::XmlNamedNodeMap {
     }
     pub fn GetNamedItem(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -270,7 +270,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlNamedNodeMap {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct XmlNamedNodeMap_SmallXmlNodeList {
-    pub field: *mut crate::System::Object,
+    pub field: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlNamedNodeMap+SmallXmlNodeList")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -296,7 +296,7 @@ impl crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     pub type SingleObjectEnumerator = crate::System::Xml::SmallXmlNodeList_XmlNamedNodeMap_SingleObjectEnumerator;
     pub fn Add(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -318,7 +318,7 @@ impl crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     pub fn Insert(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -349,8 +349,8 @@ impl crate::System::Xml::XmlNamedNodeMap_SmallXmlNodeList {
     pub fn get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Item",
             (index),

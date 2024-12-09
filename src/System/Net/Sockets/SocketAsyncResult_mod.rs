@@ -150,7 +150,7 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
         &mut self,
         socket: *mut crate::System::Net::Sockets::Socket,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -167,10 +167,10 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Socket_AsyncCallback_Object_SocketOperation1(
+    pub fn New_Socket_AsyncCallback_Il2CppObject_SocketOperation1(
         socket: *mut crate::System::Net::Sockets::Socket,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -189,11 +189,11 @@ impl crate::System::Net::Sockets::SocketAsyncResult {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Socket_AsyncCallback_Object_SocketOperation1(
+    pub fn _ctor_Socket_AsyncCallback_Il2CppObject_SocketOperation1(
         &mut self,
         socket: *mut crate::System::Net::Sockets::Socket,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         operation: crate::System::Net::Sockets::SocketOperation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

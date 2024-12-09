@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskCompletionSource_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _task: *mut crate::System::Threading::Tasks::Task_1<TResult>,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+TaskCompletionSource_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::TaskCompletionSource_1<TResult> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,8 +41,8 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Object2(
-        state: *mut crate::System::Object,
+    pub fn New_Il2CppObject2(
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -54,8 +54,8 @@ impl<
             .invoke_void(".ctor", (state))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_TaskCreationOptions3(
-        state: *mut crate::System::Object,
+    pub fn New_Il2CppObject_TaskCreationOptions3(
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -207,9 +207,9 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object2(
+    pub fn _ctor_Il2CppObject2(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -222,9 +222,9 @@ impl<
             .invoke(".ctor", (state))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_TaskCreationOptions3(
+    pub fn _ctor_Il2CppObject_TaskCreationOptions3(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

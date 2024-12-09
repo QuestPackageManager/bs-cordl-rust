@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongRunningHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCharacteristics: *mut crate::GlobalNamespace::BeatmapCharacteristicCollection,
     pub _menuTransitionsHelper: *mut crate::GlobalNamespace::MenuTransitionsHelper,
     pub _beatmapLevels: *mut crate::GlobalNamespace::BeatmapLevelsModel,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongRunningHelper")]
 impl std::ops::Deref for crate::GlobalNamespace::SongRunningHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::SongRunningHelper {
     }
     pub fn FindBeatmapLevelPackBeatmaps(
         &mut self,
-        packId: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::BeatmapLevel,
@@ -142,7 +142,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHe
 pub struct SongRunningHelper_QueuedSongParams {
     pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub characteristic: *mut crate::System::String,
+    pub characteristic: *mut quest_hook::libil2cpp::Il2CppString,
     pub advancedHud: bool,
     pub songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
     pub recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
@@ -173,7 +173,7 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
     pub fn _ctor(
         &mut self,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        characteristic: *mut crate::System::String,
+        characteristic: *mut quest_hook::libil2cpp::Il2CppString,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         advancedHud: bool,
         songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,

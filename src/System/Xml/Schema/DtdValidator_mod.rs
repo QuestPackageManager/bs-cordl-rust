@@ -34,8 +34,8 @@ impl crate::System::Xml::Schema::DtdValidator {
     pub type NamespaceManager = crate::System::Xml::Schema::DtdValidator_NamespaceManager;
     pub fn AddID(
         &mut self,
-        name: *mut crate::System::String,
-        node: *mut crate::System::Object,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        node: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +56,7 @@ impl crate::System::Xml::Schema::DtdValidator {
     }
     pub fn CheckValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,12 +78,12 @@ impl crate::System::Xml::Schema::DtdValidator {
     }
     pub fn FindId(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("FindId", (name))?;
         Ok(__cordl_ret)
     }
@@ -157,7 +157,7 @@ impl crate::System::Xml::Schema::DtdValidator {
     pub fn ProcessTokenizedType(
         &mut self,
         ttype: crate::System::Xml::XmlTokenizedType,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -306,12 +306,12 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::DtdValidator_NamespaceMa
 impl crate::System::Xml::Schema::DtdValidator_NamespaceManager {
     pub fn LookupNamespace(
         &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret)
     }

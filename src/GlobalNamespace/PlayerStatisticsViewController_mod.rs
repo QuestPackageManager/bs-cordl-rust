@@ -187,7 +187,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PlayerStatisticsViewController_StatsScopeData {
-    pub _text_k__BackingField: *mut crate::System::String,
+    pub _text_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _playerOverallStatsDataFunc_k__BackingField: *mut crate::System::Func_1<
         *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
     >,
@@ -213,7 +213,7 @@ for crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
 impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     pub fn _ctor(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         playerOverallStatsDataFunc: *mut crate::System::Func_1<
             *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
         >,
@@ -243,8 +243,8 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_text",
             (),
@@ -266,7 +266,7 @@ impl crate::GlobalNamespace::PlayerStatisticsViewController_StatsScopeData {
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

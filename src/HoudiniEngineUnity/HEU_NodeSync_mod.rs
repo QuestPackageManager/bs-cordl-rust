@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_NodeSync {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
-    pub _nodeSaveFilePath: *mut crate::System::String,
+    pub _nodeSaveFilePath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_NodeSync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,8 +29,8 @@ impl crate::HoudiniEngineUnity::HEU_NodeSync {
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         nodeID: i32,
-        nodeName: *mut crate::System::String,
-        filePath: *mut crate::System::String,
+        nodeName: *mut quest_hook::libil2cpp::Il2CppString,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +78,7 @@ impl crate::HoudiniEngineUnity::HEU_NodeSync {
     }
     pub fn SaveNodeToFile(
         &mut self,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

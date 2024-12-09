@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
     pub type _HandleGetIsEntitledToLevel_d__6 = crate::GlobalNamespace::NetworkPlayerEntitlementChecker__HandleGetIsEntitledToLevel_d__6;
     pub fn GetEntitlementStatus(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
             crate::GlobalNamespace::EntitlementsStatus,
@@ -59,8 +59,8 @@ impl crate::GlobalNamespace::NetworkPlayerEntitlementChecker {
     }
     pub fn HandleGetIsEntitledToLevel(
         &mut self,
-        userId: *mut crate::System::String,
-        levelId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

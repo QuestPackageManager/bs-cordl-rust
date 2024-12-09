@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseInvokableCall {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Events+BaseInvokableCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Events+BaseInvokableCall")]
 impl std::ops::Deref for crate::UnityEngine::Events::BaseInvokableCall {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Events::BaseInvokableCall {
 impl crate::UnityEngine::Events::BaseInvokableCall {
     pub fn Find(
         &mut self,
-        targetObj: *mut crate::System::Object,
+        targetObj: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -37,7 +37,9 @@ impl crate::UnityEngine::Events::BaseInvokableCall {
     }
     pub fn Invoke(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,8 +55,8 @@ impl crate::UnityEngine::Events::BaseInvokableCall {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_MethodInfo1(
-        target: *mut crate::System::Object,
+    pub fn New_Il2CppObject_MethodInfo1(
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         function: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,9 +75,9 @@ impl crate::UnityEngine::Events::BaseInvokableCall {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_MethodInfo1(
+    pub fn _ctor_Il2CppObject_MethodInfo1(
         &mut self,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         function: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

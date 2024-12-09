@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub signedContent: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
     pub signedData: *mut crate::Org::BouncyCastle::Asn1::Cms::SignedData,
     pub contentInfo: *mut crate::Org::BouncyCastle::Asn1::Cms::ContentInfo,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedData")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedData {
 impl crate::Org::BouncyCastle::Cms::CmsSignedData {
     pub fn GetAttributeCertificates(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
     > {
@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
     }
     pub fn GetCertificates(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
     > {
@@ -60,7 +60,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
     }
     pub fn GetCrls(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
     > {
@@ -81,9 +81,9 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
             .invoke("GetEncoded", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEncoded_String1(
+    pub fn GetEncoded_Il2CppString1(
         &mut self,
-        encoding: *mut crate::System::String,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -332,11 +332,11 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedData {
     }
     pub fn get_SignedContentTypeOid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SignedContentTypeOid", ())?;
         Ok(__cordl_ret)
     }

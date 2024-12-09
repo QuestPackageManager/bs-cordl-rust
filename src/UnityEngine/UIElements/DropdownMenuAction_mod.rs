@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct DropdownMenuAction {
     __cordl_parent: crate::UnityEngine::UIElements::DropdownMenuItem,
-    pub _name_k__BackingField: *mut crate::System::String,
+    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _status_k__BackingField: crate::UnityEngine::UIElements::DropdownMenuAction_Status,
     pub _eventInfo_k__BackingField: *mut crate::UnityEngine::UIElements::DropdownMenuEventInfo,
-    pub _userData_k__BackingField: *mut crate::System::Object,
+    pub _userData_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
     pub actionCallback: *mut crate::System::Action_1<
         *mut crate::UnityEngine::UIElements::DropdownMenuAction,
     >,
@@ -38,7 +38,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
     #[cfg(feature = "UnityEngine+UIElements+DropdownMenuAction+Status")]
     pub type Status = crate::UnityEngine::UIElements::DropdownMenuAction_Status;
     pub fn New(
-        actionName: *mut crate::System::String,
+        actionName: *mut quest_hook::libil2cpp::Il2CppString,
         actionCallback: *mut crate::System::Action_1<
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
         >,
@@ -46,7 +46,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
             crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -70,7 +70,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
     }
     pub fn _ctor(
         &mut self,
-        actionName: *mut crate::System::String,
+        actionName: *mut quest_hook::libil2cpp::Il2CppString,
         actionCallback: *mut crate::System::Action_1<
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
         >,
@@ -78,7 +78,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
             crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +114,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuAction {
     }
     pub fn set_userData(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

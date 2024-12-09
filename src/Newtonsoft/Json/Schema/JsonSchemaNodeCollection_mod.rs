@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct JsonSchemaNodeCollection {
     __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
     >,
 }
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaNodeCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
     type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
     >;
     fn deref(&self) -> &Self::Target {
@@ -34,11 +34,11 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaNodeCollection {
     pub fn GetKeyForItem(
         &mut self,
         item: *mut crate::Newtonsoft::Json::Schema::JsonSchemaNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetKeyForItem", (item))?;
         Ok(__cordl_ret)
     }

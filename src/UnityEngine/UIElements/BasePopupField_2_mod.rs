@@ -11,11 +11,11 @@ pub struct BasePopupField_2<
     pub m_ArrowElement: *mut crate::UnityEngine::UIElements::VisualElement,
     pub m_FormatSelectedValueCallback: *mut crate::System::Func_2<
         TValueChoice,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_FormatListItemCallback: *mut crate::System::Func_2<
         TValueChoice,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub createMenuCallback: *mut crate::System::Func_1<
         *mut crate::UnityEngine::UIElements::IGenericMenu,
@@ -101,7 +101,7 @@ impl<
     pub fn GetListItemToDisplay(
         &mut self,
         item: TValueType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -111,13 +111,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetListItemToDisplay", (item))?;
         Ok(__cordl_ret)
     }
     pub fn GetValueToDisplay(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -127,12 +127,12 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValueToDisplay", ())?;
         Ok(__cordl_ret)
     }
     pub fn New(
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -267,7 +267,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

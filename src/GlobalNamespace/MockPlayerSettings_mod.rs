@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerSettings {
-    __cordl_parent: crate::System::Object,
-    pub _userName: *mut crate::System::String,
-    pub _userId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _sortIndex: i32,
     pub _latency: i64,
     pub _autoConnect: bool,
@@ -12,14 +12,14 @@ pub struct MockPlayerSettings {
     pub _movementType: crate::GlobalNamespace::MockPlayerMovementType,
     pub _avatarType: crate::GlobalNamespace::MockPlayerAvatarType,
     pub _platformUserId: u64,
-    pub _recodingFile: *mut crate::System::String,
+    pub _recodingFile: *mut quest_hook::libil2cpp::Il2CppString,
     pub _aiCubeHitChance: f32,
     pub _leftHanded: bool,
     pub _saberAColor: crate::UnityEngine::Color,
     pub _saberBColor: crate::UnityEngine::Color,
     pub _obstaclesColor: crate::UnityEngine::Color,
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub _beatmapLevelId: *mut crate::System::String,
+    pub _beatmapLevelId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "MockPlayerSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayerSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,11 +94,11 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn get_beatmapLevelId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_beatmapLevelId", ())?;
         Ok(__cordl_ret)
     }
@@ -152,11 +152,11 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn get_recodingFile(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_recodingFile", ())?;
         Ok(__cordl_ret)
     }
@@ -189,21 +189,21 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
@@ -253,7 +253,7 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn set_beatmapLevelId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -330,7 +330,7 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn set_recodingFile(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -374,7 +374,7 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn set_userId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -385,7 +385,7 @@ impl crate::GlobalNamespace::MockPlayerSettings {
     }
     pub fn set_userName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

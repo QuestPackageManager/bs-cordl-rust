@@ -327,7 +327,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::GameEnergyCou
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameEnergyCounter_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_EnergyType,
     pub noFail: bool,
     pub instaFail: bool,
@@ -340,7 +340,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameEnergyCounter+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::GameEnergyCounter_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriBuilder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _changed: bool,
-    pub _fragment: *mut crate::System::String,
-    pub _host: *mut crate::System::String,
-    pub _password: *mut crate::System::String,
-    pub _path: *mut crate::System::String,
+    pub _fragment: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _host: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _password: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _path: *mut quest_hook::libil2cpp::Il2CppString,
     pub _port: i32,
-    pub _query: *mut crate::System::String,
-    pub _scheme: *mut crate::System::String,
-    pub _schemeDelimiter: *mut crate::System::String,
+    pub _query: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _scheme: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _schemeDelimiter: *mut quest_hook::libil2cpp::Il2CppString,
     pub _uri: *mut crate::System::Uri,
-    pub _username: *mut crate::System::String,
+    pub _username: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+UriBuilder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UriBuilder")]
 impl std::ops::Deref for crate::System::UriBuilder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl std::ops::DerefMut for crate::System::UriBuilder {
 impl crate::System::UriBuilder {
     pub fn Equals(
         &mut self,
-        rparam: *mut crate::System::Object,
+        rparam: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,8 +69,8 @@ impl crate::System::UriBuilder {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        uri: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -100,11 +100,11 @@ impl crate::System::UriBuilder {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -118,9 +118,9 @@ impl crate::System::UriBuilder {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        uri: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,7 +149,7 @@ impl crate::System::UriBuilder {
     }
     pub fn set_Host(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,7 +160,7 @@ impl crate::System::UriBuilder {
     }
     pub fn set_Path(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -182,7 +182,7 @@ impl crate::System::UriBuilder {
     }
     pub fn set_Query(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -193,7 +193,7 @@ impl crate::System::UriBuilder {
     }
     pub fn set_Scheme(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

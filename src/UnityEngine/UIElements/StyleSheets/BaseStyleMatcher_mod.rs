@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseStyleMatcher {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ContextStack: *mut crate::System::Collections::Generic::Stack_1<
         crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher_MatchContext,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+BaseStyleMatcher")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,7 +163,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::BaseStyleMatcher {
     }
     pub fn MatchKeyword(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

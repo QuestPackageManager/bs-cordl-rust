@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameServerListItem {
-    __cordl_parent: crate::System::Object,
-    pub serverName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub serverName: *mut quest_hook::libil2cpp::Il2CppString,
     pub capacity: i32,
     pub occupied: i32,
     pub password: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameServerListItem")]
 impl std::ops::Deref for crate::GlobalNamespace::GameServerListItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameServerListItem {
 #[cfg(feature = "GameServerListItem")]
 impl crate::GlobalNamespace::GameServerListItem {
     pub fn New(
-        serverName: *mut crate::System::String,
+        serverName: *mut quest_hook::libil2cpp::Il2CppString,
         capacity: i32,
         occupied: i32,
         password: bool,
@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::GameServerListItem {
     }
     pub fn _ctor(
         &mut self,
-        serverName: *mut crate::System::String,
+        serverName: *mut quest_hook::libil2cpp::Il2CppString,
         capacity: i32,
         occupied: i32,
         password: bool,

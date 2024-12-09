@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicTlsPskIdentity {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mIdentity: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub mPsk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+BasicTlsPskIdentity")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,8 +57,8 @@ impl crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
             .invoke_void(".ctor", (identity, psk))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        identity: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        identity: *mut quest_hook::libil2cpp::Il2CppString,
         psk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -100,9 +100,9 @@ impl crate::Org::BouncyCastle::Crypto::Tls::BasicTlsPskIdentity {
             .invoke(".ctor", (identity, psk))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        identity: *mut crate::System::String,
+        identity: *mut quest_hook::libil2cpp::Il2CppString,
         psk: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

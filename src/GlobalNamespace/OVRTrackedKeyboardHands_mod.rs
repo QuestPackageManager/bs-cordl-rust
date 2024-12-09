@@ -283,8 +283,8 @@ pub struct OVRTrackedKeyboardHands_HandBoneMapping {
     pub RightHandTransform: *mut crate::UnityEngine::Transform,
     pub RightPresenceTransform: *mut crate::UnityEngine::Transform,
     pub BoneName: crate::GlobalNamespace::OVRSkeleton_BoneId,
-    pub HandPresenceLeftBoneName: *mut crate::System::String,
-    pub HandPresenceRightBoneName: *mut crate::System::String,
+    pub HandPresenceLeftBoneName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub HandPresenceRightBoneName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "OVRTrackedKeyboardHands+HandBoneMapping")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

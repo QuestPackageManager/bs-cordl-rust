@@ -22,7 +22,7 @@ pub struct ComputedStyle {
     >,
     pub yogaNode: *mut crate::UnityEngine::Yoga::YogaNode,
     pub customProperties: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
     pub matchingRulesHash: i64,

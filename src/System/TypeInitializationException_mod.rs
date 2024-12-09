@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeInitializationException {
     __cordl_parent: crate::System::SystemException,
-    pub _typeName: *mut crate::System::String,
+    pub _typeName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+TypeInitializationException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -44,6 +44,27 @@ impl crate::System::TypeInitializationException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString_Exception1(
+        fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fullTypeName, innerException))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString_Il2CppString_Exception2(
+        fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fullTypeName, message, innerException))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext3(
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
@@ -54,27 +75,6 @@ impl crate::System::TypeInitializationException {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Exception1(
-        fullTypeName: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fullTypeName, innerException))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_String_Exception2(
-        fullTypeName: *mut crate::System::String,
-        message: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fullTypeName, message, innerException))?;
-        Ok(__cordl_object)
-    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -83,6 +83,31 @@ impl crate::System::TypeInitializationException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Exception1(
+        &mut self,
+        fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fullTypeName, innerException))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Il2CppString_Exception2(
+        &mut self,
+        fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        innerException: *mut crate::System::Exception,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fullTypeName, message, innerException))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_SerializationInfo_StreamingContext3(
@@ -97,38 +122,13 @@ impl crate::System::TypeInitializationException {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Exception1(
-        &mut self,
-        fullTypeName: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fullTypeName, innerException))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_String_Exception2(
-        &mut self,
-        fullTypeName: *mut crate::System::String,
-        message: *mut crate::System::String,
-        innerException: *mut crate::System::Exception,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fullTypeName, message, innerException))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_TypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TypeName", ())?;
         Ok(__cordl_ret)
     }

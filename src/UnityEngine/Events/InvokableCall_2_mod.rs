@@ -37,7 +37,7 @@ impl<
 > crate::UnityEngine::Events::InvokableCall_2<T1, T2> {
     pub fn Find(
         &mut self,
-        targetObj: *mut crate::System::Object,
+        targetObj: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -54,7 +54,9 @@ impl<
     }
     pub fn Invoke(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -70,7 +72,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         theFunction: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -87,7 +89,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         theFunction: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

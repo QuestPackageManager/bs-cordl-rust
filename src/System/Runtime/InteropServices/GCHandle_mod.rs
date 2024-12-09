@@ -34,7 +34,7 @@ impl crate::System::Runtime::InteropServices::GCHandle {
     }
     pub fn Equals(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -61,20 +61,9 @@ impl crate::System::Runtime::InteropServices::GCHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IntPtr0(
+    pub fn _ctor_Il2CppObject1(
         &mut self,
-        h: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (h),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -83,15 +72,26 @@ impl crate::System::Runtime::InteropServices::GCHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_GCHandleType2(
+    pub fn _ctor_Il2CppObject_GCHandleType2(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: crate::System::Runtime::InteropServices::GCHandleType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (value, _cordl_type),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_IntPtr0(
+        &mut self,
+        h: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (h),
         )?;
         Ok(__cordl_ret)
     }
@@ -105,8 +105,8 @@ impl crate::System::Runtime::InteropServices::GCHandle {
     }
     pub fn get_Target(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Target",
             (),
@@ -115,7 +115,7 @@ impl crate::System::Runtime::InteropServices::GCHandle {
     }
     pub fn set_Target(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -32,7 +32,7 @@ impl crate::OVRSimpleJSON::JSONArray {
     pub type _get_Children_d__22 = crate::OVRSimpleJSON::JSONArray__get_Children_d__22;
     pub fn Add(
         &mut self,
-        aKey: *mut crate::System::String,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
         aItem: *mut crate::OVRSimpleJSON::JSONNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -141,9 +141,9 @@ impl crate::OVRSimpleJSON::JSONArray {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsArray", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
-        aKey: *mut crate::System::String,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::OVRSimpleJSON::JSONNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,9 +184,9 @@ impl crate::OVRSimpleJSON::JSONArray {
             .invoke("set_Inline", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item_String1(
+    pub fn set_Item_Il2CppString1(
         &mut self,
-        aKey: *mut crate::System::String,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::OVRSimpleJSON::JSONNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -4,7 +4,7 @@
 pub struct ListMap {
     __cordl_parent: crate::System::Xml::Serialization::ObjectMap,
     pub _itemInfo: *mut crate::System::Xml::Serialization::XmlTypeMapElementInfoList,
-    pub _choiceMember: *mut crate::System::String,
+    pub _choiceMember: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+ListMap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::ListMap {
 impl crate::System::Xml::Serialization::ListMap {
     pub fn Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,11 +36,11 @@ impl crate::System::Xml::Serialization::ListMap {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn FindElement_Object_i32_Object0(
+    pub fn FindElement_Il2CppObject_i32_Il2CppObject0(
         &mut self,
-        ob: *mut crate::System::Object,
+        ob: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
-        memberValue: *mut crate::System::Object,
+        memberValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,
     > {
@@ -51,10 +51,10 @@ impl crate::System::Xml::Serialization::ListMap {
             .invoke("FindElement", (ob, index, memberValue))?;
         Ok(__cordl_ret)
     }
-    pub fn FindElement_String_String1(
+    pub fn FindElement_Il2CppString_Il2CppString1(
         &mut self,
-        elementName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,
     > {
@@ -80,8 +80,10 @@ impl crate::System::Xml::Serialization::ListMap {
     pub fn GetArrayType(
         &mut self,
         itemCount: i32,
-        localName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        ns: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        localName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        ns: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +130,7 @@ impl crate::System::Xml::Serialization::ListMap {
     }
     pub fn set_ChoiceMember(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

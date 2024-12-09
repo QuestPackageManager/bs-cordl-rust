@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_VolumeCachePreset {
-    __cordl_parent: crate::System::Object,
-    pub _objName: *mut crate::System::String,
-    pub _geoName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _objName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _uiExpanded: bool,
     pub _volumeLayersPresets: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_VolumeLayerPreset,
     >,
-    pub _terrainDataPath: *mut crate::System::String,
+    pub _terrainDataPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _tile: i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCachePreset")]
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeCachePreset")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_VolumeCachePreset {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

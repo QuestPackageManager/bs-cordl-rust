@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControlPath {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlPath")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlPath {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -112,15 +112,17 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     }
     pub fn ToHumanReadableString(
         &mut self,
-        parentLayoutName: *mut crate::System::String,
-        parentControlPath: *mut crate::System::String,
+        parentLayoutName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentControlPath: *mut quest_hook::libil2cpp::Il2CppString,
         referencedLayoutName: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
-        controlPath: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        controlPath: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         options: crate::UnityEngine::InputSystem::InputControlPath_HumanReadableStringOptions,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToHumanReadableString",
             (
@@ -135,8 +137,8 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     }
     pub fn get_displayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_displayName",
             (),
@@ -161,8 +163,8 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     }
     pub fn get_layout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_layout",
             (),
@@ -171,8 +173,8 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_name",
             (),
@@ -183,11 +185,11 @@ impl crate::UnityEngine::InputSystem::InputControlPath_ParsedPathComponent {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_usages", ())?;
         Ok(__cordl_ret)
     }
@@ -211,7 +213,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputControlPath_PathParser {
-    pub path: *mut crate::System::String,
+    pub path: *mut quest_hook::libil2cpp::Il2CppString,
     pub length: i32,
     pub leftIndexInPath: i32,
     pub rightIndexInPath: i32,
@@ -259,7 +261,7 @@ impl crate::UnityEngine::InputSystem::InputControlPath_PathParser {
     }
     pub fn _ctor(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

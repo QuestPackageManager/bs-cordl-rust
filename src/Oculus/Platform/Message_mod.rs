@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Message {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::Oculus::Platform::Message_MessageType,
     pub requestID: u64,
     pub error: *mut crate::Oculus::Platform::Models::Error,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Message")]
 impl std::ops::Deref for crate::Oculus::Platform::Message {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -273,16 +273,16 @@ impl crate::Oculus::Platform::Message {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetDataStore", ())?;
         Ok(__cordl_ret)
     }
@@ -741,11 +741,11 @@ impl crate::Oculus::Platform::Message {
     }
     pub fn GetString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetString", ())?;
         Ok(__cordl_ret)
     }
@@ -923,7 +923,7 @@ impl crate::Oculus::Platform::Message_Callback {
         &mut self,
         message: *mut crate::Oculus::Platform::Message,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -955,7 +955,7 @@ impl crate::Oculus::Platform::Message_Callback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -966,7 +966,7 @@ impl crate::Oculus::Platform::Message_Callback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1018,7 +1018,7 @@ impl crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         messageHandle: crate::System::IntPtr,
         message_type: crate::Oculus::Platform::Message_MessageType,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1051,7 +1051,7 @@ impl crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1062,7 +1062,7 @@ impl crate::Oculus::Platform::Message_ExtraMessageTypesHandler {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

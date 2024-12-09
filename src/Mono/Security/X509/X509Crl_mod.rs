@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Crl {
-    __cordl_parent: crate::System::Object,
-    pub issuer: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub issuer: *mut quest_hook::libil2cpp::Il2CppString,
     pub version: u8,
     pub thisUpdate: crate::System::DateTime,
     pub nextUpdate: crate::System::DateTime,
     pub entries: *mut crate::System::Collections::ArrayList,
-    pub signatureOID: *mut crate::System::String,
+    pub signatureOID: *mut quest_hook::libil2cpp::Il2CppString,
     pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub extensions: *mut crate::Mono::Security::X509::X509ExtensionCollection,
     pub encoded: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Crl")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Crl {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,11 +158,11 @@ impl crate::Mono::Security::X509::X509Crl {
     }
     pub fn get_IssuerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_IssuerName", ())?;
         Ok(__cordl_ret)
     }
@@ -190,7 +190,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::X509::X509Crl 
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Crl_X509CrlEntry {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sn: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub revocationDate: crate::System::DateTime,
     pub extensions: *mut crate::Mono::Security::X509::X509ExtensionCollection,
@@ -202,7 +202,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Crl+X509CrlEntry")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Crl_X509CrlEntry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

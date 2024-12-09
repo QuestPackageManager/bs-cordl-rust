@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Function {
-    __cordl_parent: crate::System::Object,
-    pub _name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _id: crate::System::Data::FunctionId,
     pub _result: *mut crate::System::Type,
     pub _isValidateArguments: bool,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Function")]
 impl std::ops::Deref for crate::System::Data::Function {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::System::Data::Function {
 #[cfg(feature = "System+Data+Function")]
 impl crate::System::Data::Function {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         id: crate::System::Data::FunctionId,
         result: *mut crate::System::Type,
         IsValidateArguments: bool,
@@ -63,7 +63,7 @@ impl crate::System::Data::Function {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         id: crate::System::Data::FunctionId,
         result: *mut crate::System::Type,
         IsValidateArguments: bool,

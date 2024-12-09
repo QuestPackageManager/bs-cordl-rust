@@ -5,7 +5,7 @@ pub struct TooltipEvent {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
         *mut crate::UnityEngine::UIElements::TooltipEvent,
     >,
-    pub _tooltip_k__BackingField: *mut crate::System::String,
+    pub _tooltip_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _rect_k__BackingField: crate::UnityEngine::Rect,
 }
 #[cfg(feature = "UnityEngine+UIElements+TooltipEvent")]
@@ -82,7 +82,7 @@ impl crate::UnityEngine::UIElements::TooltipEvent {
     }
     pub fn set_tooltip(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

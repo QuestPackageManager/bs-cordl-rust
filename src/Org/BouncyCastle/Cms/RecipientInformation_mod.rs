@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecipientInformation {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rid: *mut crate::Org::BouncyCastle::Cms::RecipientID,
     pub keyEncAlg: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     pub secureReadable: *mut crate::Org::BouncyCastle::Cms::CmsSecureReadable,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+RecipientInformation")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::RecipientInformation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,11 +41,11 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformation {
     }
     pub fn GetContentAlgorithmName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetContentAlgorithmName", ())?;
         Ok(__cordl_ret)
     }
@@ -109,11 +109,11 @@ impl crate::Org::BouncyCastle::Cms::RecipientInformation {
     }
     pub fn get_KeyEncryptionAlgOid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_KeyEncryptionAlgOid", ())?;
         Ok(__cordl_ret)
     }

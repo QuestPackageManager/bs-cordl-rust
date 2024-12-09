@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapLevelChecksums {
-    pub beatmapLevelChecksum: *mut crate::System::String,
-    pub coverImageChecksum: *mut crate::System::String,
-    pub songAudioClipChecksum: *mut crate::System::String,
-    pub audioDataAssetChecksum: *mut crate::System::String,
+    pub beatmapLevelChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+    pub coverImageChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+    pub songAudioClipChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+    pub audioDataAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
     pub difficultyBeatmapsChecksums: *mut crate::System::Collections::Generic::List_1<
         crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
     >,
@@ -38,8 +38,8 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
     pub type __c__DisplayClass8_0 = crate::GlobalNamespace::BeatmapLevelChecksums___c__DisplayClass8_0;
     pub fn GetOrAddDifficultyBeatmapChecksums(
         &mut self,
-        beatmapDifficulty: *mut crate::System::String,
-        beatmapCharacteristic: *mut crate::System::String,
+        beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums,
     > {
@@ -52,10 +52,10 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
     }
     pub fn SetDifficultyBeatmapChecksums(
         &mut self,
-        beatmapDifficulty: *mut crate::System::String,
-        beatmapCharacteristic: *mut crate::System::String,
-        beatmapAssetChecksum: *mut crate::System::String,
-        lightshowAssetChecksum: *mut crate::System::String,
+        beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+        lightshowAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -85,10 +85,10 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapLevelChecksums_DifficultyBeatmapChecksums {
-    pub beatmapDifficulty: *mut crate::System::String,
-    pub beatmapCharacteristic: *mut crate::System::String,
-    pub beatmapAssetChecksum: *mut crate::System::String,
-    pub lightshowAssetChecksum: *mut crate::System::String,
+    pub beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
+    pub beatmapAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+    pub lightshowAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatmapLevelChecksums+DifficultyBeatmapChecksums")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -120,12 +120,12 @@ impl crate::GlobalNamespace::BeatmapLevelChecksums_DifficultyBeatmapChecksums {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_String_String0(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString0(
         &mut self,
-        beatmapDifficulty: *mut crate::System::String,
-        beatmapCharacteristic: *mut crate::System::String,
-        beatmapAssetChecksum: *mut crate::System::String,
-        lightshowAssetChecksum: *mut crate::System::String,
+        beatmapDifficulty: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapCharacteristic: *mut quest_hook::libil2cpp::Il2CppString,
+        beatmapAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
+        lightshowAssetChecksum: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

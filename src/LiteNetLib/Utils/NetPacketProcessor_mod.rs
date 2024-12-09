@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketProcessor {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _netSerializer: *mut crate::LiteNetLib::Utils::NetSerializer,
     pub _callbacks: *mut crate::System::Collections::Generic::Dictionary_2<
         u64,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetPacketProcessor {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -122,6 +122,18 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
             .invoke_void(".ctor", (maxStringLength))?;
         Ok(__cordl_object)
     }
+    pub fn ReadAllPackets_Il2CppObject1(
+        &mut self,
+        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("ReadAllPackets", (reader, userData))?;
+        Ok(__cordl_ret)
+    }
     pub fn ReadAllPackets_NetDataReader0(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
@@ -133,16 +145,16 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
             .invoke("ReadAllPackets", (reader))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadAllPackets_Object1(
+    pub fn ReadPacket_Il2CppObject1(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadAllPackets", (reader, userData))?;
+            .invoke("ReadPacket", (reader, userData))?;
         Ok(__cordl_ret)
     }
     pub fn ReadPacket_NetDataReader0(
@@ -154,18 +166,6 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("ReadPacket", (reader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ReadPacket_Object1(
-        &mut self,
-        reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userData: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ReadPacket", (reader, userData))?;
         Ok(__cordl_ret)
     }
     pub fn RegisterNestedType_0<T>(
@@ -542,7 +542,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::Utils::NetPacketPr
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetPacketProcessor_HashCache_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
@@ -554,7 +554,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+Utils+NetPacketProcessor+HashCache_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetPacketProcessor_HashCache_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -611,9 +611,9 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     pub fn BeginInvoke(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -636,7 +636,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     pub fn Invoke(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -646,7 +646,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -657,7 +657,7 @@ impl crate::LiteNetLib::Utils::NetPacketProcessor_SubscribeDelegate {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

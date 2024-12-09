@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct NameAndParameters {
-    pub _name_k__BackingField: *mut crate::System::String,
+    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _parameters_k__BackingField: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
         crate::UnityEngine::InputSystem::Utilities::NamedValue,
     >,
@@ -30,8 +30,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     pub type __c = crate::UnityEngine::InputSystem::Utilities::NameAndParameters___c;
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -40,8 +40,8 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_name",
             (),
@@ -62,7 +62,7 @@ impl crate::UnityEngine::InputSystem::Utilities::NameAndParameters {
     }
     pub fn set_name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

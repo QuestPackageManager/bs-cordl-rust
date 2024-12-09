@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Tuple_2<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Item1: T1,
     pub m_Item2: T2,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Tuple_2")]
 impl<T1: quest_hook::libil2cpp::Type, T2: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Tuple_2<T1, T2> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl<
 > crate::System::Tuple_2<T1, T2> {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -77,7 +77,7 @@ impl<
     }
     pub fn System_Collections_IStructuralComparable_CompareTo(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
         comparer: *mut crate::System::Collections::IComparer,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -98,7 +98,7 @@ impl<
     }
     pub fn System_Collections_IStructuralEquatable_Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
         comparer: *mut crate::System::Collections::IEqualityComparer,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -136,7 +136,7 @@ impl<
     }
     pub fn System_IComparable_CompareTo(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -154,7 +154,7 @@ impl<
     pub fn System_ITupleInternal_ToString(
         &mut self,
         sb: *mut crate::System::Text::StringBuilder,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -164,7 +164,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("System.ITupleInternal.ToString", (sb))?;
         Ok(__cordl_ret)
     }
@@ -186,7 +186,7 @@ impl<
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -196,7 +196,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }

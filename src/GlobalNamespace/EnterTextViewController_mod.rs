@@ -8,7 +8,7 @@ pub struct EnterTextViewController {
     pub _okButton: *mut crate::UnityEngine::UI::Button,
     pub didFinishEvent: *mut crate::System::Action_2<
         *mut crate::GlobalNamespace::EnterTextViewController,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "EnterTextViewController")]
@@ -49,7 +49,7 @@ impl crate::GlobalNamespace::EnterTextViewController {
     }
     pub fn Init(
         &mut self,
-        titleText: *mut crate::System::String,
+        titleText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::EnterTextViewController {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::EnterTextViewController,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::EnterTextViewController {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::EnterTextViewController,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

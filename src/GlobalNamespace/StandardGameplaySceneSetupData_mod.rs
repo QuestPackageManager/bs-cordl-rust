@@ -6,7 +6,7 @@ pub struct StandardGameplaySceneSetupData {
     pub autoRestart: bool,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-    pub backButtonText: *mut crate::System::String,
+    pub backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub startPaused: bool,
 }
@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::StandardGameplaySceneSetupData {
         autoRestart: bool,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         startPaused: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::StandardGameplaySceneSetupData {
         autoRestart: bool,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         startPaused: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

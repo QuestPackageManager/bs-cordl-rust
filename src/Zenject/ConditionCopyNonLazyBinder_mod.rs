@@ -60,7 +60,7 @@ impl crate::Zenject::ConditionCopyNonLazyBinder {
     }
     pub fn WhenInjectedIntoInstance(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::CopyNonLazyBinder> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

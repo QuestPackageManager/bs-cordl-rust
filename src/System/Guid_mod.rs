@@ -49,9 +49,9 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_Object0(
+    pub fn CompareTo_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -71,9 +71,9 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -128,31 +128,31 @@ impl crate::System::Guid {
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String1(
+    pub fn ToString_Il2CppString1(
         &mut self,
-        format: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        format: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String_IFormatProvider2(
+    pub fn ToString_Il2CppString_IFormatProvider2(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (format, provider),
@@ -194,6 +194,17 @@ impl crate::System::Guid {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppString4(
+        &mut self,
+        g: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (g),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_ReadOnlySpan_1_1(
         &mut self,
         b: crate::System::ReadOnlySpan_1<u8>,
@@ -202,17 +213,6 @@ impl crate::System::Guid {
             self,
             ".ctor",
             (b),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String4(
-        &mut self,
-        g: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (g),
         )?;
         Ok(__cordl_ret)
     }
@@ -272,9 +272,9 @@ pub struct Guid_GuidResult {
     pub _parsedGuid: crate::System::Guid,
     pub _throwStyle: crate::System::Guid_GuidParseThrowStyle,
     pub _failure: crate::System::Guid_ParseFailureKind,
-    pub _failureMessageID: *mut crate::System::String,
-    pub _failureMessageFormatArgument: *mut crate::System::Object,
-    pub _failureArgumentName: *mut crate::System::String,
+    pub _failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _failureArgumentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _innerException: *mut crate::System::Exception,
 }
 #[cfg(feature = "System+Guid+GuidResult")]
@@ -326,10 +326,10 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetFailure_Guid_ParseFailureKind_String1(
+    pub fn SetFailure_Guid_ParseFailureKind_Il2CppString1(
         &mut self,
         failure: crate::System::Guid_ParseFailureKind,
-        failureMessageID: *mut crate::System::String,
+        failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -338,11 +338,11 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetFailure_Guid_ParseFailureKind_String_Object2(
+    pub fn SetFailure_Guid_ParseFailureKind_Il2CppString_Il2CppObject2(
         &mut self,
         failure: crate::System::Guid_ParseFailureKind,
-        failureMessageID: *mut crate::System::String,
-        failureMessageFormatArgument: *mut crate::System::Object,
+        failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
+        failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -351,12 +351,12 @@ impl crate::System::Guid_GuidResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn SetFailure_Guid_ParseFailureKind_String_Object_String_Exception3(
+    pub fn SetFailure_Guid_ParseFailureKind_Il2CppString_Il2CppObject_Il2CppString_Exception3(
         &mut self,
         failure: crate::System::Guid_ParseFailureKind,
-        failureMessageID: *mut crate::System::String,
-        failureMessageFormatArgument: *mut crate::System::Object,
-        failureArgumentName: *mut crate::System::String,
+        failureMessageID: *mut quest_hook::libil2cpp::Il2CppString,
+        failureMessageFormatArgument: *mut quest_hook::libil2cpp::Il2CppObject,
+        failureArgumentName: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

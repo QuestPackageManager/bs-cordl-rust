@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAttributeOverrides {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrides: *mut crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeOverrides")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeOverrides")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlAttributeOverrides {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::System::Xml::Serialization::XmlAttributeOverrides {
     pub fn GetKey(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        member: *mut crate::System::String,
+        member: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::TypeMember,
     > {
@@ -68,10 +68,10 @@ impl crate::System::Xml::Serialization::XmlAttributeOverrides {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        member: *mut crate::System::String,
+        member: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlAttributes,
     > {

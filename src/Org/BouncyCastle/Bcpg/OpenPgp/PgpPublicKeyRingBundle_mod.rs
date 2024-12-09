@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpPublicKeyRingBundle {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pubRings: *mut crate::System::Collections::IDictionary,
     pub order: *mut crate::System::Collections::IList,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpPublicKeyRingBundle")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,9 +67,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
             .invoke("GetKeyRings", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetKeyRings_String1(
+    pub fn GetKeyRings_Il2CppString1(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,9 +78,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
             .invoke("GetKeyRings", (userId))?;
         Ok(__cordl_ret)
     }
-    pub fn GetKeyRings_String__cordl_bool2(
+    pub fn GetKeyRings_Il2CppString__cordl_bool2(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         matchPartial: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -90,9 +90,9 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKeyRingBundle {
             .invoke("GetKeyRings", (userId, matchPartial))?;
         Ok(__cordl_ret)
     }
-    pub fn GetKeyRings_String__cordl_bool__cordl_bool3(
+    pub fn GetKeyRings_Il2CppString__cordl_bool__cordl_bool3(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         matchPartial: bool,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerable> {

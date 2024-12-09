@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::GameObject {
 impl crate::UnityEngine::GameObject {
     pub fn AddComponentInternal(
         &mut self,
-        className: *mut crate::System::String,
+        className: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,10 +57,10 @@ impl crate::UnityEngine::GameObject {
             .invoke("AddComponent", (componentType))?;
         Ok(__cordl_ret)
     }
-    pub fn BroadcastMessage_Object2(
+    pub fn BroadcastMessage_Il2CppObject2(
         &mut self,
-        methodName: *mut crate::System::String,
-        parameter: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        parameter: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,10 +69,10 @@ impl crate::UnityEngine::GameObject {
             .invoke("BroadcastMessage", (methodName, parameter))?;
         Ok(__cordl_ret)
     }
-    pub fn BroadcastMessage_Object_SendMessageOptions1(
+    pub fn BroadcastMessage_Il2CppObject_SendMessageOptions1(
         &mut self,
-        methodName: *mut crate::System::String,
-        parameter: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        parameter: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,9 +82,20 @@ impl crate::UnityEngine::GameObject {
             .invoke("BroadcastMessage", (methodName, parameter, options))?;
         Ok(__cordl_ret)
     }
+    pub fn BroadcastMessage_Il2CppString3(
+        &mut self,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("BroadcastMessage", (methodName))?;
+        Ok(__cordl_ret)
+    }
     pub fn BroadcastMessage_SendMessageOptions0(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,20 +105,9 @@ impl crate::UnityEngine::GameObject {
             .invoke("BroadcastMessage", (methodName, options))?;
         Ok(__cordl_ret)
     }
-    pub fn BroadcastMessage_String3(
-        &mut self,
-        methodName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("BroadcastMessage", (methodName))?;
-        Ok(__cordl_ret)
-    }
     pub fn CompareTag(
         &mut self,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,7 +142,7 @@ impl crate::UnityEngine::GameObject {
     }
     pub fn GetComponentByName(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,7 +153,7 @@ impl crate::UnityEngine::GameObject {
     }
     pub fn GetComponentByNameWithCase(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
         caseSensitive: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -301,9 +301,9 @@ impl crate::UnityEngine::GameObject {
         let __cordl_ret: T = __cordl_object.invoke("GetComponent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetComponent_String2(
+    pub fn GetComponent_Il2CppString2(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -495,7 +495,7 @@ impl crate::UnityEngine::GameObject {
         recursive: bool,
         includeInactive: bool,
         reverse: bool,
-        resultList: *mut crate::System::Object,
+        resultList: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Array> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -589,8 +589,8 @@ impl crate::UnityEngine::GameObject {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -598,8 +598,8 @@ impl crate::UnityEngine::GameObject {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray2(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray2(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         components: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -619,10 +619,10 @@ impl crate::UnityEngine::GameObject {
             .invoke("QueryComponentAtIndex", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn SendMessageUpwards_Object2(
+    pub fn SendMessageUpwards_Il2CppObject2(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -631,10 +631,10 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessageUpwards", (methodName, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SendMessageUpwards_Object_SendMessageOptions1(
+    pub fn SendMessageUpwards_Il2CppObject_SendMessageOptions1(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -644,9 +644,20 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessageUpwards", (methodName, value, options))?;
         Ok(__cordl_ret)
     }
+    pub fn SendMessageUpwards_Il2CppString3(
+        &mut self,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendMessageUpwards", (methodName))?;
+        Ok(__cordl_ret)
+    }
     pub fn SendMessageUpwards_SendMessageOptions0(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -656,21 +667,10 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessageUpwards", (methodName, options))?;
         Ok(__cordl_ret)
     }
-    pub fn SendMessageUpwards_String3(
+    pub fn SendMessage_Il2CppObject2(
         &mut self,
-        methodName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendMessageUpwards", (methodName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendMessage_Object2(
-        &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -679,10 +679,10 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessage", (methodName, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SendMessage_Object_SendMessageOptions1(
+    pub fn SendMessage_Il2CppObject_SendMessageOptions1(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -692,9 +692,20 @@ impl crate::UnityEngine::GameObject {
             .invoke("SendMessage", (methodName, value, options))?;
         Ok(__cordl_ret)
     }
+    pub fn SendMessage_Il2CppString3(
+        &mut self,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SendMessage", (methodName))?;
+        Ok(__cordl_ret)
+    }
     pub fn SendMessage_SendMessageOptions0(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -702,17 +713,6 @@ impl crate::UnityEngine::GameObject {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SendMessage", (methodName, options))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SendMessage_String3(
-        &mut self,
-        methodName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SendMessage", (methodName))?;
         Ok(__cordl_ret)
     }
     pub fn SetActive(
@@ -799,9 +799,9 @@ impl crate::UnityEngine::GameObject {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -810,9 +810,9 @@ impl crate::UnityEngine::GameObject {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray2(
+    pub fn _ctor_Il2CppString_Il2CppArray2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         components: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -904,11 +904,11 @@ impl crate::UnityEngine::GameObject {
     }
     pub fn get_tag(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_tag", ())?;
         Ok(__cordl_ret)
     }
@@ -957,7 +957,7 @@ impl crate::UnityEngine::GameObject {
     }
     pub fn set_tag(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

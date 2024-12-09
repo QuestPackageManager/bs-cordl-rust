@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ClickButtonWithCommandArgument {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _argument: *mut crate::System::String,
+    pub _argument: *mut quest_hook::libil2cpp::Il2CppString,
     pub _button: *mut crate::UnityEngine::UI::Button,
 }
 #[cfg(feature = "ClickButtonWithCommandArgument")]

@@ -30,7 +30,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509DefaultEntryConverter {
     pub fn GetConvertedValue(
         &mut self,
         oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

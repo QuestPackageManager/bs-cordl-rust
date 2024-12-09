@@ -6,12 +6,12 @@ pub struct HttpWebResponse {
     pub uri: *mut crate::System::Uri,
     pub webHeaders: *mut crate::System::Net::WebHeaderCollection,
     pub cookieCollection: *mut crate::System::Net::CookieCollection,
-    pub method: *mut crate::System::String,
+    pub method: *mut quest_hook::libil2cpp::Il2CppString,
     pub version: *mut crate::System::Version,
     pub statusCode: crate::System::Net::HttpStatusCode,
-    pub statusDescription: *mut crate::System::String,
+    pub statusDescription: *mut quest_hook::libil2cpp::Il2CppString,
     pub contentLength: i64,
-    pub contentType: *mut crate::System::String,
+    pub contentType: *mut quest_hook::libil2cpp::Il2CppString,
     pub cookie_container: *mut crate::System::Net::CookieContainer,
     pub disposed: bool,
     pub stream: *mut crate::System::IO::Stream,
@@ -116,9 +116,9 @@ impl crate::System::Net::HttpWebResponse {
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object)
     }
-    pub fn New_Uri_String_HttpStatusCode_WebHeaderCollection1(
+    pub fn New_Uri_Il2CppString_HttpStatusCode_WebHeaderCollection1(
         uri: *mut crate::System::Uri,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::HttpStatusCode,
         headers: *mut crate::System::Net::WebHeaderCollection,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -128,9 +128,9 @@ impl crate::System::Net::HttpWebResponse {
             .invoke_void(".ctor", (uri, method, status, headers))?;
         Ok(__cordl_object)
     }
-    pub fn New_Uri_String_WebResponseStream_CookieContainer2(
+    pub fn New_Uri_Il2CppString_WebResponseStream_CookieContainer2(
         uri: *mut crate::System::Uri,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
         stream: *mut crate::System::Net::WebResponseStream,
         container: *mut crate::System::Net::CookieContainer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -187,10 +187,10 @@ impl crate::System::Net::HttpWebResponse {
             .invoke(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Uri_String_HttpStatusCode_WebHeaderCollection1(
+    pub fn _ctor_Uri_Il2CppString_HttpStatusCode_WebHeaderCollection1(
         &mut self,
         uri: *mut crate::System::Uri,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::HttpStatusCode,
         headers: *mut crate::System::Net::WebHeaderCollection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -201,10 +201,10 @@ impl crate::System::Net::HttpWebResponse {
             .invoke(".ctor", (uri, method, status, headers))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Uri_String_WebResponseStream_CookieContainer2(
+    pub fn _ctor_Uri_Il2CppString_WebResponseStream_CookieContainer2(
         &mut self,
         uri: *mut crate::System::Uri,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
         stream: *mut crate::System::Net::WebResponseStream,
         container: *mut crate::System::Net::CookieContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -247,11 +247,11 @@ impl crate::System::Net::HttpWebResponse {
     }
     pub fn get_StatusDescription(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_StatusDescription", ())?;
         Ok(__cordl_ret)
     }

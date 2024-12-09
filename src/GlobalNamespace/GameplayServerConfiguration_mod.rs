@@ -64,9 +64,9 @@ impl crate::GlobalNamespace::GameplayServerConfiguration {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object2(
+    pub fn Equals_Il2CppObject2(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

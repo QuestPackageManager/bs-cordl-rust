@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaDatatype {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaDatatype")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaDatatype")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaDatatype {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaDatatype {
 impl crate::System::Xml::Schema::XmlSchemaDatatype {
     pub fn Compare(
         &mut self,
-        value1: *mut crate::System::Object,
-        value2: *mut crate::System::Object,
+        value1: *mut quest_hook::libil2cpp::Il2CppObject,
+        value2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,8 +85,8 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
     }
     pub fn IsEqual(
         &mut self,
-        o1: *mut crate::System::Object,
-        o2: *mut crate::System::Object,
+        o1: *mut quest_hook::libil2cpp::Il2CppObject,
+        o2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,39 +101,41 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn ParseValue_String_XmlNameTable_IXmlNamespaceResolver0(
+    pub fn ParseValue_Il2CppString_XmlNameTable_IXmlNamespaceResolver0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseValue", (s, nameTable, nsmgr))?;
         Ok(__cordl_ret)
     }
     pub fn ParseValue__cordl_bool1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
         createAtomicValue: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseValue", (s, nameTable, nsmgr, createAtomicValue))?;
         Ok(__cordl_ret)
     }
-    pub fn TryParseValue_Object1(
+    pub fn TryParseValue_Il2CppObject1(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         namespaceResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        typedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,12 +144,14 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
             .invoke("TryParseValue", (value, nameTable, namespaceResolver, typedValue))?;
         Ok(__cordl_ret)
     }
-    pub fn TryParseValue_String0(
+    pub fn TryParseValue_Il2CppString0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        typedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,11 +163,11 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
     pub fn TypeCodeToString(
         &mut self,
         typeCode: crate::System::Xml::Schema::XmlTypeCode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TypeCodeToString", (typeCode))?;
         Ok(__cordl_ret)
     }
@@ -257,11 +261,11 @@ impl crate::System::Xml::Schema::XmlSchemaDatatype {
     }
     pub fn get_TypeCodeString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TypeCodeString", ())?;
         Ok(__cordl_ret)
     }

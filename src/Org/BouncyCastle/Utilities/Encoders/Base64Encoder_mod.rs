@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Base64Encoder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encodingTable: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub padding: u8,
     pub decodingTable: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+Base64Encoder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Encoders::Base64Encoder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64Encoder {
     }
     pub fn DecodeString(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         outStream: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -144,9 +144,9 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::Base64Encoder {
         let __cordl_ret: i32 = __cordl_object.invoke("nextI", (data, i, finish))?;
         Ok(__cordl_ret)
     }
-    pub fn nextI_String1(
+    pub fn nextI_Il2CppString1(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         i: i32,
         finish: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {

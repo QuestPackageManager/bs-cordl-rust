@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct JNINativeMethod {
-    pub name: *mut crate::System::String,
-    pub signature: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub signature: *mut quest_hook::libil2cpp::Il2CppString,
     pub fnPtr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+JNINativeMethod")]

@@ -28,12 +28,12 @@ impl crate::GlobalNamespace::IServerBeatmapProvider {
         &mut self,
         playerCount: i32,
         beatmapsSuggestedByPlayers: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
         >,
         selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         playerOwnedSongPacks: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             crate::GlobalNamespace::SongPackMask,
         >,
     ) -> quest_hook::libil2cpp::Result<

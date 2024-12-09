@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct SelectMultiplayerLobbyDestination {
     __cordl_parent: crate::GlobalNamespace::MenuDestination,
-    pub lobbySecret: *mut crate::System::String,
-    pub lobbyCode: *mut crate::System::String,
+    pub lobbySecret: *mut quest_hook::libil2cpp::Il2CppString,
+    pub lobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,9 +27,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SelectMultiplayerLobbyDestin
 }
 #[cfg(feature = "SelectMultiplayerLobbyDestination")]
 impl crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
-    pub fn New_String0(
-        lobbySecret: *mut crate::System::String,
-        lobbyCode: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        lobbySecret: *mut quest_hook::libil2cpp::Il2CppString,
+        lobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,8 +37,8 @@ impl crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
             .invoke_void(".ctor", (lobbySecret, lobbyCode))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        lobbyCode: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        lobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,10 +46,10 @@ impl crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
             .invoke_void(".ctor", (lobbyCode))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        lobbySecret: *mut crate::System::String,
-        lobbyCode: *mut crate::System::String,
+        lobbySecret: *mut quest_hook::libil2cpp::Il2CppString,
+        lobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,9 +58,9 @@ impl crate::GlobalNamespace::SelectMultiplayerLobbyDestination {
             .invoke(".ctor", (lobbySecret, lobbyCode))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        lobbyCode: *mut crate::System::String,
+        lobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -74,7 +74,7 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
     }
     pub fn GetSpriteIndexFromName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

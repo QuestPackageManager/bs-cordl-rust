@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PrivilegeNotHeldException {
     __cordl_parent: crate::System::UnauthorizedAccessException,
-    pub _privilegeName: *mut crate::System::String,
+    pub _privilegeName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Security+AccessControl+PrivilegeNotHeldException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

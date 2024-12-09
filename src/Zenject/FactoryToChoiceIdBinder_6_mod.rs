@@ -124,7 +124,7 @@ impl<
     }
     pub fn WithId(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::FactoryArgumentsToChoiceBinder_6<
             TParam1,

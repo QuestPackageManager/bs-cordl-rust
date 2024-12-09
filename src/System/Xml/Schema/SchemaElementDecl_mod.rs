@@ -101,9 +101,9 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_XmlQualifiedName_String2(
+    pub fn New_XmlQualifiedName_Il2CppString2(
         name: *mut crate::System::Xml::XmlQualifiedName,
-        prefix: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -122,8 +122,8 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
     }
     pub fn System_Xml_IDtdAttributeListInfo_LookupAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdAttributeInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -171,10 +171,10 @@ impl crate::System::Xml::Schema::SchemaElementDecl {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_XmlQualifiedName_String2(
+    pub fn _ctor_XmlQualifiedName_Il2CppString2(
         &mut self,
         name: *mut crate::System::Xml::XmlQualifiedName,
-        prefix: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

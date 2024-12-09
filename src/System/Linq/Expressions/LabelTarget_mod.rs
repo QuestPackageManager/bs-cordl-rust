@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LabelTarget {
-    __cordl_parent: crate::System::Object,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _Type_k__BackingField: *mut crate::System::Type,
 }
 #[cfg(feature = "System+Linq+Expressions+LabelTarget")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+LabelTarget")]
 impl std::ops::Deref for crate::System::Linq::Expressions::LabelTarget {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::LabelTarget {
 impl crate::System::Linq::Expressions::LabelTarget {
     pub fn New(
         _cordl_type: *mut crate::System::Type,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,18 +38,18 @@ impl crate::System::Linq::Expressions::LabelTarget {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,11 +60,11 @@ impl crate::System::Linq::Expressions::LabelTarget {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

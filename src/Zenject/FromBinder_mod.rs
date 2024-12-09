@@ -140,7 +140,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromComponentInNewPrefabResource_GameObjectCreationParameters1(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         gameObjectInfo: *mut crate::Zenject::GameObjectCreationParameters,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -152,9 +152,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromComponentInNewPrefabResource", (resourcePath, gameObjectInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn FromComponentInNewPrefabResource_String0(
+    pub fn FromComponentInNewPrefabResource_Il2CppString0(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -293,7 +293,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromComponentsInNewPrefabResource_GameObjectCreationParameters1(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         gameObjectInfo: *mut crate::Zenject::GameObjectCreationParameters,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -308,9 +308,9 @@ impl crate::Zenject::FromBinder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn FromComponentsInNewPrefabResource_String0(
+    pub fn FromComponentsInNewPrefabResource_Il2CppString0(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -438,7 +438,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromInstanceBase(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -491,7 +491,7 @@ impl crate::Zenject::FromBinder {
         method: *mut crate::System::Func_2<
             *mut crate::Zenject::InjectContext,
             *mut crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<
@@ -508,7 +508,7 @@ impl crate::Zenject::FromBinder {
         &mut self,
         method: *mut crate::System::Func_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -534,7 +534,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromNewComponentOnNewPrefabResource_GameObjectCreationParameters1(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         gameObjectInfo: *mut crate::Zenject::GameObjectCreationParameters,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -549,9 +549,9 @@ impl crate::Zenject::FromBinder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn FromNewComponentOnNewPrefabResource_String0(
+    pub fn FromNewComponentOnNewPrefabResource_Il2CppString0(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -657,7 +657,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromNewScriptableObjectResource(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -680,9 +680,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromResolveAll", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveAll_Object1(
+    pub fn FromResolveAll_Il2CppObject1(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -693,9 +693,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromResolveAll", (subIdentifier))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveAll_Object_InjectSources2(
+    pub fn FromResolveAll_Il2CppObject_InjectSources2(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -709,7 +709,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromResolveGetterBase<TObj, TResult>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TResult>,
         source: crate::Zenject::InjectSources,
         matchMultiple: bool,
@@ -734,7 +734,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromResolveInternal(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         matchAll: bool,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
@@ -759,9 +759,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromResolve", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolve_Object1(
+    pub fn FromResolve_Il2CppObject1(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -772,9 +772,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromResolve", (subIdentifier))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolve_Object_InjectSources2(
+    pub fn FromResolve_Il2CppObject_InjectSources2(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -788,7 +788,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromResource(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -801,7 +801,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromResources(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -841,7 +841,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromScriptableObjectResource(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {
@@ -854,7 +854,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromScriptableObjectResourceInternal(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         createNew: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -876,9 +876,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromSubContainerResolveAll", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FromSubContainerResolveAll_Object1(
+    pub fn FromSubContainerResolveAll_Il2CppObject1(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SubContainerBinder> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -889,7 +889,7 @@ impl crate::Zenject::FromBinder {
     }
     pub fn FromSubContainerResolveInternal(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         resolveAll: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SubContainerBinder> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -909,9 +909,9 @@ impl crate::Zenject::FromBinder {
             .invoke("FromSubContainerResolve", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FromSubContainerResolve_Object1(
+    pub fn FromSubContainerResolve_Il2CppObject1(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SubContainerBinder> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

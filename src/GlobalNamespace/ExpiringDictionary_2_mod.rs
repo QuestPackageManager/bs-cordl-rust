@@ -5,7 +5,7 @@ pub struct ExpiringDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
     pub _expirationLengthMs: i64,
     pub _expirationQueue: *mut crate::GlobalNamespace::OrderedSet_1<
@@ -31,7 +31,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::ExpiringDictionary_2<TKey, TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -425,7 +425,7 @@ pub struct ExpiringDictionary_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: TKey,
     pub value: TValue,
     pub expireTime: i64,
@@ -442,7 +442,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::ExpiringDictionary_2_Entry<TKey, TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

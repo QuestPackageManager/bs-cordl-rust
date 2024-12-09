@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct FontAssetCreationSettings {
-    pub sourceFontFileName: *mut crate::System::String,
-    pub sourceFontFileGUID: *mut crate::System::String,
+    pub sourceFontFileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
     pub pointSizeSamplingMode: i32,
     pub pointSize: i32,
     pub padding: i32,
@@ -11,9 +11,9 @@ pub struct FontAssetCreationSettings {
     pub atlasWidth: i32,
     pub atlasHeight: i32,
     pub characterSetSelectionMode: i32,
-    pub characterSequence: *mut crate::System::String,
-    pub referencedFontAssetGUID: *mut crate::System::String,
-    pub referencedTextAssetGUID: *mut crate::System::String,
+    pub characterSequence: *mut quest_hook::libil2cpp::Il2CppString,
+    pub referencedFontAssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub referencedTextAssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
     pub fontStyle: i32,
     pub fontStyleModifier: f32,
     pub renderMode: i32,
@@ -39,7 +39,7 @@ for crate::TMPro::FontAssetCreationSettings {
 impl crate::TMPro::FontAssetCreationSettings {
     pub fn _ctor(
         &mut self,
-        sourceFontFileGUID: *mut crate::System::String,
+        sourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
         pointSize: i32,
         pointSizeSamplingMode: i32,
         padding: i32,
@@ -47,7 +47,7 @@ impl crate::TMPro::FontAssetCreationSettings {
         atlasWidth: i32,
         atlasHeight: i32,
         characterSelectionMode: i32,
-        characterSet: *mut crate::System::String,
+        characterSet: *mut quest_hook::libil2cpp::Il2CppString,
         renderMode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidAssetPackInfo {
-    __cordl_parent: crate::System::Object,
-    pub _name_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _status_k__BackingField: crate::UnityEngine::Android::AndroidAssetPackStatus,
     pub _size_k__BackingField: u64,
     pub _bytesDownloaded_k__BackingField: u64,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackInfo")]
 impl std::ops::Deref for crate::UnityEngine::Android::AndroidAssetPackInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPackInfo {
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackInfo")]
 impl crate::UnityEngine::Android::AndroidAssetPackInfo {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::UnityEngine::Android::AndroidAssetPackStatus,
         _cordl_size: u64,
         bytesDownloaded: u64,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::Android::AndroidAssetPackInfo {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::UnityEngine::Android::AndroidAssetPackStatus,
         _cordl_size: u64,
         bytesDownloaded: u64,

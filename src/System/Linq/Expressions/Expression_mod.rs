@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Expression")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -126,11 +126,11 @@ impl crate::System::Linq::Expressions::Expression {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -200,7 +200,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Linq::Expressions::Exp
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_BinaryExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -211,7 +211,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+BinaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -239,7 +239,7 @@ for crate::System::Linq::Expressions::Expression_BinaryExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_BlockExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -250,7 +250,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+BlockExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -278,7 +278,7 @@ for crate::System::Linq::Expressions::Expression_BlockExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_CatchBlockProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -288,7 +288,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Expression+CatchBlockProxy")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -316,7 +316,7 @@ for crate::System::Linq::Expressions::Expression_CatchBlockProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ConditionalExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -327,7 +327,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+ConditionalExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -355,7 +355,7 @@ for crate::System::Linq::Expressions::Expression_ConditionalExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ConstantExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -366,7 +366,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+ConstantExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -394,7 +394,7 @@ for crate::System::Linq::Expressions::Expression_ConstantExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_DebugInfoExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -405,7 +405,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+DebugInfoExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -433,7 +433,7 @@ for crate::System::Linq::Expressions::Expression_DebugInfoExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_DefaultExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -444,7 +444,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+DefaultExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -472,7 +472,7 @@ for crate::System::Linq::Expressions::Expression_DefaultExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ExtensionInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NodeType: crate::System::Linq::Expressions::ExpressionType,
     pub Type: *mut crate::System::Type,
 }
@@ -484,7 +484,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Expression+ExtensionInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_ExtensionInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -511,7 +511,7 @@ for crate::System::Linq::Expressions::Expression_ExtensionInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_GotoExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -522,7 +522,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+GotoExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -550,7 +550,7 @@ for crate::System::Linq::Expressions::Expression_GotoExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_IndexExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -561,7 +561,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+IndexExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -589,7 +589,7 @@ for crate::System::Linq::Expressions::Expression_IndexExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_InvocationExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -600,7 +600,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+InvocationExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -628,7 +628,7 @@ for crate::System::Linq::Expressions::Expression_InvocationExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_LabelExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -639,7 +639,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+LabelExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -667,7 +667,7 @@ for crate::System::Linq::Expressions::Expression_LabelExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_LambdaExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -678,7 +678,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+LambdaExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -706,7 +706,7 @@ for crate::System::Linq::Expressions::Expression_LambdaExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ListInitExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -717,7 +717,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+ListInitExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -745,7 +745,7 @@ for crate::System::Linq::Expressions::Expression_ListInitExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_LoopExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -756,7 +756,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+LoopExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -784,7 +784,7 @@ for crate::System::Linq::Expressions::Expression_LoopExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_MemberExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -795,7 +795,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -823,7 +823,7 @@ for crate::System::Linq::Expressions::Expression_MemberExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_MemberInitExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -834,7 +834,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+MemberInitExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -862,7 +862,7 @@ for crate::System::Linq::Expressions::Expression_MemberInitExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_MethodCallExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -873,7 +873,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+MethodCallExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -901,7 +901,7 @@ for crate::System::Linq::Expressions::Expression_MethodCallExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_NewArrayExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -912,7 +912,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+NewArrayExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -940,7 +940,7 @@ for crate::System::Linq::Expressions::Expression_NewArrayExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_NewExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -951,7 +951,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+NewExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -979,7 +979,7 @@ for crate::System::Linq::Expressions::Expression_NewExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_ParameterExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -990,7 +990,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+ParameterExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1018,7 +1018,7 @@ for crate::System::Linq::Expressions::Expression_ParameterExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_RuntimeVariablesExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1029,7 +1029,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+RuntimeVariablesExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1057,7 +1057,7 @@ for crate::System::Linq::Expressions::Expression_RuntimeVariablesExpressionProxy
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_SwitchCaseProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1067,7 +1067,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchCaseProxy")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1095,7 +1095,7 @@ for crate::System::Linq::Expressions::Expression_SwitchCaseProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_SwitchExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1106,7 +1106,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+SwitchExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1134,7 +1134,7 @@ for crate::System::Linq::Expressions::Expression_SwitchExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_TryExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1145,7 +1145,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+TryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1173,7 +1173,7 @@ for crate::System::Linq::Expressions::Expression_TryExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_TypeBinaryExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1184,7 +1184,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+TypeBinaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1212,7 +1212,7 @@ for crate::System::Linq::Expressions::Expression_TypeBinaryExpressionProxy {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression_UnaryExpressionProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1223,7 +1223,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Expression+UnaryExpressionProxy")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Expression_UnaryExpressionProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

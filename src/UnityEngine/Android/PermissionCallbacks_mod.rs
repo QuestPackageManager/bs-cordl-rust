@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct PermissionCallbacks {
     __cordl_parent: crate::UnityEngine::AndroidJavaProxy,
-    pub PermissionGranted: *mut crate::System::Action_1<*mut crate::System::String>,
-    pub PermissionDenied: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub PermissionGranted: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub PermissionDenied: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub PermissionDeniedAndDontAskAgain: *mut crate::System::Action_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+Android+PermissionCallbacks")]
@@ -48,7 +52,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn add_PermissionDenied(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +63,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn add_PermissionDeniedAndDontAskAgain(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +74,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn add_PermissionGranted(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +85,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn onPermissionDenied(
         &mut self,
-        permissionName: *mut crate::System::String,
+        permissionName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +96,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn onPermissionDeniedAndDontAskAgain(
         &mut self,
-        permissionName: *mut crate::System::String,
+        permissionName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +107,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn onPermissionGranted(
         &mut self,
-        permissionName: *mut crate::System::String,
+        permissionName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +118,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn remove_PermissionDenied(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -125,7 +129,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn remove_PermissionDeniedAndDontAskAgain(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +140,7 @@ impl crate::UnityEngine::Android::PermissionCallbacks {
     }
     pub fn remove_PermissionGranted(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

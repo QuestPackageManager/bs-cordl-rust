@@ -5,16 +5,16 @@ pub struct HEU_BaseSync {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _cookNodeID: i32,
     pub _sessionID: i64,
-    pub _nodeName: *mut crate::System::String,
+    pub _nodeName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _initialized: bool,
     pub _syncing: bool,
     pub _deleteParent: bool,
     pub _generatedOutputs: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
     >,
-    pub _outputCacheDirectory: *mut crate::System::String,
+    pub _outputCacheDirectory: *mut quest_hook::libil2cpp::Il2CppString,
     pub _outputCacheFilePaths: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _generateOptions: crate::HoudiniEngineUnity::HEU_GenerateOptions,
     pub _log: *mut crate::System::Text::StringBuilder,
@@ -46,7 +46,7 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_BaseSync {
 impl crate::HoudiniEngineUnity::HEU_BaseSync {
     pub fn AddGeneratedOutputFilePath(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,9 +111,9 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
             crate::HoudiniEngineUnity::HAPI_Transform,
         >,
         instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
-        instanceName: *mut crate::System::String,
+        instanceName: *mut quest_hook::libil2cpp::Il2CppString,
         collisionSourceGO: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -166,7 +166,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
     }
     pub fn Error(
         &mut self,
-        error: *mut crate::System::String,
+        error: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -305,11 +305,11 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
     }
     pub fn GetOutputCacheDirectory(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetOutputCacheDirectory", ())?;
         Ok(__cordl_ret)
     }
@@ -342,7 +342,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
     }
     pub fn Log(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -412,7 +412,7 @@ impl crate::HoudiniEngineUnity::HEU_BaseSync {
     }
     pub fn SetOutputCacheDirectory(
         &mut self,
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

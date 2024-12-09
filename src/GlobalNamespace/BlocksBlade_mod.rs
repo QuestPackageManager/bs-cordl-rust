@@ -143,7 +143,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BlocksBlade {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BlocksBlade_Element {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub idx: i32,
     pub velocity: f32,
 }
@@ -154,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BlocksBlade+Element")]
 impl std::ops::Deref for crate::GlobalNamespace::BlocksBlade_Element {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

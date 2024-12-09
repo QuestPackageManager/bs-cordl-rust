@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CustomFormatRangeValuesSlider {
     __cordl_parent: crate::HMUI::RangeValuesTextSlider,
-    pub _formatString: *mut crate::System::String,
+    pub _formatString: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HMUI+CustomFormatRangeValuesSlider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -35,11 +35,11 @@ impl crate::HMUI::CustomFormatRangeValuesSlider {
     pub fn TextForValue(
         &mut self,
         value: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TextForValue", (value))?;
         Ok(__cordl_ret)
     }

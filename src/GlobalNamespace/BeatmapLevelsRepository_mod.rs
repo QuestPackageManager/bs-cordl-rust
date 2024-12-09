@@ -2,21 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelsRepository {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapLevelPacks: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BeatmapLevelPack,
     >,
     pub _idToBeatmapLevelPack: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::BeatmapLevelPack,
     >,
     pub _idToBeatmapLevel: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::BeatmapLevel,
     >,
     pub _beatmapLevelIdToBeatmapLevelPackId: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "BeatmapLevelsRepository")]
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelsRepository")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsRepository {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,7 +41,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelsRepository {
 impl crate::GlobalNamespace::BeatmapLevelsRepository {
     pub fn GetBeatmapLevelById(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevel> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
     }
     pub fn GetBeatmapLevelPackByBeatmapLevelId(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPack> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
     }
     pub fn GetBeatmapLevelPackByPackId(
         &mut self,
-        packId: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPack> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,7 +85,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
     }
     pub fn TryGetBeatmapLevelById(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevel: quest_hook::libil2cpp::ByRefMut<
             *mut crate::GlobalNamespace::BeatmapLevel,
         >,

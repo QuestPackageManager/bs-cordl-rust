@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationGroupEffect {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _transform: *mut crate::UnityEngine::Transform,
     pub _axis: crate::GlobalNamespace::LightAxis,
     pub _mirrored: bool,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightRotationGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroupEffect {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,7 +107,7 @@ for crate::GlobalNamespace::LightRotationGroupEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightRotationGroupEffect_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
     pub axis: crate::GlobalNamespace::LightAxis,
@@ -122,7 +122,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightRotationGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightRotationGroupEffect_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -4,7 +4,7 @@
 pub struct Operand {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
     pub _type: crate::System::Xml::XPath::XPathResultType,
-    pub _val: *mut crate::System::Object,
+    pub _val: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Operand {
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Operand")]
 impl crate::MS::Internal::Xml::XPath::Operand {
-    pub fn New_String0(
-        val: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,9 +42,9 @@ impl crate::MS::Internal::Xml::XPath::Operand {
             .invoke_void(".ctor", (val))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        val: *mut crate::System::String,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

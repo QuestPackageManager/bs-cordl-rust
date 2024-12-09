@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadPoolWorkQueueThreadLocals {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub workQueue: *mut crate::System::Threading::ThreadPoolWorkQueue,
     pub workStealingQueue: *mut crate::System::Threading::ThreadPoolWorkQueue_WorkStealingQueue,
     pub random: *mut crate::System::Random,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadPoolWorkQueueThreadLocals")]
 impl std::ops::Deref for crate::System::Threading::ThreadPoolWorkQueueThreadLocals {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

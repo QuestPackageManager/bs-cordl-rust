@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ZStream {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub next_in: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub next_in_index: i32,
     pub avail_in: i32,
@@ -11,7 +11,7 @@ pub struct ZStream {
     pub next_out_index: i32,
     pub avail_out: i32,
     pub total_out: i64,
-    pub msg: *mut crate::System::String,
+    pub msg: *mut quest_hook::libil2cpp::Il2CppString,
     pub dstate: *mut crate::Org::BouncyCastle::Utilities::Zlib::Deflate,
     pub istate: *mut crate::Org::BouncyCastle::Utilities::Zlib::Inflate,
     pub data_type: i32,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+ZStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::ZStream {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GeneratedCodeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub tool: *mut crate::System::String,
-    pub version: *mut crate::System::String,
+    pub tool: *mut quest_hook::libil2cpp::Il2CppString,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,8 +28,8 @@ impl std::ops::DerefMut for crate::System::CodeDom::Compiler::GeneratedCodeAttri
 #[cfg(feature = "System+CodeDom+Compiler+GeneratedCodeAttribute")]
 impl crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
     pub fn New(
-        tool: *mut crate::System::String,
-        version: *mut crate::System::String,
+        tool: *mut quest_hook::libil2cpp::Il2CppString,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,8 +39,8 @@ impl crate::System::CodeDom::Compiler::GeneratedCodeAttribute {
     }
     pub fn _ctor(
         &mut self,
-        tool: *mut crate::System::String,
-        version: *mut crate::System::String,
+        tool: *mut quest_hook::libil2cpp::Il2CppString,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

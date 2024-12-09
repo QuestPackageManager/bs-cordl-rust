@@ -4,9 +4,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManagerRuntimeData {
-    __cordl_parent: crate::System::Object,
-    pub m_buildTarget: *mut crate::System::String,
-    pub m_SettingsHash: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_buildTarget: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SettingsHash: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_CatalogLocations: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ResourceLocationData,
     >,
@@ -18,7 +18,7 @@ pub struct ResourceManagerRuntimeData {
     pub m_DisableCatalogUpdateOnStart: bool,
     pub m_IsLocalCatalogInBundle: bool,
     pub m_CertificateHandlerType: crate::UnityEngine::ResourceManagement::Util::SerializedType,
-    pub m_AddressablesVersion: *mut crate::System::String,
+    pub m_AddressablesVersion: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_maxConcurrentWebRequests: i32,
     pub m_CatalogRequestsTimeout: i32,
 }
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRuntimeData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,21 +73,21 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
     }
     pub fn get_AddressablesVersion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AddressablesVersion", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_BuildTarget(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_BuildTarget", ())?;
         Ok(__cordl_ret)
     }
@@ -184,17 +184,17 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
     }
     pub fn get_SettingsHash(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SettingsHash", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_AddressablesVersion(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,7 +205,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
     }
     pub fn set_BuildTarget(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -293,7 +293,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::ResourceManagerRunti
     }
     pub fn set_SettingsHash(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureSubpacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::Org::BouncyCastle::Bcpg::SignatureSubpacketTag,
     pub critical: bool,
     pub isLongLength: bool,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+SignatureSubpacket")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::SignatureSubpacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

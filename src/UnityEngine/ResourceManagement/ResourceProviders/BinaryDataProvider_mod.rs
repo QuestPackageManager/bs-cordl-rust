@@ -36,11 +36,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
         &mut self,
         _cordl_type: *mut crate::System::Type,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Convert", (_cordl_type, data))?;
         Ok(__cordl_ret)
     }
@@ -107,7 +107,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvide
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryDataProvider_InternalOp {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Provider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider,
     pub m_RequestOperation: *mut crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
     pub m_RequestQueueOperation: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
@@ -129,7 +129,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvider_InternalOp {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -162,11 +162,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
     pub fn ConvertBytes(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertBytes", (data))?;
         Ok(__cordl_ret)
     }
@@ -197,7 +197,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BinaryDataProvid
     }
     pub fn SendWebRequest(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

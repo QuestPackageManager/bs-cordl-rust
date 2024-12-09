@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroupEffect {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tweeningManager: *mut crate::Tweening::SongTimeTweeningManager,
     pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _transformMask: *mut crate::System::Collections::Generic::List_1<
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffect {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -128,7 +128,7 @@ for crate::GlobalNamespace::LightTranslationGroupEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LightTranslationGroupEffect_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
     pub xMirrored: bool,
@@ -152,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LightTranslationGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::LightTranslationGroupEffect_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct LocalKeyword {
     pub m_SpaceInfo: crate::UnityEngine::Rendering::LocalKeywordSpace,
-    pub m_Name: *mut crate::System::String,
+    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Index: u32,
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
@@ -24,6 +24,17 @@ for crate::UnityEngine::Rendering::LocalKeyword {
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeyword")]
 impl crate::UnityEngine::Rendering::LocalKeyword {
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_LocalKeyword1(
         &mut self,
         rhs: crate::UnityEngine::Rendering::LocalKeyword,
@@ -32,17 +43,6 @@ impl crate::UnityEngine::Rendering::LocalKeyword {
             self,
             "Equals",
             (rhs),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
         )?;
         Ok(__cordl_ret)
     }
@@ -56,8 +56,8 @@ impl crate::UnityEngine::Rendering::LocalKeyword {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AssemblyProductAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Product_k__BackingField: *mut crate::System::String,
+    pub _Product_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Reflection+AssemblyProductAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Reflection::AssemblyProductAttribute 
 #[cfg(feature = "System+Reflection+AssemblyProductAttribute")]
 impl crate::System::Reflection::AssemblyProductAttribute {
     pub fn New(
-        product: *mut crate::System::String,
+        product: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::System::Reflection::AssemblyProductAttribute {
     }
     pub fn _ctor(
         &mut self,
-        product: *mut crate::System::String,
+        product: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

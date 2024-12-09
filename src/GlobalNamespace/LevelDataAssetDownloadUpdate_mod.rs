@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct LevelDataAssetDownloadUpdate {
-    pub levelID: *mut crate::System::String,
+    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
     pub bytesTotal: u32,
     pub bytesTransferred: u32,
     pub assetDownloadingState: crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState,
@@ -29,7 +29,7 @@ impl crate::GlobalNamespace::LevelDataAssetDownloadUpdate {
     pub type AssetDownloadingState = crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState;
     pub fn _ctor(
         &mut self,
-        levelID: *mut crate::System::String,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         bytesTotal: u32,
         bytesTransferred: u32,
         assetDownloadingState: crate::GlobalNamespace::LevelDataAssetDownloadUpdate_AssetDownloadingState,

@@ -7,7 +7,7 @@ pub struct PersonalData {
     pub nameDistinguisher: *mut crate::Org::BouncyCastle::Math::BigInteger,
     pub dateOfBirth: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
     pub placeOfBirth: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-    pub gender: *mut crate::System::String,
+    pub gender: *mut quest_hook::libil2cpp::Il2CppString,
     pub postalAddress: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+SigI+PersonalData")]
@@ -40,12 +40,12 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::PersonalData {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object)
     }
-    pub fn New_NameOrPseudonym_BigInteger_DerGeneralizedTime_DirectoryString_String_DirectoryString1(
+    pub fn New_NameOrPseudonym_BigInteger_DerGeneralizedTime_DirectoryString_Il2CppString_DirectoryString1(
         nameOrPseudonym: *mut crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym,
         nameDistinguisher: *mut crate::Org::BouncyCastle::Math::BigInteger,
         dateOfBirth: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
         placeOfBirth: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-        gender: *mut crate::System::String,
+        gender: *mut quest_hook::libil2cpp::Il2CppString,
         postalAddress: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -85,13 +85,13 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::PersonalData {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_NameOrPseudonym_BigInteger_DerGeneralizedTime_DirectoryString_String_DirectoryString1(
+    pub fn _ctor_NameOrPseudonym_BigInteger_DerGeneralizedTime_DirectoryString_Il2CppString_DirectoryString1(
         &mut self,
         nameOrPseudonym: *mut crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym,
         nameDistinguisher: *mut crate::Org::BouncyCastle::Math::BigInteger,
         dateOfBirth: *mut crate::Org::BouncyCastle::Asn1::DerGeneralizedTime,
         placeOfBirth: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
-        gender: *mut crate::System::String,
+        gender: *mut quest_hook::libil2cpp::Il2CppString,
         postalAddress: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -125,11 +125,11 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::PersonalData {
     }
     pub fn get_Gender(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Gender", ())?;
         Ok(__cordl_ret)
     }

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ApplicationInvite {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub DestinationOptional: *mut crate::Oculus::Platform::Models::Destination,
     pub Destination: *mut crate::Oculus::Platform::Models::Destination,
     pub _cordl_ID: u64,
     pub IsActive: bool,
-    pub LobbySessionId: *mut crate::System::String,
-    pub MatchSessionId: *mut crate::System::String,
+    pub LobbySessionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub MatchSessionId: *mut quest_hook::libil2cpp::Il2CppString,
     pub RecipientOptional: *mut crate::Oculus::Platform::Models::User,
     pub Recipient: *mut crate::Oculus::Platform::Models::User,
 }
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+ApplicationInvite")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::ApplicationInvite {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

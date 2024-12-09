@@ -106,7 +106,7 @@ impl crate::System::Security::Cryptography::DSACryptoServiceProvider {
     }
     pub fn OnKeyGenerated(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::EventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

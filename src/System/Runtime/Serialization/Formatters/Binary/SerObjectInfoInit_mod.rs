@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerObjectInfoInit {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub seenBeforeTable: *mut crate::System::Collections::Hashtable,
     pub objectInfoIdCount: i32,
     pub oiPool: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+SerObjectInfoInit")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::SerObjectInfoInit {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

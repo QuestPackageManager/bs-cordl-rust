@@ -56,7 +56,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialData {
     pub fn UpdateMaterialFromHoudini(
         &mut self,
         materialInfo: crate::HoudiniEngineUnity::HAPI_MaterialInfo,
-        assetCacheFolderPath: *mut crate::System::String,
+        assetCacheFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,7 +68,7 @@ impl crate::HoudiniEngineUnity::HEU_MaterialData {
     pub fn UseLegacyShaders(
         &mut self,
         materialInfo: crate::HoudiniEngineUnity::HAPI_MaterialInfo,
-        assetCacheFolderPath: *mut crate::System::String,
+        assetCacheFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         nodeInfo: crate::HoudiniEngineUnity::HAPI_NodeInfo,
         parmInfos: *mut quest_hook::libil2cpp::Il2CppArray<

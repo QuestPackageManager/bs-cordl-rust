@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct PlatformSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub ovrAppID: *mut crate::System::String,
-    pub ovrMobileAppID: *mut crate::System::String,
+    pub ovrAppID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ovrMobileAppID: *mut quest_hook::libil2cpp::Il2CppString,
     pub ovrUseStandalonePlatform: bool,
 }
 #[cfg(feature = "Oculus+Platform+PlatformSettings")]

@@ -7,7 +7,7 @@ pub struct DebugView_InstructionList_InstructionView {
     pub _index: i32,
     pub _stackDepth: i32,
     pub _continuationsDepth: i32,
-    pub _name: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _instruction: *mut crate::System::Linq::Expressions::Interpreter::Instruction,
 }
 #[cfg(
@@ -37,8 +37,8 @@ for crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_Ins
 impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_InstructionView {
     pub fn GetValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetValue",
             (),
@@ -48,7 +48,7 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
     pub fn _ctor(
         &mut self,
         instruction: *mut crate::System::Linq::Expressions::Interpreter::Instruction,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         index: i32,
         stackDepth: i32,
         continuationsDepth: i32,
@@ -65,12 +65,12 @@ impl crate::System::Linq::Expressions::Interpreter::DebugView_InstructionList_In
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionList {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _instructions: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Linq::Expressions::Interpreter::Instruction,
     >,
     pub _objects: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _currentStackDepth: i32,
     pub _maxStackDepth: i32,
@@ -83,7 +83,7 @@ pub struct InstructionList {
     pub _debugCookies: *mut crate::System::Collections::Generic::List_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             i32,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     >,
 }
@@ -95,7 +95,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::InstructionList {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -768,9 +768,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitLoadLocalFromClosureBoxed", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn EmitLoad_Object0(
+    pub fn EmitLoad_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -779,9 +779,9 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
             .invoke("EmitLoad", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn EmitLoad_Object_Type2(
+    pub fn EmitLoad_Il2CppObject_Type2(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1079,7 +1079,7 @@ impl crate::System::Linq::Expressions::Interpreter::InstructionList {
     pub fn EmitStringSwitch(
         &mut self,
         cases: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             i32,
         >,
         nullCase: *mut crate::System::Runtime::CompilerServices::StrongBox_1<i32>,
@@ -1334,7 +1334,7 @@ for crate::System::Linq::Expressions::Interpreter::InstructionList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstructionList_DebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1345,7 +1345,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InstructionList+DebugView")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InstructionList_DebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

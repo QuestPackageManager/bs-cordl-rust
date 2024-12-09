@@ -2,24 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SceneStartHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
     pub _playersAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     pub _readyPlayers: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _playersSpecificSettings: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
     >,
     pub _started: bool,
-    pub _sessionGameId: *mut crate::System::String,
+    pub _sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     pub sceneSetupDidFinishEvent: *mut crate::System::Action_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub sceneSetupDidReceiveTooLateEvent: *mut crate::System::Action_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "SceneStartHandler")]
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SceneStartHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::SceneStartHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn HandleGetGameplaySceneReady(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn HandleSetGameplaySceneReady(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -123,9 +123,9 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn HandleSetGameplaySceneSyncFinished(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         playersAtGameStart: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-        sessionId: *mut crate::System::String,
+        sessionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,10 +139,10 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn HandleSetPlayerDidConnectLate(
         &mut self,
-        userId: *mut crate::System::String,
-        failedUserId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        failedUserId: *mut quest_hook::libil2cpp::Il2CppString,
         playersAtGameStart: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
-        sessionId: *mut crate::System::String,
+        sessionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn add_sceneSetupDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -197,7 +197,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn add_sceneSetupDidReceiveTooLateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -208,7 +208,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn remove_sceneSetupDidFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -219,7 +219,7 @@ impl crate::GlobalNamespace::SceneStartHandler {
     }
     pub fn remove_sceneSetupDidReceiveTooLateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

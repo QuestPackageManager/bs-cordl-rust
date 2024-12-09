@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Record {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sortOrder: i32,
-    pub category: *mut crate::System::String,
-    pub message: *mut crate::System::String,
+    pub category: *mut quest_hook::libil2cpp::Il2CppString,
+    pub message: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Assets+OVR+Scripts+Record")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Assets+OVR+Scripts+Record")]
 impl std::ops::Deref for crate::Assets::OVR::Scripts::Record {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,8 +29,8 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::Record {
 impl crate::Assets::OVR::Scripts::Record {
     pub fn New(
         order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        cat: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,8 +41,8 @@ impl crate::Assets::OVR::Scripts::Record {
     pub fn _ctor(
         &mut self,
         order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        cat: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

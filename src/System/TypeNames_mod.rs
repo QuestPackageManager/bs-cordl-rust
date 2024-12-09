@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeNames {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+TypeNames")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TypeNames")]
 impl std::ops::Deref for crate::System::TypeNames {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::TypeNames {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeNames_ATypeName {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -48,7 +48,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl std::ops::Deref for crate::System::TypeNames_ATypeName {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,9 +61,9 @@ impl std::ops::DerefMut for crate::System::TypeNames_ATypeName {
 }
 #[cfg(feature = "System+TypeNames+ATypeName")]
 impl crate::System::TypeNames_ATypeName {
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,11 +107,11 @@ impl crate::System::TypeNames_ATypeName {
     }
     pub fn get_DisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DisplayName", ())?;
         Ok(__cordl_ret)
     }

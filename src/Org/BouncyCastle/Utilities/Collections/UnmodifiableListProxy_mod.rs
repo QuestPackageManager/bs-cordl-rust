@@ -30,7 +30,7 @@ for crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
 impl crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     pub fn Contains(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,17 +63,17 @@ impl crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     pub fn GetValue(
         &mut self,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (i))?;
         Ok(__cordl_ret)
     }
     pub fn IndexOf(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,11 +124,11 @@ impl crate::Org::BouncyCastle::Utilities::Collections::UnmodifiableListProxy {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }

@@ -55,21 +55,21 @@ impl crate::System::Xml::Serialization::ClassMap {
     }
     pub fn BuildKey(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         explicitOrder: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("BuildKey", (name, ns, explicitOrder))?;
         Ok(__cordl_ret)
     }
     pub fn GetAttribute(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapMemberAttribute,
     > {
@@ -80,10 +80,10 @@ impl crate::System::Xml::Serialization::ClassMap {
             .invoke("GetAttribute", (name, ns))?;
         Ok(__cordl_ret)
     }
-    pub fn GetElement_String_String1(
+    pub fn GetElement_Il2CppString_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,
     > {
@@ -96,8 +96,8 @@ impl crate::System::Xml::Serialization::ClassMap {
     }
     pub fn GetElement_i32_0(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         minimalOrder: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapElementInfo,

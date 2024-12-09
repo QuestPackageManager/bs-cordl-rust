@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspResp {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub resp: *mut crate::Org::BouncyCastle::Asn1::Ocsp::OcspResponse,
 }
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspResp")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspResp")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspResp {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Ocsp::OcspResp {
 impl crate::Org::BouncyCastle::Ocsp::OcspResp {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,11 +54,11 @@ impl crate::Org::BouncyCastle::Ocsp::OcspResp {
     }
     pub fn GetResponseObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetResponseObject", ())?;
         Ok(__cordl_ret)
     }

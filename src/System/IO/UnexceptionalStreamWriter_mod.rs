@@ -68,9 +68,9 @@ impl crate::System::IO::UnexceptionalStreamWriter {
             .invoke("Write", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn Write_String3(
+    pub fn Write_Il2CppString3(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

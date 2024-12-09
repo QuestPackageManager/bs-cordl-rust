@@ -36,7 +36,7 @@ impl<
 > crate::UnityEngine::UIElements::UxmlTypeAttributeDescription_1<TBase> {
     pub fn ConvertValueToType(
         &mut self,
-        v: *mut crate::System::String,
+        v: *mut quest_hook::libil2cpp::Il2CppString,
         defaultValue: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type>
     where
@@ -79,7 +79,7 @@ impl<
     }
     pub fn _GetValueFromBag_b__3_0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         type1: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type>
     where

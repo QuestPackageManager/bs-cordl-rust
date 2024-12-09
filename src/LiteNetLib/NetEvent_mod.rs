@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetEvent {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::LiteNetLib::NetEvent_EType,
     pub Peer: *mut crate::LiteNetLib::NetPeer,
     pub RemoteEndPoint: *mut crate::System::Net::IPEndPoint,
-    pub UserData: *mut crate::System::Object,
+    pub UserData: *mut quest_hook::libil2cpp::Il2CppObject,
     pub Latency: i32,
     pub ErrorCode: crate::System::Net::Sockets::SocketError,
     pub DisconnectReason: crate::LiteNetLib::DisconnectReason,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NetEvent")]
 impl std::ops::Deref for crate::LiteNetLib::NetEvent {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

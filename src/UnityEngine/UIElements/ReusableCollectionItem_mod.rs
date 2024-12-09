@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReusableCollectionItem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindableElement_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
     pub _animator_k__BackingField: *mut crate::UnityEngine::UIElements::Experimental::ValueAnimation_1<
         crate::UnityEngine::UIElements::Experimental::StyleValues,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+ReusableCollectionItem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ReusableCollectionItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

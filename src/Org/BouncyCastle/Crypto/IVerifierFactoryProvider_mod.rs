@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IVerifierFactoryPr
 impl crate::Org::BouncyCastle::Crypto::IVerifierFactoryProvider {
     pub fn CreateVerifierFactory(
         &mut self,
-        algorithmDetails: *mut crate::System::Object,
+        algorithmDetails: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::IVerifierFactory,
     > {

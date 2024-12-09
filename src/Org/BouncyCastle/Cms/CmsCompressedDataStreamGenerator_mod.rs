@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsCompressedDataStreamGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bufferSize: i32,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsCompressedDataStreamGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,29 +40,29 @@ impl crate::Org::BouncyCastle::Cms::CmsCompressedDataStreamGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn Open_Stream_String0(
+    pub fn Open_Il2CppString1(
         &mut self,
         outStream: *mut crate::System::IO::Stream,
-        compressionOID: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
-            .invoke("Open", (outStream, compressionOID))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Open_String1(
-        &mut self,
-        outStream: *mut crate::System::IO::Stream,
-        contentOID: *mut crate::System::String,
-        compressionOID: *mut crate::System::String,
+        contentOID: *mut quest_hook::libil2cpp::Il2CppString,
+        compressionOID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
             .invoke("Open", (outStream, contentOID, compressionOID))?;
+        Ok(__cordl_ret)
+    }
+    pub fn Open_Stream_Il2CppString0(
+        &mut self,
+        outStream: *mut crate::System::IO::Stream,
+        compressionOID: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::IO::Stream = __cordl_object
+            .invoke("Open", (outStream, compressionOID))?;
         Ok(__cordl_ret)
     }
     pub fn SetBufferSize(

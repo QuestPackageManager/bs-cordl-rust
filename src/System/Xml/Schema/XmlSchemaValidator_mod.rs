@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaValidator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub schemaSet: *mut crate::System::Xml::Schema::XmlSchemaSet,
     pub validationFlags: crate::System::Xml::Schema::XmlSchemaValidationFlags,
     pub startIDConstraint: i32,
@@ -21,26 +21,26 @@ pub struct XmlSchemaValidator {
     pub IDs: *mut crate::System::Collections::Hashtable,
     pub idRefListHead: *mut crate::System::Xml::Schema::IdRefNode,
     pub contextQName: *mut crate::System::Xml::XmlQualifiedName,
-    pub NsXs: *mut crate::System::String,
-    pub NsXsi: *mut crate::System::String,
-    pub NsXmlNs: *mut crate::System::String,
-    pub NsXml: *mut crate::System::String,
+    pub NsXs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXmlNs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXml: *mut quest_hook::libil2cpp::Il2CppString,
     pub partialValidationType: *mut crate::System::Xml::Schema::XmlSchemaObject,
     pub textValue: *mut crate::System::Text::StringBuilder,
     pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
-    pub validationEventSender: *mut crate::System::Object,
+    pub validationEventSender: *mut quest_hook::libil2cpp::Il2CppObject,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
     pub positionInfo: *mut crate::System::Xml::IXmlLineInfo,
     pub dummyPositionInfo: *mut crate::System::Xml::IXmlLineInfo,
     pub xmlResolver: *mut crate::System::Xml::XmlResolver,
     pub sourceUri: *mut crate::System::Uri,
-    pub sourceUriString: *mut crate::System::String,
+    pub sourceUriString: *mut quest_hook::libil2cpp::Il2CppString,
     pub nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
     pub processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
-    pub xsiTypeString: *mut crate::System::String,
-    pub xsiNilString: *mut crate::System::String,
-    pub xsiSchemaLocationString: *mut crate::System::String,
-    pub xsiNoNamespaceSchemaLocationString: *mut crate::System::String,
+    pub xsiTypeString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xsiNilString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xsiSchemaLocationString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub xsiNoNamespaceSchemaLocationString: *mut quest_hook::libil2cpp::Il2CppString,
     pub xmlCharType: crate::System::Xml::XmlCharType,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaValidator")]
@@ -50,7 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaValidator")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaValidator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,10 +96,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn AttributeIdentityConstraints(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        obj: *mut crate::System::Object,
-        sobj: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        sobj: *mut quest_hook::libil2cpp::Il2CppString,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -111,13 +111,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn CheckAttributeValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("CheckAttributeValue", (value, attdef))?;
         Ok(__cordl_ret)
     }
@@ -133,12 +133,12 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn CheckElementValue(
         &mut self,
-        stringValue: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        stringValue: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("CheckElementValue", (stringValue))?;
         Ok(__cordl_ret)
     }
@@ -165,12 +165,12 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn CheckMixedValueConstraint(
         &mut self,
-        elementValue: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        elementValue: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("CheckMixedValueConstraint", (elementValue))?;
         Ok(__cordl_ret)
     }
@@ -188,7 +188,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn CheckStateTransition(
         &mut self,
         toState: crate::System::Xml::Schema::ValidatorState,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -200,7 +200,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn CheckTokenizedTypes(
         &mut self,
         dtype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
-        typedValue: *mut crate::System::Object,
+        typedValue: *mut quest_hook::libil2cpp::Il2CppObject,
         attrValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,8 +213,8 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn CheckXsiTypeAndNil(
         &mut self,
         elementDecl: *mut crate::System::Xml::Schema::SchemaElementDecl,
-        xsiType: *mut crate::System::String,
-        xsiNil: *mut crate::System::String,
+        xsiType: *mut quest_hook::libil2cpp::Il2CppString,
+        xsiNil: *mut quest_hook::libil2cpp::Il2CppString,
         declFound: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::SchemaElementDecl,
@@ -248,8 +248,8 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn EndElementIdentityConstraints(
         &mut self,
-        typedValue: *mut crate::System::Object,
-        stringValue: *mut crate::System::String,
+        typedValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        stringValue: *mut quest_hook::libil2cpp::Il2CppString,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -275,7 +275,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn FastGetElementDecl(
         &mut self,
         elementName: *mut crate::System::Xml::XmlQualifiedName,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::SchemaElementDecl,
     > {
@@ -288,33 +288,33 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn FindId(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("FindId", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetConcatenatedValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetConcatenatedValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetDefaultAttributePrefix(
         &mut self,
-        attributeNS: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        attributeNS: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetDefaultAttributePrefix", (attributeNS))?;
         Ok(__cordl_ret)
     }
@@ -346,11 +346,11 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn GetTypeName(
         &mut self,
         decl: *mut crate::System::Xml::Schema::SchemaDeclBase,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTypeName", (decl))?;
         Ok(__cordl_ret)
     }
@@ -403,19 +403,19 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn InternalValidateEndElement(
         &mut self,
         schemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
-        typedValue: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        typedValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("InternalValidateEndElement", (schemaInfo, typedValue))?;
         Ok(__cordl_ret)
     }
     pub fn LoadSchema(
         &mut self,
-        uri: *mut crate::System::String,
-        url: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -448,7 +448,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn ProcessEntity(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -459,8 +459,8 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn ProcessSchemaLocations(
         &mut self,
-        xsiSchemaLocation: *mut crate::System::String,
-        xsiNoNamespaceSchemaLocation: *mut crate::System::String,
+        xsiSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+        xsiNoNamespaceSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -475,7 +475,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     pub fn ProcessTokenizedType(
         &mut self,
         ttype: crate::System::Xml::XmlTokenizedType,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -518,7 +518,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn SaveTextValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -527,9 +527,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SaveTextValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String0(
+    pub fn SendValidationEvent_Il2CppString0(
         &mut self,
-        code: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -538,10 +538,12 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SendValidationEvent", (code))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_Il2CppArray1(
+    pub fn SendValidationEvent_Il2CppString_Il2CppArray1(
         &mut self,
-        code: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -550,10 +552,12 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SendValidationEvent", (code, args))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_Il2CppArray_Exception5(
+    pub fn SendValidationEvent_Il2CppString_Il2CppArray_Exception5(
         &mut self,
-        code: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -563,10 +567,12 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SendValidationEvent", (code, args, innerException))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_Il2CppArray_Exception_XmlSeverityType4(
+    pub fn SendValidationEvent_Il2CppString_Il2CppArray_Exception_XmlSeverityType4(
         &mut self,
-        code: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         innerException: *mut crate::System::Exception,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -577,10 +583,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SendValidationEvent", (code, args, innerException, severity))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String2(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString2(
         &mut self,
-        code: *mut crate::System::String,
-        arg: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        arg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -589,11 +595,11 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SendValidationEvent", (code, arg))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String_String3(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString_Il2CppString3(
         &mut self,
-        code: *mut crate::System::String,
-        arg1: *mut crate::System::String,
-        arg2: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        arg1: *mut quest_hook::libil2cpp::Il2CppString,
+        arg2: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -602,10 +608,10 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("SendValidationEvent", (code, arg1, arg2))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String_XmlSeverityType8(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString_XmlSeverityType8(
         &mut self,
-        code: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -682,46 +688,46 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("ThrowDeclNotFoundWarningOrError", (declFound))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateAtomicValue_Object1(
+    pub fn ValidateAtomicValue_Il2CppObject1(
         &mut self,
-        parsedValue: *mut crate::System::Object,
+        parsedValue: *mut quest_hook::libil2cpp::Il2CppObject,
         memberType: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ValidateAtomicValue", (parsedValue, memberType))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateAtomicValue_String0(
+    pub fn ValidateAtomicValue_Il2CppString0(
         &mut self,
-        stringValue: *mut crate::System::String,
+        stringValue: *mut quest_hook::libil2cpp::Il2CppString,
         memberType: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ValidateAtomicValue", (stringValue, memberType))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateAttribute_String_XmlSchemaInfo1(
+    pub fn ValidateAttribute_Il2CppString_XmlSchemaInfo1(
         &mut self,
-        lName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        lName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         attributeValueGetter: *mut crate::System::Xml::Schema::XmlValueGetter,
-        attributeStringValue: *mut crate::System::String,
+        attributeStringValue: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "ValidateAttribute",
                 (lName, ns, attributeValueGetter, attributeStringValue, schemaInfo),
@@ -730,15 +736,15 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn ValidateAttribute_XmlSchemaInfo0(
         &mut self,
-        localName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
         attributeValue: *mut crate::System::Xml::Schema::XmlValueGetter,
         schemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "ValidateAttribute",
                 (localName, namespaceUri, attributeValue, schemaInfo),
@@ -747,13 +753,13 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn ValidateElement(
         &mut self,
-        localName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
-        xsiType: *mut crate::System::String,
-        xsiNil: *mut crate::System::String,
-        xsiSchemaLocation: *mut crate::System::String,
-        xsiNoNamespaceSchemaLocation: *mut crate::System::String,
+        xsiType: *mut quest_hook::libil2cpp::Il2CppString,
+        xsiNil: *mut quest_hook::libil2cpp::Il2CppString,
+        xsiSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+        xsiNoNamespaceSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -777,22 +783,22 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
         &mut self,
         elementName: *mut crate::System::Xml::XmlQualifiedName,
         invalidElementInContext: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ValidateElementContext", (elementName, invalidElementInContext))?;
         Ok(__cordl_ret)
     }
     pub fn ValidateEndElement(
         &mut self,
         schemaInfo: *mut crate::System::Xml::Schema::XmlSchemaInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ValidateEndElement", (schemaInfo))?;
         Ok(__cordl_ret)
     }
@@ -817,9 +823,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("ValidateStartElementIdentityConstraints", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateText_String_XmlValueGetter1(
+    pub fn ValidateText_Il2CppString_XmlValueGetter1(
         &mut self,
-        elementStringValue: *mut crate::System::String,
+        elementStringValue: *mut quest_hook::libil2cpp::Il2CppString,
         elementValueGetter: *mut crate::System::Xml::Schema::XmlValueGetter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -840,9 +846,9 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
             .invoke("ValidateText", (elementValue))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateWhitespace_String_XmlValueGetter1(
+    pub fn ValidateWhitespace_Il2CppString_XmlValueGetter1(
         &mut self,
-        elementStringValue: *mut crate::System::String,
+        elementStringValue: *mut quest_hook::libil2cpp::Il2CppString,
         elementValueGetter: *mut crate::System::Xml::Schema::XmlValueGetter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1005,7 +1011,7 @@ impl crate::System::Xml::Schema::XmlSchemaValidator {
     }
     pub fn set_ValidationEventSender(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

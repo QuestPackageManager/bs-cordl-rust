@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerResultsData {
-    __cordl_parent: crate::System::Object,
-    pub _gameId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _gameId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _localPlayerResultData: *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
     pub _otherPlayersData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::GlobalNamespace::MultiplayerPlayerResultsData,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerResultsData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerResultsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,10 +33,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerResultsData {
 #[cfg(feature = "MultiplayerResultsData")]
 impl crate::GlobalNamespace::MultiplayerResultsData {
     pub fn New(
-        gameId: *mut crate::System::String,
+        gameId: *mut quest_hook::libil2cpp::Il2CppString,
         localPlayerResultData: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         otherPlayersResultData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         badgesProvider: *mut crate::GlobalNamespace::MultiplayerBadgesProvider,
@@ -59,10 +59,10 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
     }
     pub fn _ctor(
         &mut self,
-        gameId: *mut crate::System::String,
+        gameId: *mut quest_hook::libil2cpp::Il2CppString,
         localPlayerResultData: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         otherPlayersResultData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
         badgesProvider: *mut crate::GlobalNamespace::MultiplayerBadgesProvider,
@@ -101,11 +101,11 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
     }
     pub fn get_gameId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_gameId", ())?;
         Ok(__cordl_ret)
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacySettingsModel {
-    __cordl_parent: crate::System::Object,
-    pub version: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
     pub windowResolutionWidth: i32,
     pub windowResolutionHeight: i32,
     pub editorResolutionWidth: i32,
@@ -19,7 +19,7 @@ pub struct LegacySettingsModel {
     pub burnMarkTrailsEnabled: bool,
     pub screenDisplacementEffectsEnabled: bool,
     pub obstaclesQuality: i32,
-    pub performancePresetKey: *mut crate::System::String,
+    pub performancePresetKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub roomCenterX: f32,
     pub roomCenterY: f32,
     pub roomCenterZ: f32,
@@ -43,7 +43,7 @@ pub struct LegacySettingsModel {
     pub smoothCameraPositionSmooth: f32,
     pub useCustomServerEnvironment: bool,
     pub forceGameLiftServerEnvironment: bool,
-    pub customServerHostName: *mut crate::System::String,
+    pub customServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
     pub useFixedFoveatedRenderingDuringGameplay: bool,
     pub gpuLevel: i32,
     pub cpuLevel: i32,
@@ -57,7 +57,7 @@ pub struct LegacySettingsModel {
     pub overrideAudioLatency: bool,
     pub audioLatency: f32,
     pub maxNumberOfCutSoundEffects: i32,
-    pub language: *mut crate::System::String,
+    pub language: *mut quest_hook::libil2cpp::Il2CppString,
     pub enableFPSCounter: bool,
     pub enableFPSRecorder: bool,
     pub enableMemoryTracker: bool,
@@ -70,7 +70,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+GameSettings+LegacySettingsModel")]
 impl std::ops::Deref for crate::BeatSaber::GameSettings::LegacySettingsModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

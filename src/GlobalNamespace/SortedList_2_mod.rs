@@ -5,7 +5,7 @@ pub struct SortedList_2<
     T: quest_hook::libil2cpp::Type,
     TBase: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: *mut crate::System::Collections::Generic::LinkedList_1<TBase>,
     pub _sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
         TBase,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SortedList_2")]
 impl<T: quest_hook::libil2cpp::Type, TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::SortedList_2<T, TBase> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

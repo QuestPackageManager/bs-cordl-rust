@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Type1Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
-    pub _host: *mut crate::System::String,
-    pub _domain: *mut crate::System::String,
+    pub _host: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _domain: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type1Message")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -66,7 +66,7 @@ impl crate::Mono::Security::Protocol::Ntlm::Type1Message {
     }
     pub fn set_Domain(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +77,7 @@ impl crate::Mono::Security::Protocol::Ntlm::Type1Message {
     }
     pub fn set_Host(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::LoadResourceFunction
 impl crate::UnityEngine::UIElements::LoadResourceFunction {
     pub fn Invoke(
         &mut self,
-        pathName: *mut crate::System::String,
+        pathName: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
         dpiScaling: f32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Object> {
@@ -38,7 +38,7 @@ impl crate::UnityEngine::UIElements::LoadResourceFunction {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -49,7 +49,7 @@ impl crate::UnityEngine::UIElements::LoadResourceFunction {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

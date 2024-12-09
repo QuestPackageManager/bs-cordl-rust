@@ -72,9 +72,9 @@ impl crate::System::Xml::XmlUnspecifiedAttribute {
         Ok(__cordl_ret)
     }
     pub fn New(
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
         doc: *mut crate::System::Xml::XmlDocument,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -118,9 +118,9 @@ impl crate::System::Xml::XmlUnspecifiedAttribute {
     }
     pub fn _ctor(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
         doc: *mut crate::System::Xml::XmlDocument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -139,7 +139,7 @@ impl crate::System::Xml::XmlUnspecifiedAttribute {
     }
     pub fn set_InnerText(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

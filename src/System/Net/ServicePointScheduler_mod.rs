@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePointScheduler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ServicePoint_k__BackingField: *mut crate::System::Net::ServicePoint,
     pub running: i32,
     pub maxIdleTime: i32,
     pub schedulerEvent: *mut crate::System::Net::ServicePointScheduler_AsyncManualResetEvent,
     pub defaultGroup: *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
     pub groups: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
     >,
     pub operations: *mut crate::System::Collections::Generic::LinkedList_1<
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServicePointScheduler")]
 impl std::ops::Deref for crate::System::Net::ServicePointScheduler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,7 @@ impl crate::System::Net::ServicePointScheduler {
     }
     pub fn CloseConnectionGroup(
         &mut self,
-        groupName: *mut crate::System::String,
+        groupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +103,7 @@ impl crate::System::Net::ServicePointScheduler {
     }
     pub fn GetConnectionGroup(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Net::ServicePointScheduler_ConnectionGroup,
     > {
@@ -221,7 +221,7 @@ impl crate::System::Net::ServicePointScheduler {
     pub fn SendRequest(
         &mut self,
         operation: *mut crate::System::Net::WebOperation,
-        groupName: *mut crate::System::String,
+        groupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -295,7 +295,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointSched
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePointScheduler_AsyncManualResetEvent {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_tcs: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<bool>,
 }
 #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
@@ -307,7 +307,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+ServicePointScheduler+AsyncManualResetEvent")]
 impl std::ops::Deref
 for crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -386,9 +386,9 @@ for crate::System::Net::ServicePointScheduler_AsyncManualResetEvent {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePointScheduler_ConnectionGroup {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Scheduler_k__BackingField: *mut crate::System::Net::ServicePointScheduler,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_ID: i32,
     pub connections: *mut crate::System::Collections::Generic::LinkedList_1<
         *mut crate::System::Net::WebConnection,
@@ -405,7 +405,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServicePointScheduler+ConnectionGroup")]
 impl std::ops::Deref for crate::System::Net::ServicePointScheduler_ConnectionGroup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -495,7 +495,7 @@ impl crate::System::Net::ServicePointScheduler_ConnectionGroup {
     }
     pub fn New(
         scheduler: *mut crate::System::Net::ServicePointScheduler,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -517,7 +517,7 @@ impl crate::System::Net::ServicePointScheduler_ConnectionGroup {
     pub fn _ctor(
         &mut self,
         scheduler: *mut crate::System::Net::ServicePointScheduler,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

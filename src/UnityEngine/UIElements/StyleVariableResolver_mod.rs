@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleVariableResolver {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Matcher: *mut crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher,
     pub m_ResolvedValues: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::UIElements::StyleSheets::StylePropertyValue,
     >,
     pub m_ResolvedVarStack: *mut crate::System::Collections::Generic::Stack_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_Property: *mut crate::UnityEngine::UIElements::StyleProperty,
     pub m_ContextStack: *mut crate::System::Collections::Generic::Stack_1<
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableResolver")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleVariableResolver {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -122,11 +122,11 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
         let __cordl_ret: bool = __cordl_object.invoke("ResolveVarFunction", (index))?;
         Ok(__cordl_ret)
     }
-    pub fn ResolveVarFunction_i32_String1(
+    pub fn ResolveVarFunction_i32_Il2CppString1(
         &mut self,
         index: quest_hook::libil2cpp::ByRefMut<i32>,
         argc: i32,
-        varName: *mut crate::System::String,
+        varName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleVariableResolver_Result,
     > {
@@ -139,7 +139,7 @@ impl crate::UnityEngine::UIElements::StyleVariableResolver {
     }
     pub fn ResolveVariable(
         &mut self,
-        variableName: *mut crate::System::String,
+        variableName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::StyleVariableResolver_Result,
     > {

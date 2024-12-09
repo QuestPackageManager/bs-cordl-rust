@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SimpleCollator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub textInfo: *mut crate::System::Globalization::TextInfo,
     pub cjkIndexer: *mut crate::Mono::Globalization::Unicode::CodePointIndexer,
     pub contractions: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+SimpleCollator")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::SimpleCollator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,10 +68,10 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn Compare(
         &mut self,
-        s1: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
         idx1: i32,
         len1: i32,
-        s2: *mut crate::System::String,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
         idx2: i32,
         len2: i32,
         options: crate::System::Globalization::CompareOptions,
@@ -96,10 +96,10 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn CompareInternal(
         &mut self,
-        s1: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
         idx1: i32,
         len1: i32,
-        s2: *mut crate::System::String,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
         idx2: i32,
         len2: i32,
         targetConsumed: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -183,7 +183,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn GetContraction_Il2CppArray1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
         clist: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -199,9 +199,9 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("GetContraction", (s, start, end, clist))?;
         Ok(__cordl_ret)
     }
-    pub fn GetContraction_String_i32_i32_0(
+    pub fn GetContraction_Il2CppString_i32_i32_0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -229,7 +229,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn GetSortKey_CompareOptions0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::SortKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -241,7 +241,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn GetSortKey_i32_i32_CompareOptions1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         options: crate::System::Globalization::CompareOptions,
@@ -255,7 +255,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn GetSortKey_i32_i32_SortKeyBuffer_CompareOptions2(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
         buf: *mut crate::Mono::Globalization::Unicode::SortKeyBuffer,
@@ -270,7 +270,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn GetTailContraction_Il2CppArray1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
         clist: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -286,9 +286,9 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("GetTailContraction", (s, start, end, clist))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTailContraction_String_i32_i32_0(
+    pub fn GetTailContraction_Il2CppString_i32_i32_0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -301,10 +301,10 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
             .invoke("GetTailContraction", (s, start, end))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOfOrdinal_String0(
+    pub fn IndexOfOrdinal_Il2CppString0(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -317,7 +317,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IndexOfOrdinal__cordl_char1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         target: char,
         start: i32,
         length: i32,
@@ -331,7 +331,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IndexOfSortKey(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         sortkey: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -354,8 +354,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IndexOf_CompareOptions0(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
@@ -369,8 +369,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IndexOf_Il2CppObject_ByRefMut1(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         targetSortKey: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -387,8 +387,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IsPrefix_CompareOptions0(
         &mut self,
-        src: *mut crate::System::String,
-        target: *mut crate::System::String,
+        src: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -399,8 +399,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IsPrefix_i32_i32_CompareOptions1(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
@@ -414,8 +414,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IsPrefix_i32_i32__cordl_bool_ByRefMut2(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         skipHeadingExtenders: bool,
@@ -439,8 +439,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IsSuffix_CompareOptions0(
         &mut self,
-        src: *mut crate::System::String,
-        target: *mut crate::System::String,
+        src: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -451,8 +451,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn IsSuffix_i32_i32_CompareOptions1(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
@@ -466,8 +466,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn LastIndexOfOrdinal(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -480,7 +480,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn LastIndexOfSortKey(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         orgStart: i32,
         length: i32,
@@ -503,8 +503,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn LastIndexOf_CompareOptions0(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
@@ -518,8 +518,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn LastIndexOf_Il2CppObject_ByRefMut1(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         targetSortKey: *mut quest_hook::libil2cpp::Il2CppObject,
@@ -554,7 +554,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn MatchesBackward(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         idx: quest_hook::libil2cpp::ByRefMut<i32>,
         end: i32,
         orgStart: i32,
@@ -577,7 +577,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn MatchesBackwardCore(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         idx: quest_hook::libil2cpp::ByRefMut<i32>,
         end: i32,
         orgStart: i32,
@@ -604,7 +604,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn MatchesForward(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         idx: quest_hook::libil2cpp::ByRefMut<i32>,
         end: i32,
         ti: i32,
@@ -623,7 +623,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn MatchesForwardCore(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         idx: quest_hook::libil2cpp::ByRefMut<i32>,
         end: i32,
         ti: i32,
@@ -675,8 +675,8 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn QuickIndexOf(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         testWasUnable: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -719,10 +719,10 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator {
     }
     pub fn System_Globalization_ISimpleCollator_Compare(
         &mut self,
-        s1: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
         idx1: i32,
         len1: i32,
-        s2: *mut crate::System::String,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
         idx2: i32,
         len2: i32,
         options: crate::System::Globalization::CompareOptions,
@@ -811,7 +811,7 @@ impl crate::Mono::Globalization::Unicode::SimpleCollator_Context {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SimpleCollator_Escape {
-    pub Source: *mut crate::System::String,
+    pub Source: *mut quest_hook::libil2cpp::Il2CppString,
     pub Index: i32,
     pub Start: i32,
     pub End: i32,

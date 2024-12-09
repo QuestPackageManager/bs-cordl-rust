@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct XmlAttributeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub attributeName: *mut crate::System::String,
-    pub dataType: *mut crate::System::String,
+    pub attributeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_type: *mut crate::System::Type,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub ns: *mut crate::System::String,
+    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlAttributeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -42,7 +42,7 @@ impl crate::System::Xml::Serialization::XmlAttributeAttribute {
         Ok(__cordl_ret)
     }
     pub fn New(
-        attributeName: *mut crate::System::String,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -52,7 +52,7 @@ impl crate::System::Xml::Serialization::XmlAttributeAttribute {
     }
     pub fn _ctor(
         &mut self,
-        attributeName: *mut crate::System::String,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,21 +63,21 @@ impl crate::System::Xml::Serialization::XmlAttributeAttribute {
     }
     pub fn get_AttributeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AttributeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_DataType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DataType", ())?;
         Ok(__cordl_ret)
     }
@@ -93,17 +93,17 @@ impl crate::System::Xml::Serialization::XmlAttributeAttribute {
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_DataType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

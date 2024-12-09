@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionSetupExtensions {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionSetupExtensions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionSetupExtensions {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,8 +89,8 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn InsertPartBinding(
         &mut self,
-        partName: *mut crate::System::String,
-        path: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -117,7 +117,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     pub fn IterateCompositeBinding(
         &mut self,
         next: bool,
-        compositeName: *mut crate::System::String,
+        compositeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -131,7 +131,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     pub fn IteratePartBinding(
         &mut self,
         next: bool,
-        partName: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -156,7 +156,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn NextCompositeBinding(
         &mut self,
-        compositeName: *mut crate::System::String,
+        compositeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -169,7 +169,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn NextPartBinding(
         &mut self,
-        partName: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -194,7 +194,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn PreviousCompositeBinding(
         &mut self,
-        compositeName: *mut crate::System::String,
+        compositeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -207,7 +207,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn PreviousPartBinding(
         &mut self,
-        partName: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -246,7 +246,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn WithGroup(
         &mut self,
-        group: *mut crate::System::String,
+        group: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -259,7 +259,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn WithGroups(
         &mut self,
-        groups: *mut crate::System::String,
+        groups: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -286,9 +286,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithInteraction_String0(
+    pub fn WithInteraction_Il2CppString0(
         &mut self,
-        interaction: *mut crate::System::String,
+        interaction: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -301,7 +301,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn WithInteractions(
         &mut self,
-        interactions: *mut crate::System::String,
+        interactions: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -314,7 +314,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn WithName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -327,7 +327,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn WithPath(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -354,9 +354,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithProcessor_String0(
+    pub fn WithProcessor_Il2CppString0(
         &mut self,
-        processor: *mut crate::System::String,
+        processor: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -369,7 +369,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax {
     }
     pub fn WithProcessors(
         &mut self,
-        processors: *mut crate::System::String,
+        processors: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_BindingSyntax,
     > {
@@ -449,10 +449,10 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax 
 impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax {
     pub fn With(
         &mut self,
-        name: *mut crate::System::String,
-        binding: *mut crate::System::String,
-        groups: *mut crate::System::String,
-        processors: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        binding: *mut quest_hook::libil2cpp::Il2CppString,
+        groups: *mut quest_hook::libil2cpp::Il2CppString,
+        processors: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_CompositeSyntax,
     > {
@@ -522,7 +522,7 @@ for crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyn
 impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax {
     pub fn AddDeviceEntry(
         &mut self,
-        controlPath: *mut crate::System::String,
+        controlPath: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::UnityEngine::InputSystem::DeviceRequirement_InputControlScheme_Flags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -534,12 +534,12 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
     }
     pub fn DeviceTypeToControlPath<TDevice>(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DeviceTypeToControlPath",
             (),
@@ -574,9 +574,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
         )?;
         Ok(__cordl_ret)
     }
-    pub fn OrWithOptionalDevice_String1(
+    pub fn OrWithOptionalDevice_Il2CppString1(
         &mut self,
-        controlPath: *mut crate::System::String,
+        controlPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
     > {
@@ -603,9 +603,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
         )?;
         Ok(__cordl_ret)
     }
-    pub fn OrWithRequiredDevice_String1(
+    pub fn OrWithRequiredDevice_Il2CppString1(
         &mut self,
-        controlPath: *mut crate::System::String,
+        controlPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
     > {
@@ -618,7 +618,7 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
     }
     pub fn WithBindingGroup(
         &mut self,
-        bindingGroup: *mut crate::System::String,
+        bindingGroup: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
     > {
@@ -645,9 +645,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithOptionalDevice_String1(
+    pub fn WithOptionalDevice_Il2CppString1(
         &mut self,
-        controlPath: *mut crate::System::String,
+        controlPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
     > {
@@ -674,9 +674,9 @@ impl crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSy
         )?;
         Ok(__cordl_ret)
     }
-    pub fn WithRequiredDevice_String1(
+    pub fn WithRequiredDevice_Il2CppString1(
         &mut self,
-        controlPath: *mut crate::System::String,
+        controlPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputActionSetupExtensions_ControlSchemeSyntax,
     > {

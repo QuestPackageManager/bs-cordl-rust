@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValidatingReaderNodeData {
-    __cordl_parent: crate::System::Object,
-    pub localName: *mut crate::System::String,
-    pub namespaceUri: *mut crate::System::String,
-    pub prefix: *mut crate::System::String,
-    pub nameWPrefix: *mut crate::System::String,
-    pub rawValue: *mut crate::System::String,
-    pub originalStringValue: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub nameWPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub rawValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub originalStringValue: *mut quest_hook::libil2cpp::Il2CppString,
     pub depth: i32,
     pub attributePSVIInfo: *mut crate::System::Xml::AttributePSVIInfo,
     pub nodeType: crate::System::Xml::XmlNodeType,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+ValidatingReaderNodeData")]
 impl std::ops::Deref for crate::System::Xml::ValidatingReaderNodeData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,11 +49,11 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     pub fn GetAtomizedNameWPrefix(
         &mut self,
         nameTable: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetAtomizedNameWPrefix", (nameTable))?;
         Ok(__cordl_ret)
     }
@@ -73,9 +73,9 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke_void(".ctor", (nodeType))?;
         Ok(__cordl_object)
     }
-    pub fn SetItemData_String1(
+    pub fn SetItemData_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,10 +84,10 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke("SetItemData", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetItemData_String2(
+    pub fn SetItemData_Il2CppString2(
         &mut self,
-        value: *mut crate::System::String,
-        originalStringValue: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+        originalStringValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,11 +96,11 @@ impl crate::System::Xml::ValidatingReaderNodeData {
             .invoke("SetItemData", (value, originalStringValue))?;
         Ok(__cordl_ret)
     }
-    pub fn SetItemData_String_String_i32_0(
+    pub fn SetItemData_Il2CppString_Il2CppString_i32_0(
         &mut self,
-        localName: *mut crate::System::String,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -187,21 +187,21 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     }
     pub fn get_LocalName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }
@@ -217,31 +217,31 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     }
     pub fn get_OriginalStringValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_OriginalStringValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Prefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_RawValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_RawValue", ())?;
         Ok(__cordl_ret)
     }
@@ -269,7 +269,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     }
     pub fn set_LocalName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -280,7 +280,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     }
     pub fn set_Namespace(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -302,7 +302,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     }
     pub fn set_Prefix(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -313,7 +313,7 @@ impl crate::System::Xml::ValidatingReaderNodeData {
     }
     pub fn set_RawValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

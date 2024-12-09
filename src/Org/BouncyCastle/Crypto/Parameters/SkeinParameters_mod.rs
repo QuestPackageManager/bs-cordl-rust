@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinParameters {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: *mut crate::System::Collections::IDictionary,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,7 +149,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinParameters_Builder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parameters: *mut crate::System::Collections::IDictionary,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
@@ -161,7 +161,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+SkeinParameters+Builder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -265,11 +265,11 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder {
             .invoke("SetNonce", (nonce))?;
         Ok(__cordl_ret)
     }
-    pub fn SetPersonalisation_DateTime_String_String1(
+    pub fn SetPersonalisation_DateTime_Il2CppString_Il2CppString1(
         &mut self,
         date: crate::System::DateTime,
-        emailAddress: *mut crate::System::String,
-        distinguisher: *mut crate::System::String,
+        emailAddress: *mut quest_hook::libil2cpp::Il2CppString,
+        distinguisher: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::Parameters::SkeinParameters_Builder,
     > {

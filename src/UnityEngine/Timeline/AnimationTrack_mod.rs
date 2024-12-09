@@ -152,7 +152,7 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
     }
     pub fn CreateInfiniteClip(
         &mut self,
-        infiniteClipName: *mut crate::System::String,
+        infiniteClipName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -194,7 +194,7 @@ impl crate::UnityEngine::Timeline::AnimationTrack {
     }
     pub fn CreateRecordableClip(
         &mut self,
-        animClipName: *mut crate::System::String,
+        animClipName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::TimelineClip> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -922,7 +922,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::Animati
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationTrack_AnimationTrackUpgrade {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -933,7 +933,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Timeline+AnimationTrack+AnimationTrackUpgrade")]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::AnimationTrack_AnimationTrackUpgrade {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -30,12 +30,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::JsonAssetProvide
     pub fn Convert(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        text: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        text: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Convert", (_cordl_type, text))?;
         Ok(__cordl_ret)
     }

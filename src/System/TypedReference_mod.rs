@@ -25,7 +25,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::TypedReferenc
 impl crate::System::TypedReference {
     pub fn Equals(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

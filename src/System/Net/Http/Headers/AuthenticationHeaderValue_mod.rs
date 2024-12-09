@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AuthenticationHeaderValue {
-    __cordl_parent: crate::System::Object,
-    pub _Parameter_k__BackingField: *mut crate::System::String,
-    pub _Scheme_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _Parameter_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Scheme_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+Http+Headers+AuthenticationHeaderValue")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+Headers+AuthenticationHeaderValue")]
 impl std::ops::Deref for crate::System::Net::Http::Headers::AuthenticationHeaderValue {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ for crate::System::Net::Http::Headers::AuthenticationHeaderValue {
 impl crate::System::Net::Http::Headers::AuthenticationHeaderValue {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,9 +52,9 @@ impl crate::System::Net::Http::Headers::AuthenticationHeaderValue {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String0(
-        scheme: *mut crate::System::String,
-        parameter: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString0(
+        scheme: *mut quest_hook::libil2cpp::Il2CppString,
+        parameter: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -64,21 +64,21 @@ impl crate::System::Net::Http::Headers::AuthenticationHeaderValue {
     }
     pub fn System_ICloneable_Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.ICloneable.Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -92,10 +92,10 @@ impl crate::System::Net::Http::Headers::AuthenticationHeaderValue {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String0(
+    pub fn _ctor_Il2CppString_Il2CppString0(
         &mut self,
-        scheme: *mut crate::System::String,
-        parameter: *mut crate::System::String,
+        scheme: *mut quest_hook::libil2cpp::Il2CppString,
+        parameter: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -106,27 +106,27 @@ impl crate::System::Net::Http::Headers::AuthenticationHeaderValue {
     }
     pub fn get_Parameter(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Parameter", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Scheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Scheme", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Parameter(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +137,7 @@ impl crate::System::Net::Http::Headers::AuthenticationHeaderValue {
     }
     pub fn set_Scheme(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

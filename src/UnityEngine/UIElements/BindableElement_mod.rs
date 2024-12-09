@@ -4,7 +4,7 @@
 pub struct BindableElement {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElement,
     pub _binding_k__BackingField: *mut crate::UnityEngine::UIElements::IBinding,
-    pub _bindingPath_k__BackingField: *mut crate::System::String,
+    pub _bindingPath_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -59,7 +59,7 @@ impl crate::UnityEngine::UIElements::BindableElement {
     }
     pub fn set_bindingPath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

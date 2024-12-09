@@ -10,8 +10,8 @@ pub struct ColorArrayLightWithIds {
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
-    pub _colorsArrayPropertyName: *mut crate::System::String,
-    pub _colorsArrayOffsetPropertyName: *mut crate::System::String,
+    pub _colorsArrayPropertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _colorsArrayOffsetPropertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _colorsArrayPropertyId: i32,
     pub _colorsArrayOffsetPropertyId: i32,
     pub _colorsArray: *mut quest_hook::libil2cpp::Il2CppArray<

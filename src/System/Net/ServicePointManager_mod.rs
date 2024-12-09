@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePointManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+ServicePointManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServicePointManager")]
 impl std::ops::Deref for crate::System::Net::ServicePointManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ServicePointManag
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServicePointManager_SPKey {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub uri: *mut crate::System::Uri,
     pub proxy: *mut crate::System::Uri,
     pub use_connect: bool,
@@ -52,7 +52,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServicePointManager+SPKey")]
 impl std::ops::Deref for crate::System::Net::ServicePointManager_SPKey {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -67,7 +67,7 @@ impl std::ops::DerefMut for crate::System::Net::ServicePointManager_SPKey {
 impl crate::System::Net::ServicePointManager_SPKey {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

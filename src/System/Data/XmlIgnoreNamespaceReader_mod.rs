@@ -4,7 +4,7 @@
 pub struct XmlIgnoreNamespaceReader {
     __cordl_parent: crate::System::Xml::XmlNodeReader,
     pub _namespacesToIgnore: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "System+Data+XmlIgnoreNamespaceReader")]
@@ -44,7 +44,7 @@ impl crate::System::Data::XmlIgnoreNamespaceReader {
     pub fn New(
         xdoc: *mut crate::System::Xml::XmlDocument,
         namespacesToIgnore: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -57,7 +57,7 @@ impl crate::System::Data::XmlIgnoreNamespaceReader {
         &mut self,
         xdoc: *mut crate::System::Xml::XmlDocument,
         namespacesToIgnore: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

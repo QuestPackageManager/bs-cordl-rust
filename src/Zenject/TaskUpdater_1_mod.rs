@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskUpdater_1<TTask: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tasks: *mut crate::System::Collections::Generic::LinkedList_1<
         *mut crate::Zenject::TaskUpdater_1_TaskInfo<TTask>,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+TaskUpdater_1")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::TaskUpdater_1<TTask> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -269,7 +269,7 @@ for crate::Zenject::TaskUpdater_1<TTask> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskUpdater_1_TaskInfo<TTask: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Task: TTask,
     pub Priority: i32,
     pub IsRemoved: bool,
@@ -283,7 +283,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+TaskUpdater_1+TaskInfo")]
 impl<TTask: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::TaskUpdater_1_TaskInfo<TTask> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

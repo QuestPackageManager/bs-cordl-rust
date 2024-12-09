@@ -6,7 +6,7 @@ pub struct GroupedEnumerable_3<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub source: *mut crate::System::Collections::Generic::IEnumerable_1<TSource>,
     pub keySelector: *mut crate::System::Func_2<TSource, TKey>,
     pub elementSelector: *mut crate::System::Func_2<TSource, TElement>,
@@ -26,7 +26,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Linq::GroupedEnumerable_3<TSource, TKey, TElement> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -29,7 +29,7 @@ impl crate::System::Reflection::EventInfo {
     pub type AddEventAdapter = crate::System::Reflection::EventInfo_AddEventAdapter;
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,7 +172,7 @@ impl std::ops::DerefMut for crate::System::Reflection::EventInfo_AddEventAdapter
 impl crate::System::Reflection::EventInfo_AddEventAdapter {
     pub fn Invoke(
         &mut self,
-        _this: *mut crate::System::Object,
+        _this: *mut quest_hook::libil2cpp::Il2CppObject,
         dele: *mut crate::System::Delegate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,7 +183,7 @@ impl crate::System::Reflection::EventInfo_AddEventAdapter {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -194,7 +194,7 @@ impl crate::System::Reflection::EventInfo_AddEventAdapter {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemberPrimitiveUnTyped {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub typeInformation: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
-    pub value: *mut crate::System::Object,
+    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveUnTyped")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+MemberPrimitiveUnTyped")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveUnTyped {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,6 +57,18 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveU
             .invoke("Read", (input))?;
         Ok(__cordl_ret)
     }
+    pub fn Set_Il2CppObject0(
+        &mut self,
+        typeInformation: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Set", (typeInformation, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn Set_InternalPrimitiveTypeE1(
         &mut self,
         typeInformation: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
@@ -66,18 +78,6 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::MemberPrimitiveU
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Set", (typeInformation))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Set_Object0(
-        &mut self,
-        typeInformation: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (typeInformation, value))?;
         Ok(__cordl_ret)
     }
     pub fn Write(

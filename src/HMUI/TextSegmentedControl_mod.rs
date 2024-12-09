@@ -12,7 +12,7 @@ pub struct TextSegmentedControl {
     pub _singleCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
     pub _middleCellPrefab: *mut crate::HMUI::TextSegmentedControlCell,
     pub _texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "HMUI+TextSegmentedControl")]
@@ -63,7 +63,7 @@ impl crate::HMUI::TextSegmentedControl {
     pub fn SetTexts(
         &mut self,
         texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

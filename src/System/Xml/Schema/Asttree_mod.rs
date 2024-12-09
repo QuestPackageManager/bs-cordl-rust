@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Asttree {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _fAxisArray: *mut crate::System::Collections::ArrayList,
-    pub _xpathexpr: *mut crate::System::String,
+    pub _xpathexpr: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isField: bool,
     pub _nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Asttree")]
 impl std::ops::Deref for crate::System::Xml::Schema::Asttree {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Asttree {
 impl crate::System::Xml::Schema::Asttree {
     pub fn CompileXPath(
         &mut self,
-        xPath: *mut crate::System::String,
+        xPath: *mut quest_hook::libil2cpp::Il2CppString,
         isField: bool,
         nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -42,7 +42,7 @@ impl crate::System::Xml::Schema::Asttree {
         Ok(__cordl_ret)
     }
     pub fn New(
-        xPath: *mut crate::System::String,
+        xPath: *mut quest_hook::libil2cpp::Il2CppString,
         isField: bool,
         nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -66,7 +66,7 @@ impl crate::System::Xml::Schema::Asttree {
     }
     pub fn _ctor(
         &mut self,
-        xPath: *mut crate::System::String,
+        xPath: *mut quest_hook::libil2cpp::Il2CppString,
         isField: bool,
         nsmgr: *mut crate::System::Xml::XmlNamespaceManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

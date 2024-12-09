@@ -277,7 +277,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PackDefinitio
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_Credits {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub order: i32,
     pub creditsPrefab: *mut crate::UnityEngine::AddressableAssets::AssetReferenceGameObject,
 }
@@ -288,7 +288,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO+Credits")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_Credits {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -333,7 +333,7 @@ for crate::GlobalNamespace::PackDefinitionSO_Credits {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_LeaderboardIds {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _riftLeaderboardIds: *mut crate::GlobalNamespace::LeaderboardIdsSO,
     pub _questLeaderboardIds: *mut crate::GlobalNamespace::LeaderboardIdsSO,
     pub _steamLeaderboardIds: *mut crate::GlobalNamespace::LeaderboardIdsSO,
@@ -347,7 +347,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO+LeaderboardIds")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -501,7 +501,7 @@ for crate::GlobalNamespace::PackDefinitionSO_LeaderboardIds {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackDefinitionSO_LevelProductPacks {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _steamLevelProductPacks: *mut crate::GlobalNamespace::SteamLevelProductPacksSO,
     pub _oculusLevelProductPacks: *mut crate::GlobalNamespace::OculusLevelProductPacksSO,
     pub _sonyLevelProductPackSource: *mut crate::GlobalNamespace::SonyLevelProductPackSourceSO,
@@ -516,7 +516,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackDefinitionSO+LevelProductPacks")]
 impl std::ops::Deref for crate::GlobalNamespace::PackDefinitionSO_LevelProductPacks {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

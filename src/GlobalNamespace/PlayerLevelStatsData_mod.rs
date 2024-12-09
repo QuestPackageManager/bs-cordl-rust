@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerLevelStatsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _highScore: i32,
     pub _maxCombo: i32,
     pub _fullCombo: bool,
     pub _maxRank: crate::GlobalNamespace::RankModel_Rank,
     pub _validScore: bool,
     pub _playCount: i32,
-    pub _levelID: *mut crate::System::String,
+    pub _levelID: *mut quest_hook::libil2cpp::Il2CppString,
     pub _difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
 }
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerLevelStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerLevelStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,8 +62,8 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke_void(".ctor", (beatmapKey))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_BeatmapDifficulty_BeatmapCharacteristicSO1(
-        levelID: *mut crate::System::String,
+    pub fn New_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO1(
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -73,8 +73,8 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke_void(".ctor", (levelID, difficulty, beatmapCharacteristic))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
-        levelID: *mut crate::System::String,
+    pub fn New_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         highScore: i32,
@@ -128,9 +128,9 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke(".ctor", (beatmapKey))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_BeatmapDifficulty_BeatmapCharacteristicSO1(
+    pub fn _ctor_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO1(
         &mut self,
-        levelID: *mut crate::System::String,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -141,9 +141,9 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
             .invoke(".ctor", (levelID, difficulty, beatmapCharacteristic))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
+    pub fn _ctor_Il2CppString_BeatmapDifficulty_BeatmapCharacteristicSO_i32_i32__cordl_bool_RankModel_Rank__cordl_bool_i32_2(
         &mut self,
-        levelID: *mut crate::System::String,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
         beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         highScore: i32,
@@ -211,11 +211,11 @@ impl crate::GlobalNamespace::PlayerLevelStatsData {
     }
     pub fn get_levelID(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_levelID", ())?;
         Ok(__cordl_ret)
     }

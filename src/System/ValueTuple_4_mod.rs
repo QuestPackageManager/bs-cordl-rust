@@ -64,9 +64,9 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -147,7 +147,7 @@ impl<
     }
     pub fn System_Collections_IStructuralComparable_CompareTo(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
         comparer: *mut crate::System::Collections::IComparer,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
@@ -169,7 +169,7 @@ impl<
     }
     pub fn System_Collections_IStructuralEquatable_Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
         comparer: *mut crate::System::Collections::IEqualityComparer,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -212,7 +212,7 @@ impl<
     }
     pub fn System_IComparable_CompareTo(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -254,7 +254,7 @@ impl<
     }
     pub fn System_IValueTupleInternal_ToStringEnd(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -265,7 +265,7 @@ impl<
         T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.IValueTupleInternal.ToStringEnd",
             (),
@@ -294,7 +294,7 @@ impl<
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -305,7 +305,7 @@ impl<
         T4: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

@@ -58,7 +58,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
         maskChar: char,
         textInputBase: *mut crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
@@ -92,7 +92,7 @@ impl<
     }
     pub fn StringToValue(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<TValueType>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -149,7 +149,7 @@ impl<
     pub fn ValueToString(
         &mut self,
         value: TValueType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -157,13 +157,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ValueToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
         maskChar: char,
         textInputBase: *mut crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
@@ -220,7 +220,7 @@ impl<
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -228,7 +228,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
@@ -402,7 +402,7 @@ impl<
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -683,7 +683,7 @@ impl<
     }
     pub fn StringToValue(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<TValueType>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -805,7 +805,7 @@ impl<
     }
     pub fn get_originalText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -813,13 +813,13 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_originalText", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -827,7 +827,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
@@ -937,7 +937,7 @@ impl<
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -981,7 +981,7 @@ for crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<TValueTyp
 #[derive(Debug)]
 pub struct TextInputBaseField_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >,
     pub m_MaxLength: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
@@ -1006,7 +1006,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<TValueType> {
     type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
     >;
     fn deref(&self) -> &Self::Target {

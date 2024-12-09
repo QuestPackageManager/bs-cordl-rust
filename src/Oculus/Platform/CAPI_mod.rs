@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CAPI {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+CAPI")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+CAPI")]
 impl std::ops::Deref for crate::Oculus::Platform::CAPI {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,7 +96,7 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
         frequency: i32,
         numChannels: i32,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +136,7 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -147,7 +147,7 @@ impl crate::Oculus::Platform::CAPI_FilterCallback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -172,10 +172,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::CAPI_FilterC
 #[derive(Debug, Clone)]
 pub struct CAPI_OculusInitParams {
     pub sType: i32,
-    pub email: *mut crate::System::String,
-    pub password: *mut crate::System::String,
+    pub email: *mut quest_hook::libil2cpp::Il2CppString,
+    pub password: *mut quest_hook::libil2cpp::Il2CppString,
     pub appId: u64,
-    pub uriPrefixOverride: *mut crate::System::String,
+    pub uriPrefixOverride: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+CAPI+OculusInitParams")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -199,9 +199,9 @@ impl crate::Oculus::Platform::CAPI_OculusInitParams {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct CAPI_ovrKeyValuePair {
-    pub key_: *mut crate::System::String,
+    pub key_: *mut quest_hook::libil2cpp::Il2CppString,
     pub valueType_: crate::Oculus::Platform::KeyValuePairType,
-    pub stringValue_: *mut crate::System::String,
+    pub stringValue_: *mut quest_hook::libil2cpp::Il2CppString,
     pub intValue_: i32,
     pub doubleValue_: f64,
 }
@@ -223,10 +223,10 @@ for crate::Oculus::Platform::CAPI_ovrKeyValuePair {
 }
 #[cfg(feature = "Oculus+Platform+CAPI+ovrKeyValuePair")]
 impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -237,7 +237,7 @@ impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     }
     pub fn _ctor_f64_2(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: f64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -249,7 +249,7 @@ impl crate::Oculus::Platform::CAPI_ovrKeyValuePair {
     }
     pub fn _ctor_i32_1(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandomProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "SecureRandomProvider")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SecureRandomProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::SecureRandomProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomP
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureRandomProvider_SecureRandomState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _random: *mut crate::System::Security::Cryptography::RNGCryptoServiceProvider,
     pub _randomBuffer0: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _randomBuffer1: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -54,7 +54,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SecureRandomProvider+SecureRandomState")]
 impl std::ops::Deref for crate::GlobalNamespace::SecureRandomProvider_SecureRandomState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -32,29 +32,31 @@ impl crate::System::Xml::XmlUrlResolver {
     pub fn GetEntity(
         &mut self,
         absoluteUri: *mut crate::System::Uri,
-        role: *mut crate::System::String,
+        role: *mut quest_hook::libil2cpp::Il2CppString,
         ofObjectToReturn: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetEntity", (absoluteUri, role, ofObjectToReturn))?;
         Ok(__cordl_ret)
     }
     pub fn GetEntityAsync(
         &mut self,
         absoluteUri: *mut crate::System::Uri,
-        role: *mut crate::System::String,
+        role: *mut quest_hook::libil2cpp::Il2CppString,
         ofObjectToReturn: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::Object>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object
             .invoke("GetEntityAsync", (absoluteUri, role, ofObjectToReturn))?;
         Ok(__cordl_ret)
@@ -69,7 +71,7 @@ impl crate::System::Xml::XmlUrlResolver {
     pub fn ResolveUri(
         &mut self,
         baseUri: *mut crate::System::Uri,
-        relativeUri: *mut crate::System::String,
+        relativeUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

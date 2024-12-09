@@ -4,7 +4,7 @@
 pub struct SchemaCollectionPreprocessor {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
     pub schema: *mut crate::System::Xml::Schema::XmlSchema,
-    pub targetNamespace: *mut crate::System::String,
+    pub targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     pub buildinIncluded: bool,
     pub elementFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
     pub attributeFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
@@ -12,7 +12,7 @@ pub struct SchemaCollectionPreprocessor {
     pub finalDefault: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub schemaLocations: *mut crate::System::Collections::Hashtable,
     pub referenceNamespaces: *mut crate::System::Collections::Hashtable,
-    pub Xmlns: *mut crate::System::String,
+    pub Xmlns: *mut quest_hook::libil2cpp::Il2CppString,
     pub xmlResolver: *mut crate::System::Xml::XmlResolver,
 }
 #[cfg(feature = "System+Xml+Schema+SchemaCollectionPreprocessor")]
@@ -119,7 +119,7 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     pub fn Execute(
         &mut self,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         loadExternals: bool,
         xsc: *mut crate::System::Xml::Schema::XmlSchemaCollection,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -167,7 +167,7 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     pub fn Preprocess(
         &mut self,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         compositor: crate::System::Xml::Schema::SchemaCollectionPreprocessor_Compositor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -360,7 +360,7 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     pub fn ResolveSchemaLocationUri(
         &mut self,
         enclosingSchema: *mut crate::System::Xml::Schema::XmlSchema,
-        location: *mut crate::System::String,
+        location: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -406,7 +406,7 @@ impl crate::System::Xml::Schema::SchemaCollectionPreprocessor {
     pub fn ValidateQNameAttribute(
         &mut self,
         xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
-        attributeName: *mut crate::System::String,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::System::Xml::XmlQualifiedName,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_GeoSync {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
-    pub _filePath: *mut crate::System::String,
+    pub _filePath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeoSync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

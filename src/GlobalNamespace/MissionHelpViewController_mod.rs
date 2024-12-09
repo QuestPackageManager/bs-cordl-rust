@@ -139,7 +139,7 @@ for crate::GlobalNamespace::MissionHelpViewController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionHelpViewController_MissionHelpGameObjectPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub missionHelp: *mut crate::GlobalNamespace::MissionHelpSO,
     pub gameObject: *mut crate::UnityEngine::GameObject,
 }
@@ -152,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MissionHelpViewController+MissionHelpGameObjectPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MissionHelpViewController_MissionHelpGameObjectPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

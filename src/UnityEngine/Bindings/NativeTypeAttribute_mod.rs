@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NativeTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Header_k__BackingField: *mut crate::System::String,
-    pub _IntermediateScriptingStructName_k__BackingField: *mut crate::System::String,
+    pub _Header_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _IntermediateScriptingStructName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _CodegenOptions_k__BackingField: crate::UnityEngine::Bindings::CodegenOptions,
 }
 #[cfg(feature = "UnityEngine+Bindings+NativeTypeAttribute")]
@@ -43,9 +43,9 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke_void(".ctor", (codegenOptions))?;
         Ok(__cordl_object)
     }
-    pub fn New_CodegenOptions_String3(
+    pub fn New_CodegenOptions_Il2CppString3(
         codegenOptions: crate::UnityEngine::Bindings::CodegenOptions,
-        intermediateStructName: *mut crate::System::String,
+        intermediateStructName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -53,8 +53,8 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke_void(".ctor", (codegenOptions, intermediateStructName))?;
         Ok(__cordl_object)
     }
-    pub fn New_String2(
-        header: *mut crate::System::String,
+    pub fn New_Il2CppString2(
+        header: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -83,10 +83,10 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke(".ctor", (codegenOptions))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_CodegenOptions_String3(
+    pub fn _ctor_CodegenOptions_Il2CppString3(
         &mut self,
         codegenOptions: crate::UnityEngine::Bindings::CodegenOptions,
-        intermediateStructName: *mut crate::System::String,
+        intermediateStructName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -95,9 +95,9 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
             .invoke(".ctor", (codegenOptions, intermediateStructName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
-        header: *mut crate::System::String,
+        header: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +119,7 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
     }
     pub fn set_Header(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +130,7 @@ impl crate::UnityEngine::Bindings::NativeTypeAttribute {
     }
     pub fn set_IntermediateScriptingStructName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

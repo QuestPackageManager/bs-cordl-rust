@@ -4,7 +4,7 @@
 pub struct SerializationFieldInfo {
     __cordl_parent: crate::System::Reflection::FieldInfo,
     pub m_field: *mut crate::System::Reflection::RuntimeFieldInfo,
-    pub m_serializationName: *mut crate::System::String,
+    pub m_serializationName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationFieldInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -33,13 +33,13 @@ impl crate::System::Runtime::Serialization::SerializationFieldInfo {
         attributeType: *mut crate::System::Type,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret)
     }
@@ -47,42 +47,42 @@ impl crate::System::Runtime::Serialization::SerializationFieldInfo {
         &mut self,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret)
     }
     pub fn GetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn InternalGetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("InternalGetValue", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn InternalSetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         culture: *mut crate::System::Globalization::CultureInfo,
@@ -108,7 +108,7 @@ impl crate::System::Runtime::Serialization::SerializationFieldInfo {
     }
     pub fn New(
         field: *mut crate::System::Reflection::RuntimeFieldInfo,
-        namePrefix: *mut crate::System::String,
+        namePrefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -118,8 +118,8 @@ impl crate::System::Runtime::Serialization::SerializationFieldInfo {
     }
     pub fn SetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         culture: *mut crate::System::Globalization::CultureInfo,
@@ -134,7 +134,7 @@ impl crate::System::Runtime::Serialization::SerializationFieldInfo {
     pub fn _ctor(
         &mut self,
         field: *mut crate::System::Reflection::RuntimeFieldInfo,
-        namePrefix: *mut crate::System::String,
+        namePrefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -214,11 +214,11 @@ impl crate::System::Runtime::Serialization::SerializationFieldInfo {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

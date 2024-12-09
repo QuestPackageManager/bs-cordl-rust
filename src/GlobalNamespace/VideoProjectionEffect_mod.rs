@@ -279,7 +279,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_GameplayVideoProjectionBehavio
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
 }
 #[cfg(feature = "VideoProjectionEffect+InitData")]
@@ -289,7 +289,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VideoProjectionEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::VideoProjectionEffect_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -337,7 +337,7 @@ for crate::GlobalNamespace::VideoProjectionEffect_InitData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VideoProjectionEffect_VideoProjectionBehavior {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _eventValue: i32,
     pub _videoClipHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::Video::VideoClip,
@@ -355,7 +355,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "VideoProjectionEffect+VideoProjectionBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::VideoProjectionEffect_VideoProjectionBehavior {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

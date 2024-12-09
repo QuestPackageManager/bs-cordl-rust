@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmallXmlParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub handler: *mut crate::Mono::Xml::SmallXmlParser_IContentHandler,
     pub reader: *mut crate::System::IO::TextReader,
     pub elementNames: *mut crate::System::Collections::Stack,
     pub xmlSpaces: *mut crate::System::Collections::Stack,
-    pub xmlSpace: *mut crate::System::String,
+    pub xmlSpace: *mut quest_hook::libil2cpp::Il2CppString,
     pub buffer: *mut crate::System::Text::StringBuilder,
     pub nameBuffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     pub isWhitespace: bool,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Xml+SmallXmlParser")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl crate::Mono::Xml::SmallXmlParser {
     }
     pub fn Error(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,11 +205,11 @@ impl crate::Mono::Xml::SmallXmlParser {
     }
     pub fn ReadName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadName", ())?;
         Ok(__cordl_ret)
     }
@@ -227,11 +227,11 @@ impl crate::Mono::Xml::SmallXmlParser {
         &mut self,
         until: char,
         handleReferences: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadUntil", (until, handleReferences))?;
         Ok(__cordl_ret)
     }
@@ -290,12 +290,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Xml::SmallXmlParser {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SmallXmlParser_AttrListImpl {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub attrNames: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub attrValues: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
@@ -305,7 +305,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Xml+SmallXmlParser+AttrListImpl")]
 impl std::ops::Deref for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -320,8 +320,8 @@ impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser_AttrListImpl {
 impl crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     pub fn Add(
         &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -343,33 +343,33 @@ impl crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     pub fn GetName(
         &mut self,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetName", (i))?;
         Ok(__cordl_ret)
     }
-    pub fn GetValue_String1(
+    pub fn GetValue_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValue", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetValue_i32_0(
         &mut self,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValue", (i))?;
         Ok(__cordl_ret)
     }
@@ -400,26 +400,26 @@ impl crate::Mono::Xml::SmallXmlParser_AttrListImpl {
     pub fn get_Names(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Names", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Values(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Values", ())?;
         Ok(__cordl_ret)
     }
@@ -463,33 +463,33 @@ impl crate::Mono::Xml::SmallXmlParser_IAttrList {
     pub fn GetName(
         &mut self,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetName", (i))?;
         Ok(__cordl_ret)
     }
-    pub fn GetValue_String1(
+    pub fn GetValue_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValue", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetValue_i32_0(
         &mut self,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValue", (i))?;
         Ok(__cordl_ret)
     }
@@ -508,26 +508,26 @@ impl crate::Mono::Xml::SmallXmlParser_IAttrList {
     pub fn get_Names(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Names", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Values(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Values", ())?;
         Ok(__cordl_ret)
     }
@@ -569,7 +569,7 @@ impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParser_IContentHandler {
 impl crate::Mono::Xml::SmallXmlParser_IContentHandler {
     pub fn OnChars(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -580,7 +580,7 @@ impl crate::Mono::Xml::SmallXmlParser_IContentHandler {
     }
     pub fn OnEndElement(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -602,7 +602,7 @@ impl crate::Mono::Xml::SmallXmlParser_IContentHandler {
     }
     pub fn OnIgnorableWhitespace(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -613,8 +613,8 @@ impl crate::Mono::Xml::SmallXmlParser_IContentHandler {
     }
     pub fn OnProcessingInstruction(
         &mut self,
-        name: *mut crate::System::String,
-        text: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -625,7 +625,7 @@ impl crate::Mono::Xml::SmallXmlParser_IContentHandler {
     }
     pub fn OnStartElement(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

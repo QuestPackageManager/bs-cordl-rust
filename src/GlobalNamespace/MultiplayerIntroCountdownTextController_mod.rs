@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdownTextController {
     }
     pub fn SetText(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

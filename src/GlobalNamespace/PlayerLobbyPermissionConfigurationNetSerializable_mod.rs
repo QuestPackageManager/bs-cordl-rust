@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlayerLobbyPermissionConfigurationNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
-    pub _userId: *mut crate::System::String,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isServerOwner: bool,
     pub _hasRecommendBeatmapsPermission: bool,
     pub _hasRecommendGameplayModifiersPermission: bool,
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     }
     pub fn Init(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isServerOwner: bool,
         hasRecommendBeatmapsPermission: bool,
         hasRecommendGameplayModifiersPermission: bool,
@@ -143,11 +143,11 @@ impl crate::GlobalNamespace::PlayerLobbyPermissionConfigurationNetSerializable {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }

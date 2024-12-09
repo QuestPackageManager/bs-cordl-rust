@@ -4,7 +4,7 @@
 pub struct NamespaceListNode {
     __cordl_parent: crate::System::Xml::Schema::SyntaxTreeNode,
     pub namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
-    pub particle: *mut crate::System::Object,
+    pub particle: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Schema+NamespaceListNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -67,7 +67,7 @@ impl crate::System::Xml::Schema::NamespaceListNode {
     }
     pub fn New(
         namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -78,7 +78,7 @@ impl crate::System::Xml::Schema::NamespaceListNode {
     pub fn _ctor(
         &mut self,
         namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

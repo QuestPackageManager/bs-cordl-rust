@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlayerDataAsyncLoader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
-    pub _playerDataContent: *mut crate::System::String,
+    pub _playerDataContent: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "PlayerDataAsyncLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

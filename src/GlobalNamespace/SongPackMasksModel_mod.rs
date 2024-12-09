@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPackMasksModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub content: *mut crate::GlobalNamespace::SongPackMasksModelSO,
     pub allSongPackMask: crate::GlobalNamespace::SongPackMask,
     pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _songPackSerializedNameToMaskInfoDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         crate::GlobalNamespace::SongPackMasksModel_MaskInfo,
     >,
     pub _songPackMaskToSerializedNameDict: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::GlobalNamespace::SongPackMask,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "SongPackMasksModel")]
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPackMasksModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPackMasksModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::SongPackMasksModel {
     }
     pub fn ToLocalizedName(
         &mut self,
-        serializedName: *mut crate::System::String,
+        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::SongPackMasksModel_LocalizedText,
     > {
@@ -88,17 +88,17 @@ impl crate::GlobalNamespace::SongPackMasksModel {
     pub fn ToSerializedName(
         &mut self,
         songPackMask: crate::GlobalNamespace::SongPackMask,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToSerializedName", (songPackMask))?;
         Ok(__cordl_ret)
     }
     pub fn ToSongPackMask(
         &mut self,
-        serializedName: *mut crate::System::String,
+        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::SongPackMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,7 +133,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPackMasks
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SongPackMasksModel_LocalizedText {
-    pub textKey: *mut crate::System::String,
+    pub textKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub isPlural: bool,
 }
 #[cfg(feature = "SongPackMasksModel+LocalizedText")]
@@ -157,7 +157,7 @@ for crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
 impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     pub fn _ctor(
         &mut self,
-        textKey: *mut crate::System::String,
+        textKey: *mut quest_hook::libil2cpp::Il2CppString,
         isPlural: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -169,8 +169,8 @@ impl crate::GlobalNamespace::SongPackMasksModel_LocalizedText {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_text",
             (),

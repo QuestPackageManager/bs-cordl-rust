@@ -6,7 +6,7 @@ pub struct BaseBoolField {
     pub m_Label: *mut crate::UnityEngine::UIElements::Label,
     pub m_CheckMark: *mut crate::UnityEngine::UIElements::VisualElement,
     pub m_Clickable: *mut crate::UnityEngine::UIElements::Clickable,
-    pub m_OriginalText: *mut crate::System::String,
+    pub m_OriginalText: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseBoolField")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -39,7 +39,7 @@ impl crate::UnityEngine::UIElements::BaseBoolField {
         Ok(__cordl_ret)
     }
     pub fn New(
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -122,7 +122,7 @@ impl crate::UnityEngine::UIElements::BaseBoolField {
     }
     pub fn _ctor(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,17 +133,17 @@ impl crate::UnityEngine::UIElements::BaseBoolField {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

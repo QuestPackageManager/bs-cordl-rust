@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyPairPersistence {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _params: *mut crate::System::Security::Cryptography::CspParameters,
-    pub _keyvalue: *mut crate::System::String,
-    pub _filename: *mut crate::System::String,
-    pub _container: *mut crate::System::String,
+    pub _keyvalue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _filename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _container: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Mono+Security+Cryptography+KeyPairPersistence")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+Cryptography+KeyPairPersistence")]
 impl std::ops::Deref for crate::Mono::Security::Cryptography::KeyPairPersistence {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
     }
     pub fn FromXml(
         &mut self,
-        xml: *mut crate::System::String,
+        xml: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,9 +68,9 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             .invoke_void(".ctor", (parameters))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
+    pub fn New_Il2CppString1(
         parameters: *mut crate::System::Security::Cryptography::CspParameters,
-        keyPair: *mut crate::System::String,
+        keyPair: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -100,11 +100,11 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
     }
     pub fn ToXml(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToXml", ())?;
         Ok(__cordl_ret)
     }
@@ -119,10 +119,10 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
             .invoke(".ctor", (parameters))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         parameters: *mut crate::System::Security::Cryptography::CspParameters,
-        keyPair: *mut crate::System::String,
+        keyPair: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,31 +140,31 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
     }
     pub fn get_ContainerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ContainerName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Filename(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Filename", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_KeyValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_KeyValue", ())?;
         Ok(__cordl_ret)
     }
@@ -184,7 +184,7 @@ impl crate::Mono::Security::Cryptography::KeyPairPersistence {
     }
     pub fn set_KeyValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

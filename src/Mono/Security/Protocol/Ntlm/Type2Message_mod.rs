@@ -4,7 +4,7 @@
 pub struct Type2Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
     pub _nonce: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _targetName: *mut crate::System::String,
+    pub _targetName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _targetInfo: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "Mono+Security+Protocol+Ntlm+Type2Message")]
@@ -100,11 +100,11 @@ impl crate::Mono::Security::Protocol::Ntlm::Type2Message {
     }
     pub fn get_TargetName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TargetName", ())?;
         Ok(__cordl_ret)
     }

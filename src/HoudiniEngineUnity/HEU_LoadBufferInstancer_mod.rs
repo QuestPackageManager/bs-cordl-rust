@@ -7,12 +7,14 @@ pub struct HEU_LoadBufferInstancer {
         crate::HoudiniEngineUnity::HAPI_Transform,
     >,
     pub _instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _instanceNodeIDs: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub _assetPaths: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _assetPaths: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _collisionAssetPaths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferInstancer")]

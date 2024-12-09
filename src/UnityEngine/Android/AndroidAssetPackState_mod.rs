@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidAssetPackState {
-    __cordl_parent: crate::System::Object,
-    pub _name_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _status_k__BackingField: crate::UnityEngine::Android::AndroidAssetPackStatus,
     pub _error_k__BackingField: crate::UnityEngine::Android::AndroidAssetPackError,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
 impl std::ops::Deref for crate::UnityEngine::Android::AndroidAssetPackState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Android::AndroidAssetPackState {
 #[cfg(feature = "UnityEngine+Android+AndroidAssetPackState")]
 impl crate::UnityEngine::Android::AndroidAssetPackState {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::UnityEngine::Android::AndroidAssetPackStatus,
         error: crate::UnityEngine::Android::AndroidAssetPackError,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -40,7 +40,7 @@ impl crate::UnityEngine::Android::AndroidAssetPackState {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::UnityEngine::Android::AndroidAssetPackStatus,
         error: crate::UnityEngine::Android::AndroidAssetPackError,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemoryPoolBase_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inactiveItems: *mut crate::System::Collections::Generic::Stack_1<TContract>,
     pub _factory: *mut crate::Zenject::IFactory_1<TContract>,
     pub _settings: *mut crate::Zenject::MemoryPoolSettings,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+MemoryPoolBase_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::MemoryPoolBase_1<TContract> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -246,7 +246,7 @@ impl<
     }
     pub fn Zenject_IMemoryPool_Despawn(
         &mut self,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

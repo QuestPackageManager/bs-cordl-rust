@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeCertificateHolder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub holder: *mut crate::Org::BouncyCastle::Asn1::X509::Holder,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+AttributeCertificateHolder")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+AttributeCertificateHolder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,17 +28,17 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::X509::AttributeCertificate
 impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,13 +102,13 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
             *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetNames", (names))?;
         Ok(__cordl_ret)
     }
@@ -138,9 +138,9 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
         > = __cordl_object.invoke("GetPrincipals", (names))?;
         Ok(__cordl_ret)
     }
-    pub fn Match_Object1(
+    pub fn Match_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -206,10 +206,10 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
             .invoke_void(".ctor", (issuerName, serialNumber))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String_String_Il2CppArray4(
+    pub fn New_i32_Il2CppString_Il2CppString_Il2CppArray4(
         digestedObjectType: i32,
-        digestAlgorithm: *mut crate::System::String,
-        otherObjectTypeID: *mut crate::System::String,
+        digestAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+        otherObjectTypeID: *mut quest_hook::libil2cpp::Il2CppString,
         objectDigest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -266,11 +266,11 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
             .invoke(".ctor", (issuerName, serialNumber))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String_String_Il2CppArray4(
+    pub fn _ctor_i32_Il2CppString_Il2CppString_Il2CppArray4(
         &mut self,
         digestedObjectType: i32,
-        digestAlgorithm: *mut crate::System::String,
-        otherObjectTypeID: *mut crate::System::String,
+        digestAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
+        otherObjectTypeID: *mut quest_hook::libil2cpp::Il2CppString,
         objectDigest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -285,11 +285,11 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
     }
     pub fn get_DigestAlgorithm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DigestAlgorithm", ())?;
         Ok(__cordl_ret)
     }
@@ -302,11 +302,11 @@ impl crate::Org::BouncyCastle::X509::AttributeCertificateHolder {
     }
     pub fn get_OtherObjectTypeID(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_OtherObjectTypeID", ())?;
         Ok(__cordl_ret)
     }

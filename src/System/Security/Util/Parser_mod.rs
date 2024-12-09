@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _doc: *mut crate::System::Security::SecurityDocument,
     pub _t: *mut crate::System::Security::Util::Tokenizer,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Util+Parser")]
 impl std::ops::Deref for crate::System::Security::Util::Parser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,8 +58,8 @@ impl crate::System::Security::Util::Parser {
             .invoke("GetTopElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_String1(
-        input: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        input: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,9 +86,9 @@ impl crate::System::Security::Util::Parser {
             .invoke("ParseContents", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RestrictionFacets {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Length: i32,
     pub MinLength: i32,
     pub MaxLength: i32,
     pub Patterns: *mut crate::System::Collections::ArrayList,
     pub Enumeration: *mut crate::System::Collections::ArrayList,
     pub WhiteSpace: crate::System::Xml::Schema::XmlSchemaWhiteSpace,
-    pub MaxInclusive: *mut crate::System::Object,
-    pub MaxExclusive: *mut crate::System::Object,
-    pub MinInclusive: *mut crate::System::Object,
-    pub MinExclusive: *mut crate::System::Object,
+    pub MaxInclusive: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub MaxExclusive: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub MinInclusive: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub MinExclusive: *mut quest_hook::libil2cpp::Il2CppObject,
     pub TotalDigits: i32,
     pub FractionDigits: i32,
     pub Flags: crate::System::Xml::Schema::RestrictionFlags,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+RestrictionFacets")]
 impl std::ops::Deref for crate::System::Xml::Schema::RestrictionFacets {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

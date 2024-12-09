@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _clrTypes: *mut crate::System::Collections::Hashtable,
     pub _schemaTypes: *mut crate::System::Collections::Hashtable,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+ReflectionHelper")]
 impl std::ops::Deref for crate::System::Xml::Serialization::ReflectionHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
     pub fn GetRegisteredClrType(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -42,8 +42,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
     }
     pub fn GetRegisteredSchemaType(
         &mut self,
-        xmlType: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        xmlType: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -65,7 +65,7 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
         &mut self,
         map: *mut crate::System::Xml::Serialization::XmlTypeMapping,
         _cordl_type: *mut crate::System::Type,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,8 +77,8 @@ impl crate::System::Xml::Serialization::ReflectionHelper {
     pub fn RegisterSchemaType(
         &mut self,
         map: *mut crate::System::Xml::Serialization::XmlTypeMapping,
-        xmlType: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        xmlType: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

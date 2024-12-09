@@ -5,7 +5,7 @@ pub struct SelectManyObservable_2<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Source: *mut crate::System::IObservable_1<TSource>,
     pub m_Filter: *mut crate::System::Func_2<
         TSource,
@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
     TSource,
     TResult,
 > {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,7 +138,7 @@ pub struct SelectManyObservable_2_Select<
     TSource: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Observable: *mut crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2<
         TSource,
         TResult,
@@ -163,7 +163,7 @@ for crate::UnityEngine::InputSystem::Utilities::SelectManyObservable_2_Select<
     TSource,
     TResult,
 > {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

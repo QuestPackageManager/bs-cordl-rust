@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkcs::PkcsIOException {
 #[cfg(feature = "Org+BouncyCastle+Pkcs+PkcsIOException")]
 impl crate::Org::BouncyCastle::Pkcs::PkcsIOException {
     pub fn New_Exception1(
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         underlying: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -34,8 +34,8 @@ impl crate::Org::BouncyCastle::Pkcs::PkcsIOException {
             .invoke_void(".ctor", (message, underlying))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Pkcs::PkcsIOException {
     }
     pub fn _ctor_Exception1(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         underlying: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -55,9 +55,9 @@ impl crate::Org::BouncyCastle::Pkcs::PkcsIOException {
             .invoke(".ctor", (message, underlying))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

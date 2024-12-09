@@ -4,13 +4,13 @@
 pub struct GroupPresenceSample {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub IsJoinable: bool,
-    pub LobbySessionID: *mut crate::System::String,
-    pub MatchSessionID: *mut crate::System::String,
+    pub LobbySessionID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub MatchSessionID: *mut quest_hook::libil2cpp::Il2CppString,
     pub SuggestedUserID: u64,
     pub InVRConsole: *mut crate::UnityEngine::UI::Text,
     pub DestinationsConsole: *mut crate::UnityEngine::UI::Text,
     pub DestinationAPINames: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub LoggedInUserID: u64,
     pub DestinationIndex: i32,
@@ -222,7 +222,7 @@ impl crate::GlobalNamespace::GroupPresenceSample {
     }
     pub fn UpdateConsole(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

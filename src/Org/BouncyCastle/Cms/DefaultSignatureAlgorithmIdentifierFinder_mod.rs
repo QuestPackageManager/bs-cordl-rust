@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultSignatureAlgorithmIdentifierFinder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+DefaultSignatureAlgorithmIdentifierFinder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ for crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
 impl crate::Org::BouncyCastle::Cms::DefaultSignatureAlgorithmIdentifierFinder {
     pub fn Find(
         &mut self,
-        sigAlgName: *mut crate::System::String,
+        sigAlgName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     > {

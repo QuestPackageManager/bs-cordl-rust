@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalCallbackWithLookupWrapper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _signalBus: *mut crate::Zenject::SignalBus,
     pub _lookupId: crate::System::Guid,
     pub _methodGetter: *mut crate::System::Func_2<
-        *mut crate::System::Object,
-        *mut crate::System::Action_1<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppObject,
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
     pub _objectType: *mut crate::System::Type,
     pub _signalType: *mut crate::System::Type,
-    pub _identifier: *mut crate::System::Object,
+    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+SignalCallbackWithLookupWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalCallbackWithLookupWrapper")]
 impl std::ops::Deref for crate::Zenject::SignalCallbackWithLookupWrapper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,8 +49,8 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
         objectType: *mut crate::System::Type,
         lookupId: crate::System::Guid,
         methodGetter: *mut crate::System::Func_2<
-            *mut crate::System::Object,
-            *mut crate::System::Action_1<*mut crate::System::Object>,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         signalBus: *mut crate::Zenject::SignalBus,
         container: *mut crate::Zenject::DiContainer,
@@ -73,7 +73,7 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
     }
     pub fn OnSignalFired(
         &mut self,
-        signal: *mut crate::System::Object,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -88,8 +88,8 @@ impl crate::Zenject::SignalCallbackWithLookupWrapper {
         objectType: *mut crate::System::Type,
         lookupId: crate::System::Guid,
         methodGetter: *mut crate::System::Func_2<
-            *mut crate::System::Object,
-            *mut crate::System::Action_1<*mut crate::System::Object>,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
         >,
         signalBus: *mut crate::Zenject::SignalBus,
         container: *mut crate::Zenject::DiContainer,

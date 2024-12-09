@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetDataWriter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _position: i32,
     pub _autoResize: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+NetDataWriter")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetDataWriter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,7 +100,9 @@ impl crate::LiteNetLib::Utils::NetDataWriter {
     }
     pub fn PutArray_Il2CppArray11(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -199,7 +201,9 @@ impl crate::LiteNetLib::Utils::NetDataWriter {
     }
     pub fn PutArray_Il2CppArray_i32_12(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -292,9 +296,9 @@ impl crate::LiteNetLib::Utils::NetDataWriter {
             .invoke("Put", (data, offset, length))?;
         Ok(__cordl_ret)
     }
-    pub fn Put_String15(
+    pub fn Put_Il2CppString15(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -303,9 +307,9 @@ impl crate::LiteNetLib::Utils::NetDataWriter {
             .invoke("Put", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Put_String_i32_16(
+    pub fn Put_Il2CppString_i32_16(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

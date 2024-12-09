@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRow {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _table: *mut crate::System::Data::DataTable,
     pub _columns: *mut crate::System::Data::DataColumnCollection,
     pub _oldRecord: i32,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataRow")]
 impl std::ops::Deref for crate::System::Data::DataRow {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -193,11 +193,11 @@ impl crate::System::Data::DataRow {
     pub fn GetColumnError(
         &mut self,
         column: *mut crate::System::Data::DataColumn,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetColumnError", (column))?;
         Ok(__cordl_ret)
     }
@@ -208,13 +208,13 @@ impl crate::System::Data::DataRow {
         >,
         version: crate::System::Data::DataRowVersion,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetColumnValues", (columns, version))?;
         Ok(__cordl_ret)
     }
@@ -224,13 +224,13 @@ impl crate::System::Data::DataRow {
             *mut crate::System::Data::DataColumn,
         >,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetColumnValues", (columns))?;
         Ok(__cordl_ret)
     }
@@ -256,7 +256,7 @@ impl crate::System::Data::DataRow {
     }
     pub fn GetDataColumn(
         &mut self,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataColumn> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -287,13 +287,13 @@ impl crate::System::Data::DataRow {
         &mut self,
         key: crate::System::Data::DataKey,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetKeyValues", (key))?;
         Ok(__cordl_ret)
     }
@@ -302,13 +302,13 @@ impl crate::System::Data::DataRow {
         key: crate::System::Data::DataKey,
         version: crate::System::Data::DataRowVersion,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetKeyValues", (key, version))?;
         Ok(__cordl_ret)
     }
@@ -519,7 +519,7 @@ impl crate::System::Data::DataRow {
     pub fn SetColumnError_DataColumn1(
         &mut self,
         column: *mut crate::System::Data::DataColumn,
-        error: *mut crate::System::String,
+        error: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -531,7 +531,7 @@ impl crate::System::Data::DataRow {
     pub fn SetColumnError_i32_0(
         &mut self,
         columnIndex: i32,
-        error: *mut crate::System::String,
+        error: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -543,7 +543,9 @@ impl crate::System::Data::DataRow {
     pub fn SetKeyValues(
         &mut self,
         key: crate::System::Data::DataKey,
-        keyValues: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        keyValues: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -613,11 +615,11 @@ impl crate::System::Data::DataRow {
     pub fn get_Item_DataColumn0(
         &mut self,
         column: *mut crate::System::Data::DataColumn,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (column))?;
         Ok(__cordl_ret)
     }
@@ -625,11 +627,11 @@ impl crate::System::Data::DataRow {
         &mut self,
         column: *mut crate::System::Data::DataColumn,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (column, version))?;
         Ok(__cordl_ret)
     }
@@ -652,11 +654,11 @@ impl crate::System::Data::DataRow {
     }
     pub fn get_RowError(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_RowError", ())?;
         Ok(__cordl_ret)
     }
@@ -689,7 +691,9 @@ impl crate::System::Data::DataRow {
     }
     pub fn set_ItemArray(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -701,7 +705,7 @@ impl crate::System::Data::DataRow {
     pub fn set_Item_DataColumn1(
         &mut self,
         column: *mut crate::System::Data::DataColumn,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -710,10 +714,10 @@ impl crate::System::Data::DataRow {
             .invoke("set_Item", (column, value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item_String0(
+    pub fn set_Item_Il2CppString0(
         &mut self,
-        columnName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -746,7 +750,7 @@ impl crate::System::Data::DataRow {
     }
     pub fn set_RowError(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

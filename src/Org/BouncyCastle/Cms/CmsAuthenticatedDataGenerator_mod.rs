@@ -29,7 +29,7 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
     pub fn Generate_CipherKeyGenerator0(
         &mut self,
         content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        macOid: *mut crate::System::String,
+        macOid: *mut quest_hook::libil2cpp::Il2CppString,
         keyGen: *mut crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Cms::CmsAuthenticatedData,
@@ -41,10 +41,10 @@ impl crate::Org::BouncyCastle::Cms::CmsAuthenticatedDataGenerator {
             .invoke("Generate", (content, macOid, keyGen))?;
         Ok(__cordl_ret)
     }
-    pub fn Generate_CmsProcessable_String1(
+    pub fn Generate_CmsProcessable_Il2CppString1(
         &mut self,
         content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Cms::CmsAuthenticatedData,
     > {

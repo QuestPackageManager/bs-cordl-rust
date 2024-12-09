@@ -27,8 +27,8 @@ for crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
 }
 #[cfg(feature = "UnityEngine+Scripting+APIUpdating+MovedFromAttribute")]
 impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
-    pub fn New_String1(
-        sourceNamespace: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        sourceNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,11 +36,11 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
             .invoke_void(".ctor", (sourceNamespace))?;
         Ok(__cordl_object)
     }
-    pub fn New__cordl_bool_String_String_String0(
+    pub fn New__cordl_bool_Il2CppString_Il2CppString_Il2CppString0(
         autoUpdateAPI: bool,
-        sourceNamespace: *mut crate::System::String,
-        sourceAssembly: *mut crate::System::String,
-        sourceClassName: *mut crate::System::String,
+        sourceNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceAssembly: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceClassName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -51,9 +51,9 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
             )?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        sourceNamespace: *mut crate::System::String,
+        sourceNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -62,12 +62,12 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttribute {
             .invoke(".ctor", (sourceNamespace))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool_String_String_String0(
+    pub fn _ctor__cordl_bool_Il2CppString_Il2CppString_Il2CppString0(
         &mut self,
         autoUpdateAPI: bool,
-        sourceNamespace: *mut crate::System::String,
-        sourceAssembly: *mut crate::System::String,
-        sourceClassName: *mut crate::System::String,
+        sourceNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceAssembly: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceClassName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

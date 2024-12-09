@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Store {
-    __cordl_parent: crate::System::Object,
-    pub _storePath: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _storePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _certificates: *mut crate::Mono::Security::X509::X509CertificateCollection,
     pub _crls: *mut crate::System::Collections::ArrayList,
     pub _crl: bool,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Store")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Store {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509Store {
 impl crate::Mono::Security::X509::X509Store {
     pub fn BuildCertificatesCollection(
         &mut self,
-        storeName: *mut crate::System::String,
+        storeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Mono::Security::X509::X509CertificateCollection,
     > {
@@ -44,7 +44,7 @@ impl crate::Mono::Security::X509::X509Store {
     }
     pub fn BuildCrlsCollection(
         &mut self,
-        storeName: *mut crate::System::String,
+        storeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ArrayList> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,7 +55,7 @@ impl crate::Mono::Security::X509::X509Store {
     }
     pub fn CheckStore(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         throwException: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,7 +67,7 @@ impl crate::Mono::Security::X509::X509Store {
     }
     pub fn Load(
         &mut self,
-        filename: *mut crate::System::String,
+        filename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +78,7 @@ impl crate::Mono::Security::X509::X509Store {
     }
     pub fn LoadCertificate(
         &mut self,
-        filename: *mut crate::System::String,
+        filename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Mono::Security::X509::X509Certificate,
     > {
@@ -91,7 +91,7 @@ impl crate::Mono::Security::X509::X509Store {
     }
     pub fn LoadCrl(
         &mut self,
-        filename: *mut crate::System::String,
+        filename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Crl> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,7 +101,7 @@ impl crate::Mono::Security::X509::X509Store {
         Ok(__cordl_ret)
     }
     pub fn New(
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         crl: bool,
         newFormat: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -113,7 +113,7 @@ impl crate::Mono::Security::X509::X509Store {
     }
     pub fn _ctor(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         crl: bool,
         newFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

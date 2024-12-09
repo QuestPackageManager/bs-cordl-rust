@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NameNode {
     __cordl_parent: crate::System::Data::ExpressionNode,
-    pub _name: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _found: bool,
     pub _column: *mut crate::System::Data::DataColumn,
 }
@@ -53,33 +53,34 @@ impl crate::System::Data::NameNode {
     }
     pub fn Eval_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Eval", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Eval", ())?;
         Ok(__cordl_ret)
     }
     pub fn Eval_DataRow_DataRowVersion1(
         &mut self,
         row: *mut crate::System::Data::DataRow,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (row, version))?;
         Ok(__cordl_ret)
     }
     pub fn Eval_Il2CppArray2(
         &mut self,
         records: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (records))?;
         Ok(__cordl_ret)
     }
@@ -123,9 +124,9 @@ impl crate::System::Data::NameNode {
             .invoke_void(".ctor", (table, text, start, pos))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
+    pub fn New_Il2CppString1(
         table: *mut crate::System::Data::DataTable,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -157,10 +158,10 @@ impl crate::System::Data::NameNode {
             .invoke(".ctor", (table, text, start, pos))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         table: *mut crate::System::Data::DataTable,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::System::OrdinalComparer {
 impl crate::System::OrdinalComparer {
     pub fn Compare(
         &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
+        x: *mut quest_hook::libil2cpp::Il2CppString,
+        y: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,9 +36,9 @@ impl crate::System::OrdinalComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (x, y))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -46,10 +46,10 @@ impl crate::System::OrdinalComparer {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_String_String0(
+    pub fn Equals_Il2CppString_Il2CppString0(
         &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
+        x: *mut quest_hook::libil2cpp::Il2CppString,
+        y: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,9 +64,9 @@ impl crate::System::OrdinalComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode_String0(
+    pub fn GetHashCode_Il2CppString0(
         &mut self,
-        obj: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

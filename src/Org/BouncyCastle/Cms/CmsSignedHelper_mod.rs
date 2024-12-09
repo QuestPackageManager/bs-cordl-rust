@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsSignedHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsSignedHelper")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsSignedHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     }
     pub fn CreateAttributeStore(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
         certSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -64,7 +64,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     }
     pub fn CreateCertificateStore(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
         certSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     }
     pub fn CreateCrlStore(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
         crlSet: *mut crate::Org::BouncyCastle::Asn1::Asn1Set,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
@@ -105,32 +105,32 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     }
     pub fn GetDigestAlgName(
         &mut self,
-        digestAlgOid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        digestAlgOid: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetDigestAlgName", (digestAlgOid))?;
         Ok(__cordl_ret)
     }
     pub fn GetDigestAliases(
         &mut self,
-        algName: *mut crate::System::String,
+        algName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetDigestAliases", (algName))?;
         Ok(__cordl_ret)
     }
     pub fn GetDigestInstance(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IDigest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -156,29 +156,29 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedHelper {
     pub fn GetEncOid(
         &mut self,
         key: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-        digestOID: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        digestOID: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetEncOid", (key, digestOID))?;
         Ok(__cordl_ret)
     }
     pub fn GetEncryptionAlgName(
         &mut self,
-        encryptionAlgOid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        encryptionAlgOid: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetEncryptionAlgName", (encryptionAlgOid))?;
         Ok(__cordl_ret)
     }
     pub fn GetSignatureInstance(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::ISigner> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

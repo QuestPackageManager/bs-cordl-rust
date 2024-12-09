@@ -5,7 +5,7 @@ pub struct HtmlEncodedRawTextWriterIndent {
     __cordl_parent: crate::System::Xml::HtmlEncodedRawTextWriter,
     pub indentLevel: i32,
     pub endBlockPos: i32,
-    pub indentChars: *mut crate::System::String,
+    pub indentChars: *mut quest_hook::libil2cpp::Il2CppString,
     pub newLineOnAttributes: bool,
 }
 #[cfg(feature = "System+Xml+HtmlEncodedRawTextWriterIndent")]
@@ -81,10 +81,10 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
     }
     pub fn WriteDocType(
         &mut self,
-        name: *mut crate::System::String,
-        pubid: *mut crate::System::String,
-        sysid: *mut crate::System::String,
-        subset: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        pubid: *mut quest_hook::libil2cpp::Il2CppString,
+        sysid: *mut quest_hook::libil2cpp::Il2CppString,
+        subset: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -95,9 +95,9 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
     }
     pub fn WriteEndElement(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,9 +118,9 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
     }
     pub fn WriteStartAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -131,9 +131,9 @@ impl crate::System::Xml::HtmlEncodedRawTextWriterIndent {
     }
     pub fn WriteStartElement(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

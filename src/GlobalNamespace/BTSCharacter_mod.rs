@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BTSCharacter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _characterName: *mut crate::System::String,
+    pub _characterName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _animator: *mut crate::UnityEngine::Animator,
     pub _btsCharacterMaterialSwitcher: *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher,
     pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
@@ -73,11 +73,11 @@ impl crate::GlobalNamespace::BTSCharacter {
     }
     pub fn get_characterName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_characterName", ())?;
         Ok(__cordl_ret)
     }

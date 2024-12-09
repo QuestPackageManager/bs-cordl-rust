@@ -29,7 +29,7 @@ for crate::System::EventHandler_1<TEventArgs> {
 impl<TEventArgs: quest_hook::libil2cpp::Type> crate::System::EventHandler_1<TEventArgs> {
     pub fn Invoke(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: TEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -44,7 +44,7 @@ impl<TEventArgs: quest_hook::libil2cpp::Type> crate::System::EventHandler_1<TEve
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -59,7 +59,7 @@ impl<TEventArgs: quest_hook::libil2cpp::Type> crate::System::EventHandler_1<TEve
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

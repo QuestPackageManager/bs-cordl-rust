@@ -27,8 +27,8 @@ impl crate::GlobalNamespace::IConnectionRequestHandler {
     pub fn GetConnectionMessage(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -44,8 +44,12 @@ impl crate::GlobalNamespace::IConnectionRequestHandler {
     pub fn ValidateConnectionMessage(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userId: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        userName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        userId: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        userName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

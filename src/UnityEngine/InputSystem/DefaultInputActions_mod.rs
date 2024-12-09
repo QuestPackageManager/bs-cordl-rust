@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultInputActions {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _asset_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionAsset,
     pub m_Player: *mut crate::UnityEngine::InputSystem::InputActionMap,
     pub m_PlayerActionsCallbackInterface: *mut crate::UnityEngine::InputSystem::DefaultInputActions_IPlayerActions,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+DefaultInputActions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::DefaultInputActions {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -97,7 +97,7 @@ impl crate::UnityEngine::InputSystem::DefaultInputActions {
     }
     pub fn FindAction(
         &mut self,
-        actionNameOrId: *mut crate::System::String,
+        actionNameOrId: *mut quest_hook::libil2cpp::Il2CppString,
         throwIfNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputAction,

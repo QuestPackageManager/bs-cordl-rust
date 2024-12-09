@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _UseRegistry: bool,
     pub _BypassOnLocal: bool,
     pub m_EnableAutoproxy: bool,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebProxy")]
 impl std::ops::Deref for crate::System::Net::WebProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -151,7 +151,9 @@ impl crate::System::Net::WebProxy {
     pub fn New_Uri__cordl_bool_Il2CppArray_ICredentials1(
         Address: *mut crate::System::Uri,
         BypassOnLocal: bool,
-        BypassList: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        BypassList: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         Credentials: *mut crate::System::Net::ICredentials,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -231,7 +233,9 @@ impl crate::System::Net::WebProxy {
         &mut self,
         Address: *mut crate::System::Uri,
         BypassOnLocal: bool,
-        BypassList: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        BypassList: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         Credentials: *mut crate::System::Net::ICredentials,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

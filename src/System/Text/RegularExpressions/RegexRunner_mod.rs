@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexRunner {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub runtextbeg: i32,
     pub runtextend: i32,
     pub runtextstart: i32,
-    pub runtext: *mut crate::System::String,
+    pub runtext: *mut quest_hook::libil2cpp::Il2CppString,
     pub runtextpos: i32,
     pub runtrack: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub runtrackpos: i32,
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexRunner")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexRunner {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -232,7 +232,7 @@ impl crate::System::Text::RegularExpressions::RegexRunner {
     pub fn Scan(
         &mut self,
         regex: *mut crate::System::Text::RegularExpressions::Regex,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         textbeg: i32,
         textend: i32,
         textstart: i32,

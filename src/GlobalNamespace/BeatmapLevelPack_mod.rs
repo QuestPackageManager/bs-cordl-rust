@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelPack {
-    __cordl_parent: crate::System::Object,
-    pub packID: *mut crate::System::String,
-    pub packName: *mut crate::System::String,
-    pub shortPackName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub packID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub packName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub coverImage: *mut crate::UnityEngine::Sprite,
     pub smallCoverImage: *mut crate::UnityEngine::Sprite,
     pub beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelPack")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelPack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,9 +34,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelPack {
 #[cfg(feature = "BeatmapLevelPack")]
 impl crate::GlobalNamespace::BeatmapLevelPack {
     pub fn New(
-        packID: *mut crate::System::String,
-        packName: *mut crate::System::String,
-        shortPackName: *mut crate::System::String,
+        packID: *mut quest_hook::libil2cpp::Il2CppString,
+        packName: *mut quest_hook::libil2cpp::Il2CppString,
+        shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
         coverImage: *mut crate::UnityEngine::Sprite,
         smallCoverImage: *mut crate::UnityEngine::Sprite,
         beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -63,9 +63,9 @@ impl crate::GlobalNamespace::BeatmapLevelPack {
     }
     pub fn _ctor(
         &mut self,
-        packID: *mut crate::System::String,
-        packName: *mut crate::System::String,
-        shortPackName: *mut crate::System::String,
+        packID: *mut quest_hook::libil2cpp::Il2CppString,
+        packName: *mut quest_hook::libil2cpp::Il2CppString,
+        shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
         coverImage: *mut crate::UnityEngine::Sprite,
         smallCoverImage: *mut crate::UnityEngine::Sprite,
         beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<

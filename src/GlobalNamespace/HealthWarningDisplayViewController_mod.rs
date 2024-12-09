@@ -4,8 +4,8 @@
 pub struct HealthWarningDisplayViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _healthAndSafetyTextMesh: *mut crate::TMPro::TextMeshProUGUI,
-    pub _healthAndSafetyFullLocalizationKey: *mut crate::System::String,
-    pub _healthAndSafetyPSLocalizationKey: *mut crate::System::String,
+    pub _healthAndSafetyFullLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _healthAndSafetyPSLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _showShortHealthAndSafety: bool,
 }
 #[cfg(feature = "HealthWarningDisplayViewController")]

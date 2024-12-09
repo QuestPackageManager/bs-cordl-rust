@@ -31,6 +31,25 @@ impl crate::System::ArgumentNullException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString1(
+        paramName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (paramName))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString_Il2CppString2(
+        paramName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (paramName, message))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext3(
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
@@ -39,25 +58,6 @@ impl crate::System::ArgumentNullException {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        paramName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (paramName))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_String2(
-        paramName: *mut crate::System::String,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (paramName, message))?;
         Ok(__cordl_object)
     }
     pub fn _ctor_0(
@@ -70,6 +70,29 @@ impl crate::System::ArgumentNullException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppString1(
+        &mut self,
+        paramName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (paramName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Il2CppString2(
+        &mut self,
+        paramName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (paramName, message))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
@@ -80,29 +103,6 @@ impl crate::System::ArgumentNullException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (info, context))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        paramName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (paramName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_String2(
-        &mut self,
-        paramName: *mut crate::System::String,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (paramName, message))?;
         Ok(__cordl_ret)
     }
 }

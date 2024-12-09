@@ -4,7 +4,7 @@
 pub struct MonoEventInfo {
     pub declaring_type: *mut crate::System::Type,
     pub reflected_type: *mut crate::System::Type,
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub add_method: *mut crate::System::Reflection::MethodInfo,
     pub remove_method: *mut crate::System::Reflection::MethodInfo,
     pub raise_method: *mut crate::System::Reflection::MethodInfo,

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseUriAnnotation {
-    __cordl_parent: crate::System::Object,
-    pub baseUri: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub baseUri: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Linq+BaseUriAnnotation")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+BaseUriAnnotation")]
 impl std::ops::Deref for crate::System::Xml::Linq::BaseUriAnnotation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::BaseUriAnnotation {
 #[cfg(feature = "System+Xml+Linq+BaseUriAnnotation")]
 impl crate::System::Xml::Linq::BaseUriAnnotation {
     pub fn New(
-        baseUri: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::System::Xml::Linq::BaseUriAnnotation {
     }
     pub fn _ctor(
         &mut self,
-        baseUri: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

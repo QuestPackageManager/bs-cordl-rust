@@ -12,7 +12,9 @@ pub struct OVRBody {
     >,
     pub _dataChangedSinceLastQuery: bool,
     pub _hasData: bool,
-    pub _onPermissionGranted: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub _onPermissionGranted: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "OVRBody")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -142,7 +144,7 @@ impl crate::GlobalNamespace::OVRBody {
     }
     pub fn OnPermissionGranted(
         &mut self,
-        permissionId: *mut crate::System::String,
+        permissionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

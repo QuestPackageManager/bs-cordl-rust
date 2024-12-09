@@ -44,10 +44,10 @@ impl crate::Zenject::AddToExistingGameObjectComponentProvider {
         extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::Zenject::TypeValuePair,
         >,
-        concreteIdentifier: *mut crate::System::Object,
+        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateCallback: *mut crate::System::Action_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -74,10 +74,10 @@ impl crate::Zenject::AddToExistingGameObjectComponentProvider {
         extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::Zenject::TypeValuePair,
         >,
-        concreteIdentifier: *mut crate::System::Object,
+        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateCallback: *mut crate::System::Action_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

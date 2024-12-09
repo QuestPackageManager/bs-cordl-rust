@@ -15,7 +15,7 @@ pub struct FlowCoordinator {
     pub _bottomScreenViewController: *mut crate::HMUI::ViewController,
     pub _topScreenViewController: *mut crate::HMUI::ViewController,
     pub _wasActivatedBefore: bool,
-    pub _title: *mut crate::System::String,
+    pub _title: *mut quest_hook::libil2cpp::Il2CppString,
     pub _providedMainViewController: *mut crate::HMUI::ViewController,
     pub _providedLeftScreenViewController: *mut crate::HMUI::ViewController,
     pub _providedRightScreenViewController: *mut crate::HMUI::ViewController,
@@ -299,7 +299,7 @@ impl crate::HMUI::FlowCoordinator {
     }
     pub fn PresentTitle(
         &mut self,
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -476,7 +476,7 @@ impl crate::HMUI::FlowCoordinator {
     }
     pub fn SetTitle(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         animationType: crate::HMUI::ViewController_AnimationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -660,11 +660,11 @@ impl crate::HMUI::FlowCoordinator {
     }
     pub fn get_title(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_title", ())?;
         Ok(__cordl_ret)
     }

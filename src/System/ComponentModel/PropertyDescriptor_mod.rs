@@ -5,7 +5,9 @@ pub struct PropertyDescriptor {
     __cordl_parent: crate::System::ComponentModel::MemberDescriptor,
     pub _converter: *mut crate::System::ComponentModel::TypeConverter,
     pub _valueChangedHandlers: *mut crate::System::Collections::Hashtable,
-    pub _editors: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub _editors: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _editorTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     pub _editorCount: i32,
 }
@@ -31,7 +33,7 @@ impl std::ops::DerefMut for crate::System::ComponentModel::PropertyDescriptor {
 impl crate::System::ComponentModel::PropertyDescriptor {
     pub fn CanResetValue(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,17 +44,17 @@ impl crate::System::ComponentModel::PropertyDescriptor {
     pub fn CreateInstance(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("CreateInstance", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,18 +83,18 @@ impl crate::System::ComponentModel::PropertyDescriptor {
     pub fn GetInvocationTarget(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetInvocationTarget", (_cordl_type, instance))?;
         Ok(__cordl_ret)
     }
     pub fn GetTypeFromName(
         &mut self,
-        typeName: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,14 +105,24 @@ impl crate::System::ComponentModel::PropertyDescriptor {
     }
     pub fn GetValue(
         &mut self,
-        component: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (component))?;
         Ok(__cordl_ret)
+    }
+    pub fn New_Il2CppString0(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, attrs))?;
+        Ok(__cordl_object)
     }
     pub fn New_MemberDescriptor1(
         descr: *mut crate::System::ComponentModel::MemberDescriptor,
@@ -122,19 +134,9 @@ impl crate::System::ComponentModel::PropertyDescriptor {
             .invoke_void(".ctor", (descr, attrs))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        name: *mut crate::System::String,
-        attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, attrs))?;
-        Ok(__cordl_object)
-    }
     pub fn OnValueChanged(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::EventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -146,7 +148,7 @@ impl crate::System::ComponentModel::PropertyDescriptor {
     }
     pub fn ResetValue(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,8 +159,8 @@ impl crate::System::ComponentModel::PropertyDescriptor {
     }
     pub fn SetValue(
         &mut self,
-        component: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,13 +171,25 @@ impl crate::System::ComponentModel::PropertyDescriptor {
     }
     pub fn ShouldSerializeValue(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("ShouldSerializeValue", (component))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString0(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, attrs))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_MemberDescriptor1(
@@ -188,18 +202,6 @@ impl crate::System::ComponentModel::PropertyDescriptor {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (descr, attrs))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String0(
-        &mut self,
-        name: *mut crate::System::String,
-        attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, attrs))?;
         Ok(__cordl_ret)
     }
     pub fn get_ComponentType(

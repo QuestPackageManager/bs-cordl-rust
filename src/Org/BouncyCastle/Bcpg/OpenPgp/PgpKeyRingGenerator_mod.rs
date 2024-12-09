@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpKeyRingGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keys: *mut crate::System::Collections::IList,
-    pub id: *mut crate::System::String,
+    pub id: *mut quest_hook::libil2cpp::Il2CppString,
     pub encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
     pub hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
     pub certificationLevel: i32,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpKeyRingGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -149,7 +149,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -181,7 +181,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         utf8PassPhrase: bool,
@@ -215,7 +215,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom0(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
@@ -243,7 +243,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom1(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         useSha1: bool,
@@ -273,7 +273,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         useSha1: bool,
@@ -303,7 +303,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
     pub fn New__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         utf8PassPhrase: bool,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -336,7 +336,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -370,7 +370,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -404,7 +404,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         utf8PassPhrase: bool,
@@ -440,7 +440,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
@@ -470,7 +470,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         useSha1: bool,
@@ -502,7 +502,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         useSha1: bool,
@@ -534,7 +534,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyRingGenerator {
         &mut self,
         certificationLevel: i32,
         masterKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         utf8PassPhrase: bool,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,

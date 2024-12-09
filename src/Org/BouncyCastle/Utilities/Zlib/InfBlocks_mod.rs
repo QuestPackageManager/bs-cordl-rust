@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InfBlocks {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: i32,
     pub left: i32,
     pub table: i32,
@@ -19,7 +19,7 @@ pub struct InfBlocks {
     pub end: i32,
     pub read: i32,
     pub write: i32,
-    pub checkfn: *mut crate::System::Object,
+    pub checkfn: *mut quest_hook::libil2cpp::Il2CppObject,
     pub check: i64,
     pub inftree: *mut crate::Org::BouncyCastle::Utilities::Zlib::InfTree,
 }
@@ -30,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+InfBlocks")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::InfBlocks {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfBlocks {
     pub const Z_VERSION_ERROR: i32 = -6i32;
     pub fn New(
         z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
-        checkfn: *mut crate::System::Object,
+        checkfn: *mut quest_hook::libil2cpp::Il2CppObject,
         w: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -77,7 +77,7 @@ impl crate::Org::BouncyCastle::Utilities::Zlib::InfBlocks {
     pub fn _ctor(
         &mut self,
         z: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
-        checkfn: *mut crate::System::Object,
+        checkfn: *mut quest_hook::libil2cpp::Il2CppObject,
         w: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

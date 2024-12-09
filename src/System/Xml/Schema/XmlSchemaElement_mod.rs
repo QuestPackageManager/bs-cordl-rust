@@ -11,9 +11,9 @@ pub struct XmlSchemaElement {
     pub block: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub _cordl_final: crate::System::Xml::Schema::XmlSchemaDerivationMethod,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub defaultValue: *mut crate::System::String,
-    pub fixedValue: *mut crate::System::String,
-    pub name: *mut crate::System::String,
+    pub defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub fixedValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub refName: *mut crate::System::Xml::XmlQualifiedName,
     pub substitutionGroup: *mut crate::System::Xml::XmlQualifiedName,
     pub typeName: *mut crate::System::Xml::XmlQualifiedName,
@@ -169,11 +169,11 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn get_DefaultValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DefaultValue", ())?;
         Ok(__cordl_ret)
     }
@@ -225,11 +225,11 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn get_FixedValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FixedValue", ())?;
         Ok(__cordl_ret)
     }
@@ -290,31 +290,31 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NameAttribute(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NameAttribute", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NameString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NameString", ())?;
         Ok(__cordl_ret)
     }
@@ -381,7 +381,7 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn set_DefaultValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -414,7 +414,7 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn set_FixedValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -469,7 +469,7 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -480,7 +480,7 @@ impl crate::System::Xml::Schema::XmlSchemaElement {
     }
     pub fn set_NameAttribute(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

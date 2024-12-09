@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::EventSystems::BaseInput {
 impl crate::UnityEngine::EventSystems::BaseInput {
     pub fn GetAxisRaw(
         &mut self,
-        axisName: *mut crate::System::String,
+        axisName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,7 +36,7 @@ impl crate::UnityEngine::EventSystems::BaseInput {
     }
     pub fn GetButtonDown(
         &mut self,
-        buttonName: *mut crate::System::String,
+        buttonName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,11 +114,11 @@ impl crate::UnityEngine::EventSystems::BaseInput {
     }
     pub fn get_compositionString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_compositionString", ())?;
         Ok(__cordl_ret)
     }

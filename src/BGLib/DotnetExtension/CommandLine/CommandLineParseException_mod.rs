@@ -28,7 +28,7 @@ for crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParseException")]
 impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     pub fn New(
-        hint: *mut crate::System::String,
+        hint: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -39,7 +39,7 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParseException {
     }
     pub fn _ctor(
         &mut self,
-        hint: *mut crate::System::String,
+        hint: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

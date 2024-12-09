@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyStateDataModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _unifiedNetworkPlayerModel: *mut crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     pub _connectedPlayers: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _connectedPlayersById: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LobbyStateDataModel")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyStateDataModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     }
     pub fn GetPlayerById(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

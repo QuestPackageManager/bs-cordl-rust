@@ -60,8 +60,10 @@ impl<
     }
     pub fn OnCompleted(
         &mut self,
-        continuation: *mut crate::System::Action_1<*mut crate::System::Object>,
-        state: *mut crate::System::Object,
+        continuation: *mut crate::System::Action_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         token: i16,
         flags: crate::System::Threading::Tasks::Sources::ValueTaskSourceOnCompletedFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

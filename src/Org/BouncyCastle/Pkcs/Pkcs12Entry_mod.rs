@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Pkcs12Entry {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub attributes: *mut crate::System::Collections::IDictionary,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkcs+Pkcs12Entry")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,9 +48,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             .invoke("GetBagAttribute", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn GetBagAttribute_String1(
+    pub fn GetBagAttribute_Il2CppString1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     > {
@@ -104,9 +104,9 @@ impl crate::Org::BouncyCastle::Pkcs::Pkcs12Entry {
             .invoke("get_Item", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     > {

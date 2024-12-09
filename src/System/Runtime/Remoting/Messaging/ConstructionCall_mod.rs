@@ -5,11 +5,11 @@ pub struct ConstructionCall {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::MethodCall,
     pub _activator: *mut crate::System::Runtime::Remoting::Activation::IActivator,
     pub _activationAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _contextProperties: *mut crate::System::Collections::IList,
     pub _activationType: *mut crate::System::Type,
-    pub _activationTypeName: *mut crate::System::String,
+    pub _activationTypeName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isContextOk: bool,
     pub _sourceProxy: *mut crate::System::Runtime::Remoting::Proxies::RemotingProxy,
 }
@@ -59,8 +59,8 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
     }
     pub fn InitMethodProperty(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +90,9 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
     }
     pub fn SetActivationAttributes(
         &mut self,
-        attributes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        attributes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -134,11 +136,11 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
     }
     pub fn get_ActivationTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ActivationTypeName", ())?;
         Ok(__cordl_ret)
     }
@@ -157,13 +159,13 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCall {
     pub fn get_CallSiteActivationAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_CallSiteActivationAttributes", ())?;
         Ok(__cordl_ret)
     }

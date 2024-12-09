@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSessionInfo {
-    __cordl_parent: crate::System::Object,
-    pub playerSessionId: *mut crate::System::String,
-    pub gameSessionId: *mut crate::System::String,
-    pub dnsName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub playerSessionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub gameSessionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub dnsName: *mut quest_hook::libil2cpp::Il2CppString,
     pub port: i32,
     pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub privateGameSecret: *mut crate::System::String,
-    pub privateGameCode: *mut crate::System::String,
+    pub privateGameSecret: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateGameCode: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BGNet+Core+GameLift+PlayerSessionInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Core+GameLift+PlayerSessionInfo")]
 impl std::ops::Deref for crate::BGNet::Core::GameLift::PlayerSessionInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

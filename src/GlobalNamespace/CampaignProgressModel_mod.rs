@@ -5,9 +5,9 @@ pub struct CampaignProgressModel {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _playerDataModel: *mut crate::GlobalNamespace::PlayerDataModel,
     pub _missionIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _finalMissionId: *mut crate::System::String,
+    pub _finalMissionId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _numberOfClearedMissionsDirty: bool,
     pub _numberOfClearedMissions: i32,
 }
@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn IsMissionCleared(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn IsMissionFinal(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn IsMissionRegistered(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +81,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn RegisterMissionId(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn SetFinalMissionId(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn SetMissionCleared(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn WillFinishGameAfterThisMission(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +135,7 @@ impl crate::GlobalNamespace::CampaignProgressModel {
     }
     pub fn __SetMissionCleared(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
         cleared: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

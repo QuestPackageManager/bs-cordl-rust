@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TakeNObservable_1<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Source: *mut crate::System::IObservable_1<TValue>,
     pub m_Count: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -96,7 +96,7 @@ for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1<TValue> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TakeNObservable_1_Take<TValue: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Observer: *mut crate::System::IObserver_1<TValue>,
     pub m_Remaining: i32,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
@@ -110,7 +110,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+TakeNObservable_1+Take")]
 impl<TValue: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::TakeNObservable_1_Take<TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

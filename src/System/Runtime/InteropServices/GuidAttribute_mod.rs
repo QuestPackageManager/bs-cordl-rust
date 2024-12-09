@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct GuidAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _val: *mut crate::System::String,
+    pub _val: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+InteropServices+GuidAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::GuidAttribu
 #[cfg(feature = "System+Runtime+InteropServices+GuidAttribute")]
 impl crate::System::Runtime::InteropServices::GuidAttribute {
     pub fn New(
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::System::Runtime::InteropServices::GuidAttribute {
     }
     pub fn _ctor(
         &mut self,
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

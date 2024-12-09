@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericDropdownMenu {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Items: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GenericDropdownMenu {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
     pub type __c__DisplayClass39_0 = crate::UnityEngine::UIElements::GenericDropdownMenu___c__DisplayClass39_0;
     pub fn AddItem_Action0(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isChecked: bool,
         action: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -54,12 +54,12 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
             .invoke("AddItem", (itemName, isChecked, action))?;
         Ok(__cordl_ret)
     }
-    pub fn AddItem_Action_1_Object1(
+    pub fn AddItem_Action_1_Il2CppObject1(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isChecked: bool,
-        action: *mut crate::System::Action_1<*mut crate::System::Object>,
-        data: *mut crate::System::Object,
+        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,12 +68,12 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
             .invoke("AddItem", (itemName, isChecked, action, data))?;
         Ok(__cordl_ret)
     }
-    pub fn AddItem__cordl_bool_Object2(
+    pub fn AddItem__cordl_bool_Il2CppObject2(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isChecked: bool,
         isEnabled: bool,
-        data: *mut crate::System::Object,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem,
     > {
@@ -86,7 +86,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
     }
     pub fn AddSeparator(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -397,11 +397,13 @@ for crate::UnityEngine::UIElements::GenericDropdownMenu {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GenericDropdownMenu_MenuItem {
-    __cordl_parent: crate::System::Object,
-    pub name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub element: *mut crate::UnityEngine::UIElements::VisualElement,
     pub action: *mut crate::System::Action,
-    pub actionUserData: *mut crate::System::Action_1<*mut crate::System::Object>,
+    pub actionUserData: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -411,7 +413,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+GenericDropdownMenu+MenuItem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::GenericDropdownMenu_MenuItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

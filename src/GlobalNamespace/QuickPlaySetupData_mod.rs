@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub quickPlayAvailablePacksOverride: *mut crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride,
 }
 #[cfg(feature = "QuickPlaySetupData")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "QuickPlaySetupData")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySetupData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetu
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupData_QuickPlaySongPacksOverride {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub predefinedPackIds: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack,
     >,
@@ -82,7 +82,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,14 +136,14 @@ for crate::GlobalNamespace::QuickPlaySetupData_QuickPlaySongPacksOverride {
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack {
-    __cordl_parent: crate::System::Object,
-    pub serializedName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub serializedName: *mut quest_hook::libil2cpp::Il2CppString,
     pub order: i32,
     pub localizedNames: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPackName,
     >,
     pub packIds: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
@@ -155,7 +155,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPack")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -201,9 +201,9 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_Locali
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPackName {
-    __cordl_parent: crate::System::Object,
-    pub language: *mut crate::System::String,
-    pub packName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub language: *mut quest_hook::libil2cpp::Il2CppString,
+    pub packName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPackName")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -214,7 +214,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+LocalizedCustomPackName")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_LocalizedCustomPackName {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -260,9 +260,9 @@ for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_Locali
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub order: i32,
-    pub packId: *mut crate::System::String,
+    pub packId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -273,7 +273,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySetupData+QuickPlaySongPacksOverride+PredefinedPack")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySongPacksOverride_QuickPlaySetupData_PredefinedPack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

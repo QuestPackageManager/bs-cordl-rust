@@ -48,9 +48,9 @@ for crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
 }
 #[cfg(feature = "UnityEngine+Rendering+SphericalHarmonicsL2")]
 impl crate::UnityEngine::Rendering::SphericalHarmonicsL2 {
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

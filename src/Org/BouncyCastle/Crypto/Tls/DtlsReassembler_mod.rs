@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReassembler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mMsgType: u8,
     pub mBody: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub mMissing: *mut crate::System::Collections::IList,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +109,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsReassembler_Range {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mStart: i32,
     pub mEnd: i32,
 }
@@ -121,7 +121,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsReassembler+Range")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsReassembler_Range {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

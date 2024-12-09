@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct StartDragArgs {
-    pub _title_k__BackingField: *mut crate::System::String,
+    pub _title_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _visualMode_k__BackingField: crate::UnityEngine::UIElements::DragVisualMode,
     pub _genericData_k__BackingField: *mut crate::System::Collections::Hashtable,
     pub _unityObjectReferences_k__BackingField: *mut crate::System::Collections::Generic::IEnumerable_1<
@@ -29,8 +29,8 @@ for crate::UnityEngine::UIElements::StartDragArgs {
 impl crate::UnityEngine::UIElements::StartDragArgs {
     pub fn SetGenericData(
         &mut self,
-        key: *mut crate::System::String,
-        data: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::UIElements::StartDragArgs {
     }
     pub fn _ctor(
         &mut self,
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
         visualMode: crate::UnityEngine::UIElements::DragVisualMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -63,8 +63,8 @@ impl crate::UnityEngine::UIElements::StartDragArgs {
     }
     pub fn get_title(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_title",
             (),

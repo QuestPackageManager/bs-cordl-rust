@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::MultiplayerIntroCountdown {
     }
     pub fn PhaseRoutine(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         appearDuration: f32,
         disappearDuration: f32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {

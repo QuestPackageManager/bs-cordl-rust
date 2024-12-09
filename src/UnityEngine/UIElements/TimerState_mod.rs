@@ -23,9 +23,9 @@ for crate::UnityEngine::UIElements::TimerState {
 }
 #[cfg(feature = "UnityEngine+UIElements+TimerState")]
 impl crate::UnityEngine::UIElements::TimerState {
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

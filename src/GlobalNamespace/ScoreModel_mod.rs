@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "ScoreModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreModel")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel_MaxScoreCounterElement {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub noteScoreDefinition: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
     pub _cordl_time: f32,
 }
@@ -75,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreModel+MaxScoreCounterElement")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,7 +135,7 @@ for crate::GlobalNamespace::ScoreModel_MaxScoreCounterElement {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreModel_NoteScoreDefinition {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maxCenterDistanceCutScore: i32,
     pub minBeforeCutScore: i32,
     pub maxBeforeCutScore: i32,
@@ -150,7 +150,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreModel+NoteScoreDefinition")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreModel_NoteScoreDefinition {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

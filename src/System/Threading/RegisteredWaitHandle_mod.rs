@@ -5,7 +5,7 @@ pub struct RegisteredWaitHandle {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _waitObject: *mut crate::System::Threading::WaitHandle,
     pub _callback: *mut crate::System::Threading::WaitOrTimerCallback,
-    pub _state: *mut crate::System::Object,
+    pub _state: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _finalEvent: *mut crate::System::Threading::WaitHandle,
     pub _cancelEvent: *mut crate::System::Threading::ManualResetEvent,
     pub _timeout: crate::System::TimeSpan,
@@ -35,7 +35,7 @@ impl std::ops::DerefMut for crate::System::Threading::RegisteredWaitHandle {
 impl crate::System::Threading::RegisteredWaitHandle {
     pub fn DoCallBack(
         &mut self,
-        timedOut: *mut crate::System::Object,
+        timedOut: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +47,7 @@ impl crate::System::Threading::RegisteredWaitHandle {
     pub fn New(
         waitObject: *mut crate::System::Threading::WaitHandle,
         callback: *mut crate::System::Threading::WaitOrTimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         timeout: crate::System::TimeSpan,
         executeOnlyOnce: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -72,7 +72,7 @@ impl crate::System::Threading::RegisteredWaitHandle {
     }
     pub fn Wait(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,7 +85,7 @@ impl crate::System::Threading::RegisteredWaitHandle {
         &mut self,
         waitObject: *mut crate::System::Threading::WaitHandle,
         callback: *mut crate::System::Threading::WaitOrTimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         timeout: crate::System::TimeSpan,
         executeOnlyOnce: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

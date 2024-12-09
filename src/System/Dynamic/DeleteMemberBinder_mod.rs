@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DeleteMemberBinder {
     __cordl_parent: crate::System::Dynamic::DynamicMetaObjectBinder,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _IgnoreCase_k__BackingField: bool,
 }
 #[cfg(feature = "System+Dynamic+DeleteMemberBinder")]
@@ -72,11 +72,11 @@ impl crate::System::Dynamic::DeleteMemberBinder {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

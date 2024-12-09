@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ValueTask {
-    pub _obj: *mut crate::System::Object,
+    pub _obj: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _token: i16,
     pub _continueOnCapturedContext: bool,
 }
@@ -49,9 +49,9 @@ impl crate::System::Threading::Tasks::ValueTask {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -124,9 +124,9 @@ impl crate::System::Threading::Tasks::ValueTask {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_i16__cordl_bool2(
+    pub fn _ctor_Il2CppObject_i16__cordl_bool2(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         token: i16,
         continueOnCapturedContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

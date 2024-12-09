@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UIRStylePainter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Owner: *mut crate::UnityEngine::UIElements::UIR::RenderChain,
     pub m_Entries: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter_Entry,
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+Implementation+UIRStylePainter")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Implementation::UIRStylePainter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

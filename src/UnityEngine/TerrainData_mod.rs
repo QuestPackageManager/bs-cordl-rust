@@ -48,11 +48,11 @@ impl crate::UnityEngine::TerrainData {
         y: i32,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetAlphamaps", (x, y, width, height))?;
         Ok(__cordl_ret)
     }
@@ -62,11 +62,11 @@ impl crate::UnityEngine::TerrainData {
         yBase: i32,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetHeights", (xBase, yBase, width, height))?;
         Ok(__cordl_ret)
     }
@@ -76,11 +76,11 @@ impl crate::UnityEngine::TerrainData {
         y: i32,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Internal_GetAlphamaps", (x, y, width, height))?;
         Ok(__cordl_ret)
     }
@@ -90,11 +90,11 @@ impl crate::UnityEngine::TerrainData {
         yBase: i32,
         width: i32,
         height: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Internal_GetHeights", (xBase, yBase, width, height))?;
         Ok(__cordl_ret)
     }
@@ -117,7 +117,7 @@ impl crate::UnityEngine::TerrainData {
         y: i32,
         width: i32,
         height: i32,
-        map: *mut crate::System::Object,
+        map: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,7 +133,7 @@ impl crate::UnityEngine::TerrainData {
         totalWidth: i32,
         totalHeight: i32,
         detailIndex: i32,
-        data: *mut crate::System::Object,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -163,7 +163,7 @@ impl crate::UnityEngine::TerrainData {
         yBase: i32,
         width: i32,
         height: i32,
-        heights: *mut crate::System::Object,
+        heights: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -193,7 +193,7 @@ impl crate::UnityEngine::TerrainData {
         &mut self,
         x: i32,
         y: i32,
-        map: *mut crate::System::Object,
+        map: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -207,7 +207,7 @@ impl crate::UnityEngine::TerrainData {
         xBase: i32,
         yBase: i32,
         layer: i32,
-        details: *mut crate::System::Object,
+        details: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -232,7 +232,7 @@ impl crate::UnityEngine::TerrainData {
         &mut self,
         xBase: i32,
         yBase: i32,
-        heights: *mut crate::System::Object,
+        heights: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

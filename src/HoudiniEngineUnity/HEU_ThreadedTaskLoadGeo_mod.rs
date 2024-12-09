@@ -22,7 +22,7 @@ pub struct HEU_ThreadedTaskLoadGeo {
     pub _session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
     pub _generateOptions: crate::HoudiniEngineUnity::HEU_GenerateOptions,
     pub _loadType: crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType,
-    pub _filePath: *mut crate::System::String,
+    pub _filePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _loadData: *mut crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData,
     pub _loadCallback: *mut crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback,
 }
@@ -59,7 +59,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
     pub fn AppendLog(
         &mut self,
         status: crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus,
-        logStr: *mut crate::System::String,
+        logStr: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,12 +114,12 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
     pub fn CreateLogString(
         &mut self,
         status: crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus,
-        logStr: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        logStr: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateLogString", (status, logStr))?;
         Ok(__cordl_ret)
     }
@@ -213,7 +213,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        partName: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
         partInfo: crate::HoudiniEngineUnity::HAPI_PartInfo,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
@@ -233,7 +233,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        partName: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
         partInfo: crate::HoudiniEngineUnity::HAPI_PartInfo,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_LoadBufferInstancer,
@@ -296,7 +296,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         floatValue: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -314,7 +314,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         colorValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -332,7 +332,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         vectorValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -377,8 +377,10 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
-        strValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
+        strValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -466,7 +468,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
     pub fn SetFileParm(
         &mut self,
         fileNodeID: i32,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -489,7 +491,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
     pub fn SetLog(
         &mut self,
         status: crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus,
-        logStr: *mut crate::System::String,
+        logStr: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -504,8 +506,8 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         ownerSync: *mut crate::HoudiniEngineUnity::HEU_BaseSync,
         loadType: crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_LoadType,
         cookNodeID: i32,
-        name: *mut crate::System::String,
-        filePath: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -521,8 +523,8 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         ownerSync: *mut crate::HoudiniEngineUnity::HEU_BaseSync,
-        assetPath: *mut crate::System::String,
-        name: *mut crate::System::String,
+        assetPath: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -536,7 +538,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         ownerSync: *mut crate::HoudiniEngineUnity::HEU_BaseSync,
         cookNodeID: i32,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -550,7 +552,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         ownerSync: *mut crate::HoudiniEngineUnity::HEU_BaseSync,
         cookNodeID: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -625,7 +627,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
         loadData: *mut crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData,
         callbackType: crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallbackType,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -659,7 +661,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -670,7 +672,7 @@ impl crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadCallback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -708,7 +710,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ThreadedTaskLoadGeo_HEU_LoadData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cookNodeID: i32,
     pub _loadStatus: crate::HoudiniEngineUnity::HEU_LoadData_HEU_ThreadedTaskLoadGeo_LoadStatus,
     pub _logStr: *mut crate::System::Text::StringBuilder,
@@ -730,7 +732,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadData")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -780,7 +782,7 @@ for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _objectNodeID: i32,
     pub _displayNodeID: i32,
     pub _terrainBuffers: *mut crate::System::Collections::Generic::List_1<
@@ -802,7 +804,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_ThreadedTaskLoadGeo+HEU_LoadObject")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_ThreadedTaskLoadGeo_HEU_LoadObject {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

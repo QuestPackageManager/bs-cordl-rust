@@ -8,7 +8,7 @@ pub struct SongStartSyncController {
     pub _waitStartTime: f32,
     pub _songStarted: bool,
     pub _startTime: f32,
-    pub _sessionGameId: *mut crate::System::String,
+    pub _sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _songStartHandler: *mut crate::GlobalNamespace::SongStartHandler,
     pub syncStartFailedEvent: *mut crate::System::Action,
     pub syncStartSuccessEvent: *mut crate::System::Action_1<i64>,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::SongStartSyncController {
     pub fn StartSong(
         &mut self,
         playersSpecificSettingsAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
-        sessionGameId: *mut crate::System::String,
+        sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -6,7 +6,9 @@ pub struct OVRFaceExpressions {
     pub _ValidExpressions_k__BackingField: bool,
     pub _EyeFollowingBlendshapesValid_k__BackingField: bool,
     pub _currentFaceState: crate::GlobalNamespace::OVRPlugin_FaceState,
-    pub _onPermissionGranted: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub _onPermissionGranted: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "OVRFaceExpressions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -129,7 +131,7 @@ impl crate::GlobalNamespace::OVRFaceExpressions {
     }
     pub fn OnPermissionGranted(
         &mut self,
-        permissionId: *mut crate::System::String,
+        permissionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -430,8 +432,8 @@ impl crate::GlobalNamespace::OVRFaceExpressions_FaceExpressionsEnumerator {
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),

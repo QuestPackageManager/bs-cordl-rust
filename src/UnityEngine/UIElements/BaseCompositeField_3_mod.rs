@@ -122,7 +122,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         fieldsByLine: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -214,7 +214,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         fieldsByLine: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -259,8 +259,8 @@ pub struct BaseCompositeField_3_FieldDescription<
     TField: quest_hook::libil2cpp::Type,
     TFieldValue: quest_hook::libil2cpp::Type,
 > {
-    pub name: *mut crate::System::String,
-    pub ussName: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ussName: *mut quest_hook::libil2cpp::Il2CppString,
     pub read: *mut crate::System::Func_2<TValueType, TFieldValue>,
     pub write: *mut crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
         TValueType,
@@ -318,8 +318,8 @@ impl<
     >;
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
-        ussName: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ussName: *mut quest_hook::libil2cpp::Il2CppString,
         read: *mut crate::System::Func_2<TValueType, TFieldValue>,
         write: *mut crate::UnityEngine::UIElements::FieldDescription_BaseCompositeField_3_WriteDelegate<
             TValueType,
@@ -436,7 +436,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -455,7 +455,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

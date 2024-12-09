@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct FieldMember {
     pub m_FieldInfo: *mut crate::System::Reflection::FieldInfo,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Unity+Properties+FieldMember")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -60,8 +60,8 @@ impl crate::Unity::Properties::FieldMember {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Name",
             (),

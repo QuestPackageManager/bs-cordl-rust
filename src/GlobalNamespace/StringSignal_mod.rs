@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StringSignal {
-    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<*mut crate::System::String>,
+    __cordl_parent: crate::GlobalNamespace::GenericSignal_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "StringSignal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StringSignal")]
 impl std::ops::Deref for crate::GlobalNamespace::StringSignal {
-    type Target = crate::GlobalNamespace::GenericSignal_1<*mut crate::System::String>;
+    type Target = crate::GlobalNamespace::GenericSignal_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

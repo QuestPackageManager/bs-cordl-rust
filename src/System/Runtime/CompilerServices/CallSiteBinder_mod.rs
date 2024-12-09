@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSiteBinder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Cache: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::System::Type,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder")]
 impl std::ops::Deref for crate::System::Runtime::CompilerServices::CallSiteBinder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     >;
     pub fn Bind(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         parameters: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
             *mut crate::System::Linq::Expressions::ParameterExpression,
         >,
@@ -53,7 +55,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     pub fn BindCore<T>(
         &mut self,
         site: *mut crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -68,7 +72,9 @@ impl crate::System::Runtime::CompilerServices::CallSiteBinder {
     pub fn BindDelegate<T>(
         &mut self,
         site: *mut crate::System::Runtime::CompilerServices::CallSite_1<T>,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -143,7 +149,7 @@ for crate::System::Runtime::CompilerServices::CallSiteBinder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CallSiteBinder_LambdaSignature_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Parameters: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
         *mut crate::System::Linq::Expressions::ParameterExpression,
     >,
@@ -159,7 +165,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+CompilerServices+CallSiteBinder+LambdaSignature_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Runtime::CompilerServices::CallSiteBinder_LambdaSignature_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

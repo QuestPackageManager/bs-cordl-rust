@@ -4,7 +4,9 @@
 pub struct GenericPrincipal {
     __cordl_parent: crate::System::Security::Claims::ClaimsPrincipal,
     pub m_identity: *mut crate::System::Security::Principal::IIdentity,
-    pub m_roles: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub m_roles: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Security+Principal+GenericPrincipal")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,7 +30,9 @@ impl std::ops::DerefMut for crate::System::Security::Principal::GenericPrincipal
 impl crate::System::Security::Principal::GenericPrincipal {
     pub fn New(
         identity: *mut crate::System::Security::Principal::IIdentity,
-        roles: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        roles: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +43,9 @@ impl crate::System::Security::Principal::GenericPrincipal {
     pub fn _ctor(
         &mut self,
         identity: *mut crate::System::Security::Principal::IIdentity,
-        roles: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        roles: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

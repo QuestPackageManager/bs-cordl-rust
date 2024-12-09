@@ -44,9 +44,9 @@ impl crate::UnityEngine::UnityLogWriter {
             .invoke("Write", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn Write_String1(
+    pub fn Write_Il2CppString1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

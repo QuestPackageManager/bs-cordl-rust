@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PrimitiveArray {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub code: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     pub booleanA: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
     pub charA: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+PrimitiveArray")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::PrimitiveArray {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::PrimitiveArray {
     }
     pub fn SetValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

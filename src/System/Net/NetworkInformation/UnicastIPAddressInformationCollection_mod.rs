@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnicastIPAddressInformationCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub addresses: *mut crate::System::Collections::ObjectModel::Collection_1<
         *mut crate::System::Net::NetworkInformation::UnicastIPAddressInformation,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+NetworkInformation+UnicastIPAddressInformationCollection")]
 impl std::ops::Deref
 for crate::System::Net::NetworkInformation::UnicastIPAddressInformationCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

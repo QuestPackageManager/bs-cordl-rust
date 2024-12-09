@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XmlTypeSerializationSource {
     __cordl_parent: crate::System::Xml::Serialization::SerializationSource,
-    pub attributeOverridesHash: *mut crate::System::String,
+    pub attributeOverridesHash: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_type: *mut crate::System::Type,
-    pub rootHash: *mut crate::System::String,
+    pub rootHash: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlTypeSerializationSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -31,7 +31,7 @@ for crate::System::Xml::Serialization::XmlTypeSerializationSource {
 impl crate::System::Xml::Serialization::XmlTypeSerializationSource {
     pub fn Equals(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +50,7 @@ impl crate::System::Xml::Serialization::XmlTypeSerializationSource {
         _cordl_type: *mut crate::System::Type,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
         attributeOverrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
-        namspace: *mut crate::System::String,
+        namspace: *mut quest_hook::libil2cpp::Il2CppString,
         includedTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -67,7 +67,7 @@ impl crate::System::Xml::Serialization::XmlTypeSerializationSource {
         _cordl_type: *mut crate::System::Type,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
         attributeOverrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
-        namspace: *mut crate::System::String,
+        namspace: *mut quest_hook::libil2cpp::Il2CppString,
         includedTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

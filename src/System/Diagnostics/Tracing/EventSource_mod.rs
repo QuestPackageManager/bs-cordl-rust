@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventSource {
-    __cordl_parent: crate::System::Object,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+Tracing+EventSource")]
 impl std::ops::Deref for crate::System::Diagnostics::Tracing::EventSource {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,9 +83,9 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Guid_String2(
+    pub fn New_Guid_Il2CppString2(
         eventSourceGuid: crate::System::Guid,
-        eventSourceName: *mut crate::System::String,
+        eventSourceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -93,8 +93,8 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke_void(".ctor", (eventSourceGuid, eventSourceName))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        eventSourceName: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        eventSourceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -118,7 +118,9 @@ impl crate::System::Diagnostics::Tracing::EventSource {
     pub fn WriteEvent_Il2CppArray7(
         &mut self,
         eventId: i32,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,10 +129,10 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke("WriteEvent", (eventId, args))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteEvent_String2(
+    pub fn WriteEvent_Il2CppString2(
         &mut self,
         eventId: i32,
-        arg1: *mut crate::System::String,
+        arg1: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -139,12 +141,12 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke("WriteEvent", (eventId, arg1))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteEvent_String_String_String8(
+    pub fn WriteEvent_Il2CppString_Il2CppString_Il2CppString8(
         &mut self,
         eventId: i32,
-        arg1: *mut crate::System::String,
-        arg2: *mut crate::System::String,
-        arg3: *mut crate::System::String,
+        arg1: *mut quest_hook::libil2cpp::Il2CppString,
+        arg2: *mut quest_hook::libil2cpp::Il2CppString,
+        arg3: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -215,11 +217,11 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke("WriteEvent", (eventId, arg1))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteEvent_i64_String6(
+    pub fn WriteEvent_i64_Il2CppString6(
         &mut self,
         eventId: i32,
         arg1: i64,
-        arg2: *mut crate::System::String,
+        arg2: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -238,10 +240,10 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Guid_String2(
+    pub fn _ctor_Guid_Il2CppString2(
         &mut self,
         eventSourceGuid: crate::System::Guid,
-        eventSourceName: *mut crate::System::String,
+        eventSourceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -250,9 +252,9 @@ impl crate::System::Diagnostics::Tracing::EventSource {
             .invoke(".ctor", (eventSourceGuid, eventSourceName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        eventSourceName: *mut crate::System::String,
+        eventSourceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -263,7 +265,7 @@ impl crate::System::Diagnostics::Tracing::EventSource {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

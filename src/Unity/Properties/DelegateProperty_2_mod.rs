@@ -8,7 +8,7 @@ pub struct DelegateProperty_2<
     __cordl_parent: crate::Unity::Properties::Property_2<TContainer, TValue>,
     pub m_Getter: *mut crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
     pub m_Setter: *mut crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
 }
@@ -44,7 +44,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::Unity::Properties::DelegateProperty_2<TContainer, TValue> {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         getter: *mut crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
         setter: *mut crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
@@ -62,7 +62,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         getter: *mut crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
         setter: *mut crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -81,7 +81,7 @@ impl<
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -91,7 +91,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

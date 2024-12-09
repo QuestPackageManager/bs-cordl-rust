@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Callback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+Callback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Callback")]
 impl std::ops::Deref for crate::Oculus::Platform::Callback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Oculus::Platform::Callback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Callback_RequestCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub messageCallback: *mut crate::Oculus::Platform::Message_Callback,
 }
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
@@ -54,7 +54,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Callback+RequestCallback")]
 impl std::ops::Deref for crate::Oculus::Platform::Callback_RequestCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

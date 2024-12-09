@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataSortedListForTypeAndIds_1<TBase: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _items: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
         *mut crate::GlobalNamespace::ISortedList_1<TBase>,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataSortedListForTypeAndIds_1")]
 impl<TBase: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::BeatmapDataSortedListForTypeAndIds_1<TBase> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::UnityEngine::Component {
 impl crate::UnityEngine::Component {
     pub fn BroadcastMessage(
         &mut self,
-        methodName: *mut crate::System::String,
-        parameter: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        parameter: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -39,7 +39,7 @@ impl crate::UnityEngine::Component {
     }
     pub fn CompareTag(
         &mut self,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -131,9 +131,9 @@ impl crate::UnityEngine::Component {
         let __cordl_ret: T = __cordl_object.invoke("GetComponent", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetComponent_String2(
+    pub fn GetComponent_Il2CppString2(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -156,7 +156,7 @@ impl crate::UnityEngine::Component {
     pub fn GetComponentsForListInternal(
         &mut self,
         searchType: *mut crate::System::Type,
-        resultList: *mut crate::System::Object,
+        resultList: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -364,10 +364,10 @@ impl crate::UnityEngine::Component {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn SendMessage_Object_SendMessageOptions0(
+    pub fn SendMessage_Il2CppObject_SendMessageOptions0(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -379,7 +379,7 @@ impl crate::UnityEngine::Component {
     }
     pub fn SendMessage_SendMessageOptions1(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::UnityEngine::SendMessageOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -437,11 +437,11 @@ impl crate::UnityEngine::Component {
     }
     pub fn get_tag(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_tag", ())?;
         Ok(__cordl_ret)
     }
@@ -457,7 +457,7 @@ impl crate::UnityEngine::Component {
     }
     pub fn set_tag(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

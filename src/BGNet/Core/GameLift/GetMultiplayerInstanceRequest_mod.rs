@@ -2,22 +2,22 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct GetMultiplayerInstanceRequest {
-    pub version: *mut crate::System::String,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
     pub serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
-    pub singleUseAuthToken: *mut crate::System::String,
+    pub singleUseAuthToken: *mut quest_hook::libil2cpp::Il2CppString,
     pub beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-    pub userId: *mut crate::System::String,
-    pub privateGameSecret: *mut crate::System::String,
-    pub privateGameCode: *mut crate::System::String,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateGameSecret: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateGameCode: *mut quest_hook::libil2cpp::Il2CppString,
     pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-    pub authUserId: *mut crate::System::String,
+    pub authUserId: *mut quest_hook::libil2cpp::Il2CppString,
     pub gameliftRegionLatencies: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         i64,
     >,
-    pub ticketId: *mut crate::System::String,
-    pub placementId: *mut crate::System::String,
+    pub ticketId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub placementId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -40,22 +40,22 @@ for crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
 impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
     pub fn _ctor(
         &mut self,
-        version: *mut crate::System::String,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
         serviceEnvironment: crate::GlobalNamespace::ServiceEnvironment,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
         platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-        authUserId: *mut crate::System::String,
-        singleUseAuthToken: *mut crate::System::String,
-        privateGameSecret: *mut crate::System::String,
-        privateGameCode: *mut crate::System::String,
+        authUserId: *mut quest_hook::libil2cpp::Il2CppString,
+        singleUseAuthToken: *mut quest_hook::libil2cpp::Il2CppString,
+        privateGameSecret: *mut quest_hook::libil2cpp::Il2CppString,
+        privateGameCode: *mut quest_hook::libil2cpp::Il2CppString,
         gameliftRegionLatencies: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             i64,
         >,
-        ticketId: *mut crate::System::String,
-        placementId: *mut crate::System::String,
+        ticketId: *mut quest_hook::libil2cpp::Il2CppString,
+        placementId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

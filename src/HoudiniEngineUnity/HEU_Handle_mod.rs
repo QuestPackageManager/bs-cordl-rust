@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_Handle {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _handleName: *mut crate::System::String,
+    pub _handleName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _handleType: crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType,
     pub _handleIndex: i32,
     pub _handleParamTranslateBinding: *mut crate::HoudiniEngineUnity::HEU_HandleParamBinding,
@@ -184,7 +184,7 @@ impl crate::HoudiniEngineUnity::HEU_Handle {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         assetID: i32,
         handleIndex: i32,
-        handleName: *mut crate::System::String,
+        handleName: *mut quest_hook::libil2cpp::Il2CppString,
         handleType: crate::HoudiniEngineUnity::HEU_Handle_HEU_HandleType,
         handleInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_HandleInfo,
@@ -231,11 +231,11 @@ impl crate::HoudiniEngineUnity::HEU_Handle {
     }
     pub fn get_HandleName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_HandleName", ())?;
         Ok(__cordl_ret)
     }

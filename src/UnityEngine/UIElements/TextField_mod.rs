@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TextField {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TextField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -52,8 +52,8 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -61,8 +61,8 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke_void(".ctor", (label))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_i32__cordl_bool__cordl_bool__cordl_char2(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString_i32__cordl_bool__cordl_bool__cordl_char2(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
         multiline: bool,
         isPasswordField: bool,
@@ -89,7 +89,7 @@ impl crate::UnityEngine::UIElements::TextField {
     }
     pub fn SetValueWithoutNotify(
         &mut self,
-        newValue: *mut crate::System::String,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,12 +100,12 @@ impl crate::UnityEngine::UIElements::TextField {
     }
     pub fn StringToValue(
         &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        str: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("StringToValue", (str))?;
         Ok(__cordl_ret)
     }
@@ -121,12 +121,12 @@ impl crate::UnityEngine::UIElements::TextField {
     }
     pub fn ValueToString(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ValueToString", (value))?;
         Ok(__cordl_ret)
     }
@@ -140,9 +140,9 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,9 +151,9 @@ impl crate::UnityEngine::UIElements::TextField {
             .invoke(".ctor", (label))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_i32__cordl_bool__cordl_bool__cordl_char2(
+    pub fn _ctor_Il2CppString_i32__cordl_bool__cordl_bool__cordl_char2(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
         multiline: bool,
         isPasswordField: bool,
@@ -180,11 +180,11 @@ impl crate::UnityEngine::UIElements::TextField {
     }
     pub fn get_value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_value", ())?;
         Ok(__cordl_ret)
     }
@@ -201,7 +201,7 @@ impl crate::UnityEngine::UIElements::TextField {
     }
     pub fn set_value(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -225,7 +225,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::TextF
 #[derive(Debug)]
 pub struct TextField_TextInput {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+TextField+TextInput")]
@@ -236,7 +236,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TextField+TextInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_TextInput {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_TextInputBase<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -259,12 +259,12 @@ impl crate::UnityEngine::UIElements::TextField_TextInput {
     }
     pub fn StringToValue(
         &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        str: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("StringToValue", (str))?;
         Ok(__cordl_ret)
     }
@@ -376,7 +376,7 @@ for crate::UnityEngine::UIElements::TextField_UxmlFactory {
 #[derive(Debug)]
 pub struct TextField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_Multiline: *mut crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
 }
@@ -388,7 +388,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+TextField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::TextField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::TextInputBaseField_1_UxmlTraits<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

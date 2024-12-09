@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InspectorNameAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub displayName: *mut crate::System::String,
+    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+InspectorNameAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::InspectorNameAttribute {
 #[cfg(feature = "UnityEngine+InspectorNameAttribute")]
 impl crate::UnityEngine::InspectorNameAttribute {
     pub fn New(
-        displayName: *mut crate::System::String,
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::InspectorNameAttribute {
     }
     pub fn _ctor(
         &mut self,
-        displayName: *mut crate::System::String,
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

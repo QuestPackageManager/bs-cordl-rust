@@ -94,9 +94,9 @@ impl crate::GlobalNamespace::DataRelationCollection_DataSetRelationCollection {
             .invoke(".ctor", (dataSet))?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataRelation> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

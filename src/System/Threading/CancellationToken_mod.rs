@@ -35,9 +35,9 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -56,8 +56,8 @@ impl crate::System::Threading::CancellationToken {
     }
     pub fn InternalRegisterWithoutEC(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        state: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::CancellationTokenRegistration,
     > {
@@ -81,10 +81,10 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Register_Action_1_Object1(
+    pub fn Register_Action_1_Il2CppObject1(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        state: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Threading::CancellationTokenRegistration,
     > {
@@ -95,10 +95,10 @@ impl crate::System::Threading::CancellationToken {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Register_Action_1_Object__cordl_bool__cordl_bool2(
+    pub fn Register_Action_1_Il2CppObject__cordl_bool__cordl_bool2(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        state: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         useSynchronizationContext: bool,
         useExecutionContext: bool,
     ) -> quest_hook::libil2cpp::Result<

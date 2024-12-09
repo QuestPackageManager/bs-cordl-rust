@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceConfigurationChecks {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub appConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_AppConfig,
     pub xrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig,
     pub ovrConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_OVRConfig,
@@ -11,7 +11,7 @@ pub struct PerformanceConfigurationChecks {
     pub playerConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig,
     pub levelConfig: crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig,
     pub invalid: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         crate::GlobalNamespace::PerformanceConfigurationChecks_Mismatch,
     >,
 }
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerformanceConfigurationChecks")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationChecks {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -53,11 +53,11 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     pub type XRConfig = crate::GlobalNamespace::PerformanceConfigurationChecks_XRConfig;
     pub fn CreateErrorLog(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateErrorLog", ())?;
         Ok(__cordl_ret)
     }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks {
     }
     pub fn VerifyEntry<T>(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         expected: T,
         actual: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -203,10 +203,10 @@ pub struct PerformanceConfigurationChecks_GameConfig {
     pub pauseButtonPressDurationLevel: i32,
     pub useCustomServerEnvironment: bool,
     pub forceGameLiftServerEnvironment: bool,
-    pub customServerHostName: *mut crate::System::String,
+    pub customServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
     pub windowResolution: crate::UnityEngine::Vector2Int,
     pub windowMode: crate::BeatSaber::GameSettings::WindowMode,
-    pub performancePresetKey: *mut crate::System::String,
+    pub performancePresetKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub renderViewportScale: f64,
     pub targetFramerate: f64,
     pub vSyncCount: i32,
@@ -274,7 +274,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks_LevelConfig {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PerformanceConfigurationChecks_Mismatch {
-    pub message: *mut crate::System::String,
+    pub message: *mut quest_hook::libil2cpp::Il2CppString,
     pub frames: i32,
 }
 #[cfg(feature = "PerformanceConfigurationChecks+Mismatch")]
@@ -423,7 +423,7 @@ impl crate::GlobalNamespace::PerformanceConfigurationChecks_PlayerConfig {}
 pub struct PerformanceConfigurationChecks_XRConfig {
     pub enabled: bool,
     pub isDeviceActive: bool,
-    pub loadedDeviceName: *mut crate::System::String,
+    pub loadedDeviceName: *mut quest_hook::libil2cpp::Il2CppString,
     pub stereoRenderingMode: crate::UnityEngine::XR::XRSettings_StereoRenderingMode,
     pub eyeTextureWidth: i32,
     pub eyeTextureHeight: i32,

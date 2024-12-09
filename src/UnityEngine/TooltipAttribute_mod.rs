@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TooltipAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub tooltip: *mut crate::System::String,
+    pub tooltip: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+TooltipAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::TooltipAttribute {
 #[cfg(feature = "UnityEngine+TooltipAttribute")]
 impl crate::UnityEngine::TooltipAttribute {
     pub fn New(
-        tooltip: *mut crate::System::String,
+        tooltip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::TooltipAttribute {
     }
     pub fn _ctor(
         &mut self,
-        tooltip: *mut crate::System::String,
+        tooltip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

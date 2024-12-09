@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MultiplayerBadgeDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _titleLocalizationKey: *mut crate::System::String,
-    pub _subtitleLocalizationKey: *mut crate::System::String,
+    pub _titleLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _subtitleLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _icon: *mut crate::UnityEngine::Sprite,
 }
 #[cfg(feature = "MultiplayerBadgeDataSO")]
@@ -77,21 +77,21 @@ impl crate::GlobalNamespace::MultiplayerBadgeDataSO {
     }
     pub fn get_subtitleLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_subtitleLocalizationKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_titleLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_titleLocalizationKey", ())?;
         Ok(__cordl_ret)
     }

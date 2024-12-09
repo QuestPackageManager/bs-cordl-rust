@@ -9,7 +9,7 @@ pub struct UnityEvent_4<
 > {
     __cordl_parent: crate::UnityEngine::Events::UnityEventBase,
     pub m_InvokeArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
     __cordl_phantom_T1: std::marker::PhantomData<T1>,
@@ -53,7 +53,7 @@ impl<
 > crate::UnityEngine::Events::UnityEvent_4<T0, T1, T2, T3> {
     pub fn FindMethod_Impl(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         targetObjType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo>
     where
@@ -75,7 +75,7 @@ impl<
     }
     pub fn GetDelegate(
         &mut self,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         theFunction: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::Events::BaseInvokableCall,

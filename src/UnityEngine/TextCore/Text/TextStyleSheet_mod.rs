@@ -31,9 +31,9 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextStyleSheet {
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyleSheet")]
 impl crate::UnityEngine::TextCore::Text::TextStyleSheet {
-    pub fn GetStyle_String1(
+    pub fn GetStyle_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::TextCore::Text::TextStyle,
     > {

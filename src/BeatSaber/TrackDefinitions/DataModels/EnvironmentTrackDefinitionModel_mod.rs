@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _trackDefinition: *mut crate::BeatSaber::TrackDefinitions::EnvironmentTracksDefinitionSO,
     pub _beatmapTypeToTrackInfoMap: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::GlobalNamespace::BasicBeatmapEventType,
@@ -51,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatSaber+TrackDefinitions+DataModels+EnvironmentTrackDefinitionModel")]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -293,9 +293,9 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-    pub groupName: *mut crate::System::String,
+    pub groupName: *mut quest_hook::libil2cpp::Il2CppString,
     pub tracksCount: i32,
     pub eventBoxGroupTracks: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
@@ -315,7 +315,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -335,7 +335,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTrack {
     pub fn New(
         lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-        groupName: *mut crate::System::String,
+        groupName: *mut quest_hook::libil2cpp::Il2CppString,
         tracksCount: i32,
         eventBoxGroupTracks: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
@@ -353,7 +353,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
     pub fn _ctor(
         &mut self,
         lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-        groupName: *mut crate::System::String,
+        groupName: *mut quest_hook::libil2cpp::Il2CppString,
         tracksCount: i32,
         eventBoxGroupTracks: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack,
@@ -385,9 +385,9 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-    pub groupName: *mut crate::System::String,
+    pub groupName: *mut quest_hook::libil2cpp::Il2CppString,
     pub trackType: crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType,
 }
 #[cfg(
@@ -404,7 +404,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -424,7 +424,7 @@ for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionMo
 impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel_SpawnableEventBoxGroupTypeTrack {
     pub fn New(
         lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-        groupName: *mut crate::System::String,
+        groupName: *mut quest_hook::libil2cpp::Il2CppString,
         trackType: crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -436,7 +436,7 @@ impl crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionM
     pub fn _ctor(
         &mut self,
         lightGroup: *mut crate::GlobalNamespace::LightGroupSO,
-        groupName: *mut crate::System::String,
+        groupName: *mut quest_hook::libil2cpp::Il2CppString,
         trackType: crate::BeatSaber::TrackDefinitions::DataModels::EventBoxGroupType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

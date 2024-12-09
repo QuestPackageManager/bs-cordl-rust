@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskScheduler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_taskSchedulerId: i32,
 }
 #[cfg(feature = "System+Threading+Tasks+TaskScheduler")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+TaskScheduler")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskScheduler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,7 +135,7 @@ for crate::System::Threading::Tasks::TaskScheduler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskScheduler_SystemThreadingTasks_TaskSchedulerDebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "System+Threading+Tasks+TaskScheduler+SystemThreadingTasks_TaskSchedulerDebugView"
@@ -151,7 +151,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Threading::Tasks::TaskScheduler_SystemThreadingTasks_TaskSchedulerDebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

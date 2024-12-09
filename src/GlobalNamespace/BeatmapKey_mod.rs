@@ -4,7 +4,7 @@
 pub struct BeatmapKey {
     pub beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
-    pub levelId: *mut crate::System::String,
+    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatmapKey")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -33,9 +33,9 @@ impl crate::GlobalNamespace::BeatmapKey {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -74,8 +74,8 @@ impl crate::GlobalNamespace::BeatmapKey {
     }
     pub fn SerializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "SerializedName",
             (),
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::BeatmapKey {
     }
     pub fn _ctor(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -42,11 +42,11 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
     pub fn FormatUnkownData(
         &mut self,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FormatUnkownData", (data))?;
         Ok(__cordl_ret)
     }
@@ -57,8 +57,8 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray__cordl_bool1(
-        oid: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray__cordl_bool1(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         critical: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -78,9 +78,9 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Extension {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray__cordl_bool1(
+    pub fn _ctor_Il2CppString_Il2CppArray__cordl_bool1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         critical: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

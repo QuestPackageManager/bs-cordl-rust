@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct JsonContainerAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Id_k__BackingField: *mut crate::System::String,
-    pub _Title_k__BackingField: *mut crate::System::String,
-    pub _Description_k__BackingField: *mut crate::System::String,
+    pub _Id_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Title_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Description_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _ItemConverterType_k__BackingField: *mut crate::System::Type,
     pub _ItemConverterParameters_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _NamingStrategyInstance_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::NamingStrategy,
     pub _isReference: crate::System::Nullable_1<bool>,
@@ -21,7 +21,7 @@ pub struct JsonContainerAttribute {
     >,
     pub _namingStrategyType: *mut crate::System::Type,
     pub _namingStrategyParameters: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonContainerAttribute")]
@@ -51,8 +51,8 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        id: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -70,9 +70,9 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -83,21 +83,21 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     }
     pub fn get_Description(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Description", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Id", ())?;
         Ok(__cordl_ret)
     }
@@ -111,13 +111,13 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     pub fn get_ItemConverterParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_ItemConverterParameters", ())?;
         Ok(__cordl_ret)
     }
@@ -173,13 +173,13 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     pub fn get_NamingStrategyParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_NamingStrategyParameters", ())?;
         Ok(__cordl_ret)
     }
@@ -195,17 +195,17 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     }
     pub fn get_Title(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Title", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Description(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -216,7 +216,7 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     }
     pub fn set_Id(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -238,7 +238,9 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     }
     pub fn set_ItemConverterParameters(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -304,7 +306,9 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     }
     pub fn set_NamingStrategyParameters(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -326,7 +330,7 @@ impl crate::Newtonsoft::Json::JsonContainerAttribute {
     }
     pub fn set_Title(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

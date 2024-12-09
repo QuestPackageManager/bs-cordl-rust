@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputFeatureUsage_1<T: quest_hook::libil2cpp::Type> {
-    pub _name_k__BackingField: *mut crate::System::String,
+    pub _name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
@@ -23,6 +23,21 @@ for crate::UnityEngine::XR::InputFeatureUsage_1<T> {
 }
 #[cfg(feature = "UnityEngine+XR+InputFeatureUsage_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1<T> {
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InputFeatureUsage_1_1(
         &mut self,
         other: crate::UnityEngine::XR::InputFeatureUsage_1<T>,
@@ -35,21 +50,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -67,7 +67,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1
     }
     pub fn _ctor(
         &mut self,
-        usageName: *mut crate::System::String,
+        usageName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -82,12 +82,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_name",
             (),
@@ -96,7 +96,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::XR::InputFeatureUsage_1
     }
     pub fn set_name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

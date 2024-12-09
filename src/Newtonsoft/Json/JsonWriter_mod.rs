@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonWriter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: *mut crate::System::Collections::Generic::List_1<
         crate::Newtonsoft::Json::JsonPosition,
     >,
@@ -15,7 +15,7 @@ pub struct JsonWriter {
     pub _dateTimeZoneHandling: crate::Newtonsoft::Json::DateTimeZoneHandling,
     pub _stringEscapeHandling: crate::Newtonsoft::Json::StringEscapeHandling,
     pub _floatFormatHandling: crate::Newtonsoft::Json::FloatFormatHandling,
-    pub _dateFormatString: *mut crate::System::String,
+    pub _dateFormatString: *mut quest_hook::libil2cpp::Il2CppString,
     pub _culture: *mut crate::System::Globalization::CultureInfo,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonWriter")]
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonWriter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -264,7 +264,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn InternalWritePropertyName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -275,7 +275,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn InternalWritePropertyNameAsync(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -345,7 +345,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn InternalWriteWhitespace(
         &mut self,
-        ws: *mut crate::System::String,
+        ws: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -418,7 +418,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     pub fn SetWriteState(
         &mut self,
         token: crate::Newtonsoft::Json::JsonToken,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -430,7 +430,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     pub fn SetWriteStateAsync(
         &mut self,
         token: crate::Newtonsoft::Json::JsonToken,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -472,7 +472,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteComment(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -483,7 +483,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteCommentAsync(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -710,7 +710,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WritePropertyNameAsync_CancellationToken0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -722,7 +722,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WritePropertyNameAsync__cordl_bool_CancellationToken1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         escape: bool,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
@@ -733,9 +733,9 @@ impl crate::Newtonsoft::Json::JsonWriter {
             .invoke("WritePropertyNameAsync", (name, escape, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn WritePropertyName_String0(
+    pub fn WritePropertyName_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -746,7 +746,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WritePropertyName__cordl_bool1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         escape: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -758,7 +758,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteRaw(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -769,7 +769,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteRawAsync(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -781,7 +781,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteRawValue(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -792,7 +792,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteRawValueAsync(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -825,7 +825,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteStartConstructor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -836,7 +836,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteStartConstructorAsync(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -928,10 +928,10 @@ impl crate::Newtonsoft::Json::JsonWriter {
             .invoke("WriteTokenAsync", (token, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteTokenAsync_JsonToken_Object_CancellationToken3(
+    pub fn WriteTokenAsync_JsonToken_Il2CppObject_CancellationToken3(
         &mut self,
         token: crate::Newtonsoft::Json::JsonToken,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1004,10 +1004,10 @@ impl crate::Newtonsoft::Json::JsonWriter {
             .invoke("WriteToken", (token))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteToken_JsonToken_Object2(
+    pub fn WriteToken_JsonToken_Il2CppObject2(
         &mut self,
         token: crate::Newtonsoft::Json::JsonToken,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1088,6 +1088,30 @@ impl crate::Newtonsoft::Json::JsonWriter {
     pub fn WriteValueAsync_Il2CppArray4(
         &mut self,
         value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("WriteValueAsync", (value, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteValueAsync_Il2CppObject23(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
+            .invoke("WriteValueAsync", (value, cancellationToken))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteValueAsync_Il2CppString28(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1292,30 +1316,6 @@ impl crate::Newtonsoft::Json::JsonWriter {
     pub fn WriteValueAsync_Nullable_1_8(
         &mut self,
         value: crate::System::Nullable_1<crate::System::DateTime>,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("WriteValueAsync", (value, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteValueAsync_Object23(
-        &mut self,
-        value: *mut crate::System::Object,
-        cancellationToken: crate::System::Threading::CancellationToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("WriteValueAsync", (value, cancellationToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteValueAsync_String28(
-        &mut self,
-        value: *mut crate::System::String,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1569,6 +1569,28 @@ impl crate::Newtonsoft::Json::JsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret)
     }
+    pub fn WriteValue_Il2CppObject37(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValue", (value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn WriteValue_Il2CppString0(
+        &mut self,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("WriteValue", (value))?;
+        Ok(__cordl_ret)
+    }
     pub fn WriteValue_Nullable_1_18(
         &mut self,
         value: crate::System::Nullable_1<i32>,
@@ -1756,28 +1778,6 @@ impl crate::Newtonsoft::Json::JsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteValue_Object37(
-        &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValue", (value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn WriteValue_String0(
-        &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("WriteValue", (value))?;
-        Ok(__cordl_ret)
-    }
     pub fn WriteValue_TimeSpan17(
         &mut self,
         value: crate::System::TimeSpan,
@@ -1934,7 +1934,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteWhitespace(
         &mut self,
-        ws: *mut crate::System::String,
+        ws: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1945,7 +1945,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn WriteWhitespaceAsync(
         &mut self,
-        ws: *mut crate::System::String,
+        ws: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2046,11 +2046,11 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn get_ContainerPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ContainerPath", ())?;
         Ok(__cordl_ret)
     }
@@ -2076,11 +2076,11 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn get_DateFormatString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DateFormatString", ())?;
         Ok(__cordl_ret)
     }
@@ -2116,11 +2116,11 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn get_Path(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Path", ())?;
         Ok(__cordl_ret)
     }
@@ -2197,7 +2197,7 @@ impl crate::Newtonsoft::Json::JsonWriter {
     }
     pub fn set_DateFormatString(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

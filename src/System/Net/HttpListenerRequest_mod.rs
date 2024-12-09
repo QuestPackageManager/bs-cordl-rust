@@ -2,23 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerRequest {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub accept_types: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub content_length: i64,
     pub cl_set: bool,
     pub cookies: *mut crate::System::Net::CookieCollection,
     pub headers: *mut crate::System::Net::WebHeaderCollection,
-    pub method: *mut crate::System::String,
+    pub method: *mut quest_hook::libil2cpp::Il2CppString,
     pub input_stream: *mut crate::System::IO::Stream,
     pub version: *mut crate::System::Version,
     pub query_string: *mut crate::System::Collections::Specialized::NameValueCollection,
-    pub raw_url: *mut crate::System::String,
+    pub raw_url: *mut quest_hook::libil2cpp::Il2CppString,
     pub url: *mut crate::System::Uri,
     pub referrer: *mut crate::System::Uri,
     pub user_languages: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub context: *mut crate::System::Net::HttpListenerContext,
     pub is_chunked: bool,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerRequest")]
 impl std::ops::Deref for crate::System::Net::HttpListenerRequest {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl std::ops::DerefMut for crate::System::Net::HttpListenerRequest {
 impl crate::System::Net::HttpListenerRequest {
     pub fn AddHeader(
         &mut self,
-        header: *mut crate::System::String,
+        header: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,7 +58,7 @@ impl crate::System::Net::HttpListenerRequest {
     }
     pub fn CreateQueryString(
         &mut self,
-        query: *mut crate::System::String,
+        query: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -92,7 +92,7 @@ impl crate::System::Net::HttpListenerRequest {
     }
     pub fn SetRequestLine(
         &mut self,
-        req: *mut crate::System::String,
+        req: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,21 +184,21 @@ impl crate::System::Net::HttpListenerRequest {
     }
     pub fn get_UserHostAddress(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_UserHostAddress", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UserHostName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_UserHostName", ())?;
         Ok(__cordl_ret)
     }

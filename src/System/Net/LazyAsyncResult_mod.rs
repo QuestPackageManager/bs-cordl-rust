@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LazyAsyncResult {
-    __cordl_parent: crate::System::Object,
-    pub m_AsyncObject: *mut crate::System::Object,
-    pub m_AsyncState: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_AsyncObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_AsyncState: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_AsyncCallback: *mut crate::System::AsyncCallback,
-    pub m_Result: *mut crate::System::Object,
+    pub m_Result: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_IntCompleted: i32,
     pub m_EndCalled: bool,
     pub m_UserEvent: bool,
-    pub m_Event: *mut crate::System::Object,
+    pub m_Event: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+LazyAsyncResult")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+LazyAsyncResult")]
 impl std::ops::Deref for crate::System::Net::LazyAsyncResult {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,11 +57,11 @@ impl crate::System::Net::LazyAsyncResult {
     }
     pub fn InternalWaitForCompletion(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("InternalWaitForCompletion", ())?;
         Ok(__cordl_ret)
     }
@@ -75,9 +75,9 @@ impl crate::System::Net::LazyAsyncResult {
             .invoke("InvokeCallback", ())?;
         Ok(__cordl_ret)
     }
-    pub fn InvokeCallback_Object0(
+    pub fn InvokeCallback_Il2CppObject0(
         &mut self,
-        result: *mut crate::System::Object,
+        result: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,8 +100,8 @@ impl crate::System::Net::LazyAsyncResult {
         Ok(__cordl_ret)
     }
     pub fn New(
-        myObject: *mut crate::System::Object,
-        myState: *mut crate::System::Object,
+        myObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        myState: *mut quest_hook::libil2cpp::Il2CppObject,
         myCallBack: *mut crate::System::AsyncCallback,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -112,7 +112,7 @@ impl crate::System::Net::LazyAsyncResult {
     }
     pub fn ProtectedInvokeCallback(
         &mut self,
-        result: *mut crate::System::Object,
+        result: *mut quest_hook::libil2cpp::Il2CppObject,
         userToken: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -125,17 +125,17 @@ impl crate::System::Net::LazyAsyncResult {
     pub fn WaitForCompletion(
         &mut self,
         snap: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("WaitForCompletion", (snap))?;
         Ok(__cordl_ret)
     }
     pub fn WorkerThreadComplete(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,8 +146,8 @@ impl crate::System::Net::LazyAsyncResult {
     }
     pub fn _ctor(
         &mut self,
-        myObject: *mut crate::System::Object,
-        myState: *mut crate::System::Object,
+        myObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        myState: *mut quest_hook::libil2cpp::Il2CppObject,
         myCallBack: *mut crate::System::AsyncCallback,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -169,21 +169,21 @@ impl crate::System::Net::LazyAsyncResult {
     }
     pub fn get_AsyncObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AsyncObject", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_AsyncState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AsyncState", ())?;
         Ok(__cordl_ret)
     }
@@ -250,7 +250,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::LazyAsyncResult {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LazyAsyncResult_ThreadContext {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_NestedIOCount: i32,
 }
 #[cfg(feature = "System+Net+LazyAsyncResult+ThreadContext")]
@@ -260,7 +260,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+LazyAsyncResult+ThreadContext")]
 impl std::ops::Deref for crate::System::Net::LazyAsyncResult_ThreadContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

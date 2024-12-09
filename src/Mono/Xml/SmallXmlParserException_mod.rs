@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Mono::Xml::SmallXmlParserException {
 #[cfg(feature = "Mono+Xml+SmallXmlParserException")]
 impl crate::Mono::Xml::SmallXmlParserException {
     pub fn New(
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         line: i32,
         column: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -39,7 +39,7 @@ impl crate::Mono::Xml::SmallXmlParserException {
     }
     pub fn _ctor(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         line: i32,
         column: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

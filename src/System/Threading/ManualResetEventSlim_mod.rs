@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ManualResetEventSlim {
-    __cordl_parent: crate::System::Object,
-    pub m_lock: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_lock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_eventObj: *mut crate::System::Threading::ManualResetEvent,
     pub m_combinedState: i32,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ManualResetEventSlim")]
 impl std::ops::Deref for crate::System::Threading::ManualResetEventSlim {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

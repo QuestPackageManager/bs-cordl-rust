@@ -6,7 +6,7 @@ pub struct AsyncOperationHandle_1<TObject: quest_hook::libil2cpp::Type> {
         TObject,
     >,
     pub m_Version: i32,
-    pub m_LocationName: *mut crate::System::String,
+    pub m_LocationName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_UnloadSceneOpExcludeReleaseCallback: bool,
     __cordl_phantom_TObject: std::marker::PhantomData<TObject>,
 }
@@ -117,7 +117,7 @@ impl<
     pub fn InternalGetDownloadStatus(
         &mut self,
         visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -189,12 +189,12 @@ impl<
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),
@@ -245,10 +245,10 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IAsyncOperation_String3(
+    pub fn _ctor_IAsyncOperation_Il2CppString3(
         &mut self,
         op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
-        locationName: *mut crate::System::String,
+        locationName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -277,11 +277,11 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_IAsyncOperation_i32_String4(
+    pub fn _ctor_IAsyncOperation_i32_Il2CppString4(
         &mut self,
         op: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::IAsyncOperation,
         version: i32,
-        locationName: *mut crate::System::String,
+        locationName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -349,12 +349,12 @@ impl<
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_DebugName",
             (),
@@ -391,12 +391,12 @@ impl<
     }
     pub fn get_LocationName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_LocationName",
             (),
@@ -554,7 +554,7 @@ impl<
     }
     pub fn set_LocationName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

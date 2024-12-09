@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncProtocolRequest {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Parent_k__BackingField: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
     pub _RunSynchronously_k__BackingField: bool,
     pub _UserResult_k__BackingField: i32,
     pub Started: i32,
     pub RequestedSize: i32,
     pub WriteRequested: i32,
-    pub locker: *mut crate::System::Object,
+    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+AsyncProtocolRequest")]
 impl std::ops::Deref for crate::Mono::Net::Security::AsyncProtocolRequest {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,11 +124,11 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -146,11 +146,11 @@ impl crate::Mono::Net::Security::AsyncProtocolRequest {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

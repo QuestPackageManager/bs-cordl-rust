@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub type _get_templateDependencies_d__19 = crate::UnityEngine::UIElements::VisualTreeAsset__get_templateDependencies_d__19;
     pub fn AssetEntryExists(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -114,9 +114,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("CloneTree", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CloneTree_String1(
+    pub fn CloneTree_Il2CppString1(
         &mut self,
-        bindingPath: *mut crate::System::String,
+        bindingPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::UIElements::TemplateContainer,
     > {
@@ -155,7 +155,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
         &mut self,
         target: *mut crate::UnityEngine::UIElements::VisualElement,
         slotInsertionPoints: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::UnityEngine::UIElements::VisualElement,
         >,
         attributeOverrides: *mut crate::System::Collections::Generic::List_1<
@@ -171,7 +171,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     pub fn GetAsset<T>(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -246,9 +246,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
             .invoke("Instantiate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Instantiate_String1(
+    pub fn Instantiate_Il2CppString1(
         &mut self,
-        bindingPath: *mut crate::System::String,
+        bindingPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::UIElements::TemplateContainer,
     > {
@@ -268,7 +268,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     pub fn RegisterAssetEntry(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
         asset: *mut crate::UnityEngine::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -292,7 +292,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     }
     pub fn ResolveTemplate(
         &mut self,
-        templateName: *mut crate::System::String,
+        templateName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::UIElements::VisualTreeAsset,
     > {
@@ -306,7 +306,9 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset {
     pub fn TryGetSlotInsertionPoint(
         &mut self,
         insertionPointId: i32,
-        slotName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        slotName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -553,8 +555,8 @@ for crate::UnityEngine::UIElements::VisualTreeAsset {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct VisualTreeAsset_AssetEntry {
-    pub path: *mut crate::System::String,
-    pub typeFullName: *mut crate::System::String,
+    pub path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub typeFullName: *mut quest_hook::libil2cpp::Il2CppString,
     pub asset: *mut crate::UnityEngine::Object,
     pub m_CachedType: *mut crate::System::Type,
 }
@@ -579,7 +581,7 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
 impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
     pub fn _ctor(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
         asset: *mut crate::UnityEngine::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -605,7 +607,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_AssetEntry {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct VisualTreeAsset_SlotDefinition {
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub insertionPointId: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotDefinition")]
@@ -631,7 +633,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotDefinition {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct VisualTreeAsset_SlotUsageEntry {
-    pub slotName: *mut crate::System::String,
+    pub slotName: *mut quest_hook::libil2cpp::Il2CppString,
     pub assetId: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+SlotUsageEntry")]
@@ -657,8 +659,8 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_SlotUsageEntry {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct VisualTreeAsset_UsingEntry {
-    pub alias: *mut crate::System::String,
-    pub path: *mut crate::System::String,
+    pub alias: *mut quest_hook::libil2cpp::Il2CppString,
+    pub path: *mut quest_hook::libil2cpp::Il2CppString,
     pub asset: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntry")]
@@ -682,8 +684,8 @@ for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
 impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
     pub fn _ctor(
         &mut self,
-        alias: *mut crate::System::String,
-        path: *mut crate::System::String,
+        alias: *mut quest_hook::libil2cpp::Il2CppString,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -697,7 +699,7 @@ impl crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntry {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualTreeAsset_UsingEntryComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -708,7 +710,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualTreeAsset+UsingEntryComparer")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualTreeAsset_UsingEntryComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

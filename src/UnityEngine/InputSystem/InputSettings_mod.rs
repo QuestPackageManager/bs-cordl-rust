@@ -4,7 +4,7 @@
 pub struct InputSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub m_SupportedDevices: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_UpdateMode: crate::UnityEngine::InputSystem::InputSettings_UpdateMode,
     pub m_MaxEventBytesPerUpdate: i32,
@@ -24,7 +24,7 @@ pub struct InputSettings {
     pub m_DisableRedundantEventsMerging: bool,
     pub m_ShortcutKeysConsumeInputs: bool,
     pub m_FeatureFlags: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputSettings")]
@@ -58,7 +58,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
     pub type UpdateMode = crate::UnityEngine::InputSystem::InputSettings_UpdateMode;
     pub fn IsFeatureEnabled(
         &mut self,
-        featureName: *mut crate::System::String,
+        featureName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
     }
     pub fn SetInternalFeatureFlag(
         &mut self,
-        featureName: *mut crate::System::String,
+        featureName: *mut quest_hook::libil2cpp::Il2CppString,
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -244,14 +244,14 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_supportedDevices", ())?;
         Ok(__cordl_ret)
     }
@@ -453,7 +453,7 @@ impl crate::UnityEngine::InputSystem::InputSettings {
     pub fn set_supportedDevices(
         &mut self,
         value: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

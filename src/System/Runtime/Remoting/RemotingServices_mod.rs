@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemotingServices {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Remoting+RemotingServices")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+RemotingServices")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::RemotingServices {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,9 +41,9 @@ for crate::System::Runtime::Remoting::RemotingServices {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RemotingServices_CACD {
-    __cordl_parent: crate::System::Object,
-    pub d: *mut crate::System::Object,
-    pub c: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub d: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub c: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Remoting+RemotingServices+CACD")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -52,7 +52,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+RemotingServices+CACD")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::RemotingServices_CACD {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

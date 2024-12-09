@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GuiRenderableManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderables: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Zenject::GuiRenderableManager_RenderableInfo,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+GuiRenderableManager")]
 impl std::ops::Deref for crate::Zenject::GuiRenderableManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,7 +87,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::GuiRenderableManager 
 #[repr(C)]
 #[derive(Debug)]
 pub struct GuiRenderableManager_RenderableInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Renderable: *mut crate::Zenject::IGuiRenderable,
     pub Priority: i32,
 }
@@ -98,7 +98,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+GuiRenderableManager+RenderableInfo")]
 impl std::ops::Deref for crate::Zenject::GuiRenderableManager_RenderableInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

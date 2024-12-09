@@ -2,19 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardUploadData {
-    __cordl_parent: crate::System::Object,
-    pub playerName: *mut crate::System::String,
-    pub playerId: *mut crate::System::String,
-    pub score: *mut crate::System::String,
-    pub leaderboardId: *mut crate::System::String,
-    pub songName: *mut crate::System::String,
-    pub songSubName: *mut crate::System::String,
-    pub authorName: *mut crate::System::String,
-    pub bpm: *mut crate::System::String,
-    pub difficulty: *mut crate::System::String,
-    pub infoHash: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub score: *mut quest_hook::libil2cpp::Il2CppString,
+    pub leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub songName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub authorName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub bpm: *mut quest_hook::libil2cpp::Il2CppString,
+    pub difficulty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub infoHash: *mut quest_hook::libil2cpp::Il2CppString,
     pub modifiers: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "LeaderboardUploadData")]
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardUploadData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardUploadData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,18 +38,18 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardUploadData {
 #[cfg(feature = "LeaderboardUploadData")]
 impl crate::GlobalNamespace::LeaderboardUploadData {
     pub fn New(
-        playerName: *mut crate::System::String,
-        playerId: *mut crate::System::String,
-        score: *mut crate::System::String,
-        leaderboardId: *mut crate::System::String,
-        songName: *mut crate::System::String,
-        songSubName: *mut crate::System::String,
-        authorName: *mut crate::System::String,
-        bpm: *mut crate::System::String,
-        difficulty: *mut crate::System::String,
-        infoHash: *mut crate::System::String,
+        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
+        score: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        songName: *mut quest_hook::libil2cpp::Il2CppString,
+        songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+        authorName: *mut quest_hook::libil2cpp::Il2CppString,
+        bpm: *mut quest_hook::libil2cpp::Il2CppString,
+        difficulty: *mut quest_hook::libil2cpp::Il2CppString,
+        infoHash: *mut quest_hook::libil2cpp::Il2CppString,
         modifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,18 +75,18 @@ impl crate::GlobalNamespace::LeaderboardUploadData {
     }
     pub fn _ctor(
         &mut self,
-        playerName: *mut crate::System::String,
-        playerId: *mut crate::System::String,
-        score: *mut crate::System::String,
-        leaderboardId: *mut crate::System::String,
-        songName: *mut crate::System::String,
-        songSubName: *mut crate::System::String,
-        authorName: *mut crate::System::String,
-        bpm: *mut crate::System::String,
-        difficulty: *mut crate::System::String,
-        infoHash: *mut crate::System::String,
+        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
+        score: *mut quest_hook::libil2cpp::Il2CppString,
+        leaderboardId: *mut quest_hook::libil2cpp::Il2CppString,
+        songName: *mut quest_hook::libil2cpp::Il2CppString,
+        songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+        authorName: *mut quest_hook::libil2cpp::Il2CppString,
+        bpm: *mut quest_hook::libil2cpp::Il2CppString,
+        difficulty: *mut quest_hook::libil2cpp::Il2CppString,
+        infoHash: *mut quest_hook::libil2cpp::Il2CppString,
         modifiers: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

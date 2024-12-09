@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ECMqvWithKdfBasicAgreement {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::Agreement::ECMqvBasicAgreement,
-    pub algorithm: *mut crate::System::String,
+    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
     pub kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+ECMqvWithKdfBasicAgreement")]
@@ -52,7 +52,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
         Ok(__cordl_ret)
     }
     pub fn New(
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -63,7 +63,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::ECMqvWithKdfBasicAgreement {
     }
     pub fn _ctor(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         kdf: *mut crate::Org::BouncyCastle::Crypto::IDerivationFunction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

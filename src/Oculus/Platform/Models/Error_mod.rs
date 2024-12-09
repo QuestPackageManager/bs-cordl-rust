@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Error {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Code: i32,
     pub HttpCode: i32,
-    pub Message: *mut crate::System::String,
+    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+Error")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+Error")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::Error {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::Oculus::Platform::Models::Error {
 impl crate::Oculus::Platform::Models::Error {
     pub fn New(
         code: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         httpCode: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -41,7 +41,7 @@ impl crate::Oculus::Platform::Models::Error {
     pub fn _ctor(
         &mut self,
         code: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         httpCode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

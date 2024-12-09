@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboard {
     }
     pub fn LaunchOverlayIntent(
         &mut self,
-        dataUri: *mut crate::System::String,
+        dataUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -655,7 +655,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
-    pub ActiveKeyboardName: *mut crate::System::String,
+    pub ActiveKeyboardName: *mut quest_hook::libil2cpp::Il2CppString,
     pub State: crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState,
     pub TrackingTimeout: bool,
 }
@@ -680,7 +680,7 @@ for crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedE
 impl crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardVisibilityChangedEvent {
     pub fn _ctor(
         &mut self,
-        keyboardModel: *mut crate::System::String,
+        keyboardModel: *mut quest_hook::libil2cpp::Il2CppString,
         state: crate::GlobalNamespace::OVRTrackedKeyboard_TrackedKeyboardState,
         timeout: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

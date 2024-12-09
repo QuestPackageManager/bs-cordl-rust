@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventHandlerList {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _head: *mut crate::System::ComponentModel::EventHandlerList_ListEntry,
     pub _parent: *mut crate::System::ComponentModel::Component,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+EventHandlerList")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::System::ComponentModel::EventHandlerList {
     pub type ListEntry = crate::System::ComponentModel::EventHandlerList_ListEntry;
     pub fn Find(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::EventHandlerList_ListEntry,
     > {
@@ -43,7 +43,7 @@ impl crate::System::ComponentModel::EventHandlerList {
     }
     pub fn get_Item(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,9 +67,9 @@ for crate::System::ComponentModel::EventHandlerList {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventHandlerList_ListEntry {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _next: *mut crate::System::ComponentModel::EventHandlerList_ListEntry,
-    pub _key: *mut crate::System::Object,
+    pub _key: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _handler: *mut crate::System::Delegate,
 }
 #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
@@ -80,7 +80,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+EventHandlerList+ListEntry")]
 impl std::ops::Deref for crate::System::ComponentModel::EventHandlerList_ListEntry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -5,7 +5,7 @@ pub struct NetworkPacketSerializer_2<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _messsageHandlers: *mut crate::System::Collections::Generic::Dictionary_2<
         u8,
         *mut crate::System::Action_3<
@@ -36,7 +36,7 @@ impl<
     TType: quest_hook::libil2cpp::Type,
     TData: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::GlobalNamespace::NetworkPacketSerializer_2<TType, TData> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -166,7 +166,7 @@ impl<
     }
     pub fn Log(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

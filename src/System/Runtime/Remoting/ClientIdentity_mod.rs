@@ -37,7 +37,7 @@ impl crate::System::Runtime::Remoting::ClientIdentity {
         Ok(__cordl_ret)
     }
     pub fn New(
-        objectUri: *mut crate::System::String,
+        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
         objRef: *mut crate::System::Runtime::Remoting::ObjRef,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -48,7 +48,7 @@ impl crate::System::Runtime::Remoting::ClientIdentity {
     }
     pub fn _ctor(
         &mut self,
-        objectUri: *mut crate::System::String,
+        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
         objRef: *mut crate::System::Runtime::Remoting::ObjRef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,11 +70,11 @@ impl crate::System::Runtime::Remoting::ClientIdentity {
     }
     pub fn get_TargetUri(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TargetUri", ())?;
         Ok(__cordl_ret)
     }

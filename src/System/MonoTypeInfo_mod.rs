@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoTypeInfo {
-    __cordl_parent: crate::System::Object,
-    pub full_name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub full_name: *mut quest_hook::libil2cpp::Il2CppString,
     pub default_ctor: *mut crate::System::Reflection::RuntimeConstructorInfo,
 }
 #[cfg(feature = "System+MonoTypeInfo")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+MonoTypeInfo")]
 impl std::ops::Deref for crate::System::MonoTypeInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

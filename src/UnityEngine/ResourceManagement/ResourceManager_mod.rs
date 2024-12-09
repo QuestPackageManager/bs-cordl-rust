@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub postProfilerEvents: bool,
     pub _InternalIdTransformFunc_k__BackingField: *mut crate::System::Func_2<
         *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _WebRequestOverride_k__BackingField: *mut crate::System::Action_1<
         *mut crate::UnityEngine::Networking::UnityWebRequest,
@@ -50,7 +50,7 @@ pub struct ResourceManager {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
         i32,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub m_diagnosticsHandler: *mut crate::System::Action_1<
         crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventContext,
@@ -78,7 +78,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager")]
 impl std::ops::Deref for crate::UnityEngine::ResourceManagement::ResourceManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -363,7 +363,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn CreateCompletedOperation<TObject>(
         &mut self,
         result: TObject,
-        errorMsg: *mut crate::System::String,
+        errorMsg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
@@ -625,7 +625,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     }
     pub fn OnObjectAdded(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -636,7 +636,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     }
     pub fn OnObjectRemoved(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -891,7 +891,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
             crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
             crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
             i32,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1015,11 +1015,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     pub fn TransformInternalId(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TransformInternalId", (location))?;
         Ok(__cordl_ret)
     }
@@ -1105,7 +1105,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Func_2<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1113,7 +1113,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         );
         let __cordl_ret: *mut crate::System::Func_2<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_InternalIdTransformFunc", ())?;
         Ok(__cordl_ret)
     }
@@ -1180,7 +1180,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager {
         &mut self,
         value: *mut crate::System::Func_2<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1290,11 +1290,11 @@ impl<
             .invoke("Init", (result, success, exception, releaseDependenciesOnFailure))?;
         Ok(__cordl_ret)
     }
-    pub fn Init_String0(
+    pub fn Init_Il2CppString0(
         &mut self,
         result: TObject,
         success: bool,
-        errorMsg: *mut crate::System::String,
+        errorMsg: *mut quest_hook::libil2cpp::Il2CppString,
         releaseDependenciesOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -1344,7 +1344,7 @@ impl<
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1352,7 +1352,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }
@@ -1411,8 +1411,8 @@ pub struct ResourceManager_DiagnosticEventContext {
     pub _Type_k__BackingField: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
     pub _EventValue_k__BackingField: i32,
     pub _Location_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    pub _Context_k__BackingField: *mut crate::System::Object,
-    pub _Error_k__BackingField: *mut crate::System::String,
+    pub _Context_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _Error_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceManager+DiagnosticEventContext")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1438,8 +1438,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventCont
         op: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
         _cordl_type: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
         eventValue: i32,
-        error: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        error: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -1450,8 +1450,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventCont
     }
     pub fn get_Context(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Context",
             (),
@@ -1460,8 +1460,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventCont
     }
     pub fn get_Error(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Error",
             (),
@@ -1606,7 +1606,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     pub fn GetDownloadStatus(
         &mut self,
         visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -1670,11 +1670,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceManager_InstanceOperation {
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }

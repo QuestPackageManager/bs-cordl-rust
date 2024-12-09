@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Parser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub schemaType: crate::System::Xml::Schema::SchemaType,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
     pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
@@ -21,7 +21,7 @@ pub struct Parser {
     pub processMarkup: bool,
     pub parentNode: *mut crate::System::Xml::XmlNode,
     pub annotationNSManager: *mut crate::System::Xml::XmlNamespaceManager,
-    pub xmlns: *mut crate::System::String,
+    pub xmlns: *mut quest_hook::libil2cpp::Il2CppString,
     pub xmlCharType: crate::System::Xml::XmlCharType,
 }
 #[cfg(feature = "System+Xml+Schema+Parser")]
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+Parser")]
 impl std::ops::Deref for crate::System::Xml::Schema::Parser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::System::Xml::Schema::Parser {
     pub fn CheckSchemaRoot(
         &mut self,
         rootType: crate::System::Xml::Schema::SchemaType,
-        code: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        code: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,8 +58,8 @@ impl crate::System::Xml::Schema::Parser {
     }
     pub fn CreateXmlNsAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        value: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +124,7 @@ impl crate::System::Xml::Schema::Parser {
     pub fn Parse(
         &mut self,
         reader: *mut crate::System::Xml::XmlReader,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -154,7 +154,7 @@ impl crate::System::Xml::Schema::Parser {
     pub fn StartParsing(
         &mut self,
         reader: *mut crate::System::Xml::XmlReader,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

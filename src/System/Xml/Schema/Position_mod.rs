@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct Position {
     pub symbol: i32,
-    pub particle: *mut crate::System::Object,
+    pub particle: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Schema+Position")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -26,7 +26,7 @@ impl crate::System::Xml::Schema::Position {
     pub fn _ctor(
         &mut self,
         symbol: i32,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

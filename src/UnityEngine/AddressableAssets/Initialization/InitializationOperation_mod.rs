@@ -11,7 +11,7 @@ pub struct InitializationOperation {
     pub m_loadCatalogOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
     >,
-    pub m_ProviderSuffix: *mut crate::System::String,
+    pub m_ProviderSuffix: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
     pub m_Diagnostics: *mut crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics,
     pub m_InitGroupOps: *mut crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation,
@@ -73,7 +73,7 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
     pub fn LoadContentCatalog(
         &mut self,
         loc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        providerSuffix: *mut crate::System::String,
+        providerSuffix: *mut quest_hook::libil2cpp::Il2CppString,
         remoteHashLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -158,11 +158,11 @@ impl crate::UnityEngine::AddressableAssets::Initialization::InitializationOperat
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }

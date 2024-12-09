@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectionPickerRenderer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+SelectionPickerRenderer")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::SelectionPickerRenderer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -101,7 +101,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRen
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
         shader: *mut crate::UnityEngine::Shader,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
@@ -136,7 +136,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_ISelectionPickerRend
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectionPickerRenderer_SelectionPickerRendererHDRP {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererHDRP"
@@ -151,7 +151,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererHDRP {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,7 +180,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
         shader: *mut crate::UnityEngine::Shader,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {
@@ -220,7 +220,7 @@ for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRende
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectionPickerRenderer_SelectionPickerRendererStandard {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "UnityEngine+ProBuilder+SelectionPickerRenderer+SelectionPickerRendererStandard"
@@ -235,7 +235,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRendererStandard {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -264,7 +264,7 @@ impl crate::UnityEngine::ProBuilder::SelectionPickerRenderer_SelectionPickerRend
         &mut self,
         camera: *mut crate::UnityEngine::Camera,
         shader: *mut crate::UnityEngine::Shader,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
         width: i32,
         height: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture2D> {

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MatchCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _regex: *mut crate::System::Text::RegularExpressions::Regex,
     pub _matches: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Text::RegularExpressions::Match,
     >,
     pub _done: bool,
-    pub _input: *mut crate::System::String,
+    pub _input: *mut quest_hook::libil2cpp::Il2CppString,
     pub _beginning: i32,
     pub _length: i32,
     pub _startat: i32,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::MatchCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -103,9 +103,9 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Regex_String_i32_i32_i32_0(
+    pub fn New_Regex_Il2CppString_i32_i32_i32_0(
         regex: *mut crate::System::Text::RegularExpressions::Regex,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
         beginning: i32,
         length: i32,
         startat: i32,
@@ -266,7 +266,7 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     }
     pub fn System_Collections_IList_Add(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -287,7 +287,7 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     }
     pub fn System_Collections_IList_Contains(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -298,7 +298,7 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     }
     pub fn System_Collections_IList_IndexOf(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -310,7 +310,7 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     pub fn System_Collections_IList_Insert(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -321,7 +321,7 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     }
     pub fn System_Collections_IList_Remove(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -354,18 +354,18 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     pub fn System_Collections_IList_get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IList.get_Item", (index))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IList_set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -384,10 +384,10 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Regex_String_i32_i32_i32_0(
+    pub fn _ctor_Regex_Il2CppString_i32_i32_i32_0(
         &mut self,
         regex: *mut crate::System::Text::RegularExpressions::Regex,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
         beginning: i32,
         length: i32,
         startat: i32,
@@ -435,11 +435,11 @@ impl crate::System::Text::RegularExpressions::MatchCollection {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -458,7 +458,7 @@ for crate::System::Text::RegularExpressions::MatchCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MatchCollection_Enumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _collection: *mut crate::System::Text::RegularExpressions::MatchCollection,
     pub _index: i32,
 }
@@ -471,7 +471,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Text+RegularExpressions+MatchCollection+Enumerator")]
 impl std::ops::Deref
 for crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -513,11 +513,11 @@ impl crate::System::Text::RegularExpressions::MatchCollection_Enumerator {
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
         Ok(__cordl_ret)
     }

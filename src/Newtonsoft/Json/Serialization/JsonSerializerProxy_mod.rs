@@ -32,11 +32,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,
         objectType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("DeserializeInternal", (reader, objectType))?;
         Ok(__cordl_ret)
     }
@@ -73,7 +73,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     pub fn PopulateInternal(
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,7 +85,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     pub fn SerializeInternal(
         &mut self,
         jsonWriter: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         rootType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -217,11 +217,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     }
     pub fn get_DateFormatString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DateFormatString", ())?;
         Ok(__cordl_ret)
     }
@@ -543,7 +543,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerProxy {
     }
     pub fn set_DateFormatString(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

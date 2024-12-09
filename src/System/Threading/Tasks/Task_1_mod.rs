@@ -270,9 +270,9 @@ impl<
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Delegate_Object_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler7(
+    pub fn New_Delegate_Il2CppObject_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler7(
         valueSelector: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         parent: *mut crate::System::Threading::Tasks::Task,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -342,9 +342,12 @@ impl<
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_Func_2_Object_CancellationToken_TaskCreationOptions5(
-        function: *mut crate::System::Func_2<*mut crate::System::Object, TResult>,
-        state: *mut crate::System::Object,
+    pub fn New_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions5(
+        function: *mut crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            TResult,
+        >,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
@@ -361,8 +364,8 @@ impl<
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_TaskCreationOptions1(
-        state: *mut crate::System::Object,
+    pub fn New_Il2CppObject_TaskCreationOptions1(
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -430,10 +433,10 @@ impl<
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Delegate_Object_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler7(
+    pub fn _ctor_Delegate_Il2CppObject_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler7(
         &mut self,
         valueSelector: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         parent: *mut crate::System::Threading::Tasks::Task,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -508,10 +511,13 @@ impl<
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Func_2_Object_CancellationToken_TaskCreationOptions5(
+    pub fn _ctor_Func_2_Il2CppObject_CancellationToken_TaskCreationOptions5(
         &mut self,
-        function: *mut crate::System::Func_2<*mut crate::System::Object, TResult>,
-        state: *mut crate::System::Object,
+        function: *mut crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            TResult,
+        >,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -526,9 +532,9 @@ impl<
             .invoke(".ctor", (function, state, cancellationToken, creationOptions))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_TaskCreationOptions1(
+    pub fn _ctor_Il2CppObject_TaskCreationOptions1(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         options: crate::System::Threading::Tasks::TaskCreationOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -612,7 +618,7 @@ for crate::System::Threading::Tasks::Task_1<TResult> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_1_TaskWhenAnyCast<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TResult: std::marker::PhantomData<TResult>,
 }
 #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
@@ -623,7 +629,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+Task_1+TaskWhenAnyCast")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::Task_1_TaskWhenAnyCast<TResult> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

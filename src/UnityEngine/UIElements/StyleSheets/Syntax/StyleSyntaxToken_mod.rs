@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct StyleSyntaxToken {
     pub _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
-    pub text: *mut crate::System::String,
+    pub text: *mut quest_hook::libil2cpp::Il2CppString,
     pub number: i32,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxToken")]
@@ -25,10 +25,10 @@ for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxToken")]
 impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxToken {
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxTokenType,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

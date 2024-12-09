@@ -28,7 +28,7 @@ impl crate::LiteNetLib::INatPunchListener {
         &mut self,
         localEndPoint: *mut crate::System::Net::IPEndPoint,
         remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        token: *mut crate::System::String,
+        token: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -41,7 +41,7 @@ impl crate::LiteNetLib::INatPunchListener {
         &mut self,
         targetEndPoint: *mut crate::System::Net::IPEndPoint,
         _cordl_type: crate::LiteNetLib::NatAddressType,
-        token: *mut crate::System::String,
+        token: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -8,8 +8,8 @@ pub struct LinkInfo {
     pub linkTextfirstCharacterIndex: i32,
     pub linkTextLength: i32,
     pub linkId: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    pub m_LinkIdString: *mut crate::System::String,
-    pub m_LinkTextString: *mut crate::System::String,
+    pub m_LinkIdString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_LinkTextString: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+TextCore+Text+LinkInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -31,8 +31,8 @@ for crate::UnityEngine::TextCore::Text::LinkInfo {
 impl crate::UnityEngine::TextCore::Text::LinkInfo {
     pub fn GetLinkId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetLinkId",
             (),
@@ -42,8 +42,8 @@ impl crate::UnityEngine::TextCore::Text::LinkInfo {
     pub fn GetLinkText(
         &mut self,
         textInfo: *mut crate::UnityEngine::TextCore::Text::TextInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetLinkText",
             (textInfo),

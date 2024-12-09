@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MinSize: crate::UnityEngine::Vector2Int,
     pub m_MaxSize: crate::UnityEngine::Vector2Int,
     pub m_MaxAllocSize: crate::UnityEngine::Vector2Int,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,7 +147,7 @@ impl crate::UnityEngine::UIElements::UIR::Allocator2D_Alloc2D {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Allocator2D_Area {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rect: crate::UnityEngine::RectInt,
     pub allocator: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
 }
@@ -158,7 +158,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Allocator2D+Area")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Allocator2D_Area {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

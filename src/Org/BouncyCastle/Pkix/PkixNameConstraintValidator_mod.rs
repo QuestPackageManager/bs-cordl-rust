@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixNameConstraintValidator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub excludedSubtreesDN: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     pub excludedSubtreesDNS: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     pub excludedSubtreesEmail: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixNameConstraintValidator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -74,7 +74,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn CheckExcludedDns(
         &mut self,
         excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut crate::System::String,
+        dns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,7 +86,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn CheckExcludedEmail(
         &mut self,
         excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut crate::System::String,
+        email: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -122,7 +122,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn CheckExcludedUri(
         &mut self,
         excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,7 +157,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn CheckPermittedDns(
         &mut self,
         permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut crate::System::String,
+        dns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +169,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn CheckPermittedEmail(
         &mut self,
         permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut crate::System::String,
+        email: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,7 +205,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn CheckPermittedUri(
         &mut self,
         permitted: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,7 +228,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     }
     pub fn Equals(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -257,11 +257,11 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn ExtractNameAsString(
         &mut self,
         name: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ExtractNameAsString", (name))?;
         Ok(__cordl_ret)
     }
@@ -331,10 +331,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("IntersectEmail", (permitted, emails))?;
         Ok(__cordl_ret)
     }
-    pub fn IntersectEmail_String_String_ISet1(
+    pub fn IntersectEmail_Il2CppString_Il2CppString_ISet1(
         &mut self,
-        email1: *mut crate::System::String,
-        email2: *mut crate::System::String,
+        email1: *mut quest_hook::libil2cpp::Il2CppString,
+        email2: *mut quest_hook::libil2cpp::Il2CppString,
         intersect: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -435,10 +435,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("IntersectUri", (permitted, uris))?;
         Ok(__cordl_ret)
     }
-    pub fn IntersectUri_String_String_ISet1(
+    pub fn IntersectUri_Il2CppString_Il2CppString_ISet1(
         &mut self,
-        email1: *mut crate::System::String,
-        email2: *mut crate::System::String,
+        email1: *mut quest_hook::libil2cpp::Il2CppString,
+        email2: *mut quest_hook::libil2cpp::Il2CppString,
         intersect: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -475,7 +475,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn IsDnsConstrained_ISet1(
         &mut self,
         constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut crate::System::String,
+        dns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -484,10 +484,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("IsDnsConstrained", (constraints, dns))?;
         Ok(__cordl_ret)
     }
-    pub fn IsDnsConstrained_String0(
+    pub fn IsDnsConstrained_Il2CppString0(
         &mut self,
-        constraint: *mut crate::System::String,
-        dns: *mut crate::System::String,
+        constraint: *mut quest_hook::libil2cpp::Il2CppString,
+        dns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -499,7 +499,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn IsEmailConstrained_ISet1(
         &mut self,
         constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut crate::System::String,
+        email: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -508,10 +508,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("IsEmailConstrained", (constraints, email))?;
         Ok(__cordl_ret)
     }
-    pub fn IsEmailConstrained_String0(
+    pub fn IsEmailConstrained_Il2CppString0(
         &mut self,
-        constraint: *mut crate::System::String,
-        email: *mut crate::System::String,
+        constraint: *mut quest_hook::libil2cpp::Il2CppString,
+        email: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -571,7 +571,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn IsUriConstrained_ISet1(
         &mut self,
         constraints: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -580,10 +580,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("IsUriConstrained", (constraints, uri))?;
         Ok(__cordl_ret)
     }
-    pub fn IsUriConstrained_String0(
+    pub fn IsUriConstrained_Il2CppString0(
         &mut self,
-        constraint: *mut crate::System::String,
-        uri: *mut crate::System::String,
+        constraint: *mut quest_hook::libil2cpp::Il2CppString,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -620,8 +620,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     }
     pub fn SpecialEquals(
         &mut self,
-        o1: *mut crate::System::Object,
-        o2: *mut crate::System::Object,
+        o1: *mut quest_hook::libil2cpp::Il2CppObject,
+        o2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -632,43 +632,43 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn StringifyIP(
         &mut self,
         ip: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("StringifyIP", (ip))?;
         Ok(__cordl_ret)
     }
     pub fn StringifyIPCollection(
         &mut self,
         ips: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("StringifyIPCollection", (ips))?;
         Ok(__cordl_ret)
     }
     pub fn StringifyOtherNameCollection(
         &mut self,
         otherNames: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("StringifyOtherNameCollection", (otherNames))?;
         Ok(__cordl_ret)
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -689,7 +689,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn UnionDns(
         &mut self,
         excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        dns: *mut crate::System::String,
+        dns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     > {
@@ -703,7 +703,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn UnionEmail_ISet0(
         &mut self,
         excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        email: *mut crate::System::String,
+        email: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     > {
@@ -714,10 +714,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
             .invoke("UnionEmail", (excluded, email))?;
         Ok(__cordl_ret)
     }
-    pub fn UnionEmail_String_ISet1(
+    pub fn UnionEmail_Il2CppString_ISet1(
         &mut self,
-        email1: *mut crate::System::String,
-        email2: *mut crate::System::String,
+        email1: *mut quest_hook::libil2cpp::Il2CppString,
+        email2: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_union: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -772,7 +772,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     pub fn UnionUri(
         &mut self,
         excluded: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        uri: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     > {
@@ -785,8 +785,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     }
     pub fn WithinDomain(
         &mut self,
-        testDomain: *mut crate::System::String,
-        domain: *mut crate::System::String,
+        testDomain: *mut quest_hook::libil2cpp::Il2CppString,
+        domain: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -829,8 +829,8 @@ impl crate::Org::BouncyCastle::Pkix::PkixNameConstraintValidator {
     }
     pub fn unionURI(
         &mut self,
-        email1: *mut crate::System::String,
-        email2: *mut crate::System::String,
+        email1: *mut quest_hook::libil2cpp::Il2CppString,
+        email2: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_union: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

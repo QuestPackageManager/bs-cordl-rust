@@ -9,23 +9,23 @@ pub struct HEU_LoadBufferVolume {
     >,
     pub _heightMapWidth: i32,
     pub _heightMapHeight: i32,
-    pub _heightMap: *mut crate::System::Object,
-    pub _splatMaps: *mut crate::System::Object,
+    pub _heightMap: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _splatMaps: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _terrainSizeX: f32,
     pub _terrainSizeY: f32,
     pub _heightRange: f32,
     pub _position: crate::UnityEngine::Vector3,
-    pub _terrainDataPath: *mut crate::System::String,
-    pub _terrainDataExportPath: *mut crate::System::String,
+    pub _terrainDataPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _terrainDataExportPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _scatterTrees: *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
     pub _detailPrototypes: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_DetailPrototype,
     >,
     pub _detailMaps: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _detailProperties: *mut crate::HoudiniEngineUnity::HEU_DetailProperties,
-    pub _specifiedTerrainMaterialName: *mut crate::System::String,
+    pub _specifiedTerrainMaterialName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferVolume")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

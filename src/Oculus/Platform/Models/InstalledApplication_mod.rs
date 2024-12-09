@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstalledApplication {
-    __cordl_parent: crate::System::Object,
-    pub ApplicationId: *mut crate::System::String,
-    pub PackageName: *mut crate::System::String,
-    pub Status: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub ApplicationId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PackageName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Status: *mut quest_hook::libil2cpp::Il2CppString,
     pub VersionCode: i32,
-    pub VersionName: *mut crate::System::String,
+    pub VersionName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+InstalledApplication")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+InstalledApplication")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::InstalledApplication {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

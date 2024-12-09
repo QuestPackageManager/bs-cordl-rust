@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixCertPath {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificates: *mut crate::System::Collections::IList,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixCertPath")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixCertPath {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::PkixCertPath {
 impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,9 +45,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke("GetEncoded", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetEncoded_String1(
+    pub fn GetEncoded_Il2CppString1(
         &mut self,
-        encoding: *mut crate::System::String,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,9 +81,9 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke_void(".ctor", (inStream))?;
         Ok(__cordl_object)
     }
-    pub fn New_Stream_String2(
+    pub fn New_Stream_Il2CppString2(
         inStream: *mut crate::System::IO::Stream,
-        encoding: *mut crate::System::String,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -135,10 +135,10 @@ impl crate::Org::BouncyCastle::Pkix::PkixCertPath {
             .invoke(".ctor", (inStream))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Stream_String2(
+    pub fn _ctor_Stream_Il2CppString2(
         &mut self,
         inStream: *mut crate::System::IO::Stream,
-        encoding: *mut crate::System::String,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

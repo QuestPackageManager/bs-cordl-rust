@@ -128,9 +128,9 @@ impl crate::Org::BouncyCastle::Asn1::DerOutputStream {
             .invoke("WriteObject", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteObject_Object0(
+    pub fn WriteObject_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

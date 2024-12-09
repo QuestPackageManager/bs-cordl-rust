@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaAppInfo {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaObject,
-    pub source: *mut crate::System::String,
+    pub source: *mut quest_hook::libil2cpp::Il2CppString,
     pub markup: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Xml::XmlNode,
     >,
@@ -71,7 +71,7 @@ impl crate::System::Xml::Schema::XmlSchemaAppInfo {
     }
     pub fn set_Source(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

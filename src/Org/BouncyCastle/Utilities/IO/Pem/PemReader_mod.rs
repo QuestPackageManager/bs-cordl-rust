@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PemReader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: *mut crate::System::IO::TextReader,
 }
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemReader")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+IO+Pem+PemReader")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemReader {
     pub const EndString: &'static str = "-----END ";
     pub fn LoadObject(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
     > {

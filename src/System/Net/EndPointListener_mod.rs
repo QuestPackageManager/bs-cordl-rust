@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EndPointListener {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub listener: *mut crate::System::Net::HttpListener,
     pub endpoint: *mut crate::System::Net::IPEndPoint,
     pub sock: *mut crate::System::Net::Sockets::Socket,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+EndPointListener")]
 impl std::ops::Deref for crate::System::Net::EndPointListener {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,8 +92,8 @@ impl crate::System::Net::EndPointListener {
     }
     pub fn MatchFromList(
         &mut self,
-        host: *mut crate::System::String,
-        path: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         list: *mut crate::System::Collections::ArrayList,
         prefix: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Net::ListenerPrefix>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::HttpListener> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionEvaluator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ExpressionEvaluator")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,8 +62,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionEvaluator_Expression {
-    __cordl_parent: crate::System::Object,
-    pub rpnTokens: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub rpnTokens: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub hasVariables: bool,
 }
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
@@ -73,7 +75,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Expression")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator_Expression {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +106,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
         Ok(__cordl_ret)
     }
     pub fn New(
-        expression: *mut crate::System::String,
+        expression: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -114,7 +116,7 @@ impl crate::UnityEngine::ExpressionEvaluator_Expression {
     }
     pub fn _ctor(
         &mut self,
-        expression: *mut crate::System::String,
+        expression: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -164,7 +166,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionEvaluator_Operator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub op: crate::UnityEngine::ExpressionEvaluator_Op,
     pub precedence: i32,
     pub associativity: crate::UnityEngine::ExpressionEvaluator_Associativity,
@@ -177,7 +179,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ExpressionEvaluator+Operator")]
 impl std::ops::Deref for crate::UnityEngine::ExpressionEvaluator_Operator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

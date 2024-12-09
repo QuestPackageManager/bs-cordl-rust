@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Changelog {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Entries: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+Changelog")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::Changelog {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +32,8 @@ impl crate::UnityEngine::ProBuilder::Changelog {
     pub const k_VersionInfoPattern: &'static str = "(?<=##\\s\\[).*(?=\\])";
     pub fn CreateEntry(
         &mut self,
-        version: *mut crate::System::String,
-        contents: *mut crate::System::String,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
+        contents: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::ProBuilder::ChangelogEntry,
     > {
@@ -45,7 +45,7 @@ impl crate::UnityEngine::ProBuilder::Changelog {
         Ok(__cordl_ret)
     }
     pub fn New(
-        log: *mut crate::System::String,
+        log: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,7 +55,7 @@ impl crate::UnityEngine::ProBuilder::Changelog {
     }
     pub fn _ctor(
         &mut self,
-        log: *mut crate::System::String,
+        log: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

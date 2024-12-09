@@ -5,7 +5,7 @@ pub struct DlcPromoPanelDataSO {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _cutOffTest: i32,
     pub _minNumberOfNotOwnedPacks: i32,
-    pub _defaultPromoInfoId: *mut crate::System::String,
+    pub _defaultPromoInfoId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "DlcPromoPanelDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -53,11 +53,11 @@ impl crate::GlobalNamespace::DlcPromoPanelDataSO {
     }
     pub fn get_defaultPromoInfoId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultPromoInfoId", ())?;
         Ok(__cordl_ret)
     }
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::DlcPromoPanelDataSO {
     }
     pub fn set_defaultPromoInfoId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

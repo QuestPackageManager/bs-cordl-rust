@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleLevelFinished(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleNoteWasCut(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         noteCutInfo: *mut crate::GlobalNamespace::NoteCutInfoNetSerializable,
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleNoteWasMissed(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         noteMissInfo: *mut crate::GlobalNamespace::NoteMissInfoNetSerializable,
@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleNoteWasSpawned(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         noteSpawnInfoNetSerializable: *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
@@ -107,7 +107,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleObstacleWasSpawned(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         obstacleSpawnInfoNetSerializable: *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorMirror {
     }
     pub fn HandleSliderWasSpawned(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         sliderSpawnInfoNetSerializable: *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,

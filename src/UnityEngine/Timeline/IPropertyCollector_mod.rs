@@ -86,10 +86,10 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromComponent", (obj, component))?;
         Ok(__cordl_ret)
     }
-    pub fn AddFromName_Component_String4(
+    pub fn AddFromName_Component_Il2CppString4(
         &mut self,
         component: *mut crate::UnityEngine::Component,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,10 +98,10 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromName", (component, name))?;
         Ok(__cordl_ret)
     }
-    pub fn AddFromName_GameObject_String2<T>(
+    pub fn AddFromName_GameObject_Il2CppString2<T>(
         &mut self,
         obj: *mut crate::UnityEngine::GameObject,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -114,10 +114,10 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromName", (obj, name))?;
         Ok(__cordl_ret)
     }
-    pub fn AddFromName_GameObject_String3(
+    pub fn AddFromName_GameObject_Il2CppString3(
         &mut self,
         obj: *mut crate::UnityEngine::GameObject,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,9 +126,9 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromName", (obj, name))?;
         Ok(__cordl_ret)
     }
-    pub fn AddFromName_String0<T>(
+    pub fn AddFromName_Il2CppString0<T>(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -141,9 +141,9 @@ impl crate::UnityEngine::Timeline::IPropertyCollector {
             .invoke("AddFromName", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn AddFromName_String1(
+    pub fn AddFromName_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

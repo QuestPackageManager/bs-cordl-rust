@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_OutputAttributeDictionary {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::HoudiniEngineUnity::HEU_OutputAttribute,
     >,
 }
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_OutputAttributeDictionary")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_OutputAttributeDictionary {
     type Target = crate::HoudiniEngineUnity::HEU_SerializableDictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::HoudiniEngineUnity::HEU_OutputAttribute,
     >;
     fn deref(&self) -> &Self::Target {

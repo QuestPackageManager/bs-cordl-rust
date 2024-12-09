@@ -8,20 +8,20 @@ pub struct JsonArrayContract {
     pub _genericCollectionDefinitionType: *mut crate::System::Type,
     pub _genericWrapperType: *mut crate::System::Type,
     pub _genericWrapperCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _genericTemporaryCollectionCreator: *mut crate::System::Func_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _IsArray_k__BackingField: bool,
     pub _ShouldCreateWrapper_k__BackingField: bool,
     pub _CanDeserialize_k__BackingField: bool,
     pub _parameterizedConstructor: *mut crate::System::Reflection::ConstructorInfo,
     pub _parameterizedCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _overrideCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _HasParameterizedCreator_k__BackingField: bool,
 }
@@ -58,7 +58,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
     }
     pub fn CreateWrapper(
         &mut self,
-        list: *mut crate::System::Object,
+        list: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Utilities::IWrappedCollection,
     > {
@@ -158,14 +158,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_OverrideCreator", ())?;
         Ok(__cordl_ret)
     }
@@ -173,14 +173,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_ParameterizedCreator", ())?;
         Ok(__cordl_ret)
     }
@@ -216,7 +216,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonArrayContract {
     pub fn set_OverrideCreator(
         &mut self,
         value: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

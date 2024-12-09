@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextStyle {
-    __cordl_parent: crate::System::Object,
-    pub m_Name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_HashCode: i32,
-    pub m_OpeningDefinition: *mut crate::System::String,
-    pub m_ClosingDefinition: *mut crate::System::String,
+    pub m_OpeningDefinition: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ClosingDefinition: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_OpeningTagArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
     pub m_ClosingTagArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
     pub m_OpeningTagUnicodeArray: *mut quest_hook::libil2cpp::Il2CppArray<u32>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyle")]
 impl std::ops::Deref for crate::UnityEngine::TextCore::Text::TextStyle {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,9 +33,9 @@ impl std::ops::DerefMut for crate::UnityEngine::TextCore::Text::TextStyle {
 #[cfg(feature = "UnityEngine+TextCore+Text+TextStyle")]
 impl crate::UnityEngine::TextCore::Text::TextStyle {
     pub fn New(
-        styleName: *mut crate::System::String,
-        styleOpeningDefinition: *mut crate::System::String,
-        styleClosingDefinition: *mut crate::System::String,
+        styleName: *mut quest_hook::libil2cpp::Il2CppString,
+        styleOpeningDefinition: *mut quest_hook::libil2cpp::Il2CppString,
+        styleClosingDefinition: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -58,9 +58,9 @@ impl crate::UnityEngine::TextCore::Text::TextStyle {
     }
     pub fn _ctor(
         &mut self,
-        styleName: *mut crate::System::String,
-        styleOpeningDefinition: *mut crate::System::String,
-        styleClosingDefinition: *mut crate::System::String,
+        styleName: *mut quest_hook::libil2cpp::Il2CppString,
+        styleOpeningDefinition: *mut quest_hook::libil2cpp::Il2CppString,
+        styleClosingDefinition: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

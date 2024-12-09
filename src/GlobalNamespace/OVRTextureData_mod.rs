@@ -7,7 +7,7 @@ pub struct OVRTextureData {
     pub height: i32,
     pub format: crate::GlobalNamespace::OVRTextureFormat,
     pub transcodedFormat: crate::UnityEngine::TextureFormat,
-    pub uri: *mut crate::System::String,
+    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "OVRTextureData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

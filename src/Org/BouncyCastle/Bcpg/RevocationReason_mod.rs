@@ -26,11 +26,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::RevocationReason {
 impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
     pub fn GetRevocationDescription(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetRevocationDescription", ())?;
         Ok(__cordl_ret)
     }
@@ -46,10 +46,10 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             .invoke("GetRevocationReason", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_RevocationReasonTag_String1(
+    pub fn New_RevocationReasonTag_Il2CppString1(
         isCritical: bool,
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
-        description: *mut crate::System::String,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -68,11 +68,11 @@ impl crate::Org::BouncyCastle::Bcpg::RevocationReason {
             .invoke_void(".ctor", (isCritical, isLongLength, data))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_RevocationReasonTag_String1(
+    pub fn _ctor_RevocationReasonTag_Il2CppString1(
         &mut self,
         isCritical: bool,
         reason: crate::Org::BouncyCastle::Bcpg::RevocationReasonTag,
-        description: *mut crate::System::String,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

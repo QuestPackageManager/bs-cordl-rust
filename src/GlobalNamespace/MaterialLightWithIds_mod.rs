@@ -7,7 +7,7 @@ pub struct MaterialLightWithIds {
     pub _setAlphaOnly: bool,
     pub _alphaIntoColor: bool,
     pub _setColorOnly: bool,
-    pub _colorProperty: *mut crate::System::String,
+    pub _colorProperty: *mut quest_hook::libil2cpp::Il2CppString,
     pub _color: crate::UnityEngine::Color,
     pub _alpha: f32,
     pub _propertyId: i32,

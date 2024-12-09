@@ -6,7 +6,7 @@ pub struct JsonSerializerInternalWriter {
     pub _rootType: *mut crate::System::Type,
     pub _rootLevel: i32,
     pub _serializeStack: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalWriter")]
@@ -35,14 +35,16 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn CalculatePropertyValues(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
         member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         memberContract: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         >,
-        memberValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        memberValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +59,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn CheckForCircularReference(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -75,7 +77,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     }
     pub fn GetContract(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::JsonContract,
     > {
@@ -88,7 +90,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     }
     pub fn GetContractSafe(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::JsonContract,
     > {
@@ -114,26 +116,26 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn GetPropertyName(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        name: *mut crate::System::Object,
+        name: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         escape: quest_hook::libil2cpp::ByRefMut<bool>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPropertyName", (writer, name, contract, escape))?;
         Ok(__cordl_ret)
     }
     pub fn GetReference(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetReference", (writer, value))?;
         Ok(__cordl_ret)
     }
@@ -198,7 +200,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -220,7 +222,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -233,7 +235,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -262,7 +264,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn Serialize(
         &mut self,
         jsonWriter: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         objectType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -276,7 +278,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         converter: *mut crate::Newtonsoft::Json::JsonConverter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
         containerProperty: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -415,7 +417,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn SerializeObject(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
         member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -434,7 +436,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn SerializePrimitive(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonPrimitiveContract,
         member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -453,7 +455,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn SerializeString(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonStringContract,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -466,7 +468,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn SerializeValue(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         valueContract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -493,7 +495,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -504,7 +506,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     }
     pub fn ShouldWriteDynamicProperty(
         &mut self,
-        memberValue: *mut crate::System::Object,
+        memberValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -515,7 +517,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     }
     pub fn ShouldWriteProperty(
         &mut self,
-        memberValue: *mut crate::System::Object,
+        memberValue: *mut quest_hook::libil2cpp::Il2CppObject,
         containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonObjectContract,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -528,7 +530,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     }
     pub fn ShouldWriteReference(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         valueContract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -571,7 +573,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn WriteObjectStart(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
         member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         collectionContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,
@@ -590,7 +592,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn WriteReference(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -603,7 +605,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
         _cordl_type: *mut crate::System::Type,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -615,7 +617,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalWriter {
     pub fn WriteStartArray(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        values: *mut crate::System::Object,
+        values: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonArrayContract,
         member: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         containerContract: *mut crate::Newtonsoft::Json::Serialization::JsonContainerContract,

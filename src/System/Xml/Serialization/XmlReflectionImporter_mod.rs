@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlReflectionImporter {
-    __cordl_parent: crate::System::Object,
-    pub initialDefaultNamespace: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub initialDefaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     pub attributeOverrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
     pub includedTypes: *mut crate::System::Collections::ArrayList,
     pub helper: *mut crate::System::Xml::Serialization::ReflectionHelper,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlReflectionImporter")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlReflectionImporter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         declaringType: *mut crate::System::Type,
         rmember: *mut crate::System::Xml::Serialization::XmlReflectionMember,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapMember,
     > {
@@ -63,8 +63,8 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultXmlType: *mut crate::System::String,
-        defaultNamespace: *mut crate::System::String,
+        defaultXmlType: *mut quest_hook::libil2cpp::Il2CppString,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -81,12 +81,12 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
     pub fn GetDefaultValue(
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
-        defaultValue: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetDefaultValue", (typeData, defaultValue))?;
         Ok(__cordl_ret)
     }
@@ -110,18 +110,18 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTypeNamespace", (typeData, root, defaultNamespace))?;
         Ok(__cordl_ret)
     }
     pub fn ImportAnyElementInfo(
         &mut self,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         rmember: *mut crate::System::Xml::Serialization::XmlReflectionMember,
         member: *mut crate::System::Xml::Serialization::XmlTypeMapMemberElement,
         atts: *mut crate::System::Xml::Serialization::XmlAttributes,
@@ -139,7 +139,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         _cordl_type: *mut crate::System::Type,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         isBaseType: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
@@ -158,7 +158,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         isBaseType: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
@@ -176,8 +176,8 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
     pub fn ImportElementInfo(
         &mut self,
         cls: *mut crate::System::Type,
-        defaultName: *mut crate::System::String,
-        defaultNamespace: *mut crate::System::String,
+        defaultName: *mut quest_hook::libil2cpp::Il2CppString,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         defaultType: *mut crate::System::Type,
         member: *mut crate::System::Xml::Serialization::XmlTypeMapMemberElement,
         atts: *mut crate::System::Xml::Serialization::XmlAttributes,
@@ -198,7 +198,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -212,7 +212,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
     pub fn ImportIncludedTypes(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -225,7 +225,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         _cordl_type: *mut crate::System::Type,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         atts: *mut crate::System::Xml::Serialization::XmlAttributes,
         nestingLevel: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -245,7 +245,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         atts: *mut crate::System::Xml::Serialization::XmlAttributes,
         nestingLevel: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -265,7 +265,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -282,7 +282,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         defaultType: *mut crate::System::Type,
         member: *mut crate::System::Xml::Serialization::XmlTypeMapMemberElement,
         atts: *mut crate::System::Xml::Serialization::XmlAttributes,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -307,11 +307,11 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             .invoke("ImportTypeMapping", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn ImportTypeMapping_TypeData_XmlRootAttribute_String3(
+    pub fn ImportTypeMapping_TypeData_XmlRootAttribute_Il2CppString3(
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -322,10 +322,10 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             .invoke("ImportTypeMapping", (typeData, root, defaultNamespace))?;
         Ok(__cordl_ret)
     }
-    pub fn ImportTypeMapping_Type_String1(
+    pub fn ImportTypeMapping_Type_Il2CppString1(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -336,11 +336,11 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
             .invoke("ImportTypeMapping", (_cordl_type, defaultNamespace))?;
         Ok(__cordl_ret)
     }
-    pub fn ImportTypeMapping_Type_XmlRootAttribute_String2(
+    pub fn ImportTypeMapping_Type_XmlRootAttribute_Il2CppString2(
         &mut self,
         _cordl_type: *mut crate::System::Type,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -355,7 +355,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -370,7 +370,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
         &mut self,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlTypeMapping,
     > {
@@ -394,7 +394,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
     }
     pub fn New(
         attributeOverrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -417,7 +417,7 @@ impl crate::System::Xml::Serialization::XmlReflectionImporter {
     pub fn _ctor(
         &mut self,
         attributeOverrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

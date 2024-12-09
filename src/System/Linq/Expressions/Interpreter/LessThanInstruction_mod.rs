@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LessThanInstruction {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::Instruction,
-    pub _nullValue: *mut crate::System::Object,
+    pub _nullValue: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LessThanInstruction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -73,7 +73,7 @@ impl crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     )]
     pub type LessThanUInt64 = crate::GlobalNamespace::LessThanInstruction_LessThanUInt64;
     pub fn New(
-        nullValue: *mut crate::System::Object,
+        nullValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -83,7 +83,7 @@ impl crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     }
     pub fn _ctor(
         &mut self,
-        nullValue: *mut crate::System::Object,
+        nullValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,11 +101,11 @@ impl crate::System::Linq::Expressions::Interpreter::LessThanInstruction {
     }
     pub fn get_InstructionName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }

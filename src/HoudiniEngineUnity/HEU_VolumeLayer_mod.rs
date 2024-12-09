@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_VolumeLayer {
-    __cordl_parent: crate::System::Object,
-    pub _layerName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _layerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _part: *mut crate::HoudiniEngineUnity::HEU_PartData,
     pub _strength: f32,
     pub _uiExpanded: bool,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_VolumeLayer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_VolumeLayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

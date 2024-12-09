@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PartyUpdateNotification {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Action: crate::Oculus::Platform::PartyUpdateAction,
     pub PartyId: u64,
     pub SenderId: u64,
-    pub UpdateTimestamp: *mut crate::System::String,
-    pub UserAlias: *mut crate::System::String,
+    pub UpdateTimestamp: *mut quest_hook::libil2cpp::Il2CppString,
+    pub UserAlias: *mut quest_hook::libil2cpp::Il2CppString,
     pub UserId: u64,
-    pub UserName: *mut crate::System::String,
+    pub UserName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+PartyUpdateNotification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+PartyUpdateNotification")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::PartyUpdateNotification {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

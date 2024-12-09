@@ -5,7 +5,7 @@ pub struct HEU_AssetSerializedMetaData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _softDeleted: bool,
     pub _savedCurveNodeData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Collections::Generic::List_1<
             *mut crate::HoudiniEngineUnity::CurveNodeData,
         >,
@@ -62,7 +62,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::System::Collections::Generic::List_1<
                 *mut crate::HoudiniEngineUnity::CurveNodeData,
             >,
@@ -72,7 +72,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSerializedMetaData {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::System::Collections::Generic::List_1<
                 *mut crate::HoudiniEngineUnity::CurveNodeData,
             >,

@@ -230,13 +230,13 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
             .invoke("RefreshContentLevelDetailView", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SetData_BeatmapLevelPack_BeatmapLevel__cordl_bool__cordl_bool_String_BeatmapDifficultyMask_Il2CppArray1(
+    pub fn SetData_BeatmapLevelPack_BeatmapLevel__cordl_bool__cordl_bool_Il2CppString_BeatmapDifficultyMask_Il2CppArray1(
         &mut self,
         pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         hidePracticeButton: bool,
         canBuyPack: bool,
-        playButtonText: *mut crate::System::String,
+        playButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         notAllowedCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -260,11 +260,11 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn SetData_BeatmapLevel__cordl_bool_String_BeatmapDifficultyMask_Il2CppArray0(
+    pub fn SetData_BeatmapLevel__cordl_bool_Il2CppString_BeatmapDifficultyMask_Il2CppArray0(
         &mut self,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         hidePracticeButton: bool,
-        playButtonText: *mut crate::System::String,
+        playButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
         notAllowedCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -289,7 +289,7 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     pub fn ShowContent(
         &mut self,
         contentType: crate::GlobalNamespace::StandardLevelDetailViewController_ContentType,
-        errorText: *mut crate::System::String,
+        errorText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -29,11 +29,11 @@ impl crate::BGNet::Core::GameLift::IGameLiftPlayerSessionProvider {
     pub fn GetGameLiftPlayerSessionInfo(
         &mut self,
         authenticationTokenProvider: *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-        secret: *mut crate::System::String,
-        code: *mut crate::System::String,
+        secret: *mut quest_hook::libil2cpp::Il2CppString,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<

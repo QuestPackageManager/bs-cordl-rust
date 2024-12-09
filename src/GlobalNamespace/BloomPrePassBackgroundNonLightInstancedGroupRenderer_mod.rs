@@ -10,15 +10,15 @@ pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer {
         *mut crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty,
     >,
     pub _reusableFloatArrays: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub _reusableVectorArrays: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
     pub _reusableMatrixArrays: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
     >,
     pub _reusableArraysSize: i32,
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRendere
     }
     pub fn GetCachedFloatArray(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRendere
     }
     pub fn GetCachedMatrixArray(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
     > {
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRendere
     }
     pub fn GetCachedVectorArray(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     > {
@@ -187,9 +187,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub propertyType: crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_PropertyType,
-    pub propertyName: *mut crate::System::String,
+    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub propertyId: i32,
 }
 #[cfg(
@@ -205,7 +205,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::GlobalNamespace::BloomPrePassBackgroundNonLightInstancedGroupRenderer_SupportedProperty {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

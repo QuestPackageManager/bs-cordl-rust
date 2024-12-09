@@ -8,7 +8,7 @@ pub struct HEU_ObjectInstanceInfo {
     >,
     pub _partTarget: *mut crate::HoudiniEngineUnity::HEU_PartData,
     pub _instancedObjectNodeID: i32,
-    pub _instancedObjectPath: *mut crate::System::String,
+    pub _instancedObjectPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _instances: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::GameObject,
     >,

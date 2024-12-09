@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeValueCache_XmlWellFormedWriter_BufferChunk {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     pub index: i32,
     pub count: i32,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+BufferChunk")]
 impl std::ops::Deref
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,9 +69,9 @@ for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_BufferChunk {
 #[repr(C)]
 #[derive(Debug)]
 pub struct AttributeValueCache_XmlWellFormedWriter_Item {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
-    pub data: *mut crate::System::Object,
+    pub data: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+Item")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -82,7 +82,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache+Item")]
 impl std::ops::Deref
 for crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,7 +106,7 @@ impl crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item {
     pub fn Set(
         &mut self,
         _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
-        data: *mut crate::System::Object,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +169,7 @@ pub struct XmlWellFormedWriter {
     >,
     pub nsTop: i32,
     pub nsHashtable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         i32,
     >,
     pub useNsHashtable: bool,
@@ -182,12 +182,12 @@ pub struct XmlWellFormedWriter {
     >,
     pub attrCount: i32,
     pub attrHashTable: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         i32,
     >,
     pub specAttr: crate::System::Xml::XmlWellFormedWriter_SpecialAttribute,
     pub attrValueCache: *mut crate::System::Xml::XmlWellFormedWriter_AttributeValueCache,
-    pub curDeclPrefix: *mut crate::System::String,
+    pub curDeclPrefix: *mut quest_hook::libil2cpp::Il2CppString,
     pub stateTable: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Xml::XmlWellFormedWriter_State,
     >,
@@ -241,9 +241,9 @@ impl crate::System::Xml::XmlWellFormedWriter {
     pub type Token = crate::System::Xml::XmlWellFormedWriter_Token;
     pub fn AddAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceName: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -254,8 +254,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn AddNamespace(
         &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         kind: crate::System::Xml::XmlWellFormedWriter_NamespaceKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -300,7 +300,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn CheckNCName(
         &mut self,
-        ncname: *mut crate::System::String,
+        ncname: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -331,39 +331,39 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn GeneratePrefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GeneratePrefix", ())?;
         Ok(__cordl_ret)
     }
     pub fn LookupLocalNamespace(
         &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("LookupLocalNamespace", (prefix))?;
         Ok(__cordl_ret)
     }
     pub fn LookupNamespace(
         &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("LookupNamespace", (prefix))?;
         Ok(__cordl_ret)
     }
     pub fn LookupNamespaceIndex(
         &mut self,
-        prefix: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -373,12 +373,12 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn LookupPrefix(
         &mut self,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("LookupPrefix", (ns))?;
         Ok(__cordl_ret)
     }
@@ -406,8 +406,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn PushNamespaceExplicit(
         &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -418,8 +418,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn PushNamespaceImplicit(
         &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -499,7 +499,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteCData(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -534,7 +534,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteComment(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -545,10 +545,10 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteDocType(
         &mut self,
-        name: *mut crate::System::String,
-        pubid: *mut crate::System::String,
-        sysid: *mut crate::System::String,
-        subset: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        pubid: *mut quest_hook::libil2cpp::Il2CppString,
+        sysid: *mut quest_hook::libil2cpp::Il2CppString,
+        subset: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -589,7 +589,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteEntityRef(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -610,8 +610,8 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteProcessingInstruction(
         &mut self,
-        name: *mut crate::System::String,
-        text: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -633,9 +633,9 @@ impl crate::System::Xml::XmlWellFormedWriter {
             .invoke("WriteRaw", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteRaw_String1(
+    pub fn WriteRaw_Il2CppString1(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -646,9 +646,9 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteStartAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceName: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -691,9 +691,9 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteStartElement(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -704,7 +704,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteString(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -727,7 +727,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -738,7 +738,7 @@ impl crate::System::Xml::XmlWellFormedWriter {
     }
     pub fn WriteWhitespace(
         &mut self,
-        ws: *mut crate::System::String,
+        ws: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -814,9 +814,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlWellFormedWrit
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct XmlWellFormedWriter_AttrName {
-    pub prefix: *mut crate::System::String,
-    pub namespaceUri: *mut crate::System::String,
-    pub localName: *mut crate::System::String,
+    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
     pub prev: i32,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttrName")]
@@ -839,9 +839,9 @@ for crate::System::Xml::XmlWellFormedWriter_AttrName {
 impl crate::System::Xml::XmlWellFormedWriter_AttrName {
     pub fn IsDuplicate(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -852,9 +852,9 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
     }
     pub fn Set(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -868,9 +868,9 @@ impl crate::System::Xml::XmlWellFormedWriter_AttrName {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlWellFormedWriter_AttributeValueCache {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub stringValue: *mut crate::System::Text::StringBuilder,
-    pub singleStringValue: *mut crate::System::String,
+    pub singleStringValue: *mut quest_hook::libil2cpp::Il2CppString,
     pub items: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_Item,
     >,
@@ -885,7 +885,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+AttributeValueCache")]
 impl std::ops::Deref for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -907,7 +907,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     pub fn AddItem(
         &mut self,
         _cordl_type: crate::System::Xml::AttributeValueCache_XmlWellFormedWriter_ItemType,
-        data: *mut crate::System::Object,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -990,7 +990,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     }
     pub fn WriteEntityRef(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1012,9 +1012,9 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
             .invoke("WriteRaw", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteRaw_String1(
+    pub fn WriteRaw_Il2CppString1(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1025,7 +1025,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     }
     pub fn WriteString(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1048,7 +1048,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     }
     pub fn WriteValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1059,7 +1059,7 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     }
     pub fn WriteWhitespace(
         &mut self,
-        ws: *mut crate::System::String,
+        ws: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1080,11 +1080,11 @@ impl crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
     }
     pub fn get_StringValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_StringValue", ())?;
         Ok(__cordl_ret)
     }
@@ -1104,11 +1104,11 @@ for crate::System::Xml::XmlWellFormedWriter_AttributeValueCache {
 #[derive(Debug, Clone)]
 pub struct XmlWellFormedWriter_ElementScope {
     pub prevNSTop: i32,
-    pub prefix: *mut crate::System::String,
-    pub localName: *mut crate::System::String,
-    pub namespaceUri: *mut crate::System::String,
+    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
     pub xmlSpace: crate::System::Xml::XmlSpace,
-    pub xmlLang: *mut crate::System::String,
+    pub xmlLang: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+ElementScope")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -1130,9 +1130,9 @@ for crate::System::Xml::XmlWellFormedWriter_ElementScope {
 impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
     pub fn Set(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
         prevNSTop: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1169,8 +1169,8 @@ impl crate::System::Xml::XmlWellFormedWriter_ElementScope {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct XmlWellFormedWriter_Namespace {
-    pub prefix: *mut crate::System::String,
-    pub namespaceUri: *mut crate::System::String,
+    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
     pub kind: crate::System::Xml::XmlWellFormedWriter_NamespaceKind,
     pub prevNsIndex: i32,
 }
@@ -1194,8 +1194,8 @@ for crate::System::Xml::XmlWellFormedWriter_Namespace {
 impl crate::System::Xml::XmlWellFormedWriter_Namespace {
     pub fn Set(
         &mut self,
-        prefix: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
         kind: crate::System::Xml::XmlWellFormedWriter_NamespaceKind,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -1236,7 +1236,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlWellFormedWriter_NamespaceResolverProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub wfWriter: *mut crate::System::Xml::XmlWellFormedWriter,
 }
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
@@ -1247,7 +1247,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlWellFormedWriter+NamespaceResolverProxy")]
 impl std::ops::Deref for crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1275,39 +1275,39 @@ impl crate::System::Xml::XmlWellFormedWriter_NamespaceResolverProxy {
         scope: crate::System::Xml::XmlNamespaceScope,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.GetNamespacesInScope", (scope))?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IXmlNamespaceResolver_LookupNamespace(
         &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.LookupNamespace", (prefix))?;
         Ok(__cordl_ret)
     }
     pub fn System_Xml_IXmlNamespaceResolver_LookupPrefix(
         &mut self,
-        namespaceName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("System.Xml.IXmlNamespaceResolver.LookupPrefix", (namespaceName))?;
         Ok(__cordl_ret)
     }

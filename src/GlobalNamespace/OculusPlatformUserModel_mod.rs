@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusPlatformUserModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _platformInit: *mut crate::GlobalNamespace::IPlatformInit,
     pub _userInfoTask: *mut crate::System::Threading::Tasks::Task_1<
         *mut crate::GlobalNamespace::UserInfo,
     >,
     pub _userInfo: *mut crate::GlobalNamespace::UserInfo,
     pub _friendsUserIds: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _lastXPlatformTokenStatusChange: f32,
     pub platformUserInfoDidChangeEvent: *mut crate::System::Action_1<
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusPlatformUserModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusPlatformUserModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetUserFriendsUserIds", (cached))?;
         Ok(__cordl_ret)
@@ -122,12 +122,12 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
     pub fn GetUserNamesForUserIds(
         &mut self,
         userIds: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::OculusPlatformUserModel {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetUserNamesForUserIds", (userIds))?;
         Ok(__cordl_ret)
@@ -230,7 +230,7 @@ pub struct OculusPlatformUserModel___GetUserNamesForUserIds_g__Fetch_16_0_d {
             *mut crate::Oculus::Platform::Models::User,
         >,
     >,
-    pub userId: *mut crate::System::String,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
     pub __u__1: crate::System::Runtime::CompilerServices::TaskAwaiter_1<
         *mut crate::Oculus::Platform::Message_1<
             *mut crate::Oculus::Platform::Models::User,

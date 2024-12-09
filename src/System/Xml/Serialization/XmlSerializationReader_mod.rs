@@ -17,16 +17,16 @@ pub struct XmlSerializationReader {
     pub referencedObjects: *mut crate::System::Collections::Hashtable,
     pub readCount: i32,
     pub whileIterationCount: i32,
-    pub w3SchemaNS: *mut crate::System::String,
-    pub w3InstanceNS: *mut crate::System::String,
-    pub w3InstanceNS2000: *mut crate::System::String,
-    pub w3InstanceNS1999: *mut crate::System::String,
-    pub soapNS: *mut crate::System::String,
-    pub wsdlNS: *mut crate::System::String,
-    pub nullX: *mut crate::System::String,
-    pub nil: *mut crate::System::String,
-    pub typeX: *mut crate::System::String,
-    pub arrayType: *mut crate::System::String,
+    pub w3SchemaNS: *mut quest_hook::libil2cpp::Il2CppString,
+    pub w3InstanceNS: *mut quest_hook::libil2cpp::Il2CppString,
+    pub w3InstanceNS2000: *mut quest_hook::libil2cpp::Il2CppString,
+    pub w3InstanceNS1999: *mut quest_hook::libil2cpp::Il2CppString,
+    pub soapNS: *mut quest_hook::libil2cpp::Il2CppString,
+    pub wsdlNS: *mut quest_hook::libil2cpp::Il2CppString,
+    pub nullX: *mut quest_hook::libil2cpp::Il2CppString,
+    pub nil: *mut quest_hook::libil2cpp::Il2CppString,
+    pub typeX: *mut quest_hook::libil2cpp::Il2CppString,
+    pub arrayType: *mut quest_hook::libil2cpp::Il2CppString,
     pub arrayQName: *mut crate::System::Xml::XmlQualifiedName,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader")]
@@ -95,8 +95,8 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn AddReadCallback(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
         read: *mut crate::System::Xml::Serialization::XmlSerializationReadCallback,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -109,8 +109,8 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn AddTarget(
         &mut self,
-        id: *mut crate::System::String,
-        o: *mut crate::System::Object,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,7 +121,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn CreateReadOnlyCollectionException(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +132,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn CreateUnknownConstantException(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         enumType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,11 +165,11 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn CurrentTag(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CurrentTag", ())?;
         Ok(__cordl_ret)
     }
@@ -230,12 +230,12 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn GetTarget(
         &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetTarget", (id))?;
         Ok(__cordl_ret)
     }
@@ -283,7 +283,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn IsXmlnsAttribute(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -301,8 +301,8 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     pub fn OnUnknownNode(
         &mut self,
         node: *mut crate::System::Xml::XmlNode,
-        o: *mut crate::System::Object,
-        qnames: *mut crate::System::String,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        qnames: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -344,7 +344,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn ReadList(
         &mut self,
-        resultList: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        resultList: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -371,33 +373,33 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn ReadNullableString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadNullableString", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReadReferencedElement_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadReferencedElement", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ReadReferencedElement_String_String1(
+    pub fn ReadReferencedElement_Il2CppString_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadReferencedElement", (name, ns))?;
         Ok(__cordl_ret)
     }
@@ -413,39 +415,45 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn ReadReferencingElement_ByRefMut0(
         &mut self,
-        fixupReference: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        fixupReference: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadReferencingElement", (fixupReference))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadReferencingElement_String_String_ByRefMut1(
+    pub fn ReadReferencingElement_Il2CppString_Il2CppString_ByRefMut1(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        fixupReference: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        fixupReference: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadReferencingElement", (name, ns, fixupReference))?;
         Ok(__cordl_ret)
     }
-    pub fn ReadReferencingElement_String_String__cordl_bool_ByRefMut2(
+    pub fn ReadReferencingElement_Il2CppString_Il2CppString__cordl_bool_ByRefMut2(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         elementCanBeType: bool,
-        fixupReference: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        fixupReference: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "ReadReferencingElement",
                 (name, ns, elementCanBeType, fixupReference),
@@ -468,11 +476,11 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     pub fn ReadTypedPrimitive_XmlQualifiedName0(
         &mut self,
         _cordl_type: *mut crate::System::Xml::XmlQualifiedName,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadTypedPrimitive", (_cordl_type))?;
         Ok(__cordl_ret)
     }
@@ -480,11 +488,11 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
         &mut self,
         qname: *mut crate::System::Xml::XmlQualifiedName,
         reportUnknown: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadTypedPrimitive", (qname, reportUnknown))?;
         Ok(__cordl_ret)
     }
@@ -526,7 +534,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn TargetReady(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -536,7 +544,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn ToXmlQualifiedName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -547,9 +555,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn UnknownAttribute(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         attr: *mut crate::System::Xml::XmlAttribute,
-        qnames: *mut crate::System::String,
+        qnames: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -560,9 +568,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn UnknownElement(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         elem: *mut crate::System::Xml::XmlElement,
-        qnames: *mut crate::System::String,
+        qnames: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -571,9 +579,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
             .invoke("UnknownElement", (o, elem, qnames))?;
         Ok(__cordl_ret)
     }
-    pub fn UnknownNode_Object0(
+    pub fn UnknownNode_Il2CppObject0(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -582,10 +590,10 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
             .invoke("UnknownNode", (o))?;
         Ok(__cordl_ret)
     }
-    pub fn UnknownNode_String1(
+    pub fn UnknownNode_Il2CppString1(
         &mut self,
-        o: *mut crate::System::Object,
-        qnames: *mut crate::System::String,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        qnames: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -596,8 +604,8 @@ impl crate::System::Xml::Serialization::XmlSerializationReader {
     }
     pub fn UnreferencedObject(
         &mut self,
-        id: *mut crate::System::String,
-        o: *mut crate::System::Object,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -651,11 +659,11 @@ for crate::System::Xml::Serialization::XmlSerializationReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReader_CollectionFixup {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub callback: *mut crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback,
-    pub collection: *mut crate::System::Object,
-    pub collectionItems: *mut crate::System::Object,
-    pub id: *mut crate::System::String,
+    pub collection: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub collectionItems: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub id: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -666,7 +674,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -681,9 +689,9 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionFixup")]
 impl crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
     pub fn New(
-        collection: *mut crate::System::Object,
+        collection: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -693,9 +701,9 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
     }
     pub fn _ctor(
         &mut self,
-        collection: *mut crate::System::Object,
+        collection: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Xml::Serialization::XmlSerializationCollectionFixupCallback,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -718,37 +726,37 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
     }
     pub fn get_Collection(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Collection", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CollectionItems(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_CollectionItems", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Id", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_CollectionItems(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -772,10 +780,10 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionFixup {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReader_CollectionItemFixup {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: *mut crate::System::Array,
     pub index: i32,
-    pub id: *mut crate::System::String,
+    pub id: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -786,7 +794,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+CollectionItemFixup")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -803,7 +811,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFix
     pub fn New(
         list: *mut crate::System::Array,
         index: i32,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -815,7 +823,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFix
         &mut self,
         list: *mut crate::System::Array,
         index: i32,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -836,11 +844,11 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFix
     }
     pub fn get_Id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Id", ())?;
         Ok(__cordl_ret)
     }
@@ -866,9 +874,11 @@ for crate::System::Xml::Serialization::XmlSerializationReader_CollectionItemFixu
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReader_Fixup {
-    __cordl_parent: crate::System::Object,
-    pub source: *mut crate::System::Object,
-    pub ids: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub source: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub ids: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub callback: *mut crate::System::Xml::Serialization::XmlSerializationFixupCallback,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
@@ -880,7 +890,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -895,7 +905,7 @@ for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+Fixup")]
 impl crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
     pub fn New(
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Xml::Serialization::XmlSerializationFixupCallback,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -907,7 +917,7 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
     }
     pub fn _ctor(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Xml::Serialization::XmlSerializationFixupCallback,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -933,23 +943,23 @@ impl crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
     pub fn get_Ids(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Ids", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Source(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Source", ())?;
         Ok(__cordl_ret)
     }
@@ -968,10 +978,10 @@ for crate::System::Xml::Serialization::XmlSerializationReader_Fixup {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializationReader_WriteCallbackInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: *mut crate::System::Type,
-    pub TypeName: *mut crate::System::String,
-    pub TypeNs: *mut crate::System::String,
+    pub TypeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub TypeNs: *mut quest_hook::libil2cpp::Il2CppString,
     pub Callback: *mut crate::System::Xml::Serialization::XmlSerializationReadCallback,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
@@ -983,7 +993,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Serialization+XmlSerializationReader+WriteCallbackInfo")]
 impl std::ops::Deref
 for crate::System::Xml::Serialization::XmlSerializationReader_WriteCallbackInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

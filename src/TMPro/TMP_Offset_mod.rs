@@ -23,9 +23,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Offset {
 }
 #[cfg(feature = "TMPro+TMP_Offset")]
 impl crate::TMPro::TMP_Offset {
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

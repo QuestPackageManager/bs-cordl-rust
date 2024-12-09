@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::SurrogateHash
 impl crate::System::Runtime::Serialization::SurrogateHashtable {
     pub fn KeyEquals(
         &mut self,
-        key: *mut crate::System::Object,
-        item: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

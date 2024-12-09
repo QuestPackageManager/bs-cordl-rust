@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UriParser_BuiltInUriParser {
 #[cfg(feature = "System+UriParser+BuiltInUriParser")]
 impl crate::GlobalNamespace::UriParser_BuiltInUriParser {
     pub fn New(
-        lwrCaseScheme: *mut crate::System::String,
+        lwrCaseScheme: *mut quest_hook::libil2cpp::Il2CppString,
         defaultPort: i32,
         syntaxFlags: crate::System::UriSyntaxFlags,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::UriParser_BuiltInUriParser {
     }
     pub fn _ctor(
         &mut self,
-        lwrCaseScheme: *mut crate::System::String,
+        lwrCaseScheme: *mut quest_hook::libil2cpp::Il2CppString,
         defaultPort: i32,
         syntaxFlags: crate::System::UriSyntaxFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

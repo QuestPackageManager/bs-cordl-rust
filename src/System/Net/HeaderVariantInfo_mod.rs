@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct HeaderVariantInfo {
-    pub m_name: *mut crate::System::String,
+    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_variant: crate::System::Net::CookieVariant,
 }
 #[cfg(feature = "System+Net+HeaderVariantInfo")]
@@ -25,7 +25,7 @@ for crate::System::Net::HeaderVariantInfo {
 impl crate::System::Net::HeaderVariantInfo {
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         variant: crate::System::Net::CookieVariant,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -37,8 +37,8 @@ impl crate::System::Net::HeaderVariantInfo {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Name",
             (),

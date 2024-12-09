@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NativeClassAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _QualifiedNativeName_k__BackingField: *mut crate::System::String,
-    pub _Declaration_k__BackingField: *mut crate::System::String,
+    pub _QualifiedNativeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Declaration_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+NativeClassAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::UnityEngine::NativeClassAttribute {
 }
 #[cfg(feature = "UnityEngine+NativeClassAttribute")]
 impl crate::UnityEngine::NativeClassAttribute {
-    pub fn New_String0(
-        qualifiedCppName: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        qualifiedCppName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,9 +35,9 @@ impl crate::UnityEngine::NativeClassAttribute {
             .invoke_void(".ctor", (qualifiedCppName))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        qualifiedCppName: *mut crate::System::String,
-        declaration: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        qualifiedCppName: *mut quest_hook::libil2cpp::Il2CppString,
+        declaration: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,9 +45,9 @@ impl crate::UnityEngine::NativeClassAttribute {
             .invoke_void(".ctor", (qualifiedCppName, declaration))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        qualifiedCppName: *mut crate::System::String,
+        qualifiedCppName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,10 +56,10 @@ impl crate::UnityEngine::NativeClassAttribute {
             .invoke(".ctor", (qualifiedCppName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        qualifiedCppName: *mut crate::System::String,
-        declaration: *mut crate::System::String,
+        qualifiedCppName: *mut quest_hook::libil2cpp::Il2CppString,
+        declaration: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::NativeClassAttribute {
     }
     pub fn set_Declaration(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +81,7 @@ impl crate::UnityEngine::NativeClassAttribute {
     }
     pub fn set_QualifiedNativeName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

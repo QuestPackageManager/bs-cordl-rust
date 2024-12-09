@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XStreamingElement {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub name: *mut crate::System::Xml::Linq::XName,
-    pub content: *mut crate::System::Object,
+    pub content: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Linq+XStreamingElement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XStreamingElement")]
 impl std::ops::Deref for crate::System::Xml::Linq::XStreamingElement {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

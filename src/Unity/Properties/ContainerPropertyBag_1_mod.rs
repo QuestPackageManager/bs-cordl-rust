@@ -7,7 +7,7 @@ pub struct ContainerPropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
         *mut crate::Unity::Properties::IProperty_1<TContainer>,
     >,
     pub m_PropertiesHash: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Unity::Properties::IProperty_1<TContainer>,
     >,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
@@ -67,7 +67,7 @@ impl<
     pub fn TryGetProperty(
         &mut self,
         container: quest_hook::libil2cpp::ByRefMut<TContainer>,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         property: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Unity::Properties::IProperty_1<TContainer>,
         >,

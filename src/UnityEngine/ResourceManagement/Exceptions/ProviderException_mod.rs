@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+ProviderException")]
 impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     pub fn New(
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -41,7 +41,7 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::ProviderException {
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

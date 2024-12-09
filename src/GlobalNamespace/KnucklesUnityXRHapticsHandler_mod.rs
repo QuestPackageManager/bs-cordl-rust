@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KnucklesUnityXRHapticsHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _coroutineRunner: *mut crate::UnityEngine::MonoBehaviour,
     pub _hapticsCoroutine: *mut crate::UnityEngine::Coroutine,
     pub _node: crate::UnityEngine::XR::XRNode,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "KnucklesUnityXRHapticsHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::KnucklesUnityXRHapticsHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

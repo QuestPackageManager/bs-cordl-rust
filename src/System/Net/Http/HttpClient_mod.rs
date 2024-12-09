@@ -66,13 +66,15 @@ impl crate::System::Net::Http::HttpClient {
         &mut self,
         requestUri: *mut crate::System::Uri,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetStringAsync", (requestUri))?;
         Ok(__cordl_ret)
     }

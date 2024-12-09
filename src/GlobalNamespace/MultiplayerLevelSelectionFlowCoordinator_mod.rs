@@ -11,8 +11,8 @@ pub struct MultiplayerLevelSelectionFlowCoordinator {
         *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
     >,
     pub didFinishedEvent: *mut crate::System::Action,
-    pub _actionButtonText: *mut crate::System::String,
-    pub _titleText: *mut crate::System::String,
+    pub _actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _titleText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _songPackMask: crate::GlobalNamespace::SongPackMask,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub _state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
@@ -124,8 +124,8 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
         state: *mut crate::GlobalNamespace::LevelSelectionFlowCoordinator_State,
         songPackMask: crate::GlobalNamespace::SongPackMask,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
-        actionText: *mut crate::System::String,
-        titleText: *mut crate::System::String,
+        actionText: *mut quest_hook::libil2cpp::Il2CppString,
+        titleText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -199,11 +199,11 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     }
     pub fn get_actionButtonText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_actionButtonText", ())?;
         Ok(__cordl_ret)
     }
@@ -240,11 +240,11 @@ impl crate::GlobalNamespace::MultiplayerLevelSelectionFlowCoordinator {
     }
     pub fn get_mainTitle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_mainTitle", ())?;
         Ok(__cordl_ret)
     }

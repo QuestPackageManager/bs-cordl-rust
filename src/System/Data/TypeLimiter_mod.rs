@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLimiter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_instanceScope: *mut crate::System::Data::TypeLimiter_Scope,
 }
 #[cfg(feature = "System+Data+TypeLimiter")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+TypeLimiter")]
 impl std::ops::Deref for crate::System::Data::TypeLimiter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::TypeLimiter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeLimiter_Scope {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_allowedTypes: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::Type,
     >,
@@ -76,7 +76,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+TypeLimiter+Scope")]
 impl std::ops::Deref for crate::System::Data::TypeLimiter_Scope {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

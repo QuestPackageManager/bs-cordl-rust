@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+TimerThread")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread")]
 impl std::ops::Deref for crate::System::Net::TimerThread {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,7 +92,7 @@ impl crate::System::Net::TimerThread_Callback {
         &mut self,
         timer: *mut crate::System::Net::TimerThread_Timer,
         timeNoticed: i32,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,7 +102,7 @@ impl crate::System::Net::TimerThread_Callback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -113,7 +113,7 @@ impl crate::System::Net::TimerThread_Callback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -231,7 +231,7 @@ impl crate::System::Net::TimerThread_InfiniteTimerQueue {
     pub fn CreateTimer(
         &mut self,
         callback: *mut crate::System::Net::TimerThread_Callback,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::TimerThread_Timer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -272,7 +272,7 @@ for crate::System::Net::TimerThread_InfiniteTimerQueue {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_Queue {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_DurationMilliseconds: i32,
 }
 #[cfg(feature = "System+Net+TimerThread+Queue")]
@@ -282,7 +282,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+Queue")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Queue {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -298,7 +298,7 @@ impl crate::System::Net::TimerThread_Queue {
     pub fn CreateTimer(
         &mut self,
         callback: *mut crate::System::Net::TimerThread_Callback,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::TimerThread_Timer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -346,7 +346,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::TimerThread_Queue
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimerThread_Timer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StartTimeMilliseconds: i32,
     pub m_DurationMilliseconds: i32,
 }
@@ -357,7 +357,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+TimerThread+Timer")]
 impl std::ops::Deref for crate::System::Net::TimerThread_Timer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -443,8 +443,8 @@ pub struct TimerThread_TimerNode {
     __cordl_parent: crate::System::Net::TimerThread_Timer,
     pub m_TimerState: crate::System::Net::TimerNode_TimerThread_TimerState,
     pub m_Callback: *mut crate::System::Net::TimerThread_Callback,
-    pub m_Context: *mut crate::System::Object,
-    pub m_QueueLock: *mut crate::System::Object,
+    pub m_Context: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_QueueLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub next: *mut crate::System::Net::TimerThread_TimerNode,
     pub prev: *mut crate::System::Net::TimerThread_TimerNode,
 }
@@ -491,11 +491,11 @@ impl crate::System::Net::TimerThread_TimerNode {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_TimerThread_Callback_Object_i32_Object0(
+    pub fn New_TimerThread_Callback_Il2CppObject_i32_Il2CppObject0(
         callback: *mut crate::System::Net::TimerThread_Callback,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
         durationMilliseconds: i32,
-        queueLock: *mut crate::System::Object,
+        queueLock: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -513,12 +513,12 @@ impl crate::System::Net::TimerThread_TimerNode {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_TimerThread_Callback_Object_i32_Object0(
+    pub fn _ctor_TimerThread_Callback_Il2CppObject_i32_Il2CppObject0(
         &mut self,
         callback: *mut crate::System::Net::TimerThread_Callback,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
         durationMilliseconds: i32,
-        queueLock: *mut crate::System::Object,
+        queueLock: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -617,7 +617,7 @@ impl crate::System::Net::TimerThread_TimerQueue {
     pub fn CreateTimer(
         &mut self,
         callback: *mut crate::System::Net::TimerThread_Callback,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::TimerThread_Timer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

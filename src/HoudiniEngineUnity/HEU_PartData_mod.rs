@@ -4,7 +4,7 @@
 pub struct HEU_PartData {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _partID: i32,
-    pub _partName: *mut crate::System::String,
+    pub _partName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _objectNodeID: i32,
     pub _geoID: i32,
     pub _partType: crate::HoudiniEngineUnity::HAPI_PartType,
@@ -26,7 +26,7 @@ pub struct HEU_PartData {
     pub _haveInstancesBeenGenerated: bool,
     pub _meshVertexCount: i32,
     pub _generatedOutput: *mut crate::HoudiniEngineUnity::HEU_GeneratedOutput,
-    pub _volumeLayerName: *mut crate::System::String,
+    pub _volumeLayerName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PartData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -77,7 +77,9 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         bDeleteExistingComponents: bool,
         bDontDeletePersistantResources: bool,
         bWriteMeshesToAssetDatabase: bool,
-        bakedAssetPath: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        bakedAssetPath: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         sourceToTargetMeshMap: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::Mesh,
             *mut crate::UnityEngine::Mesh,
@@ -87,7 +89,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
             *mut crate::UnityEngine::Material,
         >,
         assetDBObject: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Object>,
-        assetObjectFileName: *mut crate::System::String,
+        assetObjectFileName: *mut quest_hook::libil2cpp::Il2CppString,
         bReconnectPrefabInstances: bool,
         bKeepPreviousTransformValues: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -117,7 +119,9 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         &mut self,
         parentTransform: *mut crate::UnityEngine::Transform,
         bWriteMeshesToAssetDatabase: bool,
-        bakedAssetPath: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        bakedAssetPath: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         sourceToTargetMeshMap: *mut crate::System::Collections::Generic::Dictionary_2<
             *mut crate::UnityEngine::Mesh,
             *mut crate::UnityEngine::Mesh,
@@ -127,7 +131,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
             *mut crate::UnityEngine::Material,
         >,
         assetDBObject: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Object>,
-        assetObjectFileName: *mut crate::System::String,
+        assetObjectFileName: *mut quest_hook::libil2cpp::Il2CppString,
         bReconnectPrefabInstances: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -240,11 +244,11 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
             crate::HoudiniEngineUnity::HAPI_Transform,
         >,
         instancedObjectNodeID: i32,
-        instancedObjectPath: *mut crate::System::String,
+        instancedObjectPath: *mut quest_hook::libil2cpp::Il2CppString,
         rotationOffset: crate::UnityEngine::Vector3,
         scaleOffset: crate::UnityEngine::Vector3,
         instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         collisionSrcGO: *mut crate::UnityEngine::GameObject,
         copyParentFlags: bool,
@@ -275,7 +279,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         &mut self,
         instancedObject: *mut crate::UnityEngine::GameObject,
         instancedObjectNodeID: i32,
-        instancedObjectPath: *mut crate::System::String,
+        instancedObjectPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
     > {
@@ -325,7 +329,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         sourceObject: *mut crate::HoudiniEngineUnity::HEU_ObjectNode,
         instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -343,7 +347,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         objectNodeID: i32,
         instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -360,7 +364,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         instancePrefixes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -373,7 +377,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     pub fn GenerateInstancesFromUnityAssetPathAttribute(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        unityInstanceAttr: *mut crate::System::String,
+        unityInstanceAttr: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -494,7 +498,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     }
     pub fn GetObjectInstanceInfoWithObjectPath(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_ObjectInstanceInfo,
     > {
@@ -555,11 +559,11 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     }
     pub fn GetVolumeLayerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetVolumeLayerName", ())?;
         Ok(__cordl_ret)
     }
@@ -745,7 +749,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     }
     pub fn SetGameObjectName(
         &mut self,
-        partName: *mut crate::System::String,
+        partName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -781,8 +785,8 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     pub fn SetTerrainData(
         &mut self,
         terrainData: *mut crate::UnityEngine::TerrainData,
-        exportPathRelative: *mut crate::System::String,
-        exportPathUser: *mut crate::System::String,
+        exportPathRelative: *mut quest_hook::libil2cpp::Il2CppString,
+        exportPathUser: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -818,7 +822,7 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     }
     pub fn SetVolumeLayerName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -855,11 +859,11 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -943,11 +947,11 @@ impl crate::HoudiniEngineUnity::HEU_PartData {
     }
     pub fn get_PartName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PartName", ())?;
         Ok(__cordl_ret)
     }

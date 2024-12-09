@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GUIContent {
-    __cordl_parent: crate::System::Object,
-    pub m_Text: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Image: *mut crate::UnityEngine::Texture,
-    pub m_Tooltip: *mut crate::System::String,
+    pub m_Tooltip: *mut quest_hook::libil2cpp::Il2CppString,
     pub OnTextChanged: *mut crate::System::Action,
 }
 #[cfg(feature = "UnityEngine+GUIContent")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+GUIContent")]
 impl std::ops::Deref for crate::UnityEngine::GUIContent {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,8 +35,8 @@ impl crate::UnityEngine::GUIContent {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        text: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -44,10 +44,10 @@ impl crate::UnityEngine::GUIContent {
             .invoke_void(".ctor", (text))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Texture_String2(
-        text: *mut crate::System::String,
+    pub fn New_Il2CppString_Texture_Il2CppString2(
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         image: *mut crate::UnityEngine::Texture,
-        tooltip: *mut crate::System::String,
+        tooltip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -57,11 +57,11 @@ impl crate::UnityEngine::GUIContent {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -75,9 +75,9 @@ impl crate::UnityEngine::GUIContent {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,11 +86,11 @@ impl crate::UnityEngine::GUIContent {
             .invoke(".ctor", (text))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Texture_String2(
+    pub fn _ctor_Il2CppString_Texture_Il2CppString2(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         image: *mut crate::UnityEngine::Texture,
-        tooltip: *mut crate::System::String,
+        tooltip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,21 +101,21 @@ impl crate::UnityEngine::GUIContent {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_tooltip(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_tooltip", ())?;
         Ok(__cordl_ret)
     }
@@ -132,7 +132,7 @@ impl crate::UnityEngine::GUIContent {
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,7 @@ impl crate::UnityEngine::GUIContent {
     }
     pub fn set_tooltip(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

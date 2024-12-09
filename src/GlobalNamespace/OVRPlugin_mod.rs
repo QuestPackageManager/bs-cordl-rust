@@ -51,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -59,7 +59,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1344,8 +1344,8 @@ for crate::GlobalNamespace::OVRPlugin_Colorf {
 impl crate::GlobalNamespace::OVRPlugin_Colorf {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -2332,7 +2332,7 @@ impl crate::GlobalNamespace::OVRPlugin_Frustumf2 {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_GUID {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub a: i32,
     pub b: i16,
     pub c: i16,
@@ -2352,7 +2352,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+GUID")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_GUID {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2948,7 +2948,7 @@ impl crate::GlobalNamespace::OVRPlugin_KeyboardState {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_Ktx {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+Ktx")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2957,7 +2957,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+Ktx")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_Ktx {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3040,8 +3040,8 @@ for crate::GlobalNamespace::OVRPlugin_LayerDesc {
 impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -3234,7 +3234,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         message: crate::System::IntPtr,
         _cordl_size: i32,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -3268,7 +3268,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -3279,7 +3279,7 @@ impl crate::GlobalNamespace::OVRPlugin_LogCallback2DelegateType {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -3317,7 +3317,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_Media {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+Media")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3326,7 +3326,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+Media")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_Media {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3376,7 +3376,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_Med
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_Mesh {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: crate::GlobalNamespace::OVRPlugin_MeshType,
     pub NumVertices: u32,
     pub NumIndices: u32,
@@ -3404,7 +3404,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+Mesh")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_Mesh {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3499,7 +3499,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_0_1_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_0_1_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3508,7 +3508,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_0_1_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3534,7 +3534,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_0_1_1 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_0_1_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3543,7 +3543,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_0_1_1")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_1 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3569,7 +3569,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_0_1_2 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_0_1_2")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3578,7 +3578,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_0_1_2")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_2 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3604,7 +3604,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_0_1_3 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_0_1_3")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3613,7 +3613,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_0_1_3")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_0_1_3 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3639,7 +3639,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_0_5_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_0_5_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3648,7 +3648,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_0_5_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_0_5_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3674,7 +3674,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_0_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_0_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3683,7 +3683,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_0_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3709,7 +3709,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_10_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_10_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3718,7 +3718,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_10_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3745,7 +3745,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_11_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_11_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3754,7 +3754,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_11_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3781,7 +3781,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_12_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_12_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3790,7 +3790,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_12_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3817,7 +3817,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_15_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_15_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3826,7 +3826,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_15_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3855,7 +3855,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_16_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_16_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3864,7 +3864,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_16_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3891,7 +3891,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_16_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_17_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_17_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3900,7 +3900,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_17_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_17_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3927,7 +3927,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_17_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_18_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_18_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3936,7 +3936,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_18_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3963,7 +3963,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_18_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_19_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_19_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -3972,7 +3972,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_19_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_19_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3999,7 +3999,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_19_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_1_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_1_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4008,7 +4008,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_1_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_1_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4034,7 +4034,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_21_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_21_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4043,7 +4043,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_21_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4070,7 +4070,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_21_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_28_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_28_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4079,7 +4079,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_28_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4106,7 +4106,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_29_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_29_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4115,7 +4115,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_29_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4142,7 +4142,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_29_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_2_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_2_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4151,7 +4151,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_2_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_2_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4177,7 +4177,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_30_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_30_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4186,7 +4186,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_30_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4213,7 +4213,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_30_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_31_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_31_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4222,7 +4222,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_31_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4249,7 +4249,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_31_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_32_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_32_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4258,7 +4258,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_32_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4285,7 +4285,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_32_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_34_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_34_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4294,7 +4294,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_34_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4321,7 +4321,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_34_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_35_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_35_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4330,7 +4330,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_35_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_35_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4357,7 +4357,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_35_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_36_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_36_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4366,7 +4366,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_36_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_36_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4393,7 +4393,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_36_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_37_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_37_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4402,7 +4402,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_37_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_37_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4429,7 +4429,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_37_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_38_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_38_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4438,7 +4438,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_38_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4465,7 +4465,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_38_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_39_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_39_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4474,7 +4474,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_39_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_39_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4501,7 +4501,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_39_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_3_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_3_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4510,7 +4510,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_3_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_3_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4536,7 +4536,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_40_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_40_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4545,7 +4545,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_40_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_40_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4572,7 +4572,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_40_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_41_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_41_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4581,7 +4581,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_41_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_41_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4608,7 +4608,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_41_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_42_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_42_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4617,7 +4617,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_42_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4644,7 +4644,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_42_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_43_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_43_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4653,7 +4653,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_43_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_43_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4680,7 +4680,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_43_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_44_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_44_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4689,7 +4689,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_44_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4716,7 +4716,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_44_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_45_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_45_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4725,7 +4725,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_45_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4752,7 +4752,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_45_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_46_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_46_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4761,7 +4761,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_46_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4788,7 +4788,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_46_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_47_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_47_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4797,7 +4797,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_47_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_47_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4824,7 +4824,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_47_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_48_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_48_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4833,7 +4833,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_48_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4860,7 +4860,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_48_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_49_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_49_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4869,7 +4869,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_49_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4898,7 +4898,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_49_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_50_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_50_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4907,7 +4907,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_50_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_50_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4934,7 +4934,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_50_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_51_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_51_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4943,7 +4943,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_51_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_51_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -4970,7 +4970,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_51_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_52_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_52_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -4979,7 +4979,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_52_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_52_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5006,7 +5006,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_52_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_53_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_53_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5015,7 +5015,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_53_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_53_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5042,7 +5042,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_53_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_54_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_54_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5051,7 +5051,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_54_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5078,7 +5078,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_54_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_55_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_55_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5087,7 +5087,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_55_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5114,7 +5114,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_55_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_55_1 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_55_1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5123,7 +5123,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_55_1")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5150,7 +5150,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_55_1 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_56_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_56_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5159,7 +5159,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_56_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_56_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5186,7 +5186,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_56_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_57_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_57_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5195,7 +5195,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_57_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5222,7 +5222,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_57_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_58_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_58_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5231,7 +5231,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_58_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_58_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5258,7 +5258,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_58_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_59_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_59_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5267,7 +5267,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_59_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_59_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5294,7 +5294,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_59_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_5_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_5_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5303,7 +5303,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_5_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_5_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5329,7 +5329,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_60_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_60_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5338,7 +5338,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_60_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_60_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5365,7 +5365,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_60_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_61_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_61_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5374,7 +5374,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_61_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_61_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5401,7 +5401,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_61_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_62_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_62_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5410,7 +5410,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_62_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_62_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5437,7 +5437,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_62_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_63_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_63_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5446,7 +5446,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_63_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5473,7 +5473,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_63_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_64_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_64_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5482,7 +5482,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_64_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5509,7 +5509,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_64_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_65_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_65_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5518,7 +5518,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_65_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5545,7 +5545,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_65_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_66_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_66_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5554,7 +5554,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_66_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5581,7 +5581,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_66_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_67_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_67_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5590,7 +5590,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_67_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_67_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5617,7 +5617,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_67_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_68_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_68_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5626,7 +5626,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_68_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5656,7 +5656,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_68_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_69_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_69_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5665,7 +5665,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_69_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5692,7 +5692,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_69_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_6_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_6_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5701,7 +5701,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_6_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_6_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5727,7 +5727,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_70_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_70_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5736,7 +5736,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_70_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5763,7 +5763,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_70_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_71_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_71_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5772,7 +5772,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_71_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5799,7 +5799,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_71_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_72_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_72_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5808,7 +5808,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_72_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5835,7 +5835,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_73_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_73_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5844,7 +5844,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_73_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_73_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5871,7 +5871,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_73_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_74_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_74_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5880,7 +5880,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_74_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5907,7 +5907,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_74_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_75_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_75_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5916,7 +5916,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_75_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_75_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5943,7 +5943,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_75_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_76_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_76_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5952,7 +5952,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_76_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -5979,7 +5979,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_76_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_78_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_78_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -5988,7 +5988,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_78_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6015,7 +6015,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_78_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_79_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_79_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6024,7 +6024,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_79_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6051,7 +6051,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_7_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_7_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6060,7 +6060,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_7_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_7_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6086,7 +6086,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_81_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_81_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6095,7 +6095,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_81_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_81_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6122,7 +6122,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_81_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_82_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_82_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6131,7 +6131,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_82_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6158,7 +6158,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_82_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_83_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_83_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6167,7 +6167,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_83_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6194,7 +6194,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_83_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_84_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_84_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6203,7 +6203,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_84_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6230,7 +6230,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_85_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_85_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6239,7 +6239,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_85_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6266,7 +6266,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_85_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_86_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_86_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6275,7 +6275,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_86_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6302,7 +6302,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_86_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_87_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_87_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6311,7 +6311,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_87_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6338,7 +6338,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_88_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_88_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6347,7 +6347,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_88_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6374,7 +6374,7 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_8_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_8_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6383,7 +6383,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_8_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6409,7 +6409,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_OVRP_1_9_0 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+OVRP_1_9_0")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6418,7 +6418,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+OVRP_1_9_0")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6810,8 +6810,8 @@ for crate::GlobalNamespace::OVRPlugin_Posef {
 impl crate::GlobalNamespace::OVRPlugin_Posef {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -6839,7 +6839,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_Qpl {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+Qpl")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -6848,7 +6848,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+Qpl")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_Qpl {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -6905,8 +6905,8 @@ for crate::GlobalNamespace::OVRPlugin_Quatf {
 impl crate::GlobalNamespace::OVRPlugin_Quatf {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -6993,7 +6993,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct OVRPlugin_RenderModelProperties {
-    pub ModelName: *mut crate::System::String,
+    pub ModelName: *mut quest_hook::libil2cpp::Il2CppString,
     pub ModelKey: u64,
     pub VendorId: u32,
     pub ModelVersion: u32,
@@ -7133,7 +7133,7 @@ impl crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal {}
 #[derive(Debug, Clone)]
 pub struct OVRPlugin_SceneCaptureRequestInternal {
     pub requestByteCount: i32,
-    pub request: *mut crate::System::String,
+    pub request: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -7230,6 +7230,17 @@ for crate::GlobalNamespace::OVRPlugin_Sizei {
 }
 #[cfg(feature = "OVRPlugin+Sizei")]
 impl crate::GlobalNamespace::OVRPlugin_Sizei {
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_OVRPlugin_Sizei0(
         &mut self,
         other: crate::GlobalNamespace::OVRPlugin_Sizei,
@@ -7238,17 +7249,6 @@ impl crate::GlobalNamespace::OVRPlugin_Sizei {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -7861,8 +7861,8 @@ for crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
 impl crate::GlobalNamespace::OVRPlugin_TextureRectMatrixf {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -8003,7 +8003,7 @@ impl crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPlugin_UnityOpenXR {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPlugin+UnityOpenXR")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -8012,7 +8012,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPlugin+UnityOpenXR")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -8131,8 +8131,8 @@ for crate::GlobalNamespace::OVRPlugin_Vector3f {
 impl crate::GlobalNamespace::OVRPlugin_Vector3f {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -8169,8 +8169,8 @@ for crate::GlobalNamespace::OVRPlugin_Vector4f {
 impl crate::GlobalNamespace::OVRPlugin_Vector4f {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -8207,8 +8207,8 @@ for crate::GlobalNamespace::OVRPlugin_Vector4s {
 impl crate::GlobalNamespace::OVRPlugin_Vector4s {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

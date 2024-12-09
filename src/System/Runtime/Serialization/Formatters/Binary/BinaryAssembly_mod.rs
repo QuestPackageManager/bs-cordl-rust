@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryAssembly {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assemId: i32,
-    pub assemblyString: *mut crate::System::String,
+    pub assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryAssembly")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryAssembly")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssembly {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssembly {
     pub fn Set(
         &mut self,
         assemId: i32,
-        assemblyString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

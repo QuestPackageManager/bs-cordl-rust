@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeInformation {
-    __cordl_parent: crate::System::Object,
-    pub fullTypeName: *mut crate::System::String,
-    pub assemblyString: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
     pub hasTypeForwardedFrom: bool,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+TypeInformation")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+TypeInformation")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,8 +31,8 @@ for crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation {
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+TypeInformation")]
 impl crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation {
     pub fn New(
-        fullTypeName: *mut crate::System::String,
-        assemblyString: *mut crate::System::String,
+        fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
         hasTypeForwardedFrom: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -43,8 +43,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation 
     }
     pub fn _ctor(
         &mut self,
-        fullTypeName: *mut crate::System::String,
-        assemblyString: *mut crate::System::String,
+        fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
         hasTypeForwardedFrom: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,21 +56,21 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::TypeInformation 
     }
     pub fn get_AssemblyString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssemblyString", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_FullTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FullTypeName", ())?;
         Ok(__cordl_ret)
     }

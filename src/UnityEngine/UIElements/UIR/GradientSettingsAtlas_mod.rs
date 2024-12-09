@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GradientSettingsAtlas {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Length: i32,
     pub m_ElemWidth: i32,
     pub m_Allocator: *mut crate::UnityEngine::UIElements::UIR::BestFitAllocator,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+GradientSettingsAtlas")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::GradientSettingsAtlas {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

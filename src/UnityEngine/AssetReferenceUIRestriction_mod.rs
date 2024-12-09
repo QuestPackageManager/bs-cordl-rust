@@ -31,6 +31,16 @@ impl crate::UnityEngine::AssetReferenceUIRestriction {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn ValidateAsset_Il2CppString1(
+        &mut self,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
+        Ok(__cordl_ret)
+    }
     pub fn ValidateAsset_Object0(
         &mut self,
         obj: *mut crate::UnityEngine::Object,
@@ -39,16 +49,6 @@ impl crate::UnityEngine::AssetReferenceUIRestriction {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateAsset_String1(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(

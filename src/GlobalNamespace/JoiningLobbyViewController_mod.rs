@@ -5,7 +5,7 @@ pub struct JoiningLobbyViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _cancelJoiningButton: *mut crate::UnityEngine::UI::Button,
     pub _loadingControl: *mut crate::GlobalNamespace::LoadingControl,
-    pub _text: *mut crate::System::String,
+    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
     pub didCancelEvent: *mut crate::System::Action,
 }
 #[cfg(feature = "JoiningLobbyViewController")]
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::JoiningLobbyViewController {
     }
     pub fn Init(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::NamespaceListV1Compat {
 impl crate::System::Xml::Schema::NamespaceListV1Compat {
     pub fn Allows(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -35,8 +35,8 @@ impl crate::System::Xml::Schema::NamespaceListV1Compat {
         Ok(__cordl_ret)
     }
     pub fn New(
-        namespaces: *mut crate::System::String,
-        targetNamespace: *mut crate::System::String,
+        namespaces: *mut quest_hook::libil2cpp::Il2CppString,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,8 +46,8 @@ impl crate::System::Xml::Schema::NamespaceListV1Compat {
     }
     pub fn _ctor(
         &mut self,
-        namespaces: *mut crate::System::String,
-        targetNamespace: *mut crate::System::String,
+        namespaces: *mut quest_hook::libil2cpp::Il2CppString,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

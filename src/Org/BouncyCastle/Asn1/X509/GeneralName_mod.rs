@@ -64,9 +64,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
             .invoke_void(".ctor", (tag, name))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String3(
+    pub fn New_i32_Il2CppString3(
         tag: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,11 +86,11 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -129,10 +129,10 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
             .invoke(".ctor", (tag, name))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String3(
+    pub fn _ctor_i32_Il2CppString3(
         &mut self,
         tag: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,7 +175,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     }
     pub fn parseIPv4(
         &mut self,
-        ip: *mut crate::System::String,
+        ip: *mut quest_hook::libil2cpp::Il2CppString,
         addr: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -188,7 +188,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     }
     pub fn parseIPv4Mask(
         &mut self,
-        mask: *mut crate::System::String,
+        mask: *mut quest_hook::libil2cpp::Il2CppString,
         addr: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -201,7 +201,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     }
     pub fn parseIPv6(
         &mut self,
-        ip: *mut crate::System::String,
+        ip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +212,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     }
     pub fn parseMask(
         &mut self,
-        mask: *mut crate::System::String,
+        mask: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -223,7 +223,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::GeneralName {
     }
     pub fn toGeneralNameEncoding(
         &mut self,
-        ip: *mut crate::System::String,
+        ip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

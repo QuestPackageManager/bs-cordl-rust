@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpContent {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub buffer: *mut crate::System::Net::Http::HttpContent_FixedMemoryStream,
     pub disposed: bool,
     pub headers: *mut crate::System::Net::Http::Headers::HttpContentHeaders,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+HttpContent")]
 impl std::ops::Deref for crate::System::Net::Http::HttpContent {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -108,13 +108,15 @@ impl crate::System::Net::Http::HttpContent {
     pub fn ReadAsStringAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ReadAsStringAsync", ())?;
         Ok(__cordl_ret)
     }

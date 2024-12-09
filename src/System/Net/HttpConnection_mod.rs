@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpConnection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sock: *mut crate::System::Net::Sockets::Socket,
     pub stream: *mut crate::System::IO::Stream,
     pub epl: *mut crate::System::Net::EndPointListener,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpConnection")]
 impl std::ops::Deref for crate::System::Net::HttpConnection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -141,7 +141,7 @@ impl crate::System::Net::HttpConnection {
     }
     pub fn OnTimeout(
         &mut self,
-        unused: *mut crate::System::Object,
+        unused: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,11 +166,11 @@ impl crate::System::Net::HttpConnection {
         offset: i32,
         len: i32,
         used: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadLine", (buffer, offset, len, used))?;
         Ok(__cordl_ret)
     }
@@ -194,9 +194,9 @@ impl crate::System::Net::HttpConnection {
             .invoke("SendError", ())?;
         Ok(__cordl_ret)
     }
-    pub fn SendError_String_i32_0(
+    pub fn SendError_Il2CppString_i32_0(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         status: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -218,7 +218,7 @@ impl crate::System::Net::HttpConnection {
     }
     pub fn __ctor_b__24_0(
         &mut self,
-        t: *mut crate::System::Object,
+        t: *mut quest_hook::libil2cpp::Il2CppObject,
         c: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         ch: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
         e: crate::System::Net::Security::SslPolicyErrors,

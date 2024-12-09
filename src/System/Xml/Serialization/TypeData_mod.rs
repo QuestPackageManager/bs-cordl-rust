@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TypeData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: *mut crate::System::Type,
-    pub elementName: *mut crate::System::String,
+    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
     pub sType: crate::System::Xml::Serialization::SchemaTypes,
     pub listItemType: *mut crate::System::Type,
-    pub typeName: *mut crate::System::String,
-    pub fullTypeName: *mut crate::System::String,
+    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub fullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
     pub listItemTypeData: *mut crate::System::Xml::Serialization::TypeData,
     pub mappedType: *mut crate::System::Xml::Serialization::TypeData,
     pub facet: *mut crate::System::Xml::Schema::XmlSchemaPatternFacet,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+TypeData")]
 impl std::ops::Deref for crate::System::Xml::Serialization::TypeData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::TypeData {
 impl crate::System::Xml::Serialization::TypeData {
     pub fn ConvertForAssignment(
         &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +59,7 @@ impl crate::System::Xml::Serialization::TypeData {
     }
     pub fn New_TypeData_XmlSchemaPatternFacet1(
         _cordl_type: *mut crate::System::Type,
-        elementName: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
         isPrimitive: bool,
         mappedType: *mut crate::System::Xml::Serialization::TypeData,
         facet: *mut crate::System::Xml::Schema::XmlSchemaPatternFacet,
@@ -73,9 +73,9 @@ impl crate::System::Xml::Serialization::TypeData {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_Type_String__cordl_bool0(
+    pub fn New_Type_Il2CppString__cordl_bool0(
         _cordl_type: *mut crate::System::Type,
-        elementName: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
         isPrimitive: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -87,7 +87,7 @@ impl crate::System::Xml::Serialization::TypeData {
     pub fn _ctor_TypeData_XmlSchemaPatternFacet1(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        elementName: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
         isPrimitive: bool,
         mappedType: *mut crate::System::Xml::Serialization::TypeData,
         facet: *mut crate::System::Xml::Schema::XmlSchemaPatternFacet,
@@ -102,10 +102,10 @@ impl crate::System::Xml::Serialization::TypeData {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Type_String__cordl_bool0(
+    pub fn _ctor_Type_Il2CppString__cordl_bool0(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        elementName: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
         isPrimitive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -117,11 +117,11 @@ impl crate::System::Xml::Serialization::TypeData {
     }
     pub fn get_FullTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FullTypeName", ())?;
         Ok(__cordl_ret)
     }
@@ -211,21 +211,21 @@ impl crate::System::Xml::Serialization::TypeData {
     }
     pub fn get_TypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TypeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_XmlType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlType", ())?;
         Ok(__cordl_ret)
     }

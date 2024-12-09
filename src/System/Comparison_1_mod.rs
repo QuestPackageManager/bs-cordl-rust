@@ -38,7 +38,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Comparison_1<T> {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -53,7 +53,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Comparison_1<T> {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

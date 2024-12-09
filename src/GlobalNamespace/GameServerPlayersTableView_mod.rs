@@ -17,7 +17,9 @@ pub struct GameServerPlayersTableView {
     pub selectSuggestedGameplayModifiersEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::GameplayModifiers,
     >,
-    pub kickPlayerEvent: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub kickPlayerEvent: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _initialized: bool,
     pub _hasKickPermissions: bool,
     pub _allowSelection: bool,
@@ -199,7 +201,7 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     }
     pub fn add_kickPlayerEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -234,17 +236,17 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
     }
     pub fn get_currentCellId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_currentCellId", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_kickPlayerEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

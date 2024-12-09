@@ -6,10 +6,10 @@ pub struct SceneStartSyncController {
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _gameplayRpcManager: *mut crate::GlobalNamespace::IGameplayRpcManager,
     pub syncStartDidSuccessEvent: *mut crate::System::Action_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub syncStartDidReceiveTooLateEvent: *mut crate::System::Action_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub syncStartDidFailEvent: *mut crate::System::Action,
     pub _sceneStartHandler: *mut crate::GlobalNamespace::SceneStartHandler,
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::SceneStartSyncController {
     pub const kLoadSelfTimeout: f32 = 20f32;
     pub fn HandleSceneSetupDidFinish(
         &mut self,
-        sessionGameId: *mut crate::System::String,
+        sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::SceneStartSyncController {
     }
     pub fn HandleSceneSetupDidReceiveTooLate(
         &mut self,
-        sessionGameId: *mut crate::System::String,
+        sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +132,7 @@ impl crate::GlobalNamespace::SceneStartSyncController {
     }
     pub fn add_syncStartDidReceiveTooLateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::SceneStartSyncController {
     }
     pub fn add_syncStartDidSuccessEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -165,7 +165,7 @@ impl crate::GlobalNamespace::SceneStartSyncController {
     }
     pub fn remove_syncStartDidReceiveTooLateEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::SceneStartSyncController {
     }
     pub fn remove_syncStartDidSuccessEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

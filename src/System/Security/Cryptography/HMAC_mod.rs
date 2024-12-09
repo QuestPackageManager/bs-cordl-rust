@@ -4,7 +4,7 @@
 pub struct HMAC {
     __cordl_parent: crate::System::Security::Cryptography::KeyedHashAlgorithm,
     pub blockSizeValue: i32,
-    pub m_hashName: *mut crate::System::String,
+    pub m_hashName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_hash1: *mut crate::System::Security::Cryptography::HashAlgorithm,
     pub m_hash2: *mut crate::System::Security::Cryptography::HashAlgorithm,
     pub m_inner: *mut quest_hook::libil2cpp::Il2CppArray<u8>,

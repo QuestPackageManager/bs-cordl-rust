@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XRManagementAnalytics {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics")]
 impl std::ops::Deref for crate::UnityEngine::XR::Management::XRManagementAnalytics {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,11 +46,11 @@ for crate::UnityEngine::XR::Management::XRManagementAnalytics {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct XRManagementAnalytics_BuildEvent {
-    pub buildGuid: *mut crate::System::String,
-    pub buildTarget: *mut crate::System::String,
-    pub buildTargetGroup: *mut crate::System::String,
+    pub buildGuid: *mut quest_hook::libil2cpp::Il2CppString,
+    pub buildTarget: *mut quest_hook::libil2cpp::Il2CppString,
+    pub buildTargetGroup: *mut quest_hook::libil2cpp::Il2CppString,
     pub assigned_loaders: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+XR+Management+XRManagementAnalytics+BuildEvent")]

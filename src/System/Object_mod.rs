@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::System::Object {
 impl crate::System::Object {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -35,9 +35,9 @@ impl crate::System::Object {
     }
     pub fn FieldGetter(
         &mut self,
-        typeName: *mut crate::System::String,
-        fieldName: *mut crate::System::String,
-        val: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
+        fieldName: *mut quest_hook::libil2cpp::Il2CppString,
+        val: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,9 +48,9 @@ impl crate::System::Object {
     }
     pub fn FieldSetter(
         &mut self,
-        typeName: *mut crate::System::String,
-        fieldName: *mut crate::System::String,
-        val: *mut crate::System::Object,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
+        fieldName: *mut quest_hook::libil2cpp::Il2CppString,
+        val: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -88,11 +88,11 @@ impl crate::System::Object {
     }
     pub fn MemberwiseClone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("MemberwiseClone", ())?;
         Ok(__cordl_ret)
     }
@@ -105,11 +105,11 @@ impl crate::System::Object {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }

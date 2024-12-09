@@ -4,7 +4,7 @@
 pub struct PlayersMissingEntitlementsNetSerializable {
     __cordl_parent: crate::GlobalNamespace::PoolableSerializable,
     pub _playersWithoutEntitlements: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "PlayersMissingEntitlementsNetSerializable")]
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     pub fn Init(
         &mut self,
         playersWithoutEntitlements: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable,
@@ -87,13 +87,15 @@ impl crate::GlobalNamespace::PlayersMissingEntitlementsNetSerializable {
     pub fn get_playersWithoutEntitlements(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_playersWithoutEntitlements", ())?;
         Ok(__cordl_ret)
     }

@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::LevelCollectionViewController {
         beatmapLevels: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::BeatmapLevel,
         >,
-        headerText: *mut crate::System::String,
+        headerText: *mut quest_hook::libil2cpp::Il2CppString,
         headerSprite: *mut crate::UnityEngine::Sprite,
         sortLevels: bool,
         sortBeatmapLevels: bool,

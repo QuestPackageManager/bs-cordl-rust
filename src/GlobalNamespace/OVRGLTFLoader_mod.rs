@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGLTFLoader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_jsonData: *mut crate::OVRSimpleJSON::JSONNode,
     pub m_glbStream: *mut crate::System::IO::Stream,
     pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
@@ -28,7 +28,7 @@ pub struct OVRGLTFLoader {
     pub m_TextureQuality: crate::GlobalNamespace::OVRTextureQualityFiltering,
     pub m_TextureMipmapBias: f32,
     pub textureUriHandler: *mut crate::System::Func_3<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::Material,
         *mut crate::UnityEngine::Texture2D,
     >,
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRGLTFLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFLoader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
     }
     pub fn GetInputNodeType(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRGLTFInputNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,8 +111,8 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        fileName: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -308,9 +308,9 @@ impl crate::GlobalNamespace::OVRGLTFLoader {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        fileName: *mut crate::System::String,
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

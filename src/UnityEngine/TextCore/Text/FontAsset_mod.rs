@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct FontAsset {
     __cordl_parent: crate::UnityEngine::TextCore::Text::TextAsset,
-    pub m_SourceFontFileGUID: *mut crate::System::String,
+    pub m_SourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_fontAssetCreationEditorSettings: crate::UnityEngine::TextCore::Text::FontAssetCreationEditorSettings,
     pub m_SourceFontFile: *mut crate::UnityEngine::Font,
-    pub m_SourceFontFilePath: *mut crate::System::String,
+    pub m_SourceFontFilePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_AtlasPopulationMode: crate::UnityEngine::TextCore::Text::AtlasPopulationMode,
     pub InternalDynamicOS: bool,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
@@ -283,7 +283,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     }
     pub fn HasCharacters_ByRefMut0(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::List_1<char>,
         >,
@@ -297,7 +297,7 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
     }
     pub fn HasCharacters_ByRefMut__cordl_bool__cordl_bool1(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<u32>,
         >,
@@ -314,9 +314,9 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HasCharacters_String2(
+    pub fn HasCharacters_Il2CppString2(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -531,10 +531,12 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             .invoke("TryAddCharacters", (unicodes, includeFontFeatures))?;
         Ok(__cordl_ret)
     }
-    pub fn TryAddCharacters_String_ByRefMut__cordl_bool3(
+    pub fn TryAddCharacters_Il2CppString_ByRefMut__cordl_bool3(
         &mut self,
-        characters: *mut crate::System::String,
-        missingCharacters: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        characters: *mut quest_hook::libil2cpp::Il2CppString,
+        missingCharacters: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         includeFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -547,9 +549,9 @@ impl crate::UnityEngine::TextCore::Text::FontAsset {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn TryAddCharacters_String__cordl_bool2(
+    pub fn TryAddCharacters_Il2CppString__cordl_bool2(
         &mut self,
-        characters: *mut crate::System::String,
+        characters: *mut quest_hook::libil2cpp::Il2CppString,
         includeFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

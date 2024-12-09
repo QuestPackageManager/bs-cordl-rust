@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompletionActionInvoker {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_action: *mut crate::System::Threading::Tasks::ITaskCompletionAction,
     pub m_completingTask: *mut crate::System::Threading::Tasks::Task,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+CompletionActionInvoker")]
 impl std::ops::Deref for crate::System::Threading::Tasks::CompletionActionInvoker {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

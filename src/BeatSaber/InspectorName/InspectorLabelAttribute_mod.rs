@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InspectorLabelAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub CustomLabel: *mut crate::System::String,
+    pub CustomLabel: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::BeatSaber::InspectorName::InspectorLabelAttri
 #[cfg(feature = "BeatSaber+InspectorName+InspectorLabelAttribute")]
 impl crate::BeatSaber::InspectorName::InspectorLabelAttribute {
     pub fn New(
-        customLabel: *mut crate::System::String,
+        customLabel: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +37,7 @@ impl crate::BeatSaber::InspectorName::InspectorLabelAttribute {
     }
     pub fn _ctor(
         &mut self,
-        customLabel: *mut crate::System::String,
+        customLabel: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

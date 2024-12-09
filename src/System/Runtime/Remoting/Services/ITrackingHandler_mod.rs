@@ -28,7 +28,7 @@ for crate::System::Runtime::Remoting::Services::ITrackingHandler {
 impl crate::System::Runtime::Remoting::Services::ITrackingHandler {
     pub fn DisconnectedObject(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -39,7 +39,7 @@ impl crate::System::Runtime::Remoting::Services::ITrackingHandler {
     }
     pub fn MarshaledObject(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_or: *mut crate::System::Runtime::Remoting::ObjRef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,7 +51,7 @@ impl crate::System::Runtime::Remoting::Services::ITrackingHandler {
     }
     pub fn UnmarshaledObject(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_or: *mut crate::System::Runtime::Remoting::ObjRef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

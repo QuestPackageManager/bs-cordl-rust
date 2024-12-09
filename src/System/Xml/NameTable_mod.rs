@@ -34,13 +34,13 @@ impl crate::System::Xml::NameTable {
     pub type Entry = crate::System::Xml::NameTable_Entry;
     pub fn AddEntry(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("AddEntry", (str, hashCode))?;
         Ok(__cordl_ret)
     }
@@ -49,33 +49,33 @@ impl crate::System::Xml::NameTable {
         key: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         start: i32,
         len: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Add", (key, start, len))?;
         Ok(__cordl_ret)
     }
-    pub fn Add_String0(
+    pub fn Add_Il2CppString0(
         &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Add", (key))?;
         Ok(__cordl_ret)
     }
     pub fn Get(
         &mut self,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Get", (value))?;
         Ok(__cordl_ret)
     }
@@ -120,8 +120,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::NameTable {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NameTable_Entry {
-    __cordl_parent: crate::System::Object,
-    pub str: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub str: *mut quest_hook::libil2cpp::Il2CppString,
     pub hashCode: i32,
     pub next: *mut crate::System::Xml::NameTable_Entry,
 }
@@ -132,7 +132,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+NameTable+Entry")]
 impl std::ops::Deref for crate::System::Xml::NameTable_Entry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -146,7 +146,7 @@ impl std::ops::DerefMut for crate::System::Xml::NameTable_Entry {
 #[cfg(feature = "System+Xml+NameTable+Entry")]
 impl crate::System::Xml::NameTable_Entry {
     pub fn New(
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
         next: *mut crate::System::Xml::NameTable_Entry,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -158,7 +158,7 @@ impl crate::System::Xml::NameTable_Entry {
     }
     pub fn _ctor(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
         next: *mut crate::System::Xml::NameTable_Entry,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InternalEncodingDataItem {
-    pub webName: *mut crate::System::String,
+    pub webName: *mut quest_hook::libil2cpp::Il2CppString,
     pub codePage: u16,
 }
 #[cfg(feature = "System+Globalization+InternalEncodingDataItem")]

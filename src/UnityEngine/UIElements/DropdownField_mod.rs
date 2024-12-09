@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DropdownField {
     __cordl_parent: crate::UnityEngine::UIElements::PopupField_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownField")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+DropdownField")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField {
     type Target = crate::UnityEngine::UIElements::PopupField_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -39,8 +39,8 @@ impl crate::UnityEngine::UIElements::DropdownField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -58,9 +58,9 @@ impl crate::UnityEngine::UIElements::DropdownField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +146,7 @@ for crate::UnityEngine::UIElements::DropdownField_UxmlFactory {
 #[derive(Debug)]
 pub struct DropdownField_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_Index: *mut crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     pub m_Choices: *mut crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
@@ -160,7 +160,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+DropdownField+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownField_UxmlTraits {
     type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -3,8 +3,8 @@
 #[derive(Debug, Clone)]
 pub struct FaceInfo {
     pub m_FaceIndex: i32,
-    pub m_FamilyName: *mut crate::System::String,
-    pub m_StyleName: *mut crate::System::String,
+    pub m_FamilyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_StyleName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_PointSize: i32,
     pub m_Scale: f32,
     pub m_UnitsPerEM: i32,
@@ -84,8 +84,8 @@ impl crate::UnityEngine::TextCore::FaceInfo {
     }
     pub fn get_familyName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_familyName",
             (),
@@ -134,8 +134,8 @@ impl crate::UnityEngine::TextCore::FaceInfo {
     }
     pub fn get_styleName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_styleName",
             (),
@@ -244,7 +244,7 @@ impl crate::UnityEngine::TextCore::FaceInfo {
     }
     pub fn set_familyName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -321,7 +321,7 @@ impl crate::UnityEngine::TextCore::FaceInfo {
     }
     pub fn set_styleName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

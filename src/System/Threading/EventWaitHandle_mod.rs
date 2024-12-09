@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::System::Threading::EventWaitHandle {
 }
 #[cfg(feature = "System+Threading+EventWaitHandle")]
 impl crate::System::Threading::EventWaitHandle {
-    pub fn New_String1(
+    pub fn New_Il2CppString1(
         initialState: bool,
         mode: crate::System::Threading::EventResetMode,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -59,11 +59,11 @@ impl crate::System::Threading::EventWaitHandle {
         let __cordl_ret: bool = __cordl_object.invoke("Set", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         initialState: bool,
         mode: crate::System::Threading::EventResetMode,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

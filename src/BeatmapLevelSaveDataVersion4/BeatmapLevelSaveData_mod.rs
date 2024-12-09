@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSaveData {
-    __cordl_parent: crate::System::Object,
-    pub version: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
     pub song: crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_SongData,
     pub audio: crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData,
-    pub songPreviewFilename: *mut crate::System::String,
-    pub coverImageFilename: *mut crate::System::String,
+    pub songPreviewFilename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub coverImageFilename: *mut quest_hook::libil2cpp::Il2CppString,
     pub environmentNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub colorSchemes: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme,
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData")]
 impl std::ops::Deref for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,9 +84,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapLevelSaveData_AudioData {
-    pub songFilename: *mut crate::System::String,
+    pub songFilename: *mut quest_hook::libil2cpp::Il2CppString,
     pub songDuration: f32,
-    pub audioDataFilename: *mut crate::System::String,
+    pub audioDataFilename: *mut quest_hook::libil2cpp::Il2CppString,
     pub bpm: f32,
     pub lufs: f32,
     pub previewStartTime: f32,
@@ -115,8 +115,12 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_AudioData {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapLevelSaveData_BeatmapAuthors {
-    pub mappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub lighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub mappers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub lighters: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+BeatmapAuthors")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -141,15 +145,15 @@ impl crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSaveData_ColorScheme {
-    __cordl_parent: crate::System::Object,
-    pub colorSchemeName: *mut crate::System::String,
-    pub saberAColor: *mut crate::System::String,
-    pub saberBColor: *mut crate::System::String,
-    pub obstaclesColor: *mut crate::System::String,
-    pub environmentColor0: *mut crate::System::String,
-    pub environmentColor1: *mut crate::System::String,
-    pub environmentColor0Boost: *mut crate::System::String,
-    pub environmentColor1Boost: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub colorSchemeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub saberAColor: *mut quest_hook::libil2cpp::Il2CppString,
+    pub saberBColor: *mut quest_hook::libil2cpp::Il2CppString,
+    pub obstaclesColor: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentColor0: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentColor1: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentColor0Boost: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentColor1Boost: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -160,7 +164,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+ColorScheme")]
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -206,16 +210,16 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_ColorScheme {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelSaveData_DifficultyBeatmap {
-    __cordl_parent: crate::System::Object,
-    pub characteristic: *mut crate::System::String,
-    pub difficulty: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub characteristic: *mut quest_hook::libil2cpp::Il2CppString,
+    pub difficulty: *mut quest_hook::libil2cpp::Il2CppString,
     pub beatmapAuthors: crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_BeatmapAuthors,
     pub environmentNameIdx: i32,
     pub beatmapColorSchemeIdx: i32,
     pub noteJumpMovementSpeed: f32,
     pub noteJumpStartBeatOffset: f32,
-    pub lightshowDataFilename: *mut crate::System::String,
-    pub beatmapDataFilename: *mut crate::System::String,
+    pub lightshowDataFilename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub beatmapDataFilename: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -226,7 +230,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+DifficultyBeatmap")]
 impl std::ops::Deref
 for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -272,9 +276,9 @@ for crate::BeatmapLevelSaveDataVersion4::BeatmapLevelSaveData_DifficultyBeatmap 
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct BeatmapLevelSaveData_SongData {
-    pub title: *mut crate::System::String,
-    pub subTitle: *mut crate::System::String,
-    pub author: *mut crate::System::String,
+    pub title: *mut quest_hook::libil2cpp::Il2CppString,
+    pub subTitle: *mut quest_hook::libil2cpp::Il2CppString,
+    pub author: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatmapLevelSaveDataVersion4+BeatmapLevelSaveData+SongData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

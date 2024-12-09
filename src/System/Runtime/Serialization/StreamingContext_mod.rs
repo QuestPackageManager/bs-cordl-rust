@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct StreamingContext {
-    pub m_additionalContext: *mut crate::System::Object,
+    pub m_additionalContext: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_state: crate::System::Runtime::Serialization::StreamingContextStates,
 }
 #[cfg(feature = "System+Runtime+Serialization+StreamingContext")]
@@ -25,7 +25,7 @@ for crate::System::Runtime::Serialization::StreamingContext {
 impl crate::System::Runtime::Serialization::StreamingContext {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -42,10 +42,10 @@ impl crate::System::Runtime::Serialization::StreamingContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object1(
+    pub fn _ctor_Il2CppObject1(
         &mut self,
         state: crate::System::Runtime::Serialization::StreamingContextStates,
-        additional: *mut crate::System::Object,
+        additional: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -67,8 +67,8 @@ impl crate::System::Runtime::Serialization::StreamingContext {
     }
     pub fn get_Context(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Context",
             (),

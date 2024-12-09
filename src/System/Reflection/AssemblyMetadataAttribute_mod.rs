@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AssemblyMetadataAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Key_k__BackingField: *mut crate::System::String,
-    pub _Value_k__BackingField: *mut crate::System::String,
+    pub _Key_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Value_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::System::Reflection::AssemblyMetadataAttribute
 #[cfg(feature = "System+Reflection+AssemblyMetadataAttribute")]
 impl crate::System::Reflection::AssemblyMetadataAttribute {
     pub fn New(
-        key: *mut crate::System::String,
-        value: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,8 +38,8 @@ impl crate::System::Reflection::AssemblyMetadataAttribute {
     }
     pub fn _ctor(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

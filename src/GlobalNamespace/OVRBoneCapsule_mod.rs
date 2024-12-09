@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRBoneCapsule {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BoneIndex_k__BackingField: i16,
     pub _CapsuleRigidbody_k__BackingField: *mut crate::UnityEngine::Rigidbody,
     pub _CapsuleCollider_k__BackingField: *mut crate::UnityEngine::CapsuleCollider,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRBoneCapsule")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRBoneCapsule {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -6,7 +6,7 @@ pub struct EventAttribute {
     pub _EventId_k__BackingField: i32,
     pub _Level_k__BackingField: crate::System::Diagnostics::Tracing::EventLevel,
     pub _Keywords_k__BackingField: crate::System::Diagnostics::Tracing::EventKeywords,
-    pub _Message_k__BackingField: *mut crate::System::String,
+    pub _Message_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -81,7 +81,7 @@ impl crate::System::Diagnostics::Tracing::EventAttribute {
     }
     pub fn set_Message(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

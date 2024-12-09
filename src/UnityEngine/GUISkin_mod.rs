@@ -32,7 +32,7 @@ pub struct GUISkin {
     >,
     pub m_Settings: *mut crate::UnityEngine::GUISettings,
     pub m_Styles: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::GUIStyle,
     >,
 }
@@ -79,7 +79,7 @@ impl crate::UnityEngine::GUISkin {
     }
     pub fn FindStyle(
         &mut self,
-        styleName: *mut crate::System::String,
+        styleName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GUIStyle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,7 +100,7 @@ impl crate::UnityEngine::GUISkin {
     }
     pub fn GetStyle(
         &mut self,
-        styleName: *mut crate::System::String,
+        styleName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GUIStyle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -731,7 +731,7 @@ impl crate::UnityEngine::GUISkin_SkinChangedDelegate {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -742,7 +742,7 @@ impl crate::UnityEngine::GUISkin_SkinChangedDelegate {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

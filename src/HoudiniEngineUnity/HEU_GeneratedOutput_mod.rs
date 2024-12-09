@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeneratedOutput {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _outputData: *mut crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
     pub _childOutputs: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_GeneratedOutputData,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutput")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneratedOutput {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::HoudiniEngineUnity::HEU_GeneratedOutput {
     pub fn WriteOutputToAssetCache(
         &mut self,
         parentObject: *mut crate::UnityEngine::GameObject,
-        outputPath: *mut crate::System::String,
+        outputPath: *mut quest_hook::libil2cpp::Il2CppString,
         bIsInstancer: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

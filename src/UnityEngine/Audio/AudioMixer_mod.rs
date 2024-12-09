@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Audio::AudioMixer {
 impl crate::UnityEngine::Audio::AudioMixer {
     pub fn ClearFloat(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,7 +36,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
     }
     pub fn FindMatchingGroups(
         &mut self,
-        subPath: *mut crate::System::String,
+        subPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::UnityEngine::Audio::AudioMixerGroup,
@@ -52,7 +52,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
     }
     pub fn FindSnapshot(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::Audio::AudioMixerSnapshot,
     > {
@@ -76,7 +76,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
     }
     pub fn GetFloat(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,7 +94,7 @@ impl crate::UnityEngine::Audio::AudioMixer {
     }
     pub fn SetFloat(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlLoader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub doc: *mut crate::System::Xml::XmlDocument,
     pub reader: *mut crate::System::Xml::XmlReader,
     pub preserveWhitespace: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlLoader")]
 impl std::ops::Deref for crate::System::Xml::XmlLoader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::System::Xml::XmlLoader {
 impl crate::System::Xml::XmlLoader {
     pub fn CreateInnerXmlReader(
         &mut self,
-        xmlFragment: *mut crate::System::String,
+        xmlFragment: *mut quest_hook::libil2cpp::Il2CppString,
         nt: crate::System::Xml::XmlNodeType,
         context: *mut crate::System::Xml::XmlParserContext,
         doc: *mut crate::System::Xml::XmlDocument,
@@ -43,12 +43,12 @@ impl crate::System::Xml::XmlLoader {
     }
     pub fn EntitizeName(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("EntitizeName", (name))?;
         Ok(__cordl_ret)
     }
@@ -197,7 +197,7 @@ impl crate::System::Xml::XmlLoader {
     pub fn LoadInnerXmlAttribute(
         &mut self,
         node: *mut crate::System::Xml::XmlAttribute,
-        innerxmltext: *mut crate::System::String,
+        innerxmltext: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -209,7 +209,7 @@ impl crate::System::Xml::XmlLoader {
     pub fn LoadInnerXmlElement(
         &mut self,
         node: *mut crate::System::Xml::XmlElement,
-        innerxmltext: *mut crate::System::String,
+        innerxmltext: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,7 +273,7 @@ impl crate::System::Xml::XmlLoader {
     pub fn ParsePartialContent(
         &mut self,
         parentNode: *mut crate::System::Xml::XmlNode,
-        innerxmltext: *mut crate::System::String,
+        innerxmltext: *mut quest_hook::libil2cpp::Il2CppString,
         nt: crate::System::Xml::XmlNodeType,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlNamespaceManager> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

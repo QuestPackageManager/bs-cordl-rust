@@ -36,7 +36,7 @@ impl crate::System::DefaultBinder {
         _cordl_match: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Reflection::FieldInfo,
         >,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         cultureInfo: *mut crate::System::Globalization::CultureInfo,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::FieldInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -53,14 +53,18 @@ impl crate::System::DefaultBinder {
             *mut crate::System::Reflection::MethodBase,
         >,
         args: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
         modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Reflection::ParameterModifier,
         >,
         cultureInfo: *mut crate::System::Globalization::CultureInfo,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        state: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        state: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodBase> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,14 +78,14 @@ impl crate::System::DefaultBinder {
     }
     pub fn ChangeType(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
         cultureInfo: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, _cordl_type, cultureInfo))?;
         Ok(__cordl_ret)
     }
@@ -95,9 +99,11 @@ impl crate::System::DefaultBinder {
     pub fn ReorderArgumentArray(
         &mut self,
         args: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +176,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::DefaultBinder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultBinder_BinderState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_argsMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub m_originalSize: i32,
     pub m_isParamArray: bool,
@@ -182,7 +188,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+DefaultBinder+BinderState")]
 impl std::ops::Deref for crate::System::DefaultBinder_BinderState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

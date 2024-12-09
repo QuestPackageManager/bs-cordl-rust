@@ -48,9 +48,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
             .invoke_void(".ctor", (dateOfBirth))?;
         Ok(__cordl_object)
     }
-    pub fn New__cordl_bool_String1(
+    pub fn New__cordl_bool_Il2CppString1(
         fullAge: bool,
-        country: *mut crate::System::String,
+        country: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -97,10 +97,10 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::DeclarationOfMajority {
             .invoke(".ctor", (dateOfBirth))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool_String1(
+    pub fn _ctor__cordl_bool_Il2CppString1(
         &mut self,
         fullAge: bool,
-        country: *mut crate::System::String,
+        country: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

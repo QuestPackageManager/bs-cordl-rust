@@ -13,7 +13,9 @@ pub struct OVREyeGaze {
     pub TrackingMode: crate::GlobalNamespace::OVREyeGaze_EyeTrackingMode,
     pub _initialRotationOffset: crate::UnityEngine::Quaternion,
     pub _viewTransform: *mut crate::UnityEngine::Transform,
-    pub _onPermissionGranted: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub _onPermissionGranted: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "OVREyeGaze")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -98,7 +100,7 @@ impl crate::GlobalNamespace::OVREyeGaze {
     }
     pub fn OnPermissionGranted(
         &mut self,
-        permissionId: *mut crate::System::String,
+        permissionId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerMissionStatsData {
-    __cordl_parent: crate::System::Object,
-    pub _missionId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _missionId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cleared: bool,
 }
 #[cfg(feature = "PlayerMissionStatsData")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerMissionStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerMissionStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerMissionStatsData {
 #[cfg(feature = "PlayerMissionStatsData")]
 impl crate::GlobalNamespace::PlayerMissionStatsData {
     pub fn New(
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
         cleared: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::PlayerMissionStatsData {
     }
     pub fn _ctor(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
         cleared: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -57,11 +57,11 @@ impl crate::GlobalNamespace::PlayerMissionStatsData {
     }
     pub fn get_missionId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_missionId", ())?;
         Ok(__cordl_ret)
     }

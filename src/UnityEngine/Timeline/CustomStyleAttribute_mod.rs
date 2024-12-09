@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CustomStyleAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub ussStyle: *mut crate::System::String,
+    pub ussStyle: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+Timeline+CustomStyleAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::CustomStyleAttribute {
 #[cfg(feature = "UnityEngine+Timeline+CustomStyleAttribute")]
 impl crate::UnityEngine::Timeline::CustomStyleAttribute {
     pub fn New(
-        ussStyle: *mut crate::System::String,
+        ussStyle: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::Timeline::CustomStyleAttribute {
     }
     pub fn _ctor(
         &mut self,
-        ussStyle: *mut crate::System::String,
+        ussStyle: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

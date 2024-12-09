@@ -10,12 +10,12 @@ pub struct MultiplayerLevelFinishedController {
     pub allResultsCollectedEvent: *mut crate::System::Action_2<
         *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     >,
     pub _otherPlayersCompletionResults: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     >,
     pub _localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
     }
     pub fn HandleRpcLevelFinished(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         results: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             *mut crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
                 *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     > {
@@ -176,7 +176,7 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         > = __cordl_object.invoke("get_otherPlayersCompletionResults", ())?;
         Ok(__cordl_ret)
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::MultiplayerLevelFinishedController {
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             *mut crate::System::Collections::Generic::Dictionary_2<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
                 *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
             >,
         >,

@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncResult {
-    __cordl_parent: crate::System::Object,
-    pub async_state: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub async_state: *mut quest_hook::libil2cpp::Il2CppObject,
     pub handle: *mut crate::System::Threading::WaitHandle,
-    pub async_delegate: *mut crate::System::Object,
+    pub async_delegate: *mut quest_hook::libil2cpp::Il2CppObject,
     pub data: crate::System::IntPtr,
-    pub object_data: *mut crate::System::Object,
+    pub object_data: *mut quest_hook::libil2cpp::Il2CppObject,
     pub sync_completed: bool,
     pub completed: bool,
     pub endinvoke_called: bool,
-    pub async_callback: *mut crate::System::Object,
+    pub async_callback: *mut quest_hook::libil2cpp::Il2CppObject,
     pub current: *mut crate::System::Threading::ExecutionContext,
     pub original: *mut crate::System::Threading::ExecutionContext,
     pub add_time: i64,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Messaging+AsyncResult")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::AsyncResult {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,11 +81,11 @@ impl crate::System::Runtime::Remoting::Messaging::AsyncResult {
     }
     pub fn Invoke(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Invoke", ())?;
         Ok(__cordl_ret)
     }
@@ -164,21 +164,21 @@ impl crate::System::Runtime::Remoting::Messaging::AsyncResult {
     }
     pub fn get_AsyncDelegate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AsyncDelegate", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_AsyncState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AsyncState", ())?;
         Ok(__cordl_ret)
     }

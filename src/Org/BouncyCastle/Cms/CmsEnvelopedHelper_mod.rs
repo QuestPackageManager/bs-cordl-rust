@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
     pub type CmsEnvelopedSecureReadable = crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable;
     pub fn CreateAsymmetricCipher(
         &mut self,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
     > {
@@ -47,7 +47,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
     }
     pub fn CreateWrapper(
         &mut self,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Crypto::IWrapper> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,18 +58,18 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
     }
     pub fn GetAsymmetricEncryptionAlgName(
         &mut self,
-        encryptionAlgOid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        encryptionAlgOid: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetAsymmetricEncryptionAlgName", (encryptionAlgOid))?;
         Ok(__cordl_ret)
     }
     pub fn GetKeySize(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,12 +79,12 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
     }
     pub fn GetRfc3211WrapperName(
         &mut self,
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetRfc3211WrapperName", (oid))?;
         Ok(__cordl_ret)
     }
@@ -122,7 +122,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
     pub readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
@@ -140,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureReadable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -205,11 +205,11 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRea
     }
     pub fn get_CryptoObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_CryptoObject", ())?;
         Ok(__cordl_ret)
     }
@@ -230,7 +230,7 @@ for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsAuthenticatedSecureRead
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub algorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     pub cipher: *mut crate::Org::BouncyCastle::Crypto::IBufferedCipher,
     pub readable: *mut crate::Org::BouncyCastle::Cms::CmsReadable,
@@ -244,7 +244,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedHelper+CmsEnvelopedSecureReadable")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -305,11 +305,11 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedHelper_CmsEnvelopedSecureReadabl
     }
     pub fn get_CryptoObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_CryptoObject", ())?;
         Ok(__cordl_ret)
     }

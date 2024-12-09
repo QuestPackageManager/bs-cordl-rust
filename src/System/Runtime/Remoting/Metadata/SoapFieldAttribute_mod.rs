@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SoapFieldAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
-    pub _elementName: *mut crate::System::String,
+    pub _elementName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isElement: bool,
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapFieldAttribute")]
@@ -44,7 +44,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapFieldAttribute {
     }
     pub fn SetReflectionObject(
         &mut self,
-        reflectionObject: *mut crate::System::Object,
+        reflectionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,11 +65,11 @@ impl crate::System::Runtime::Remoting::Metadata::SoapFieldAttribute {
     }
     pub fn get_XmlElementName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlElementName", ())?;
         Ok(__cordl_ret)
     }

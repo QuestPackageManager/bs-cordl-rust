@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JPath {
-    __cordl_parent: crate::System::Object,
-    pub _expression: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _expression: *mut quest_hook::libil2cpp::Il2CppString,
     pub _Filters_k__BackingField: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+JPath")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Linq::JsonPath::JPath {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     }
     pub fn EnsureLength(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     }
     pub fn Match(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
         Ok(__cordl_ret)
     }
     pub fn New(
-        expression: *mut crate::System::String,
+        expression: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -203,31 +203,31 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     }
     pub fn ParseSide(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseSide", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReadQuotedString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadQuotedString", ())?;
         Ok(__cordl_ret)
     }
     pub fn ReadRegexString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadRegexString", ())?;
         Ok(__cordl_ret)
     }
@@ -248,7 +248,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     }
     pub fn TryParseValue(
         &mut self,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -258,7 +258,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::JPath {
     }
     pub fn _ctor(
         &mut self,
-        expression: *mut crate::System::String,
+        expression: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

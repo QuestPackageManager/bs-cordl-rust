@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MessageWithString {
-    __cordl_parent: crate::Oculus::Platform::Message_1<*mut crate::System::String>,
+    __cordl_parent: crate::Oculus::Platform::Message_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "Oculus+Platform+MessageWithString")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +13,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+MessageWithString")]
 impl std::ops::Deref for crate::Oculus::Platform::MessageWithString {
-    type Target = crate::Oculus::Platform::Message_1<*mut crate::System::String>;
+    type Target = crate::Oculus::Platform::Message_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,21 +31,21 @@ impl crate::Oculus::Platform::MessageWithString {
     pub fn GetDataFromMessage(
         &mut self,
         c_message: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetDataFromMessage", (c_message))?;
         Ok(__cordl_ret)
     }
     pub fn GetString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetString", ())?;
         Ok(__cordl_ret)
     }

@@ -4,7 +4,7 @@
 pub struct BindingRestrictions_InstanceRestriction {
     __cordl_parent: crate::System::Dynamic::BindingRestrictions,
     pub _expression: *mut crate::System::Linq::Expressions::Expression,
-    pub _instance: *mut crate::System::Object,
+    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+BindingRestrictions+InstanceRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -31,7 +31,7 @@ for crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
 impl crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     }
     pub fn New(
         parameter: *mut crate::System::Linq::Expressions::Expression,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::BindingRestrictions_InstanceRestriction {
     pub fn _ctor(
         &mut self,
         parameter: *mut crate::System::Linq::Expressions::Expression,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

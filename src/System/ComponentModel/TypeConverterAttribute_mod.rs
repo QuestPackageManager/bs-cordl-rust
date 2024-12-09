@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeConverterAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _ConverterTypeName_k__BackingField: *mut crate::System::String,
+    pub _ConverterTypeName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+ComponentModel+TypeConverterAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::ComponentModel::TypeConverterAttribut
 impl crate::System::ComponentModel::TypeConverterAttribute {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -49,8 +49,8 @@ impl crate::System::ComponentModel::TypeConverterAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String2(
-        typeName: *mut crate::System::String,
+    pub fn New_Il2CppString2(
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -77,9 +77,9 @@ impl crate::System::ComponentModel::TypeConverterAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
-        typeName: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,11 +101,11 @@ impl crate::System::ComponentModel::TypeConverterAttribute {
     }
     pub fn get_ConverterTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ConverterTypeName", ())?;
         Ok(__cordl_ret)
     }

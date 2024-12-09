@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRScenePrefabOverride {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Prefab: *mut crate::GlobalNamespace::OVRSceneAnchor,
-    pub ClassificationLabel: *mut crate::System::String,
+    pub ClassificationLabel: *mut quest_hook::libil2cpp::Il2CppString,
     pub _editorClassificationIndex: i32,
 }
 #[cfg(feature = "OVRScenePrefabOverride")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRScenePrefabOverride")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRScenePrefabOverride {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

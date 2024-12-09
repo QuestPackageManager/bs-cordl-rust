@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DefaultTraceListener {
     __cordl_parent: crate::System::Diagnostics::TraceListener,
-    pub logFileName: *mut crate::System::String,
+    pub logFileName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+DefaultTraceListener")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -34,7 +34,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn Write(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,7 +45,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn WriteDebugString(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +56,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn WriteImpl(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,7 +67,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn WriteLine(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,8 +78,8 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn WriteLogFile(
         &mut self,
-        message: *mut crate::System::String,
-        logFile: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        logFile: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +90,7 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn WriteMonoTrace(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,11 +121,11 @@ impl crate::System::Diagnostics::DefaultTraceListener {
     }
     pub fn get_LogFileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LogFileName", ())?;
         Ok(__cordl_ret)
     }

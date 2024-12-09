@@ -26,9 +26,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Unity::Mathematics::b
 impl crate::Unity::Mathematics::bool4 {
     #[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
     pub type DebuggerProxy = crate::Unity::Mathematics::bool4_DebuggerProxy;
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -58,8 +58,8 @@ impl crate::Unity::Mathematics::bool4 {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -4222,7 +4222,7 @@ impl crate::Unity::Mathematics::bool4 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct bool4_DebuggerProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub x: bool,
     pub y: bool,
     pub z: bool,
@@ -4235,7 +4235,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Mathematics+bool4+DebuggerProxy")]
 impl std::ops::Deref for crate::Unity::Mathematics::bool4_DebuggerProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

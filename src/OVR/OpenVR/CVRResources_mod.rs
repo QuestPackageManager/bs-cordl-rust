@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRResources {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRResources,
 }
 #[cfg(feature = "OVR+OpenVR+CVRResources")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRResources")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRResources {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRResources {
 impl crate::OVR::OpenVR::CVRResources {
     pub fn GetResourceFullPath(
         &mut self,
-        pchResourceName: *mut crate::System::String,
-        pchResourceTypeDirectory: *mut crate::System::String,
+        pchResourceName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchResourceTypeDirectory: *mut quest_hook::libil2cpp::Il2CppString,
         pchPathBuffer: *mut crate::System::Text::StringBuilder,
         unBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -44,8 +44,8 @@ impl crate::OVR::OpenVR::CVRResources {
     }
     pub fn LoadSharedResource(
         &mut self,
-        pchResourceName: *mut crate::System::String,
-        pchBuffer: *mut crate::System::String,
+        pchResourceName: *mut quest_hook::libil2cpp::Il2CppString,
+        pchBuffer: *mut quest_hook::libil2cpp::Il2CppString,
         unBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

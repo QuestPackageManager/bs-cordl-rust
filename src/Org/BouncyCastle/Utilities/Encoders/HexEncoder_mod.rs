@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HexEncoder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub encodingTable: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub decodingTable: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Encoders+HexEncoder")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
     }
     pub fn DecodeStrict(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         off: i32,
         len: i32,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -56,7 +56,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::HexEncoder {
     }
     pub fn DecodeString(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         outStream: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

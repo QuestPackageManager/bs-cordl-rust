@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpSecretKey {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub secret: *mut crate::Org::BouncyCastle::Bcpg::SecretKeyPacket,
     pub _cordl_pub: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSecretKey")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +104,7 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
     }
     pub fn GetECKey(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         bcpgIn: *mut crate::Org::BouncyCastle::Bcpg::BcpgInputStream,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
@@ -164,10 +164,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             .invoke_void(".ctor", (secret, _cordl_pub))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom7(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom7(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -196,10 +196,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom9(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom9(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -228,10 +228,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom10(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom10(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -262,10 +262,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom8(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom8(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         utf8PassPhrase: bool,
@@ -296,10 +296,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
@@ -324,10 +324,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         useSha1: bool,
@@ -354,10 +354,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         useSha1: bool,
@@ -384,10 +384,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         clearPassPhrase: bool,
@@ -416,10 +416,10 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
+    pub fn New_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         utf8PassPhrase: bool,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -448,13 +448,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_String_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom11(
+    pub fn New_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom11(
         certificationLevel: i32,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         _cordl_time: crate::System::DateTime,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
@@ -482,13 +482,13 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom12(
+    pub fn New_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom12(
         certificationLevel: i32,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         _cordl_time: crate::System::DateTime,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         useSha1: bool,
@@ -560,11 +560,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             .invoke(".ctor", (secret, _cordl_pub))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom7(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom7(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -594,11 +594,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom9(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom9(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -628,11 +628,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom10(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom10(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -664,11 +664,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom8(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_HashAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom8(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         hashAlgorithm: crate::Org::BouncyCastle::Bcpg::HashAlgorithmTag,
         utf8PassPhrase: bool,
@@ -700,11 +700,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom2(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
@@ -730,11 +730,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom3(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         useSha1: bool,
@@ -762,11 +762,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom5(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         useSha1: bool,
@@ -794,11 +794,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom6(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         rawPassPhrase: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         clearPassPhrase: bool,
@@ -828,11 +828,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PgpKeyPair_String_SymmetricKeyAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
+    pub fn _ctor_i32_PgpKeyPair_Il2CppString_SymmetricKeyAlgorithmTag__cordl_bool_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom4(
         &mut self,
         certificationLevel: i32,
         keyPair: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpKeyPair,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         utf8PassPhrase: bool,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
@@ -862,14 +862,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_String_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom11(
+    pub fn _ctor_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom11(
         &mut self,
         certificationLevel: i32,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         _cordl_time: crate::System::DateTime,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         hashedPackets: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignatureSubpacketVector,
@@ -898,14 +898,14 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSecretKey {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_String_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom12(
+    pub fn _ctor_i32_PublicKeyAlgorithmTag_AsymmetricKeyParameter_AsymmetricKeyParameter_DateTime_Il2CppString_SymmetricKeyAlgorithmTag_Il2CppArray__cordl_bool_PgpSignatureSubpacketVector_PgpSignatureSubpacketVector_SecureRandom12(
         &mut self,
         certificationLevel: i32,
         algorithm: crate::Org::BouncyCastle::Bcpg::PublicKeyAlgorithmTag,
         pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         privKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         _cordl_time: crate::System::DateTime,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         encAlgorithm: crate::Org::BouncyCastle::Bcpg::SymmetricKeyAlgorithmTag,
         passPhrase: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         useSha1: bool,

@@ -30,6 +30,17 @@ for crate::UnityEngine::XR::MeshGenerationResult {
 }
 #[cfg(feature = "UnityEngine+XR+MeshGenerationResult")]
 impl crate::UnityEngine::XR::MeshGenerationResult {
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_MeshGenerationResult1(
         &mut self,
         other: crate::UnityEngine::XR::MeshGenerationResult,
@@ -38,17 +49,6 @@ impl crate::UnityEngine::XR::MeshGenerationResult {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }

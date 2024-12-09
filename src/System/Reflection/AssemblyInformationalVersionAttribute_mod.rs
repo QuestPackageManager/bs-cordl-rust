@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AssemblyInformationalVersionAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _InformationalVersion_k__BackingField: *mut crate::System::String,
+    pub _InformationalVersion_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Reflection+AssemblyInformationalVersionAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,7 +29,7 @@ for crate::System::Reflection::AssemblyInformationalVersionAttribute {
 #[cfg(feature = "System+Reflection+AssemblyInformationalVersionAttribute")]
 impl crate::System::Reflection::AssemblyInformationalVersionAttribute {
     pub fn New(
-        informationalVersion: *mut crate::System::String,
+        informationalVersion: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::System::Reflection::AssemblyInformationalVersionAttribute {
     }
     pub fn _ctor(
         &mut self,
-        informationalVersion: *mut crate::System::String,
+        informationalVersion: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

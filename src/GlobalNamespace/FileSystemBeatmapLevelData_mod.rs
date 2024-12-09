@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemBeatmapLevelData {
-    __cordl_parent: crate::System::Object,
-    pub _audioClipPath: *mut crate::System::String,
-    pub _audioDataPath: *mut crate::System::String,
-    pub _name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _audioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _audioDataPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _difficultyBeatmaps: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_2<
             *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileSystemBeatmapLevelData")]
 impl std::ops::Deref for crate::GlobalNamespace::FileSystemBeatmapLevelData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,35 +37,37 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FileSystemBeatmapLevelData {
 impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
     pub fn GetAudioDataString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetAudioDataString", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetAudioDataStringAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetAudioDataStringAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetBeatmapString(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetBeatmapString", (beatmapKey))?;
         Ok(__cordl_ret)
     }
@@ -73,13 +75,15 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetBeatmapStringAsync", (beatmapKey))?;
         Ok(__cordl_ret)
     }
@@ -99,11 +103,11 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
     pub fn GetLightshowString(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetLightshowString", (beatmapKey))?;
         Ok(__cordl_ret)
     }
@@ -111,24 +115,26 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetLightshowStringAsync", (beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn IBeatmapLevelData_GetBeatmapString(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("IBeatmapLevelData.GetBeatmapString", (beatmapKey))?;
         Ok(__cordl_ret)
     }
@@ -136,13 +142,15 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke("IBeatmapLevelData.GetBeatmapStringAsync", (beatmapKey))?;
         Ok(__cordl_ret)
@@ -150,11 +158,11 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
     pub fn IBeatmapLevelData_GetLightshowString(
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("IBeatmapLevelData.GetLightshowString", (beatmapKey))?;
         Ok(__cordl_ret)
     }
@@ -162,21 +170,23 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
         &mut self,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke("IBeatmapLevelData.GetLightshowStringAsync", (beatmapKey))?;
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
-        audioClipPath: *mut crate::System::String,
-        audioDataPath: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        audioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
+        audioDataPath: *mut quest_hook::libil2cpp::Il2CppString,
         difficultyBeatmaps: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::System::ValueTuple_2<
                 *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -196,9 +206,9 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
-        audioClipPath: *mut crate::System::String,
-        audioDataPath: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        audioClipPath: *mut quest_hook::libil2cpp::Il2CppString,
+        audioDataPath: *mut quest_hook::libil2cpp::Il2CppString,
         difficultyBeatmaps: *mut crate::System::Collections::Generic::Dictionary_2<
             crate::System::ValueTuple_2<
                 *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -216,21 +226,21 @@ impl crate::GlobalNamespace::FileSystemBeatmapLevelData {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_songAudioClipPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_songAudioClipPath", ())?;
         Ok(__cordl_ret)
     }

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardPlayerInfo {
-    __cordl_parent: crate::System::Object,
-    pub serverKey: *mut crate::System::String,
-    pub _playerId_k__BackingField: *mut crate::System::String,
-    pub _playerName_k__BackingField: *mut crate::System::String,
-    pub _playerKey_k__BackingField: *mut crate::System::String,
-    pub _authType_k__BackingField: *mut crate::System::String,
-    pub _playerFriends_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub serverKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerKey_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _authType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _playerFriends_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _succeeded_k__BackingField: bool,
 }
 #[cfg(feature = "LeaderboardPlayerInfo")]
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardPlayerInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardPlayerInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,11 +33,11 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardPlayerInfo {
 impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     pub fn New(
         succeeded: bool,
-        playerId: *mut crate::System::String,
-        playerName: *mut crate::System::String,
-        playerKey: *mut crate::System::String,
-        authType: *mut crate::System::String,
-        playerFriends: *mut crate::System::String,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
+        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        playerKey: *mut quest_hook::libil2cpp::Il2CppString,
+        authType: *mut quest_hook::libil2cpp::Il2CppString,
+        playerFriends: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -51,11 +51,11 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     pub fn _ctor(
         &mut self,
         succeeded: bool,
-        playerId: *mut crate::System::String,
-        playerName: *mut crate::System::String,
-        playerKey: *mut crate::System::String,
-        authType: *mut crate::System::String,
-        playerFriends: *mut crate::System::String,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
+        playerName: *mut quest_hook::libil2cpp::Il2CppString,
+        playerKey: *mut quest_hook::libil2cpp::Il2CppString,
+        authType: *mut quest_hook::libil2cpp::Il2CppString,
+        playerFriends: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,51 +69,51 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     }
     pub fn get_authType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_authType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerFriends(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_playerFriends", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_playerId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_playerKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_playerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_playerName", ())?;
         Ok(__cordl_ret)
     }
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     }
     pub fn set_authType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     }
     pub fn set_playerFriends(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     }
     pub fn set_playerId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,7 +159,7 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     }
     pub fn set_playerKey(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +170,7 @@ impl crate::GlobalNamespace::LeaderboardPlayerInfo {
     }
     pub fn set_playerName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

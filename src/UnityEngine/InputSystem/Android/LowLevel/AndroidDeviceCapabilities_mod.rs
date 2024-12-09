@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct AndroidDeviceCapabilities {
-    pub deviceDescriptor: *mut crate::System::String,
+    pub deviceDescriptor: *mut quest_hook::libil2cpp::Il2CppString,
     pub productId: i32,
     pub vendorId: i32,
     pub isVirtual: bool,
@@ -36,8 +36,8 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
     pub type __c = crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabilities___c;
     pub fn ToJson(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToJson",
             (),
@@ -46,8 +46,8 @@ impl crate::UnityEngine::InputSystem::Android::LowLevel::AndroidDeviceCapabiliti
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

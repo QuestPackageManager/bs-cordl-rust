@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct PublicServerInfo {
-    pub code: *mut crate::System::String,
+    pub code: *mut quest_hook::libil2cpp::Il2CppString,
     pub currentPlayerCount: i32,
 }
 #[cfg(feature = "PublicServerInfo")]
@@ -36,7 +36,7 @@ impl crate::GlobalNamespace::PublicServerInfo {
     }
     pub fn _ctor(
         &mut self,
-        code: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         currentPlayerCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

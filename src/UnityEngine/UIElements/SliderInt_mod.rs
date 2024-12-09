@@ -77,8 +77,8 @@ impl crate::UnityEngine::UIElements::SliderInt {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_i32_i32_SliderDirection_f32_1(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString_i32_i32_SliderDirection_f32_1(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
         direction: crate::UnityEngine::UIElements::SliderDirection,
@@ -92,8 +92,8 @@ impl crate::UnityEngine::UIElements::SliderInt {
     }
     pub fn ParseStringToValue(
         &mut self,
-        previousValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
+        previousValue: *mut quest_hook::libil2cpp::Il2CppString,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -138,9 +138,9 @@ impl crate::UnityEngine::UIElements::SliderInt {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_i32_i32_SliderDirection_f32_1(
+    pub fn _ctor_Il2CppString_i32_i32_SliderDirection_f32_1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         end: i32,
         direction: crate::UnityEngine::UIElements::SliderDirection,

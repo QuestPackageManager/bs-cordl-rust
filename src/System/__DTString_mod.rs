@@ -129,7 +129,9 @@ impl crate::System::__DTString {
     }
     pub fn MatchLongestWords(
         &mut self,
-        words: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        words: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         maxMatchStrLen: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -141,7 +143,7 @@ impl crate::System::__DTString {
     }
     pub fn MatchSpecifiedWord(
         &mut self,
-        target: *mut crate::System::String,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -152,7 +154,7 @@ impl crate::System::__DTString {
     }
     pub fn MatchSpecifiedWords(
         &mut self,
-        target: *mut crate::System::String,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         checkWordBoundary: bool,
         matchLength: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -163,9 +165,9 @@ impl crate::System::__DTString {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Match_String0(
+    pub fn Match_Il2CppString0(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

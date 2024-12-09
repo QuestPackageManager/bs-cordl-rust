@@ -4,7 +4,7 @@
 pub struct PeerConnectionData {
     pub Port: u16,
     pub NativePeerId: u32,
-    pub IP: *mut crate::System::String,
+    pub IP: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "IgnoranceCore+PeerConnectionData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

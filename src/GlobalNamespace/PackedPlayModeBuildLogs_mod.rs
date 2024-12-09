@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PackedPlayModeBuildLogs {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RuntimeBuildLogs: *mut crate::System::Collections::Generic::List_1<
         crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PackedPlayModeBuildLogs")]
 impl std::ops::Deref for crate::GlobalNamespace::PackedPlayModeBuildLogs {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,7 +90,7 @@ for crate::GlobalNamespace::PackedPlayModeBuildLogs {
 #[derive(Debug, Clone)]
 pub struct PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub Type: crate::UnityEngine::LogType,
-    pub Message: *mut crate::System::String,
+    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "PackedPlayModeBuildLogs+RuntimeBuildLog")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::PackedPlayModeBuildLogs_RuntimeBuildLog {
     pub fn _ctor(
         &mut self,
         _cordl_type: crate::UnityEngine::LogType,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

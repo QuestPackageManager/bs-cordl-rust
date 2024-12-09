@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableRuntimeReflectionSystemWrapper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _implementation_k__BackingField: *mut crate::UnityEngine::Experimental::Rendering::IScriptableRuntimeReflectionSystem,
 }
 #[cfg(
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::Experimental::Rendering::ScriptableRuntimeReflectionSystemWrapper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

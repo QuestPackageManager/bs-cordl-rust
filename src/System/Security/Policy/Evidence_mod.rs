@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Evidence {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _locked: bool,
     pub hostEvidenceList: *mut crate::System::Collections::ArrayList,
     pub assemblyEvidenceList: *mut crate::System::Collections::ArrayList,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Policy+Evidence")]
 impl std::ops::Deref for crate::System::Security::Policy::Evidence {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,11 +84,11 @@ impl crate::System::Security::Policy::Evidence {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -106,7 +106,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Security::Policy::Evid
 #[repr(C)]
 #[derive(Debug)]
 pub struct Evidence_EvidenceEnumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub currentEnum: *mut crate::System::Collections::IEnumerator,
     pub hostEnum: *mut crate::System::Collections::IEnumerator,
     pub assemblyEnum: *mut crate::System::Collections::IEnumerator,
@@ -119,7 +119,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Policy+Evidence+EvidenceEnumerator")]
 impl std::ops::Deref for crate::System::Security::Policy::Evidence_EvidenceEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -174,11 +174,11 @@ impl crate::System::Security::Policy::Evidence_EvidenceEnumerator {
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }

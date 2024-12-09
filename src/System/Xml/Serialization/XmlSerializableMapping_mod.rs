@@ -30,11 +30,11 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlSerializableMa
 impl crate::System::Xml::Serialization::XmlSerializableMapping {
     pub fn New(
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        elementName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
-        xmlType: *mut crate::System::String,
-        xmlTypeNamespace: *mut crate::System::String,
+        xmlType: *mut quest_hook::libil2cpp::Il2CppString,
+        xmlTypeNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -48,11 +48,11 @@ impl crate::System::Xml::Serialization::XmlSerializableMapping {
     pub fn _ctor(
         &mut self,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        elementName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         typeData: *mut crate::System::Xml::Serialization::TypeData,
-        xmlType: *mut crate::System::String,
-        xmlTypeNamespace: *mut crate::System::String,
+        xmlType: *mut quest_hook::libil2cpp::Il2CppString,
+        xmlTypeNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

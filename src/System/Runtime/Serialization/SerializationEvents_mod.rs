@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationEvents {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _onSerializingMethods: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Reflection::MethodInfo,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+SerializationEvents")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::SerializationEvents {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::Serialization
 impl crate::System::Runtime::Serialization::SerializationEvents {
     pub fn AddOnDeserialized(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         handler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Runtime::Serialization::SerializationEventHandler,
@@ -53,7 +53,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
     }
     pub fn AddOnSerialized(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         handler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Runtime::Serialization::SerializationEventHandler,
@@ -84,7 +84,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
     }
     pub fn InvokeOnDeserialized(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,7 +96,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
     }
     pub fn InvokeOnDeserializing(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -108,7 +108,7 @@ impl crate::System::Runtime::Serialization::SerializationEvents {
     }
     pub fn InvokeOnSerializing(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

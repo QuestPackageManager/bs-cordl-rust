@@ -81,10 +81,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
             .invoke("GetRawCertData", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ImportPkcs12_SafePasswordHandle0(
+    pub fn ImportPkcs12_Il2CppString1(
         &mut self,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        password: *mut crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Mono::Security::X509::X509Certificate,
     > {
@@ -95,10 +95,10 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Im
             .invoke("ImportPkcs12", (rawData, password))?;
         Ok(__cordl_ret)
     }
-    pub fn ImportPkcs12_String1(
+    pub fn ImportPkcs12_SafePasswordHandle0(
         &mut self,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        password: *mut crate::System::String,
+        password: *mut crate::Microsoft::Win32::SafeHandles::SafePasswordHandle,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Mono::Security::X509::X509Certificate,
     > {

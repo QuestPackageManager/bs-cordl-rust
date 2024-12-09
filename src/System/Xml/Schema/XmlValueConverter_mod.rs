@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlValueConverter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Schema+XmlValueConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlValueConverter")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlValueConverter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,11 +28,11 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         &mut self,
         value: crate::System::DateTime,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -40,49 +40,49 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         &mut self,
         value: crate::System::Decimal,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeType_Object7(
+    pub fn ChangeType_Il2CppObject7(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeType_Object_IXmlNamespaceResolver8(
+    pub fn ChangeType_Il2CppObject_IXmlNamespaceResolver8(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeType_String_IXmlNamespaceResolver6(
+    pub fn ChangeType_Il2CppString_IXmlNamespaceResolver6(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }
@@ -90,11 +90,11 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         &mut self,
         value: bool,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -102,11 +102,11 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         &mut self,
         value: f64,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -114,11 +114,11 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         &mut self,
         value: i32,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -126,11 +126,11 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         &mut self,
         value: i64,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -151,9 +151,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToBoolean_Object5(
+    pub fn ToBoolean_Il2CppObject5(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -161,9 +161,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToBoolean_String4(
+    pub fn ToBoolean_Il2CppString4(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,9 +212,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
             .invoke("ToDateTimeOffset", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDateTimeOffset_Object2(
+    pub fn ToDateTimeOffset_Il2CppObject2(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -223,9 +223,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
             .invoke("ToDateTimeOffset", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDateTimeOffset_String1(
+    pub fn ToDateTimeOffset_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,9 +245,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDateTime_Object6(
+    pub fn ToDateTime_Il2CppObject6(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -256,9 +256,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDateTime_String5(
+    pub fn ToDateTime_Il2CppString5(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -311,9 +311,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
             .invoke("ToDateTime", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDecimal_Object1(
+    pub fn ToDecimal_Il2CppObject1(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -322,9 +322,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
             .invoke("ToDecimal", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDecimal_String0(
+    pub fn ToDecimal_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Decimal> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -343,9 +343,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: f64 = __cordl_object.invoke("ToDouble", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDouble_Object5(
+    pub fn ToDouble_Il2CppObject5(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -353,9 +353,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: f64 = __cordl_object.invoke("ToDouble", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToDouble_String4(
+    pub fn ToDouble_Il2CppString4(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -397,9 +397,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToInt32_Object5(
+    pub fn ToInt32_Il2CppObject5(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -407,9 +407,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: i32 = __cordl_object.invoke("ToInt32", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToInt32_String4(
+    pub fn ToInt32_Il2CppString4(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -451,9 +451,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToInt64_Object5(
+    pub fn ToInt64_Il2CppObject5(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -461,9 +461,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToInt64_String4(
+    pub fn ToInt64_Il2CppString4(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -495,9 +495,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: i64 = __cordl_object.invoke("ToInt64", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToSingle_Object2(
+    pub fn ToSingle_Il2CppObject2(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -505,9 +505,9 @@ impl crate::System::Xml::Schema::XmlValueConverter {
         let __cordl_ret: f32 = __cordl_object.invoke("ToSingle", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToSingle_String1(
+    pub fn ToSingle_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -525,111 +525,111 @@ impl crate::System::Xml::Schema::XmlValueConverter {
     pub fn ToString_DateTime6(
         &mut self,
         value: crate::System::DateTime,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_DateTimeOffset7(
         &mut self,
         value: crate::System::DateTimeOffset,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_Decimal3(
         &mut self,
         value: crate::System::Decimal,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_Object8(
+    pub fn ToString_Il2CppObject8(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_Object_IXmlNamespaceResolver9(
+    pub fn ToString_Il2CppObject_IXmlNamespaceResolver9(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value, nsResolver))?;
         Ok(__cordl_ret)
     }
     pub fn ToString__cordl_bool0(
         &mut self,
         value: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_f32_4(
         &mut self,
         value: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_f64_5(
         &mut self,
         value: f64,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_i32_1(
         &mut self,
         value: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_i64_2(
         &mut self,
         value: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }

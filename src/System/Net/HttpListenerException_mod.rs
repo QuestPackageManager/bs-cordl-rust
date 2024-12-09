@@ -41,9 +41,9 @@ impl crate::System::Net::HttpListenerException {
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String1(
+    pub fn New_i32_Il2CppString1(
         errorCode: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -73,10 +73,10 @@ impl crate::System::Net::HttpListenerException {
             .invoke(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String1(
+    pub fn _ctor_i32_Il2CppString1(
         &mut self,
         errorCode: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

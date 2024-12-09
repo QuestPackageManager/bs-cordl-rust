@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SafeStringMarshal {
-    pub str: *mut crate::System::String,
+    pub str: *mut quest_hook::libil2cpp::Il2CppString,
     pub marshaled_string: crate::System::IntPtr,
 }
 #[cfg(feature = "Mono+SafeStringMarshal")]
@@ -34,7 +34,7 @@ impl crate::Mono::SafeStringMarshal {
     }
     pub fn _ctor(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

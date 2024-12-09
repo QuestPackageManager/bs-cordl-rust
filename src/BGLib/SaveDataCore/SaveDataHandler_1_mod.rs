@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SaveDataHandler_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _state_k__BackingField: crate::BGLib::SaveDataCore::LoaderState,
     pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
     pub _loadFileTask: *mut crate::System::Threading::Tasks::Task_1<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BGLib+SaveDataCore+SaveDataHandler_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::BGLib::SaveDataCore::SaveDataHandler_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -289,7 +289,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
     }
     pub fn get_fileNameWithExtension(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -297,7 +297,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BGLib::SaveDataCore::SaveDataHandler
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_fileNameWithExtension", ())?;
         Ok(__cordl_ret)
     }

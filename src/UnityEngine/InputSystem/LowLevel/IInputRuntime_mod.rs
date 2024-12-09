@@ -130,13 +130,15 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
     pub fn get_onDeviceDiscovered(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_2<i32, *mut crate::System::String>,
+        *mut crate::System::Action_2<i32, *mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Action_2<i32, *mut crate::System::String> = __cordl_object
-            .invoke("get_onDeviceDiscovered", ())?;
+        let __cordl_ret: *mut crate::System::Action_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("get_onDeviceDiscovered", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_onPlayerFocusChanged(
@@ -244,7 +246,10 @@ impl crate::UnityEngine::InputSystem::LowLevel::IInputRuntime {
     }
     pub fn set_onDeviceDiscovered(
         &mut self,
-        value: *mut crate::System::Action_2<i32, *mut crate::System::String>,
+        value: *mut crate::System::Action_2<
+            i32,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

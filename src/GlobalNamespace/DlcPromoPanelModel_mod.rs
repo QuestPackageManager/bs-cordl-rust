@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
     pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
     pub _analyticsModel: *mut crate::GlobalNamespace::IAnalyticsModel,
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DlcPromoPanelModel")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,8 +93,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     pub fn BuyLevelButtonWasPressed(
         &mut self,
         level: *mut crate::GlobalNamespace::BeatmapLevel,
-        page: *mut crate::System::String,
-        customText: *mut crate::System::String,
+        page: *mut quest_hook::libil2cpp::Il2CppString,
+        customText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -106,8 +106,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     pub fn BuyLevelButtonWasShown(
         &mut self,
         level: *mut crate::GlobalNamespace::BeatmapLevel,
-        page: *mut crate::System::String,
-        customText: *mut crate::System::String,
+        page: *mut quest_hook::libil2cpp::Il2CppString,
+        customText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,8 +119,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     pub fn BuyPackButtonWasPressed(
         &mut self,
         pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        page: *mut crate::System::String,
-        customText: *mut crate::System::String,
+        page: *mut quest_hook::libil2cpp::Il2CppString,
+        customText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,8 +132,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     pub fn BuyPackButtonWasShown(
         &mut self,
         pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
-        page: *mut crate::System::String,
-        customText: *mut crate::System::String,
+        page: *mut quest_hook::libil2cpp::Il2CppString,
+        customText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -252,8 +252,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     }
     pub fn MainMenuDlcPromoBannerWasPressed(
         &mut self,
-        packId: *mut crate::System::String,
-        customText: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
+        customText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -264,8 +264,8 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     }
     pub fn MainMenuDlcPromoBannerWasShown(
         &mut self,
-        packId: *mut crate::System::String,
-        customText: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
+        customText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -426,12 +426,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DlcPromoPanel
 #[repr(C)]
 #[derive(Debug)]
 pub struct DlcPromoPanelModel_PromoInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
-    pub id: *mut crate::System::String,
+    pub id: *mut quest_hook::libil2cpp::Il2CppString,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub bannerImage: *mut crate::UnityEngine::Sprite,
-    pub bannerPromoText: *mut crate::System::String,
+    pub bannerPromoText: *mut quest_hook::libil2cpp::Il2CppString,
     pub bannerPromoTextPosition: f32,
 }
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
@@ -441,7 +441,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -456,6 +456,17 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo
 impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
     pub type PromoType = crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType;
+    pub fn New_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
+        promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
+        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (packId, promoBannerInfo, contentRating))?;
+        Ok(__cordl_object)
+    }
     pub fn New_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         levelPromoInfo: *mut crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -466,16 +477,18 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
             .invoke_void(".ctor", (levelPromoInfo, contentRating))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_PromoBannerInfoSO_PlayerSensitivityFlag0(
-        packId: *mut crate::System::String,
+    pub fn _ctor_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
+        &mut self,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
         promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (packId, promoBannerInfo, contentRating))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (packId, promoBannerInfo, contentRating))?;
+        Ok(__cordl_ret)
     }
     pub fn _ctor_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         &mut self,
@@ -487,19 +500,6 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (levelPromoInfo, contentRating))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_PromoBannerInfoSO_PlayerSensitivityFlag0(
-        &mut self,
-        packId: *mut crate::System::String,
-        promoBannerInfo: *mut crate::GlobalNamespace::PromoBannerInfoSO,
-        contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (packId, promoBannerInfo, contentRating))?;
         Ok(__cordl_ret)
     }
 }

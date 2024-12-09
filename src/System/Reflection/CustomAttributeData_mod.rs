@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomAttributeData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ctorInfo: *mut crate::System::Reflection::ConstructorInfo,
     pub ctorArgs: *mut crate::System::Collections::Generic::IList_1<
         crate::System::Reflection::CustomAttributeTypedArgument,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+CustomAttributeData")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::System::Reflection::CustomAttributeData {
     pub type LazyCAttrData = crate::System::Reflection::CustomAttributeData_LazyCAttrData;
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -106,11 +106,11 @@ impl crate::System::Reflection::CustomAttributeData {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -231,7 +231,7 @@ for crate::System::Reflection::CustomAttributeData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomAttributeData_LazyCAttrData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assembly: *mut crate::System::Reflection::Assembly,
     pub data: crate::System::IntPtr,
     pub data_length: u32,
@@ -244,7 +244,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+CustomAttributeData+LazyCAttrData")]
 impl std::ops::Deref for crate::System::Reflection::CustomAttributeData_LazyCAttrData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

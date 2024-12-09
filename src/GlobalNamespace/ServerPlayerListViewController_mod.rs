@@ -17,7 +17,9 @@ pub struct ServerPlayerListViewController {
     pub selectSuggestedGameplayModifiersEvent: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::GameplayModifiers,
     >,
-    pub kickPlayerEvent: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub kickPlayerEvent: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub didOpenInvitePanelEvent: *mut crate::System::Action,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
 }
@@ -71,7 +73,7 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn HandleKickPlayer(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +105,7 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn HandleLobbyPlayersDataDidChange(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -194,7 +196,7 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn add_kickPlayerEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -240,7 +242,7 @@ impl crate::GlobalNamespace::ServerPlayerListViewController {
     }
     pub fn remove_kickPlayerEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

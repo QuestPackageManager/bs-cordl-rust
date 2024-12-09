@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectTypeInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: *mut crate::System::Type,
     pub InjectMethods: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::Zenject::InjectTypeInfo_InjectMethodInfo,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectTypeInfo")]
 impl std::ops::Deref for crate::Zenject::InjectTypeInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -129,7 +129,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::InjectTypeInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectTypeInfo_InjectConstructorInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Factory: *mut crate::Zenject::ZenFactoryMethod,
     pub Parameters: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::Zenject::InjectableInfo,
@@ -142,7 +142,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectTypeInfo+InjectConstructorInfo")]
 impl std::ops::Deref for crate::Zenject::InjectTypeInfo_InjectConstructorInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -196,7 +196,7 @@ for crate::Zenject::InjectTypeInfo_InjectConstructorInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectTypeInfo_InjectMemberInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Setter: *mut crate::Zenject::ZenMemberSetterMethod,
     pub Info: *mut crate::Zenject::InjectableInfo,
 }
@@ -207,7 +207,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectTypeInfo+InjectMemberInfo")]
 impl std::ops::Deref for crate::Zenject::InjectTypeInfo_InjectMemberInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -257,8 +257,8 @@ for crate::Zenject::InjectTypeInfo_InjectMemberInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectTypeInfo_InjectMethodInfo {
-    __cordl_parent: crate::System::Object,
-    pub Name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub Action: *mut crate::Zenject::ZenInjectMethod,
     pub Parameters: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::Zenject::InjectableInfo,
@@ -271,7 +271,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectTypeInfo+InjectMethodInfo")]
 impl std::ops::Deref for crate::Zenject::InjectTypeInfo_InjectMethodInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -289,7 +289,7 @@ impl crate::Zenject::InjectTypeInfo_InjectMethodInfo {
         parameters: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Zenject::InjectableInfo,
         >,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -303,7 +303,7 @@ impl crate::Zenject::InjectTypeInfo_InjectMethodInfo {
         parameters: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Zenject::InjectableInfo,
         >,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

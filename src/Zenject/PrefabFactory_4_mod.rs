@@ -7,7 +7,7 @@ pub struct PrefabFactory_4<
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     __cordl_phantom_P1: std::marker::PhantomData<P1>,
     __cordl_phantom_P2: std::marker::PhantomData<P2>,
@@ -26,7 +26,7 @@ impl<
     P3: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::PrefabFactory_4<P1, P2, P3, T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

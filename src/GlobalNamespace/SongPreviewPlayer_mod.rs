@@ -266,7 +266,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongPreviewPl
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer_AudioSourceParams {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _position: crate::UnityEngine::Vector3,
     pub _reverbZoneMix: f32,
     pub _spatialBlend: f32,
@@ -280,7 +280,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPreviewPlayer+AudioSourceParams")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -356,7 +356,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceParams {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer_AudioSourceVolumeController {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub audioSource: *mut crate::UnityEngine::AudioSource,
     pub _maxVolume_k__BackingField: f32,
     pub _volume: f32,
@@ -370,7 +370,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SongPreviewPlayer+AudioSourceVolumeController")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -455,7 +455,7 @@ for crate::GlobalNamespace::SongPreviewPlayer_AudioSourceVolumeController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SongPreviewPlayer_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ambientVolumeScale: f32,
 }
 #[cfg(feature = "SongPreviewPlayer+InitData")]
@@ -465,7 +465,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SongPreviewPlayer+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::SongPreviewPlayer_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -5,7 +5,7 @@ pub struct JsonConverterAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _converterType: *mut crate::System::Type,
     pub _ConverterParameters_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+JsonConverterAttribute")]
@@ -31,7 +31,7 @@ impl crate::Newtonsoft::Json::JsonConverterAttribute {
     pub fn New_Il2CppArray1(
         converterType: *mut crate::System::Type,
         converterParameters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -53,7 +53,7 @@ impl crate::Newtonsoft::Json::JsonConverterAttribute {
         &mut self,
         converterType: *mut crate::System::Type,
         converterParameters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -77,13 +77,13 @@ impl crate::Newtonsoft::Json::JsonConverterAttribute {
     pub fn get_ConverterParameters(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_ConverterParameters", ())?;
         Ok(__cordl_ret)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7 {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Mono+Security+PKCS7")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,8 +45,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_ContentInfo {
-    __cordl_parent: crate::System::Object,
-    pub contentType: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub contentType: *mut quest_hook::libil2cpp::Il2CppString,
     pub content: *mut crate::Mono::Security::ASN1,
 }
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
@@ -56,7 +56,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+ContentInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_ContentInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,8 +104,8 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke_void(".ctor", (data))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        oid: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -145,9 +145,9 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
             .invoke(".ctor", (data))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,11 +178,11 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
     }
     pub fn get_ContentType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ContentType", ())?;
         Ok(__cordl_ret)
     }
@@ -199,7 +199,7 @@ impl crate::Mono::Security::PKCS7_ContentInfo {
     }
     pub fn set_ContentType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -222,7 +222,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_ContentI
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_EncryptedData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _version: u8,
     pub _content: *mut crate::Mono::Security::PKCS7_ContentInfo,
     pub _encryptionAlgorithm: *mut crate::Mono::Security::PKCS7_ContentInfo,
@@ -235,7 +235,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+EncryptedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_EncryptedData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -319,9 +319,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_Encrypte
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_SignedData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: u8,
-    pub hashAlgorithm: *mut crate::System::String,
+    pub hashAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
     pub contentInfo: *mut crate::Mono::Security::PKCS7_ContentInfo,
     pub certs: *mut crate::Mono::Security::X509::X509CertificateCollection,
     pub crls: *mut crate::System::Collections::ArrayList,
@@ -335,7 +335,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+SignedData")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignedData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -359,12 +359,12 @@ impl crate::Mono::Security::PKCS7_SignedData {
     }
     pub fn OidToName(
         &mut self,
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("OidToName", (oid))?;
         Ok(__cordl_ret)
     }
@@ -413,7 +413,7 @@ impl crate::Mono::Security::PKCS7_SignedData {
     }
     pub fn set_HashName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -436,13 +436,13 @@ impl quest_hook::libil2cpp::ObjectType for crate::Mono::Security::PKCS7_SignedDa
 #[repr(C)]
 #[derive(Debug)]
 pub struct PKCS7_SignerInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: u8,
-    pub hashAlgorithm: *mut crate::System::String,
+    pub hashAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
     pub authenticatedAttributes: *mut crate::System::Collections::ArrayList,
     pub unauthenticatedAttributes: *mut crate::System::Collections::ArrayList,
     pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub issuer: *mut crate::System::String,
+    pub issuer: *mut quest_hook::libil2cpp::Il2CppString,
     pub serial: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub ski: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -453,7 +453,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+PKCS7+SignerInfo")]
 impl std::ops::Deref for crate::Mono::Security::PKCS7_SignerInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -515,21 +515,21 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
     }
     pub fn get_HashName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_HashName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_IssuerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_IssuerName", ())?;
         Ok(__cordl_ret)
     }
@@ -572,7 +572,7 @@ impl crate::Mono::Security::PKCS7_SignerInfo {
     }
     pub fn set_HashName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

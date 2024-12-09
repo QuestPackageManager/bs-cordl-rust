@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathScanner {
-    __cordl_parent: crate::System::Object,
-    pub _xpathExpr: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _xpathExpr: *mut quest_hook::libil2cpp::Il2CppString,
     pub _xpathExprIndex: i32,
     pub _kind: crate::MS::Internal::Xml::XPath::XPathScanner_LexKind,
     pub _currentChar: char,
-    pub _name: *mut crate::System::String,
-    pub _prefix: *mut crate::System::String,
-    pub _stringValue: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stringValue: *mut quest_hook::libil2cpp::Il2CppString,
     pub _numberValue: f64,
     pub _canBeFunction: bool,
     pub _xmlCharType: crate::System::Xml::XmlCharType,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathScanner {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
     #[cfg(feature = "MS+Internal+Xml+XPath+XPathScanner+LexKind")]
     pub type LexKind = crate::MS::Internal::Xml::XPath::XPathScanner_LexKind;
     pub fn New(
-        xpathExpr: *mut crate::System::String,
+        xpathExpr: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -68,11 +68,11 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
     }
     pub fn ScanName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ScanName", ())?;
         Ok(__cordl_ret)
     }
@@ -85,11 +85,11 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
     }
     pub fn ScanString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ScanString", ())?;
         Ok(__cordl_ret)
     }
@@ -105,7 +105,7 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
     }
     pub fn _ctor(
         &mut self,
-        xpathExpr: *mut crate::System::String,
+        xpathExpr: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -142,11 +142,11 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
@@ -159,31 +159,31 @@ impl crate::MS::Internal::Xml::XPath::XPathScanner {
     }
     pub fn get_Prefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SourceText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SourceText", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_StringValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_StringValue", ())?;
         Ok(__cordl_ret)
     }

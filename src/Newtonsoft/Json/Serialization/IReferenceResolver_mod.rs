@@ -27,9 +27,9 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::IReferenceRe
 impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     pub fn AddReference(
         &mut self,
-        context: *mut crate::System::Object,
-        reference: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
+        reference: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -40,20 +40,20 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     }
     pub fn GetReference(
         &mut self,
-        context: *mut crate::System::Object,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetReference", (context, value))?;
         Ok(__cordl_ret)
     }
     pub fn IsReferenced(
         &mut self,
-        context: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,13 +63,13 @@ impl crate::Newtonsoft::Json::Serialization::IReferenceResolver {
     }
     pub fn ResolveReference(
         &mut self,
-        context: *mut crate::System::Object,
-        reference: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
+        reference: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ResolveReference", (context, reference))?;
         Ok(__cordl_ret)
     }

@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignatureDescription {
-    __cordl_parent: crate::System::Object,
-    pub _strKey: *mut crate::System::String,
-    pub _strDigest: *mut crate::System::String,
-    pub _strFormatter: *mut crate::System::String,
-    pub _strDeformatter: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _strKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strDigest: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strFormatter: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _strDeformatter: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Security+Cryptography+SignatureDescription")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+SignatureDescription")]
 impl std::ops::Deref for crate::System::Security::Cryptography::SignatureDescription {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::System::Security::Cryptography::SignatureDescription {
     }
     pub fn set_DeformatterAlgorithm(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +59,7 @@ impl crate::System::Security::Cryptography::SignatureDescription {
     }
     pub fn set_DigestAlgorithm(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +70,7 @@ impl crate::System::Security::Cryptography::SignatureDescription {
     }
     pub fn set_FormatterAlgorithm(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,7 +81,7 @@ impl crate::System::Security::Cryptography::SignatureDescription {
     }
     pub fn set_KeyAlgorithm(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

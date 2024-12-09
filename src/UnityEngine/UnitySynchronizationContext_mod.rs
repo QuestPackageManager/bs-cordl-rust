@@ -105,7 +105,7 @@ impl crate::UnityEngine::UnitySynchronizationContext {
     pub fn Post(
         &mut self,
         callback: *mut crate::System::Threading::SendOrPostCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -117,7 +117,7 @@ impl crate::UnityEngine::UnitySynchronizationContext {
     pub fn Send(
         &mut self,
         callback: *mut crate::System::Threading::SendOrPostCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -167,7 +167,7 @@ for crate::UnityEngine::UnitySynchronizationContext {
 #[derive(Debug, Clone)]
 pub struct UnitySynchronizationContext_WorkRequest {
     pub m_DelagateCallback: *mut crate::System::Threading::SendOrPostCallback,
-    pub m_DelagateState: *mut crate::System::Object,
+    pub m_DelagateState: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_WaitHandle: *mut crate::System::Threading::ManualResetEvent,
 }
 #[cfg(feature = "UnityEngine+UnitySynchronizationContext+WorkRequest")]
@@ -202,7 +202,7 @@ impl crate::UnityEngine::UnitySynchronizationContext_WorkRequest {
     pub fn _ctor(
         &mut self,
         callback: *mut crate::System::Threading::SendOrPostCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         waitHandle: *mut crate::System::Threading::ManualResetEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

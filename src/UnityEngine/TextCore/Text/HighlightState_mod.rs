@@ -25,7 +25,7 @@ for crate::UnityEngine::TextCore::Text::HighlightState {
 impl crate::UnityEngine::TextCore::Text::HighlightState {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

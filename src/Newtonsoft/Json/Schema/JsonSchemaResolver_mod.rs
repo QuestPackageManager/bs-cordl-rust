@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaResolver {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _LoadedSchemas_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
         *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaResolver")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaResolver {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaResolver {
     pub type __c__DisplayClass5_0 = crate::Newtonsoft::Json::Schema::JsonSchemaResolver___c__DisplayClass5_0;
     pub fn GetSchema(
         &mut self,
-        reference: *mut crate::System::String,
+        reference: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     > {

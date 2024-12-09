@@ -6,7 +6,7 @@ pub struct ColorSchemeDropdown {
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
     pub _colorSchemeView: *mut crate::GlobalNamespace::ColorSchemeView,
     pub _cellPrefab: *mut crate::GlobalNamespace::ColorSchemeTableCell,
-    pub _cellReuseIdentifier: *mut crate::System::String,
+    pub _cellReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cellSize: f32,
     pub _colorSchemes: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::GlobalNamespace::ColorScheme,

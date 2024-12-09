@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathNodeInfoAtom {
-    __cordl_parent: crate::System::Object,
-    pub _localName: *mut crate::System::String,
-    pub _namespaceUri: *mut crate::System::String,
-    pub _prefix: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _localName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
     pub _pageParent: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::MS::Internal::Xml::Cache::XPathNode,
     >,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNodeInfoAtom")]
 impl std::ops::Deref for crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,21 +63,21 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
     }
     pub fn get_LocalName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NamespaceUri(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NamespaceUri", ())?;
         Ok(__cordl_ret)
     }
@@ -110,11 +110,11 @@ impl crate::MS::Internal::Xml::Cache::XPathNodeInfoAtom {
     }
     pub fn get_Prefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }

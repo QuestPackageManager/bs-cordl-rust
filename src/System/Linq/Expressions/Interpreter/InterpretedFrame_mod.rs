@@ -2,14 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InterpretedFrame {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Interpreter: *mut crate::System::Linq::Expressions::Interpreter::Interpreter,
     pub _parent: *mut crate::System::Linq::Expressions::Interpreter::InterpretedFrame,
     pub _continuations: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _continuationIndex: i32,
     pub _pendingContinuation: i32,
-    pub _pendingValue: *mut crate::System::Object,
-    pub Data: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub _pendingValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Data: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub Closure: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Runtime::CompilerServices::IStrongBox,
     >,
@@ -25,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrame")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,7 +95,7 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
     pub fn Goto(
         &mut self,
         labelIndex: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         gotoExceptionHandler: bool,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -133,18 +135,24 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
             .invoke_void(".ctor", (interpreter, closure))?;
         Ok(__cordl_object)
     }
-    pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn Peek(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Peek", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Peek", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn Pop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Pop", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
     pub fn PopPendingContinuation(
@@ -178,9 +186,9 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
             .invoke("PushPendingContinuation", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Push_Object0(
+    pub fn Push_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -317,11 +325,11 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrame {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct TMP_FontAsset {
     __cordl_parent: crate::TMPro::TMP_Asset,
-    pub m_Version: *mut crate::System::String,
-    pub m_SourceFontFileGUID: *mut crate::System::String,
+    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SourceFontFileGUID: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_SourceFontFile: *mut crate::UnityEngine::Font,
     pub m_AtlasPopulationMode: crate::TMPro::AtlasPopulationMode,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
@@ -269,7 +269,7 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn HasCharacters_ByRefMut0(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::List_1<char>,
         >,
@@ -283,7 +283,7 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn HasCharacters_ByRefMut__cordl_bool__cordl_bool1(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         missingCharacters: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<u32>,
         >,
@@ -300,9 +300,9 @@ impl crate::TMPro::TMP_FontAsset {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn HasCharacters_String2(
+    pub fn HasCharacters_Il2CppString2(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -459,10 +459,12 @@ impl crate::TMPro::TMP_FontAsset {
             .invoke("TryAddCharacters", (unicodes, includeFontFeatures))?;
         Ok(__cordl_ret)
     }
-    pub fn TryAddCharacters_String_ByRefMut__cordl_bool3(
+    pub fn TryAddCharacters_Il2CppString_ByRefMut__cordl_bool3(
         &mut self,
-        characters: *mut crate::System::String,
-        missingCharacters: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        characters: *mut quest_hook::libil2cpp::Il2CppString,
+        missingCharacters: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         includeFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -475,9 +477,9 @@ impl crate::TMPro::TMP_FontAsset {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn TryAddCharacters_String__cordl_bool2(
+    pub fn TryAddCharacters_Il2CppString__cordl_bool2(
         &mut self,
-        characters: *mut crate::System::String,
+        characters: *mut quest_hook::libil2cpp::Il2CppString,
         includeFontFeatures: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -880,11 +882,11 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn get_version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_version", ())?;
         Ok(__cordl_ret)
     }
@@ -1100,7 +1102,7 @@ impl crate::TMPro::TMP_FontAsset {
     }
     pub fn set_version(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

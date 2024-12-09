@@ -34,7 +34,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::Newtonsoft::Json::Linq::IJEnumerable
     }
     pub fn get_Item(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Linq::IJEnumerable_1<
             *mut crate::Newtonsoft::Json::Linq::JToken,

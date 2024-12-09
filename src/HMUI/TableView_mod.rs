@@ -31,7 +31,7 @@ pub struct TableView {
         *mut crate::HMUI::TableCell,
     >,
     pub _reusableCells: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Collections::Generic::List_1<*mut crate::HMUI::TableCell>,
     >,
     pub _selectedCellIdxs: *mut crate::System::Collections::Generic::HashSet_1<i32>,
@@ -134,7 +134,7 @@ impl crate::HMUI::TableView {
     }
     pub fn DequeueReusableCellForIdentifier(
         &mut self,
-        identifier: *mut crate::System::String,
+        identifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HMUI::TableCell> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,7 +168,7 @@ impl crate::HMUI::TableView {
         &mut self,
         selectableCell: *mut crate::HMUI::SelectableCell,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
-        changeOwner: *mut crate::System::Object,
+        changeOwner: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -603,8 +603,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::HMUI::TableView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TableView_CellsGroup {
-    __cordl_parent: crate::System::Object,
-    pub _reuseIdentifier: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _reuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cells: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HMUI::TableCell,
     >,
@@ -616,7 +616,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+TableView+CellsGroup")]
 impl std::ops::Deref for crate::HMUI::TableView_CellsGroup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -661,11 +661,11 @@ impl crate::HMUI::TableView_CellsGroup {
     }
     pub fn get_reuseIdentifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_reuseIdentifier", ())?;
         Ok(__cordl_ret)
     }

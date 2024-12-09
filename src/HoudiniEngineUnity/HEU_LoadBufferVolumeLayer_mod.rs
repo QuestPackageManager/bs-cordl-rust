@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_LoadBufferVolumeLayer {
-    __cordl_parent: crate::System::Object,
-    pub _layerName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _layerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _partID: i32,
     pub _heightMapWidth: i32,
     pub _heightMapHeight: i32,
     pub _strength: f32,
-    pub _diffuseTexturePath: *mut crate::System::String,
-    pub _maskTexturePath: *mut crate::System::String,
+    pub _diffuseTexturePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _maskTexturePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _metallic: f32,
-    pub _normalTexturePath: *mut crate::System::String,
+    pub _normalTexturePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _normalScale: f32,
     pub _smoothness: f32,
     pub _specularColor: crate::UnityEngine::Color,
@@ -29,7 +29,7 @@ pub struct HEU_LoadBufferVolumeLayer {
     pub _minBounds: crate::UnityEngine::Vector3,
     pub _maxBounds: crate::UnityEngine::Vector3,
     pub _center: crate::UnityEngine::Vector3,
-    pub _layerPath: *mut crate::System::String,
+    pub _layerPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _hasLayerAttributes: bool,
     pub _layerType: crate::HoudiniEngineUnity::HFLayerType,
 }
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_LoadBufferVolumeLayer")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_LoadBufferVolumeLayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

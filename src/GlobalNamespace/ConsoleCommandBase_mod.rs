@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConsoleCommandBase {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _console: *mut crate::GlobalNamespace::DebugConsoleController,
     pub _arguments: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::ArgumentBase,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConsoleCommandBase")]
 impl std::ops::Deref for crate::GlobalNamespace::ConsoleCommandBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     pub type __c__DisplayClass11_0 = crate::GlobalNamespace::ConsoleCommandBase___c__DisplayClass11_0;
     pub fn AreArgumentsValid(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         messages: *mut crate::System::Collections::Generic::List_1<
             crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
@@ -58,7 +60,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     }
     pub fn ExecuteAsync_Il2CppArray_List_1_0(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         messages: *mut crate::System::Collections::Generic::List_1<
             crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
@@ -112,11 +116,11 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     }
     pub fn GetCommandName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetCommandName", ())?;
         Ok(__cordl_ret)
     }
@@ -179,7 +183,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     }
     pub fn ParseMatchedArguments(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         messages: *mut crate::System::Collections::Generic::List_1<
             crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
@@ -198,7 +204,9 @@ impl crate::GlobalNamespace::ConsoleCommandBase {
     }
     pub fn ParseUnmatchedArguments(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         matchedArguments: *mut crate::System::Collections::Generic::List_1<
             *mut crate::GlobalNamespace::ArgumentBase,
         >,

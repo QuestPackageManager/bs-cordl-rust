@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GeneratedOutputData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameObject: *mut crate::UnityEngine::GameObject,
     pub _renderMaterials: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::Material,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GeneratedOutputData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GeneratedOutputData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

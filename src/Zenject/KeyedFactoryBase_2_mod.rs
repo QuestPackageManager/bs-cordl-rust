@@ -5,7 +5,7 @@ pub struct KeyedFactoryBase_2<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _typePairs: *mut crate::System::Collections::Generic::List_1<
         *mut crate::ModestTree::Util::ValuePair_2<TKey, *mut crate::System::Type>,
@@ -28,7 +28,7 @@ impl<
     TBase: quest_hook::libil2cpp::Type,
     TKey: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::KeyedFactoryBase_2<TBase, TKey> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataBoxGroup {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beat: f32,
     pub _elementDataDict: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_3<i32, *mut crate::System::Type, i32>,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapEventDataBoxGroup")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -142,7 +142,7 @@ for crate::GlobalNamespace::BeatmapEventDataBoxGroup {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEventDataBoxGroup_ElementData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub startBeat: f32,
     pub elementId: i32,
     pub durationOrderIndex: i32,
@@ -162,7 +162,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapEventDataBoxGroup+ElementData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapEventDataBoxGroup_ElementData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

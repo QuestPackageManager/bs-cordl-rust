@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ChainElement {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
     pub status: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
     >,
-    pub info: *mut crate::System::String,
+    pub info: *mut quest_hook::libil2cpp::Il2CppString,
     pub compressed_status_flags: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainElement")]
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainElement")]
 impl std::ops::Deref
 for crate::System::Security::Cryptography::X509Certificates::X509ChainElement {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

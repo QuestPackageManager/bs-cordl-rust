@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct StringConcat {
-    pub s1: *mut crate::System::String,
-    pub s2: *mut crate::System::String,
-    pub s3: *mut crate::System::String,
-    pub s4: *mut crate::System::String,
-    pub delimiter: *mut crate::System::String,
+    pub s1: *mut quest_hook::libil2cpp::Il2CppString,
+    pub s2: *mut quest_hook::libil2cpp::Il2CppString,
+    pub s3: *mut quest_hook::libil2cpp::Il2CppString,
+    pub s4: *mut quest_hook::libil2cpp::Il2CppString,
+    pub delimiter: *mut quest_hook::libil2cpp::Il2CppString,
     pub strList: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub idxStr: i32,
 }
@@ -42,7 +42,7 @@ impl crate::System::Xml::Xsl::Runtime::StringConcat {
     }
     pub fn ConcatNoDelimiter(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -53,8 +53,8 @@ impl crate::System::Xml::Xsl::Runtime::StringConcat {
     }
     pub fn GetResult(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetResult",
             (),

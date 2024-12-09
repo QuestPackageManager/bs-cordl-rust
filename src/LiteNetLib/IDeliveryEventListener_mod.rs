@@ -27,7 +27,7 @@ impl crate::LiteNetLib::IDeliveryEventListener {
     pub fn OnMessageDelivered(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

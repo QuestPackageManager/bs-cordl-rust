@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct DiagnosticEvent {
-    pub m_Graph: *mut crate::System::String,
+    pub m_Graph: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Dependencies: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub m_ObjectId: i32,
-    pub m_DisplayName: *mut crate::System::String,
+    pub m_DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Stream: i32,
     pub m_Frame: i32,
     pub m_Value: i32,
@@ -41,8 +41,8 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     }
     pub fn _ctor(
         &mut self,
-        graph: *mut crate::System::String,
-        name: *mut crate::System::String,
+        graph: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         id: i32,
         stream: i32,
         frame: i32,
@@ -68,8 +68,8 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     }
     pub fn get_DisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_DisplayName",
             (),
@@ -86,8 +86,8 @@ impl crate::UnityEngine::ResourceManagement::Diagnostics::DiagnosticEvent {
     }
     pub fn get_Graph(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Graph",
             (),

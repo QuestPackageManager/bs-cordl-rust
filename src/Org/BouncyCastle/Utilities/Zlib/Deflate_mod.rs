@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Deflate {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub strm: *mut crate::Org::BouncyCastle::Utilities::Zlib::ZStream,
     pub status: i32,
     pub pending_buf: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -67,7 +67,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -575,7 +575,7 @@ for crate::Org::BouncyCastle::Utilities::Zlib::Deflate {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Deflate_Config {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub good_length: i32,
     pub max_lazy: i32,
     pub nice_length: i32,
@@ -590,7 +590,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Utilities+Zlib+Deflate+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Utilities::Zlib::Deflate_Config {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

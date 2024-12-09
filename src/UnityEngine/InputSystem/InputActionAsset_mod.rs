@@ -91,9 +91,9 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
             .invoke("FindActionMap", (id))?;
         Ok(__cordl_ret)
     }
-    pub fn FindActionMap_String__cordl_bool0(
+    pub fn FindActionMap_Il2CppString__cordl_bool0(
         &mut self,
-        nameOrId: *mut crate::System::String,
+        nameOrId: *mut quest_hook::libil2cpp::Il2CppString,
         throwIfNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionMap,
@@ -118,9 +118,9 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
             .invoke("FindAction", (guid))?;
         Ok(__cordl_ret)
     }
-    pub fn FindAction_String__cordl_bool0(
+    pub fn FindAction_Il2CppString__cordl_bool0(
         &mut self,
-        actionNameOrId: *mut crate::System::String,
+        actionNameOrId: *mut quest_hook::libil2cpp::Il2CppString,
         throwIfNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputAction,
@@ -147,7 +147,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
     }
     pub fn FindControlScheme(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::UnityEngine::InputSystem::InputControlScheme>,
     > {
@@ -161,7 +161,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
     }
     pub fn FindControlSchemeIndex(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -196,7 +196,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
     }
     pub fn LoadFromJson(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -285,11 +285,11 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
     }
     pub fn ToJson(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToJson", ())?;
         Ok(__cordl_ret)
     }
@@ -305,7 +305,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset {
     }
     pub fn get_Item(
         &mut self,
-        actionNameOrId: *mut crate::System::String,
+        actionNameOrId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputAction,
     > {
@@ -441,7 +441,7 @@ for crate::UnityEngine::InputSystem::InputActionAsset {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputActionAsset_ReadFileJson {
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::InputSystem::InputActionMap_ReadMapJson,
     >,
@@ -484,7 +484,7 @@ impl crate::UnityEngine::InputSystem::InputActionAsset_ReadFileJson {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputActionAsset_WriteFileJson {
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::InputSystem::InputActionMap_WriteMapJson,
     >,

@@ -3,11 +3,13 @@
 #[derive(Debug)]
 pub struct CheckCatalogsOperation {
     __cordl_parent: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
     pub m_LocalHashes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_LocatorInfos: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
@@ -27,7 +29,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+AddressableAssets+CheckCatalogsOperation")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
     type Target = crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationBase_1<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -100,14 +104,18 @@ impl crate::UnityEngine::AddressableAssets::CheckCatalogsOperation {
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("Start", (locatorInfos))?;
         Ok(__cordl_ret)
     }

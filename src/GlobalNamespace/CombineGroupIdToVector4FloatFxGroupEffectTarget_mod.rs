@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CombineGroupIdToVector4FloatFxGroupEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
-    pub _propertyName: *mut crate::System::String,
+    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _defaultValue: crate::UnityEngine::Vector4,
     pub _lightGroupsToIndices: *mut quest_hook::libil2cpp::Il2CppArray<

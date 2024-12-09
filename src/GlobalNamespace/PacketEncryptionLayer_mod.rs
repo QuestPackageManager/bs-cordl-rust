@@ -374,7 +374,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_EncryptionStatistics {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _packetsReceivedPlaintext: i64,
     pub _packetsReceivedEncrypted: i64,
     pub _packetsReceivedRejected: i64,
@@ -393,7 +393,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PacketEncryptionLayer+EncryptionStatistics")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -589,7 +589,7 @@ for crate::GlobalNamespace::PacketEncryptionLayer_EncryptionStatistics {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PacketEncryptionLayer_PendingEncryptionStateList {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _pendingStatesByPort: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
         *mut crate::GlobalNamespace::EncryptionUtility_IEncryptionState,
@@ -604,7 +604,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PacketEncryptionLayer+PendingEncryptionStateList")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PacketEncryptionLayer_PendingEncryptionStateList {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

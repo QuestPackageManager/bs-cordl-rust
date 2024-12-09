@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlChoiceIdentifierAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub memberName: *mut crate::System::String,
+    pub memberName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlChoiceIdentifierAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -41,11 +41,11 @@ impl crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute {
     }
     pub fn get_MemberName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_MemberName", ())?;
         Ok(__cordl_ret)
     }

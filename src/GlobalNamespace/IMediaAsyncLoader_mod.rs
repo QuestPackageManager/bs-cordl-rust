@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IMediaAsyncLoader {
 impl crate::GlobalNamespace::IMediaAsyncLoader {
     pub fn LoadAudioClipFromFilePathAsync(
         &mut self,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::AudioClip>,
     > {

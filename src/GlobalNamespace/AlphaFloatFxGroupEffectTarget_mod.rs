@@ -4,7 +4,7 @@
 pub struct AlphaFloatFxGroupEffectTarget {
     __cordl_parent: crate::GlobalNamespace::FloatFxGroupEffectTarget,
     pub _staticColor: crate::UnityEngine::Color,
-    pub _property: *mut crate::System::String,
+    pub _property: *mut quest_hook::libil2cpp::Il2CppString,
     pub _materialPropertyBlockControllers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     >,

@@ -29,7 +29,7 @@ for crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
 impl crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
     pub fn Invoke(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
         sslPolicyErrors: crate::Mono::Security::Interface::MonoSslPolicyErrors,
@@ -42,7 +42,7 @@ impl crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -53,7 +53,7 @@ impl crate::Mono::Security::Interface::MonoRemoteCertificateValidationCallback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

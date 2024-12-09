@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRNotifications {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRNotifications,
 }
 #[cfg(feature = "OVR+OpenVR+CVRNotifications")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRNotifications")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRNotifications {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::OVR::OpenVR::CVRNotifications {
         ulOverlayHandle: u64,
         ulUserValue: u64,
         _cordl_type: crate::OVR::OpenVR::EVRNotificationType,
-        pchText: *mut crate::System::String,
+        pchText: *mut quest_hook::libil2cpp::Il2CppString,
         style: crate::OVR::OpenVR::EVRNotificationStyle,
         pImage: quest_hook::libil2cpp::ByRefMut<
             crate::OVR::OpenVR::NotificationBitmap_t,

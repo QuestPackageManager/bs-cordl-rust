@@ -2,24 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerResponse {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub disposed: bool,
     pub content_encoding: *mut crate::System::Text::Encoding,
     pub content_length: i64,
     pub cl_set: bool,
-    pub content_type: *mut crate::System::String,
+    pub content_type: *mut quest_hook::libil2cpp::Il2CppString,
     pub cookies: *mut crate::System::Net::CookieCollection,
     pub headers: *mut crate::System::Net::WebHeaderCollection,
     pub keep_alive: bool,
     pub output_stream: *mut crate::System::Net::ResponseStream,
     pub version: *mut crate::System::Version,
-    pub location: *mut crate::System::String,
+    pub location: *mut quest_hook::libil2cpp::Il2CppString,
     pub status_code: i32,
-    pub status_description: *mut crate::System::String,
+    pub status_description: *mut quest_hook::libil2cpp::Il2CppString,
     pub chunked: bool,
     pub context: *mut crate::System::Net::HttpListenerContext,
     pub HeadersSent: bool,
-    pub headers_lock: *mut crate::System::Object,
+    pub headers_lock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub force_close_chunked: bool,
 }
 #[cfg(feature = "System+Net+HttpListenerResponse")]
@@ -29,7 +29,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerResponse")]
 impl std::ops::Deref for crate::System::Net::HttpListenerResponse {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -174,7 +174,7 @@ impl crate::System::Net::HttpListenerResponse {
     }
     pub fn set_ContentType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

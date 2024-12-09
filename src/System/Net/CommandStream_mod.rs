@@ -14,8 +14,8 @@ pub struct CommandStream {
     pub _doRead: bool,
     pub _doSend: bool,
     pub _currentResponseDescription: *mut crate::System::Net::ResponseDescription,
-    pub _abortReason: *mut crate::System::String,
-    pub _buffer: *mut crate::System::String,
+    pub _abortReason: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _buffer: *mut quest_hook::libil2cpp::Il2CppString,
     pub _encoding: *mut crate::System::Text::Encoding,
     pub _decoder: *mut crate::System::Text::Decoder,
 }
@@ -126,10 +126,10 @@ impl crate::System::Net::CommandStream {
             .invoke("Dispose", (disposing))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateException_FtpStatusCode_String1(
+    pub fn GenerateException_FtpStatusCode_Il2CppString1(
         &mut self,
         code: crate::System::Net::FtpStatusCode,
-        statusDescription: *mut crate::System::String,
+        statusDescription: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -139,9 +139,9 @@ impl crate::System::Net::CommandStream {
             .invoke("GenerateException", (code, statusDescription, innerException))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateException_String_WebExceptionStatus0(
+    pub fn GenerateException_Il2CppString_WebExceptionStatus0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::WebExceptionStatus,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
@@ -169,7 +169,7 @@ impl crate::System::Net::CommandStream {
     }
     pub fn InvokeRequestCallback(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -323,8 +323,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CommandStream {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandStream_PipelineEntry {
-    __cordl_parent: crate::System::Object,
-    pub Command: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Command: *mut quest_hook::libil2cpp::Il2CppString,
     pub Flags: crate::System::Net::CommandStream_PipelineEntryFlags,
 }
 #[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
@@ -334,7 +334,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+CommandStream+PipelineEntry")]
 impl std::ops::Deref for crate::System::Net::CommandStream_PipelineEntry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -358,7 +358,7 @@ impl crate::System::Net::CommandStream_PipelineEntry {
         Ok(__cordl_ret)
     }
     pub fn New_CommandStream_PipelineEntryFlags1(
-        command: *mut crate::System::String,
+        command: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::System::Net::CommandStream_PipelineEntryFlags,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -367,8 +367,8 @@ impl crate::System::Net::CommandStream_PipelineEntry {
             .invoke_void(".ctor", (command, flags))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        command: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        command: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -378,7 +378,7 @@ impl crate::System::Net::CommandStream_PipelineEntry {
     }
     pub fn _ctor_CommandStream_PipelineEntryFlags1(
         &mut self,
-        command: *mut crate::System::String,
+        command: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::System::Net::CommandStream_PipelineEntryFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -388,9 +388,9 @@ impl crate::System::Net::CommandStream_PipelineEntry {
             .invoke(".ctor", (command, flags))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        command: *mut crate::System::String,
+        command: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

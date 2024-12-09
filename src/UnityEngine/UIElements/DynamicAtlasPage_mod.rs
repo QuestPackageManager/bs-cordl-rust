@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicAtlasPage {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _textureId_k__BackingField: crate::UnityEngine::UIElements::TextureId,
     pub _atlas_k__BackingField: *mut crate::UnityEngine::RenderTexture,
     pub _format_k__BackingField: crate::UnityEngine::RenderTextureFormat,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DynamicAtlasPage")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DynamicAtlasPage {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

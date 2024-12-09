@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReadContentAsBinaryHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub reader: *mut crate::System::Xml::XmlReader,
     pub state: crate::System::Xml::ReadContentAsBinaryHelper_State,
     pub valueOffset: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+ReadContentAsBinaryHelper")]
 impl std::ops::Deref for crate::System::Xml::ReadContentAsBinaryHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

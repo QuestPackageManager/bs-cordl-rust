@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactorySubContainerBinderBase_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BindContainer_k__BackingField: *mut crate::Zenject::DiContainer,
     pub _FactoryBindInfo_k__BackingField: *mut crate::Zenject::FactoryBindInfo,
     pub _BindInfo_k__BackingField: *mut crate::Zenject::BindInfo,
-    pub _SubIdentifier_k__BackingField: *mut crate::System::Object,
+    pub _SubIdentifier_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
 }
 #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+FactorySubContainerBinderBase_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::FactorySubContainerBinderBase_1<TContract> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,9 +156,9 @@ impl<
             .invoke("ByNewPrefabInstaller", (prefab, installerType))?;
         Ok(__cordl_ret)
     }
-    pub fn ByNewPrefabResourceInstaller_String0<TInstaller>(
+    pub fn ByNewPrefabResourceInstaller_Il2CppString0<TInstaller>(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
     >
@@ -177,7 +177,7 @@ impl<
     }
     pub fn ByNewPrefabResourceInstaller_Type1(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         installerType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -197,7 +197,7 @@ impl<
         bindContainer: *mut crate::Zenject::DiContainer,
         bindInfo: *mut crate::Zenject::BindInfo,
         factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -217,7 +217,7 @@ impl<
         bindContainer: *mut crate::Zenject::DiContainer,
         bindInfo: *mut crate::Zenject::BindInfo,
         factoryBindInfo: *mut crate::Zenject::FactoryBindInfo,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -309,7 +309,7 @@ impl<
     }
     pub fn get_SubIdentifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -317,7 +317,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SubIdentifier", ())?;
         Ok(__cordl_ret)
     }
@@ -386,7 +386,7 @@ impl<
     }
     pub fn set_SubIdentifier(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TContract: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct GetAssetBundleFileResult {
     pub isError: bool,
-    pub assetBundlePath: *mut crate::System::String,
+    pub assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "GetAssetBundleFileResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -26,7 +26,7 @@ impl crate::GlobalNamespace::GetAssetBundleFileResult {
     pub fn _ctor(
         &mut self,
         isError: bool,
-        assetBundlePath: *mut crate::System::String,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

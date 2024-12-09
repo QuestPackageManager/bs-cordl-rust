@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryAssemblyInfo {
-    __cordl_parent: crate::System::Object,
-    pub assemblyString: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
     pub assembly: *mut crate::System::Reflection::Assembly,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryAssemblyInfo")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryAssemblyInfo")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyIn
         Ok(__cordl_ret)
     }
     pub fn New_Assembly1(
-        assemblyString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
         assembly: *mut crate::System::Reflection::Assembly,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -49,8 +49,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyIn
             .invoke_void(".ctor", (assemblyString, assembly))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        assemblyString: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -60,7 +60,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyIn
     }
     pub fn _ctor_Assembly1(
         &mut self,
-        assemblyString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
         assembly: *mut crate::System::Reflection::Assembly,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,9 +70,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyIn
             .invoke(".ctor", (assemblyString, assembly))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        assemblyString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

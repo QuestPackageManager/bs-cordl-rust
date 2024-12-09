@@ -4,8 +4,8 @@
 pub struct AppDomain {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _mono_app_domain: crate::System::IntPtr,
-    pub _evidence: *mut crate::System::Object,
-    pub _granted: *mut crate::System::Object,
+    pub _evidence: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _granted: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _principalPolicy: i32,
     pub AssemblyLoad: *mut crate::System::AssemblyLoadEventHandler,
     pub AssemblyResolve: *mut crate::System::ResolveEventHandler,
@@ -17,12 +17,12 @@ pub struct AppDomain {
     pub FirstChanceException: *mut crate::System::EventHandler_1<
         *mut crate::System::Runtime::ExceptionServices::FirstChanceExceptionEventArgs,
     >,
-    pub _domain_manager: *mut crate::System::Object,
+    pub _domain_manager: *mut quest_hook::libil2cpp::Il2CppObject,
     pub ReflectionOnlyAssemblyResolve: *mut crate::System::ResolveEventHandler,
-    pub _activation: *mut crate::System::Object,
-    pub _applicationIdentity: *mut crate::System::Object,
+    pub _activation: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _applicationIdentity: *mut quest_hook::libil2cpp::Il2CppObject,
     pub compatibility_switch: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "System+AppDomain")]
@@ -57,7 +57,7 @@ impl crate::System::AppDomain {
     }
     pub fn DoAssemblyResolve(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         requestingAssembly: *mut crate::System::Reflection::Assembly,
         refonly: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
@@ -80,7 +80,7 @@ impl crate::System::AppDomain {
     }
     pub fn DoTypeResolve(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,12 +118,12 @@ impl crate::System::AppDomain {
     }
     pub fn GetData(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetData", (name))?;
         Ok(__cordl_ret)
     }
@@ -139,11 +139,11 @@ impl crate::System::AppDomain {
     }
     pub fn InitializeLifetimeService(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("InitializeLifetimeService", ())?;
         Ok(__cordl_ret)
     }
@@ -156,7 +156,7 @@ impl crate::System::AppDomain {
     }
     pub fn LoadAssembly(
         &mut self,
-        assemblyRef: *mut crate::System::String,
+        assemblyRef: *mut quest_hook::libil2cpp::Il2CppString,
         securityEvidence: *mut crate::System::Security::Policy::Evidence,
         refOnly: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
@@ -175,7 +175,7 @@ impl crate::System::AppDomain {
     }
     pub fn Load_Evidence__cordl_bool_ByRefMut1(
         &mut self,
-        assemblyString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
         assemblySecurity: *mut crate::System::Security::Policy::Evidence,
         refonly: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
@@ -189,9 +189,9 @@ impl crate::System::AppDomain {
             .invoke("Load", (assemblyString, assemblySecurity, refonly, stackMark))?;
         Ok(__cordl_ret)
     }
-    pub fn Load_String0(
+    pub fn Load_Il2CppString0(
         &mut self,
-        assemblyString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::Assembly> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -230,11 +230,11 @@ impl crate::System::AppDomain {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -290,11 +290,11 @@ impl crate::System::AppDomain {
     }
     pub fn getFriendlyName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("getFriendlyName", ())?;
         Ok(__cordl_ret)
     }

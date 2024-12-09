@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexCode {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub Strings: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub Strings: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub TrackCount: i32,
     pub Caps: *mut crate::System::Collections::Hashtable,
     pub CapSize: i32,
@@ -22,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexCode")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexCode {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +88,7 @@ impl crate::System::Text::RegularExpressions::RegexCode {
     pub fn New(
         codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         stringlist: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         trackcount: i32,
         caps: *mut crate::System::Collections::Hashtable,
@@ -121,7 +123,7 @@ impl crate::System::Text::RegularExpressions::RegexCode {
         &mut self,
         codes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         stringlist: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         trackcount: i32,
         caps: *mut crate::System::Collections::Hashtable,

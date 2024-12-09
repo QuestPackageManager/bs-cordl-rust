@@ -75,7 +75,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     pub fn Release(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,10 +133,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContentCatalogProvider_InternalOp {
-    __cordl_parent: crate::System::Object,
-    pub m_LocalDataPath: *mut crate::System::String,
-    pub m_RemoteHashValue: *mut crate::System::String,
-    pub m_LocalHashValue: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_LocalDataPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_RemoteHashValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_LocalHashValue: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_ProviderInterface: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
     pub m_ContentCatalogData: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData,
     pub m_ContentCatalogDataLoadOp: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -161,7 +161,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProvider_InternalOp {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -186,7 +186,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     pub type BundledCatalog = crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog;
     pub fn CanLoadCatalogFromBundle(
         &mut self,
-        idToLoad: *mut crate::System::String,
+        idToLoad: *mut quest_hook::libil2cpp::Il2CppString,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -213,14 +213,14 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         dependencyObjects: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
         disableCatalogUpdateOnStart: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke(
                 "DetermineIdToLoad",
                 (location, dependencyObjects, disableCatalogUpdateOnStart),
@@ -230,17 +230,17 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogPro
     pub fn GetTransformedInternalId(
         &mut self,
         loc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTransformedInternalId", (loc))?;
         Ok(__cordl_ret)
     }
     pub fn LoadCatalog(
         &mut self,
-        idToLoad: *mut crate::System::String,
+        idToLoad: *mut quest_hook::libil2cpp::Il2CppString,
         loadCatalogFromLocalBundle: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -341,8 +341,8 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
 #[repr(C)]
 #[derive(Debug)]
 pub struct InternalOp_ContentCatalogProvider_BundledCatalog {
-    __cordl_parent: crate::System::Object,
-    pub m_BundlePath: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_BundlePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_OpInProgress: bool,
     pub m_LoadBundleRequest: *mut crate::UnityEngine::AssetBundleCreateRequest,
     pub m_CatalogAssetBundle: *mut crate::UnityEngine::AssetBundle,
@@ -369,7 +369,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_ContentCatalogProvider_BundledCatalog {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -419,7 +419,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
         Ok(__cordl_ret)
     }
     pub fn New(
-        bundlePath: *mut crate::System::String,
+        bundlePath: *mut quest_hook::libil2cpp::Il2CppString,
         webRequestTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -480,7 +480,7 @@ impl crate::UnityEngine::AddressableAssets::ResourceProviders::InternalOp_Conten
     }
     pub fn _ctor(
         &mut self,
-        bundlePath: *mut crate::System::String,
+        bundlePath: *mut quest_hook::libil2cpp::Il2CppString,
         webRequestTimeout: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

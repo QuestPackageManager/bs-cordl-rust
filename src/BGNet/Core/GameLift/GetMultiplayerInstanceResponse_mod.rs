@@ -5,10 +5,10 @@ pub struct GetMultiplayerInstanceResponse {
     pub errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
     pub playerSessionInfo: *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
     pub pollIntervalMs: i32,
-    pub ticketId: *mut crate::System::String,
-    pub ticketStatus: *mut crate::System::String,
-    pub placementId: *mut crate::System::String,
-    pub placementStatus: *mut crate::System::String,
+    pub ticketId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ticketStatus: *mut quest_hook::libil2cpp::Il2CppString,
+    pub placementId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub placementStatus: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BGNet+Core+GameLift+GetMultiplayerInstanceResponse")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -34,10 +34,10 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceResponse {
         errorCode: crate::GlobalNamespace::MultiplayerPlacementErrorCode,
         playerSessionInfo: *mut crate::BGNet::Core::GameLift::PlayerSessionInfo,
         pollIntervalMs: i32,
-        ticketId: *mut crate::System::String,
-        ticketStatus: *mut crate::System::String,
-        placementId: *mut crate::System::String,
-        placementStatus: *mut crate::System::String,
+        ticketId: *mut quest_hook::libil2cpp::Il2CppString,
+        ticketStatus: *mut quest_hook::libil2cpp::Il2CppString,
+        placementId: *mut quest_hook::libil2cpp::Il2CppString,
+        placementStatus: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

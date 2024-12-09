@@ -26,7 +26,7 @@ pub struct LevelFilteringNavigationController {
     pub didCloseBeatmapLevelCollectionsEvent: *mut crate::System::Action,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _currentNoDataInfoPrefab: *mut crate::UnityEngine::GameObject,
-    pub _levelPackIdToBeSelectedAfterPresent: *mut crate::System::String,
+    pub _levelPackIdToBeSelectedAfterPresent: *mut quest_hook::libil2cpp::Il2CppString,
     pub _hidePacksIfOneOrNone: bool,
     pub _enableCustomLevels: bool,
     pub _songPackMask: crate::GlobalNamespace::SongPackMask,

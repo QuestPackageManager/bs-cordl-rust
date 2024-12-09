@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct AsyncReadManagerRequestMetric {
-    pub _AssetName_k__BackingField: *mut crate::System::String,
-    pub _FileName_k__BackingField: *mut crate::System::String,
+    pub _AssetName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _FileName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _OffsetBytes_k__BackingField: u64,
     pub _SizeBytes_k__BackingField: u64,
     pub _AssetTypeId_k__BackingField: u64,

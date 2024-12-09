@@ -103,8 +103,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SonyLeaderboa
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLeaderboardIdsSO_LeaderboardIdData {
-    __cordl_parent: crate::System::Object,
-    pub _difficultyBeatmapId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _difficultyBeatmapId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _sonyLeaderboardId: u32,
 }
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
@@ -115,7 +115,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SonyLeaderboardIdsSO+LeaderboardIdData")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,7 +131,7 @@ for crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
 impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     pub fn New(
         sonyLeaderboardId: u32,
-        difficultyBeatmapId: *mut crate::System::String,
+        difficultyBeatmapId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     pub fn _ctor(
         &mut self,
         sonyLeaderboardId: u32,
-        difficultyBeatmapId: *mut crate::System::String,
+        difficultyBeatmapId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,11 +153,11 @@ impl crate::GlobalNamespace::SonyLeaderboardIdsSO_LeaderboardIdData {
     }
     pub fn get_difficultyBeatmapId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_difficultyBeatmapId", ())?;
         Ok(__cordl_ret)
     }

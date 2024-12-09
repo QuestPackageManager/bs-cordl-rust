@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DropdownMenu {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_MenuItems: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::UIElements::DropdownMenuItem,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenu")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DropdownMenu {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
     pub type __c__DisplayClass4_0 = crate::UnityEngine::UIElements::DropdownMenu___c__DisplayClass4_0;
     pub fn AppendAction_DropdownMenuAction_Status1(
         &mut self,
-        actionName: *mut crate::System::String,
+        actionName: *mut quest_hook::libil2cpp::Il2CppString,
         action: *mut crate::System::Action_1<
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
         >,
@@ -45,9 +45,9 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
             .invoke("AppendAction", (actionName, action, status))?;
         Ok(__cordl_ret)
     }
-    pub fn AppendAction_Func_2_Object0(
+    pub fn AppendAction_Func_2_Il2CppObject0(
         &mut self,
-        actionName: *mut crate::System::String,
+        actionName: *mut quest_hook::libil2cpp::Il2CppString,
         action: *mut crate::System::Action_1<
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
         >,
@@ -55,7 +55,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
             *mut crate::UnityEngine::UIElements::DropdownMenuAction,
             crate::UnityEngine::UIElements::DropdownMenuAction_Status,
         >,
-        userData: *mut crate::System::Object,
+        userData: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,7 +69,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
     }
     pub fn AppendSeparator(
         &mut self,
-        subMenuPath: *mut crate::System::String,
+        subMenuPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ impl crate::UnityEngine::UIElements::DropdownMenu {
     }
     pub fn InsertSeparator(
         &mut self,
-        subMenuPath: *mut crate::System::String,
+        subMenuPath: *mut quest_hook::libil2cpp::Il2CppString,
         atIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

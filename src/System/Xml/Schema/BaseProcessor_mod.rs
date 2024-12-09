@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseProcessor {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
     pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
     pub eventHandler: *mut crate::System::Xml::Schema::ValidationEventHandler,
     pub compilationSettings: *mut crate::System::Xml::Schema::XmlSchemaCompilationSettings,
     pub errorCount: i32,
-    pub NsXml: *mut crate::System::String,
+    pub NsXml: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Schema+BaseProcessor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+BaseProcessor")]
 impl std::ops::Deref for crate::System::Xml::Schema::BaseProcessor {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -120,10 +120,12 @@ impl crate::System::Xml::Schema::BaseProcessor {
             .invoke("SendValidationEventNoThrow", (e, severity))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_Il2CppArray_Exception_XmlSchemaObject3(
+    pub fn SendValidationEvent_Il2CppString_Il2CppArray_Exception_XmlSchemaObject3(
         &mut self,
-        code: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         innerException: *mut crate::System::Exception,
         source: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -134,12 +136,12 @@ impl crate::System::Xml::Schema::BaseProcessor {
             .invoke("SendValidationEvent", (code, args, innerException, source))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String_String_String_i32_i32_4(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString_Il2CppString_Il2CppString_i32_i32_4(
         &mut self,
-        code: *mut crate::System::String,
-        msg1: *mut crate::System::String,
-        msg2: *mut crate::System::String,
-        sourceUri: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        msg1: *mut quest_hook::libil2cpp::Il2CppString,
+        msg2: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceUri: *mut quest_hook::libil2cpp::Il2CppString,
         lineNumber: i32,
         linePosition: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -153,11 +155,11 @@ impl crate::System::Xml::Schema::BaseProcessor {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String_String_XmlSchemaObject2(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString_Il2CppString_XmlSchemaObject2(
         &mut self,
-        code: *mut crate::System::String,
-        msg1: *mut crate::System::String,
-        msg2: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        msg1: *mut quest_hook::libil2cpp::Il2CppString,
+        msg2: *mut quest_hook::libil2cpp::Il2CppString,
         source: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -167,10 +169,10 @@ impl crate::System::Xml::Schema::BaseProcessor {
             .invoke("SendValidationEvent", (code, msg1, msg2, source))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String_XmlSchemaObject1(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString_XmlSchemaObject1(
         &mut self,
-        code: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         source: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -180,10 +182,10 @@ impl crate::System::Xml::Schema::BaseProcessor {
             .invoke("SendValidationEvent", (code, msg, source))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_String_XmlSchemaObject_XmlSeverityType7(
+    pub fn SendValidationEvent_Il2CppString_Il2CppString_XmlSchemaObject_XmlSeverityType7(
         &mut self,
-        code: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         source: *mut crate::System::Xml::Schema::XmlSchemaObject,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -194,9 +196,9 @@ impl crate::System::Xml::Schema::BaseProcessor {
             .invoke("SendValidationEvent", (code, msg, source, severity))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_XmlSchemaObject0(
+    pub fn SendValidationEvent_Il2CppString_XmlSchemaObject0(
         &mut self,
-        code: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         source: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -206,9 +208,9 @@ impl crate::System::Xml::Schema::BaseProcessor {
             .invoke("SendValidationEvent", (code, source))?;
         Ok(__cordl_ret)
     }
-    pub fn SendValidationEvent_String_XmlSchemaObject_XmlSeverityType5(
+    pub fn SendValidationEvent_Il2CppString_XmlSchemaObject_XmlSeverityType5(
         &mut self,
-        code: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         source: *mut crate::System::Xml::Schema::XmlSchemaObject,
         severity: crate::System::Xml::Schema::XmlSeverityType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

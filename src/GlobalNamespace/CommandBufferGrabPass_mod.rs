@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CommandBufferGrabPass {
     __cordl_parent: crate::GlobalNamespace::CommandBufferGOCore,
-    pub _textureName: *mut crate::System::String,
+    pub _textureName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cameraEvent: crate::UnityEngine::Rendering::CameraEvent,
 }
 #[cfg(feature = "CommandBufferGrabPass")]

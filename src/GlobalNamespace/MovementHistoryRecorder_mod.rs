@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MovementHistoryRecorder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _averagingValueRecorer: *mut crate::GlobalNamespace::AveragingValueRecorder,
     pub _increaseSpeed: f32,
     pub _decreaseSpeed: f32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MovementHistoryRecorder")]
 impl std::ops::Deref for crate::GlobalNamespace::MovementHistoryRecorder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

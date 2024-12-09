@@ -8,12 +8,12 @@ pub struct OVRSceneLoader {
     pub mainCanvas: *mut crate::UnityEngine::Canvas,
     pub logTextBox: *mut crate::UnityEngine::UI::Text,
     pub loadSceneOperation: *mut crate::UnityEngine::AsyncOperation,
-    pub formattedLogText: *mut crate::System::String,
+    pub formattedLogText: *mut quest_hook::libil2cpp::Il2CppString,
     pub closeLogTimer: f32,
     pub closeLogDialogue: bool,
     pub canvasPosUpdated: bool,
-    pub scenePath: *mut crate::System::String,
-    pub sceneLoadDataPath: *mut crate::System::String,
+    pub scenePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sceneLoadDataPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub loadedAssetBundles: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::AssetBundle,
     >,
@@ -184,7 +184,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneLoade
 #[derive(Debug, Clone)]
 pub struct OVRSceneLoader_SceneInfo {
     pub scenes: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub version: i64,
 }
@@ -209,7 +209,7 @@ impl crate::GlobalNamespace::OVRSceneLoader_SceneInfo {
     pub fn _ctor(
         &mut self,
         sceneList: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         currentSceneEpochVersion: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

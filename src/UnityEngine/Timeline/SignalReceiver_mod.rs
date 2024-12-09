@@ -149,7 +149,7 @@ impl crate::UnityEngine::Timeline::SignalReceiver {
         &mut self,
         origin: crate::UnityEngine::Playables::Playable,
         notification: *mut crate::UnityEngine::Playables::INotification,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -204,7 +204,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::SignalR
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalReceiver_EventKeyValue {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Signals: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::Timeline::SignalAsset,
     >,
@@ -220,7 +220,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+SignalReceiver+EventKeyValue")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::SignalReceiver_EventKeyValue {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

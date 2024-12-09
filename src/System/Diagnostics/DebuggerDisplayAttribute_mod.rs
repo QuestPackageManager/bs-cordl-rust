@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DebuggerDisplayAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub name: *mut crate::System::String,
-    pub value: *mut crate::System::String,
-    pub _cordl_type: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::System::Diagnostics::DebuggerDisplayAttribute
 #[cfg(feature = "System+Diagnostics+DebuggerDisplayAttribute")]
 impl crate::System::Diagnostics::DebuggerDisplayAttribute {
     pub fn New(
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,7 +38,7 @@ impl crate::System::Diagnostics::DebuggerDisplayAttribute {
     }
     pub fn _ctor(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -49,7 +49,7 @@ impl crate::System::Diagnostics::DebuggerDisplayAttribute {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,7 +60,7 @@ impl crate::System::Diagnostics::DebuggerDisplayAttribute {
     }
     pub fn set_Type(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

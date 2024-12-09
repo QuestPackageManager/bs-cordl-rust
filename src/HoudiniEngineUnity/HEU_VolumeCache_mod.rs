@@ -12,8 +12,8 @@ pub struct HEU_VolumeCache {
     >,
     pub _tileIndex: i32,
     pub _isDirty: bool,
-    pub _geoName: *mut crate::System::String,
-    pub _objName: *mut crate::System::String,
+    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _objName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _uiExpanded: bool,
     pub _terrainData: *mut crate::UnityEngine::TerrainData,
     pub _scatterTrees: *mut crate::HoudiniEngineUnity::HEU_VolumeScatterTrees,
@@ -86,7 +86,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
     }
     pub fn GetLayer(
         &mut self,
-        layerName: *mut crate::System::String,
+        layerName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_VolumeLayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +136,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         colorValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -154,7 +154,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         floatValue: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -191,7 +191,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         outTexture: quest_hook::libil2cpp::ByRefMut<*mut crate::UnityEngine::Texture2D>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -209,7 +209,7 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
         geoID: i32,
         partID: i32,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         vectorValue: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -316,11 +316,11 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
     }
     pub fn get_GeoName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_GeoName", ())?;
         Ok(__cordl_ret)
     }
@@ -333,11 +333,11 @@ impl crate::HoudiniEngineUnity::HEU_VolumeCache {
     }
     pub fn get_ObjectName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ObjectName", ())?;
         Ok(__cordl_ret)
     }

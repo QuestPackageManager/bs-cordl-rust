@@ -8,7 +8,7 @@ pub struct MultiplayerLeadPlayerProvider {
     pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
     pub _multiplayerController: *mut crate::GlobalNamespace::MultiplayerController,
     pub newLeaderWasSelectedEvent: *mut crate::System::Action_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _currentLeadingPlayerStartTime: f32,
     pub _currentlyDisplayedUser: *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     }
     pub fn add_newLeaderWasSelectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::MultiplayerLeadPlayerProvider {
     }
     pub fn remove_newLeaderWasSelectedEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

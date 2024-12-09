@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct HEU_PDGAssetLink {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _assetPath: *mut crate::System::String,
+    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _assetGO: *mut crate::UnityEngine::GameObject,
-    pub _assetName: *mut crate::System::String,
+    pub _assetName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _assetID: i32,
     pub _heu: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
     pub _topNetworks: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_TOPNetworkData,
     >,
     pub _topNetworkNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _selectedTOPNetwork: i32,
     pub _linkState: crate::HoudiniEngineUnity::HEU_PDGAssetLink_LinkState,
@@ -22,7 +22,7 @@ pub struct HEU_PDGAssetLink {
     pub _numWorkItems: i32,
     pub _workItemTally: *mut crate::HoudiniEngineUnity::HEU_WorkItemTally,
     pub _loadRootGameObject: *mut crate::UnityEngine::GameObject,
-    pub _outputCachePathRoot: *mut crate::System::String,
+    pub _outputCachePathRoot: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PDGAssetLink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -189,11 +189,11 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     pub fn GetTOPNodeStatus(
         &mut self,
         topNode: *mut crate::HoudiniEngineUnity::HEU_TOPNodeData,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTOPNodeStatus", (topNode))?;
         Ok(__cordl_ret)
     }
@@ -448,11 +448,11 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink {
     }
     pub fn get_AssetName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssetName", ())?;
         Ok(__cordl_ret)
     }
@@ -518,7 +518,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -549,7 +549,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -560,7 +560,7 @@ impl crate::HoudiniEngineUnity::HEU_PDGAssetLink_UpdateUIDelegate {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

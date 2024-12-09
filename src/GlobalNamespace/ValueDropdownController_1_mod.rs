@@ -6,7 +6,7 @@ pub struct ValueDropdownController_1<T: quest_hook::libil2cpp::Type> {
     pub _simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_2<i32, T>,
     pub _namedValues: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+        *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -51,7 +51,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
         >,
     >
     where
@@ -62,7 +62,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret)
     }
@@ -193,7 +193,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
         >,
     >
     where
@@ -204,7 +204,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<T, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<T, *mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("get_namedValues", ())?;
         Ok(__cordl_ret)
     }

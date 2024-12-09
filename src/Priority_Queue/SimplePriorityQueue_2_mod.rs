@@ -5,7 +5,7 @@ pub struct SimplePriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _queue: *mut crate::Priority_Queue::GenericPriorityQueue_2<
         *mut crate::Priority_Queue::SimplePriorityQueue_2_SimpleNode<TItem, TPriority>,
         TPriority,
@@ -35,7 +35,7 @@ impl<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Priority_Queue::SimplePriorityQueue_2<TItem, TPriority> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

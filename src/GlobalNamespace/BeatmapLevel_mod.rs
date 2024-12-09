@@ -2,15 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: i32,
     pub hasPrecalculatedData: bool,
-    pub levelID: *mut crate::System::String,
-    pub songName: *mut crate::System::String,
-    pub songSubName: *mut crate::System::String,
-    pub songAuthorName: *mut crate::System::String,
-    pub allMappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub allLighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub songName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub allMappers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub allLighters: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub beatsPerMinute: f32,
     pub integratedLufs: f32,
     pub songTimeOffset: f32,
@@ -40,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevel")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -143,12 +147,16 @@ impl crate::GlobalNamespace::BeatmapLevel {
     pub fn New(
         version: i32,
         hasPrecalculatedData: bool,
-        levelID: *mut crate::System::String,
-        songName: *mut crate::System::String,
-        songSubName: *mut crate::System::String,
-        songAuthorName: *mut crate::System::String,
-        allMappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        allLighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
+        songName: *mut quest_hook::libil2cpp::Il2CppString,
+        songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+        songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
+        allMappers: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        allLighters: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         beatsPerMinute: f32,
         integratedLufs: f32,
         songTimeOffset: f32,
@@ -210,12 +218,16 @@ impl crate::GlobalNamespace::BeatmapLevel {
         &mut self,
         version: i32,
         hasPrecalculatedData: bool,
-        levelID: *mut crate::System::String,
-        songName: *mut crate::System::String,
-        songSubName: *mut crate::System::String,
-        songAuthorName: *mut crate::System::String,
-        allMappers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        allLighters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
+        songName: *mut quest_hook::libil2cpp::Il2CppString,
+        songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+        songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
+        allMappers: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        allLighters: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         beatsPerMinute: f32,
         integratedLufs: f32,
         songTimeOffset: f32,

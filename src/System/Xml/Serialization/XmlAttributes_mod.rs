@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlAttributes {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub xmlAnyAttribute: *mut crate::System::Xml::Serialization::XmlAnyAttributeAttribute,
     pub xmlAnyElements: *mut crate::System::Xml::Serialization::XmlAnyElementAttributes,
     pub xmlArray: *mut crate::System::Xml::Serialization::XmlArrayAttribute,
     pub xmlArrayItems: *mut crate::System::Xml::Serialization::XmlArrayItemAttributes,
     pub xmlAttribute: *mut crate::System::Xml::Serialization::XmlAttributeAttribute,
     pub xmlChoiceIdentifier: *mut crate::System::Xml::Serialization::XmlChoiceIdentifierAttribute,
-    pub xmlDefaultValue: *mut crate::System::Object,
+    pub xmlDefaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
     pub xmlElements: *mut crate::System::Xml::Serialization::XmlElementAttributes,
     pub xmlEnum: *mut crate::System::Xml::Serialization::XmlEnumAttribute,
     pub xmlIgnore: bool,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlAttributes")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlAttributes {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -177,11 +177,11 @@ impl crate::System::Xml::Serialization::XmlAttributes {
     }
     pub fn get_XmlDefaultValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_XmlDefaultValue", ())?;
         Ok(__cordl_ret)
     }

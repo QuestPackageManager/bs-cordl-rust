@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterizedStrings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ParameterizedStrings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ParameterizedStrings")]
 impl std::ops::Deref for crate::System::ParameterizedStrings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::ParameterizedStrings {
 #[derive(Debug, Clone)]
 pub struct ParameterizedStrings_FormatParam {
     pub _int32: i32,
-    pub _string: *mut crate::System::String,
+    pub _string: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+ParameterizedStrings+FormatParam")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -63,10 +63,10 @@ for crate::System::ParameterizedStrings_FormatParam {
 }
 #[cfg(feature = "System+ParameterizedStrings+FormatParam")]
 impl crate::System::ParameterizedStrings_FormatParam {
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         intValue: i32,
-        stringValue: *mut crate::System::String,
+        stringValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -96,8 +96,8 @@ impl crate::System::ParameterizedStrings_FormatParam {
     }
     pub fn get_Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Object",
             (),
@@ -106,8 +106,8 @@ impl crate::System::ParameterizedStrings_FormatParam {
     }
     pub fn get_String(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_String",
             (),
@@ -119,7 +119,7 @@ impl crate::System::ParameterizedStrings_FormatParam {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParameterizedStrings_LowLevelStack {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _arr: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::ParameterizedStrings_FormatParam,
     >,
@@ -132,7 +132,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ParameterizedStrings+LowLevelStack")]
 impl std::ops::Deref for crate::System::ParameterizedStrings_LowLevelStack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

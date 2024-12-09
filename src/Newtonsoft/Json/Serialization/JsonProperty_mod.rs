@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonProperty {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _required: crate::System::Nullable_1<crate::Newtonsoft::Json::Required>,
     pub _hasExplicitDefaultValue: bool,
-    pub _defaultValue: *mut crate::System::Object,
+    pub _defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _hasGeneratedDefaultValue: bool,
-    pub _propertyName: *mut crate::System::String,
+    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _skipPropertyNameEscape: bool,
     pub _propertyType: *mut crate::System::Type,
     pub _PropertyContract_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
     pub _DeclaringType_k__BackingField: *mut crate::System::Type,
     pub _Order_k__BackingField: crate::System::Nullable_1<i32>,
-    pub _UnderlyingName_k__BackingField: *mut crate::System::String,
+    pub _UnderlyingName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _ValueProvider_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::IValueProvider,
     pub _AttributeProvider_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::IAttributeProvider,
     pub _Converter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
@@ -38,17 +38,17 @@ pub struct JsonProperty {
         crate::Newtonsoft::Json::TypeNameHandling,
     >,
     pub _ShouldSerialize_k__BackingField: *mut crate::System::Predicate_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _ShouldDeserialize_k__BackingField: *mut crate::System::Predicate_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _GetIsSpecified_k__BackingField: *mut crate::System::Predicate_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _SetIsSpecified_k__BackingField: *mut crate::System::Action_2<
-        *mut crate::System::Object,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _ItemConverter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
     pub _ItemIsReference_k__BackingField: crate::System::Nullable_1<bool>,
@@ -66,7 +66,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonProperty")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonProperty {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,11 +81,11 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonProperty
 impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     pub fn GetResolvedDefaultValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetResolvedDefaultValue", ())?;
         Ok(__cordl_ret)
     }
@@ -98,11 +98,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -161,11 +161,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn get_DefaultValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_DefaultValue", ())?;
         Ok(__cordl_ret)
     }
@@ -185,13 +185,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     pub fn get_GetIsSpecified(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Predicate_1<*mut crate::System::Object> = __cordl_object
-            .invoke("get_GetIsSpecified", ())?;
+        let __cordl_ret: *mut crate::System::Predicate_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_GetIsSpecified", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_HasMemberAttribute(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -331,11 +332,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn get_PropertyName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PropertyName", ())?;
         Ok(__cordl_ret)
     }
@@ -383,41 +384,43 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Action_2<
-            *mut crate::System::Object,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Action_2<
-            *mut crate::System::Object,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_SetIsSpecified", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ShouldDeserialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Predicate_1<*mut crate::System::Object> = __cordl_object
-            .invoke("get_ShouldDeserialize", ())?;
+        let __cordl_ret: *mut crate::System::Predicate_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_ShouldDeserialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ShouldSerialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Predicate_1<*mut crate::System::Object> = __cordl_object
-            .invoke("get_ShouldSerialize", ())?;
+        let __cordl_ret: *mut crate::System::Predicate_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_ShouldSerialize", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_TypeNameHandling(
@@ -435,11 +438,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn get_UnderlyingName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_UnderlyingName", ())?;
         Ok(__cordl_ret)
     }
@@ -497,7 +500,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn set_DefaultValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -519,7 +522,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn set_GetIsSpecified(
         &mut self,
-        value: *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        value: *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -662,7 +665,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn set_PropertyName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -718,8 +721,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     pub fn set_SetIsSpecified(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut crate::System::Object,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -731,7 +734,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn set_ShouldDeserialize(
         &mut self,
-        value: *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        value: *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -742,7 +745,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn set_ShouldSerialize(
         &mut self,
-        value: *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        value: *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -764,7 +767,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonProperty {
     }
     pub fn set_UnderlyingName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

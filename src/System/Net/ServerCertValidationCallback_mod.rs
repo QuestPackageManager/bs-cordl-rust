@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertValidationCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
     pub m_Context: *mut crate::System::Threading::ExecutionContext,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ServerCertValidationCallback")]
 impl std::ops::Deref for crate::System::Net::ServerCertValidationCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::System::Net::ServerCertValidationCallback {
     pub type CallbackContext = crate::System::Net::ServerCertValidationCallback_CallbackContext;
     pub fn Callback(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -41,7 +41,7 @@ impl crate::System::Net::ServerCertValidationCallback {
     }
     pub fn Invoke(
         &mut self,
-        request: *mut crate::System::Object,
+        request: *mut quest_hook::libil2cpp::Il2CppObject,
         certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
@@ -100,8 +100,8 @@ for crate::System::Net::ServerCertValidationCallback {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ServerCertValidationCallback_CallbackContext {
-    __cordl_parent: crate::System::Object,
-    pub request: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub request: *mut quest_hook::libil2cpp::Il2CppObject,
     pub certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
     pub chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
     pub sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
@@ -116,7 +116,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
 impl std::ops::Deref
 for crate::System::Net::ServerCertValidationCallback_CallbackContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -131,7 +131,7 @@ for crate::System::Net::ServerCertValidationCallback_CallbackContext {
 #[cfg(feature = "System+Net+ServerCertValidationCallback+CallbackContext")]
 impl crate::System::Net::ServerCertValidationCallback_CallbackContext {
     pub fn New(
-        request: *mut crate::System::Object,
+        request: *mut quest_hook::libil2cpp::Il2CppObject,
         certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,
@@ -144,7 +144,7 @@ impl crate::System::Net::ServerCertValidationCallback_CallbackContext {
     }
     pub fn _ctor(
         &mut self,
-        request: *mut crate::System::Object,
+        request: *mut quest_hook::libil2cpp::Il2CppObject,
         certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
         sslPolicyErrors: crate::System::Net::Security::SslPolicyErrors,

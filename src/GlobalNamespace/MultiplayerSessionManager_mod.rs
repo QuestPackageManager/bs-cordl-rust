@@ -11,7 +11,7 @@ pub struct MultiplayerSessionManager {
         *mut crate::GlobalNamespace::IConnectedPlayer,
     >,
     pub _localPlayerState: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _maxPlayerCount: i32,
     pub _connectionState: crate::GlobalNamespace::MultiplayerSessionManager_ConnectionState,
@@ -113,7 +113,7 @@ impl crate::GlobalNamespace::MultiplayerSessionManager {
     }
     pub fn GetPlayerByUserId(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::IConnectedPlayer> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -242,7 +242,7 @@ impl crate::GlobalNamespace::MultiplayerSessionManager {
     }
     pub fn KickPlayer(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -263,7 +263,7 @@ impl crate::GlobalNamespace::MultiplayerSessionManager {
     }
     pub fn LocalPlayerHasState(
         &mut self,
-        state: *mut crate::System::String,
+        state: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -432,7 +432,7 @@ impl crate::GlobalNamespace::MultiplayerSessionManager {
     }
     pub fn SetLocalPlayerState(
         &mut self,
-        state: *mut crate::System::String,
+        state: *mut quest_hook::libil2cpp::Il2CppString,
         hasState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

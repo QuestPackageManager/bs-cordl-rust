@@ -10,7 +10,7 @@ pub struct EulaViewController {
     pub _disabledButtonDelay: f32,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
     pub _eulaLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
-    pub _updateNoticeLocalizationKey: *mut crate::System::String,
+    pub _updateNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _initData: *mut crate::GlobalNamespace::EulaViewController_InitData,
     pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub didFinishEvent: *mut crate::System::Action_1<
@@ -196,7 +196,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct EulaViewController_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub showDoNotAgreeButton: bool,
 }
 #[cfg(feature = "EulaViewController+InitData")]
@@ -206,7 +206,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EulaViewController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::EulaViewController_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,17 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectMap {
-    __cordl_parent: crate::System::Object,
-    pub objectName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub objectName: *mut quest_hook::libil2cpp::Il2CppString,
     pub objectType: *mut crate::System::Type,
     pub binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     >,
     pub typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub objectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
     pub isInitObjectInfo: bool,
     pub objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
@@ -28,7 +30,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectMap")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +50,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
             *mut crate::System::Runtime::Serialization::SerializationInfo,
         >,
         memberData: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
@@ -61,13 +65,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         Ok(__cordl_ret)
     }
     pub fn New_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
-        objectName: *mut crate::System::String,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        objectName: *mut quest_hook::libil2cpp::Il2CppString,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
         >,
         typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
         memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
@@ -95,9 +101,11 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
         Ok(__cordl_object)
     }
     pub fn New_Type_ObjectReader_i32_BinaryAssemblyInfo0(
-        objectName: *mut crate::System::String,
+        objectName: *mut quest_hook::libil2cpp::Il2CppString,
         objectType: *mut crate::System::Type,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
         objectId: i32,
         assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
@@ -120,13 +128,15 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
     }
     pub fn _ctor_Il2CppArray_Il2CppArray_Il2CppArray_ObjectReader_i32_BinaryAssemblyInfo_SizedArray1(
         &mut self,
-        objectName: *mut crate::System::String,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        objectName: *mut quest_hook::libil2cpp::Il2CppString,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
         >,
         typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
         memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
@@ -156,9 +166,11 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectMap {
     }
     pub fn _ctor_Type_ObjectReader_i32_BinaryAssemblyInfo0(
         &mut self,
-        objectName: *mut crate::System::String,
+        objectName: *mut quest_hook::libil2cpp::Il2CppString,
         objectType: *mut crate::System::Type,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         objectReader: *mut crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader,
         objectId: i32,
         assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,

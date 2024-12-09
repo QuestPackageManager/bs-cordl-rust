@@ -29,7 +29,7 @@ for crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException 
 #[cfg(feature = "UnityEngine+ResourceManagement+Exceptions+RemoteProviderException")]
 impl crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException {
     pub fn New(
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         uwrResult: *mut crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
         innerException: *mut crate::System::Exception,
@@ -42,17 +42,17 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         uwrResult: *mut crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
         innerException: *mut crate::System::Exception,
@@ -66,11 +66,11 @@ impl crate::UnityEngine::ResourceManagement::Exceptions::RemoteProviderException
     }
     pub fn get_Message(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Message", ())?;
         Ok(__cordl_ret)
     }

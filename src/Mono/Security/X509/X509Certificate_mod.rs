@@ -2,20 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Certificate {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub decoder: *mut crate::Mono::Security::ASN1,
     pub m_encodedcert: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub m_from: crate::System::DateTime,
     pub m_until: crate::System::DateTime,
     pub issuer: *mut crate::Mono::Security::ASN1,
-    pub m_issuername: *mut crate::System::String,
-    pub m_keyalgo: *mut crate::System::String,
+    pub m_issuername: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_keyalgo: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_keyalgoparams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub subject: *mut crate::Mono::Security::ASN1,
-    pub m_subject: *mut crate::System::String,
+    pub m_subject: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_publickey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub signature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub m_signaturealgo: *mut crate::System::String,
+    pub m_signaturealgo: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_signaturealgoparams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub certhash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _rsa: *mut crate::System::Security::Cryptography::RSA,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Certificate")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Certificate {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -188,21 +188,21 @@ impl crate::Mono::Security::X509::X509Certificate {
     }
     pub fn get_IssuerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_IssuerName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_KeyAlgorithm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_KeyAlgorithm", ())?;
         Ok(__cordl_ret)
     }
@@ -268,11 +268,11 @@ impl crate::Mono::Security::X509::X509Certificate {
     }
     pub fn get_SubjectName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SubjectName", ())?;
         Ok(__cordl_ret)
     }

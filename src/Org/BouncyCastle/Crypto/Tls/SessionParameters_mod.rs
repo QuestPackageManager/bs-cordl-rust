@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SessionParameters {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCipherSuite: i32,
     pub mCompressionAlgorithm: u8,
     pub mMasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -203,7 +203,7 @@ for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SessionParameters_Builder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mCipherSuite: i32,
     pub mCompressionAlgorithm: i16,
     pub mMasterSecret: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -222,7 +222,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+SessionParameters+Builder")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -362,7 +362,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::SessionParameters_Builder {
     pub fn Validate(
         &mut self,
         condition: bool,
-        parameter: *mut crate::System::String,
+        parameter: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

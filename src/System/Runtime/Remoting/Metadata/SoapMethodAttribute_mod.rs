@@ -3,12 +3,12 @@
 #[derive(Debug)]
 pub struct SoapMethodAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
-    pub _responseElement: *mut crate::System::String,
-    pub _responseNamespace: *mut crate::System::String,
-    pub _returnElement: *mut crate::System::String,
-    pub _soapAction: *mut crate::System::String,
+    pub _responseElement: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _responseNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _returnElement: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _soapAction: *mut quest_hook::libil2cpp::Il2CppString,
     pub _useAttribute: bool,
-    pub _namespace: *mut crate::System::String,
+    pub _namespace: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapMethodAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -42,7 +42,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     }
     pub fn SetReflectionObject(
         &mut self,
-        reflectionObject: *mut crate::System::Object,
+        reflectionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,11 +70,11 @@ impl crate::System::Runtime::Remoting::Metadata::SoapMethodAttribute {
     }
     pub fn get_XmlNamespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlNamespace", ())?;
         Ok(__cordl_ret)
     }

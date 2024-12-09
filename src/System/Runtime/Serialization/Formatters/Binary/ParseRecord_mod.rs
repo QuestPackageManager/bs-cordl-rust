@@ -2,23 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ParseRecord {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub PRparseTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalParseTypeE,
     pub PRobjectTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE,
     pub PRarrayTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalArrayTypeE,
     pub PRmemberTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE,
     pub PRmemberValueEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE,
     pub PRobjectPositionEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectPositionE,
-    pub PRname: *mut crate::System::String,
-    pub PRvalue: *mut crate::System::String,
-    pub PRvarValue: *mut crate::System::Object,
-    pub PRkeyDt: *mut crate::System::String,
+    pub PRname: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PRvalue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PRvarValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub PRkeyDt: *mut quest_hook::libil2cpp::Il2CppString,
     pub PRdtType: *mut crate::System::Type,
     pub PRdtTypeCode: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
     pub PRisEnum: bool,
     pub PRobjectId: i64,
     pub PRidRef: i64,
-    pub PRarrayElementTypeString: *mut crate::System::String,
+    pub PRarrayElementTypeString: *mut quest_hook::libil2cpp::Il2CppString,
     pub PRarrayElementType: *mut crate::System::Type,
     pub PRisArrayVariant: bool,
     pub PRarrayElementTypeCode: crate::System::Runtime::Serialization::Formatters::Binary::InternalPrimitiveTypeE,
@@ -36,12 +36,14 @@ pub struct ParseRecord {
     pub PRheaderId: i64,
     pub PRobjectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
     pub PRisValueTypeFixup: bool,
-    pub PRnewObj: *mut crate::System::Object,
-    pub PRobjectA: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub PRnewObj: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub PRobjectA: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub PRprimitiveArray: *mut crate::System::Runtime::Serialization::Formatters::Binary::PrimitiveArray,
     pub PRisRegistered: bool,
     pub PRmemberData: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub PRsi: *mut crate::System::Runtime::Serialization::SerializationInfo,
     pub PRnullCount: i32,
@@ -55,7 +57,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ParseRecord")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

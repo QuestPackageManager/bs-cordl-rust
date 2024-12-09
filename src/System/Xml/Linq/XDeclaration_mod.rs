@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XDeclaration {
-    __cordl_parent: crate::System::Object,
-    pub _version: *mut crate::System::String,
-    pub _encoding: *mut crate::System::String,
-    pub _standalone: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _encoding: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _standalone: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Linq+XDeclaration")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XDeclaration")]
 impl std::ops::Deref for crate::System::Xml::Linq::XDeclaration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,10 +27,10 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XDeclaration {
 }
 #[cfg(feature = "System+Xml+Linq+XDeclaration")]
 impl crate::System::Xml::Linq::XDeclaration {
-    pub fn New_String_String_String0(
-        version: *mut crate::System::String,
-        encoding: *mut crate::System::String,
-        standalone: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Il2CppString0(
+        version: *mut quest_hook::libil2cpp::Il2CppString,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
+        standalone: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,19 +49,19 @@ impl crate::System::Xml::Linq::XDeclaration {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_String0(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString0(
         &mut self,
-        version: *mut crate::System::String,
-        encoding: *mut crate::System::String,
-        standalone: *mut crate::System::String,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
+        standalone: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -83,37 +83,37 @@ impl crate::System::Xml::Linq::XDeclaration {
     }
     pub fn get_Encoding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Encoding", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Standalone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Standalone", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Version", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Encoding(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +124,7 @@ impl crate::System::Xml::Linq::XDeclaration {
     }
     pub fn set_Standalone(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

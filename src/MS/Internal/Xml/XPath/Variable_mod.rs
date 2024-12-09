@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct Variable {
     __cordl_parent: crate::MS::Internal::Xml::XPath::AstNode,
-    pub _localname: *mut crate::System::String,
-    pub _prefix: *mut crate::System::String,
+    pub _localname: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Variable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::MS::Internal::Xml::XPath::Variable {
 #[cfg(feature = "MS+Internal+Xml+XPath+Variable")]
 impl crate::MS::Internal::Xml::XPath::Variable {
     pub fn New(
-        name: *mut crate::System::String,
-        prefix: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,8 +38,8 @@ impl crate::MS::Internal::Xml::XPath::Variable {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
-        prefix: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

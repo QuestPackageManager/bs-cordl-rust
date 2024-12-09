@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryCrossAppDomainAssembly {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub assemId: i32,
     pub assemblyIndex: i32,
 }
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryCrossAppDomainAssembly {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCallbacksController {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didProcessAllCallbacksThisFrameEvent: *mut crate::System::Action,
     pub _callbacksInTimes: *mut crate::System::Collections::Generic::Dictionary_2<
         f32,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapCallbacksController")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCallbacksController {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -299,7 +299,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCallbacksController_CallCallbacksBehavior {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -310,7 +310,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehavior")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -382,7 +382,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehavior {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _replayState: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::System::ValueTuple_2<*mut crate::System::Type, i32>,
         *mut crate::GlobalNamespace::BeatmapDataItem,
@@ -397,7 +397,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapCallbacksController+CallCallbacksBehaviorWithLastState")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapCallbacksController_CallCallbacksBehaviorWithLastState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -540,7 +540,7 @@ for crate::GlobalNamespace::BeatmapCallbacksController_ICallCallbacksBehavior {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapCallbacksController_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub beatmapData: *mut crate::GlobalNamespace::IReadonlyBeatmapData,
     pub startFilterTime: f32,
     pub shouldKeepReplayState: bool,
@@ -553,7 +553,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapCallbacksController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapCallbacksController_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

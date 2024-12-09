@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509NameEntryConverter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509NameEntryConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509NameEntryConverter")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ for crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
 impl crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
     pub fn CanBePrintable(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -38,7 +38,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
     }
     pub fn ConvertHexEncoded(
         &mut self,
-        hexString: *mut crate::System::String,
+        hexString: *mut quest_hook::libil2cpp::Il2CppString,
         offset: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameEntryConverter {
     pub fn GetConvertedValue(
         &mut self,
         oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Org::BouncyCastle::Asn1::Asn1Object> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

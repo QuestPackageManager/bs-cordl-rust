@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MissionObjectiveResult {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _missionObjective_k__BackingField: *mut crate::GlobalNamespace::MissionObjective,
     pub _cleared_k__BackingField: bool,
     pub _value_k__BackingField: i32,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MissionObjectiveResult")]
 impl std::ops::Deref for crate::GlobalNamespace::MissionObjectiveResult {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

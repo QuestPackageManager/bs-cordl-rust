@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInfo
 impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     pub fn CalculateAgreedWrapKey(
         &mut self,
-        wrapAlg: *mut crate::System::String,
+        wrapAlg: *mut quest_hook::libil2cpp::Il2CppString,
         senderPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         receiverPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
     ) -> quest_hook::libil2cpp::Result<
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Cms::KeyAgreeRecipientInformation {
     }
     pub fn UnwrapSessionKey(
         &mut self,
-        wrapAlg: *mut crate::System::String,
+        wrapAlg: *mut quest_hook::libil2cpp::Il2CppString,
         agreedKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,

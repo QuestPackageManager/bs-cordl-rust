@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct JsonPropertyCollection {
     __cordl_parent: crate::System::Collections::ObjectModel::KeyedCollection_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
     >,
     pub _type: *mut crate::System::Type,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonPropertyCollection")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     type Target = crate::System::Collections::ObjectModel::KeyedCollection_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
     >;
     fn deref(&self) -> &Self::Target {
@@ -49,7 +49,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     }
     pub fn GetClosestMatchProperty(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
     > {
@@ -63,17 +63,17 @@ impl crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     pub fn GetKeyForItem(
         &mut self,
         item: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetKeyForItem", (item))?;
         Ok(__cordl_ret)
     }
     pub fn GetProperty(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -96,7 +96,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonPropertyCollection {
     }
     pub fn TryGetProperty(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         item: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
         >,

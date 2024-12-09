@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlWriterSettings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useAsync: bool,
     pub encoding: *mut crate::System::Text::Encoding,
     pub omitXmlDecl: bool,
     pub newLineHandling: crate::System::Xml::NewLineHandling,
-    pub newLineChars: *mut crate::System::String,
+    pub newLineChars: *mut quest_hook::libil2cpp::Il2CppString,
     pub indent: crate::System::Xml::TriState,
-    pub indentChars: *mut crate::System::String,
+    pub indentChars: *mut quest_hook::libil2cpp::Il2CppString,
     pub newLineOnAttributes: bool,
     pub closeOutput: bool,
     pub namespaceHandling: crate::System::Xml::NamespaceHandling,
@@ -22,9 +22,9 @@ pub struct XmlWriterSettings {
     >,
     pub doNotEscapeUriAttributes: bool,
     pub mergeCDataSections: bool,
-    pub mediaType: *mut crate::System::String,
-    pub docTypeSystem: *mut crate::System::String,
-    pub docTypePublic: *mut crate::System::String,
+    pub mediaType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub docTypeSystem: *mut quest_hook::libil2cpp::Il2CppString,
+    pub docTypePublic: *mut quest_hook::libil2cpp::Il2CppString,
     pub standalone: crate::System::Xml::XmlStandalone,
     pub autoXmlDecl: bool,
     pub isReadOnly: bool,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlWriterSettings")]
 impl std::ops::Deref for crate::System::Xml::XmlWriterSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl std::ops::DerefMut for crate::System::Xml::XmlWriterSettings {
 impl crate::System::Xml::XmlWriterSettings {
     pub fn CheckReadOnly(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,21 +184,21 @@ impl crate::System::Xml::XmlWriterSettings {
     }
     pub fn get_DocTypePublic(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DocTypePublic", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_DocTypeSystem(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DocTypeSystem", ())?;
         Ok(__cordl_ret)
     }
@@ -221,11 +221,11 @@ impl crate::System::Xml::XmlWriterSettings {
     }
     pub fn get_IndentChars(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_IndentChars", ())?;
         Ok(__cordl_ret)
     }
@@ -248,11 +248,11 @@ impl crate::System::Xml::XmlWriterSettings {
     }
     pub fn get_MediaType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_MediaType", ())?;
         Ok(__cordl_ret)
     }
@@ -275,11 +275,11 @@ impl crate::System::Xml::XmlWriterSettings {
     }
     pub fn get_NewLineChars(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NewLineChars", ())?;
         Ok(__cordl_ret)
     }

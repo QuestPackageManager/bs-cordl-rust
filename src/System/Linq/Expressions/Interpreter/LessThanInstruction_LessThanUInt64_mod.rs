@@ -36,7 +36,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LessThanInstruction_LessThan
 )]
 impl crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     pub fn New(
-        nullValue: *mut crate::System::Object,
+        nullValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -56,7 +56,7 @@ impl crate::GlobalNamespace::LessThanInstruction_LessThanUInt64 {
     }
     pub fn _ctor(
         &mut self,
-        nullValue: *mut crate::System::Object,
+        nullValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

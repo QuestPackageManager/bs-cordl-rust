@@ -4,11 +4,11 @@
 pub struct DataColumn {
     __cordl_parent: crate::System::ComponentModel::MarshalByValueComponent,
     pub _allowNull: bool,
-    pub _caption: *mut crate::System::String,
-    pub _columnName: *mut crate::System::String,
+    pub _caption: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _columnName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _dataType: *mut crate::System::Type,
     pub _storageType: crate::System::Data::Common::StorageType,
-    pub _defaultValue: *mut crate::System::Object,
+    pub _defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _dateTimeMode: crate::System::Data::DataSetDateTime,
     pub _expression: *mut crate::System::Data::DataExpression,
     pub _maxLength: i32,
@@ -32,12 +32,12 @@ pub struct DataColumn {
     pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
     pub _storage: *mut crate::System::Data::Common::DataStorage,
     pub _autoInc: *mut crate::System::Data::AutoIncrementValue,
-    pub _columnUri: *mut crate::System::String,
-    pub _columnPrefix: *mut crate::System::String,
-    pub _encodedColumnName: *mut crate::System::String,
+    pub _columnUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _columnPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _encodedColumnName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _simpleType: *mut crate::System::Data::SimpleType,
     pub _objectID: i32,
-    pub _XmlDataType_k__BackingField: *mut crate::System::String,
+    pub _XmlDataType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub PropertyChanging: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
 }
 #[cfg(feature = "System+Data+DataColumn")]
@@ -156,7 +156,7 @@ impl crate::System::Data::DataColumn {
     pub fn CompareValueTo__cordl_bool0(
         &mut self,
         record1: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         checkType: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -166,10 +166,10 @@ impl crate::System::Data::DataColumn {
             .invoke("CompareValueTo", (record1, value, checkType))?;
         Ok(__cordl_ret)
     }
-    pub fn CompareValueTo_i32_Object1(
+    pub fn CompareValueTo_i32_Il2CppObject1(
         &mut self,
         record1: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,20 +178,20 @@ impl crate::System::Data::DataColumn {
             .invoke("CompareValueTo", (record1, value))?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertObjectToXml_Object0(
+    pub fn ConvertObjectToXml_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ConvertObjectToXml", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ConvertObjectToXml_XmlWriter_XmlRootAttribute1(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         xmlWriter: *mut crate::System::Xml::XmlWriter,
         xmlAttrib: *mut crate::System::Xml::Serialization::XmlRootAttribute,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -204,23 +204,23 @@ impl crate::System::Data::DataColumn {
     }
     pub fn ConvertValue(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ConvertXmlToObject_String0(
+    pub fn ConvertXmlToObject_Il2CppString0(
         &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertXmlToObject", (s))?;
         Ok(__cordl_ret)
     }
@@ -228,11 +228,11 @@ impl crate::System::Data::DataColumn {
         &mut self,
         xmlReader: *mut crate::System::Xml::XmlReader,
         xmlAttrib: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertXmlToObject", (xmlReader, xmlAttrib))?;
         Ok(__cordl_ret)
     }
@@ -251,7 +251,7 @@ impl crate::System::Data::DataColumn {
     pub fn CopyValueIntoStore(
         &mut self,
         record: i32,
-        store: *mut crate::System::Object,
+        store: *mut quest_hook::libil2cpp::Il2CppObject,
         nullbits: *mut crate::System::Collections::BitArray,
         storeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -277,11 +277,11 @@ impl crate::System::Data::DataColumn {
         &mut self,
         records: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         kind: crate::System::Data::AggregateType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetAggregateValue", (records, kind))?;
         Ok(__cordl_ret)
     }
@@ -289,11 +289,11 @@ impl crate::System::Data::DataColumn {
         &mut self,
         row: *mut crate::System::Data::DataRow,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetColumnValueAsString", (row, version))?;
         Ok(__cordl_ret)
     }
@@ -311,11 +311,11 @@ impl crate::System::Data::DataColumn {
     pub fn GetEmptyColumnStore(
         &mut self,
         recordCount: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetEmptyColumnStore", (recordCount))?;
         Ok(__cordl_ret)
     }
@@ -407,7 +407,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn IsValueCustomTypeInstance(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -423,8 +423,8 @@ impl crate::System::Data::DataColumn {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Type1(
-        columnName: *mut crate::System::String,
+    pub fn New_Il2CppString_Type1(
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         dataType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -433,10 +433,10 @@ impl crate::System::Data::DataColumn {
             .invoke_void(".ctor", (columnName, dataType))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Type_String_MappingType2(
-        columnName: *mut crate::System::String,
+    pub fn New_Il2CppString_Type_Il2CppString_MappingType2(
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         dataType: *mut crate::System::Type,
-        expr: *mut crate::System::String,
+        expr: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::System::Data::MappingType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -468,7 +468,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn RaisePropertyChanging(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -522,7 +522,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn SetStorage(
         &mut self,
-        store: *mut crate::System::Object,
+        store: *mut quest_hook::libil2cpp::Il2CppObject,
         nullbits: *mut crate::System::Collections::BitArray,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -546,7 +546,7 @@ impl crate::System::Data::DataColumn {
     pub fn SetValue(
         &mut self,
         record: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -557,11 +557,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -587,9 +587,9 @@ impl crate::System::Data::DataColumn {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Type1(
+    pub fn _ctor_Il2CppString_Type1(
         &mut self,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         dataType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -599,11 +599,11 @@ impl crate::System::Data::DataColumn {
             .invoke(".ctor", (columnName, dataType))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Type_String_MappingType2(
+    pub fn _ctor_Il2CppString_Type_Il2CppString_MappingType2(
         &mut self,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         dataType: *mut crate::System::Type,
-        expr: *mut crate::System::String,
+        expr: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::System::Data::MappingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -639,11 +639,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_AutoIncrementCurrent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AutoIncrementCurrent", ())?;
         Ok(__cordl_ret)
     }
@@ -663,11 +663,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_Caption(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Caption", ())?;
         Ok(__cordl_ret)
     }
@@ -683,11 +683,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_ColumnName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ColumnName", ())?;
         Ok(__cordl_ret)
     }
@@ -730,11 +730,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_DefaultValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_DefaultValue", ())?;
         Ok(__cordl_ret)
     }
@@ -747,21 +747,21 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_EncodedColumnName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_EncodedColumnName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Expression(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Expression", ())?;
         Ok(__cordl_ret)
     }
@@ -853,11 +853,11 @@ impl crate::System::Data::DataColumn {
     pub fn get_Item(
         &mut self,
         record: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (record))?;
         Ok(__cordl_ret)
     }
@@ -880,11 +880,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }
@@ -904,11 +904,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_Prefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
@@ -958,11 +958,11 @@ impl crate::System::Data::DataColumn {
     }
     pub fn get_XmlDataType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlDataType", ())?;
         Ok(__cordl_ret)
     }
@@ -990,7 +990,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_AutoIncrementCurrent(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1023,7 +1023,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_Caption(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1045,7 +1045,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_ColumnName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1078,7 +1078,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_DefaultValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1089,7 +1089,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_Expression(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1101,7 +1101,7 @@ impl crate::System::Data::DataColumn {
     pub fn set_Item(
         &mut self,
         record: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1123,7 +1123,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_Namespace(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1134,7 +1134,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_Prefix(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1178,7 +1178,7 @@ impl crate::System::Data::DataColumn {
     }
     pub fn set_XmlDataType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

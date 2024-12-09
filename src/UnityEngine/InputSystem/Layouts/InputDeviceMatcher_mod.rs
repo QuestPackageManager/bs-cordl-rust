@@ -5,7 +5,7 @@ pub struct InputDeviceMatcher {
     pub m_Patterns: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Collections::Generic::KeyValuePair_2<
             crate::UnityEngine::InputSystem::Utilities::InternedString,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     >,
 }
@@ -36,6 +36,17 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
         feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+_get_patterns_d__4"
     )]
     pub type _get_patterns_d__4 = crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher__get_patterns_d__4;
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InputDeviceMatcher0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -44,17 +55,6 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -79,8 +79,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -90,7 +90,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     pub fn With(
         &mut self,
         key: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         supportRegex: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -104,7 +104,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn WithCapability<TValue>(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         value: TValue,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -122,7 +122,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn WithDeviceClass(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         supportRegex: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -136,7 +136,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn WithInterface(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         supportRegex: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -150,7 +150,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn WithManufacturer(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         supportRegex: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -164,7 +164,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn WithProduct(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         supportRegex: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -178,7 +178,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     }
     pub fn WithVersion(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         supportRegex: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
@@ -203,15 +203,15 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     > {
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(self, "get_patterns", ())?;
         Ok(__cordl_ret)
@@ -221,20 +221,26 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputDeviceMatcher_MatcherJson {
-    pub interface: *mut crate::System::String,
-    pub interfaces: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub deviceClass: *mut crate::System::String,
+    pub interface: *mut quest_hook::libil2cpp::Il2CppString,
+    pub interfaces: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub deviceClass: *mut quest_hook::libil2cpp::Il2CppString,
     pub deviceClasses: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub manufacturer: *mut crate::System::String,
+    pub manufacturer: *mut quest_hook::libil2cpp::Il2CppString,
     pub manufacturers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub product: *mut crate::System::String,
-    pub products: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub version: *mut crate::System::String,
-    pub versions: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub product: *mut quest_hook::libil2cpp::Il2CppString,
+    pub products: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub versions: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub capabilities: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::InputSystem::Layouts::MatcherJson_InputDeviceMatcher_Capability,
     >,
@@ -281,8 +287,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher_MatcherJson {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct MatcherJson_InputDeviceMatcher_Capability {
-    pub path: *mut crate::System::String,
-    pub value: *mut crate::System::String,
+    pub path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+Layouts+InputDeviceMatcher+MatcherJson+Capability"

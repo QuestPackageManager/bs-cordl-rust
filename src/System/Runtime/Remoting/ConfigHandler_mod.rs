@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConfigHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub typeEntries: *mut crate::System::Collections::ArrayList,
     pub channelInstances: *mut crate::System::Collections::ArrayList,
     pub currentChannel: *mut crate::System::Runtime::Remoting::ChannelData,
     pub currentProviderData: *mut crate::System::Collections::Stack,
-    pub currentClientUrl: *mut crate::System::String,
-    pub appName: *mut crate::System::String,
-    pub currentXmlPath: *mut crate::System::String,
+    pub currentClientUrl: *mut quest_hook::libil2cpp::Il2CppString,
+    pub appName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub currentXmlPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub onlyDelayedChannels: bool,
 }
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ConfigHandler")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ConfigHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::ConfigHandler {
 impl crate::System::Runtime::Remoting::ConfigHandler {
     pub fn CheckPath(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,24 +44,26 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn ExtractAssembly(
         &mut self,
-        _cordl_type: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        _cordl_type: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ExtractAssembly", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn GetNotNull(
         &mut self,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetNotNull", (attrs, name))?;
         Ok(__cordl_ret)
     }
@@ -74,7 +76,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn OnChars(
         &mut self,
-        ch: *mut crate::System::String,
+        ch: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,7 +87,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn OnEndElement(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -107,7 +109,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn OnIgnorableWhitespace(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,8 +120,8 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn OnProcessingInstruction(
         &mut self,
-        name: *mut crate::System::String,
-        text: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +132,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn OnStartElement(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -153,7 +155,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn ParseElement(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,7 +167,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn ParseTime(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::TimeSpan> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,7 +212,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn ReadCustomProviderData(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -256,7 +258,7 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn ReadProvider(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut crate::Mono::Xml::SmallXmlParser_IAttrList,
         isTemplate: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -293,8 +295,10 @@ impl crate::System::Runtime::Remoting::ConfigHandler {
     }
     pub fn ValidatePath(
         &mut self,
-        element: *mut crate::System::String,
-        paths: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        element: *mut quest_hook::libil2cpp::Il2CppString,
+        paths: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

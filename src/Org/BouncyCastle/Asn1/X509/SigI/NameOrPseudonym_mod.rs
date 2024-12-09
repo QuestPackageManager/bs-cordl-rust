@@ -71,8 +71,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym {
             .invoke_void(".ctor", (surname, givenName))?;
         Ok(__cordl_object)
     }
-    pub fn New_String2(
-        pseudonym: *mut crate::System::String,
+    pub fn New_Il2CppString2(
+        pseudonym: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -124,9 +124,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::SigI::NameOrPseudonym {
             .invoke(".ctor", (surname, givenName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
-        pseudonym: *mut crate::System::String,
+        pseudonym: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

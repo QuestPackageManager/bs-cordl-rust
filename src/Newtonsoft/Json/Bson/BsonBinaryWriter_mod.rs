@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BsonBinaryWriter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _writer: *mut crate::System::IO::BinaryWriter,
     pub _largeByteBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _DateTimeKindHandling_k__BackingField: crate::System::DateTimeKind,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonBinaryWriter")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -91,7 +91,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
     }
     pub fn WriteString(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         byteCount: i32,
         calculatedlengthPrefix: crate::System::Nullable_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -126,7 +126,7 @@ impl crate::Newtonsoft::Json::Bson::BsonBinaryWriter {
     }
     pub fn WriteUtf8Bytes(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         byteCount: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

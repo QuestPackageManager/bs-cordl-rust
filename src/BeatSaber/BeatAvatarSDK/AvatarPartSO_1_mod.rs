@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct AvatarPartSO_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _id: *mut crate::System::String,
-    pub _localizationKey: *mut crate::System::String,
+    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _partAsset: T,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -53,7 +53,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_id(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    pub fn get_id(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -61,13 +63,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_localizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -75,7 +77,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::BeatSaber::BeatAvatarSDK::AvatarPart
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_localizationKey", ())?;
         Ok(__cordl_ret)
     }

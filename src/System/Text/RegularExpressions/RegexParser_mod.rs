@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: *mut crate::System::Text::RegularExpressions::RegexNode,
     pub _group: *mut crate::System::Text::RegularExpressions::RegexNode,
     pub _alternation: *mut crate::System::Text::RegularExpressions::RegexNode,
     pub _concatenation: *mut crate::System::Text::RegularExpressions::RegexNode,
     pub _unit: *mut crate::System::Text::RegularExpressions::RegexNode,
-    pub _pattern: *mut crate::System::String,
+    pub _pattern: *mut quest_hook::libil2cpp::Il2CppString,
     pub _currentPos: i32,
     pub _culture: *mut crate::System::Globalization::CultureInfo,
     pub _autocap: i32,
@@ -19,7 +19,7 @@ pub struct RegexParser {
     pub _capnames: *mut crate::System::Collections::Hashtable,
     pub _capnumlist: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _capnamelist: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _options: crate::System::Text::RegularExpressions::RegexOptions,
     pub _optionsStack: *mut crate::System::Collections::Generic::List_1<
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexParser")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -138,7 +138,7 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn AddUnitSet(
         &mut self,
-        cc: *mut crate::System::String,
+        cc: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +170,7 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn CaptureSlotFromName(
         &mut self,
-        capname: *mut crate::System::String,
+        capname: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,7 +218,7 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn IsCaptureName(
         &mut self,
-        capname: *mut crate::System::String,
+        capname: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -252,7 +252,7 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn MakeException(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::ArgumentException> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -303,7 +303,7 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn NoteCaptureName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         pos: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -340,11 +340,11 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn ParseProperty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ParseProperty", ())?;
         Ok(__cordl_ret)
     }
@@ -468,11 +468,11 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn ScanCapname(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ScanCapname", ())?;
         Ok(__cordl_ret)
     }
@@ -585,7 +585,7 @@ impl crate::System::Text::RegularExpressions::RegexParser {
     }
     pub fn SetPattern(
         &mut self,
-        Re: *mut crate::System::String,
+        Re: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

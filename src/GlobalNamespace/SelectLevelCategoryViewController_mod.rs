@@ -191,9 +191,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLevelCategoryViewController_LevelCategoryInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
-    pub localizedKey: *mut crate::System::String,
+    pub localizedKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub categoryIcon: *mut crate::UnityEngine::Sprite,
 }
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
@@ -205,7 +205,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SelectLevelCategoryViewController+LevelCategoryInfo")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategoryInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

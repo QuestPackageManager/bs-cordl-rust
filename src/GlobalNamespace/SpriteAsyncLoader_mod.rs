@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpriteAsyncLoader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cache: *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::Sprite,
     >,
     pub _loadingTasks: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
     >,
 }
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SpriteAsyncLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::SpriteAsyncLoader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
     }
     pub fn LoadSpriteAsync(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::SpriteAsyncLoader {
     }
     pub fn LoadSpriteAsyncInternal(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<*mut crate::UnityEngine::Sprite>,

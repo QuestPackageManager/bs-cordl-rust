@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Zenject::PoolExceededFixedSizeException {
 #[cfg(feature = "Zenject+PoolExceededFixedSizeException")]
 impl crate::Zenject::PoolExceededFixedSizeException {
     pub fn New(
-        errorMessage: *mut crate::System::String,
+        errorMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,7 +35,7 @@ impl crate::Zenject::PoolExceededFixedSizeException {
     }
     pub fn _ctor(
         &mut self,
-        errorMessage: *mut crate::System::String,
+        errorMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

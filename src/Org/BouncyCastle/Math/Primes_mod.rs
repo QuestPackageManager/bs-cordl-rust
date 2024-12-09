@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Primes {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+Primes")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+Primes")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,7 +59,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::Prime
 #[repr(C)]
 #[derive(Debug)]
 pub struct Primes_MROutput {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mProvablyComposite: bool,
     pub mFactor: *mut crate::Org::BouncyCastle::Math::BigInteger,
 }
@@ -70,7 +70,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+MROutput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes_MROutput {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -144,7 +144,7 @@ for crate::Org::BouncyCastle::Math::Primes_MROutput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Primes_STOutput {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mPrime: *mut crate::Org::BouncyCastle::Math::BigInteger,
     pub mPrimeSeed: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub mPrimeGenCounter: i32,
@@ -156,7 +156,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+Primes+STOutput")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::Primes_STOutput {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

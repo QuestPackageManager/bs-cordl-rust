@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TriggerFloatFxGroupEffect {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _beatmapCallbacksController: *mut crate::GlobalNamespace::BeatmapCallbacksController,
     pub _floatFxBeatmapEventCallbackWrapper: *mut crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     pub _initData: *mut crate::GlobalNamespace::TriggerFloatFxGroupEffect_InitData,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TriggerFloatFxGroupEffect")]
 impl std::ops::Deref for crate::GlobalNamespace::TriggerFloatFxGroupEffect {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,7 +87,7 @@ for crate::GlobalNamespace::TriggerFloatFxGroupEffect {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TriggerFloatFxGroupEffect_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub groupId: i32,
     pub elementId: i32,
     pub target: *mut crate::GlobalNamespace::FloatFxGroupEffectTarget,
@@ -100,7 +100,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TriggerFloatFxGroupEffect+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TriggerFloatFxGroupEffect_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

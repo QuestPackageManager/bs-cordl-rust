@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InterpretedFrameInfo {
-    pub _methodName: *mut crate::System::String,
+    pub _methodName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _debugInfo: *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
 }
 #[cfg(feature = "System+Linq+Expressions+Interpreter+InterpretedFrameInfo")]
@@ -26,8 +26,8 @@ for crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
 impl crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -36,7 +36,7 @@ impl crate::System::Linq::Expressions::Interpreter::InterpretedFrameInfo {
     }
     pub fn _ctor(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         info: *mut crate::System::Linq::Expressions::Interpreter::DebugInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

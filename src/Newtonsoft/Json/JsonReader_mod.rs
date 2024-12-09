@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonReader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenType: crate::Newtonsoft::Json::JsonToken,
-    pub _value: *mut crate::System::Object,
+    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _quoteChar: char,
     pub _currentState: crate::Newtonsoft::Json::JsonReader_State,
     pub _currentPosition: crate::Newtonsoft::Json::JsonPosition,
@@ -14,7 +14,7 @@ pub struct JsonReader {
     pub _hasExceededMaxDepth: bool,
     pub _dateParseHandling: crate::Newtonsoft::Json::DateParseHandling,
     pub _floatParseHandling: crate::Newtonsoft::Json::FloatParseHandling,
-    pub _dateFormatString: *mut crate::System::String,
+    pub _dateFormatString: *mut quest_hook::libil2cpp::Il2CppString,
     pub _stack: *mut crate::System::Collections::Generic::List_1<
         crate::Newtonsoft::Json::JsonPosition,
     >,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+JsonReader")]
 impl std::ops::Deref for crate::Newtonsoft::Json::JsonReader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -449,11 +449,11 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadAsString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadAsString", ())?;
         Ok(__cordl_ret)
     }
@@ -461,13 +461,15 @@ impl crate::Newtonsoft::Json::JsonReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ReadAsStringAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -486,7 +488,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadBooleanString(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -497,7 +499,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadDateTimeOffsetString(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::DateTimeOffset>,
     > {
@@ -510,7 +512,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadDateTimeString(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::DateTime>,
     > {
@@ -523,7 +525,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadDecimalString(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::Nullable_1<crate::System::Decimal>,
     > {
@@ -536,7 +538,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadDoubleString(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f64>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -571,7 +573,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn ReadInt32String(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -642,6 +644,31 @@ impl crate::Newtonsoft::Json::JsonReader {
             .invoke("SetStateBasedOnCurrent", ())?;
         Ok(__cordl_ret)
     }
+    pub fn SetToken_Il2CppObject1(
+        &mut self,
+        newToken: crate::Newtonsoft::Json::JsonToken,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetToken", (newToken, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SetToken_Il2CppObject__cordl_bool2(
+        &mut self,
+        newToken: crate::Newtonsoft::Json::JsonToken,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        updateIndex: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetToken", (newToken, value, updateIndex))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetToken_JsonToken0(
         &mut self,
         newToken: crate::Newtonsoft::Json::JsonToken,
@@ -651,31 +678,6 @@ impl crate::Newtonsoft::Json::JsonReader {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetToken", (newToken))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetToken_Object1(
-        &mut self,
-        newToken: crate::Newtonsoft::Json::JsonToken,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetToken", (newToken, value))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetToken_Object__cordl_bool2(
-        &mut self,
-        newToken: crate::Newtonsoft::Json::JsonToken,
-        value: *mut crate::System::Object,
-        updateIndex: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetToken", (newToken, value, updateIndex))?;
         Ok(__cordl_ret)
     }
     pub fn Skip(
@@ -769,11 +771,11 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn get_DateFormatString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DateFormatString", ())?;
         Ok(__cordl_ret)
     }
@@ -826,11 +828,11 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn get_Path(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Path", ())?;
         Ok(__cordl_ret)
     }
@@ -860,11 +862,11 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
@@ -902,7 +904,7 @@ impl crate::Newtonsoft::Json::JsonReader {
     }
     pub fn set_DateFormatString(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

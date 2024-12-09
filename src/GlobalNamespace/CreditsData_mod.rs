@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub creditsItems: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::CreditsData_RootCreditsItem,
     >,
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CreditsData")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::CreditsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData_ChildCreditsItem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub title: *mut crate::GlobalNamespace::CreditsData_Text,
     pub text: *mut crate::GlobalNamespace::CreditsData_Text,
 }
@@ -76,7 +76,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CreditsData+ChildCreditsItem")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,7 +135,7 @@ for crate::GlobalNamespace::CreditsData_ChildCreditsItem {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData_RootCreditsItem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub title: *mut crate::GlobalNamespace::CreditsData_Text,
     pub text: *mut crate::GlobalNamespace::CreditsData_Text,
     pub rowCountOverride: i32,
@@ -150,7 +150,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CreditsData+RootCreditsItem")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_RootCreditsItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -216,8 +216,8 @@ for crate::GlobalNamespace::CreditsData_RootCreditsItem {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CreditsData_Text {
-    __cordl_parent: crate::System::Object,
-    pub text: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub text: *mut quest_hook::libil2cpp::Il2CppString,
     pub localized: bool,
     pub style: crate::GlobalNamespace::CreditsData_TextStyle,
 }
@@ -228,7 +228,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CreditsData+Text")]
 impl std::ops::Deref for crate::GlobalNamespace::CreditsData_Text {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -257,11 +257,11 @@ impl crate::GlobalNamespace::CreditsData_Text {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }

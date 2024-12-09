@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct EventSourceAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Guid_k__BackingField: *mut crate::System::String,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    pub _Guid_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+Tracing+EventSourceAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -46,7 +46,7 @@ impl crate::System::Diagnostics::Tracing::EventSourceAttribute {
     }
     pub fn set_Guid(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +57,7 @@ impl crate::System::Diagnostics::Tracing::EventSourceAttribute {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

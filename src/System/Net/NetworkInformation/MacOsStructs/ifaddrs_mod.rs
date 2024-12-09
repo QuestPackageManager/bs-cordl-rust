@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct ifaddrs {
     pub ifa_next: crate::System::IntPtr,
-    pub ifa_name: *mut crate::System::String,
+    pub ifa_name: *mut quest_hook::libil2cpp::Il2CppString,
     pub ifa_flags: u32,
     pub ifa_addr: crate::System::IntPtr,
     pub ifa_netmask: crate::System::IntPtr,

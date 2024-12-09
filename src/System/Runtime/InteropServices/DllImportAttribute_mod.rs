@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct DllImportAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _val: *mut crate::System::String,
-    pub EntryPoint: *mut crate::System::String,
+    pub _val: *mut quest_hook::libil2cpp::Il2CppString,
+    pub EntryPoint: *mut quest_hook::libil2cpp::Il2CppString,
     pub CharSet: crate::System::Runtime::InteropServices::CharSet,
     pub SetLastError: bool,
     pub ExactSpelling: bool,
@@ -34,8 +34,8 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::DllImportAt
 }
 #[cfg(feature = "System+Runtime+InteropServices+DllImportAttribute")]
 impl crate::System::Runtime::InteropServices::DllImportAttribute {
-    pub fn New_String1(
-        dllName: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        dllName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,9 +43,9 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             .invoke_void(".ctor", (dllName))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
-        dllName: *mut crate::System::String,
-        entryPoint: *mut crate::System::String,
+    pub fn New_Il2CppString_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
+        dllName: *mut quest_hook::libil2cpp::Il2CppString,
+        entryPoint: *mut quest_hook::libil2cpp::Il2CppString,
         charSet: crate::System::Runtime::InteropServices::CharSet,
         exactSpelling: bool,
         setLastError: bool,
@@ -73,9 +73,9 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             )?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        dllName: *mut crate::System::String,
+        dllName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,10 +84,10 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
             .invoke(".ctor", (dllName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
+    pub fn _ctor_Il2CppString_CharSet__cordl_bool__cordl_bool__cordl_bool_CallingConvention__cordl_bool__cordl_bool0(
         &mut self,
-        dllName: *mut crate::System::String,
-        entryPoint: *mut crate::System::String,
+        dllName: *mut quest_hook::libil2cpp::Il2CppString,
+        entryPoint: *mut quest_hook::libil2cpp::Il2CppString,
         charSet: crate::System::Runtime::InteropServices::CharSet,
         exactSpelling: bool,
         setLastError: bool,
@@ -118,11 +118,11 @@ impl crate::System::Runtime::InteropServices::DllImportAttribute {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CutScoreBuffer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _saberSwingRatingCounter: *mut crate::GlobalNamespace::SaberSwingRatingCounter,
     pub _noteCutInfo: crate::GlobalNamespace::NoteCutInfo,
     pub _noteScoreDefinition: *mut crate::GlobalNamespace::ScoreModel_NoteScoreDefinition,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CutScoreBuffer")]
 impl std::ops::Deref for crate::GlobalNamespace::CutScoreBuffer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

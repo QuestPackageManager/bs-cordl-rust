@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonRegex {
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonRegex")]
 impl crate::Newtonsoft::Json::Bson::BsonRegex {
     pub fn New(
-        pattern: *mut crate::System::String,
-        options: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
+        options: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,8 +38,8 @@ impl crate::Newtonsoft::Json::Bson::BsonRegex {
     }
     pub fn _ctor(
         &mut self,
-        pattern: *mut crate::System::String,
-        options: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
+        options: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

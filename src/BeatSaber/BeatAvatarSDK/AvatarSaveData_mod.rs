@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSaveData {
-    __cordl_parent: crate::System::Object,
-    pub headTopId: *mut crate::System::String,
-    pub glassesId: *mut crate::System::String,
-    pub facialHairId: *mut crate::System::String,
-    pub handsId: *mut crate::System::String,
-    pub clothesId: *mut crate::System::String,
-    pub skinColorId: *mut crate::System::String,
-    pub mouthId: *mut crate::System::String,
-    pub eyesId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub headTopId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub glassesId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub facialHairId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub handsId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub clothesId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub skinColorId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub mouthId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub eyesId: *mut quest_hook::libil2cpp::Il2CppString,
     pub headTopPrimaryColor: crate::UnityEngine::Color,
     pub headTopSecondaryColor: crate::UnityEngine::Color,
     pub glassesColor: crate::UnityEngine::Color,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarSaveData")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

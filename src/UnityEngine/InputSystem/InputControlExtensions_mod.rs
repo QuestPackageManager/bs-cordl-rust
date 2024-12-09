@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControlExtensions {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControlExtensions")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControlExtensions {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -197,7 +197,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     }
     pub fn WithDisplayName(
         &mut self,
-        displayName: *mut crate::System::String,
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
@@ -237,7 +237,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     }
     pub fn WithName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
@@ -282,7 +282,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder {
     }
     pub fn WithShortDisplayName(
         &mut self,
-        shortDisplayName: *mut crate::System::String,
+        shortDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_ControlBuilder,
     > {
@@ -451,7 +451,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     }
     pub fn WithDisplayName(
         &mut self,
-        displayName: *mut crate::System::String,
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
     > {
@@ -477,7 +477,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     }
     pub fn WithName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
     > {
@@ -490,7 +490,7 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder {
     }
     pub fn WithShortDisplayName(
         &mut self,
-        shortDisplayName: *mut crate::System::String,
+        shortDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::InputControlExtensions_DeviceBuilder,
     > {
@@ -750,8 +750,8 @@ impl crate::UnityEngine::InputSystem::InputControlExtensions_InputEventControlEn
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),

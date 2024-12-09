@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectedPropertyBagProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_CreatePropertyMethod: *mut crate::System::Reflection::MethodInfo,
     pub m_CreatePropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
     pub m_CreateIndexedCollectionPropertyBagMethod: *mut crate::System::Reflection::MethodInfo,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+Internal+ReflectedPropertyBagProvider")]
 impl std::ops::Deref
 for crate::Unity::Properties::Internal::ReflectedPropertyBagProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

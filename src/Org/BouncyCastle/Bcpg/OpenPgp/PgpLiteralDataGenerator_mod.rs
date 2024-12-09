@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpLiteralDataGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pkOut: *mut crate::Org::BouncyCastle::Bcpg::BcpgOutputStream,
     pub oldFormat: bool,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpLiteralDataGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,11 +72,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
             .invoke("Open", (outStr, format, file))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_String_DateTime_Il2CppArray1(
+    pub fn Open_Il2CppString_DateTime_Il2CppArray1(
         &mut self,
         outStr: *mut crate::System::IO::Stream,
         format: char,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         modificationTime: crate::System::DateTime,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
@@ -87,11 +87,11 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpLiteralDataGenerator {
             .invoke("Open", (outStr, format, name, modificationTime, buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_String_i64_DateTime0(
+    pub fn Open_Il2CppString_i64_DateTime0(
         &mut self,
         outStr: *mut crate::System::IO::Stream,
         format: char,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         length: i64,
         modificationTime: crate::System::DateTime,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {

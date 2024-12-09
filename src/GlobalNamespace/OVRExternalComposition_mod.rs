@@ -24,7 +24,7 @@ pub struct OVRExternalComposition {
     >,
     pub cameraPoseTimeArray: *mut quest_hook::libil2cpp::Il2CppArray<f64>,
     pub cachedAudioDataArray: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub audioDataLock: *mut crate::System::Object,
+    pub audioDataLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub cachedAudioData: *mut crate::System::Collections::Generic::List_1<f32>,
     pub cachedChannels: i32,
 }

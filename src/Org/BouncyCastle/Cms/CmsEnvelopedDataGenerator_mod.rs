@@ -39,10 +39,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             .invoke("Generate", (content, cipherBuilder))?;
         Ok(__cordl_ret)
     }
-    pub fn Generate_String1(
+    pub fn Generate_Il2CppString1(
         &mut self,
         content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedData,
     > {
@@ -53,10 +53,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             .invoke("Generate", (content, encryptionOid))?;
         Ok(__cordl_ret)
     }
-    pub fn Generate_String_CipherKeyGenerator0(
+    pub fn Generate_Il2CppString_CipherKeyGenerator0(
         &mut self,
         content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
         keyGen: *mut crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedData,
@@ -68,10 +68,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataGenerator {
             .invoke("Generate", (content, encryptionOid, keyGen))?;
         Ok(__cordl_ret)
     }
-    pub fn Generate_String_i32_3(
+    pub fn Generate_Il2CppString_i32_3(
         &mut self,
         content: *mut crate::Org::BouncyCastle::Cms::CmsProcessable,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
         keySize: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Cms::CmsEnvelopedData,

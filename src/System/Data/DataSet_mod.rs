@@ -7,9 +7,9 @@ pub struct DataSet {
     pub _tableCollection: *mut crate::System::Data::DataTableCollection,
     pub _relationCollection: *mut crate::System::Data::DataRelationCollection,
     pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
-    pub _dataSetName: *mut crate::System::String,
-    pub _datasetPrefix: *mut crate::System::String,
-    pub _namespaceURI: *mut crate::System::String,
+    pub _dataSetName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _datasetPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     pub _enforceConstraints: bool,
     pub _caseSensitive: bool,
     pub _culture: *mut crate::System::Globalization::CultureInfo,
@@ -20,9 +20,9 @@ pub struct DataSet {
     pub _fInitInProgress: bool,
     pub _fEnableCascading: bool,
     pub _fIsSchemaLoading: bool,
-    pub _mainTableName: *mut crate::System::String,
+    pub _mainTableName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _remotingFormat: crate::System::Data::SerializationFormat,
-    pub _defaultViewManagerLock: *mut crate::System::Object,
+    pub _defaultViewManagerLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _objectID: i32,
     pub _useDataSetSchemaOnly: bool,
     pub _udtIsWrapped: bool,
@@ -198,22 +198,22 @@ impl crate::System::Data::DataSet {
     pub fn GetRemotingDiffGram(
         &mut self,
         table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetRemotingDiffGram", (table))?;
         Ok(__cordl_ret)
     }
     pub fn GetXmlSchemaForRemoting(
         &mut self,
         table: *mut crate::System::Data::DataTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetXmlSchemaForRemoting", (table))?;
         Ok(__cordl_ret)
     }
@@ -221,7 +221,7 @@ impl crate::System::Data::DataSet {
         &mut self,
         xdoc: *mut crate::System::Xml::XmlDocument,
         excludedNamespaces: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         mode: crate::System::Data::XmlReadMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -291,6 +291,15 @@ impl crate::System::Data::DataSet {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString1(
+        dataSetName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (dataSetName))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext2(
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
@@ -310,15 +319,6 @@ impl crate::System::Data::DataSet {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context, ConstructSchema))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        dataSetName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (dataSetName))?;
         Ok(__cordl_object)
     }
     pub fn OnClearFunctionCalled(
@@ -412,7 +412,7 @@ impl crate::System::Data::DataSet {
     pub fn RaiseMergeFailed(
         &mut self,
         table: *mut crate::System::Data::DataTable,
-        conflict: *mut crate::System::String,
+        conflict: *mut quest_hook::libil2cpp::Il2CppString,
         missingSchemaAction: crate::System::Data::MissingSchemaAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -424,7 +424,7 @@ impl crate::System::Data::DataSet {
     }
     pub fn RaisePropertyChanging(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -728,7 +728,7 @@ impl crate::System::Data::DataSet {
         schemaFormat: crate::System::Data::SchemaFormat,
         multipleTargetConverter: *mut crate::System::Converter_2<
             *mut crate::System::Type,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -746,6 +746,17 @@ impl crate::System::Data::DataSet {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString1(
+        &mut self,
+        dataSetName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (dataSetName))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_SerializationInfo_StreamingContext2(
@@ -773,17 +784,6 @@ impl crate::System::Data::DataSet {
             .invoke(".ctor", (info, context, ConstructSchema))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
-        &mut self,
-        dataSetName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (dataSetName))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_CaseSensitive(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -793,11 +793,11 @@ impl crate::System::Data::DataSet {
     }
     pub fn get_DataSetName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DataSetName", ())?;
         Ok(__cordl_ret)
     }
@@ -830,21 +830,21 @@ impl crate::System::Data::DataSet {
     }
     pub fn get_MainTableName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_MainTableName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }
@@ -857,11 +857,11 @@ impl crate::System::Data::DataSet {
     }
     pub fn get_Prefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Prefix", ())?;
         Ok(__cordl_ret)
     }
@@ -930,7 +930,7 @@ impl crate::System::Data::DataSet {
     }
     pub fn set_DataSetName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -963,7 +963,7 @@ impl crate::System::Data::DataSet {
     }
     pub fn set_MainTableName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -974,7 +974,7 @@ impl crate::System::Data::DataSet {
     }
     pub fn set_Namespace(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -985,7 +985,7 @@ impl crate::System::Data::DataSet {
     }
     pub fn set_Prefix(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IPHostEntry {
-    __cordl_parent: crate::System::Object,
-    pub hostName: *mut crate::System::String,
-    pub aliases: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub hostName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub aliases: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub addressList: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Net::IPAddress,
     >,
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+IPHostEntry")]
 impl std::ops::Deref for crate::System::Net::IPHostEntry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,11 +64,11 @@ impl crate::System::Net::IPHostEntry {
     }
     pub fn get_HostName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_HostName", ())?;
         Ok(__cordl_ret)
     }
@@ -85,7 +87,9 @@ impl crate::System::Net::IPHostEntry {
     }
     pub fn set_Aliases(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,7 +100,7 @@ impl crate::System::Net::IPHostEntry {
     }
     pub fn set_HostName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

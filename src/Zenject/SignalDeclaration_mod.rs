@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalDeclaration {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subscriptions: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Zenject::SignalSubscription,
     >,
     pub _asyncQueue: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _bindingId: crate::Zenject::BindingId,
     pub _missingHandlerResponses: crate::Zenject::SignalMissingHandlerResponses,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalDeclaration")]
 impl std::ops::Deref for crate::Zenject::SignalDeclaration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -60,7 +60,7 @@ impl crate::Zenject::SignalDeclaration {
     }
     pub fn Fire(
         &mut self,
-        signal: *mut crate::System::Object,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,7 +74,7 @@ impl crate::Zenject::SignalDeclaration {
         subscriptions: *mut crate::System::Collections::Generic::List_1<
             *mut crate::Zenject::SignalSubscription,
         >,
-        signal: *mut crate::System::Object,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

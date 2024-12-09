@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncLocal_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_valueChangedHandler: *mut crate::System::Action_1<
         crate::System::Threading::AsyncLocalValueChangedArgs_1<T>,
     >,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+AsyncLocal_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::AsyncLocal_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,8 +47,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Threading::AsyncLocal_1<T> {
     }
     pub fn System_Threading_IAsyncLocal_OnValueChanged(
         &mut self,
-        previousValueObj: *mut crate::System::Object,
-        currentValueObj: *mut crate::System::Object,
+        previousValueObj: *mut quest_hook::libil2cpp::Il2CppObject,
+        currentValueObj: *mut quest_hook::libil2cpp::Il2CppObject,
         contextChanged: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

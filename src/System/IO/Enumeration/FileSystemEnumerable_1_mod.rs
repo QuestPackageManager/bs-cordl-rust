@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enumerator: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_DelegateEnumerator<
         TResult,
     >,
@@ -10,7 +10,7 @@ pub struct FileSystemEnumerable_1<TResult: quest_hook::libil2cpp::Type> {
         TResult,
     >,
     pub _options: *mut crate::System::IO::EnumerationOptions,
-    pub _directory: *mut crate::System::String,
+    pub _directory: *mut quest_hook::libil2cpp::Il2CppString,
     pub _ShouldIncludePredicate_k__BackingField: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindPredicate<
         TResult,
     >,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+IO+Enumeration+FileSystemEnumerable_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::IO::Enumeration::FileSystemEnumerable_1<TResult> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -73,7 +73,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
         transform: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<
             TResult,
         >,
@@ -105,7 +105,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
         transform: *mut crate::System::IO::Enumeration::FileSystemEnumerable_1_FindTransform<
             TResult,
         >,
@@ -362,7 +362,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -377,7 +377,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -451,7 +451,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -466,7 +466,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

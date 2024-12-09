@@ -57,8 +57,8 @@ impl crate::GlobalNamespace::DefaultScenesTransitionsFromInit {
     }
     pub fn TransitionToStartupErrorScene(
         &mut self,
-        title: *mut crate::System::String,
-        subtitle: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
+        subtitle: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

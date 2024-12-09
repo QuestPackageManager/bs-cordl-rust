@@ -43,12 +43,12 @@ impl crate::System::ComponentModel::ReferenceConverter {
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
         culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertFrom", (context, culture, value))?;
         Ok(__cordl_ret)
     }
@@ -56,13 +56,13 @@ impl crate::System::ComponentModel::ReferenceConverter {
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
         culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertTo", (context, culture, value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -104,7 +104,7 @@ impl crate::System::ComponentModel::ReferenceConverter {
     pub fn IsValueAllowed(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,7 +148,7 @@ for crate::System::ComponentModel::ReferenceConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReferenceConverter_ReferenceComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _converter: *mut crate::System::ComponentModel::ReferenceConverter,
 }
 #[cfg(feature = "System+ComponentModel+ReferenceConverter+ReferenceComparer")]
@@ -160,7 +160,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+ComponentModel+ReferenceConverter+ReferenceComparer")]
 impl std::ops::Deref
 for crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -176,8 +176,8 @@ for crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
 impl crate::System::ComponentModel::ReferenceConverter_ReferenceComparer {
     pub fn Compare(
         &mut self,
-        item1: *mut crate::System::Object,
-        item2: *mut crate::System::Object,
+        item1: *mut quest_hook::libil2cpp::Il2CppObject,
+        item2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

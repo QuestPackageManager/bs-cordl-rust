@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRInput {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRInput,
 }
 #[cfg(feature = "OVR+OpenVR+CVRInput")]
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRInput")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRInput {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::OVR::OpenVR::CVRInput {
     }
     pub fn GetActionHandle(
         &mut self,
-        pchActionName: *mut crate::System::String,
+        pchActionName: *mut quest_hook::libil2cpp::Il2CppString,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,7 +80,7 @@ impl crate::OVR::OpenVR::CVRInput {
     }
     pub fn GetActionSetHandle(
         &mut self,
-        pchActionSetName: *mut crate::System::String,
+        pchActionSetName: *mut quest_hook::libil2cpp::Il2CppString,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,7 +130,7 @@ impl crate::OVR::OpenVR::CVRInput {
     }
     pub fn GetInputSourceHandle(
         &mut self,
-        pchInputSourcePath: *mut crate::System::String,
+        pchInputSourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         pHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -283,7 +283,7 @@ impl crate::OVR::OpenVR::CVRInput {
     }
     pub fn SetActionManifestPath(
         &mut self,
-        pchActionManifestPath: *mut crate::System::String,
+        pchActionManifestPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRInputError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

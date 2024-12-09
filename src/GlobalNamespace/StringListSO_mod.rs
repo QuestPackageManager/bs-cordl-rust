@@ -3,7 +3,9 @@
 #[derive(Debug)]
 pub struct StringListSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _strings: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _strings: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "StringListSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -46,14 +48,14 @@ impl crate::GlobalNamespace::StringListSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_strings", ())?;
         Ok(__cordl_ret)
     }

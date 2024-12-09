@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TlsProtocol {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mApplicationDataQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
     pub mAlertQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
     pub mHandshakeQueue: *mut crate::Org::BouncyCastle::Crypto::Tls::ByteQueue,
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsProtocol")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -235,7 +235,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
     pub fn HandleException(
         &mut self,
         alertDescription: u8,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         cause: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -432,7 +432,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
     pub fn RaiseAlertFatal(
         &mut self,
         alertDescription: u8,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         cause: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -445,7 +445,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsProtocol {
     pub fn RaiseAlertWarning(
         &mut self,
         alertDescription: u8,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

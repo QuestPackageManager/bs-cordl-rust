@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct OSPlatform {
-    pub _osPlatform: *mut crate::System::String,
+    pub _osPlatform: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -22,20 +22,9 @@ for crate::System::Runtime::InteropServices::OSPlatform {
 }
 #[cfg(feature = "System+Runtime+InteropServices+OSPlatform")]
 impl crate::System::Runtime::InteropServices::OSPlatform {
-    pub fn Equals_OSPlatform0(
+    pub fn Equals_Il2CppObject2(
         &mut self,
-        other: crate::System::Runtime::InteropServices::OSPlatform,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object2(
-        &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -44,9 +33,20 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_String1(
+    pub fn Equals_Il2CppString1(
         &mut self,
-        other: *mut crate::System::String,
+        other: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (other),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn Equals_OSPlatform0(
+        &mut self,
+        other: crate::System::Runtime::InteropServices::OSPlatform,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -65,8 +65,8 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -75,7 +75,7 @@ impl crate::System::Runtime::InteropServices::OSPlatform {
     }
     pub fn _ctor(
         &mut self,
-        osPlatform: *mut crate::System::String,
+        osPlatform: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

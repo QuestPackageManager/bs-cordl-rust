@@ -4,7 +4,7 @@
 pub struct CloudsMeshGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _meshFilter: *mut crate::UnityEngine::MeshFilter,
-    pub _meshName: *mut crate::System::String,
+    pub _meshName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _pauseGenerator: bool,
     pub _bottomPushEnabled: bool,
     pub _bottomPushDistance: f32,

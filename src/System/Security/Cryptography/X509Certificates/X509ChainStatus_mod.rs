@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct X509ChainStatus {
     pub status: crate::System::Security::Cryptography::X509Certificates::X509ChainStatusFlags,
-    pub info: *mut crate::System::String,
+    pub info: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X509ChainStatus")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -60,7 +60,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509ChainStatus {
     }
     pub fn set_StatusInformation(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

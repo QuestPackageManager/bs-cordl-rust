@@ -105,8 +105,8 @@ impl<
             .invoke("GetTooltipRect", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_String0(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -119,7 +119,7 @@ impl<
         Ok(__cordl_object)
     }
     pub fn New_VisualElement1(
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         visualInput: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -320,9 +320,9 @@ impl<
         let __cordl_ret: TValueType = __cordl_object.invoke("ValidatedValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -337,7 +337,7 @@ impl<
     }
     pub fn _ctor_VisualElement1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         visualInput: *mut crate::UnityEngine::UIElements::VisualElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -368,7 +368,7 @@ impl<
     }
     pub fn get_label(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -376,7 +376,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_label", ())?;
         Ok(__cordl_ret)
     }
@@ -474,7 +474,7 @@ impl<
     }
     pub fn set_label(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

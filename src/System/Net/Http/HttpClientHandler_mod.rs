@@ -116,12 +116,12 @@ impl crate::System::Net::Http::HttpClientHandler {
     }
     pub fn _set_ClientCertificateOptions_b__23_0(
         &mut self,
-        sender: *mut crate::System::Object,
-        targetHost: *mut crate::System::String,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         localCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         remoteCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,

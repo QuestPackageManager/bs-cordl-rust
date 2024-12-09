@@ -69,7 +69,7 @@ impl crate::UnityEngine::Playables::PlayableGraph {
     }
     pub fn CreateScriptOutputInternal(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         handle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Playables::PlayableOutputHandle,
         >,

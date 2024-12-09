@@ -21,7 +21,7 @@ pub struct InputField {
     pub m_CaretColor: crate::UnityEngine::Color,
     pub m_CustomCaretColor: bool,
     pub m_SelectionColor: crate::UnityEngine::Color,
-    pub m_Text: *mut crate::System::String,
+    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_CaretBlinkRate: f32,
     pub m_CaretWidth: i32,
     pub m_ReadOnly: bool,
@@ -46,7 +46,7 @@ pub struct InputField {
     pub m_DrawStart: i32,
     pub m_DrawEnd: i32,
     pub m_DragCoroutine: *mut crate::UnityEngine::Coroutine,
-    pub m_OriginalText: *mut crate::System::String,
+    pub m_OriginalText: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_WasCanceled: bool,
     pub m_HasDoneFocusTransition: bool,
     pub m_WaitForSecondsRealtime: *mut crate::UnityEngine::WaitForSecondsRealtime,
@@ -121,9 +121,9 @@ impl crate::UnityEngine::UI::InputField {
             .invoke("ActivateInputFieldInternal", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Append_String0(
+    pub fn Append_Il2CppString0(
         &mut self,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -369,11 +369,11 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn GetSelectedString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetSelectedString", ())?;
         Ok(__cordl_ret)
     }
@@ -889,7 +889,7 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn SetText(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         sendCallback: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -901,7 +901,7 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn SetTextWithoutNotify(
         &mut self,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1015,7 +1015,7 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn Validate(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         pos: i32,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<char> {
@@ -1121,11 +1121,11 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn get_compositionString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_compositionString", ())?;
         Ok(__cordl_ret)
     }
@@ -1385,11 +1385,11 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
@@ -1708,7 +1708,7 @@ impl crate::UnityEngine::UI::InputField {
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1790,7 +1790,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_EndEditEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1799,7 +1801,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+EndEditEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_EndEditEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1870,7 +1874,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_OnChangeEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1879,7 +1885,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+OnChangeEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_OnChangeEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1948,11 +1956,11 @@ impl std::ops::DerefMut for crate::UnityEngine::UI::InputField_OnValidateInput {
 impl crate::UnityEngine::UI::InputField_OnValidateInput {
     pub fn BeginInvoke(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         charIndex: i32,
         addedChar: char,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1973,7 +1981,7 @@ impl crate::UnityEngine::UI::InputField_OnValidateInput {
     }
     pub fn Invoke(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         charIndex: i32,
         addedChar: char,
     ) -> quest_hook::libil2cpp::Result<char> {
@@ -1985,7 +1993,7 @@ impl crate::UnityEngine::UI::InputField_OnValidateInput {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1996,7 +2004,7 @@ impl crate::UnityEngine::UI::InputField_OnValidateInput {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2021,7 +2029,9 @@ for crate::UnityEngine::UI::InputField_OnValidateInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputField_SubmitEvent {
-    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>,
+    __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -2030,7 +2040,9 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UI+InputField+SubmitEvent")]
 impl std::ops::Deref for crate::UnityEngine::UI::InputField_SubmitEvent {
-    type Target = crate::UnityEngine::Events::UnityEvent_1<*mut crate::System::String>;
+    type Target = crate::UnityEngine::Events::UnityEvent_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

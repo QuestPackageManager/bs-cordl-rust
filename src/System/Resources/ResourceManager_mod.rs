@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ResourceSets: *mut crate::System::Collections::Hashtable,
     pub _resourceSets: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Resources::ResourceSet,
     >,
     pub MainAssembly: *mut crate::System::Reflection::Assembly,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+ResourceManager")]
 impl std::ops::Deref for crate::System::Resources::ResourceManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,7 +116,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Resources::ResourceMan
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_CultureNameResourceSetPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -127,7 +127,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Resources+ResourceManager+CultureNameResourceSetPair")]
 impl std::ops::Deref
 for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -173,7 +173,7 @@ for crate::System::Resources::ResourceManager_CultureNameResourceSetPair {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceManager_ResourceManagerMediator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _rm: *mut crate::System::Resources::ResourceManager,
 }
 #[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
@@ -185,7 +185,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Resources+ResourceManager+ResourceManagerMediator")]
 impl std::ops::Deref
 for crate::System::Resources::ResourceManager_ResourceManagerMediator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

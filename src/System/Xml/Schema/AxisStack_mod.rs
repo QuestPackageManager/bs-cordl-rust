@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AxisStack {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: *mut crate::System::Collections::ArrayList,
     pub _subtree: *mut crate::System::Xml::Schema::ForwardAxis,
     pub _parent: *mut crate::System::Xml::Schema::ActiveAxis,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+AxisStack")]
 impl std::ops::Deref for crate::System::Xml::Schema::AxisStack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,8 +29,8 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::AxisStack {
 impl crate::System::Xml::Schema::AxisStack {
     pub fn MoveToAttribute(
         &mut self,
-        name: *mut crate::System::String,
-        URN: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        URN: *mut quest_hook::libil2cpp::Il2CppString,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -42,8 +42,8 @@ impl crate::System::Xml::Schema::AxisStack {
     }
     pub fn MoveToChild(
         &mut self,
-        name: *mut crate::System::String,
-        URN: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        URN: *mut quest_hook::libil2cpp::Il2CppString,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -55,8 +55,8 @@ impl crate::System::Xml::Schema::AxisStack {
     }
     pub fn MoveToParent(
         &mut self,
-        name: *mut crate::System::String,
-        URN: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        URN: *mut quest_hook::libil2cpp::Il2CppString,
         depth: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

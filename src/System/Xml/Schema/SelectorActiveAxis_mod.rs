@@ -29,8 +29,8 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::SelectorActiveAxis {
 impl crate::System::Xml::Schema::SelectorActiveAxis {
     pub fn EndElement(
         &mut self,
-        localname: *mut crate::System::String,
-        URN: *mut crate::System::String,
+        localname: *mut quest_hook::libil2cpp::Il2CppString,
+        URN: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

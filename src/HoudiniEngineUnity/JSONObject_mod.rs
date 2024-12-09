@@ -4,7 +4,7 @@
 pub struct JSONObject {
     __cordl_parent: crate::HoudiniEngineUnity::JSONNode,
     pub m_Dict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::HoudiniEngineUnity::JSONNode,
     >,
     pub _cordl_inline: bool,
@@ -35,7 +35,7 @@ impl crate::HoudiniEngineUnity::JSONObject {
     pub type _get_Children_d__23 = crate::HoudiniEngineUnity::JSONObject__get_Children_d__23;
     pub fn Add(
         &mut self,
-        aKey: *mut crate::System::String,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
         aItem: *mut crate::HoudiniEngineUnity::JSONNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -62,6 +62,17 @@ impl crate::HoudiniEngineUnity::JSONObject {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn Remove_Il2CppString0(
+        &mut self,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONNode> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONNode = __cordl_object
+            .invoke("Remove", (aKey))?;
+        Ok(__cordl_ret)
+    }
     pub fn Remove_JSONNode2(
         &mut self,
         aNode: *mut crate::HoudiniEngineUnity::JSONNode,
@@ -71,17 +82,6 @@ impl crate::HoudiniEngineUnity::JSONObject {
         );
         let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONNode = __cordl_object
             .invoke("Remove", (aNode))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Remove_String0(
-        &mut self,
-        aKey: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONNode> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::HoudiniEngineUnity::JSONNode = __cordl_object
-            .invoke("Remove", (aKey))?;
         Ok(__cordl_ret)
     }
     pub fn Remove_i32_1(
@@ -155,9 +155,9 @@ impl crate::HoudiniEngineUnity::JSONObject {
         let __cordl_ret: bool = __cordl_object.invoke("get_IsObject", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String0(
+    pub fn get_Item_Il2CppString0(
         &mut self,
-        aKey: *mut crate::System::String,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::JSONNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,9 +198,9 @@ impl crate::HoudiniEngineUnity::JSONObject {
             .invoke("set_Inline", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn set_Item_String0(
+    pub fn set_Item_Il2CppString0(
         &mut self,
-        aKey: *mut crate::System::String,
+        aKey: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::HoudiniEngineUnity::JSONNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectIDGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_currentCount: i32,
     pub m_currentSize: i32,
     pub m_ids: *mut quest_hook::libil2cpp::Il2CppArray<i64>,
-    pub m_objs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub m_objs: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+Runtime+Serialization+ObjectIDGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+ObjectIDGenerator")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ObjectIDGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +33,7 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::ObjectIDGener
 impl crate::System::Runtime::Serialization::ObjectIDGenerator {
     pub fn FindElement(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         found: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -42,7 +44,7 @@ impl crate::System::Runtime::Serialization::ObjectIDGenerator {
     }
     pub fn GetId(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         firstTime: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -53,7 +55,7 @@ impl crate::System::Runtime::Serialization::ObjectIDGenerator {
     }
     pub fn HasId(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         firstTime: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

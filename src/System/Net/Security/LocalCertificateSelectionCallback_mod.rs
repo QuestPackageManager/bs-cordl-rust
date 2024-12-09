@@ -29,12 +29,12 @@ for crate::System::Net::Security::LocalCertificateSelectionCallback {
 impl crate::System::Net::Security::LocalCertificateSelectionCallback {
     pub fn Invoke(
         &mut self,
-        sender: *mut crate::System::Object,
-        targetHost: *mut crate::System::String,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         localCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         remoteCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -56,7 +56,7 @@ impl crate::System::Net::Security::LocalCertificateSelectionCallback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -67,7 +67,7 @@ impl crate::System::Net::Security::LocalCertificateSelectionCallback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

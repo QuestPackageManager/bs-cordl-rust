@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IdRefNode {
-    __cordl_parent: crate::System::Object,
-    pub Id: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Id: *mut quest_hook::libil2cpp::Il2CppString,
     pub LineNo: i32,
     pub LinePos: i32,
     pub Next: *mut crate::System::Xml::Schema::IdRefNode,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+IdRefNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::IdRefNode {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::IdRefNode {
 impl crate::System::Xml::Schema::IdRefNode {
     pub fn New(
         next: *mut crate::System::Xml::Schema::IdRefNode,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         lineNo: i32,
         linePos: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -43,7 +43,7 @@ impl crate::System::Xml::Schema::IdRefNode {
     pub fn _ctor(
         &mut self,
         next: *mut crate::System::Xml::Schema::IdRefNode,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         lineNo: i32,
         linePos: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

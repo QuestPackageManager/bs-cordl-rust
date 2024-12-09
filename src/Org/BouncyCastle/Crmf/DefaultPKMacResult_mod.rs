@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultPKMacResult {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mac: *mut crate::Org::BouncyCastle::Crypto::IMac,
 }
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crmf+DefaultPKMacResult")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crmf::DefaultPKMacResult {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

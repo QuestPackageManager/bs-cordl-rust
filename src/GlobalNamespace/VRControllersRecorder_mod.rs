@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SavedData_VRControllersRecorder_KeyframeSerializable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _xPos1: f32,
     pub _yPos1: f32,
     pub _zPos1: f32,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "VRControllersRecorder+SavedData+KeyframeSerializable")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,7 +83,7 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
 pub struct VRControllersRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _recordingTextAsset: *mut crate::UnityEngine::TextAsset,
-    pub _recordingFileName: *mut crate::System::String,
+    pub _recordingFileName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
     pub _dontMoveHead: bool,
     pub _changeToNonVRCamera: bool,
@@ -347,21 +347,21 @@ impl crate::GlobalNamespace::VRControllersRecorder {
     }
     pub fn get_path(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_path", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_recordingFileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_recordingFileName", ())?;
         Ok(__cordl_ret)
     }
@@ -399,7 +399,7 @@ impl crate::GlobalNamespace::VRControllersRecorder {
     }
     pub fn set_recordingFileName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -434,7 +434,7 @@ for crate::GlobalNamespace::VRControllersRecorder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_Keyframe {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pos1: crate::UnityEngine::Vector3,
     pub pos2: crate::UnityEngine::Vector3,
     pub pos3: crate::UnityEngine::Vector3,
@@ -450,7 +450,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -463,9 +463,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_Keyfra
 }
 #[cfg(feature = "VRControllersRecorder+Keyframe")]
 impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -519,11 +519,11 @@ impl crate::GlobalNamespace::VRControllersRecorder_Keyframe {
     }
     pub fn ToConstructorString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToConstructorString", ())?;
         Ok(__cordl_ret)
     }
@@ -639,7 +639,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_SavedData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable,
     >,
@@ -651,7 +651,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder+SavedData")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_SavedData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -698,7 +698,7 @@ for crate::GlobalNamespace::VRControllersRecorder_SavedData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct VRControllersRecorder_State {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keyframes: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::VRControllersRecorder_Keyframe,
     >,
@@ -713,7 +713,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VRControllersRecorder+State")]
 impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_State {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -943,8 +943,8 @@ for crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
 impl crate::GlobalNamespace::VRControllersRecorder_TypeSerializationBinder {
     pub fn BindToType(
         &mut self,
-        assemblyName: *mut crate::System::String,
-        typeName: *mut crate::System::String,
+        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

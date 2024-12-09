@@ -273,8 +273,8 @@ for crate::GlobalNamespace::GameplaySetupViewController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameplaySetupViewController_Panel {
-    __cordl_parent: crate::System::Object,
-    pub title: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub title: *mut quest_hook::libil2cpp::Il2CppString,
     pub refreshable: *mut crate::GlobalNamespace::IRefreshable,
     pub gameObject: *mut crate::UnityEngine::GameObject,
 }
@@ -286,7 +286,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameplaySetupViewController+Panel")]
 impl std::ops::Deref for crate::GlobalNamespace::GameplaySetupViewController_Panel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -300,7 +300,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GameplaySetupViewController_
 #[cfg(feature = "GameplaySetupViewController+Panel")]
 impl crate::GlobalNamespace::GameplaySetupViewController_Panel {
     pub fn New(
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
         refreshable: *mut crate::GlobalNamespace::IRefreshable,
         gameObject: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -312,7 +312,7 @@ impl crate::GlobalNamespace::GameplaySetupViewController_Panel {
     }
     pub fn _ctor(
         &mut self,
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
         refreshable: *mut crate::GlobalNamespace::IRefreshable,
         gameObject: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

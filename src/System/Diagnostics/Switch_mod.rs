@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Switch {
-    __cordl_parent: crate::System::Object,
-    pub description: *mut crate::System::String,
-    pub displayName: *mut crate::System::String,
-    pub switchValueString: *mut crate::System::String,
-    pub defaultValue: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub description: *mut quest_hook::libil2cpp::Il2CppString,
+    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub switchValueString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+Switch")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+Switch")]
 impl std::ops::Deref for crate::System::Diagnostics::Switch {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,10 +28,10 @@ impl std::ops::DerefMut for crate::System::Diagnostics::Switch {
 }
 #[cfg(feature = "System+Diagnostics+Switch")]
 impl crate::System::Diagnostics::Switch {
-    pub fn New_String1(
-        displayName: *mut crate::System::String,
-        description: *mut crate::System::String,
-        defaultSwitchValue: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
+        defaultSwitchValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,9 +39,9 @@ impl crate::System::Diagnostics::Switch {
             .invoke_void(".ctor", (displayName, description, defaultSwitchValue))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String0(
-        displayName: *mut crate::System::String,
-        description: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString0(
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,11 +49,11 @@ impl crate::System::Diagnostics::Switch {
             .invoke_void(".ctor", (displayName, description))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        displayName: *mut crate::System::String,
-        description: *mut crate::System::String,
-        defaultSwitchValue: *mut crate::System::String,
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
+        defaultSwitchValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -62,10 +62,10 @@ impl crate::System::Diagnostics::Switch {
             .invoke(".ctor", (displayName, description, defaultSwitchValue))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String0(
+    pub fn _ctor_Il2CppString_Il2CppString0(
         &mut self,
-        displayName: *mut crate::System::String,
-        description: *mut crate::System::String,
+        displayName: *mut quest_hook::libil2cpp::Il2CppString,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonObject {
 impl crate::Newtonsoft::Json::Bson::BsonObject {
     pub fn Add(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         token: *mut crate::Newtonsoft::Json::Bson::BsonToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct StyleSelectorPart {
-    pub m_Value: *mut crate::System::String,
+    pub m_Value: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Type: crate::UnityEngine::UIElements::StyleSelectorType,
-    pub tempData: *mut crate::System::Object,
+    pub tempData: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSelectorPart")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -26,8 +26,8 @@ for crate::UnityEngine::UIElements::StyleSelectorPart {
 impl crate::UnityEngine::UIElements::StyleSelectorPart {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -48,8 +48,8 @@ impl crate::UnityEngine::UIElements::StyleSelectorPart {
     }
     pub fn get_value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_value",
             (),

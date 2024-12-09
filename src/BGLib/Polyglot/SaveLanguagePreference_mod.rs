@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SaveLanguagePreference {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub preferenceKey: *mut crate::System::String,
+    pub preferenceKey: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BGLib+Polyglot+SaveLanguagePreference")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

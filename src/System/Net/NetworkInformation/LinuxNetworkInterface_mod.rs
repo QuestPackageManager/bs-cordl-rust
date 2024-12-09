@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct LinuxNetworkInterface {
     __cordl_parent: crate::System::Net::NetworkInformation::UnixNetworkInterface,
-    pub iface_path: *mut crate::System::String,
-    pub iface_operstate_path: *mut crate::System::String,
-    pub iface_flags_path: *mut crate::System::String,
+    pub iface_path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub iface_operstate_path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub iface_flags_path: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+NetworkInformation+LinuxNetworkInterface")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -42,7 +42,7 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterface {
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -52,7 +52,7 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterface {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,11 +63,11 @@ impl crate::System::Net::NetworkInformation::LinuxNetworkInterface {
     }
     pub fn get_IfacePath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_IfacePath", ())?;
         Ok(__cordl_ret)
     }

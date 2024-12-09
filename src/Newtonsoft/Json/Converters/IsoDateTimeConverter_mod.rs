@@ -4,7 +4,7 @@
 pub struct IsoDateTimeConverter {
     __cordl_parent: crate::Newtonsoft::Json::Converters::DateTimeConverterBase,
     pub _dateTimeStyles: crate::System::Globalization::DateTimeStyles,
-    pub _dateTimeFormat: *mut crate::System::String,
+    pub _dateTimeFormat: *mut quest_hook::libil2cpp::Il2CppString,
     pub _culture: *mut crate::System::Globalization::CultureInfo,
 }
 #[cfg(feature = "Newtonsoft+Json+Converters+IsoDateTimeConverter")]
@@ -40,20 +40,20 @@ impl crate::Newtonsoft::Json::Converters::IsoDateTimeConverter {
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,
         objectType: *mut crate::System::Type,
-        existingValue: *mut crate::System::Object,
+        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
     pub fn WriteJson(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -85,11 +85,11 @@ impl crate::Newtonsoft::Json::Converters::IsoDateTimeConverter {
     }
     pub fn get_DateTimeFormat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DateTimeFormat", ())?;
         Ok(__cordl_ret)
     }
@@ -116,7 +116,7 @@ impl crate::Newtonsoft::Json::Converters::IsoDateTimeConverter {
     }
     pub fn set_DateTimeFormat(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

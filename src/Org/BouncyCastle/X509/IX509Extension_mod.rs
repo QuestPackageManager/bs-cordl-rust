@@ -49,9 +49,9 @@ impl crate::Org::BouncyCastle::X509::IX509Extension {
             .invoke("GetExtensionValue", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn GetExtensionValue_String0(
+    pub fn GetExtensionValue_Il2CppString0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     > {

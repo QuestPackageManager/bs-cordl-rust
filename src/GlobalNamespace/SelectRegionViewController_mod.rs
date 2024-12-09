@@ -162,7 +162,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[derive(Debug, Clone)]
 pub struct SelectRegionViewController_RegionToLocalizationKeyPair {
     pub region: crate::GlobalNamespace::SelectRegionViewController_Region,
-    pub localizationKey: *mut crate::System::String,
+    pub localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SelectRegionViewController+RegionToLocalizationKeyPair")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyP
     pub fn _ctor(
         &mut self,
         region: crate::GlobalNamespace::SelectRegionViewController_Region,
-        localizationKey: *mut crate::System::String,
+        localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -7,12 +7,14 @@ pub struct LevelFilter {
     pub songUnplayed: bool,
     pub difficulties: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub songPacks: crate::GlobalNamespace::SongPackMask,
-    pub characteristicSerializedName: *mut crate::System::String,
+    pub characteristicSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
     pub minBpm: f32,
     pub maxBpm: f32,
     pub sensitivity: crate::GlobalNamespace::PlayerSensitivityFlag,
-    pub searchText: *mut crate::System::String,
-    pub limitIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub searchText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub limitIds: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "LevelFilter")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

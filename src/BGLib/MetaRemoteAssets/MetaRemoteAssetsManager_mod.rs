@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsManager {
-    __cordl_parent: crate::System::Object,
-    pub _accessToken: *mut crate::System::String,
-    pub _platform: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _accessToken: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _platform: *mut quest_hook::libil2cpp::Il2CppString,
     pub _initializationCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _initializationTask: *mut crate::System::Threading::Tasks::Task_1<bool>,
     pub _updateCatalogTask: *mut crate::System::Threading::Tasks::Task,
-    pub _appId: *mut crate::System::String,
+    pub _appId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
     pub _remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
     pub didCatalogLoadOrUpdateEvent: *mut crate::System::Action,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsManager")]
 impl std::ops::Deref for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -121,11 +121,11 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
     pub fn InternalIdTransformFunc(
         &mut self,
         resourceLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalIdTransformFunc", (resourceLocation))?;
         Ok(__cordl_ret)
     }
@@ -133,7 +133,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
         platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
         remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-        platform: *mut crate::System::String,
+        platform: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -194,7 +194,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
         networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
         platformUserModel: *mut crate::GlobalNamespace::IPlatformUserModel,
         remoteCatalogLoader: *mut crate::BGLib::MetaRemoteAssets::IRemoteCatalogLoader,
-        platform: *mut crate::System::String,
+        platform: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,9 +245,9 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MetaRemoteAssetsManager_AddResourceLocatorInput {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ResourceLocator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-    pub LocalHash: *mut crate::System::String,
+    pub LocalHash: *mut quest_hook::libil2cpp::Il2CppString,
     pub CatalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
 }
 #[cfg(
@@ -263,7 +263,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -283,7 +283,7 @@ for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorIn
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorInput {
     pub fn New(
         resourceLocator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localHash: *mut crate::System::String,
+        localHash: *mut quest_hook::libil2cpp::Il2CppString,
         catalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -295,7 +295,7 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager_AddResourceLocatorI
     pub fn _ctor(
         &mut self,
         resourceLocator: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localHash: *mut crate::System::String,
+        localHash: *mut quest_hook::libil2cpp::Il2CppString,
         catalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

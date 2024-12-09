@@ -25,9 +25,9 @@ impl std::ops::DerefMut for crate::System::Net::Http::StringContent {
 #[cfg(feature = "System+Net+Http+StringContent")]
 impl crate::System::Net::Http::StringContent {
     pub fn New(
-        content: *mut crate::System::String,
+        content: *mut quest_hook::libil2cpp::Il2CppString,
         encoding: *mut crate::System::Text::Encoding,
-        mediaType: *mut crate::System::String,
+        mediaType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,9 +37,9 @@ impl crate::System::Net::Http::StringContent {
     }
     pub fn _ctor(
         &mut self,
-        content: *mut crate::System::String,
+        content: *mut quest_hook::libil2cpp::Il2CppString,
         encoding: *mut crate::System::Text::Encoding,
-        mediaType: *mut crate::System::String,
+        mediaType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

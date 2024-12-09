@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelCompletionResults {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub modifiedScore: i32,
     pub multipliedScore: i32,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelCompletionResults")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelCompletionResults {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::GlobalNamespace::LevelCompletionResults {
     pub type LevelEndStateType = crate::GlobalNamespace::LevelCompletionResults_LevelEndStateType;
     pub fn CompareTo(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

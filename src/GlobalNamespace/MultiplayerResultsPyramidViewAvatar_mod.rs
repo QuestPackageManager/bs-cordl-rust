@@ -4,8 +4,8 @@
 pub struct MultiplayerResultsPyramidViewAvatar {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _badgeDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
-    pub _ghostFirstTrackName: *mut crate::System::String,
-    pub _ghostSecondTrackName: *mut crate::System::String,
+    pub _ghostFirstTrackName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _ghostSecondTrackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _standWithAvatarTransform: *mut crate::UnityEngine::Transform,
     pub _perPositionRotation: f32,
     pub _localPlayerColor: crate::UnityEngine::Color,

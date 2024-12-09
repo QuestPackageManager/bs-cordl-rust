@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SecondarySpriteTexture {
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub texture: *mut crate::UnityEngine::Texture2D,
 }
 #[cfg(feature = "UnityEngine+SecondarySpriteTexture")]

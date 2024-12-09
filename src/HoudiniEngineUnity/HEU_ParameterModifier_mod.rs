@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ParameterModifier {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _parameterIndex: i32,
     pub _action: crate::HoudiniEngineUnity::HEU_ParameterModifier_ModifierAction,
     pub _instanceIndex: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_ParameterModifier")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ParameterModifier {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

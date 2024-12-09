@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataLoader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lastUsedBeatmapDataCache: crate::GlobalNamespace::LastUsedBeatmapDataCache,
 }
 #[cfg(feature = "BeatmapDataLoader")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataLoader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,9 +61,9 @@ impl crate::GlobalNamespace::BeatmapDataLoader {
             .invoke("LoadBasicBeatmapData", (beatmapLevelData, beatmapKey))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadBasicBeatmapData_String1(
+    pub fn LoadBasicBeatmapData_Il2CppString1(
         &mut self,
-        beatmapJson: *mut crate::System::String,
+        beatmapJson: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::BeatmapDataBasicInfo,
     > {

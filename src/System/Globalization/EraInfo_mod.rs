@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EraInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub era: i32,
     pub ticks: i64,
     pub yearOffset: i32,
     pub minEraYear: i32,
     pub maxEraYear: i32,
-    pub eraName: *mut crate::System::String,
-    pub abbrevEraName: *mut crate::System::String,
-    pub englishEraName: *mut crate::System::String,
+    pub eraName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub abbrevEraName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub englishEraName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Globalization+EraInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+EraInfo")]
 impl std::ops::Deref for crate::System::Globalization::EraInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::System::Globalization::EraInfo {
 }
 #[cfg(feature = "System+Globalization+EraInfo")]
 impl crate::System::Globalization::EraInfo {
-    pub fn New_String_String_String1(
+    pub fn New_Il2CppString_Il2CppString_Il2CppString1(
         era: i32,
         startYear: i32,
         startMonth: i32,
@@ -40,9 +40,9 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-        eraName: *mut crate::System::String,
-        abbrevEraName: *mut crate::System::String,
-        englishEraName: *mut crate::System::String,
+        eraName: *mut quest_hook::libil2cpp::Il2CppString,
+        abbrevEraName: *mut quest_hook::libil2cpp::Il2CppString,
+        englishEraName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -90,7 +90,7 @@ impl crate::System::Globalization::EraInfo {
             )?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String_String_String1(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
         era: i32,
         startYear: i32,
@@ -99,9 +99,9 @@ impl crate::System::Globalization::EraInfo {
         yearOffset: i32,
         minEraYear: i32,
         maxEraYear: i32,
-        eraName: *mut crate::System::String,
-        abbrevEraName: *mut crate::System::String,
-        englishEraName: *mut crate::System::String,
+        eraName: *mut quest_hook::libil2cpp::Il2CppString,
+        abbrevEraName: *mut quest_hook::libil2cpp::Il2CppString,
+        englishEraName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

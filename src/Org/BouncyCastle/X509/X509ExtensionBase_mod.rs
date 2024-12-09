@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509ExtensionBase {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509ExtensionBase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509ExtensionBase")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509ExtensionBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,9 +62,9 @@ impl crate::Org::BouncyCastle::X509::X509ExtensionBase {
             .invoke("GetExtensionValue", (oid))?;
         Ok(__cordl_ret)
     }
-    pub fn GetExtensionValue_String0(
+    pub fn GetExtensionValue_Il2CppString0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     > {

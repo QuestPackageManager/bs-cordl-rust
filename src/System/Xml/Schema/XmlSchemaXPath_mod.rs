@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaXPath {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub xpath: *mut crate::System::String,
+    pub xpath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaXPath")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -44,17 +44,17 @@ impl crate::System::Xml::Schema::XmlSchemaXPath {
     }
     pub fn get_XPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XPath", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_XPath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

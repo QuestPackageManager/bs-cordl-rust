@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::FileBrowserTableView {
     }
     pub fn SelectAndScrollRowToItemWithPath(
         &mut self,
-        folderPath: *mut crate::System::String,
+        folderPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

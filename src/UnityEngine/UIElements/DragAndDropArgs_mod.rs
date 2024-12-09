@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct DragAndDropArgs {
-    pub _target_k__BackingField: *mut crate::System::Object,
+    pub _target_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _insertAtIndex_k__BackingField: i32,
     pub _parentId_k__BackingField: i32,
     pub _childIndex_k__BackingField: i32,
@@ -132,7 +132,7 @@ impl crate::UnityEngine::UIElements::DragAndDropArgs {
     }
     pub fn set_target(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

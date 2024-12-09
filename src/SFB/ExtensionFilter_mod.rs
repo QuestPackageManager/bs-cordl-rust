@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ExtensionFilter {
-    pub _name: *mut crate::System::String,
-    pub _extensions: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _extensions: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "SFB+ExtensionFilter")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -23,9 +25,9 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::SFB::ExtensionFilter 
 impl crate::SFB::ExtensionFilter {
     pub fn _ctor(
         &mut self,
-        filterName: *mut crate::System::String,
+        filterName: *mut quest_hook::libil2cpp::Il2CppString,
         filterExtensions: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

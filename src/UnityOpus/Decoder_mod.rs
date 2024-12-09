@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Decoder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub decoder: crate::System::IntPtr,
     pub channels: crate::UnityOpus::NumChannels,
     pub softclipMem: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityOpus+Decoder")]
 impl std::ops::Deref for crate::UnityOpus::Decoder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardEntry {
-    __cordl_parent: crate::System::Object,
-    pub DisplayScore: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub DisplayScore: *mut quest_hook::libil2cpp::Il2CppString,
     pub ExtraData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _cordl_ID: u64,
     pub Rank: i32,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+LeaderboardEntry")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::LeaderboardEntry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -33,24 +33,24 @@ impl crate::Newtonsoft::Json::DefaultJsonNameTable {
     pub type Entry = crate::Newtonsoft::Json::DefaultJsonNameTable_Entry;
     pub fn Add(
         &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Add", (key))?;
         Ok(__cordl_ret)
     }
     pub fn AddEntry(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("AddEntry", (str, hashCode))?;
         Ok(__cordl_ret)
     }
@@ -59,11 +59,11 @@ impl crate::Newtonsoft::Json::DefaultJsonNameTable {
         key: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         start: i32,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Get", (key, start, length))?;
         Ok(__cordl_ret)
     }
@@ -109,8 +109,8 @@ for crate::Newtonsoft::Json::DefaultJsonNameTable {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultJsonNameTable_Entry {
-    __cordl_parent: crate::System::Object,
-    pub Value: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Value: *mut quest_hook::libil2cpp::Il2CppString,
     pub HashCode: i32,
     pub Next: *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
 }
@@ -121,7 +121,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl std::ops::Deref for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -135,7 +135,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::DefaultJsonNameTable_Entry 
 #[cfg(feature = "Newtonsoft+Json+DefaultJsonNameTable+Entry")]
 impl crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     pub fn New(
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
         next: *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -147,7 +147,7 @@ impl crate::Newtonsoft::Json::DefaultJsonNameTable_Entry {
     }
     pub fn _ctor(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
         next: *mut crate::Newtonsoft::Json::DefaultJsonNameTable_Entry,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

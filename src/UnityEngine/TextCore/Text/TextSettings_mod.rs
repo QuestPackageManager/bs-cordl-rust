@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct TextSettings {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub m_Version: *mut crate::System::String,
+    pub m_Version: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_DefaultFontAsset: *mut crate::UnityEngine::TextCore::Text::FontAsset,
-    pub m_DefaultFontAssetPath: *mut crate::System::String,
+    pub m_DefaultFontAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_FallbackFontAssets: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::TextCore::Text::FontAsset,
     >,
@@ -13,14 +13,14 @@ pub struct TextSettings {
     pub m_MissingCharacterUnicode: i32,
     pub m_ClearDynamicDataOnBuild: bool,
     pub m_DefaultSpriteAsset: *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
-    pub m_DefaultSpriteAssetPath: *mut crate::System::String,
+    pub m_DefaultSpriteAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_FallbackSpriteAssets: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::TextCore::Text::SpriteAsset,
     >,
     pub m_MissingSpriteCharacterUnicode: u32,
     pub m_DefaultStyleSheet: *mut crate::UnityEngine::TextCore::Text::TextStyleSheet,
-    pub m_StyleSheetsResourcePath: *mut crate::System::String,
-    pub m_DefaultColorGradientPresetsPath: *mut crate::System::String,
+    pub m_StyleSheetsResourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DefaultColorGradientPresetsPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_UnicodeLineBreakingRules: *mut crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules,
     pub m_UseModernHangulLineBreakingRules: bool,
     pub m_DisplayWarnings: bool,
@@ -116,11 +116,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn get_defaultColorGradientPresetsPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultColorGradientPresetsPath", ())?;
         Ok(__cordl_ret)
     }
@@ -138,11 +138,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn get_defaultFontAssetPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultFontAssetPath", ())?;
         Ok(__cordl_ret)
     }
@@ -160,11 +160,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn get_defaultSpriteAssetPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultSpriteAssetPath", ())?;
         Ok(__cordl_ret)
     }
@@ -255,11 +255,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn get_styleSheetsResourcePath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_styleSheetsResourcePath", ())?;
         Ok(__cordl_ret)
     }
@@ -275,11 +275,11 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn get_version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_version", ())?;
         Ok(__cordl_ret)
     }
@@ -296,7 +296,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn set_defaultColorGradientPresetsPath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -318,7 +318,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn set_defaultFontAssetPath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -340,7 +340,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn set_defaultSpriteAssetPath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -443,7 +443,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn set_styleSheetsResourcePath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -465,7 +465,7 @@ impl crate::UnityEngine::TextCore::Text::TextSettings {
     }
     pub fn set_version(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

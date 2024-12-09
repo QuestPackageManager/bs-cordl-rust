@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaSet {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
     pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
     pub schemas: *mut crate::System::Collections::SortedList,
@@ -22,7 +22,7 @@ pub struct XmlSchemaSet {
     pub schemaTypes: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
     pub substitutionGroups: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
     pub typeExtensions: *mut crate::System::Xml::Schema::XmlSchemaObjectTable,
-    pub internalSyncObject: *mut crate::System::Object,
+    pub internalSyncObject: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSet")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaSet")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaSet {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,9 +68,9 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
             .invoke("AddToTable", (table, qname, item))?;
         Ok(__cordl_ret)
     }
-    pub fn Add_String_XmlReader_Hashtable3(
+    pub fn Add_Il2CppString_XmlReader_Hashtable3(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         reader: *mut crate::System::Xml::XmlReader,
         validatedNamespaces: *mut crate::System::Collections::Hashtable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -81,9 +81,9 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
             .invoke("Add", (targetNamespace, reader, validatedNamespaces))?;
         Ok(__cordl_ret)
     }
-    pub fn Add_String_XmlSchema2(
+    pub fn Add_Il2CppString_XmlSchema2(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -137,7 +137,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
     }
     pub fn Contains(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,7 +173,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
     pub fn FindSchemaByNSAndUrl(
         &mut self,
         schemaUri: *mut crate::System::Uri,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         locationsTable: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Collections::DictionaryEntry,
         >,
@@ -235,17 +235,17 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
     pub fn GetTargetNamespace(
         &mut self,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTargetNamespace", (schema))?;
         Ok(__cordl_ret)
     }
     pub fn InternalValidationCallback(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::Xml::Schema::ValidationEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -258,7 +258,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
     pub fn IsSchemaLoaded(
         &mut self,
         schemaUri: *mut crate::System::Uri,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         schema: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchema,
         >,
@@ -288,7 +288,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
     }
     pub fn ParseSchema(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         reader: *mut crate::System::Xml::XmlReader,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -303,7 +303,7 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
         schema: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchema,
         >,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -402,9 +402,9 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
             .invoke("Schemas", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Schemas_String1(
+    pub fn Schemas_Il2CppString1(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -534,11 +534,11 @@ impl crate::System::Xml::Schema::XmlSchemaSet {
     }
     pub fn get_InternalSyncObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_InternalSyncObject", ())?;
         Ok(__cordl_ret)
     }

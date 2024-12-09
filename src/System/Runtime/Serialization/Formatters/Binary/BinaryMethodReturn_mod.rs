@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryMethodReturn {
-    __cordl_parent: crate::System::Object,
-    pub returnValue: *mut crate::System::Object,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    pub callContext: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub returnValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub callContext: *mut quest_hook::libil2cpp::Il2CppObject,
     pub argTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     pub bArgsPrimitive: bool,
     pub messageEnum: crate::System::Runtime::Serialization::Formatters::Binary::MessageEnum,
@@ -20,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryMethodReturn")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryMethodReturn {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

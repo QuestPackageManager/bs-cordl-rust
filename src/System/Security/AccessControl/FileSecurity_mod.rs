@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::System::Security::AccessControl::FileSecurity
 #[cfg(feature = "System+Security+AccessControl+FileSecurity")]
 impl crate::System::Security::AccessControl::FileSecurity {
     pub fn New(
-        fileName: *mut crate::System::String,
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -36,7 +36,7 @@ impl crate::System::Security::AccessControl::FileSecurity {
     }
     pub fn _ctor(
         &mut self,
-        fileName: *mut crate::System::String,
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
         includeSections: crate::System::Security::AccessControl::AccessControlSections,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

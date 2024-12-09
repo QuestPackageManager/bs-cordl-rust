@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_InputPreset {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _inputObjectType: crate::HoudiniEngineUnity::HEU_InputNode_InputObjectType,
     pub _inputObjectPresets: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_InputObjectPreset,
     >,
-    pub _inputAssetName: *mut crate::System::String,
+    pub _inputAssetName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _inputIndex: i32,
-    pub _inputName: *mut crate::System::String,
+    pub _inputName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _keepWorldTransform: bool,
     pub _packGeometryBeforeMerging: bool,
     pub _inputAssetPresets: *mut crate::System::Collections::Generic::List_1<
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_InputPreset")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_InputPreset {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

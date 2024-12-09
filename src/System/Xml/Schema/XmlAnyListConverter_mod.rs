@@ -26,14 +26,14 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlAnyListConverter {
 impl crate::System::Xml::Schema::XmlAnyListConverter {
     pub fn ChangeType(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }

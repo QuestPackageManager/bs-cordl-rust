@@ -28,20 +28,20 @@ impl crate::System::ComponentModel::CollectionConverter {
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
         culture: *mut crate::System::Globalization::CultureInfo,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ConvertTo", (context, culture, value, destinationType))?;
         Ok(__cordl_ret)
     }
     pub fn GetProperties(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         attributes: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Attribute,
         >,

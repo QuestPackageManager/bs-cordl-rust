@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVROverlay {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVROverlay,
 }
 #[cfg(feature = "OVR+OpenVR+CVROverlay")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVROverlay")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVROverlay {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,8 +69,8 @@ impl crate::OVR::OpenVR::CVROverlay {
     }
     pub fn CreateDashboardOverlay(
         &mut self,
-        pchOverlayKey: *mut crate::System::String,
-        pchOverlayFriendlyName: *mut crate::System::String,
+        pchOverlayKey: *mut quest_hook::libil2cpp::Il2CppString,
+        pchOverlayFriendlyName: *mut quest_hook::libil2cpp::Il2CppString,
         pMainHandle: quest_hook::libil2cpp::ByRefMut<u64>,
         pThumbnailHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
@@ -86,8 +86,8 @@ impl crate::OVR::OpenVR::CVROverlay {
     }
     pub fn CreateOverlay(
         &mut self,
-        pchOverlayKey: *mut crate::System::String,
-        pchOverlayName: *mut crate::System::String,
+        pchOverlayKey: *mut quest_hook::libil2cpp::Il2CppString,
+        pchOverlayName: *mut quest_hook::libil2cpp::Il2CppString,
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,7 +110,7 @@ impl crate::OVR::OpenVR::CVROverlay {
     }
     pub fn FindOverlay(
         &mut self,
-        pchOverlayKey: *mut crate::System::String,
+        pchOverlayKey: *mut quest_hook::libil2cpp::Il2CppString,
         pOverlayHandle: quest_hook::libil2cpp::ByRefMut<u64>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -220,11 +220,11 @@ impl crate::OVR::OpenVR::CVROverlay {
     pub fn GetOverlayErrorNameFromEnum(
         &mut self,
         error: crate::OVR::OpenVR::EVROverlayError,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetOverlayErrorNameFromEnum", (error))?;
         Ok(__cordl_ret)
     }
@@ -837,7 +837,7 @@ impl crate::OVR::OpenVR::CVROverlay {
     pub fn SetOverlayFromFile(
         &mut self,
         ulOverlayHandle: u64,
-        pchFilePath: *mut crate::System::String,
+        pchFilePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -892,7 +892,7 @@ impl crate::OVR::OpenVR::CVROverlay {
     pub fn SetOverlayName(
         &mut self,
         ulOverlayHandle: u64,
-        pchName: *mut crate::System::String,
+        pchName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -935,7 +935,7 @@ impl crate::OVR::OpenVR::CVROverlay {
     pub fn SetOverlayRenderModel(
         &mut self,
         ulOverlayHandle: u64,
-        pchRenderModel: *mut crate::System::String,
+        pchRenderModel: *mut quest_hook::libil2cpp::Il2CppString,
         pColor: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::HmdColor_t>,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1069,7 +1069,7 @@ impl crate::OVR::OpenVR::CVROverlay {
         &mut self,
         ulOverlayHandle: u64,
         unDeviceIndex: u32,
-        pchComponentName: *mut crate::System::String,
+        pchComponentName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1113,7 +1113,7 @@ impl crate::OVR::OpenVR::CVROverlay {
     }
     pub fn ShowDashboard(
         &mut self,
-        pchOverlayToShow: *mut crate::System::String,
+        pchOverlayToShow: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1126,9 +1126,9 @@ impl crate::OVR::OpenVR::CVROverlay {
         &mut self,
         eInputMode: i32,
         eLineInputMode: i32,
-        pchDescription: *mut crate::System::String,
+        pchDescription: *mut quest_hook::libil2cpp::Il2CppString,
         unCharMax: u32,
-        pchExistingText: *mut crate::System::String,
+        pchExistingText: *mut quest_hook::libil2cpp::Il2CppString,
         bUseMinimalMode: bool,
         uUserValue: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
@@ -1155,9 +1155,9 @@ impl crate::OVR::OpenVR::CVROverlay {
         ulOverlayHandle: u64,
         eInputMode: i32,
         eLineInputMode: i32,
-        pchDescription: *mut crate::System::String,
+        pchDescription: *mut quest_hook::libil2cpp::Il2CppString,
         unCharMax: u32,
-        pchExistingText: *mut crate::System::String,
+        pchExistingText: *mut quest_hook::libil2cpp::Il2CppString,
         bUseMinimalMode: bool,
         uUserValue: u64,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVROverlayError> {
@@ -1182,12 +1182,12 @@ impl crate::OVR::OpenVR::CVROverlay {
     }
     pub fn ShowMessageOverlay(
         &mut self,
-        pchText: *mut crate::System::String,
-        pchCaption: *mut crate::System::String,
-        pchButton0Text: *mut crate::System::String,
-        pchButton1Text: *mut crate::System::String,
-        pchButton2Text: *mut crate::System::String,
-        pchButton3Text: *mut crate::System::String,
+        pchText: *mut quest_hook::libil2cpp::Il2CppString,
+        pchCaption: *mut quest_hook::libil2cpp::Il2CppString,
+        pchButton0Text: *mut quest_hook::libil2cpp::Il2CppString,
+        pchButton1Text: *mut quest_hook::libil2cpp::Il2CppString,
+        pchButton2Text: *mut quest_hook::libil2cpp::Il2CppString,
+        pchButton3Text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::VRMessageOverlayResponse> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1296,7 +1296,7 @@ impl crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
         pEvent: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::VREvent_t_Packed>,
         uncbVREvent: u32,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1333,7 +1333,7 @@ impl crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1344,7 +1344,7 @@ impl crate::OVR::OpenVR::CVROverlay__PollNextOverlayEventPacked {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

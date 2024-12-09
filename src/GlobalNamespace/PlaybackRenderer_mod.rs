@@ -216,12 +216,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlaybackRende
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlaybackRenderer_PlaybackScreenshot {
-    __cordl_parent: crate::System::Object,
-    pub _name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _layerMask: crate::UnityEngine::LayerMask,
     pub _type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
     pub _texture: *mut crate::UnityEngine::RenderTexture,
-    pub _path: *mut crate::System::String,
+    pub _path: *mut quest_hook::libil2cpp::Il2CppString,
     pub _backgroundColor: crate::UnityEngine::Color,
 }
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
@@ -232,7 +232,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlaybackRenderer+PlaybackScreenshot")]
 impl std::ops::Deref for crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -260,7 +260,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         layerMask: crate::UnityEngine::LayerMask,
         _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
         backgroundColor: crate::UnityEngine::Color,
@@ -273,7 +273,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         layerMask: crate::UnityEngine::LayerMask,
         _cordl_type: crate::GlobalNamespace::PlaybackScreenshot_PlaybackRenderer_Type,
         backgroundColor: crate::UnityEngine::Color,
@@ -307,21 +307,21 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_path(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_path", ())?;
         Ok(__cordl_ret)
     }
@@ -349,7 +349,7 @@ impl crate::GlobalNamespace::PlaybackRenderer_PlaybackScreenshot {
     }
     pub fn set_path(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

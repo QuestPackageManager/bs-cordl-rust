@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityXRController {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub positionAction: *mut crate::UnityEngine::InputSystem::InputAction,
     pub rotationAction: *mut crate::UnityEngine::InputSystem::InputAction,
     pub thumbstickAction: *mut crate::UnityEngine::InputSystem::InputAction,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityXRController")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRController {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,7 +154,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRContro
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityXRController_Configuration {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _positionActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub _orientationActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
     pub _thumbstickActionReference_k__BackingField: *mut crate::UnityEngine::InputSystem::InputActionReference,
@@ -166,7 +166,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityXRController+Configuration")]
 impl std::ops::Deref for crate::GlobalNamespace::UnityXRController_Configuration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

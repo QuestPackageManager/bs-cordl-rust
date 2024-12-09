@@ -5,7 +5,7 @@ pub struct WebConnectionStream {
     __cordl_parent: crate::System::IO::Stream,
     pub closed: bool,
     pub disposed: bool,
-    pub locker: *mut crate::System::Object,
+    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
     pub read_timeout: i32,
     pub write_timeout: i32,
     pub _Request_k__BackingField: *mut crate::System::Net::HttpWebRequest,
@@ -38,7 +38,7 @@ impl crate::System::Net::WebConnectionStream {
         offset: i32,
         count: i32,
         cb: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,7 @@ impl crate::System::Net::WebConnectionStream {
         offset: i32,
         count: i32,
         cb: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

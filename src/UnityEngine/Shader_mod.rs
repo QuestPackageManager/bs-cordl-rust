@@ -50,7 +50,7 @@ impl crate::UnityEngine::Shader {
     }
     pub fn FindPropertyIndex(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,7 +74,9 @@ impl crate::UnityEngine::Shader {
     pub fn FindTextureStack(
         &mut self,
         propertyIndex: i32,
-        stackName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        stackName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         layerIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -86,7 +88,7 @@ impl crate::UnityEngine::Shader {
     }
     pub fn GetDependency(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Shader> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,13 +112,13 @@ impl crate::UnityEngine::Shader {
         &mut self,
         propertyIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetPropertyAttributes", (propertyIndex))?;
         Ok(__cordl_ret)
     }
@@ -163,11 +165,11 @@ impl crate::UnityEngine::Shader {
     pub fn GetPropertyDescription(
         &mut self,
         propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPropertyDescription", (propertyIndex))?;
         Ok(__cordl_ret)
     }
@@ -187,11 +189,11 @@ impl crate::UnityEngine::Shader {
     pub fn GetPropertyName(
         &mut self,
         propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPropertyName", (propertyIndex))?;
         Ok(__cordl_ret)
     }
@@ -220,11 +222,11 @@ impl crate::UnityEngine::Shader {
     pub fn GetPropertyTextureDefaultName(
         &mut self,
         propertyIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPropertyTextureDefaultName", (propertyIndex))?;
         Ok(__cordl_ret)
     }

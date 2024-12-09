@@ -27,7 +27,7 @@ impl crate::GlobalNamespace::IRenderingParamsApplicator {
     pub fn Apply(
         &mut self,
         sceneType: crate::GlobalNamespace::SceneType,
-        optionalEnvironmentSerializedName: *mut crate::System::String,
+        optionalEnvironmentSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

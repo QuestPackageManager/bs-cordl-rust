@@ -25,8 +25,8 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdInfo {
 impl crate::System::Xml::IDtdInfo {
     pub fn LookupAttributeList(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdAttributeListInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,7 +37,7 @@ impl crate::System::Xml::IDtdInfo {
     }
     pub fn LookupEntity(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdEntityInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,11 +67,11 @@ impl crate::System::Xml::IDtdInfo {
     }
     pub fn get_InternalDtdSubset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InternalDtdSubset", ())?;
         Ok(__cordl_ret)
     }

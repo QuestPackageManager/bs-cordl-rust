@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrustAnchor {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub caName: *mut crate::System::String,
+    pub caName: *mut quest_hook::libil2cpp::Il2CppString,
     pub caPrincipal: *mut crate::Org::BouncyCastle::Asn1::X509::X509Name,
     pub trustedCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
     pub ncBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+TrustAnchor")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::TrustAnchor {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,8 +30,8 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Pkix::TrustAnchor {
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+TrustAnchor")]
 impl crate::Org::BouncyCastle::Pkix::TrustAnchor {
-    pub fn New_String_AsymmetricKeyParameter_Il2CppArray2(
-        caName: *mut crate::System::String,
+    pub fn New_Il2CppString_AsymmetricKeyParameter_Il2CppArray2(
+        caName: *mut quest_hook::libil2cpp::Il2CppString,
         pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         nameConstraints: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -64,17 +64,17 @@ impl crate::Org::BouncyCastle::Pkix::TrustAnchor {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_AsymmetricKeyParameter_Il2CppArray2(
+    pub fn _ctor_Il2CppString_AsymmetricKeyParameter_Il2CppArray2(
         &mut self,
-        caName: *mut crate::System::String,
+        caName: *mut quest_hook::libil2cpp::Il2CppString,
         pubKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         nameConstraints: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,11 +124,11 @@ impl crate::Org::BouncyCastle::Pkix::TrustAnchor {
     }
     pub fn get_CAName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_CAName", ())?;
         Ok(__cordl_ret)
     }

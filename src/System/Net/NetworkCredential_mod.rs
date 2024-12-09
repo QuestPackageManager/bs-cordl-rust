@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkCredential {
-    __cordl_parent: crate::System::Object,
-    pub m_domain: *mut crate::System::String,
-    pub m_userName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_domain: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_password: *mut crate::System::Security::SecureString,
 }
 #[cfg(feature = "System+Net+NetworkCredential")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+NetworkCredential")]
 impl std::ops::Deref for crate::System::Net::NetworkCredential {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::System::Net::NetworkCredential {
     pub fn GetCredential(
         &mut self,
         uri: *mut crate::System::Uri,
-        authType: *mut crate::System::String,
+        authType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::NetworkCredential> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -41,38 +41,38 @@ impl crate::System::Net::NetworkCredential {
     }
     pub fn InternalGetDomain(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalGetDomain", ())?;
         Ok(__cordl_ret)
     }
     pub fn InternalGetPassword(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalGetPassword", ())?;
         Ok(__cordl_ret)
     }
     pub fn InternalGetUserName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalGetUserName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_String1(
-        userName: *mut crate::System::String,
-        password: *mut crate::System::String,
-        domain: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
+        domain: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -80,9 +80,9 @@ impl crate::System::Net::NetworkCredential {
             .invoke_void(".ctor", (userName, password, domain))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String0(
-        userName: *mut crate::System::String,
-        password: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString0(
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -90,11 +90,11 @@ impl crate::System::Net::NetworkCredential {
             .invoke_void(".ctor", (userName, password))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        userName: *mut crate::System::String,
-        password: *mut crate::System::String,
-        domain: *mut crate::System::String,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
+        domain: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,10 +103,10 @@ impl crate::System::Net::NetworkCredential {
             .invoke(".ctor", (userName, password, domain))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String0(
+    pub fn _ctor_Il2CppString_Il2CppString0(
         &mut self,
-        userName: *mut crate::System::String,
-        password: *mut crate::System::String,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -117,37 +117,37 @@ impl crate::System::Net::NetworkCredential {
     }
     pub fn get_Domain(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Domain", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Password(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Password", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_UserName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_UserName", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Domain(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,7 +158,7 @@ impl crate::System::Net::NetworkCredential {
     }
     pub fn set_Password(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +169,7 @@ impl crate::System::Net::NetworkCredential {
     }
     pub fn set_UserName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentOverride {
-    __cordl_parent: crate::System::Object,
-    pub serializedEnvironmentName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub serializedEnvironmentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub preset: *mut crate::BeatSaber::PerformancePresets::PresetOverride,
 }
 #[cfg(feature = "BeatSaber+PerformancePresets+EnvironmentOverride")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+PerformancePresets+EnvironmentOverride")]
 impl std::ops::Deref for crate::BeatSaber::PerformancePresets::EnvironmentOverride {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

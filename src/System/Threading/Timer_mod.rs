@@ -4,7 +4,7 @@
 pub struct Timer {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub callback: *mut crate::System::Threading::TimerCallback,
-    pub state: *mut crate::System::Object,
+    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
     pub due_time_ms: i64,
     pub period_ms: i64,
     pub next_run: i64,
@@ -95,7 +95,7 @@ impl crate::System::Threading::Timer {
     pub fn Init(
         &mut self,
         callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         dueTime: i64,
         period: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,7 +118,7 @@ impl crate::System::Threading::Timer {
     }
     pub fn New_TimeSpan_TimeSpan1(
         callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         dueTime: crate::System::TimeSpan,
         period: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -130,7 +130,7 @@ impl crate::System::Threading::Timer {
     }
     pub fn New_i32_i32_0(
         callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         dueTime: i32,
         period: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -143,7 +143,7 @@ impl crate::System::Threading::Timer {
     pub fn _ctor_TimeSpan_TimeSpan1(
         &mut self,
         callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         dueTime: crate::System::TimeSpan,
         period: crate::System::TimeSpan,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,7 +157,7 @@ impl crate::System::Threading::Timer {
     pub fn _ctor_i32_i32_0(
         &mut self,
         callback: *mut crate::System::Threading::TimerCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         dueTime: i32,
         period: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -182,7 +182,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Timer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Timer_Scheduler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub needReSort: bool,
     pub list: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Threading::Timer,
@@ -197,7 +197,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Timer+Scheduler")]
 impl std::ops::Deref for crate::System::Threading::Timer_Scheduler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -366,8 +366,8 @@ impl crate::System::Threading::Timer_TimerComparer {
     }
     pub fn System_Collections_IComparer_Compare(
         &mut self,
-        x: *mut crate::System::Object,
-        y: *mut crate::System::Object,
+        x: *mut quest_hook::libil2cpp::Il2CppObject,
+        y: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

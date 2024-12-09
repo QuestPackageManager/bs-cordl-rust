@@ -5,7 +5,7 @@ pub struct PriorityQueue_2<
     TItem: quest_hook::libil2cpp::Type,
     TPriority: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub priorityMath: *mut crate::UnityEngine::ProBuilder::KdTree::ITypeMath_1<
         TPriority,
     >,
@@ -29,7 +29,7 @@ impl<
     TPriority: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::UnityEngine::ProBuilder::KdTree::PriorityQueue_2<TItem, TPriority> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

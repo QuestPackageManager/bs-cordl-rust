@@ -53,7 +53,7 @@ impl crate::Mono::Net::Security::MobileTlsProvider {
     pub fn ValidateCertificate(
         &mut self,
         validator: *mut crate::Mono::Net::Security::ChainValidationHelper,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         serverMode: bool,
         certificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         wantsChain: bool,

@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509ExtensionCollection
 impl crate::Mono::Security::X509::X509ExtensionCollection {
     pub fn IndexOf(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,7 +84,7 @@ impl crate::Mono::Security::X509::X509ExtensionCollection {
     }
     pub fn get_Item(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Extension> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

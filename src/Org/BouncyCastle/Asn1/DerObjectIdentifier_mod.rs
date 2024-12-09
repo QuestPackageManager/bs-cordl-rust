@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerObjectIdentifier {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub identifier: *mut crate::System::String,
+    pub identifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub body: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerObjectIdentifier")]
@@ -46,7 +46,7 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
     }
     pub fn Branch(
         &mut self,
-        branchID: *mut crate::System::String,
+        branchID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     > {
@@ -89,9 +89,9 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke("GetBody", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_DerObjectIdentifier_String1(
+    pub fn New_DerObjectIdentifier_Il2CppString1(
         oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        branchID: *mut crate::System::String,
+        branchID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -108,8 +108,8 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke_void(".ctor", (bytes))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        identifier: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        identifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -129,11 +129,11 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -161,10 +161,10 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke("WriteField", (outputStream, fieldValue))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_DerObjectIdentifier_String1(
+    pub fn _ctor_DerObjectIdentifier_Il2CppString1(
         &mut self,
         oid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        branchID: *mut crate::System::String,
+        branchID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -184,9 +184,9 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
             .invoke(".ctor", (bytes))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        identifier: *mut crate::System::String,
+        identifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -197,11 +197,11 @@ impl crate::Org::BouncyCastle::Asn1::DerObjectIdentifier {
     }
     pub fn get_Id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Id", ())?;
         Ok(__cordl_ret)
     }

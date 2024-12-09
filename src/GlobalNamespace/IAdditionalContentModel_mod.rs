@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IAdditionalContentModel {
 impl crate::GlobalNamespace::IAdditionalContentModel {
     pub fn IsPackBetterBuyThanLevelAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
     }
     pub fn OpenLevelPackProductStoreAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::IAdditionalContentModel {
     }
     pub fn OpenLevelProductStoreAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<

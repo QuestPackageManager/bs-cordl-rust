@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MiscPemGenerator {
-    __cordl_parent: crate::System::Object,
-    pub obj: *mut crate::System::Object,
-    pub algorithm: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
     pub password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     pub random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+OpenSsl+MiscPemGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,8 +40,8 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
             .invoke("Generate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_Object0(
-        obj: *mut crate::System::Object,
+    pub fn New_Il2CppObject0(
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -49,9 +49,9 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
             .invoke_void(".ctor", (obj))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray_SecureRandom1(
-        obj: *mut crate::System::Object,
-        algorithm: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray_SecureRandom1(
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -61,9 +61,9 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
             .invoke_void(".ctor", (obj, algorithm, password, random))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_Object0(
+    pub fn _ctor_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,10 +72,10 @@ impl crate::Org::BouncyCastle::OpenSsl::MiscPemGenerator {
             .invoke(".ctor", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray_SecureRandom1(
+    pub fn _ctor_Il2CppString_Il2CppArray_SecureRandom1(
         &mut self,
-        obj: *mut crate::System::Object,
-        algorithm: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         password: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         random: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -23,7 +23,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::Mono::RuntimeEventHan
 impl crate::Mono::RuntimeEventHandle {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

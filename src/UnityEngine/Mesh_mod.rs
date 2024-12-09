@@ -29,7 +29,7 @@ impl crate::UnityEngine::Mesh {
     pub type MeshDataArray = crate::UnityEngine::Mesh_MeshDataArray;
     pub fn AddBlendShapeFrame(
         &mut self,
-        shapeName: *mut crate::System::String,
+        shapeName: *mut quest_hook::libil2cpp::Il2CppString,
         frameWeight: f32,
         deltaVertices: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::UnityEngine::Vector3,
@@ -467,7 +467,7 @@ impl crate::UnityEngine::Mesh {
     }
     pub fn GetBlendShapeIndex(
         &mut self,
-        blendShapeName: *mut crate::System::String,
+        blendShapeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -479,11 +479,11 @@ impl crate::UnityEngine::Mesh {
     pub fn GetBlendShapeName(
         &mut self,
         shapeIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetBlendShapeName", (shapeIndex))?;
         Ok(__cordl_ret)
     }

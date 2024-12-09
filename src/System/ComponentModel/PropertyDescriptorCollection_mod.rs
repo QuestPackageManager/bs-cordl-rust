@@ -2,18 +2,20 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cachedFoundProperties: *mut crate::System::Collections::IDictionary,
     pub _cachedIgnoreCase: bool,
     pub _properties: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::ComponentModel::PropertyDescriptor,
     >,
-    pub _namedSort: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _namedSort: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _comparer: *mut crate::System::Collections::IComparer,
     pub _propsOwned: bool,
     pub _needSort: bool,
     pub _readOnly: bool,
-    pub _internalSyncObject: *mut crate::System::Object,
+    pub _internalSyncObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _Count_k__BackingField: i32,
 }
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
@@ -24,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+ComponentModel+PropertyDescriptorCollection")]
 impl std::ops::Deref for crate::System::ComponentModel::PropertyDescriptorCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -106,7 +108,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn Find(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptor,
@@ -163,7 +165,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn InternalSort_Il2CppArray0(
         &mut self,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -200,7 +204,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             *mut crate::System::ComponentModel::PropertyDescriptor,
         >,
         propCount: i32,
-        namedSort: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        namedSort: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         comparer: *mut crate::System::Collections::IComparer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -233,7 +239,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn Sort(
         &mut self,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptorCollection,
     > {
@@ -266,18 +274,18 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IDictionary_Add(
         &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -298,7 +306,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IDictionary_Contains(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -321,7 +329,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IDictionary_Remove(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -352,12 +360,12 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IDictionary_get_Item(
         &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IDictionary.get_Item", (key))?;
         Ok(__cordl_ret)
     }
@@ -383,8 +391,8 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IDictionary_set_Item(
         &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -405,7 +413,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IList_Add(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -426,7 +434,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IList_Contains(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -437,7 +445,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IList_IndexOf(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -449,7 +457,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn System_Collections_IList_Insert(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -460,7 +468,7 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     }
     pub fn System_Collections_IList_Remove(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -503,18 +511,18 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
     pub fn System_Collections_IList_get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IList.get_Item", (index))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IList_set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -556,7 +564,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
             *mut crate::System::ComponentModel::PropertyDescriptor,
         >,
         propCount: i32,
-        namedSort: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        namedSort: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         comparer: *mut crate::System::Collections::IComparer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -573,9 +583,9 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection {
         let __cordl_ret: i32 = __cordl_object.invoke("get_Count", ())?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptor,
     > {
@@ -627,7 +637,7 @@ for crate::System::ComponentModel::PropertyDescriptorCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _owner: *mut crate::System::ComponentModel::PropertyDescriptorCollection,
     pub _index: i32,
 }
@@ -645,7 +655,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescriptorEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -702,11 +712,11 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescrip
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }
@@ -722,21 +732,21 @@ impl crate::System::ComponentModel::PropertyDescriptorCollection_PropertyDescrip
     }
     pub fn get_Key(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }

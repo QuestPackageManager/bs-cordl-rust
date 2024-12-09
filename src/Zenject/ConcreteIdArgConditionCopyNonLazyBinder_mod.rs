@@ -35,7 +35,7 @@ impl crate::Zenject::ConcreteIdArgConditionCopyNonLazyBinder {
     }
     pub fn WithConcreteId(
         &mut self,
-        id: *mut crate::System::Object,
+        id: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ArgConditionCopyNonLazyBinder,
     > {

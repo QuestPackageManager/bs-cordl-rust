@@ -6,7 +6,7 @@ pub struct JContainer {
     pub _listChanged: *mut crate::System::ComponentModel::ListChangedEventHandler,
     pub _addingNew: *mut crate::System::ComponentModel::AddingNewEventHandler,
     pub _collectionChanged: *mut crate::System::Collections::Specialized::NotifyCollectionChangedEventHandler,
-    pub _syncRoot: *mut crate::System::Object,
+    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _busy: bool,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JContainer")]
@@ -37,7 +37,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     pub type _ReadTokenFromAsync_d__0 = crate::Newtonsoft::Json::Linq::JContainer__ReadTokenFromAsync_d__0;
     pub fn Add(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +59,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn AddFirst(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +212,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn EnsureValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Linq::JToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -274,7 +274,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn IsMultiContent(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -284,7 +284,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn MergeItem(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
         settings: *mut crate::Newtonsoft::Json::Linq::JsonMergeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -294,9 +294,20 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
             .invoke("MergeItem", (content, settings))?;
         Ok(__cordl_ret)
     }
+    pub fn Merge_Il2CppObject0(
+        &mut self,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Merge", (content))?;
+        Ok(__cordl_ret)
+    }
     pub fn Merge_JsonMergeSettings1(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
         settings: *mut crate::Newtonsoft::Json::Linq::JsonMergeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -304,17 +315,6 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("Merge", (content, settings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Merge_Object0(
-        &mut self,
-        content: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Merge", (content))?;
         Ok(__cordl_ret)
     }
     pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -450,7 +450,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn ReplaceAll(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -664,17 +664,17 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IList_Add(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -695,7 +695,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn System_Collections_IList_Contains(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -706,7 +706,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn System_Collections_IList_IndexOf(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -718,7 +718,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     pub fn System_Collections_IList_Insert(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -729,7 +729,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn System_Collections_IList_Remove(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -772,18 +772,18 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     pub fn System_Collections_IList_get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IList.get_Item", (index))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IList_set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -805,11 +805,11 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn System_ComponentModel_IBindingList_AddNew(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.ComponentModel.IBindingList.AddNew", ())?;
         Ok(__cordl_ret)
     }
@@ -831,7 +831,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     pub fn System_ComponentModel_IBindingList_Find(
         &mut self,
         property: *mut crate::System::ComponentModel::PropertyDescriptor,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -981,17 +981,17 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
         listAccessors: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::ComponentModel::PropertyDescriptor,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("System.ComponentModel.ITypedList.GetListName", (listAccessors))?;
         Ok(__cordl_ret)
     }
     pub fn TryAdd(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1002,7 +1002,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     pub fn TryAddInternal(
         &mut self,
         index: i32,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
         skipParentCheck: bool,
         copyAnnotations: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1018,7 +1018,7 @@ impl crate::Newtonsoft::Json::Linq::JContainer {
     }
     pub fn ValidateContent(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

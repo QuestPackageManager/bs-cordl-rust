@@ -103,12 +103,12 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
     }
     pub fn GetHashNameFromOID(
         &mut self,
-        oid: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetHashNameFromOID", (oid))?;
         Ok(__cordl_ret)
     }
@@ -158,7 +158,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
     }
     pub fn OnKeyGenerated(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::EventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -171,7 +171,7 @@ impl crate::System::Security::Cryptography::RSACryptoServiceProvider {
     pub fn VerifyHash(
         &mut self,
         rgbHash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         rgbSignature: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

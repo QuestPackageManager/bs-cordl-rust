@@ -4,7 +4,7 @@
 pub struct X509Crl {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub c: *mut crate::Org::BouncyCastle::Asn1::X509::CertificateList,
-    pub sigAlgName: *mut crate::System::String,
+    pub sigAlgName: *mut quest_hook::libil2cpp::Il2CppString,
     pub sigAlgParams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub isIndirect: bool,
     pub hashValueSet: bool,
@@ -43,7 +43,7 @@ impl crate::Org::BouncyCastle::X509::X509Crl {
     }
     pub fn Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,11 +168,11 @@ impl crate::Org::BouncyCastle::X509::X509Crl {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -242,21 +242,21 @@ impl crate::Org::BouncyCastle::X509::X509Crl {
     }
     pub fn get_SigAlgName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SigAlgName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SigAlgOid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SigAlgOid", ())?;
         Ok(__cordl_ret)
     }

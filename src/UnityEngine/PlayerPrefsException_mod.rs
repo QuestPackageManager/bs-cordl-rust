@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::UnityEngine::PlayerPrefsException {
 #[cfg(feature = "UnityEngine+PlayerPrefsException")]
 impl crate::UnityEngine::PlayerPrefsException {
     pub fn New(
-        error: *mut crate::System::String,
+        error: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -35,7 +35,7 @@ impl crate::UnityEngine::PlayerPrefsException {
     }
     pub fn _ctor(
         &mut self,
-        error: *mut crate::System::String,
+        error: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

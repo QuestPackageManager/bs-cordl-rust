@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CatalogLocationData {
-    __cordl_parent: crate::System::Object,
-    pub _LocatorId_k__BackingField: *mut crate::System::String,
-    pub _LocalHash_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _LocatorId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _LocalHash_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _CatalogLocation_k__BackingField: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
 }
 #[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl std::ops::Deref
 for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,8 +31,8 @@ for crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
 #[cfg(feature = "AddressablesInternalBridge+Runtime+CatalogLocationData")]
 impl crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     pub fn New(
-        locatorId: *mut crate::System::String,
-        localHash: *mut crate::System::String,
+        locatorId: *mut quest_hook::libil2cpp::Il2CppString,
+        localHash: *mut quest_hook::libil2cpp::Il2CppString,
         resourceLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -43,8 +43,8 @@ impl crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     }
     pub fn _ctor(
         &mut self,
-        locatorId: *mut crate::System::String,
-        localHash: *mut crate::System::String,
+        locatorId: *mut quest_hook::libil2cpp::Il2CppString,
+        localHash: *mut quest_hook::libil2cpp::Il2CppString,
         resourceLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -68,21 +68,21 @@ impl crate::AddressablesInternalBridge::Runtime::CatalogLocationData {
     }
     pub fn get_LocalHash(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LocalHash", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_LocatorId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LocatorId", ())?;
         Ok(__cordl_ret)
     }

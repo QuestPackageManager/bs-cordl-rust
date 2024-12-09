@@ -35,7 +35,7 @@ impl crate::System::Net::WebReadStream {
         offset: i32,
         _cordl_size: i32,
         cb: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

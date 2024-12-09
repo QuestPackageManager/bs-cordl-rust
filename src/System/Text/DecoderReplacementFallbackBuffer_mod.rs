@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DecoderReplacementFallbackBuffer {
     __cordl_parent: crate::System::Text::DecoderFallbackBuffer,
-    pub _strDefault: *mut crate::System::String,
+    pub _strDefault: *mut quest_hook::libil2cpp::Il2CppString,
     pub _fallbackCount: i32,
     pub _fallbackIndex: i32,
 }

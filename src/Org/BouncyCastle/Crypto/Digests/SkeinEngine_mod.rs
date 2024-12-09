@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub threefish: *mut crate::Org::BouncyCastle::Crypto::Engines::ThreefishEngine,
     pub outputSizeBytes: i32,
     pub chain: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -291,7 +291,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_Configuration {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
@@ -303,7 +303,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Configuration")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -360,7 +360,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Configuration {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_Parameter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: i32,
     pub value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -373,7 +373,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+Parameter")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -441,7 +441,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_Parameter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_UBI {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tweak: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak,
     pub engine: *mut crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine,
     pub currentBlock: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -456,7 +456,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UBI")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -564,7 +564,7 @@ for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UBI {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SkeinEngine_UbiTweak {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tweak: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
     pub extendedPosition: bool,
 }
@@ -577,7 +577,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Digests+SkeinEngine+UbiTweak")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -645,11 +645,11 @@ impl crate::Org::BouncyCastle::Crypto::Digests::SkeinEngine_UbiTweak {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }

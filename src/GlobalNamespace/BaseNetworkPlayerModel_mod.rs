@@ -180,7 +180,7 @@ impl crate::GlobalNamespace::BaseNetworkPlayerModel {
     }
     pub fn Log(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -576,7 +576,7 @@ for crate::GlobalNamespace::BaseNetworkPlayerModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BaseNetworkPlayerModel_PartyConfig {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
     pub configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub partyManager: *mut crate::GlobalNamespace::INetworkPlayerModel,
@@ -589,7 +589,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BaseNetworkPlayerModel+PartyConfig")]
 impl std::ops::Deref for crate::GlobalNamespace::BaseNetworkPlayerModel_PartyConfig {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

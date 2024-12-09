@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadedSeedGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -72,7 +72,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadedSeedGenerator_SeedGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub counter: i32,
     pub stop: bool,
 }
@@ -85,7 +85,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+ThreadedSeedGenerator+SeedGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -132,7 +132,7 @@ impl crate::Org::BouncyCastle::Crypto::Prng::ThreadedSeedGenerator_SeedGenerator
     }
     pub fn Run(
         &mut self,
-        ignored: *mut crate::System::Object,
+        ignored: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PublicAPIAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Comment_k__BackingField: *mut crate::System::String,
+    pub _Comment_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "JetBrains+Annotations+PublicAPIAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -32,8 +32,8 @@ impl crate::JetBrains::Annotations::PublicAPIAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        comment: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        comment: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -51,9 +51,9 @@ impl crate::JetBrains::Annotations::PublicAPIAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        comment: *mut crate::System::String,
+        comment: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,17 +64,17 @@ impl crate::JetBrains::Annotations::PublicAPIAttribute {
     }
     pub fn get_Comment(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Comment", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Comment(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

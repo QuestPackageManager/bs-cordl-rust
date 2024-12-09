@@ -48,7 +48,7 @@ pub struct InputSystemUIInputModule {
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
     pub m_OnControlsChangedDelegate: *mut crate::System::Action_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub m_CurrentPointerId: i32,
     pub m_CurrentPointerIndex: i32,
@@ -352,7 +352,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     }
     pub fn OnControlsChanged(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

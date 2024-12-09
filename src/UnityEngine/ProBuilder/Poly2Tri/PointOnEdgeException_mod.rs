@@ -30,7 +30,7 @@ for crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
 #[cfg(feature = "UnityEngine+ProBuilder+Poly2Tri+PointOnEdgeException")]
 impl crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     pub fn New(
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         a: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         b: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         c: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
@@ -43,7 +43,7 @@ impl crate::UnityEngine::ProBuilder::Poly2Tri::PointOnEdgeException {
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         a: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         b: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,
         c: *mut crate::UnityEngine::ProBuilder::Poly2Tri::TriangulationPoint,

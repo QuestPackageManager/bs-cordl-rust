@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectableInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Optional: bool,
-    pub Identifier: *mut crate::System::Object,
+    pub Identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub SourceType: crate::Zenject::InjectSources,
-    pub MemberName: *mut crate::System::String,
+    pub MemberName: *mut quest_hook::libil2cpp::Il2CppString,
     pub MemberType: *mut crate::System::Type,
-    pub DefaultValue: *mut crate::System::Object,
+    pub DefaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+InjectableInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectableInfo")]
 impl std::ops::Deref for crate::Zenject::InjectableInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,10 +32,10 @@ impl std::ops::DerefMut for crate::Zenject::InjectableInfo {
 impl crate::Zenject::InjectableInfo {
     pub fn New(
         optional: bool,
-        identifier: *mut crate::System::Object,
-        memberName: *mut crate::System::String,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberName: *mut quest_hook::libil2cpp::Il2CppString,
         memberType: *mut crate::System::Type,
-        defaultValue: *mut crate::System::Object,
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
         sourceType: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -50,10 +50,10 @@ impl crate::Zenject::InjectableInfo {
     pub fn _ctor(
         &mut self,
         optional: bool,
-        identifier: *mut crate::System::Object,
-        memberName: *mut crate::System::String,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberName: *mut quest_hook::libil2cpp::Il2CppString,
         memberType: *mut crate::System::Type,
-        defaultValue: *mut crate::System::Object,
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
         sourceType: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

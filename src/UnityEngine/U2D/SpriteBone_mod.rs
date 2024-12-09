@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SpriteBone {
-    pub m_Name: *mut crate::System::String,
-    pub m_Guid: *mut crate::System::String,
+    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Guid: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Position: crate::UnityEngine::Vector3,
     pub m_Rotation: crate::UnityEngine::Quaternion,
     pub m_Length: f32,

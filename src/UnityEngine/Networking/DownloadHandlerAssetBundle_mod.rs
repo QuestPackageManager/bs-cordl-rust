@@ -37,17 +37,17 @@ impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
     }
     pub fn GetText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetText", ())?;
         Ok(__cordl_ret)
     }
     pub fn InternalCreateAssetBundle(
         &mut self,
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
         crc: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -59,8 +59,8 @@ impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
     }
     pub fn InternalCreateAssetBundleCached(
         &mut self,
-        url: *mut crate::System::String,
-        name: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         hash: crate::UnityEngine::Hash128,
         crc: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -72,7 +72,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
         Ok(__cordl_ret)
     }
     pub fn New_CachedAssetBundle_u32_1(
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
         cachedBundle: crate::UnityEngine::CachedAssetBundle,
         crc: u32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -83,7 +83,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
         Ok(__cordl_object)
     }
     pub fn New_u32_0(
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
         crc: u32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -94,7 +94,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
     }
     pub fn _ctor_CachedAssetBundle_u32_1(
         &mut self,
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
         cachedBundle: crate::UnityEngine::CachedAssetBundle,
         crc: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -107,7 +107,7 @@ impl crate::UnityEngine::Networking::DownloadHandlerAssetBundle {
     }
     pub fn _ctor_u32_0(
         &mut self,
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
         crc: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

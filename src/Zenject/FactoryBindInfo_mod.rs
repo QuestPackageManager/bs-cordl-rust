@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FactoryBindInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _FactoryType_k__BackingField: *mut crate::System::Type,
     pub _ProviderFunc_k__BackingField: *mut crate::System::Func_2<
         *mut crate::Zenject::DiContainer,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+FactoryBindInfo")]
 impl std::ops::Deref for crate::Zenject::FactoryBindInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

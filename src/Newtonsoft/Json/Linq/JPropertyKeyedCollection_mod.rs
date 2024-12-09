@@ -6,7 +6,7 @@ pub struct JPropertyKeyedCollection {
         *mut crate::Newtonsoft::Json::Linq::JToken,
     >,
     pub _dictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Linq::JToken,
     >,
 }
@@ -34,7 +34,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JPropertyKeyedCollect
 impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     pub fn AddKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         item: *mut crate::Newtonsoft::Json::Linq::JToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,7 +47,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     pub fn ChangeItemKey(
         &mut self,
         item: *mut crate::Newtonsoft::Json::Linq::JToken,
-        newKey: *mut crate::System::String,
+        newKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,7 +78,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     }
     pub fn Contains(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -109,11 +109,11 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     pub fn GetKeyForItem(
         &mut self,
         item: *mut crate::Newtonsoft::Json::Linq::JToken,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetKeyForItem", (item))?;
         Ok(__cordl_ret)
     }
@@ -148,7 +148,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     }
     pub fn Remove(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +169,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     }
     pub fn RemoveKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,7 +192,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     }
     pub fn TryGetValue(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<
             *mut crate::Newtonsoft::Json::Linq::JToken,
         >,
@@ -215,7 +215,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
     }
     pub fn get_Item(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Linq::JToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,14 +228,14 @@ impl crate::Newtonsoft::Json::Linq::JPropertyKeyedCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::ICollection_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Keys", ())?;
         Ok(__cordl_ret)
     }

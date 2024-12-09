@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "EncryptionUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EncryptionUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,7 +54,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::EncryptionUti
 #[repr(C)]
 #[derive(Debug)]
 pub struct EncryptionUtility_EncryptionState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _isValid: bool,
     pub _lastSentSequenceNum: i32,
     pub _hasReceivedSequenceNum: bool,
@@ -79,7 +79,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EncryptionUtility+EncryptionState")]
 impl std::ops::Deref for crate::GlobalNamespace::EncryptionUtility_EncryptionState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

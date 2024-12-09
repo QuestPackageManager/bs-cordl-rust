@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentKeywords {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _environmentKeywords: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _environmentKeywordsSet: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "EnvironmentKeywords")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "EnvironmentKeywords")]
 impl std::ops::Deref for crate::GlobalNamespace::EnvironmentKeywords {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::EnvironmentKeywords {
 impl crate::GlobalNamespace::EnvironmentKeywords {
     pub fn HasKeyword(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::EnvironmentKeywords {
     }
     pub fn New(
         environmentKeywords: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::EnvironmentKeywords {
     pub fn _ctor(
         &mut self,
         environmentKeywords: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -68,14 +68,14 @@ impl crate::GlobalNamespace::EnvironmentKeywords {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_environmentKeywords", ())?;
         Ok(__cordl_ret)
     }

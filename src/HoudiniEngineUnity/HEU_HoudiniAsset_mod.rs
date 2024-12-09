@@ -6,11 +6,11 @@ pub struct HEU_HoudiniAsset {
     pub _assetType: crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType,
     pub _assetInfo: crate::HoudiniEngineUnity::HAPI_AssetInfo,
     pub _nodeInfo: crate::HoudiniEngineUnity::HAPI_NodeInfo,
-    pub _assetName: *mut crate::System::String,
-    pub _assetOpName: *mut crate::System::String,
-    pub _assetHelp: *mut crate::System::String,
+    pub _assetName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetOpName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetHelp: *mut quest_hook::libil2cpp::Il2CppString,
     pub _assetID: i32,
-    pub _assetPath: *mut crate::System::String,
+    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _loadAssetFromMemory: bool,
     pub _alwaysOverwriteOnLoad: bool,
     pub _assetFileObject: *mut crate::UnityEngine::Object,
@@ -23,9 +23,9 @@ pub struct HEU_HoudiniAsset {
     >,
     pub _parameters: *mut crate::HoudiniEngineUnity::HEU_Parameters,
     pub _lastSyncedTransformMatrix: crate::UnityEngine::Matrix4x4,
-    pub _assetCacheFolderPath: *mut crate::System::String,
+    pub _assetCacheFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _subassetNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _selectedSubassetIndex: i32,
     pub _savedAssetPreset: *mut crate::HoudiniEngineUnity::HEU_AssetPreset,
@@ -210,9 +210,9 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn AddToAssetDBCache(
         &mut self,
-        assetObjectFileName: *mut crate::System::String,
+        assetObjectFileName: *mut quest_hook::libil2cpp::Il2CppString,
         objectToAdd: *mut crate::UnityEngine::Object,
-        relativeFolderPath: *mut crate::System::String,
+        relativeFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
         targetAssetDBObject: quest_hook::libil2cpp::ByRefMut<
             *mut crate::UnityEngine::Object,
         >,
@@ -328,7 +328,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn BakeToNewPrefab(
         &mut self,
-        destinationPrefabPath: *mut crate::System::String,
+        destinationPrefabPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -459,7 +459,9 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn CloneAssetWithoutHDA(
         &mut self,
-        bakedAssetPath: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        bakedAssetPath: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         bWriteMeshesToAssetDatabase: bool,
         bReconnectPrefabInstances: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
@@ -718,7 +720,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetAssetInputNode(
         &mut self,
-        inputName: *mut crate::System::String,
+        inputName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_InputNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -750,7 +752,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetAttributeStore(
         &mut self,
-        geoName: *mut crate::System::String,
+        geoName: *mut quest_hook::libil2cpp::Il2CppString,
         partID: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_AttributesStore,
@@ -804,7 +806,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetCurve(
         &mut self,
-        curveName: *mut crate::System::String,
+        curveName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_Curve> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -862,7 +864,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetHandleByName(
         &mut self,
-        handleName: *mut crate::System::String,
+        handleName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_Handle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -899,7 +901,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetInputNode(
         &mut self,
-        inputName: *mut crate::System::String,
+        inputName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_InputNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1014,7 +1016,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetObjectNodeByName(
         &mut self,
-        objName: *mut crate::System::String,
+        objName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_ObjectNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1087,11 +1089,11 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetValidAssetCacheFolderPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValidAssetCacheFolderPath", ())?;
         Ok(__cordl_ret)
     }
@@ -1104,8 +1106,8 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn GetVolumeCachePreset(
         &mut self,
-        objName: *mut crate::System::String,
-        geoName: *mut crate::System::String,
+        objName: *mut quest_hook::libil2cpp::Il2CppString,
+        geoName: *mut quest_hook::libil2cpp::Il2CppString,
         tile: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_VolumeCachePreset,
@@ -1307,7 +1309,9 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn IsValidForInteraction(
         &mut self,
-        errorMessage: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        errorMessage: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1769,7 +1773,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn SetupAsset(
         &mut self,
         assetType: crate::HoudiniEngineUnity::HEU_HoudiniAsset_HEU_AssetType,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
         rootGameObject: *mut crate::UnityEngine::GameObject,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1964,11 +1968,11 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn get_AssetHelp(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssetHelp", ())?;
         Ok(__cordl_ret)
     }
@@ -1991,31 +1995,31 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     }
     pub fn get_AssetName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssetName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_AssetOpName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssetOpName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_AssetPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssetPath", ())?;
         Ok(__cordl_ret)
     }
@@ -2305,13 +2309,13 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset {
     pub fn get_SubassetNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_SubassetNames", ())?;
         Ok(__cordl_ret)
     }
@@ -2776,7 +2780,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
     pub fn BeginInvoke(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2807,7 +2811,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -2818,7 +2822,7 @@ impl crate::HoudiniEngineUnity::HEU_HoudiniAsset_UpdateUIDelegate {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

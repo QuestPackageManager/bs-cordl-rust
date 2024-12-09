@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AssemblyConfigurationAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Configuration_k__BackingField: *mut crate::System::String,
+    pub _Configuration_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Reflection+AssemblyConfigurationAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Reflection::AssemblyConfigurationAttr
 #[cfg(feature = "System+Reflection+AssemblyConfigurationAttribute")]
 impl crate::System::Reflection::AssemblyConfigurationAttribute {
     pub fn New(
-        configuration: *mut crate::System::String,
+        configuration: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +37,7 @@ impl crate::System::Reflection::AssemblyConfigurationAttribute {
     }
     pub fn _ctor(
         &mut self,
-        configuration: *mut crate::System::String,
+        configuration: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

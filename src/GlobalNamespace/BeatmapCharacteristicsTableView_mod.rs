@@ -5,7 +5,7 @@ pub struct BeatmapCharacteristicsTableView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _tableView: *mut crate::HMUI::TableView,
     pub _cellPrefab: *mut crate::GlobalNamespace::BeatmapCharacteristicTableCell,
-    pub _cellReuseIdentifier: *mut crate::System::String,
+    pub _cellReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cellWidth: f32,
     pub didSelectCharacteristic: *mut crate::System::Action_1<
         *mut crate::GlobalNamespace::BeatmapCharacteristicSO,

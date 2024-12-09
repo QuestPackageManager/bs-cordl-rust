@@ -5,7 +5,7 @@ pub struct UIKeyboardKey {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _keyCode: crate::UnityEngine::KeyCode,
     pub _text: *mut crate::TMPro::TextMeshProUGUI,
-    pub _overrideText: *mut crate::System::String,
+    pub _overrideText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _canBeUppercase: bool,
 }
 #[cfg(feature = "HMUI+UIKeyboardKey")]

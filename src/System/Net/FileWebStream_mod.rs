@@ -31,7 +31,7 @@ impl crate::System::Net::FileWebStream {
         offset: i32,
         _cordl_size: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -46,7 +46,7 @@ impl crate::System::Net::FileWebStream {
         offset: i32,
         _cordl_size: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,9 +97,9 @@ impl crate::System::Net::FileWebStream {
             .invoke("EndWrite", (ar))?;
         Ok(__cordl_ret)
     }
-    pub fn New_FileWebRequest_String_FileMode_FileAccess_FileShare0(
+    pub fn New_FileWebRequest_Il2CppString_FileMode_FileAccess_FileShare0(
         request: *mut crate::System::Net::FileWebRequest,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
         sharing: crate::System::IO::FileShare,
@@ -112,7 +112,7 @@ impl crate::System::Net::FileWebStream {
     }
     pub fn New_i32__cordl_bool1(
         request: *mut crate::System::Net::FileWebRequest,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
         sharing: crate::System::IO::FileShare,
@@ -165,10 +165,10 @@ impl crate::System::Net::FileWebStream {
             .invoke("Write", (buffer, offset, _cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_FileWebRequest_String_FileMode_FileAccess_FileShare0(
+    pub fn _ctor_FileWebRequest_Il2CppString_FileMode_FileAccess_FileShare0(
         &mut self,
         request: *mut crate::System::Net::FileWebRequest,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
         sharing: crate::System::IO::FileShare,
@@ -183,7 +183,7 @@ impl crate::System::Net::FileWebStream {
     pub fn _ctor_i32__cordl_bool1(
         &mut self,
         request: *mut crate::System::Net::FileWebRequest,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
         sharing: crate::System::IO::FileShare,

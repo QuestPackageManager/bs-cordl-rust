@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TraceFilter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Diagnostics+TraceFilter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+TraceFilter")]
 impl std::ops::Deref for crate::System::Diagnostics::TraceFilter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,16 +24,20 @@ impl std::ops::DerefMut for crate::System::Diagnostics::TraceFilter {
 }
 #[cfg(feature = "System+Diagnostics+TraceFilter")]
 impl crate::System::Diagnostics::TraceFilter {
-    pub fn ShouldTrace_Il2CppArray_Object_Il2CppArray0(
+    pub fn ShouldTrace_Il2CppArray_Il2CppObject_Il2CppArray0(
         &mut self,
         cache: *mut crate::System::Diagnostics::TraceEventCache,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         eventType: crate::System::Diagnostics::TraceEventType,
         id: i32,
-        formatOrMessage: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        data1: *mut crate::System::Object,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        formatOrMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        data1: *mut quest_hook::libil2cpp::Il2CppObject,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,13 +49,13 @@ impl crate::System::Diagnostics::TraceFilter {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ShouldTrace_TraceEventCache_String_TraceEventType_i32_String1(
+    pub fn ShouldTrace_TraceEventCache_Il2CppString_TraceEventType_i32_Il2CppString1(
         &mut self,
         cache: *mut crate::System::Diagnostics::TraceEventCache,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         eventType: crate::System::Diagnostics::TraceEventType,
         id: i32,
-        formatOrMessage: *mut crate::System::String,
+        formatOrMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

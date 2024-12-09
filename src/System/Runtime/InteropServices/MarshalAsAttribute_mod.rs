@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MarshalAsAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub MarshalCookie: *mut crate::System::String,
-    pub MarshalType: *mut crate::System::String,
+    pub MarshalCookie: *mut quest_hook::libil2cpp::Il2CppString,
+    pub MarshalType: *mut quest_hook::libil2cpp::Il2CppString,
     pub MarshalTypeRef: *mut crate::System::Type,
     pub SafeArrayUserDefinedSubType: *mut crate::System::Type,
     pub utype: crate::System::Runtime::InteropServices::UnmanagedType,

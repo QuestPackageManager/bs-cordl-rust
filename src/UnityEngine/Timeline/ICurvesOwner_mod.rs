@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::ICurvesOwner {
 impl crate::UnityEngine::Timeline::ICurvesOwner {
     pub fn CreateCurves(
         &mut self,
-        curvesClipName: *mut crate::System::String,
+        curvesClipName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,11 +72,11 @@ impl crate::UnityEngine::Timeline::ICurvesOwner {
     }
     pub fn get_defaultCurvesName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultCurvesName", ())?;
         Ok(__cordl_ret)
     }

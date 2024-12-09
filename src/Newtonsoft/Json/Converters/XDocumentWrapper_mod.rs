@@ -37,11 +37,11 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("AppendChild", (newChild))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String1(
+    pub fn CreateAttribute_Il2CppString1(
         &mut self,
-        qualifiedName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
-        value: *mut crate::System::String,
+        qualifiedName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -52,10 +52,10 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateAttribute", (qualifiedName, namespaceUri, value))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String_String0(
+    pub fn CreateAttribute_Il2CppString_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -68,7 +68,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateCDataSection(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -81,7 +81,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateComment(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -92,9 +92,9 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateComment", (text))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateElement_String0(
+    pub fn CreateElement_Il2CppString0(
         &mut self,
-        elementName: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlElement,
     > {
@@ -105,10 +105,10 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
             .invoke("CreateElement", (elementName))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateElement_String1(
+    pub fn CreateElement_Il2CppString1(
         &mut self,
-        qualifiedName: *mut crate::System::String,
-        namespaceUri: *mut crate::System::String,
+        qualifiedName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlElement,
     > {
@@ -121,8 +121,8 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateProcessingInstruction(
         &mut self,
-        target: *mut crate::System::String,
-        data: *mut crate::System::String,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -135,7 +135,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateSignificantWhitespace(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -148,7 +148,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateTextNode(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -161,7 +161,7 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateWhitespace(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -174,9 +174,9 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateXmlDeclaration(
         &mut self,
-        version: *mut crate::System::String,
-        encoding: *mut crate::System::String,
-        standalone: *mut crate::System::String,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
+        standalone: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {
@@ -189,10 +189,10 @@ impl crate::Newtonsoft::Json::Converters::XDocumentWrapper {
     }
     pub fn CreateXmlDocumentType(
         &mut self,
-        name: *mut crate::System::String,
-        publicId: *mut crate::System::String,
-        systemId: *mut crate::System::String,
-        internalSubset: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        publicId: *mut quest_hook::libil2cpp::Il2CppString,
+        systemId: *mut quest_hook::libil2cpp::Il2CppString,
+        internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Converters::IXmlNode,
     > {

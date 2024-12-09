@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
     }
     pub fn SetShaderCoroutine(
         &mut self,
-        shaderName: *mut crate::System::String,
+        shaderName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

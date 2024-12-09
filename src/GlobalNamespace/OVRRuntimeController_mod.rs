@@ -7,7 +7,7 @@ pub struct OVRRuntimeController {
     pub m_controllerModelShader: *mut crate::UnityEngine::Shader,
     pub m_supportAnimation: bool,
     pub m_controllerObject: *mut crate::UnityEngine::GameObject,
-    pub m_controllerModelPath: *mut crate::System::String,
+    pub m_controllerModelPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_modelSupported: bool,
     pub m_hasInputFocus: bool,
     pub m_hasInputFocusPrev: bool,
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::OVRRuntimeController {
     }
     pub fn IsModelSupported(
         &mut self,
-        modelPath: *mut crate::System::String,
+        modelPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::OVRRuntimeController {
     }
     pub fn LoadControllerModel(
         &mut self,
-        modelPath: *mut crate::System::String,
+        modelPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

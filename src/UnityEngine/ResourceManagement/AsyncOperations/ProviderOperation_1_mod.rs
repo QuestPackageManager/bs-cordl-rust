@@ -8,13 +8,15 @@ pub struct ProviderOperation_1<TObject: quest_hook::libil2cpp::Type> {
     pub m_ReleaseDependenciesOnFailure: bool,
     pub m_CompletionCallback: *mut crate::System::Action_4<
         i32,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
         bool,
         *mut crate::System::Exception,
     >,
     pub m_GetDepCallback: *mut crate::System::Action_2<
         i32,
-        *mut crate::System::Collections::Generic::IList_1<*mut crate::System::Object>,
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     >,
     pub m_GetProgressCallback: *mut crate::System::Func_1<f32>,
     pub m_GetDownloadProgressCallback: *mut crate::System::Func_1<
@@ -100,7 +102,7 @@ impl<
     pub fn GetDependencies_IList_1_1(
         &mut self,
         dstList: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -150,7 +152,7 @@ impl<
     pub fn GetDownloadStatus(
         &mut self,
         visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -378,7 +380,7 @@ impl<
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -386,7 +388,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }

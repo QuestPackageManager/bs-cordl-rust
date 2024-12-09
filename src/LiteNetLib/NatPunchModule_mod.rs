@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _socket: *mut crate::LiteNetLib::NetSocket,
     pub _requestEvents: *mut crate::System::Collections::Generic::Queue_1<
         crate::LiteNetLib::NatPunchModule_RequestEventData,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NatPunchModule")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl crate::LiteNetLib::NatPunchModule {
         hostExternal: *mut crate::System::Net::IPEndPoint,
         clientInternal: *mut crate::System::Net::IPEndPoint,
         clientExternal: *mut crate::System::Net::IPEndPoint,
-        additionalInfo: *mut crate::System::String,
+        additionalInfo: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -163,10 +163,10 @@ impl crate::LiteNetLib::NatPunchModule {
             .invoke("Send", (packet, target))?;
         Ok(__cordl_ret)
     }
-    pub fn SendNatIntroduceRequest_IPEndPoint_String1(
+    pub fn SendNatIntroduceRequest_IPEndPoint_Il2CppString1(
         &mut self,
         masterServerEndPoint: *mut crate::System::Net::IPEndPoint,
-        additionalInfo: *mut crate::System::String,
+        additionalInfo: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -175,11 +175,11 @@ impl crate::LiteNetLib::NatPunchModule {
             .invoke("SendNatIntroduceRequest", (masterServerEndPoint, additionalInfo))?;
         Ok(__cordl_ret)
     }
-    pub fn SendNatIntroduceRequest_String_i32_String0(
+    pub fn SendNatIntroduceRequest_Il2CppString_i32_Il2CppString0(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
-        additionalInfo: *mut crate::System::String,
+        additionalInfo: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -213,9 +213,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::LiteNetLib::NatPunchModule {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule_NatIntroduceRequestPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Internal_k__BackingField: *mut crate::System::Net::IPEndPoint,
-    pub _Token_k__BackingField: *mut crate::System::String,
+    pub _Token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -225,7 +225,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceRequestPacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -267,11 +267,11 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     }
     pub fn get_Token(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Token", ())?;
         Ok(__cordl_ret)
     }
@@ -288,7 +288,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
     }
     pub fn set_Token(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -312,10 +312,10 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceRequestPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule_NatIntroduceResponsePacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Internal_k__BackingField: *mut crate::System::Net::IPEndPoint,
     pub _External_k__BackingField: *mut crate::System::Net::IPEndPoint,
-    pub _Token_k__BackingField: *mut crate::System::String,
+    pub _Token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -325,7 +325,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatIntroduceResponsePacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -378,11 +378,11 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     }
     pub fn get_Token(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Token", ())?;
         Ok(__cordl_ret)
     }
@@ -410,7 +410,7 @@ impl crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
     }
     pub fn set_Token(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -434,8 +434,8 @@ for crate::LiteNetLib::NatPunchModule_NatIntroduceResponsePacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NatPunchModule_NatPunchPacket {
-    __cordl_parent: crate::System::Object,
-    pub _Token_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _Token_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _IsExternal_k__BackingField: bool,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
@@ -445,7 +445,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+NatPunchModule+NatPunchPacket")]
 impl std::ops::Deref for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -484,11 +484,11 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     }
     pub fn get_Token(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Token", ())?;
         Ok(__cordl_ret)
     }
@@ -505,7 +505,7 @@ impl crate::LiteNetLib::NatPunchModule_NatPunchPacket {
     }
     pub fn set_Token(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -531,7 +531,7 @@ for crate::LiteNetLib::NatPunchModule_NatPunchPacket {
 pub struct NatPunchModule_RequestEventData {
     pub LocalEndPoint: *mut crate::System::Net::IPEndPoint,
     pub RemoteEndPoint: *mut crate::System::Net::IPEndPoint,
-    pub Token: *mut crate::System::String,
+    pub Token: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+RequestEventData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -557,7 +557,7 @@ impl crate::LiteNetLib::NatPunchModule_RequestEventData {}
 pub struct NatPunchModule_SuccessEventData {
     pub TargetEndPoint: *mut crate::System::Net::IPEndPoint,
     pub Type: crate::LiteNetLib::NatAddressType,
-    pub Token: *mut crate::System::String,
+    pub Token: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LiteNetLib+NatPunchModule+SuccessEventData")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

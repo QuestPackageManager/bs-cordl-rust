@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RevocationDetails {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub revDetails: *mut crate::Org::BouncyCastle::Asn1::Cmp::RevDetails,
 }
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetails")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cmp+RevocationDetails")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cmp::RevocationDetails {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -36,7 +36,7 @@ impl crate::GlobalNamespace::TimelinePauseReceiver {
         &mut self,
         origin: crate::UnityEngine::Playables::Playable,
         notification: *mut crate::UnityEngine::Playables::INotification,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

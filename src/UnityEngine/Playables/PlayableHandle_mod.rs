@@ -46,9 +46,9 @@ impl crate::UnityEngine::Playables::PlayableHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        p: *mut crate::System::Object,
+        p: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -188,8 +188,8 @@ impl crate::UnityEngine::Playables::PlayableHandle {
     }
     pub fn GetScriptInstance(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetScriptInstance",
             (),
@@ -344,7 +344,7 @@ impl crate::UnityEngine::Playables::PlayableHandle {
     }
     pub fn SetScriptInstance(
         &mut self,
-        scriptInstance: *mut crate::System::Object,
+        scriptInstance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -31,7 +31,7 @@ impl crate::GlobalNamespace::FlyingTextEffect {
     pub type Pool = crate::GlobalNamespace::FlyingTextEffect_Pool;
     pub fn InitAndPresent(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         duration: f32,
         targetPos: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,

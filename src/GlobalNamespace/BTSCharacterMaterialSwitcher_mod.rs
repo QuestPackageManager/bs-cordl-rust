@@ -74,7 +74,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_MaterialPairs {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub materialIndex: i32,
     pub defaultMaterial: *mut crate::UnityEngine::Material,
     pub alternativeMaterial: *mut crate::UnityEngine::Material,
@@ -88,7 +88,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BTSCharacterMaterialSwitcher+MaterialPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -134,7 +134,7 @@ for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _renderer: *mut crate::UnityEngine::Renderer,
     pub _materialPairs: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::BTSCharacterMaterialSwitcher_MaterialPairs,
@@ -149,7 +149,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BTSCharacterMaterialSwitcher+RendererMaterialsPairs")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BTSCharacterMaterialSwitcher_RendererMaterialsPairs {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

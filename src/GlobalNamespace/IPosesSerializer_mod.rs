@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IPosesSerializer {
 impl crate::GlobalNamespace::IPosesSerializer {
     pub fn LoadRecording(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::PosesRecordingData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
     }
     pub fn RecordingCanBeCreated(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
     }
     pub fn RecordingExists(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
     }
     pub fn SaveRecording(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         data: *mut crate::GlobalNamespace::PosesRecordingData,
         saveToOldFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -70,7 +70,7 @@ impl crate::GlobalNamespace::IPosesSerializer {
     }
     pub fn SaveToOldFormat(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         data: *mut crate::GlobalNamespace::PosesRecordingData,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

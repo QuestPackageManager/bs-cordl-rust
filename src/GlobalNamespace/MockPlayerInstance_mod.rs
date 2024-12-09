@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlayerInstance {
-    __cordl_parent: crate::System::Object,
-    pub _id: *mut crate::System::String,
-    pub _userId: *mut crate::System::String,
-    pub _userName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _timeProvider: *mut crate::BGNet::Core::ITimeProvider,
     pub _taskUtility: *mut crate::BGNet::Core::ITaskUtility,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlayerInstance")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlayerInstance {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -198,31 +198,31 @@ impl crate::GlobalNamespace::MockPlayerInstance {
     }
     pub fn get_id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }

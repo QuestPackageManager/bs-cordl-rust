@@ -62,20 +62,20 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,
         objectType: *mut crate::System::Type,
-        existingValue: *mut crate::System::Object,
+        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
     pub fn WriteJson(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -110,7 +110,7 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_Union {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TagReader: *mut crate::Newtonsoft::Json::Utilities::FSharpFunction,
     pub Cases: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase,
@@ -125,7 +125,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+Union")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -180,9 +180,9 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_Union {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiscriminatedUnionConverter_UnionCase {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Tag: i32,
-    pub Name: *mut crate::System::String,
+    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub Fields: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Reflection::PropertyInfo,
     >,
@@ -198,7 +198,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Converters+DiscriminatedUnionConverter+UnionCase")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -214,7 +214,7 @@ for crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
 impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase {
     pub fn New(
         tag: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         fields: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Reflection::PropertyInfo,
         >,
@@ -230,7 +230,7 @@ impl crate::Newtonsoft::Json::Converters::DiscriminatedUnionConverter_UnionCase 
     pub fn _ctor(
         &mut self,
         tag: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         fields: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Reflection::PropertyInfo,
         >,

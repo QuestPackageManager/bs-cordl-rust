@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinkedAccount {
-    __cordl_parent: crate::System::Object,
-    pub AccessToken: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub AccessToken: *mut quest_hook::libil2cpp::Il2CppString,
     pub ServiceProvider: crate::Oculus::Platform::ServiceProvider,
-    pub UserId: *mut crate::System::String,
+    pub UserId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+LinkedAccount")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+LinkedAccount")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::LinkedAccount {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

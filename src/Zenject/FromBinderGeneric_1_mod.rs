@@ -233,9 +233,9 @@ impl<
             .invoke("FromResolveAllGetter", (method))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveAllGetter_Object_Func_2_1<TObj>(
+    pub fn FromResolveAllGetter_Il2CppObject_Func_2_1<TObj>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TContract>,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -253,9 +253,9 @@ impl<
             .invoke("FromResolveAllGetter", (identifier, method))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveAllGetter_Object_Func_2_InjectSources2<TObj>(
+    pub fn FromResolveAllGetter_Il2CppObject_Func_2_InjectSources2<TObj>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TContract>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<
@@ -293,9 +293,9 @@ impl<
             .invoke("FromResolveGetter", (method))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveGetter_Object_Func_2_1<TObj>(
+    pub fn FromResolveGetter_Il2CppObject_Func_2_1<TObj>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TContract>,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
@@ -313,9 +313,9 @@ impl<
             .invoke("FromResolveGetter", (identifier, method))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveGetter_Object_Func_2_InjectSources2<TObj>(
+    pub fn FromResolveGetter_Il2CppObject_Func_2_InjectSources2<TObj>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TContract>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<

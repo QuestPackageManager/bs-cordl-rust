@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieContainer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_domainTable: *mut crate::System::Collections::Hashtable,
     pub m_maxCookieSize: i32,
     pub m_maxCookies: i32,
     pub m_maxCookiesPerDomain: i32,
     pub m_count: i32,
-    pub m_fqdnMyDomain: *mut crate::System::String,
+    pub m_fqdnMyDomain: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+CookieContainer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+CookieContainer")]
 impl std::ops::Deref for crate::System::Net::CookieContainer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Net::CookieContainer {
     }
     pub fn AddRemoveDomain(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::System::Net::PathList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,7 +56,7 @@ impl crate::System::Net::CookieContainer {
     }
     pub fn AgeCookies(
         &mut self,
-        domain: *mut crate::System::String,
+        domain: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -71,7 +71,7 @@ impl crate::System::Net::CookieContainer {
         port: i32,
         cookies: *mut crate::System::Net::CookieCollection,
         domainAttribute: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         matchOnlyPlainCookie: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,8 +88,8 @@ impl crate::System::Net::CookieContainer {
     pub fn CookieCutter(
         &mut self,
         uri: *mut crate::System::Uri,
-        headerName: *mut crate::System::String,
-        setCookieHeader: *mut crate::System::String,
+        headerName: *mut quest_hook::libil2cpp::Il2CppString,
+        setCookieHeader: *mut quest_hook::libil2cpp::Il2CppString,
         isThrow: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::CookieCollection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -112,23 +112,25 @@ impl crate::System::Net::CookieContainer {
     pub fn GetCookieHeader_ByRefMut1(
         &mut self,
         uri: *mut crate::System::Uri,
-        optCookie2: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        optCookie2: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetCookieHeader", (uri, optCookie2))?;
         Ok(__cordl_ret)
     }
     pub fn GetCookieHeader_Uri0(
         &mut self,
         uri: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetCookieHeader", (uri))?;
         Ok(__cordl_ret)
     }
@@ -145,7 +147,7 @@ impl crate::System::Net::CookieContainer {
     }
     pub fn IsLocalDomain(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

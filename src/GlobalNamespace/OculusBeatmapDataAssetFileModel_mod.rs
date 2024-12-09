@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusBeatmapDataAssetFileModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelDataAssetDownloadUpdateEvent: *mut crate::System::Action_1<
         crate::GlobalNamespace::LevelDataAssetDownloadUpdate,
     >,
@@ -11,8 +11,8 @@ pub struct OculusBeatmapDataAssetFileModel {
         *mut crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingData,
     >,
     pub _downloadedAssetBundleFiles: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _lastAssetFileDownloadUpdateForAssetIds: *mut crate::System::Collections::Generic::Dictionary_2<
         u64,
@@ -21,7 +21,7 @@ pub struct OculusBeatmapDataAssetFileModel {
     pub _lastAssetFileDownloadUpdateTime: f32,
     pub _semaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
     pub _assetFileToAssetDetails: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Oculus::Platform::Models::AssetDetails,
     >,
     pub _oculusPlatformAdditionalContentModel: *mut crate::GlobalNamespace::OculusPlatformAdditionalContentModel,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusBeatmapDataAssetFileModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     }
     pub fn GetDownloadAssetBundleFileAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         assetDetails: *mut crate::Oculus::Platform::Models::AssetDetails,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
     }
     pub fn GetTaskCompletionSourceForDownload(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         assetDetail: *mut crate::Oculus::Platform::Models::AssetDetails,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
@@ -238,9 +238,9 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusBeatmapDataAssetFileModel_LevelDownloadingData {
-    __cordl_parent: crate::System::Object,
-    pub levelId: *mut crate::System::String,
-    pub assetBundlePath: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub downloadAssetBundleFileTCS: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
         crate::GlobalNamespace::GetAssetBundleFileResult,
     >,
@@ -254,7 +254,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+LevelDownloadingData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -269,8 +269,8 @@ for crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingData
 #[cfg(feature = "OculusBeatmapDataAssetFileModel+LevelDownloadingData")]
 impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingData {
     pub fn New(
-        levelId: *mut crate::System::String,
-        assetBundlePath: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -280,8 +280,8 @@ impl crate::GlobalNamespace::OculusBeatmapDataAssetFileModel_LevelDownloadingDat
     }
     pub fn _ctor(
         &mut self,
-        levelId: *mut crate::System::String,
-        assetBundlePath: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

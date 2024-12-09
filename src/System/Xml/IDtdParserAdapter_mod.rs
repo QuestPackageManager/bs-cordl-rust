@@ -37,7 +37,7 @@ impl crate::System::Xml::IDtdParserAdapter {
     }
     pub fn OnPublicId(
         &mut self,
-        publicId: *mut crate::System::String,
+        publicId: *mut quest_hook::libil2cpp::Il2CppString,
         keywordLineInfo: crate::System::Xml::LineInfo,
         publicLiteralLineInfo: crate::System::Xml::LineInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -50,7 +50,7 @@ impl crate::System::Xml::IDtdParserAdapter {
     }
     pub fn OnSystemId(
         &mut self,
-        systemId: *mut crate::System::String,
+        systemId: *mut quest_hook::libil2cpp::Il2CppString,
         keywordLineInfo: crate::System::Xml::LineInfo,
         systemLiteralLineInfo: crate::System::Xml::LineInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,8 +133,8 @@ impl crate::System::Xml::IDtdParserAdapter {
     }
     pub fn PushExternalSubset(
         &mut self,
-        systemId: *mut crate::System::String,
-        publicId: *mut crate::System::String,
+        systemId: *mut quest_hook::libil2cpp::Il2CppString,
+        publicId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,8 +145,8 @@ impl crate::System::Xml::IDtdParserAdapter {
     }
     pub fn PushInternalDtd(
         &mut self,
-        baseUri: *mut crate::System::String,
-        internalDtd: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
+        internalDtd: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

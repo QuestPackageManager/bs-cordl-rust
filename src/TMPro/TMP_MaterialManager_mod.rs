@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_MaterialManager")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_MaterialManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager_FallbackMaterial {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub fallbackID: i64,
     pub sourceMaterial: *mut crate::UnityEngine::Material,
     pub sourceMaterialCRC: i32,
@@ -64,7 +64,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_MaterialManager+FallbackMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -109,7 +109,7 @@ for crate::TMPro::TMP_MaterialManager_FallbackMaterial {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_MaterialManager_MaskingMaterial {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub baseMaterial: *mut crate::UnityEngine::Material,
     pub stencilMaterial: *mut crate::UnityEngine::Material,
     pub count: i32,
@@ -122,7 +122,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_MaterialManager+MaskingMaterial")]
 impl std::ops::Deref for crate::TMPro::TMP_MaterialManager_MaskingMaterial {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

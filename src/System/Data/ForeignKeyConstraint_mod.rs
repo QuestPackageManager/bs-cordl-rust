@@ -8,14 +8,14 @@ pub struct ForeignKeyConstraint {
     pub _acceptRejectRule: crate::System::Data::AcceptRejectRule,
     pub _childKey: crate::System::Data::DataKey,
     pub _parentKey: crate::System::Data::DataKey,
-    pub _constraintName: *mut crate::System::String,
+    pub _constraintName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _parentTableName: *mut crate::System::String,
+    pub _parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Data+ForeignKeyConstraint")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -213,7 +213,7 @@ impl crate::System::Data::ForeignKeyConstraint {
     }
     pub fn Create(
         &mut self,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -230,7 +230,7 @@ impl crate::System::Data::ForeignKeyConstraint {
     }
     pub fn Equals(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -264,7 +264,9 @@ impl crate::System::Data::ForeignKeyConstraint {
     }
     pub fn IsKeyNull(
         &mut self,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        values: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -286,8 +288,8 @@ impl crate::System::Data::ForeignKeyConstraint {
             .invoke_void(".ctor", (parentColumns, childColumns))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray_Il2CppArray1(
-        constraintName: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray_Il2CppArray1(
+        constraintName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -301,14 +303,14 @@ impl crate::System::Data::ForeignKeyConstraint {
             .invoke_void(".ctor", (constraintName, parentColumns, childColumns))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_Il2CppArray_Il2CppArray_AcceptRejectRule_Rule_Rule2(
-        constraintName: *mut crate::System::String,
-        parentTableName: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Il2CppArray_Il2CppArray_AcceptRejectRule_Rule_Rule2(
+        constraintName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         acceptRejectRule: crate::System::Data::AcceptRejectRule,
         deleteRule: crate::System::Data::Rule,
@@ -357,9 +359,9 @@ impl crate::System::Data::ForeignKeyConstraint {
             .invoke(".ctor", (parentColumns, childColumns))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray_Il2CppArray1(
+    pub fn _ctor_Il2CppString_Il2CppArray_Il2CppArray1(
         &mut self,
-        constraintName: *mut crate::System::String,
+        constraintName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -374,15 +376,15 @@ impl crate::System::Data::ForeignKeyConstraint {
             .invoke(".ctor", (constraintName, parentColumns, childColumns))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_Il2CppArray_Il2CppArray_AcceptRejectRule_Rule_Rule2(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppArray_Il2CppArray_AcceptRejectRule_Rule_Rule2(
         &mut self,
-        constraintName: *mut crate::System::String,
-        parentTableName: *mut crate::System::String,
+        constraintName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         acceptRejectRule: crate::System::Data::AcceptRejectRule,
         deleteRule: crate::System::Data::Rule,
@@ -419,13 +421,13 @@ impl crate::System::Data::ForeignKeyConstraint {
     pub fn get_ChildColumnNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ChildColumnNames", ())?;
         Ok(__cordl_ret)
     }
@@ -465,13 +467,13 @@ impl crate::System::Data::ForeignKeyConstraint {
     pub fn get_ParentColumnNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ParentColumnNames", ())?;
         Ok(__cordl_ret)
     }

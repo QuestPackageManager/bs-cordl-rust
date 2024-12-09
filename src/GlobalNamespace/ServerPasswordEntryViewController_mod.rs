@@ -7,7 +7,7 @@ pub struct ServerPasswordEntryViewController {
     pub _uiKeyboard: *mut crate::HMUI::UIKeyboard,
     pub didFinishEvent: *mut crate::System::Action_2<
         *mut crate::GlobalNamespace::INetworkPlayer,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _selectedNetworkPlayer: *mut crate::GlobalNamespace::INetworkPlayer,
 }
@@ -112,7 +112,7 @@ impl crate::GlobalNamespace::ServerPasswordEntryViewController {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::INetworkPlayer,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -126,7 +126,7 @@ impl crate::GlobalNamespace::ServerPasswordEntryViewController {
         &mut self,
         value: *mut crate::System::Action_2<
             *mut crate::GlobalNamespace::INetworkPlayer,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

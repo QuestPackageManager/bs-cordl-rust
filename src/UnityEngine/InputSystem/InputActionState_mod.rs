@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub maps: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::InputSystem::InputActionMap,
     >,
@@ -49,7 +49,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputActionState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -116,7 +116,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                 >,
             >,
         >,
-        callbackName: *mut crate::System::String,
+        callbackName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -484,11 +484,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         trigger: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetActionOrNoneString", (trigger))?;
         Ok(__cordl_ret)
     }
@@ -859,11 +859,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         &mut self,
         bindingIndex: i32,
         partNumber: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadCompositePartValueAsObject", (bindingIndex, partNumber))?;
         Ok(__cordl_ret)
     }
@@ -925,11 +925,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         bindingIndex: i32,
         controlIndex: i32,
         ignoreComposites: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "ReadValueAsObject",
                 (bindingIndex, controlIndex, ignoreComposites),
@@ -1144,11 +1144,11 @@ impl crate::UnityEngine::InputSystem::InputActionState {
     }
     pub fn System_ICloneable_Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.ICloneable.Clone", ())?;
         Ok(__cordl_ret)
     }
@@ -1817,12 +1817,12 @@ pub struct InputActionState_GlobalState {
     >,
     pub onActionChange: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         *mut crate::System::Action_2<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
             crate::UnityEngine::InputSystem::InputActionChange,
         >,
     >,
     pub onActionControlsChanged: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
-        *mut crate::System::Action_1<*mut crate::System::Object>,
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionState+GlobalState")]

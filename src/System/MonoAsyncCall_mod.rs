@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoAsyncCall {
-    __cordl_parent: crate::System::Object,
-    pub msg: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub msg: *mut quest_hook::libil2cpp::Il2CppObject,
     pub cb_method: crate::System::IntPtr,
-    pub cb_target: *mut crate::System::Object,
-    pub state: *mut crate::System::Object,
-    pub res: *mut crate::System::Object,
-    pub out_args: *mut crate::System::Object,
+    pub cb_target: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub res: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub out_args: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+MonoAsyncCall")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+MonoAsyncCall")]
 impl std::ops::Deref for crate::System::MonoAsyncCall {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

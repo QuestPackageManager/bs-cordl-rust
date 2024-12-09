@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct BsonValue {
     __cordl_parent: crate::Newtonsoft::Json::Bson::BsonToken,
-    pub _value: *mut crate::System::Object,
+    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _type: crate::Newtonsoft::Json::Bson::BsonType,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonValue")]
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Bson::BsonValue {
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonValue")]
 impl crate::Newtonsoft::Json::Bson::BsonValue {
     pub fn New(
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: crate::Newtonsoft::Json::Bson::BsonType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -38,7 +38,7 @@ impl crate::Newtonsoft::Json::Bson::BsonValue {
     }
     pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: crate::Newtonsoft::Json::Bson::BsonType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,11 +60,11 @@ impl crate::Newtonsoft::Json::Bson::BsonValue {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }

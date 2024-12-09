@@ -6,7 +6,7 @@ pub struct GraphicSettingsHandler {
         *mut crate::BeatSaber::GameSettings::GraphicSettings,
     >,
     pub _currentPreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
-    pub _currentPresetKey: *mut crate::System::String,
+    pub _currentPresetKey: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatSaber+GameSettings+GraphicSettingsHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -114,9 +114,9 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
             .invoke("TryGetCurrentPerformancePreset", (currentPreset))?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetCurrentPerformancePreset_String_ByRefMut1(
+    pub fn TryGetCurrentPerformancePreset_Il2CppString_ByRefMut1(
         &mut self,
-        serializedEnvironmentName: *mut crate::System::String,
+        serializedEnvironmentName: *mut quest_hook::libil2cpp::Il2CppString,
         currentPreset: quest_hook::libil2cpp::ByRefMut<
             *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
         >,
@@ -186,11 +186,11 @@ impl crate::BeatSaber::GameSettings::GraphicSettingsHandler {
     }
     pub fn get_fileNameWithExtension(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_fileNameWithExtension", ())?;
         Ok(__cordl_ret)
     }

@@ -209,7 +209,7 @@ for crate::GlobalNamespace::FireworkItemController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FireworkItemController_FireworkItemParticleSystem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _particleSystem: *mut crate::UnityEngine::ParticleSystem,
     pub _isSubemitter: bool,
     pub _useMainColor: bool,
@@ -226,7 +226,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "FireworkItemController+FireworkItemParticleSystem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::FireworkItemController_FireworkItemParticleSystem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

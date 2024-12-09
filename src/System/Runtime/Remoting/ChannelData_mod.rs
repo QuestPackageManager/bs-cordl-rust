@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChannelData {
-    __cordl_parent: crate::System::Object,
-    pub Ref: *mut crate::System::String,
-    pub Type: *mut crate::System::String,
-    pub Id: *mut crate::System::String,
-    pub DelayLoadAsClientChannel: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Ref: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Type: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub DelayLoadAsClientChannel: *mut quest_hook::libil2cpp::Il2CppString,
     pub _serverProviders: *mut crate::System::Collections::ArrayList,
     pub _clientProviders: *mut crate::System::Collections::ArrayList,
     pub _customProperties: *mut crate::System::Collections::Hashtable,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+ChannelData")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::ChannelData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -4,17 +4,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryObjectWithMapTyped {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub binaryHeaderEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum,
     pub objectId: i32,
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub numMembers: i32,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     >,
     pub typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub assemId: i32,
@@ -32,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWithMapTyped {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -80,14 +82,16 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryObjectWith
     pub fn Set(
         &mut self,
         objectId: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         numMembers: i32,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
         >,
         typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
         memberAssemIds: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         assemId: i32,

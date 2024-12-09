@@ -19,7 +19,7 @@ pub struct HelpFlowCoordinator {
     pub _viewControllers: *mut crate::System::Collections::Generic::List_1<
         crate::System::ValueTuple_2<
             *mut crate::HMUI::ViewController,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     >,
 }

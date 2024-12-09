@@ -33,10 +33,12 @@ impl crate::System::Xml::Schema::Datatype_dayTimeDuration {
     }
     pub fn TryParseValue(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        typedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

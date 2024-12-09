@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_TOPNodeData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _nodeID: i32,
-    pub _nodeName: *mut crate::System::String,
-    pub _parentName: *mut crate::System::String,
+    pub _nodeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _parentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _workResultParentGO: *mut crate::UnityEngine::GameObject,
     pub _workResults: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_TOPWorkResult,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_TOPNodeData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_TOPNodeData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

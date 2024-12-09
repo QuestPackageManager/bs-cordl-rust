@@ -40,7 +40,7 @@ impl crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder {
     }
     pub fn UnderTransformGroup(
         &mut self,
-        transformGroupname: *mut crate::System::String,
+        transformGroupname: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {

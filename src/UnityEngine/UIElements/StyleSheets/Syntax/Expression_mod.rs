@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Expression {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionType,
     pub multiplier: crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionMultiplier,
     pub dataType: crate::UnityEngine::UIElements::StyleSheets::Syntax::DataType,
@@ -10,7 +10,7 @@ pub struct Expression {
     pub subExpressions: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
     >,
-    pub keyword: *mut crate::System::String,
+    pub keyword: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+Expression")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RequestCacheProtocol {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+Cache+RequestCacheProtocol")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Cache+RequestCacheProtocol")]
 impl std::ops::Deref for crate::System::Net::Cache::RequestCacheProtocol {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -25,8 +25,8 @@ impl std::ops::DerefMut for crate::System::Net::Cache::RequestCacheProtocol {
 #[cfg(feature = "System+Net+Cache+RequestCacheProtocol")]
 impl crate::System::Net::Cache::RequestCacheProtocol {
     pub fn New(
-        arg1: *mut crate::System::Object,
-        arg2: *mut crate::System::Object,
+        arg1: *mut quest_hook::libil2cpp::Il2CppObject,
+        arg2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,8 +36,8 @@ impl crate::System::Net::Cache::RequestCacheProtocol {
     }
     pub fn _ctor(
         &mut self,
-        arg1: *mut crate::System::Object,
-        arg2: *mut crate::System::Object,
+        arg1: *mut quest_hook::libil2cpp::Il2CppObject,
+        arg2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

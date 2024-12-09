@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GraphAPIClient {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _client: *mut crate::System::Net::Http::HttpClient,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GraphAPIClient")]
 impl std::ops::Deref for crate::GlobalNamespace::GraphAPIClient {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
     }
     pub fn PostLoggedOut<TRequest, TResponse>(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         request: TRequest,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -68,13 +68,13 @@ impl crate::GlobalNamespace::GraphAPIClient {
             .invoke("PostLoggedOut", (path, request, postOptions, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn Post_String_TRequest_GraphAPIClient_PostOptions_CancellationToken0<
+    pub fn Post_Il2CppString_TRequest_GraphAPIClient_PostOptions_CancellationToken0<
         TRequest,
         TResponse,
     >(
         &mut self,
-        path: *mut crate::System::String,
-        accessToken: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
+        accessToken: *mut quest_hook::libil2cpp::Il2CppString,
         request: TRequest,
         postOptions: crate::GlobalNamespace::GraphAPIClient_PostOptions,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::GraphAPIClient {
     pub fn Post_Uri_HttpContent_CancellationToken1<TResponse>(
         &mut self,
         uri: *mut crate::System::Uri,
-        accessToken: *mut crate::System::String,
+        accessToken: *mut quest_hook::libil2cpp::Il2CppString,
         httpContent: *mut crate::System::Net::Http::HttpContent,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<

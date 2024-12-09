@@ -69,7 +69,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn GetLevelDataVersion(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn GetLevelDataVersionInternalAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn GetLevelProductData(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::SteamLevelProductCollectionModel_LevelProductData,
     > {
@@ -131,7 +131,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn GetPackEntitlementStatusInternalAsync(
         &mut self,
-        packId: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -152,7 +152,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn GetRedirectedLevelPackProductData(
         &mut self,
-        packId: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<crate::System::Nullable_1<u32>>,
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn HasLevelEntitlement(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn HasLevelPackEntitlement(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn IsPackBetterBuyThanLevelAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -248,7 +248,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn OpenLevelPackProductStoreAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -266,7 +266,7 @@ impl crate::GlobalNamespace::SteamPlatformAdditionalContentModel {
     }
     pub fn OpenLevelProductStoreAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<

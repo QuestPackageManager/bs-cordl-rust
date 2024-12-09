@@ -34,8 +34,8 @@ impl crate::System::Xml::Linq::XCData {
             .invoke("CloneNode", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_String0(
-        value: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -63,9 +63,9 @@ impl crate::System::Xml::Linq::XCData {
             .invoke("WriteTo", (writer))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::SongProfilingController {
     pub type _ProfileCoroutine_d__8 = crate::GlobalNamespace::SongProfilingController__ProfileCoroutine_d__8;
     pub fn CreateCaptureFolder(
         &mut self,
-        folderName: *mut crate::System::String,
+        folderName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,13 +44,13 @@ impl crate::GlobalNamespace::SongProfilingController {
     }
     pub fn CreateLogPath(
         &mut self,
-        folder: *mut crate::System::String,
+        folder: *mut quest_hook::libil2cpp::Il2CppString,
         startTime: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateLogPath", (folder, startTime))?;
         Ok(__cordl_ret)
     }
@@ -83,7 +83,7 @@ impl crate::GlobalNamespace::SongProfilingController {
     }
     pub fn ProfileCoroutine(
         &mut self,
-        folderName: *mut crate::System::String,
+        folderName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +114,7 @@ impl crate::GlobalNamespace::SongProfilingController {
     }
     pub fn StartProfilingToFile(
         &mut self,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _levelIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
     >,
     pub _levelPackIdToProductData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
     >,
     pub _levelPackRedirectionData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
     >,
 }
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "SonyLevelProductCollectionModel")]
 impl std::ops::Deref for crate::GlobalNamespace::SonyLevelProductCollectionModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
     pub type ProductData = crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData;
     pub fn GetLevelPackProductData(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData,
     > {
@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
     }
     pub fn GetLevelPackRedirectionData(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData,
     > {
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel {
     }
     pub fn GetLevelProductData(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
     > {
@@ -126,9 +126,9 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_AdditionalPackProductData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkAdditionalPackProductData: bool,
-    pub noEnvironmentKeywordsProductLabel: *mut crate::System::String,
+    pub noEnvironmentKeywordsProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalPackProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -139,7 +139,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalPackProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProductData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,7 +185,7 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalPackProduc
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_AdditionalProductData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub checkAdditionalProductData: bool,
     pub noEnvironmentKeywordsProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData,
 }
@@ -198,7 +198,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductCollectionModel+AdditionalProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -244,9 +244,9 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductDat
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_LevelPackProductData {
-    __cordl_parent: crate::System::Object,
-    pub _packId: *mut crate::System::String,
-    pub _productLabel: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _packId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _productLabel: *mut quest_hook::libil2cpp::Il2CppString,
     pub _packLevelPriceDiscountMul: f32,
     pub _levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
@@ -263,7 +263,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -288,8 +288,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
         Ok(__cordl_ret)
     }
     pub fn New(
-        productLabel: *mut crate::System::String,
-        levelPackId: *mut crate::System::String,
+        productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         packLevelPriceDiscountMul: f32,
         levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
@@ -313,8 +313,8 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
     }
     pub fn _ctor(
         &mut self,
-        productLabel: *mut crate::System::String,
-        levelPackId: *mut crate::System::String,
+        productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         packLevelPriceDiscountMul: f32,
         levelProductsData: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData,
@@ -351,11 +351,11 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
     }
     pub fn get_levelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_levelPackId", ())?;
         Ok(__cordl_ret)
     }
@@ -393,11 +393,11 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductDat
     }
     pub fn get_productLabel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_productLabel", ())?;
         Ok(__cordl_ret)
     }
@@ -416,11 +416,11 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackProductData
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_LevelPackRedirectionData {
-    __cordl_parent: crate::System::Object,
-    pub _targetLevelPackId: *mut crate::System::String,
-    pub _shouldOwnLevelPackId: *mut crate::System::String,
-    pub _redirectedProductLabel: *mut crate::System::String,
-    pub _validUntilDate: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _targetLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _shouldOwnLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _redirectedProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackRedirectionData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -431,7 +431,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackRedirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -446,10 +446,10 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirection
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelPackRedirectionData")]
 impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectionData {
     pub fn New(
-        targetLevelPackId: *mut crate::System::String,
-        shouldOwnLevelPackId: *mut crate::System::String,
-        redirectedProductLabel: *mut crate::System::String,
-        validUntilDate: *mut crate::System::String,
+        targetLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+        shouldOwnLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+        redirectedProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -467,10 +467,10 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
     }
     pub fn _ctor(
         &mut self,
-        targetLevelPackId: *mut crate::System::String,
-        shouldOwnLevelPackId: *mut crate::System::String,
-        redirectedProductLabel: *mut crate::System::String,
-        validUntilDate: *mut crate::System::String,
+        targetLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+        shouldOwnLevelPackId: *mut quest_hook::libil2cpp::Il2CppString,
+        redirectedProductLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        validUntilDate: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -489,41 +489,41 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirectio
     }
     pub fn get_redirectedProductLabel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_redirectedProductLabel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_shouldOwnLevelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_shouldOwnLevelPackId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_targetLevelPackId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_targetLevelPackId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_validUntilDate(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_validUntilDate", ())?;
         Ok(__cordl_ret)
     }
@@ -542,12 +542,12 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelPackRedirection
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_LevelProductData {
-    __cordl_parent: crate::System::Object,
-    pub _levelId: *mut crate::System::String,
-    pub _entitlementLabel: *mut crate::System::String,
-    pub _productLabel: *mut crate::System::String,
-    pub _sieeDcCode: *mut crate::System::String,
-    pub _sieaAcCode: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _levelId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _entitlementLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _sieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
     pub _additionalProductData: *mut crate::GlobalNamespace::SonyLevelProductCollectionModel_AdditionalProductData,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
@@ -559,7 +559,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -574,11 +574,11 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
 #[cfg(feature = "SonyLevelProductCollectionModel+LevelProductData")]
 impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
     pub fn New(
-        entitlementLabel: *mut crate::System::String,
-        productLabel: *mut crate::System::String,
-        levelId: *mut crate::System::String,
-        sieeDcCode: *mut crate::System::String,
-        sieaAcCode: *mut crate::System::String,
+        entitlementLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        sieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
+        sieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -591,11 +591,11 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
     }
     pub fn _ctor(
         &mut self,
-        entitlementLabel: *mut crate::System::String,
-        productLabel: *mut crate::System::String,
-        levelId: *mut crate::System::String,
-        sieeDcCode: *mut crate::System::String,
-        sieaAcCode: *mut crate::System::String,
+        entitlementLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        sieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
+        sieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -621,51 +621,51 @@ impl crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
     }
     pub fn get_entitlementLabel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_entitlementLabel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_levelId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_levelId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_productLabel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_productLabel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_sieaAcCode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_sieaAcCode", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_sieeDcCode(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_sieeDcCode", ())?;
         Ok(__cordl_ret)
     }
@@ -684,11 +684,11 @@ for crate::GlobalNamespace::SonyLevelProductCollectionModel_LevelProductData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SonyLevelProductCollectionModel_ProductData {
-    __cordl_parent: crate::System::Object,
-    pub entitlementLabel: *mut crate::System::String,
-    pub productLabel: *mut crate::System::String,
-    pub sieeDcCode: *mut crate::System::String,
-    pub sieaAcCode: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub entitlementLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub productLabel: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sieeDcCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sieaAcCode: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SonyLevelProductCollectionModel+ProductData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -699,7 +699,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SonyLevelProductCollectionModel+ProductData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SonyLevelProductCollectionModel_ProductData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -88,7 +88,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
     pub fn DoesRoomSetupExist(
         &mut self,
         requestedAnchorClassifications: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -236,7 +236,7 @@ impl crate::GlobalNamespace::OVRSceneManager {
     pub fn RequestSceneCapture_IEnumerable_1_1(
         &mut self,
         requestedAnchorClassifications: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -246,9 +246,9 @@ impl crate::GlobalNamespace::OVRSceneManager {
             .invoke("RequestSceneCapture", (requestedAnchorClassifications))?;
         Ok(__cordl_ret)
     }
-    pub fn RequestSceneCapture_String2(
+    pub fn RequestSceneCapture_Il2CppString2(
         &mut self,
-        requestString: *mut crate::System::String,
+        requestString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -335,7 +335,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSceneManag
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneManager_Classification {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRSceneManager+Classification")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -344,7 +344,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSceneManager+Classification")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_Classification {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -389,7 +389,7 @@ for crate::GlobalNamespace::OVRSceneManager_Classification {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneManager_Development {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRSceneManager+Development")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -398,7 +398,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSceneManager+Development")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_Development {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -445,8 +445,8 @@ for crate::GlobalNamespace::OVRSceneManager_LogForwarder {
 impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     pub fn Log(
         &mut self,
-        context: *mut crate::System::String,
-        message: *mut crate::System::String,
+        context: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         gameObject: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -458,8 +458,8 @@ impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     }
     pub fn LogError(
         &mut self,
-        context: *mut crate::System::String,
-        message: *mut crate::System::String,
+        context: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         gameObject: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -471,8 +471,8 @@ impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
     }
     pub fn LogWarning(
         &mut self,
-        context: *mut crate::System::String,
-        message: *mut crate::System::String,
+        context: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         gameObject: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -487,7 +487,7 @@ impl crate::GlobalNamespace::OVRSceneManager_LogForwarder {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSceneManager_RoomLayoutInformation {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Floor: *mut crate::GlobalNamespace::OVRScenePlane,
     pub Ceiling: *mut crate::GlobalNamespace::OVRScenePlane,
     pub Walls: *mut crate::System::Collections::Generic::List_1<
@@ -502,7 +502,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSceneManager+RoomLayoutInformation")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSceneManager_RoomLayoutInformation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

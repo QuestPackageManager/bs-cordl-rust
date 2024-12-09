@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CADMethodReturnMessage {
     __cordl_parent: crate::System::Runtime::Remoting::Messaging::CADMessageBase,
-    pub _returnValue: *mut crate::System::Object,
+    pub _returnValue: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _exception: *mut crate::System::Runtime::Remoting::Messaging::CADArgHolder,
     pub _sig: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
 }
@@ -34,13 +34,13 @@ impl crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
         &mut self,
         args: *mut crate::System::Collections::ArrayList,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetArgs", (args))?;
         Ok(__cordl_ret)
     }
@@ -68,11 +68,11 @@ impl crate::System::Runtime::Remoting::Messaging::CADMethodReturnMessage {
     pub fn GetReturnValue(
         &mut self,
         args: *mut crate::System::Collections::ArrayList,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetReturnValue", (args))?;
         Ok(__cordl_ret)
     }

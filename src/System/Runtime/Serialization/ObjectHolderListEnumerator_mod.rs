@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectHolderListEnumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_isFixupEnumerator: bool,
     pub m_list: *mut crate::System::Runtime::Serialization::ObjectHolderList,
     pub m_startingVersion: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+ObjectHolderListEnumerator")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::ObjectHolderListEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

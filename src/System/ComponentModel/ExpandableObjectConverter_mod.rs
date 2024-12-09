@@ -28,7 +28,7 @@ impl crate::System::ComponentModel::ExpandableObjectConverter {
     pub fn GetProperties(
         &mut self,
         context: *mut crate::System::ComponentModel::ITypeDescriptorContext,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         attributes: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Attribute,
         >,

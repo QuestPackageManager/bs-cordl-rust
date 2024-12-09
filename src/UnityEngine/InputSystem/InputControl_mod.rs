@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputControl {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_StateBlock: crate::UnityEngine::InputSystem::LowLevel::InputStateBlock,
     pub m_Name: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    pub m_Path: *mut crate::System::String,
-    pub m_DisplayName: *mut crate::System::String,
-    pub m_DisplayNameFromLayout: *mut crate::System::String,
-    pub m_ShortDisplayName: *mut crate::System::String,
-    pub m_ShortDisplayNameFromLayout: *mut crate::System::String,
+    pub m_Path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DisplayNameFromLayout: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ShortDisplayName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ShortDisplayNameFromLayout: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_Variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputControl")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputControl {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
     pub type ControlFlags = crate::UnityEngine::InputSystem::InputControl_ControlFlags;
     pub fn AddProcessor(
         &mut self,
-        first: *mut crate::System::Object,
+        first: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,11 +118,11 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn DebuggerDisplay(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("DebuggerDisplay", ())?;
         Ok(__cordl_ret)
     }
@@ -163,9 +163,9 @@ impl crate::UnityEngine::InputSystem::InputControl {
             .invoke("FinishSetup", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetChildControl_String0(
+    pub fn GetChildControl_Il2CppString0(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputControl,
     > {
@@ -176,9 +176,9 @@ impl crate::UnityEngine::InputSystem::InputControl {
             .invoke("GetChildControl", (path))?;
         Ok(__cordl_ret)
     }
-    pub fn GetChildControl_String1<TControl>(
+    pub fn GetChildControl_Il2CppString1<TControl>(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<TControl>
     where
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -210,12 +210,12 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn MakeChildPath(
         &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        path: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("MakeChildPath", (path))?;
         Ok(__cordl_ret)
     }
@@ -250,22 +250,22 @@ impl crate::UnityEngine::InputSystem::InputControl {
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppObject,
         bufferSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadValueFromBufferAsObject", (buffer, bufferSize))?;
         Ok(__cordl_ret)
     }
     pub fn ReadValueFromStateAsObject(
         &mut self,
         statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadValueFromStateAsObject", (statePtr))?;
         Ok(__cordl_ret)
     }
@@ -324,17 +324,17 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetChildControl_String0(
+    pub fn TryGetChildControl_Il2CppString0(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputControl,
     > {
@@ -345,9 +345,9 @@ impl crate::UnityEngine::InputSystem::InputControl {
             .invoke("TryGetChildControl", (path))?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetChildControl_String1<TControl>(
+    pub fn TryGetChildControl_Il2CppString1<TControl>(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<TControl>
     where
         TControl: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -374,7 +374,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn WriteValueFromObjectIntoState(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         statePtr: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -396,7 +396,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_Item(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputControl,
     > {
@@ -471,11 +471,11 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_displayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_displayName", ())?;
         Ok(__cordl_ret)
     }
@@ -516,11 +516,11 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_layout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_layout", ())?;
         Ok(__cordl_ret)
     }
@@ -533,11 +533,11 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
@@ -584,11 +584,11 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_path(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_path", ())?;
         Ok(__cordl_ret)
     }
@@ -604,11 +604,11 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_shortDisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_shortDisplayName", ())?;
         Ok(__cordl_ret)
     }
@@ -685,17 +685,17 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn get_variants(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_variants", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_displayName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -761,7 +761,7 @@ impl crate::UnityEngine::InputSystem::InputControl {
     }
     pub fn set_shortDisplayName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

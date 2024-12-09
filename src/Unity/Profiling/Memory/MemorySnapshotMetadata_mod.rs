@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MemorySnapshotMetadata {
-    __cordl_parent: crate::System::Object,
-    pub _Description_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _Description_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _Data_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Profiling+Memory+MemorySnapshotMetadata")]
 impl std::ops::Deref for crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,17 +55,17 @@ impl crate::Unity::Profiling::Memory::MemorySnapshotMetadata {
     }
     pub fn get_Description(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Description", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Description(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

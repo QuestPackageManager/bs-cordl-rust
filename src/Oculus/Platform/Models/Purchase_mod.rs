@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Purchase {
-    __cordl_parent: crate::System::Object,
-    pub DeveloperPayload: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub DeveloperPayload: *mut quest_hook::libil2cpp::Il2CppString,
     pub ExpirationTime: crate::System::DateTime,
     pub GrantTime: crate::System::DateTime,
-    pub _cordl_ID: *mut crate::System::String,
-    pub ReportingId: *mut crate::System::String,
-    pub Sku: *mut crate::System::String,
+    pub _cordl_ID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ReportingId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Sku: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+Purchase")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+Purchase")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::Purchase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

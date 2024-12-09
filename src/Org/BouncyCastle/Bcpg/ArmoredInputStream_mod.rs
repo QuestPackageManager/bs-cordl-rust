@@ -10,7 +10,7 @@ pub struct ArmoredInputStream {
     pub crc: *mut crate::Org::BouncyCastle::Bcpg::Crc24,
     pub crcFound: bool,
     pub hasHeaders: bool,
-    pub header: *mut crate::System::String,
+    pub header: *mut quest_hook::libil2cpp::Il2CppString,
     pub newLineFound: bool,
     pub clearText: bool,
     pub restart: bool,
@@ -72,24 +72,24 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredInputStream {
     }
     pub fn GetArmorHeaderLine(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetArmorHeaderLine", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetArmorHeaders(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetArmorHeaders", ())?;
         Ok(__cordl_ret)
     }

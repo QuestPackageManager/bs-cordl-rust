@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct Scope1 {
     __cordl_parent: crate::System::Linq::Expressions::ScopeExpression,
-    pub _body: *mut crate::System::Object,
+    pub _body: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+Scope1")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -65,11 +65,11 @@ impl crate::System::Linq::Expressions::Scope1 {
             .invoke_void(".ctor", (variables, body))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object1(
+    pub fn New_Il2CppObject1(
         variables: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Linq::Expressions::ParameterExpression,
         >,
-        body: *mut crate::System::Object,
+        body: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -109,12 +109,12 @@ impl crate::System::Linq::Expressions::Scope1 {
             .invoke(".ctor", (variables, body))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object1(
+    pub fn _ctor_Il2CppObject1(
         &mut self,
         variables: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Linq::Expressions::ParameterExpression,
         >,
-        body: *mut crate::System::Object,
+        body: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

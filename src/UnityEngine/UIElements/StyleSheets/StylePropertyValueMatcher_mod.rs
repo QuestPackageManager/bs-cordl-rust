@@ -76,7 +76,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::StylePropertyValueMatcher {
     }
     pub fn MatchKeyword(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

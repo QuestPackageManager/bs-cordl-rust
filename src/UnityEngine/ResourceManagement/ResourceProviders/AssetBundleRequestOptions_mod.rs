@@ -4,14 +4,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleRequestOptions {
-    __cordl_parent: crate::System::Object,
-    pub m_Hash: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_Hash: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Crc: u32,
     pub m_Timeout: i32,
     pub m_ChunkedTransfer: bool,
     pub m_RedirectLimit: i32,
     pub m_RetryCount: i32,
-    pub m_BundleName: *mut crate::System::String,
+    pub m_BundleName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_AssetLoadMode: crate::UnityEngine::ResourceManagement::ResourceProviders::AssetLoadMode,
     pub m_BundleSize: i64,
     pub m_UseCrcForCachedBundles: bool,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleRequestOptions {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,11 +92,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
     }
     pub fn get_BundleName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_BundleName", ())?;
         Ok(__cordl_ret)
     }
@@ -133,11 +133,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
     }
     pub fn get_Hash(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Hash", ())?;
         Ok(__cordl_ret)
     }
@@ -192,7 +192,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
     }
     pub fn set_BundleName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -247,7 +247,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleReque
     }
     pub fn set_Hash(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -199,9 +199,9 @@ impl<
         > = __cordl_object.invoke("FromSubContainerResolve", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FromSubContainerResolve_Object1(
+    pub fn FromSubContainerResolve_Il2CppObject1(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::FactorySubContainerBinder_6<
             TParam1,

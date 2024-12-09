@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRGLTFAnimatinonNode {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_intputNodeType: crate::GlobalNamespace::OVRGLTFInputNode,
     pub m_jsonData: *mut crate::OVRSimpleJSON::JSONNode,
     pub m_binaryChunk: crate::GlobalNamespace::OVRBinaryChunk,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRGLTFAnimatinonNode")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRGLTFAnimatinonNode {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     }
     pub fn GetTransformType(
         &mut self,
-        transform: *mut crate::System::String,
+        transform: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRGLTFTransformType,
     > {
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::OVRGLTFAnimatinonNode {
     }
     pub fn ToOVRInterpolationType(
         &mut self,
-        interpolationType: *mut crate::System::String,
+        interpolationType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRGLTFAnimatinonNode_OVRInterpolationType,
     > {

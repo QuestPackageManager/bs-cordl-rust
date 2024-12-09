@@ -179,7 +179,7 @@ for crate::GlobalNamespace::TutorialBeatmapObjectManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TutorialBeatmapObjectManager_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub cutAngleTolerance: f32,
 }
 #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
@@ -190,7 +190,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TutorialBeatmapObjectManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

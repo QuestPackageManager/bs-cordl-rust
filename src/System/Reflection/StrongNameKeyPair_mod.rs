@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StrongNameKeyPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _keyPairContainer: *mut crate::System::String,
+    pub _keyPairContainer: *mut quest_hook::libil2cpp::Il2CppString,
     pub _keyPairExported: bool,
     pub _keyPairArray: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Reflection+StrongNameKeyPair")]
 impl std::ops::Deref for crate::System::Reflection::StrongNameKeyPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::System::Reflection::StrongNameKeyPair {
     }
     pub fn System_Runtime_Serialization_IDeserializationCallback_OnDeserialization(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

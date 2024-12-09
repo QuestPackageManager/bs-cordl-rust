@@ -31,9 +31,9 @@ impl std::ops::DerefMut for crate::TMPro::TMP_StyleSheet {
 }
 #[cfg(feature = "TMPro+TMP_StyleSheet")]
 impl crate::TMPro::TMP_StyleSheet {
-    pub fn GetStyle_String1(
+    pub fn GetStyle_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::TMPro::TMP_Style> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

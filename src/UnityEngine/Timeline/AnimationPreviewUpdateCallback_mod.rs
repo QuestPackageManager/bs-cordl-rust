@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AnimationPreviewUpdateCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Output: crate::UnityEngine::Animations::AnimationPlayableOutput,
     pub m_Graph: crate::UnityEngine::Playables::PlayableGraph,
     pub m_PreviewComponents: *mut crate::System::Collections::Generic::List_1<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+AnimationPreviewUpdateCallback")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::AnimationPreviewUpdateCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

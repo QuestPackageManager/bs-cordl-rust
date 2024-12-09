@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_taskId: i32,
     pub m_action: *mut crate::System::Delegate,
-    pub m_stateObject: *mut crate::System::Object,
+    pub m_stateObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_taskScheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
     pub m_parent: *mut crate::System::Threading::Tasks::Task,
     pub m_stateFlags: i32,
-    pub m_continuationObject: *mut crate::System::Object,
+    pub m_continuationObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_contingentProperties: *mut crate::System::Threading::Tasks::Task_ContingentProperties,
 }
 #[cfg(feature = "System+Threading+Tasks+Task")]
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+Task")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -85,9 +85,9 @@ impl crate::System::Threading::Tasks::Task {
             .invoke("AddCompletionAction", (action, addBeforeOthers))?;
         Ok(__cordl_ret)
     }
-    pub fn AddException_Object0(
+    pub fn AddException_Il2CppObject0(
         &mut self,
-        exceptionObject: *mut crate::System::Object,
+        exceptionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,7 +98,7 @@ impl crate::System::Threading::Tasks::Task {
     }
     pub fn AddException__cordl_bool1(
         &mut self,
-        exceptionObject: *mut crate::System::Object,
+        exceptionObject: *mut quest_hook::libil2cpp::Il2CppObject,
         representsCancellation: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -130,7 +130,7 @@ impl crate::System::Threading::Tasks::Task {
     }
     pub fn AddTaskContinuation(
         &mut self,
-        tc: *mut crate::System::Object,
+        tc: *mut quest_hook::libil2cpp::Il2CppObject,
         addBeforeOthers: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -142,7 +142,7 @@ impl crate::System::Threading::Tasks::Task {
     }
     pub fn AddTaskContinuationComplex(
         &mut self,
-        tc: *mut crate::System::Object,
+        tc: *mut quest_hook::libil2cpp::Il2CppObject,
         addBeforeOthers: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -265,13 +265,13 @@ impl crate::System::Threading::Tasks::Task {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ContinueWith_Action_2_Object_CancellationToken_TaskContinuationOptions_TaskScheduler2(
+    pub fn ContinueWith_Action_2_Il2CppObject_CancellationToken_TaskContinuationOptions_TaskScheduler2(
         &mut self,
         continuationAction: *mut crate::System::Action_2<
             *mut crate::System::Threading::Tasks::Task,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
         continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
         scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
@@ -292,13 +292,13 @@ impl crate::System::Threading::Tasks::Task {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn ContinueWith_Action_2_Object_TaskScheduler_CancellationToken_TaskContinuationOptions3(
+    pub fn ContinueWith_Action_2_Il2CppObject_TaskScheduler_CancellationToken_TaskContinuationOptions3(
         &mut self,
         continuationAction: *mut crate::System::Action_2<
             *mut crate::System::Threading::Tasks::Task,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
         cancellationToken: crate::System::Threading::CancellationToken,
         continuationOptions: crate::System::Threading::Tasks::TaskContinuationOptions,
@@ -590,9 +590,9 @@ impl crate::System::Threading::Tasks::Task {
             .invoke_void(".ctor", (action, cancellationToken))?;
         Ok(__cordl_object)
     }
-    pub fn New_Delegate_Object_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler4(
+    pub fn New_Delegate_Il2CppObject_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler4(
         action: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         parent: *mut crate::System::Threading::Tasks::Task,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -616,8 +616,8 @@ impl crate::System::Threading::Tasks::Task {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_TaskCreationOptions__cordl_bool2(
-        state: *mut crate::System::Object,
+    pub fn New_Il2CppObject_TaskCreationOptions__cordl_bool2(
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         promiseStyle: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -690,10 +690,10 @@ impl crate::System::Threading::Tasks::Task {
             .invoke("RecordInternalCancellationRequest", (tokenToRecord))?;
         Ok(__cordl_ret)
     }
-    pub fn RecordInternalCancellationRequest_CancellationToken_Object2(
+    pub fn RecordInternalCancellationRequest_CancellationToken_Il2CppObject2(
         &mut self,
         tokenToRecord: crate::System::Threading::CancellationToken,
-        cancellationException: *mut crate::System::Object,
+        cancellationException: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -707,7 +707,7 @@ impl crate::System::Threading::Tasks::Task {
     }
     pub fn RemoveContinuation(
         &mut self,
-        continuationObject: *mut crate::System::Object,
+        continuationObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -820,7 +820,7 @@ impl crate::System::Threading::Tasks::Task {
     pub fn TaskConstructorCore(
         &mut self,
         action: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
@@ -865,10 +865,10 @@ impl crate::System::Threading::Tasks::Task {
             .invoke("TrySetCanceled", (tokenToRecord))?;
         Ok(__cordl_ret)
     }
-    pub fn TrySetCanceled_Object1(
+    pub fn TrySetCanceled_Il2CppObject1(
         &mut self,
         tokenToRecord: crate::System::Threading::CancellationToken,
-        cancellationException: *mut crate::System::Object,
+        cancellationException: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -879,7 +879,7 @@ impl crate::System::Threading::Tasks::Task {
     }
     pub fn TrySetException(
         &mut self,
-        exceptionObject: *mut crate::System::Object,
+        exceptionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -949,10 +949,10 @@ impl crate::System::Threading::Tasks::Task {
             .invoke(".ctor", (action, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Delegate_Object_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler4(
+    pub fn _ctor_Delegate_Il2CppObject_Task_CancellationToken_TaskCreationOptions_InternalTaskOptions_TaskScheduler4(
         &mut self,
         action: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         parent: *mut crate::System::Threading::Tasks::Task,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -977,9 +977,9 @@ impl crate::System::Threading::Tasks::Task {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_TaskCreationOptions__cordl_bool2(
+    pub fn _ctor_Il2CppObject_TaskCreationOptions__cordl_bool2(
         &mut self,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         promiseStyle: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1005,11 +1005,11 @@ impl crate::System::Threading::Tasks::Task {
     }
     pub fn get_AsyncState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AsyncState", ())?;
         Ok(__cordl_ret)
     }
@@ -1238,12 +1238,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Threading::Tasks::Task
 #[repr(C)]
 #[derive(Debug)]
 pub struct Task_ContingentProperties {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_capturedContext: *mut crate::System::Threading::ExecutionContext,
     pub m_completionEvent: *mut crate::System::Threading::ManualResetEventSlim,
     pub m_exceptionsHolder: *mut crate::System::Threading::Tasks::TaskExceptionHolder,
     pub m_cancellationToken: crate::System::Threading::CancellationToken,
-    pub m_cancellationRegistration: *mut crate::System::Object,
+    pub m_cancellationRegistration: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_internalCancellationRequested: i32,
     pub m_completionCountdown: i32,
     pub m_exceptionalChildren: *mut crate::System::Collections::Generic::LowLevelListWithIList_1<
@@ -1258,7 +1258,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
 impl std::ops::Deref for crate::System::Threading::Tasks::Task_ContingentProperties {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -5,9 +5,9 @@ pub struct RuntimeModule {
     __cordl_parent: crate::System::Reflection::Module,
     pub _impl: crate::System::IntPtr,
     pub assembly: *mut crate::System::Reflection::Assembly,
-    pub fqname: *mut crate::System::String,
-    pub name: *mut crate::System::String,
-    pub scopename: *mut crate::System::String,
+    pub fqname: *mut quest_hook::libil2cpp::Il2CppString,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub scopename: *mut quest_hook::libil2cpp::Il2CppString,
     pub is_resource: bool,
     pub token: i32,
 }
@@ -36,13 +36,13 @@ impl crate::System::Reflection::RuntimeModule {
         attributeType: *mut crate::System::Type,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetCustomAttributes", (attributeType, inherit))?;
         Ok(__cordl_ret)
     }
@@ -50,13 +50,13 @@ impl crate::System::Reflection::RuntimeModule {
         &mut self,
         inherit: bool,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetCustomAttributes", (inherit))?;
         Ok(__cordl_ret)
     }
@@ -150,11 +150,11 @@ impl crate::System::Reflection::RuntimeModule {
     }
     pub fn get_ScopeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ScopeName", ())?;
         Ok(__cordl_ret)
     }

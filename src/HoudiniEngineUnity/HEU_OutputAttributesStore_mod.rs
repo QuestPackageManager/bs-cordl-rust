@@ -37,7 +37,7 @@ impl crate::HoudiniEngineUnity::HEU_OutputAttributesStore {
     }
     pub fn GetAttribute(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_OutputAttribute,
     > {

@@ -34,7 +34,7 @@ impl crate::System::Net::Security::SslStream {
     pub type __c__DisplayClass21_0 = crate::System::Net::Security::SslStream___c__DisplayClass21_0;
     pub fn AuthenticateAsClient(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
@@ -56,7 +56,7 @@ impl crate::System::Net::Security::SslStream {
     }
     pub fn AuthenticateAsClientAsync(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
@@ -100,12 +100,12 @@ impl crate::System::Net::Security::SslStream {
     }
     pub fn BeginAuthenticateAsClient(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
         asyncCallback: *mut crate::System::AsyncCallback,
-        asyncState: *mut crate::System::Object,
+        asyncState: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,7 +130,7 @@ impl crate::System::Net::Security::SslStream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -145,7 +145,7 @@ impl crate::System::Net::Security::SslStream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -470,11 +470,11 @@ impl crate::System::Net::Security::SslStream {
     }
     pub fn get_InternalTargetHost(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InternalTargetHost", ())?;
         Ok(__cordl_ret)
     }

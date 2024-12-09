@@ -25,7 +25,7 @@ pub struct MultiplayerController {
     pub _startTime: f32,
     pub _localPlayerSyncStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
     pub _state: crate::GlobalNamespace::MultiplayerController_State,
-    pub _sessionGameId: *mut crate::System::String,
+    pub _sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _resultsData: *mut crate::GlobalNamespace::MultiplayerResultsData,
     pub _playersSpecificSettingsAtGameStartModel: *mut crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel,
     pub _timeoutGetGameStateCoroutine: *mut crate::UnityEngine::Coroutine,
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::MultiplayerController {
         &mut self,
         localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         otherPlayerResults: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::MultiplayerController {
         &mut self,
         localPlayerResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         otherPlayerResults: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -191,7 +191,7 @@ impl crate::GlobalNamespace::MultiplayerController {
     }
     pub fn HandleRpcReturnToMenu(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,7 +212,7 @@ impl crate::GlobalNamespace::MultiplayerController {
     }
     pub fn HandleSceneStartSyncControllerSyncStartDidReceiveTooLate(
         &mut self,
-        sessionGameId: *mut crate::System::String,
+        sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -226,7 +226,7 @@ impl crate::GlobalNamespace::MultiplayerController {
     }
     pub fn HandleSceneStartSyncControllerSyncStartDidSuccess(
         &mut self,
-        sessionGameId: *mut crate::System::String,
+        sessionGameId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -240,7 +240,7 @@ impl crate::GlobalNamespace::MultiplayerController {
     }
     pub fn HandleSetMultiplayerGameState(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         gameState: crate::GlobalNamespace::MultiplayerGameState,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

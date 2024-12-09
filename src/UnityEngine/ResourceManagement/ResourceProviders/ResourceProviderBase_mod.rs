@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ResourceProviderBase {
-    __cordl_parent: crate::System::Object,
-    pub m_ProviderId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_ProviderId: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_BehaviourFlags: crate::UnityEngine::ResourceManagement::ResourceProviders::ProviderBehaviourFlags,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ResourceProviderBase")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProviderBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,8 +61,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     }
     pub fn Initialize(
         &mut self,
-        id: *mut crate::System::String,
-        data: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,8 +73,8 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     pub fn InitializeAsync(
         &mut self,
         rm: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
-        id: *mut crate::System::String,
-        data: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             bool,
@@ -109,7 +109,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     pub fn Release(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -120,11 +120,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -155,11 +155,11 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ResourceProvider
     }
     pub fn get_ProviderId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ProviderId", ())?;
         Ok(__cordl_ret)
     }

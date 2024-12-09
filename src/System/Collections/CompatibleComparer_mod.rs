@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CompatibleComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hcp: *mut crate::System::Collections::IHashCodeProvider,
     pub _comparer: *mut crate::System::Collections::IComparer,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+CompatibleComparer")]
 impl std::ops::Deref for crate::System::Collections::CompatibleComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,8 +28,8 @@ impl std::ops::DerefMut for crate::System::Collections::CompatibleComparer {
 impl crate::System::Collections::CompatibleComparer {
     pub fn Compare(
         &mut self,
-        a: *mut crate::System::Object,
-        b: *mut crate::System::Object,
+        a: *mut quest_hook::libil2cpp::Il2CppObject,
+        b: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -39,8 +39,8 @@ impl crate::System::Collections::CompatibleComparer {
     }
     pub fn Equals(
         &mut self,
-        a: *mut crate::System::Object,
-        b: *mut crate::System::Object,
+        a: *mut quest_hook::libil2cpp::Il2CppObject,
+        b: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +50,7 @@ impl crate::System::Collections::CompatibleComparer {
     }
     pub fn GetHashCode(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

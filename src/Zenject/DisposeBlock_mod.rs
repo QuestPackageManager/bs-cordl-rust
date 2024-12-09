@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposeBlock {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposables: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::IDisposable,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DisposeBlock")]
 impl std::ops::Deref for crate::Zenject::DisposeBlock {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -435,7 +435,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::DisposeBlock {
 #[derive(Debug, Clone)]
 pub struct DisposeBlock_SpawnedObjectPoolPair {
     pub Pool: *mut crate::Zenject::IMemoryPool,
-    pub Object: *mut crate::System::Object,
+    pub Object: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+DisposeBlock+SpawnedObjectPoolPair")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

@@ -66,9 +66,9 @@ impl crate::UnityEngine::Material {
             .invoke("DisableKeyword", (keyword))?;
         Ok(__cordl_ret)
     }
-    pub fn DisableKeyword_String0(
+    pub fn DisableKeyword_Il2CppString0(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,9 +114,9 @@ impl crate::UnityEngine::Material {
             .invoke("EnableKeyword", (keyword))?;
         Ok(__cordl_ret)
     }
-    pub fn EnableKeyword_String0(
+    pub fn EnableKeyword_Il2CppString0(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -261,7 +261,7 @@ impl crate::UnityEngine::Material {
     }
     pub fn FindPass(
         &mut self,
-        passName: *mut crate::System::String,
+        passName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -271,7 +271,7 @@ impl crate::UnityEngine::Material {
     }
     pub fn GetBuffer(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::GraphicsBufferHandle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -327,9 +327,9 @@ impl crate::UnityEngine::Material {
         > = __cordl_object.invoke("GetColorArrayImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetColorArray_String0(
+    pub fn GetColorArray_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     > {
@@ -341,9 +341,9 @@ impl crate::UnityEngine::Material {
         > = __cordl_object.invoke("GetColorArray", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetColorArray_String_List_1_2(
+    pub fn GetColorArray_Il2CppString_List_1_2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::Color,
         >,
@@ -406,9 +406,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetColorImpl_Injected", (name, ret))?;
         Ok(__cordl_ret)
     }
-    pub fn GetColor_String0(
+    pub fn GetColor_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -430,7 +430,7 @@ impl crate::UnityEngine::Material {
     }
     pub fn GetConstantBuffer(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::GraphicsBufferHandle> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -509,9 +509,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetFloatArrayImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFloatArray_String0(
+    pub fn GetFloatArray_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<f32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -520,9 +520,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetFloatArray", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFloatArray_String_List_1_2(
+    pub fn GetFloatArray_Il2CppString_List_1_2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -562,9 +562,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: f32 = __cordl_object.invoke("GetFloatImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetFloat_String0(
+    pub fn GetFloat_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -586,9 +586,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: i32 = __cordl_object.invoke("GetIntImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetInt_String0(
+    pub fn GetInt_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -603,9 +603,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: i32 = __cordl_object.invoke("GetInt", (nameID))?;
         Ok(__cordl_ret)
     }
-    pub fn GetInteger_String0(
+    pub fn GetInteger_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -647,9 +647,9 @@ impl crate::UnityEngine::Material {
         > = __cordl_object.invoke("GetMatrixArrayImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMatrixArray_String0(
+    pub fn GetMatrixArray_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
     > {
@@ -661,9 +661,9 @@ impl crate::UnityEngine::Material {
         > = __cordl_object.invoke("GetMatrixArray", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMatrixArray_String_List_1_2(
+    pub fn GetMatrixArray_Il2CppString_List_1_2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::Matrix4x4,
         >,
@@ -726,9 +726,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetMatrixImpl_Injected", (name, ret))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMatrix_String0(
+    pub fn GetMatrix_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Matrix4x4> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -751,11 +751,11 @@ impl crate::UnityEngine::Material {
     pub fn GetPassName(
         &mut self,
         pass: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPassName", (pass))?;
         Ok(__cordl_ret)
     }
@@ -763,13 +763,13 @@ impl crate::UnityEngine::Material {
         &mut self,
         _cordl_type: crate::UnityEngine::MaterialPropertyType,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetPropertyNames", (_cordl_type))?;
         Ok(__cordl_ret)
     }
@@ -777,32 +777,32 @@ impl crate::UnityEngine::Material {
         &mut self,
         propertyType: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetPropertyNamesImpl", (propertyType))?;
         Ok(__cordl_ret)
     }
     pub fn GetShaderKeywords(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetShaderKeywords", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetShaderPassEnabled(
         &mut self,
-        passName: *mut crate::System::String,
+        passName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -813,39 +813,39 @@ impl crate::UnityEngine::Material {
     }
     pub fn GetTagImpl(
         &mut self,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
         currentSubShaderOnly: bool,
-        defaultValue: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTagImpl", (tag, currentSubShaderOnly, defaultValue))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTag_String0(
+    pub fn GetTag_Il2CppString0(
         &mut self,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
         searchFallbacks: bool,
-        defaultValue: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTag", (tag, searchFallbacks, defaultValue))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTag_String__cordl_bool1(
+    pub fn GetTag_Il2CppString__cordl_bool1(
         &mut self,
-        tag: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
         searchFallbacks: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTag", (tag, searchFallbacks))?;
         Ok(__cordl_ret)
     }
@@ -860,9 +860,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetTextureImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTextureOffset_String0(
+    pub fn GetTextureOffset_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -884,7 +884,7 @@ impl crate::UnityEngine::Material {
     }
     pub fn GetTexturePropertyNameIDsInternal(
         &mut self,
-        outNames: *mut crate::System::Object,
+        outNames: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -916,7 +916,7 @@ impl crate::UnityEngine::Material {
     }
     pub fn GetTexturePropertyNamesInternal(
         &mut self,
-        outNames: *mut crate::System::Object,
+        outNames: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -928,20 +928,20 @@ impl crate::UnityEngine::Material {
     pub fn GetTexturePropertyNames_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetTexturePropertyNames", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetTexturePropertyNames_List_1_1(
         &mut self,
         outNames: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -974,9 +974,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetTextureScaleAndOffsetImpl_Injected", (name, ret))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTextureScale_String0(
+    pub fn GetTextureScale_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -996,9 +996,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetTextureScale", (nameID))?;
         Ok(__cordl_ret)
     }
-    pub fn GetTexture_String0(
+    pub fn GetTexture_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Texture> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1042,9 +1042,9 @@ impl crate::UnityEngine::Material {
         > = __cordl_object.invoke("GetVectorArrayImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetVectorArray_String0(
+    pub fn GetVectorArray_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     > {
@@ -1056,9 +1056,9 @@ impl crate::UnityEngine::Material {
         > = __cordl_object.invoke("GetVectorArray", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn GetVectorArray_String_List_1_2(
+    pub fn GetVectorArray_Il2CppString_List_1_2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::Vector4,
         >,
@@ -1098,9 +1098,9 @@ impl crate::UnityEngine::Material {
             .invoke("GetVectorArray", (nameID, values))?;
         Ok(__cordl_ret)
     }
-    pub fn GetVector_String0(
+    pub fn GetVector_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1127,9 +1127,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasBufferImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasBuffer_String0(
+    pub fn HasBuffer_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1147,9 +1147,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasBuffer", (nameID))?;
         Ok(__cordl_ret)
     }
-    pub fn HasColor_String0(
+    pub fn HasColor_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1177,9 +1177,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasConstantBufferImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasConstantBuffer_String0(
+    pub fn HasConstantBuffer_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1204,9 +1204,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasFloatImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasFloat_String0(
+    pub fn HasFloat_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1231,9 +1231,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasIntImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasInt_String0(
+    pub fn HasInt_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1248,9 +1248,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasInt", (nameID))?;
         Ok(__cordl_ret)
     }
-    pub fn HasInteger_String0(
+    pub fn HasInteger_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1275,9 +1275,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasMatrixImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasMatrix_String0(
+    pub fn HasMatrix_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1295,9 +1295,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasMatrix", (nameID))?;
         Ok(__cordl_ret)
     }
-    pub fn HasProperty_String1(
+    pub fn HasProperty_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1322,9 +1322,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasTextureImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasTexture_String0(
+    pub fn HasTexture_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1349,9 +1349,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("HasVectorImpl", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn HasVector_String0(
+    pub fn HasVector_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1381,9 +1381,9 @@ impl crate::UnityEngine::Material {
         let __cordl_ret: bool = __cordl_object.invoke("IsKeywordEnabled", (keyword))?;
         Ok(__cordl_ret)
     }
-    pub fn IsKeywordEnabled_String0(
+    pub fn IsKeywordEnabled_Il2CppString0(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1428,6 +1428,15 @@ impl crate::UnityEngine::Material {
             .invoke("Lerp", (start, end, t))?;
         Ok(__cordl_ret)
     }
+    pub fn New_Il2CppString2(
+        contents: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (contents))?;
+        Ok(__cordl_object)
+    }
     pub fn New_Material1(
         source: *mut crate::UnityEngine::Material,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -1446,15 +1455,6 @@ impl crate::UnityEngine::Material {
             .invoke_void(".ctor", (shader))?;
         Ok(__cordl_object)
     }
-    pub fn New_String2(
-        contents: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (contents))?;
-        Ok(__cordl_object)
-    }
     pub fn SetBufferImpl(
         &mut self,
         name: i32,
@@ -1467,9 +1467,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetBufferImpl", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetBuffer_String_ComputeBuffer0(
+    pub fn SetBuffer_Il2CppString_ComputeBuffer0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::UnityEngine::ComputeBuffer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1479,9 +1479,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetBuffer", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetBuffer_String_GraphicsBuffer2(
+    pub fn SetBuffer_Il2CppString_GraphicsBuffer2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::UnityEngine::GraphicsBuffer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1528,9 +1528,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetColorArrayImpl", (name, values, count))?;
         Ok(__cordl_ret)
     }
-    pub fn SetColorArray_String_Il2CppArray3(
+    pub fn SetColorArray_Il2CppString_Il2CppArray3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1540,9 +1540,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetColorArray", (name, values))?;
         Ok(__cordl_ret)
     }
-    pub fn SetColorArray_String_List_1_1(
+    pub fn SetColorArray_Il2CppString_List_1_1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::Color,
         >,
@@ -1617,9 +1617,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetColorImpl_Injected", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetColor_String0(
+    pub fn SetColor_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1655,9 +1655,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetConstantBufferImpl", (name, value, offset, _cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn SetConstantBuffer_String_ComputeBuffer0(
+    pub fn SetConstantBuffer_Il2CppString_ComputeBuffer0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::UnityEngine::ComputeBuffer,
         offset: i32,
         _cordl_size: i32,
@@ -1669,9 +1669,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetConstantBuffer", (name, value, offset, _cordl_size))?;
         Ok(__cordl_ret)
     }
-    pub fn SetConstantBuffer_String_GraphicsBuffer2(
+    pub fn SetConstantBuffer_Il2CppString_GraphicsBuffer2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::UnityEngine::GraphicsBuffer,
         offset: i32,
         _cordl_size: i32,
@@ -1754,9 +1754,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetFloatArrayImpl", (name, values, count))?;
         Ok(__cordl_ret)
     }
-    pub fn SetFloatArray_String_Il2CppArray3(
+    pub fn SetFloatArray_Il2CppString_Il2CppArray3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1766,9 +1766,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetFloatArray", (name, values))?;
         Ok(__cordl_ret)
     }
-    pub fn SetFloatArray_String_List_1_1(
+    pub fn SetFloatArray_Il2CppString_List_1_1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<f32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1827,9 +1827,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetFloatImpl", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetFloat_String0(
+    pub fn SetFloat_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1875,9 +1875,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetIntImpl", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetInt_String0(
+    pub fn SetInt_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1899,9 +1899,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetInt", (nameID, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetInteger_String0(
+    pub fn SetInteger_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1976,9 +1976,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetMatrixArrayImpl", (name, values, count))?;
         Ok(__cordl_ret)
     }
-    pub fn SetMatrixArray_String_Il2CppArray3(
+    pub fn SetMatrixArray_Il2CppString_Il2CppArray3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Matrix4x4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1988,9 +1988,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetMatrixArray", (name, values))?;
         Ok(__cordl_ret)
     }
-    pub fn SetMatrixArray_String_List_1_1(
+    pub fn SetMatrixArray_Il2CppString_List_1_1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::Matrix4x4,
         >,
@@ -2065,9 +2065,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetMatrixImpl_Injected", (name, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetMatrix_String0(
+    pub fn SetMatrix_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: crate::UnityEngine::Matrix4x4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2091,8 +2091,8 @@ impl crate::UnityEngine::Material {
     }
     pub fn SetOverrideTag(
         &mut self,
-        tag: *mut crate::System::String,
-        val: *mut crate::System::String,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2123,7 +2123,9 @@ impl crate::UnityEngine::Material {
     }
     pub fn SetShaderKeywords(
         &mut self,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2134,7 +2136,7 @@ impl crate::UnityEngine::Material {
     }
     pub fn SetShaderPassEnabled(
         &mut self,
-        passName: *mut crate::System::String,
+        passName: *mut quest_hook::libil2cpp::Il2CppString,
         enabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2180,9 +2182,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetTextureOffsetImpl_Injected", (name, offset))?;
         Ok(__cordl_ret)
     }
-    pub fn SetTextureOffset_String0(
+    pub fn SetTextureOffset_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2228,9 +2230,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetTextureScaleImpl_Injected", (name, scale))?;
         Ok(__cordl_ret)
     }
-    pub fn SetTextureScale_String0(
+    pub fn SetTextureScale_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2252,9 +2254,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetTextureScale", (nameID, value))?;
         Ok(__cordl_ret)
     }
-    pub fn SetTexture_String_RenderTexture_RenderTextureSubElement2(
+    pub fn SetTexture_Il2CppString_RenderTexture_RenderTextureSubElement2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::UnityEngine::RenderTexture,
         element: crate::UnityEngine::Rendering::RenderTextureSubElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2265,9 +2267,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetTexture", (name, value, element))?;
         Ok(__cordl_ret)
     }
-    pub fn SetTexture_String_Texture0(
+    pub fn SetTexture_Il2CppString_Texture0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::UnityEngine::Texture,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2315,9 +2317,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetVectorArrayImpl", (name, values, count))?;
         Ok(__cordl_ret)
     }
-    pub fn SetVectorArray_String_Il2CppArray3(
+    pub fn SetVectorArray_Il2CppString_Il2CppArray3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2327,9 +2329,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetVectorArray", (name, values))?;
         Ok(__cordl_ret)
     }
-    pub fn SetVectorArray_String_List_1_1(
+    pub fn SetVectorArray_Il2CppString_List_1_1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
             crate::UnityEngine::Vector4,
         >,
@@ -2380,9 +2382,9 @@ impl crate::UnityEngine::Material {
             .invoke("SetVectorArray", (nameID, values))?;
         Ok(__cordl_ret)
     }
-    pub fn SetVector_String0(
+    pub fn SetVector_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         value: crate::UnityEngine::Vector4,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2402,6 +2404,17 @@ impl crate::UnityEngine::Material {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetVector", (nameID, value))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString2(
+        &mut self,
+        contents: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (contents))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_Material1(
@@ -2424,17 +2437,6 @@ impl crate::UnityEngine::Material {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (shader))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String2(
-        &mut self,
-        contents: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (contents))?;
         Ok(__cordl_ret)
     }
     pub fn get_color(
@@ -2552,13 +2554,13 @@ impl crate::UnityEngine::Material {
     pub fn get_shaderKeywords(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_shaderKeywords", ())?;
         Ok(__cordl_ret)
     }
@@ -2676,7 +2678,9 @@ impl crate::UnityEngine::Material {
     }
     pub fn set_shaderKeywords(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

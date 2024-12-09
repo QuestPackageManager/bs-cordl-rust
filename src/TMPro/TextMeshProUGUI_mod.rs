@@ -280,7 +280,7 @@ impl crate::TMPro::TextMeshProUGUI {
     }
     pub fn GetTextInfo(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::TMPro::TMP_TextInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

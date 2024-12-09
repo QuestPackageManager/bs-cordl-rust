@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Reflection::RtFieldInfo {
 impl crate::System::Reflection::RtFieldInfo {
     pub fn CheckConsistency(
         &mut self,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,19 +44,19 @@ impl crate::System::Reflection::RtFieldInfo {
     }
     pub fn UnsafeGetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("UnsafeGetValue", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn UnsafeSetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         culture: *mut crate::System::Globalization::CultureInfo,

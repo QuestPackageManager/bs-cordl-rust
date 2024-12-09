@@ -14,7 +14,7 @@ pub struct HumanDescription {
     pub m_LegStretch: f32,
     pub m_FeetSpacing: f32,
     pub m_GlobalScale: f32,
-    pub m_RootMotionBoneName: *mut crate::System::String,
+    pub m_RootMotionBoneName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_HasTranslationDoF: bool,
     pub m_HasExtraRoot: bool,
     pub m_SkeletonHasParents: bool,

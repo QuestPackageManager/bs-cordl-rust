@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct SonyPublisherSKUSettingsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _skuName: *mut crate::System::String,
-    pub _serviceIdPrefix: *mut crate::System::String,
-    pub _titleId: *mut crate::System::String,
-    pub _productLabel: *mut crate::System::String,
+    pub _skuName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _serviceIdPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _titleId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _productLabel: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SonyPublisherSKUSettingsSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -47,41 +47,41 @@ impl crate::GlobalNamespace::SonyPublisherSKUSettingsSO {
     }
     pub fn get_productLabel(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_productLabel", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_serviceIdPrefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_serviceIdPrefix", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_skuName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_skuName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_titleId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_titleId", ())?;
         Ok(__cordl_ret)
     }

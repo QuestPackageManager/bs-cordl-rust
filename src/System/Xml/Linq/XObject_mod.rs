@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XObject {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub parent: *mut crate::System::Xml::Linq::XContainer,
-    pub annotations: *mut crate::System::Object,
+    pub annotations: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Linq+XObject")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Linq+XObject")]
 impl std::ops::Deref for crate::System::Xml::Linq::XObject {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::System::Xml::Linq::XObject {
 impl crate::System::Xml::Linq::XObject {
     pub fn AddAnnotation(
         &mut self,
-        annotation: *mut crate::System::Object,
+        annotation: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -51,11 +51,11 @@ impl crate::System::Xml::Linq::XObject {
     pub fn AnnotationForSealedType(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("AnnotationForSealedType", (_cordl_type))?;
         Ok(__cordl_ret)
     }
@@ -78,7 +78,7 @@ impl crate::System::Xml::Linq::XObject {
     }
     pub fn NotifyChanged(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::Xml::Linq::XObjectChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,7 +89,7 @@ impl crate::System::Xml::Linq::XObject {
     }
     pub fn NotifyChanging(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::Xml::Linq::XObjectChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -100,7 +100,7 @@ impl crate::System::Xml::Linq::XObject {
     }
     pub fn SetBaseUri(
         &mut self,
-        baseUri: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,11 +170,11 @@ impl crate::System::Xml::Linq::XObject {
     }
     pub fn get_BaseUri(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_BaseUri", ())?;
         Ok(__cordl_ret)
     }

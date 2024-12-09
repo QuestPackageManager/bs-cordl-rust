@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct HelpURLAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub m_Url: *mut crate::System::String,
+    pub m_Url: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Dispatcher: bool,
-    pub m_DispatchingFieldName: *mut crate::System::String,
+    pub m_DispatchingFieldName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+HelpURLAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::HelpURLAttribute {
 #[cfg(feature = "UnityEngine+HelpURLAttribute")]
 impl crate::UnityEngine::HelpURLAttribute {
     pub fn New(
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,7 +38,7 @@ impl crate::UnityEngine::HelpURLAttribute {
     }
     pub fn _ctor(
         &mut self,
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

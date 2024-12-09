@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SymbolsDictionary {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub last: i32,
     pub names: *mut crate::System::Collections::Hashtable,
     pub wildcards: *mut crate::System::Collections::Hashtable,
     pub particles: *mut crate::System::Collections::ArrayList,
-    pub particleLast: *mut crate::System::Object,
+    pub particleLast: *mut quest_hook::libil2cpp::Il2CppObject,
     pub isUpaEnforced: bool,
 }
 #[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SymbolsDictionary")]
 impl std::ops::Deref for crate::System::Xml::Schema::SymbolsDictionary {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
     pub fn AddName(
         &mut self,
         name: *mut crate::System::Xml::XmlQualifiedName,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,7 +44,7 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
     pub fn AddNamespaceList(
         &mut self,
         list: *mut crate::System::Xml::Schema::NamespaceList,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
         allowLocal: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,8 +56,8 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
     }
     pub fn AddWildcard(
         &mut self,
-        wildcard: *mut crate::System::String,
-        particle: *mut crate::System::Object,
+        wildcard: *mut quest_hook::libil2cpp::Il2CppString,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,22 +90,22 @@ impl crate::System::Xml::Schema::SymbolsDictionary {
     pub fn GetParticle(
         &mut self,
         symbol: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetParticle", (symbol))?;
         Ok(__cordl_ret)
     }
     pub fn NameOf(
         &mut self,
         symbol: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("NameOf", (symbol))?;
         Ok(__cordl_ret)
     }

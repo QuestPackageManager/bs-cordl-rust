@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChainValidationHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub owner: *mut crate::System::WeakReference_1<
         *mut crate::System::Net::Security::SslStream,
     >,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+ChainValidationHelper")]
 impl std::ops::Deref for crate::Mono::Net::Security::ChainValidationHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,11 +63,11 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     }
     pub fn SelectClientCertificate(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         localCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         remoteCertificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         clientCertificate: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -91,7 +91,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     }
     pub fn ValidateCertificate(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
         serverMode: bool,
         leaf: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,
@@ -107,7 +107,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     }
     pub fn ValidateChain_ByRefMut1(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
         server: bool,
         leaf: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: quest_hook::libil2cpp::ByRefMut<
@@ -127,7 +127,7 @@ impl crate::Mono::Net::Security::ChainValidationHelper {
     }
     pub fn ValidateChain_X509Chain0(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
         server: bool,
         leaf: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
         chain: *mut crate::System::Security::Cryptography::X509Certificates::X509Chain,

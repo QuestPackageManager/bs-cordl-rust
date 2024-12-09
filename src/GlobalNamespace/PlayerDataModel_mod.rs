@@ -31,7 +31,7 @@ impl crate::GlobalNamespace::PlayerDataModel {
     pub type _UndoUnsavedChangesAsync_d__11 = crate::GlobalNamespace::PlayerDataModel__UndoUnsavedChangesAsync_d__11;
     pub fn Inject(
         &mut self,
-        playerDataJsonString: *mut crate::System::String,
+        playerDataJsonString: *mut quest_hook::libil2cpp::Il2CppString,
         playerDataFileModel: *mut crate::GlobalNamespace::PlayerDataFileModel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

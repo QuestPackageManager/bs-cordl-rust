@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRApplications {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRApplications,
 }
 #[cfg(feature = "OVR+OpenVR+CVRApplications")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRApplications")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRApplications {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRApplications {
 impl crate::OVR::OpenVR::CVRApplications {
     pub fn AddApplicationManifest(
         &mut self,
-        pchApplicationManifestFullPath: *mut crate::System::String,
+        pchApplicationManifestFullPath: *mut quest_hook::libil2cpp::Il2CppString,
         bTemporary: bool,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -42,7 +42,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn CancelApplicationLaunch(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetApplicationAutoLaunch(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,7 +116,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetApplicationProcessId(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,7 +127,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetApplicationPropertyBool(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
         eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -140,7 +140,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetApplicationPropertyString(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
         eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
         pchPropertyValueBuffer: *mut crate::System::Text::StringBuilder,
         unPropertyValueBufferLen: u32,
@@ -164,7 +164,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetApplicationPropertyUint64(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
         eProperty: crate::OVR::OpenVR::EVRApplicationProperty,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRApplicationError>,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -177,7 +177,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetApplicationSupportedMimeTypes(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
         pchMimeTypesBuffer: *mut crate::System::Text::StringBuilder,
         unMimeTypesBuffer: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -194,17 +194,17 @@ impl crate::OVR::OpenVR::CVRApplications {
     pub fn GetApplicationsErrorNameFromEnum(
         &mut self,
         error: crate::OVR::OpenVR::EVRApplicationError,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetApplicationsErrorNameFromEnum", (error))?;
         Ok(__cordl_ret)
     }
     pub fn GetApplicationsThatSupportMimeType(
         &mut self,
-        pchMimeType: *mut crate::System::String,
+        pchMimeType: *mut quest_hook::libil2cpp::Il2CppString,
         pchAppKeysThatSupportBuffer: *mut crate::System::Text::StringBuilder,
         unAppKeysThatSupportBuffer: u32,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -221,11 +221,11 @@ impl crate::OVR::OpenVR::CVRApplications {
     pub fn GetApplicationsTransitionStateNameFromEnum(
         &mut self,
         state: crate::OVR::OpenVR::EVRApplicationTransitionState,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetApplicationsTransitionStateNameFromEnum", (state))?;
         Ok(__cordl_ret)
     }
@@ -238,7 +238,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn GetDefaultApplicationForMimeType(
         &mut self,
-        pchMimeType: *mut crate::System::String,
+        pchMimeType: *mut quest_hook::libil2cpp::Il2CppString,
         pchAppKeyBuffer: *mut crate::System::Text::StringBuilder,
         unAppKeyBufferLen: u32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -279,7 +279,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     pub fn IdentifyApplication(
         &mut self,
         unProcessId: u32,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -290,7 +290,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn IsApplicationInstalled(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -308,7 +308,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn LaunchApplication(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -319,8 +319,8 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn LaunchApplicationFromMimeType(
         &mut self,
-        pchMimeType: *mut crate::System::String,
-        pchArgs: *mut crate::System::String,
+        pchMimeType: *mut quest_hook::libil2cpp::Il2CppString,
+        pchArgs: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -331,7 +331,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn LaunchDashboardOverlay(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -342,9 +342,9 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn LaunchInternalProcess(
         &mut self,
-        pchBinaryPath: *mut crate::System::String,
-        pchArguments: *mut crate::System::String,
-        pchWorkingDirectory: *mut crate::System::String,
+        pchBinaryPath: *mut quest_hook::libil2cpp::Il2CppString,
+        pchArguments: *mut quest_hook::libil2cpp::Il2CppString,
+        pchWorkingDirectory: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -358,8 +358,8 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn LaunchTemplateApplication(
         &mut self,
-        pchTemplateAppKey: *mut crate::System::String,
-        pchNewAppKey: *mut crate::System::String,
+        pchTemplateAppKey: *mut quest_hook::libil2cpp::Il2CppString,
+        pchNewAppKey: *mut quest_hook::libil2cpp::Il2CppString,
         pKeys: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::OVR::OpenVR::AppOverrideKeys_t,
         >,
@@ -385,7 +385,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn PerformApplicationPrelaunchCheck(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -396,7 +396,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn RemoveApplicationManifest(
         &mut self,
-        pchApplicationManifestFullPath: *mut crate::System::String,
+        pchApplicationManifestFullPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -407,7 +407,7 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn SetApplicationAutoLaunch(
         &mut self,
-        pchAppKey: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
         bAutoLaunch: bool,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -419,8 +419,8 @@ impl crate::OVR::OpenVR::CVRApplications {
     }
     pub fn SetDefaultApplicationForMimeType(
         &mut self,
-        pchAppKey: *mut crate::System::String,
-        pchMimeType: *mut crate::System::String,
+        pchAppKey: *mut quest_hook::libil2cpp::Il2CppString,
+        pchMimeType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRApplicationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

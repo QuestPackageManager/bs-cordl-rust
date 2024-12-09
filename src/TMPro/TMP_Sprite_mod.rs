@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TMP_Sprite {
     __cordl_parent: crate::TMPro::TMP_TextElement_Legacy,
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub hashCode: i32,
     pub unicode: i32,
     pub pivot: crate::UnityEngine::Vector2,

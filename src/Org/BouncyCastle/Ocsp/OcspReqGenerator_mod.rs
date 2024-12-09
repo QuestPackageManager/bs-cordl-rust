@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReqGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub list: *mut crate::System::Collections::IList,
     pub requestorName: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     pub requestExtensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,9 +78,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
             .invoke("Generate", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Generate_String_AsymmetricKeyParameter_Il2CppArray1(
+    pub fn Generate_Il2CppString_AsymmetricKeyParameter_Il2CppArray1(
         &mut self,
-        signingAlgorithm: *mut crate::System::String,
+        signingAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
         privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         chain: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::X509::X509Certificate,
@@ -93,9 +93,9 @@ impl crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
             .invoke("Generate", (signingAlgorithm, privateKey, chain))?;
         Ok(__cordl_ret)
     }
-    pub fn Generate_String_AsymmetricKeyParameter_Il2CppArray_SecureRandom2(
+    pub fn Generate_Il2CppString_AsymmetricKeyParameter_Il2CppArray_SecureRandom2(
         &mut self,
-        signingAlgorithm: *mut crate::System::String,
+        signingAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
         privateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         chain: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::X509::X509Certificate,
@@ -184,7 +184,7 @@ for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OcspReqGenerator_RequestObject {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certId: *mut crate::Org::BouncyCastle::Ocsp::CertificateID,
     pub extensions: *mut crate::Org::BouncyCastle::Asn1::X509::X509Extensions,
 }
@@ -196,7 +196,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Ocsp+OcspReqGenerator+RequestObject")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Ocsp::OcspReqGenerator_RequestObject {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

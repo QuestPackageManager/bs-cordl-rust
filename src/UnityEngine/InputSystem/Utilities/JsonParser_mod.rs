@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct JsonParser {
-    pub m_Text: *mut crate::System::String,
+    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Length: i32,
     pub m_Position: i32,
     pub m_MatchAnyElementInArray: bool,
@@ -45,7 +45,7 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
     }
     pub fn NavigateToProperty(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -173,7 +173,7 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
     }
     pub fn SkipString(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -202,8 +202,8 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -212,7 +212,7 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser {
     }
     pub fn _ctor(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -256,6 +256,17 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonString")]
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_JsonParser_JsonString0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
@@ -264,17 +275,6 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -288,8 +288,8 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -310,10 +310,10 @@ pub struct JsonParser_JsonValue {
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
     pub objectValue: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
     >,
-    pub anyValue: *mut crate::System::Object,
+    pub anyValue: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -336,6 +336,17 @@ for crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
 impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     #[cfg(feature = "UnityEngine+InputSystem+Utilities+JsonParser+JsonValue+__c")]
     pub type __c = crate::UnityEngine::InputSystem::Utilities::JsonValue_JsonParser___c;
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_JsonParser_JsonValue0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue,
@@ -344,17 +355,6 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -392,8 +392,8 @@ impl crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonValue {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

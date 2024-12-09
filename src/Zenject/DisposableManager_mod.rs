@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposableManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposables: *mut crate::System::Collections::Generic::List_1<
         crate::Zenject::DisposableManager_DisposableInfo,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DisposableManager")]
 impl std::ops::Deref for crate::Zenject::DisposableManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -221,7 +221,7 @@ impl crate::Zenject::DisposableManager_DisposableInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisposableManager_LateDisposableInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub LateDisposable: *mut crate::Zenject::ILateDisposable,
     pub Priority: i32,
 }
@@ -232,7 +232,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+DisposableManager+LateDisposableInfo")]
 impl std::ops::Deref for crate::Zenject::DisposableManager_LateDisposableInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

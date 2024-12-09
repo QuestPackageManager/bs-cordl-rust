@@ -5,11 +5,11 @@ pub struct RegexWriter {
     pub _emitted: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _intStack: crate::System::Collections::Generic::ValueListBuilder_1<i32>,
     pub _stringHash: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         i32,
     >,
     pub _stringTable: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _caps: *mut crate::System::Collections::Hashtable,
     pub _trackCount: i32,
@@ -126,7 +126,7 @@ impl crate::System::Text::RegularExpressions::RegexWriter {
     }
     pub fn StringCode(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_ret: i32 = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

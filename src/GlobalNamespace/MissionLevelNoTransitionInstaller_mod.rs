@@ -12,7 +12,7 @@ pub struct MissionLevelNoTransitionInstaller {
     >,
     pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
-    pub _backButtonText: *mut crate::System::String,
+    pub _backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _scenesTransitionSetupData: *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "MissionLevelNoTransitionInstaller")]

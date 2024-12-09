@@ -8,7 +8,7 @@ pub struct XPathNode {
     pub _idxSimilar: u16,
     pub _posOffset: u16,
     pub _props: u32,
-    pub _value: *mut crate::System::String,
+    pub _value: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "MS+Internal+Xml+Cache+XPathNode")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -134,8 +134,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNode {
     }
     pub fn get_LocalName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_LocalName",
             (),
@@ -144,8 +144,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNode {
     }
     pub fn get_NamespaceUri(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_NamespaceUri",
             (),
@@ -176,8 +176,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNode {
     }
     pub fn get_Prefix(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Prefix",
             (),
@@ -186,8 +186,8 @@ impl crate::MS::Internal::Xml::Cache::XPathNode {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Value",
             (),

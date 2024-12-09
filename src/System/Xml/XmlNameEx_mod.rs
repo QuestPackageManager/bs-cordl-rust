@@ -6,7 +6,7 @@ pub struct XmlNameEx {
     pub flags: u8,
     pub memberType: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
     pub schemaType: *mut crate::System::Xml::Schema::XmlSchemaType,
-    pub decl: *mut crate::System::Object,
+    pub decl: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlNameEx")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -39,9 +39,9 @@ impl crate::System::Xml::XmlNameEx {
         Ok(__cordl_ret)
     }
     pub fn New(
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
         ownerDoc: *mut crate::System::Xml::XmlDocument,
         next: *mut crate::System::Xml::XmlName,
@@ -91,9 +91,9 @@ impl crate::System::Xml::XmlNameEx {
     }
     pub fn _ctor(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         hashCode: i32,
         ownerDoc: *mut crate::System::Xml::XmlDocument,
         next: *mut crate::System::Xml::XmlName,

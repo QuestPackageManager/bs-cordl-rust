@@ -43,8 +43,8 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1 {
-    __cordl_parent: crate::System::Object,
-    pub version: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
     pub localPlayers: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer,
     >,
@@ -60,7 +60,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -123,12 +123,12 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerSaveDat
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_AchievementsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub unlockedAchievements: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub unlockedAchievementsToUpload: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+AchievementsData")]
@@ -139,7 +139,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1+AchievementsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,7 +185,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_GameplayModifiers {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub energyType: crate::GlobalNamespace::GameplayModifiers_PlayerSaveDataV1_0_1_EnergyType,
     pub noFail: bool,
     pub instaFail: bool,
@@ -205,7 +205,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1+GameplayModifiers")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -257,8 +257,8 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_GuestPlayer {
-    __cordl_parent: crate::System::Object,
-    pub playerName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+GuestPlayer")]
@@ -269,7 +269,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1+GuestPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -314,9 +314,9 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_GuestPlayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_LocalPlayer {
-    __cordl_parent: crate::System::Object,
-    pub playerId: *mut crate::System::String,
-    pub playerName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub playerId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub playerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub shouldShowTutorialPrompt: bool,
     pub gameplayModifiers: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_GameplayModifiers,
     pub playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings,
@@ -328,7 +328,7 @@ pub struct PlayerSaveDataV1_0_1_LocalPlayer {
         *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData,
     >,
     pub showedMissionHelpIds: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub achievementsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_AchievementsData,
 }
@@ -340,7 +340,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSaveDataV1_0_1+LocalPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -385,7 +385,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_LocalPlayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub campaignOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
     pub soloFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
     pub partyFreePlayOverallStatsData: *mut crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData,
@@ -399,7 +399,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerAllOverallStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -483,8 +483,8 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerAllOverallStatsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerLevelStatsData {
-    __cordl_parent: crate::System::Object,
-    pub levelId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub levelId: *mut quest_hook::libil2cpp::Il2CppString,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub highScore: i32,
     pub maxCombo: i32,
@@ -502,7 +502,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerLevelStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -548,8 +548,8 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerLevelStatsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerMissionStatsData {
-    __cordl_parent: crate::System::Object,
-    pub missionId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub missionId: *mut quest_hook::libil2cpp::Il2CppString,
     pub cleared: bool,
 }
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerMissionStatsData")]
@@ -561,7 +561,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerMissionStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -607,7 +607,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerMissionStatsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerOverallStatsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub goodCutsCount: i32,
     pub badCutsCount: i32,
     pub missedCutsCount: i32,
@@ -629,7 +629,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerOverallStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -745,7 +745,7 @@ for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerOverallStatsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSaveDataV1_0_1_PlayerSpecificSettings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub staticLights: bool,
     pub leftHanded: bool,
     pub swapColors: bool,
@@ -764,7 +764,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerSaveDataV1_0_1+PlayerSpecificSettings")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerSaveDataV1_0_1_PlayerSpecificSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

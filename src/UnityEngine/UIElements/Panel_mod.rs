@@ -6,7 +6,7 @@ pub struct Panel {
     pub m_RootContainer: *mut crate::UnityEngine::UIElements::VisualElement,
     pub m_VisualTreeUpdater: *mut crate::UnityEngine::UIElements::VisualTreeUpdater,
     pub m_StylePropertyAnimationSystem: *mut crate::UnityEngine::UIElements::IStylePropertyAnimationSystem,
-    pub m_PanelName: *mut crate::System::String,
+    pub m_PanelName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Version: u32,
     pub m_RepaintVersion: u32,
     pub m_HierarchyVersion: u32,
@@ -322,11 +322,11 @@ impl crate::UnityEngine::UIElements::Panel {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
@@ -495,7 +495,7 @@ impl crate::UnityEngine::UIElements::Panel {
     }
     pub fn set_name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

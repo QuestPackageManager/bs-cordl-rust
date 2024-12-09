@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IGenericMenu {
 impl crate::UnityEngine::UIElements::IGenericMenu {
     pub fn AddItem_Action0(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isChecked: bool,
         action: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -37,12 +37,12 @@ impl crate::UnityEngine::UIElements::IGenericMenu {
             .invoke("AddItem", (itemName, isChecked, action))?;
         Ok(__cordl_ret)
     }
-    pub fn AddItem_Action_1_Object1(
+    pub fn AddItem_Action_1_Il2CppObject1(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isChecked: bool,
-        action: *mut crate::System::Action_1<*mut crate::System::Object>,
-        data: *mut crate::System::Object,
+        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        data: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

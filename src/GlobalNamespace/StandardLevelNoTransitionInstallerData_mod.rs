@@ -17,7 +17,7 @@ pub struct StandardLevelNoTransitionInstallerData {
     pub _gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     pub _playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
     pub _practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
-    pub _backButtonText: *mut crate::System::String,
+    pub _backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _useTestNoteCutSoundEffects: bool,
     pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevelSO,
     pub _selectedColorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
@@ -64,11 +64,11 @@ impl crate::GlobalNamespace::StandardLevelNoTransitionInstallerData {
     }
     pub fn get_backButtonText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_backButtonText", ())?;
         Ok(__cordl_ret)
     }
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::StandardLevelNoTransitionInstallerData {
     }
     pub fn set_backButtonText(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _loadRequests: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::BeatmapLevelDataLoadRequest,
     >,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelDataLoader")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataLoader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,8 +34,8 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
     pub type _CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__4 = crate::GlobalNamespace::BeatmapLevelDataLoader__CheckBeatmapLevelDataFromAssetBundleExistsAsync_d__4;
     pub fn CheckBeatmapLevelDataFromAssetBundleExistsAsync(
         &mut self,
-        levelId: *mut crate::System::String,
-        assetBundlePath: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
@@ -62,9 +62,9 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
     }
     pub fn LoadBeatmapLevelDataFromAssetBundleAsync(
         &mut self,
-        levelId: *mut crate::System::String,
-        assetBundlePath: *mut crate::System::String,
-        levelDataAssetName: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+        levelDataAssetName: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoader {
     }
     pub fn TryUnload(
         &mut self,
-        beatmapLevelId: *mut crate::System::String,
+        beatmapLevelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

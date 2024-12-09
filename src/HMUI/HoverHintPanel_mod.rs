@@ -71,7 +71,7 @@ impl crate::HMUI::HoverHintPanel {
     }
     pub fn Show(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         parent: *mut crate::UnityEngine::Transform,
         containerSize: crate::UnityEngine::Vector2,
         spawnRect: crate::UnityEngine::Rect,

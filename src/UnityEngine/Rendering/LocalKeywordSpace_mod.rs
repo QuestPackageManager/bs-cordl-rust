@@ -22,6 +22,17 @@ for crate::UnityEngine::Rendering::LocalKeywordSpace {
 }
 #[cfg(feature = "UnityEngine+Rendering+LocalKeywordSpace")]
 impl crate::UnityEngine::Rendering::LocalKeywordSpace {
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (o),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_LocalKeywordSpace1(
         &mut self,
         rhs: crate::UnityEngine::Rendering::LocalKeywordSpace,
@@ -30,17 +41,6 @@ impl crate::UnityEngine::Rendering::LocalKeywordSpace {
             self,
             "Equals",
             (rhs),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        o: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (o),
         )?;
         Ok(__cordl_ret)
     }

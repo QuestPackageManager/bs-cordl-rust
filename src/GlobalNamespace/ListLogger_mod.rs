@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListLogger {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _messages: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::ListLogger_LogMessage,
     >,
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ListLogger")]
 impl std::ops::Deref for crate::GlobalNamespace::ListLogger {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,10 +30,10 @@ impl crate::GlobalNamespace::ListLogger {
     pub type LogMessage = crate::GlobalNamespace::ListLogger_LogMessage;
     #[cfg(feature = "ListLogger+LogType")]
     pub type LogType = crate::GlobalNamespace::ListLogger_LogType;
-    pub fn LogError_Object1(
+    pub fn LogError_Il2CppObject1(
         &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,9 +42,9 @@ impl crate::GlobalNamespace::ListLogger {
             .invoke("LogError", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogError_String0(
+    pub fn LogError_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,10 +64,10 @@ impl crate::GlobalNamespace::ListLogger {
             .invoke("LogException", (exception))?;
         Ok(__cordl_ret)
     }
-    pub fn LogException_Object1(
+    pub fn LogException_Il2CppObject1(
         &mut self,
         exception: *mut crate::System::Exception,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,10 +76,10 @@ impl crate::GlobalNamespace::ListLogger {
             .invoke("LogException", (exception, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogWarning_Object1(
+    pub fn LogWarning_Il2CppObject1(
         &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -88,9 +88,9 @@ impl crate::GlobalNamespace::ListLogger {
             .invoke("LogWarning", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogWarning_String0(
+    pub fn LogWarning_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -99,10 +99,10 @@ impl crate::GlobalNamespace::ListLogger {
             .invoke("LogWarning", (message))?;
         Ok(__cordl_ret)
     }
-    pub fn Log_Object1(
+    pub fn Log_Il2CppObject1(
         &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,9 +111,9 @@ impl crate::GlobalNamespace::ListLogger {
             .invoke("Log", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Log_String0(
+    pub fn Log_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,10 +168,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ListLogger {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ListLogger_LogMessage {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::GlobalNamespace::ListLogger_LogType,
-    pub message: *mut crate::System::String,
-    pub context: *mut crate::System::Object,
+    pub message: *mut quest_hook::libil2cpp::Il2CppString,
+    pub context: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "ListLogger+LogMessage")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -180,7 +180,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ListLogger+LogMessage")]
 impl std::ops::Deref for crate::GlobalNamespace::ListLogger_LogMessage {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -195,8 +195,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ListLogger_LogMessage {
 impl crate::GlobalNamespace::ListLogger_LogMessage {
     pub fn New(
         _cordl_type: crate::GlobalNamespace::ListLogger_LogType,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -206,19 +206,19 @@ impl crate::GlobalNamespace::ListLogger_LogMessage {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
         _cordl_type: crate::GlobalNamespace::ListLogger_LogType,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

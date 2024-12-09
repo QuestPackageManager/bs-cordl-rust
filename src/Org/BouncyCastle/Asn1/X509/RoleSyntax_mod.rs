@@ -29,23 +29,23 @@ impl crate::Org::BouncyCastle::Asn1::X509::RoleSyntax {
     pub fn GetRoleAuthorityAsString(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetRoleAuthorityAsString", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetRoleNameAsString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetRoleNameAsString", ())?;
         Ok(__cordl_ret)
     }
@@ -77,8 +77,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::RoleSyntax {
             .invoke_void(".ctor", (roleAuthority, roleName))?;
         Ok(__cordl_object)
     }
-    pub fn New_String2(
-        roleName: *mut crate::System::String,
+    pub fn New_Il2CppString2(
+        roleName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -98,11 +98,11 @@ impl crate::Org::BouncyCastle::Asn1::X509::RoleSyntax {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -140,9 +140,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::RoleSyntax {
             .invoke(".ctor", (roleAuthority, roleName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
-        roleName: *mut crate::System::String,
+        roleName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

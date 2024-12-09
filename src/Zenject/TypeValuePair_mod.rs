@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct TypeValuePair {
     pub Type: *mut crate::System::Type,
-    pub Value: *mut crate::System::Object,
+    pub Value: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+TypeValuePair")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -25,7 +25,7 @@ impl crate::Zenject::TypeValuePair {
     pub fn _ctor(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

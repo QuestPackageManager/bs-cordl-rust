@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputBinding {
-    pub m_Name: *mut crate::System::String,
-    pub m_Id: *mut crate::System::String,
-    pub m_Path: *mut crate::System::String,
-    pub m_Interactions: *mut crate::System::String,
-    pub m_Processors: *mut crate::System::String,
-    pub m_Groups: *mut crate::System::String,
-    pub m_Action: *mut crate::System::String,
+    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Path: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Interactions: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Processors: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Groups: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Action: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Flags: crate::UnityEngine::InputSystem::InputBinding_Flags,
-    pub m_OverridePath: *mut crate::System::String,
-    pub m_OverrideInteractions: *mut crate::System::String,
-    pub m_OverrideProcessors: *mut crate::System::String,
+    pub m_OverridePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_OverrideInteractions: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_OverrideProcessors: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputBinding")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -42,6 +42,17 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     pub type MatchOptions = crate::UnityEngine::InputSystem::InputBinding_MatchOptions;
     #[cfg(feature = "UnityEngine+InputSystem+InputBinding+__c")]
     pub type __c = crate::UnityEngine::InputSystem::InputBinding___c;
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InputBinding0(
         &mut self,
         other: crate::UnityEngine::InputSystem::InputBinding,
@@ -50,17 +61,6 @@ impl crate::UnityEngine::InputSystem::InputBinding {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -84,8 +84,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn GetNameOfComposite(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetNameOfComposite",
             (),
@@ -129,12 +129,16 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn ToDisplayString_ByRefMut_ByRefMut_InputBinding_DisplayStringOptions_InputControl1(
         &mut self,
-        deviceLayoutName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        controlPath: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        deviceLayoutName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        controlPath: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         options: crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToDisplayString",
             (deviceLayoutName, controlPath, options, control),
@@ -145,8 +149,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
         &mut self,
         options: crate::UnityEngine::InputSystem::InputBinding_DisplayStringOptions,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToDisplayString",
             (options, control),
@@ -155,8 +159,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -176,12 +180,12 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn _ctor(
         &mut self,
-        path: *mut crate::System::String,
-        action: *mut crate::System::String,
-        groups: *mut crate::System::String,
-        processors: *mut crate::System::String,
-        interactions: *mut crate::System::String,
-        name: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
+        action: *mut quest_hook::libil2cpp::Il2CppString,
+        groups: *mut quest_hook::libil2cpp::Il2CppString,
+        processors: *mut quest_hook::libil2cpp::Il2CppString,
+        interactions: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -192,8 +196,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_action(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_action",
             (),
@@ -202,8 +206,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_effectiveInteractions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_effectiveInteractions",
             (),
@@ -212,8 +216,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_effectivePath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_effectivePath",
             (),
@@ -222,8 +226,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_effectiveProcessors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_effectiveProcessors",
             (),
@@ -232,8 +236,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_groups(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_groups",
             (),
@@ -258,8 +262,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_interactions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_interactions",
             (),
@@ -292,8 +296,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_name",
             (),
@@ -302,8 +306,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_overrideInteractions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_overrideInteractions",
             (),
@@ -312,8 +316,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_overridePath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_overridePath",
             (),
@@ -322,8 +326,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_overrideProcessors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_overrideProcessors",
             (),
@@ -332,8 +336,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_path(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_path",
             (),
@@ -342,8 +346,8 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn get_processors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_processors",
             (),
@@ -352,7 +356,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_action(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -363,7 +367,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_groups(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -385,7 +389,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_interactions(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -418,7 +422,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -429,7 +433,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_overrideInteractions(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -440,7 +444,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_overridePath(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -451,7 +455,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_overrideProcessors(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -462,7 +466,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_path(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -473,7 +477,7 @@ impl crate::UnityEngine::InputSystem::InputBinding {
     }
     pub fn set_processors(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

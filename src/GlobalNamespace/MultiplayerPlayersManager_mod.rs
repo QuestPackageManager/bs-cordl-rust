@@ -30,11 +30,11 @@ pub struct MultiplayerPlayersManager {
     pub _inactiveLocalPlayerFactory: *mut crate::GlobalNamespace::MultiplayerLocalInactivePlayerFacade_Factory,
     pub _connectedPlayerFactory: *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory,
     pub _connectedPlayerControllersMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
     >,
     pub _connectedPlayerCenterFacingRotationsMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         f32,
     >,
     pub _allActiveAtGameStartPlayers: *mut crate::System::Collections::Generic::IReadOnlyList_1<
@@ -155,7 +155,7 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     }
     pub fn TryGetConnectedCenterFacingRotation(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         centerFacingRotation: quest_hook::libil2cpp::ByRefMut<f32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,7 +170,7 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     }
     pub fn TryGetConnectedPlayerController(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         connectedPlayerController: quest_hook::libil2cpp::ByRefMut<
             *mut crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
         >,

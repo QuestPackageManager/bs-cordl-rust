@@ -29,8 +29,8 @@ for crate::GlobalNamespace::RequiredArgument_1<T> {
 #[cfg(feature = "RequiredArgument_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<T> {
     pub fn New(
-        name: *mut crate::System::String,
-        description: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -56,7 +56,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -64,14 +64,16 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn TryParseWithValue(
         &mut self,
-        inValue: *mut crate::System::String,
-        outError: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        inValue: *mut quest_hook::libil2cpp::Il2CppString,
+        outError: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -86,8 +88,8 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RequiredArgument_1<
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
-        description: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        description: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

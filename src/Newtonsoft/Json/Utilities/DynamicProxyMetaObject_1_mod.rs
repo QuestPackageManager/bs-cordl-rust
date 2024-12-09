@@ -318,7 +318,7 @@ impl<
     }
     pub fn BuildCallMethodWithResult(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
         args: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::Linq::Expressions::Expression,
@@ -344,7 +344,7 @@ impl<
     }
     pub fn CallMethodNoResult(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
         args: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Linq::Expressions::Expression,
@@ -366,7 +366,7 @@ impl<
     }
     pub fn CallMethodReturnLast(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
         args: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::Linq::Expressions::Expression,
@@ -388,7 +388,7 @@ impl<
     }
     pub fn CallMethodWithResult(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
         args: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::System::Linq::Expressions::Expression,
@@ -418,7 +418,7 @@ impl<
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     >
     where
@@ -429,7 +429,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetDynamicMemberNames", ())?;
         Ok(__cordl_ret)
     }
@@ -449,7 +449,7 @@ impl<
     }
     pub fn IsOverridden(
         &mut self,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -540,7 +540,7 @@ impl<
         &mut self,
         errorSuggestion: *mut crate::System::Dynamic::DynamicMetaObject,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -584,7 +584,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -599,7 +599,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

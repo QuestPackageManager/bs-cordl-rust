@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AbstractTlsContext {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mNonceRandom: *mut crate::Org::BouncyCastle::Crypto::Prng::IRandomGenerator,
     pub mSecureRandom: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     pub mSecurityParameters: *mut crate::Org::BouncyCastle::Crypto::Tls::SecurityParameters,
     pub mClientVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
     pub mServerVersion: *mut crate::Org::BouncyCastle::Crypto::Tls::ProtocolVersion,
     pub mSession: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsSession,
-    pub mUserObject: *mut crate::System::Object,
+    pub mUserObject: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+AbstractTlsContext")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsCo
 impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
     pub fn ExportKeyingMaterial(
         &mut self,
-        asciiLabel: *mut crate::System::String,
+        asciiLabel: *mut quest_hook::libil2cpp::Il2CppString,
         context_value: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
@@ -181,17 +181,17 @@ impl crate::Org::BouncyCastle::Crypto::Tls::AbstractTlsContext {
     }
     pub fn get_UserObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_UserObject", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_UserObject(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -13,7 +13,7 @@ pub struct MultiplayerScoreProvider {
         *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
     >,
     pub _players: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
     >,
 }
@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
     pub type __c__DisplayClass18_0 = crate::GlobalNamespace::MultiplayerScoreProvider___c__DisplayClass18_0;
     pub fn GetPositionOfPlayer(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -62,7 +62,7 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider {
     }
     pub fn TryGetScore(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         data: quest_hook::libil2cpp::ByRefMut<
             *mut crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer,
         >,
@@ -179,7 +179,7 @@ for crate::GlobalNamespace::MultiplayerScoreProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerScoreProvider_RankedPlayer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSyncState: *mut crate::GlobalNamespace::MultiplayerSyncState_3<
         crate::GlobalNamespace::StandardScoreSyncState,
         crate::GlobalNamespace::StandardScoreSyncState_Score,
@@ -195,7 +195,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerScoreProvider+RankedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -300,21 +300,21 @@ impl crate::GlobalNamespace::MultiplayerScoreProvider_RankedPlayer {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }

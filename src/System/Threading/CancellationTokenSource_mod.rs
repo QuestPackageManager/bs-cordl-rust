@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationTokenSource {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _kernelEvent: *mut crate::System::Threading::ManualResetEvent,
     pub _registeredCallbacksLists: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Threading::SparselyPopulatedArray_1<
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+CancellationTokenSource")]
 impl std::ops::Deref for crate::System::Threading::CancellationTokenSource {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -107,7 +107,7 @@ impl crate::System::Threading::CancellationTokenSource {
     }
     pub fn CancellationCallbackCoreWork_OnSyncContext(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -161,8 +161,8 @@ impl crate::System::Threading::CancellationTokenSource {
     }
     pub fn InternalRegister(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        stateForCallback: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
         targetSyncContext: *mut crate::System::Threading::SynchronizationContext,
         executionContext: *mut crate::System::Threading::ExecutionContext,
     ) -> quest_hook::libil2cpp::Result<

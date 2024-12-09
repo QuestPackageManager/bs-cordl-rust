@@ -12,10 +12,10 @@ pub struct GroupOperation {
     >,
     pub m_LoadedCount: i32,
     pub m_Settings: crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation_GroupOperationSettings,
-    pub debugName: *mut crate::System::String,
+    pub debugName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _UnityEngine_ResourceManagement_AsyncOperations_ICachable_Key_k__BackingField: *mut crate::UnityEngine::ResourceManagement::Util::IOperationCacheKey,
     pub m_CachedDependencyLocations: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
@@ -124,7 +124,7 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     pub fn GetDownloadStatus(
         &mut self,
         visited: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::DownloadStatus,
@@ -244,11 +244,11 @@ impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }

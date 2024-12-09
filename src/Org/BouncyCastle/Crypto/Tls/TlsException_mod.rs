@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::Tls::TlsException 
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+TlsException")]
 impl crate::Org::BouncyCastle::Crypto::Tls::TlsException {
     pub fn New(
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         cause: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -36,7 +36,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsException {
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         cause: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

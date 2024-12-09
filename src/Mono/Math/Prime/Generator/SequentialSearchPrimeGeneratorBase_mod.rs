@@ -27,10 +27,10 @@ for crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
 }
 #[cfg(feature = "Mono+Math+Prime+Generator+SequentialSearchPrimeGeneratorBase")]
 impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
-    pub fn GenerateNewPrime_Object1(
+    pub fn GenerateNewPrime_Il2CppObject1(
         &mut self,
         bits: i32,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,7 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     pub fn GenerateSearchBase(
         &mut self,
         bits: i32,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Math::BigInteger> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,7 +65,7 @@ impl crate::Mono::Math::Prime::Generator::SequentialSearchPrimeGeneratorBase {
     pub fn IsPrimeAcceptable(
         &mut self,
         bi: *mut crate::Mono::Math::BigInteger,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -4,7 +4,7 @@
 pub struct CustomAttributeNamedArgument {
     pub _TypedValue_k__BackingField: crate::System::Reflection::CustomAttributeTypedArgument,
     pub _IsField_k__BackingField: bool,
-    pub _MemberName_k__BackingField: *mut crate::System::String,
+    pub _MemberName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _attributeType: *mut crate::System::Type,
     pub _lazyMemberInfo: *mut crate::System::Reflection::MemberInfo,
 }
@@ -28,7 +28,7 @@ for crate::System::Reflection::CustomAttributeNamedArgument {
 impl crate::System::Reflection::CustomAttributeNamedArgument {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -47,8 +47,8 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -67,10 +67,10 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_MemberInfo_Object1(
+    pub fn _ctor_MemberInfo_Il2CppObject1(
         &mut self,
         memberInfo: *mut crate::System::Reflection::MemberInfo,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -79,10 +79,10 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Type_String__cordl_bool_CustomAttributeTypedArgument0(
+    pub fn _ctor_Type_Il2CppString__cordl_bool_CustomAttributeTypedArgument0(
         &mut self,
         attributeType: *mut crate::System::Type,
-        memberName: *mut crate::System::String,
+        memberName: *mut quest_hook::libil2cpp::Il2CppString,
         isField: bool,
         typedValue: crate::System::Reflection::CustomAttributeTypedArgument,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -113,8 +113,8 @@ impl crate::System::Reflection::CustomAttributeNamedArgument {
     }
     pub fn get_MemberName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_MemberName",
             (),

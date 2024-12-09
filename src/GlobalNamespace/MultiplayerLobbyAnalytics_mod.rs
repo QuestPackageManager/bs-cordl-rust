@@ -39,11 +39,11 @@ impl crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     pub fn GetEventTypeFromLobbyType(
         &mut self,
         lobbyType: crate::GlobalNamespace::GameServerLobbyFlowCoordinator_LobbyType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetEventTypeFromLobbyType", (lobbyType))?;
         Ok(__cordl_ret)
     }
@@ -90,8 +90,8 @@ impl crate::GlobalNamespace::MultiplayerLobbyAnalytics {
     pub fn LogClick(
         &mut self,
         clickData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

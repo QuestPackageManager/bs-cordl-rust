@@ -5,10 +5,14 @@ pub struct EnumData {
     pub values: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Enum>,
     pub flagValues: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub displayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub tooltip: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub names: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub tooltip: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub flags: bool,
     pub underlyingType: *mut crate::System::Type,
     pub _cordl_unsigned: bool,

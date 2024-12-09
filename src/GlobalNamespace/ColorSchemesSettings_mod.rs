@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ColorSchemesSettings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub overrideDefaultColors: bool,
     pub _colorSchemesList: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::ColorScheme,
     >,
     pub _colorSchemesDict: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::ColorScheme,
     >,
-    pub _selectedColorSchemeId: *mut crate::System::String,
+    pub _selectedColorSchemeId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "ColorSchemesSettings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ColorSchemesSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::ColorSchemesSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
     pub type __c = crate::GlobalNamespace::ColorSchemesSettings___c;
     pub fn GetColorSchemeForId(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ColorScheme> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,17 +152,17 @@ impl crate::GlobalNamespace::ColorSchemesSettings {
     }
     pub fn get_selectedColorSchemeId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_selectedColorSchemeId", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_selectedColorSchemeId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

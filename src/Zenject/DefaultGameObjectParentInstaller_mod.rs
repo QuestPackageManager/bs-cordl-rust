@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller {
     __cordl_parent: crate::Zenject::Installer_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Zenject::DefaultGameObjectParentInstaller,
     >,
-    pub _name: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller")]
 impl std::ops::Deref for crate::Zenject::DefaultGameObjectParentInstaller {
     type Target = crate::Zenject::Installer_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Zenject::DefaultGameObjectParentInstaller,
     >;
     fn deref(&self) -> &Self::Target {
@@ -46,7 +46,7 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -56,7 +56,7 @@ impl crate::Zenject::DefaultGameObjectParentInstaller {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ for crate::Zenject::DefaultGameObjectParentInstaller {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _gameObject: *mut crate::UnityEngine::GameObject,
 }
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
@@ -92,7 +92,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+DefaultGameObjectParentInstaller+DefaultParentObjectDestroyer")]
 impl std::ops::Deref
 for crate::Zenject::DefaultGameObjectParentInstaller_DefaultParentObjectDestroyer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct InitializeLocalInstruction_ImmutableBox {
     __cordl_parent: crate::System::Linq::Expressions::Interpreter::InitializeLocalInstruction,
-    pub _defaultValue: *mut crate::System::Object,
+    pub _defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "System+Linq+Expressions+Interpreter+InitializeLocalInstruction+ImmutableBox"
@@ -40,7 +40,7 @@ for crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox {
 impl crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox {
     pub fn New(
         index: i32,
-        defaultValue: *mut crate::System::Object,
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox {
     pub fn _ctor(
         &mut self,
         index: i32,
-        defaultValue: *mut crate::System::Object,
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,11 +72,11 @@ impl crate::GlobalNamespace::InitializeLocalInstruction_ImmutableBox {
     }
     pub fn get_InstructionName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InstructionName", ())?;
         Ok(__cordl_ret)
     }

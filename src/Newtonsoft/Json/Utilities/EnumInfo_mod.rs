@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnumInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsFlags: bool,
     pub Values: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-    pub Names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub Names: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub ResolvedNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+EnumInfo")]
@@ -17,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Utilities+EnumInfo")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Utilities::EnumInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,9 +35,11 @@ impl crate::Newtonsoft::Json::Utilities::EnumInfo {
     pub fn New(
         isFlags: bool,
         values: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         resolvedNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -48,9 +52,11 @@ impl crate::Newtonsoft::Json::Utilities::EnumInfo {
         &mut self,
         isFlags: bool,
         values: *mut quest_hook::libil2cpp::Il2CppArray<u64>,
-        names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        names: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         resolvedNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FastResourceComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Resources+FastResourceComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+FastResourceComparer")]
 impl std::ops::Deref for crate::System::Resources::FastResourceComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::System::Resources::FastResourceComparer {
 }
 #[cfg(feature = "System+Resources+FastResourceComparer")]
 impl crate::System::Resources::FastResourceComparer {
-    pub fn Compare_Object_Object0(
+    pub fn Compare_Il2CppObject_Il2CppObject0(
         &mut self,
-        a: *mut crate::System::Object,
-        b: *mut crate::System::Object,
+        a: *mut quest_hook::libil2cpp::Il2CppObject,
+        b: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -35,10 +35,10 @@ impl crate::System::Resources::FastResourceComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn Compare_String_String1(
+    pub fn Compare_Il2CppString_Il2CppString1(
         &mut self,
-        a: *mut crate::System::String,
-        b: *mut crate::System::String,
+        a: *mut quest_hook::libil2cpp::Il2CppString,
+        b: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -46,10 +46,10 @@ impl crate::System::Resources::FastResourceComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("Compare", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object_Object1(
+    pub fn Equals_Il2CppObject_Il2CppObject1(
         &mut self,
-        a: *mut crate::System::Object,
-        b: *mut crate::System::Object,
+        a: *mut quest_hook::libil2cpp::Il2CppObject,
+        b: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,10 +57,10 @@ impl crate::System::Resources::FastResourceComparer {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_String_String0(
+    pub fn Equals_Il2CppString_Il2CppString0(
         &mut self,
-        a: *mut crate::System::String,
-        b: *mut crate::System::String,
+        a: *mut quest_hook::libil2cpp::Il2CppString,
+        b: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,9 +68,9 @@ impl crate::System::Resources::FastResourceComparer {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (a, b))?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode_Object0(
+    pub fn GetHashCode_Il2CppObject0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -78,9 +78,9 @@ impl crate::System::Resources::FastResourceComparer {
         let __cordl_ret: i32 = __cordl_object.invoke("GetHashCode", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn GetHashCode_String1(
+    pub fn GetHashCode_Il2CppString1(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

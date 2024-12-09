@@ -262,8 +262,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PauseMenuMana
 #[repr(C)]
 #[derive(Debug)]
 pub struct PauseMenuManager_InitData {
-    __cordl_parent: crate::System::Object,
-    pub backButtonText: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub showRestartButton: bool,
@@ -276,7 +276,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PauseMenuManager+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::PauseMenuManager_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -290,7 +290,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PauseMenuManager_InitData {
 #[cfg(feature = "PauseMenuManager+InitData")]
 impl crate::GlobalNamespace::PauseMenuManager_InitData {
     pub fn New(
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         showRestartButton: bool,
@@ -313,7 +313,7 @@ impl crate::GlobalNamespace::PauseMenuManager_InitData {
     }
     pub fn _ctor(
         &mut self,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         showRestartButton: bool,

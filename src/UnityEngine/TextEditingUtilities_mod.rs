@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextEditingUtilities {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_TextSelectingUtility: *mut crate::UnityEngine::TextSelectingUtilities,
     pub m_TextHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
     pub m_CursorIndexSavedState: i32,
     pub isCompositionActive: bool,
     pub m_UpdateImeWindowPosition: bool,
     pub multiline: bool,
-    pub m_Text: *mut crate::System::String,
+    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+TextEditingUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextEditingUtilities")]
 impl std::ops::Deref for crate::UnityEngine::TextEditingUtilities {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -100,11 +100,11 @@ impl crate::UnityEngine::TextEditingUtilities {
     pub fn GeneratePreviewString(
         &mut self,
         richText: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GeneratePreviewString", (richText))?;
         Ok(__cordl_ret)
     }
@@ -142,7 +142,7 @@ impl crate::UnityEngine::TextEditingUtilities {
     pub fn New(
         selectingUtilities: *mut crate::UnityEngine::TextSelectingUtilities,
         textHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -180,7 +180,7 @@ impl crate::UnityEngine::TextEditingUtilities {
     }
     pub fn ReplaceSelection(
         &mut self,
-        replace: *mut crate::System::String,
+        replace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -241,7 +241,7 @@ impl crate::UnityEngine::TextEditingUtilities {
         &mut self,
         selectingUtilities: *mut crate::UnityEngine::TextSelectingUtilities,
         textHandle: *mut crate::UnityEngine::TextCore::Text::TextHandle,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,11 +273,11 @@ impl crate::UnityEngine::TextEditingUtilities {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
@@ -316,7 +316,7 @@ impl crate::UnityEngine::TextEditingUtilities {
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

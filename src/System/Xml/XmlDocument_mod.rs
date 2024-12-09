@@ -23,26 +23,26 @@ pub struct XmlDocument {
     pub fCDataNodesPresent: bool,
     pub preserveWhitespace: bool,
     pub isLoading: bool,
-    pub strDocumentName: *mut crate::System::String,
-    pub strDocumentFragmentName: *mut crate::System::String,
-    pub strCommentName: *mut crate::System::String,
-    pub strTextName: *mut crate::System::String,
-    pub strCDataSectionName: *mut crate::System::String,
-    pub strEntityName: *mut crate::System::String,
-    pub strID: *mut crate::System::String,
-    pub strXmlns: *mut crate::System::String,
-    pub strXml: *mut crate::System::String,
-    pub strSpace: *mut crate::System::String,
-    pub strLang: *mut crate::System::String,
-    pub strEmpty: *mut crate::System::String,
-    pub strNonSignificantWhitespaceName: *mut crate::System::String,
-    pub strSignificantWhitespaceName: *mut crate::System::String,
-    pub strReservedXmlns: *mut crate::System::String,
-    pub strReservedXml: *mut crate::System::String,
-    pub baseURI: *mut crate::System::String,
+    pub strDocumentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strDocumentFragmentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strCommentName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strTextName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strCDataSectionName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strEntityName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strXmlns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strXml: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strSpace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strLang: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strEmpty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strNonSignificantWhitespaceName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strSignificantWhitespaceName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strReservedXmlns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub strReservedXml: *mut quest_hook::libil2cpp::Il2CppString,
+    pub baseURI: *mut quest_hook::libil2cpp::Il2CppString,
     pub resolver: *mut crate::System::Xml::XmlResolver,
     pub bSetResolver: bool,
-    pub objLock: *mut crate::System::Object,
+    pub objLock: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlDocument")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -66,9 +66,9 @@ impl std::ops::DerefMut for crate::System::Xml::XmlDocument {
 impl crate::System::Xml::XmlDocument {
     pub fn AddAttrXmlName(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -91,7 +91,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn AddElementWithId(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         elem: *mut crate::System::Xml::XmlElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -114,9 +114,9 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn AddXmlName(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -195,9 +195,9 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CloneNode", (deep))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String0(
+    pub fn CreateAttribute_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -206,10 +206,10 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateAttribute", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String1(
+    pub fn CreateAttribute_Il2CppString1(
         &mut self,
-        qualifiedName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        qualifiedName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,11 +218,11 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateAttribute", (qualifiedName, namespaceURI))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateAttribute_String_String2(
+    pub fn CreateAttribute_Il2CppString_Il2CppString2(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -233,7 +233,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateCDataSection(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlCDataSection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -244,7 +244,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateComment(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlComment> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -255,9 +255,9 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateDefaultAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -278,10 +278,10 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateDocumentType(
         &mut self,
-        name: *mut crate::System::String,
-        publicId: *mut crate::System::String,
-        systemId: *mut crate::System::String,
-        internalSubset: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        publicId: *mut quest_hook::libil2cpp::Il2CppString,
+        systemId: *mut quest_hook::libil2cpp::Il2CppString,
+        internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlDocumentType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -290,9 +290,9 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateDocumentType", (name, publicId, systemId, internalSubset))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateElement_String0(
+    pub fn CreateElement_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlElement> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -301,10 +301,10 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateElement", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateElement_String1(
+    pub fn CreateElement_Il2CppString1(
         &mut self,
-        qualifiedName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        qualifiedName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlElement> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -313,11 +313,11 @@ impl crate::System::Xml::XmlDocument {
             .invoke("CreateElement", (qualifiedName, namespaceURI))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateElement_String_String2(
+    pub fn CreateElement_Il2CppString_Il2CppString2(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlElement> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -328,7 +328,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateEntityReference(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlEntityReference> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -339,8 +339,8 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateProcessingInstruction(
         &mut self,
-        target: *mut crate::System::String,
-        data: *mut crate::System::String,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::XmlProcessingInstruction,
     > {
@@ -353,7 +353,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateSignificantWhitespace(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::XmlSignificantWhitespace,
     > {
@@ -366,7 +366,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateTextNode(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlText> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -377,7 +377,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateWhitespace(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlWhitespace> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -388,9 +388,9 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn CreateXmlDeclaration(
         &mut self,
-        version: *mut crate::System::String,
-        encoding: *mut crate::System::String,
-        standalone: *mut crate::System::String,
+        version: *mut quest_hook::libil2cpp::Il2CppString,
+        encoding: *mut quest_hook::libil2cpp::Il2CppString,
+        standalone: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlDeclaration> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -402,9 +402,9 @@ impl crate::System::Xml::XmlDocument {
     pub fn GetDefaultAttribute(
         &mut self,
         elem: *mut crate::System::Xml::XmlElement,
-        attrPrefix: *mut crate::System::String,
-        attrLocalname: *mut crate::System::String,
-        attrNamespaceURI: *mut crate::System::String,
+        attrPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+        attrLocalname: *mut quest_hook::libil2cpp::Il2CppString,
+        attrNamespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -430,7 +430,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn GetEntityNode(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlEntity> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -444,8 +444,8 @@ impl crate::System::Xml::XmlDocument {
         node: *mut crate::System::Xml::XmlNode,
         oldParent: *mut crate::System::Xml::XmlNode,
         newParent: *mut crate::System::Xml::XmlNode,
-        oldValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
+        oldValue: *mut quest_hook::libil2cpp::Il2CppString,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
         action: crate::System::Xml::XmlNodeChangedAction,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::XmlNodeChangedEventArgs,
@@ -521,9 +521,9 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn GetXmlName(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -618,7 +618,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn LoadXml(
         &mut self,
-        xml: *mut crate::System::String,
+        xml: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -655,9 +655,9 @@ impl crate::System::Xml::XmlDocument {
     pub fn PrepareDefaultAttribute(
         &mut self,
         attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
-        attrPrefix: *mut crate::System::String,
-        attrLocalname: *mut crate::System::String,
-        attrNamespaceURI: *mut crate::System::String,
+        attrPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+        attrLocalname: *mut quest_hook::libil2cpp::Il2CppString,
+        attrNamespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -682,7 +682,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn RemoveElementWithId(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         elem: *mut crate::System::Xml::XmlElement,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -705,7 +705,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn SetBaseURI(
         &mut self,
-        inBaseURI: *mut crate::System::String,
+        inBaseURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -716,9 +716,11 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn SetDefaultNamespace(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        namespaceURI: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -801,11 +803,11 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn get_BaseURI(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_BaseURI", ())?;
         Ok(__cordl_ret)
     }
@@ -858,11 +860,11 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn get_Encoding(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Encoding", ())?;
         Ok(__cordl_ret)
     }
@@ -926,21 +928,21 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn get_LocalName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LocalName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
@@ -996,21 +998,21 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn get_Standalone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Standalone", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Version", ())?;
         Ok(__cordl_ret)
     }
@@ -1038,7 +1040,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn set_InnerText(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1049,7 +1051,7 @@ impl crate::System::Xml::XmlDocument {
     }
     pub fn set_InnerXml(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

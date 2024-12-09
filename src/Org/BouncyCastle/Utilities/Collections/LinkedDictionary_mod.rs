@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LinkedDictionary {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hash: *mut crate::System::Collections::IDictionary,
     pub keys: *mut crate::System::Collections::IList,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Utilities+Collections+LinkedDictionary")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,8 +31,8 @@ for crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
 impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     pub fn Add(
         &mut self,
-        k: *mut crate::System::Object,
-        v: *mut crate::System::Object,
+        k: *mut quest_hook::libil2cpp::Il2CppObject,
+        v: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,7 +53,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     }
     pub fn Contains(
         &mut self,
-        k: *mut crate::System::Object,
+        k: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,7 +94,7 @@ impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     }
     pub fn Remove(
         &mut self,
-        k: *mut crate::System::Object,
+        k: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,12 +153,12 @@ impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     }
     pub fn get_Item(
         &mut self,
-        k: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        k: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (k))?;
         Ok(__cordl_ret)
     }
@@ -174,11 +174,11 @@ impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -194,8 +194,8 @@ impl crate::Org::BouncyCastle::Utilities::Collections::LinkedDictionary {
     }
     pub fn set_Item(
         &mut self,
-        k: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        k: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

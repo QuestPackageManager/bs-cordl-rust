@@ -6,7 +6,7 @@ pub struct MultiplayerSyncState_3<
     TType: quest_hook::libil2cpp::Type,
     TState: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TStateTable: std::marker::PhantomData<TStateTable>,
     __cordl_phantom_TType: std::marker::PhantomData<TType>,
     __cordl_phantom_TState: std::marker::PhantomData<TState>,
@@ -24,7 +24,7 @@ impl<
     TState: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::GlobalNamespace::MultiplayerSyncState_3<TStateTable, TType, TState> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

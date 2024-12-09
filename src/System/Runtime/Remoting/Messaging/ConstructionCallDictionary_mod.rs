@@ -29,12 +29,12 @@ for crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
 impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     pub fn GetMethodProperty(
         &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetMethodProperty", (key))?;
         Ok(__cordl_ret)
     }
@@ -49,8 +49,8 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionCallDictionary {
     }
     pub fn SetMethodProperty(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

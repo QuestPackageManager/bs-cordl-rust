@@ -5,7 +5,9 @@ pub struct FixRecord {
     __cordl_parent: crate::Assets::OVR::Scripts::Record,
     pub fixMethod: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
     pub targetObject: *mut crate::UnityEngine::Object,
-    pub buttonNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub buttonNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub editModeRequired: bool,
     pub complete: bool,
 }
@@ -31,12 +33,14 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::FixRecord {
 impl crate::Assets::OVR::Scripts::FixRecord {
     pub fn New(
         order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        cat: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         fix: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
         target: *mut crate::UnityEngine::Object,
         editRequired: bool,
-        buttons: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        buttons: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -50,12 +54,14 @@ impl crate::Assets::OVR::Scripts::FixRecord {
     pub fn _ctor(
         &mut self,
         order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        cat: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         fix: *mut crate::Assets::OVR::Scripts::FixMethodDelegate,
         target: *mut crate::UnityEngine::Object,
         editRequired: bool,
-        buttons: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        buttons: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlDataLoader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dataSet: *mut crate::System::Data::DataSet,
     pub _nodeToSchemaMap: *mut crate::System::Data::XmlToDatasetMap,
     pub _nodeToRowMap: *mut crate::System::Collections::Hashtable,
@@ -16,18 +16,18 @@ pub struct XmlDataLoader {
     pub _isTableLevel: bool,
     pub _fromInference: bool,
     pub _dataReader: *mut crate::System::Xml::XmlReader,
-    pub _XSD_XMLNS_NS: *mut crate::System::Object,
-    pub _XDR_SCHEMA: *mut crate::System::Object,
-    pub _XDRNS: *mut crate::System::Object,
-    pub _SQL_SYNC: *mut crate::System::Object,
-    pub _UPDGNS: *mut crate::System::Object,
-    pub _XSD_SCHEMA: *mut crate::System::Object,
-    pub _XSDNS: *mut crate::System::Object,
-    pub _DFFNS: *mut crate::System::Object,
-    pub _MSDNS: *mut crate::System::Object,
-    pub _DIFFID: *mut crate::System::Object,
-    pub _HASCHANGES: *mut crate::System::Object,
-    pub _ROWORDER: *mut crate::System::Object,
+    pub _XSD_XMLNS_NS: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _XDR_SCHEMA: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _XDRNS: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _SQL_SYNC: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _UPDGNS: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _XSD_SCHEMA: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _XSDNS: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _DFFNS: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _MSDNS: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _DIFFID: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _HASCHANGES: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _ROWORDER: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Data+XmlDataLoader")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XmlDataLoader")]
 impl std::ops::Deref for crate::System::Data::XmlDataLoader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -83,7 +83,7 @@ impl crate::System::Data::XmlDataLoader {
     }
     pub fn FExcludedNamespace(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,11 +114,11 @@ impl crate::System::Data::XmlDataLoader {
     pub fn GetInitialTextFromNodes(
         &mut self,
         n: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Xml::XmlNode>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetInitialTextFromNodes", (n))?;
         Ok(__cordl_ret)
     }
@@ -147,11 +147,11 @@ impl crate::System::Data::XmlDataLoader {
     pub fn GetValueForTextOnlyColums(
         &mut self,
         n: *mut crate::System::Xml::XmlNode,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetValueForTextOnlyColums", (n))?;
         Ok(__cordl_ret)
     }
@@ -188,7 +188,9 @@ impl crate::System::Data::XmlDataLoader {
     pub fn LoadColumn(
         &mut self,
         column: *mut crate::System::Data::DataColumn,
-        foundColumns: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        foundColumns: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -323,7 +325,7 @@ impl crate::System::Data::XmlDataLoader {
         &mut self,
         row: *mut crate::System::Data::DataRow,
         col: *mut crate::System::Data::DataColumn,
-        xmlText: *mut crate::System::String,
+        xmlText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

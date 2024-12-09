@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct V2AttributeCertificateInfoGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub version: *mut crate::Org::BouncyCastle::Asn1::DerInteger,
     pub holder: *mut crate::Org::BouncyCastle::Asn1::X509::Holder,
     pub issuer: *mut crate::Org::BouncyCastle::Asn1::X509::AttCertIssuer,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+V2AttributeCertificateInfoGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Asn1::X509::V2AttributeCertificateInfoGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,9 +48,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::V2AttributeCertificateInfoGenerator {
             .invoke("AddAttribute", (attribute))?;
         Ok(__cordl_ret)
     }
-    pub fn AddAttribute_String_Asn1Encodable0(
+    pub fn AddAttribute_Il2CppString_Asn1Encodable0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

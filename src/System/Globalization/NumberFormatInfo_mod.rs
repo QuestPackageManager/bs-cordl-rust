@@ -2,27 +2,27 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NumberFormatInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub numberGroupSizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub currencyGroupSizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub percentGroupSizes: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub positiveSign: *mut crate::System::String,
-    pub negativeSign: *mut crate::System::String,
-    pub numberDecimalSeparator: *mut crate::System::String,
-    pub numberGroupSeparator: *mut crate::System::String,
-    pub currencyGroupSeparator: *mut crate::System::String,
-    pub currencyDecimalSeparator: *mut crate::System::String,
-    pub currencySymbol: *mut crate::System::String,
-    pub ansiCurrencySymbol: *mut crate::System::String,
-    pub nanSymbol: *mut crate::System::String,
-    pub positiveInfinitySymbol: *mut crate::System::String,
-    pub negativeInfinitySymbol: *mut crate::System::String,
-    pub percentDecimalSeparator: *mut crate::System::String,
-    pub percentGroupSeparator: *mut crate::System::String,
-    pub percentSymbol: *mut crate::System::String,
-    pub perMilleSymbol: *mut crate::System::String,
+    pub positiveSign: *mut quest_hook::libil2cpp::Il2CppString,
+    pub negativeSign: *mut quest_hook::libil2cpp::Il2CppString,
+    pub numberDecimalSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub numberGroupSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub currencyGroupSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub currencyDecimalSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub currencySymbol: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ansiCurrencySymbol: *mut quest_hook::libil2cpp::Il2CppString,
+    pub nanSymbol: *mut quest_hook::libil2cpp::Il2CppString,
+    pub positiveInfinitySymbol: *mut quest_hook::libil2cpp::Il2CppString,
+    pub negativeInfinitySymbol: *mut quest_hook::libil2cpp::Il2CppString,
+    pub percentDecimalSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub percentGroupSeparator: *mut quest_hook::libil2cpp::Il2CppString,
+    pub percentSymbol: *mut quest_hook::libil2cpp::Il2CppString,
+    pub perMilleSymbol: *mut quest_hook::libil2cpp::Il2CppString,
     pub nativeDigits: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_dataItem: i32,
     pub numberDecimalDigits: i32,
@@ -47,7 +47,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+NumberFormatInfo")]
 impl std::ops::Deref for crate::System::Globalization::NumberFormatInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,22 +62,22 @@ impl std::ops::DerefMut for crate::System::Globalization::NumberFormatInfo {
 impl crate::System::Globalization::NumberFormatInfo {
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetFormat(
         &mut self,
         formatType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetFormat", (formatType))?;
         Ok(__cordl_ret)
     }
@@ -170,21 +170,21 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_CurrencyDecimalSeparator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_CurrencyDecimalSeparator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_CurrencyGroupSeparator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_CurrencyGroupSeparator", ())?;
         Ok(__cordl_ret)
     }
@@ -214,11 +214,11 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_CurrencySymbol(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_CurrencySymbol", ())?;
         Ok(__cordl_ret)
     }
@@ -231,31 +231,31 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_NaNSymbol(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NaNSymbol", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NegativeInfinitySymbol(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NegativeInfinitySymbol", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NegativeSign(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NegativeSign", ())?;
         Ok(__cordl_ret)
     }
@@ -268,21 +268,21 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_NumberDecimalSeparator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NumberDecimalSeparator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NumberGroupSeparator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NumberGroupSeparator", ())?;
         Ok(__cordl_ret)
     }
@@ -305,11 +305,11 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_PerMilleSymbol(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PerMilleSymbol", ())?;
         Ok(__cordl_ret)
     }
@@ -322,21 +322,21 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_PercentDecimalSeparator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PercentDecimalSeparator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PercentGroupSeparator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PercentGroupSeparator", ())?;
         Ok(__cordl_ret)
     }
@@ -366,37 +366,37 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn get_PercentSymbol(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PercentSymbol", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PositiveInfinitySymbol(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PositiveInfinitySymbol", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PositiveSign(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PositiveSign", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_NaNSymbol(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -407,7 +407,7 @@ impl crate::System::Globalization::NumberFormatInfo {
     }
     pub fn set_NumberGroupSeparator(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

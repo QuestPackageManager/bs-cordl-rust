@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MobileTlsContext {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub certificateValidator: *mut crate::Mono::Net::Security::ChainValidationHelper,
     pub _Options_k__BackingField: *mut crate::Mono::Net::Security::MonoSslAuthenticationOptions,
     pub _Parent_k__BackingField: *mut crate::Mono::Net::Security::MobileAuthenticatedStream,
     pub _IsServer_k__BackingField: bool,
-    pub _TargetHost_k__BackingField: *mut crate::System::String,
-    pub _ServerName_k__BackingField: *mut crate::System::String,
+    pub _TargetHost_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _ServerName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _AskForClientCertificate_k__BackingField: bool,
     pub _EnabledProtocols_k__BackingField: crate::System::Security::Authentication::SslProtocols,
     pub _ClientCertificates_k__BackingField: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MobileTlsContext")]
 impl std::ops::Deref for crate::Mono::Net::Security::MobileTlsContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -125,7 +125,7 @@ impl crate::Mono::Net::Security::MobileTlsContext {
     pub fn SelectClientCertificate(
         &mut self,
         acceptableIssuers: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
@@ -280,11 +280,11 @@ impl crate::Mono::Net::Security::MobileTlsContext {
     }
     pub fn get_ServerName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ServerName", ())?;
         Ok(__cordl_ret)
     }
@@ -302,11 +302,11 @@ impl crate::Mono::Net::Security::MobileTlsContext {
     }
     pub fn get_TargetHost(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TargetHost", ())?;
         Ok(__cordl_ret)
     }

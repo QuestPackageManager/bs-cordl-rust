@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRScreenshots {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRScreenshots,
 }
 #[cfg(feature = "OVR+OpenVR+CVRScreenshots")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRScreenshots")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRScreenshots {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -81,8 +81,8 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         &mut self,
         pOutScreenshotHandle: quest_hook::libil2cpp::ByRefMut<u32>,
         _cordl_type: crate::OVR::OpenVR::EVRScreenshotType,
-        pchPreviewFilename: *mut crate::System::String,
-        pchVRFilename: *mut crate::System::String,
+        pchPreviewFilename: *mut quest_hook::libil2cpp::Il2CppString,
+        pchVRFilename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -98,8 +98,8 @@ impl crate::OVR::OpenVR::CVRScreenshots {
         &mut self,
         screenshotHandle: u32,
         _cordl_type: crate::OVR::OpenVR::EVRScreenshotType,
-        pchSourcePreviewFilename: *mut crate::System::String,
-        pchSourceVRFilename: *mut crate::System::String,
+        pchSourcePreviewFilename: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSourceVRFilename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,8 +119,8 @@ impl crate::OVR::OpenVR::CVRScreenshots {
     pub fn TakeStereoScreenshot(
         &mut self,
         pOutScreenshotHandle: quest_hook::libil2cpp::ByRefMut<u32>,
-        pchPreviewFilename: *mut crate::System::String,
-        pchVRFilename: *mut crate::System::String,
+        pchPreviewFilename: *mut quest_hook::libil2cpp::Il2CppString,
+        pchVRFilename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::OVR::OpenVR::EVRScreenshotError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

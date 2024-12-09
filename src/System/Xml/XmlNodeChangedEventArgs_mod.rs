@@ -7,8 +7,8 @@ pub struct XmlNodeChangedEventArgs {
     pub node: *mut crate::System::Xml::XmlNode,
     pub oldParent: *mut crate::System::Xml::XmlNode,
     pub newParent: *mut crate::System::Xml::XmlNode,
-    pub oldValue: *mut crate::System::String,
-    pub newValue: *mut crate::System::String,
+    pub oldValue: *mut quest_hook::libil2cpp::Il2CppString,
+    pub newValue: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+XmlNodeChangedEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -34,8 +34,8 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
         node: *mut crate::System::Xml::XmlNode,
         oldParent: *mut crate::System::Xml::XmlNode,
         newParent: *mut crate::System::Xml::XmlNode,
-        oldValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
+        oldValue: *mut quest_hook::libil2cpp::Il2CppString,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
         action: crate::System::Xml::XmlNodeChangedAction,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -52,8 +52,8 @@ impl crate::System::Xml::XmlNodeChangedEventArgs {
         node: *mut crate::System::Xml::XmlNode,
         oldParent: *mut crate::System::Xml::XmlNode,
         newParent: *mut crate::System::Xml::XmlNode,
-        oldValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
+        oldValue: *mut quest_hook::libil2cpp::Il2CppString,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
         action: crate::System::Xml::XmlNodeChangedAction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

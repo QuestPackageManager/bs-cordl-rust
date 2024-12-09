@@ -54,7 +54,9 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
         &mut self,
         action: *mut crate::System::Delegate,
         delay: f32,
-        parameters: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        parameters: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -156,7 +158,9 @@ for crate::UnityEngine::ResourceManagement::Util::DelayedActionManager {
 pub struct DelayedActionManager_DelegateInfo {
     pub m_Id: i32,
     pub m_Delegate: *mut crate::System::Delegate,
-    pub m_Target: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub m_Target: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _InvocationTime_k__BackingField: f32,
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+DelayedActionManager+DelegateInfo")]
@@ -190,8 +194,8 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_Delegate
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -202,7 +206,9 @@ impl crate::UnityEngine::ResourceManagement::Util::DelayedActionManager_Delegate
         &mut self,
         d: *mut crate::System::Delegate,
         invocationTime: f32,
-        p: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        p: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

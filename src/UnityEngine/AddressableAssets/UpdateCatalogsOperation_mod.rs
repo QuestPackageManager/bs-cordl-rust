@@ -121,7 +121,7 @@ impl crate::UnityEngine::AddressableAssets::UpdateCatalogsOperation {
     pub fn Start(
         &mut self,
         catalogIds: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         autoCleanBundleCache: bool,
     ) -> quest_hook::libil2cpp::Result<

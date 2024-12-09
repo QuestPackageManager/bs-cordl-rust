@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoWebRequestHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub allowAutoRedirect: bool,
     pub automaticDecompression: crate::System::Net::DecompressionMethods,
     pub cookieContainer: *mut crate::System::Net::CookieContainer,
@@ -24,7 +24,7 @@ pub struct MonoWebRequestHandler {
     pub serverCertificateValidationCallback: *mut crate::System::Net::Security::RemoteCertificateValidationCallback,
     pub unsafeAuthenticatedConnectionSharing: bool,
     pub sentRequest: bool,
-    pub connectionGroupName: *mut crate::System::String,
+    pub connectionGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     pub timeout: crate::System::Nullable_1<crate::System::TimeSpan>,
     pub disposed: bool,
 }
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Http+MonoWebRequestHandler")]
 impl std::ops::Deref for crate::System::Net::Http::MonoWebRequestHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -160,10 +160,12 @@ impl crate::System::Net::Http::MonoWebRequestHandler {
     }
     pub fn _CreateWebRequest_b__96_0(
         &mut self,
-        t: *mut crate::System::String,
+        t: *mut quest_hook::libil2cpp::Il2CppString,
         lc: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         rc: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
-        ai: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        ai: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
     > {

@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerSpecificSettingsNetSerializable {
-    __cordl_parent: crate::System::Object,
-    pub userId: *mut crate::System::String,
-    pub userName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub leftHanded: bool,
     pub automaticPlayerHeight: bool,
     pub playerHeight: f32,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerSpecificSettingsNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,9 +51,9 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String__cordl_bool__cordl_bool_f32_f32_Color_Color_Color_Color_Color_Color_Color1(
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString__cordl_bool__cordl_bool_f32_f32_Color_Color_Color_Color_Color_Color_Color1(
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         leftHanded: bool,
         automaticPlayerHeight: bool,
         playerHeight: f32,
@@ -110,10 +110,10 @@ impl crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String__cordl_bool__cordl_bool_f32_f32_Color_Color_Color_Color_Color_Color_Color1(
+    pub fn _ctor_Il2CppString_Il2CppString__cordl_bool__cordl_bool_f32_f32_Color_Color_Color_Color_Color_Color_Color1(
         &mut self,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         leftHanded: bool,
         automaticPlayerHeight: bool,
         playerHeight: f32,

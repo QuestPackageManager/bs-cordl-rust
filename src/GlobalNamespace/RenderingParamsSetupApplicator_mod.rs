@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RenderingParamsSetupApplicator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _mainSettingsHandler: *mut crate::BeatSaber::GameSettings::MainSettingsHandler,
     pub _graphicsSettingsHandler: *mut crate::BeatSaber::GameSettings::GraphicSettingsHandler,
     pub _settingsApplicator: *mut crate::GlobalNamespace::SettingsApplicatorSO,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RenderingParamsSetupApplicator")]
 impl std::ops::Deref for crate::GlobalNamespace::RenderingParamsSetupApplicator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl crate::GlobalNamespace::RenderingParamsSetupApplicator {
     pub fn Apply(
         &mut self,
         sceneType: crate::GlobalNamespace::SceneType,
-        optionalEnvironmentSerializedName: *mut crate::System::String,
+        optionalEnvironmentSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,7 @@ impl crate::GlobalNamespace::RenderingParamsSetupApplicator {
     pub fn ApplyGraphicsSettings(
         &mut self,
         sceneType: crate::GlobalNamespace::SceneType,
-        optionalEnvironmentSerializedName: *mut crate::System::String,
+        optionalEnvironmentSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

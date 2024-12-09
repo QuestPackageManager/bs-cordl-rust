@@ -29,11 +29,11 @@ impl crate::Org::BouncyCastle::Utilities::IO::Pem::PemObjectParser {
     pub fn ParseObject(
         &mut self,
         obj: *mut crate::Org::BouncyCastle::Utilities::IO::Pem::PemObject,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseObject", (obj))?;
         Ok(__cordl_ret)
     }

@@ -3,7 +3,10 @@
 #[derive(Debug)]
 pub struct Gen2GcCallback {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
-    pub _callback: *mut crate::System::Func_2<*mut crate::System::Object, bool>,
+    pub _callback: *mut crate::System::Func_2<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+        bool,
+    >,
     pub _weakTargetObj: crate::System::Runtime::InteropServices::GCHandle,
 }
 #[cfg(feature = "System+Gen2GcCallback")]
@@ -45,8 +48,11 @@ impl crate::System::Gen2GcCallback {
     }
     pub fn Setup(
         &mut self,
-        callback: *mut crate::System::Func_2<*mut crate::System::Object, bool>,
-        targetObj: *mut crate::System::Object,
+        callback: *mut crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            bool,
+        >,
+        targetObj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

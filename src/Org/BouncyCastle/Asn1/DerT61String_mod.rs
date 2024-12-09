@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerT61String {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::DerStringBase,
-    pub str: *mut crate::System::String,
+    pub str: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerT61String")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -58,11 +58,11 @@ impl crate::Org::BouncyCastle::Asn1::DerT61String {
     }
     pub fn GetString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetString", ())?;
         Ok(__cordl_ret)
     }
@@ -75,8 +75,8 @@ impl crate::Org::BouncyCastle::Asn1::DerT61String {
             .invoke_void(".ctor", (str))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        str: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -95,9 +95,9 @@ impl crate::Org::BouncyCastle::Asn1::DerT61String {
             .invoke(".ctor", (str))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

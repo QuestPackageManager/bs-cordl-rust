@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InfoBoxAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub info: *mut crate::System::String,
+    pub info: *mut quest_hook::libil2cpp::Il2CppString,
     pub messageType: crate::BGLib::UnityExtension::InfoBoxAttribute_Type,
 }
 #[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute")]
@@ -29,7 +29,7 @@ impl crate::BGLib::UnityExtension::InfoBoxAttribute {
     #[cfg(feature = "BGLib+UnityExtension+InfoBoxAttribute+Type")]
     pub type Type = crate::BGLib::UnityExtension::InfoBoxAttribute_Type;
     pub fn New(
-        info: *mut crate::System::String,
+        info: *mut quest_hook::libil2cpp::Il2CppString,
         messageType: crate::BGLib::UnityExtension::InfoBoxAttribute_Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,7 +40,7 @@ impl crate::BGLib::UnityExtension::InfoBoxAttribute {
     }
     pub fn _ctor(
         &mut self,
-        info: *mut crate::System::String,
+        info: *mut quest_hook::libil2cpp::Il2CppString,
         messageType: crate::BGLib::UnityExtension::InfoBoxAttribute_Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

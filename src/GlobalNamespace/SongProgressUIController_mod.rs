@@ -19,7 +19,7 @@ pub struct SongProgressUIController {
     pub _stringBuilder: *mut crate::System::Text::StringBuilder,
     pub _progressImageRectTransform: *mut crate::UnityEngine::RectTransform,
     pub _songLength: f32,
-    pub _progressMinutesFormatString: *mut crate::System::String,
+    pub _progressMinutesFormatString: *mut quest_hook::libil2cpp::Il2CppString,
     pub _songDidFinish: bool,
 }
 #[cfg(feature = "SongProgressUIController")]

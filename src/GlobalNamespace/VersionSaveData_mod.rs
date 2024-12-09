@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VersionSaveData {
-    __cordl_parent: crate::System::Object,
-    pub version: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "VersionSaveData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "VersionSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::VersionSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

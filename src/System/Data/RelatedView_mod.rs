@@ -7,7 +7,7 @@ pub struct RelatedView {
     pub _childKey: crate::System::Data::DataKey,
     pub _parentRowView: *mut crate::System::Data::DataRowView,
     pub _filterValues: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "System+Data+RelatedView")]
@@ -53,13 +53,13 @@ impl crate::System::Data::RelatedView {
     pub fn GetParentValues(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetParentValues", ())?;
         Ok(__cordl_ret)
     }
@@ -91,7 +91,9 @@ impl crate::System::Data::RelatedView {
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        values: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -101,7 +103,7 @@ impl crate::System::Data::RelatedView {
     }
     pub fn SetIndex(
         &mut self,
-        newSort: *mut crate::System::String,
+        newSort: *mut quest_hook::libil2cpp::Il2CppString,
         newRowStates: crate::System::Data::DataViewRowState,
         newRowFilter: *mut crate::System::Data::IFilter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -132,7 +134,9 @@ impl crate::System::Data::RelatedView {
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        values: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

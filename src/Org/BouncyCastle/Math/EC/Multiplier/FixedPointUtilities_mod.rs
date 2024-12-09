@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedPointUtilities {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+FixedPointUtilities")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,7 +65,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities {
 #[repr(C)]
 #[derive(Debug)]
 pub struct FixedPointUtilities_FixedPointCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
 }
 #[cfg(
@@ -81,7 +81,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::FixedPointUtilities_FixedPointCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

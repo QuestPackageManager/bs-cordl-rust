@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CounterSignatureDigestCalculator {
-    __cordl_parent: crate::System::Object,
-    pub alg: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub alg: *mut quest_hook::libil2cpp::Il2CppString,
     pub data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CounterSignatureDigestCalculator")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Cms+CounterSignatureDigestCalculator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
         Ok(__cordl_ret)
     }
     pub fn New(
-        alg: *mut crate::System::String,
+        alg: *mut quest_hook::libil2cpp::Il2CppString,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Cms::CounterSignatureDigestCalculator {
     }
     pub fn _ctor(
         &mut self,
-        alg: *mut crate::System::String,
+        alg: *mut quest_hook::libil2cpp::Il2CppString,
         data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

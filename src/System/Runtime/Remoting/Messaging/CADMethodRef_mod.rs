@@ -2,13 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CADMethodRef {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ctor: bool,
-    pub typeName: *mut crate::System::String,
-    pub methodName: *mut crate::System::String,
-    pub param_names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub methodName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub param_names: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub generic_arg_names: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodRef")]
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Messaging+CADMethodRef")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::CADMethodRef {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +36,9 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Messaging::CADMeth
 impl crate::System::Runtime::Remoting::Messaging::CADMethodRef {
     pub fn GetTypes(
         &mut self,
-        typeArray: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        typeArray: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     > {

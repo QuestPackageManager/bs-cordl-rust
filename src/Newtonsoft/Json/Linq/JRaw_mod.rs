@@ -37,6 +37,15 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
             .invoke("CloneToken", (settings))?;
         Ok(__cordl_ret)
     }
+    pub fn New_Il2CppObject2(
+        rawJson: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (rawJson))?;
+        Ok(__cordl_object)
+    }
     pub fn New_JRaw0(
         other: *mut crate::Newtonsoft::Json::Linq::JRaw,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -56,14 +65,16 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
             .invoke_void(".ctor", (other, settings))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object2(
-        rawJson: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (rawJson))?;
-        Ok(__cordl_object)
+    pub fn _ctor_Il2CppObject2(
+        &mut self,
+        rawJson: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (rawJson))?;
+        Ok(__cordl_ret)
     }
     pub fn _ctor_JRaw0(
         &mut self,
@@ -86,17 +97,6 @@ impl crate::Newtonsoft::Json::Linq::JRaw {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (other, settings))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Object2(
-        &mut self,
-        rawJson: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (rawJson))?;
         Ok(__cordl_ret)
     }
 }

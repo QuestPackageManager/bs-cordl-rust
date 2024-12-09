@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ByteArrayNetSerializable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _data: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _length: i32,
-    pub _name: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _allowEmpty: bool,
     pub _minLength: i32,
     pub _maxLength: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ByteArrayNetSerializable")]
 impl std::ops::Deref for crate::GlobalNamespace::ByteArrayNetSerializable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         Ok(__cordl_ret)
     }
     pub fn New__cordl_bool1(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_size: i32,
         allowEmpty: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -97,7 +97,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
         Ok(__cordl_object)
     }
     pub fn New_i32__cordl_bool0(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         minLength: i32,
         maxLength: i32,
         allowEmpty: bool,
@@ -156,7 +156,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_size: i32,
         allowEmpty: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::ByteArrayNetSerializable {
     }
     pub fn _ctor_i32__cordl_bool0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         minLength: i32,
         maxLength: i32,
         allowEmpty: bool,

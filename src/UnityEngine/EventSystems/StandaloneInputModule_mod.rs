@@ -10,10 +10,10 @@ pub struct StandaloneInputModule {
     pub m_MousePosition: crate::UnityEngine::Vector2,
     pub m_CurrentFocusedGameObject: *mut crate::UnityEngine::GameObject,
     pub m_InputPointerEvent: *mut crate::UnityEngine::EventSystems::PointerEventData,
-    pub m_HorizontalAxis: *mut crate::System::String,
-    pub m_VerticalAxis: *mut crate::System::String,
-    pub m_SubmitButton: *mut crate::System::String,
-    pub m_CancelButton: *mut crate::System::String,
+    pub m_HorizontalAxis: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_VerticalAxis: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SubmitButton: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CancelButton: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_InputActionsPerSecond: f32,
     pub m_RepeatDelay: f32,
     pub m_ForceModuleActive: bool,
@@ -248,11 +248,11 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn get_cancelButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_cancelButton", ())?;
         Ok(__cordl_ret)
     }
@@ -265,11 +265,11 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn get_horizontalAxis(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_horizontalAxis", ())?;
         Ok(__cordl_ret)
     }
@@ -301,21 +301,21 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn get_submitButton(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_submitButton", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_verticalAxis(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_verticalAxis", ())?;
         Ok(__cordl_ret)
     }
@@ -332,7 +332,7 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn set_cancelButton(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -354,7 +354,7 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn set_horizontalAxis(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -387,7 +387,7 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn set_submitButton(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -398,7 +398,7 @@ impl crate::UnityEngine::EventSystems::StandaloneInputModule {
     }
     pub fn set_verticalAxis(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

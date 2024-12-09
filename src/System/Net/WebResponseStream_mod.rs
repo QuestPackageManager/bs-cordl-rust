@@ -7,13 +7,13 @@ pub struct WebResponseStream {
     pub nextReadCalled: bool,
     pub bufferedEntireContent: bool,
     pub pendingRead: *mut crate::System::Net::WebCompletionSource,
-    pub locker: *mut crate::System::Object,
+    pub locker: *mut quest_hook::libil2cpp::Il2CppObject,
     pub nestedRead: i32,
     pub read_eof: bool,
     pub _RequestStream_k__BackingField: *mut crate::System::Net::WebRequestStream,
     pub _Headers_k__BackingField: *mut crate::System::Net::WebHeaderCollection,
     pub _StatusCode_k__BackingField: crate::System::Net::HttpStatusCode,
-    pub _StatusDescription_k__BackingField: *mut crate::System::String,
+    pub _StatusDescription_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _Version_k__BackingField: *mut crate::System::Version,
     pub _KeepAlive_k__BackingField: bool,
     pub _ChunkedRead_k__BackingField: bool,
@@ -63,7 +63,7 @@ impl crate::System::Net::WebResponseStream {
         &mut self,
         status: crate::System::Net::WebExceptionStatus,
         error: *mut crate::System::Exception,
-        _cordl_where: *mut crate::System::String,
+        _cordl_where: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::WebException> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -282,11 +282,11 @@ impl crate::System::Net::WebResponseStream {
     }
     pub fn get_StatusDescription(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_StatusDescription", ())?;
         Ok(__cordl_ret)
     }
@@ -346,7 +346,7 @@ impl crate::System::Net::WebResponseStream {
     }
     pub fn set_StatusDescription(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

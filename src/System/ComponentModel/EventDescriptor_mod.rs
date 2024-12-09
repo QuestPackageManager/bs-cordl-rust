@@ -25,7 +25,7 @@ impl std::ops::DerefMut for crate::System::ComponentModel::EventDescriptor {
 #[cfg(feature = "System+ComponentModel+EventDescriptor")]
 impl crate::System::ComponentModel::EventDescriptor {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -36,7 +36,7 @@ impl crate::System::ComponentModel::EventDescriptor {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         attrs: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Attribute>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

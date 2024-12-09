@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Required_k__BackingField: bool,
     pub _Type_k__BackingField: crate::Newtonsoft::Json::Schema::JsonSchemaType,
     pub _MinimumLength_k__BackingField: crate::System::Nullable_1<i32>,
@@ -15,17 +15,17 @@ pub struct JsonSchemaModel {
     pub _MinimumItems_k__BackingField: crate::System::Nullable_1<i32>,
     pub _MaximumItems_k__BackingField: crate::System::Nullable_1<i32>,
     pub _Patterns_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _Items_k__BackingField: *mut crate::System::Collections::Generic::IList_1<
         *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     >,
     pub _Properties_k__BackingField: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     >,
     pub _PatternProperties_k__BackingField: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
     >,
     pub _AdditionalProperties_k__BackingField: *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
@@ -46,7 +46,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaModel")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -245,7 +245,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         >,
     > {
@@ -253,7 +253,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         > = __cordl_object.invoke("get_PatternProperties", ())?;
         Ok(__cordl_ret)
@@ -261,13 +261,15 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     pub fn get_Patterns(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Patterns", ())?;
         Ok(__cordl_ret)
     }
@@ -285,7 +287,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         >,
     > {
@@ -293,7 +295,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         > = __cordl_object.invoke("get_Properties", ())?;
         Ok(__cordl_ret)
@@ -505,7 +507,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     pub fn set_PatternProperties(
         &mut self,
         value: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -519,7 +521,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     pub fn set_Patterns(
         &mut self,
         value: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -543,7 +545,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaModel {
     pub fn set_Properties(
         &mut self,
         value: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchemaModel,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

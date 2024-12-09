@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TernaryTreeReadOnly {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nodeBuffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "System+Xml+TernaryTreeReadOnly")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+TernaryTreeReadOnly")]
 impl std::ops::Deref for crate::System::Xml::TernaryTreeReadOnly {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Xml::TernaryTreeReadOnly {
 impl crate::System::Xml::TernaryTreeReadOnly {
     pub fn FindCaseInsensitiveString(
         &mut self,
-        stringToFind: *mut crate::System::String,
+        stringToFind: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<u8> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

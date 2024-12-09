@@ -619,7 +619,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnCollectionHeader_ColumnData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _control_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumn,
     pub _resizeHandle_k__BackingField: *mut crate::UnityEngine::UIElements::Internal::MultiColumnHeaderColumnResizeHandle,
 }
@@ -636,7 +636,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -781,7 +781,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_Sorte
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiColumnCollectionHeader_ViewState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_HasPersistedData: bool,
     pub m_SortDescriptions: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::UIElements::SortColumnDescription,
@@ -799,7 +799,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+Internal+MultiColumnCollectionHeader+ViewState")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -874,7 +874,7 @@ for crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ViewSt
 #[derive(Debug, Clone)]
 pub struct ViewState_MultiColumnCollectionHeader_ColumnState {
     pub index: i32,
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub actualWidth: f32,
     pub width: crate::UnityEngine::UIElements::Length,
     pub visible: bool,

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoTlsStream {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub provider: *mut crate::Mono::Net::Security::MobileTlsProvider,
     pub networkStream: *mut crate::System::Net::Sockets::NetworkStream,
     pub request: *mut crate::System::Net::HttpWebRequest,
     pub settings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
     pub sslStream: *mut crate::System::Net::Security::SslStream,
-    pub sslStreamLock: *mut crate::System::Object,
+    pub sslStreamLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub status: crate::System::Net::WebExceptionStatus,
     pub _CertificateValidationFailed_k__BackingField: bool,
 }
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Net+Security+MonoTlsStream")]
 impl std::ops::Deref for crate::Mono::Net::Security::MonoTlsStream {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

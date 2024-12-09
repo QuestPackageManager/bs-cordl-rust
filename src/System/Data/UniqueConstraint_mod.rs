@@ -6,9 +6,9 @@ pub struct UniqueConstraint {
     pub _key: crate::System::Data::DataKey,
     pub _constraintIndex: *mut crate::System::Data::Index,
     pub _bPrimaryKey: bool,
-    pub _constraintName: *mut crate::System::String,
+    pub _constraintName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _columnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "System+Data+UniqueConstraint")]
@@ -149,7 +149,7 @@ impl crate::System::Data::UniqueConstraint {
     }
     pub fn Create(
         &mut self,
-        constraintName: *mut crate::System::String,
+        constraintName: *mut quest_hook::libil2cpp::Il2CppString,
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -163,7 +163,7 @@ impl crate::System::Data::UniqueConstraint {
     }
     pub fn Equals(
         &mut self,
-        key2: *mut crate::System::Object,
+        key2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -205,8 +205,8 @@ impl crate::System::Data::UniqueConstraint {
             .invoke_void(".ctor", (columns))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray1(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray1(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -217,9 +217,11 @@ impl crate::System::Data::UniqueConstraint {
             .invoke_void(".ctor", (name, columns))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray__cordl_bool3(
-        name: *mut crate::System::String,
-        columnNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub fn New_Il2CppString_Il2CppArray__cordl_bool3(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        columnNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -228,8 +230,8 @@ impl crate::System::Data::UniqueConstraint {
             .invoke_void(".ctor", (name, columnNames, isPrimaryKey))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray__cordl_bool4(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppArray__cordl_bool4(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -275,9 +277,9 @@ impl crate::System::Data::UniqueConstraint {
             .invoke(".ctor", (columns))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray1(
+    pub fn _ctor_Il2CppString_Il2CppArray1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -289,10 +291,12 @@ impl crate::System::Data::UniqueConstraint {
             .invoke(".ctor", (name, columns))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray__cordl_bool3(
+    pub fn _ctor_Il2CppString_Il2CppArray__cordl_bool3(
         &mut self,
-        name: *mut crate::System::String,
-        columnNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        columnNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         isPrimaryKey: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -302,9 +306,9 @@ impl crate::System::Data::UniqueConstraint {
             .invoke(".ctor", (name, columnNames, isPrimaryKey))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray__cordl_bool4(
+    pub fn _ctor_Il2CppString_Il2CppArray__cordl_bool4(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         columns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -320,13 +324,13 @@ impl crate::System::Data::UniqueConstraint {
     pub fn get_ColumnNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ColumnNames", ())?;
         Ok(__cordl_ret)
     }

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ProcurationSyntax {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
-    pub country: *mut crate::System::String,
+    pub country: *mut quest_hook::libil2cpp::Il2CppString,
     pub typeOfSubstitution: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     pub thirdPerson: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     pub certRef: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
@@ -40,8 +40,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_DirectoryString_GeneralName2(
-        country: *mut crate::System::String,
+    pub fn New_Il2CppString_DirectoryString_GeneralName2(
+        country: *mut quest_hook::libil2cpp::Il2CppString,
         typeOfSubstitution: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         thirdPerson: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -51,8 +51,8 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .invoke_void(".ctor", (country, typeOfSubstitution, thirdPerson))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_DirectoryString_IssuerSerial1(
-        country: *mut crate::System::String,
+    pub fn New_Il2CppString_DirectoryString_IssuerSerial1(
+        country: *mut quest_hook::libil2cpp::Il2CppString,
         typeOfSubstitution: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         certRef: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -83,9 +83,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_DirectoryString_GeneralName2(
+    pub fn _ctor_Il2CppString_DirectoryString_GeneralName2(
         &mut self,
-        country: *mut crate::System::String,
+        country: *mut quest_hook::libil2cpp::Il2CppString,
         typeOfSubstitution: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         thirdPerson: *mut crate::Org::BouncyCastle::Asn1::X509::GeneralName,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,9 +96,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
             .invoke(".ctor", (country, typeOfSubstitution, thirdPerson))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_DirectoryString_IssuerSerial1(
+    pub fn _ctor_Il2CppString_DirectoryString_IssuerSerial1(
         &mut self,
-        country: *mut crate::System::String,
+        country: *mut quest_hook::libil2cpp::Il2CppString,
         typeOfSubstitution: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
         certRef: *mut crate::Org::BouncyCastle::Asn1::X509::IssuerSerial,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -123,11 +123,11 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProcurationSyntax {
     }
     pub fn get_Country(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Country", ())?;
         Ok(__cordl_ret)
     }

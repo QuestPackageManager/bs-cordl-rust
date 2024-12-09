@@ -69,7 +69,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::TlsPeer {
         &mut self,
         alertLevel: u8,
         alertDescription: u8,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         cause: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

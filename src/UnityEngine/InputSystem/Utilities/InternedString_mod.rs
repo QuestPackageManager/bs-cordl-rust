@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InternedString {
-    pub m_StringOriginalCase: *mut crate::System::String,
-    pub m_StringLowerCase: *mut crate::System::String,
+    pub m_StringOriginalCase: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_StringLowerCase: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+InternedString")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -35,6 +35,17 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InternedString1(
         &mut self,
         other: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -43,17 +54,6 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -75,8 +75,8 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
     }
     pub fn ToLower(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToLower",
             (),
@@ -85,8 +85,8 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -95,7 +95,7 @@ impl crate::UnityEngine::InputSystem::Utilities::InternedString {
     }
     pub fn _ctor(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

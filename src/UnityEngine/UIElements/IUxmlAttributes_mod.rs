@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::IUxmlAttributes {
 impl crate::UnityEngine::UIElements::IUxmlAttributes {
     pub fn TryGetAttributeValue(
         &mut self,
-        attributeName: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

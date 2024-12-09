@@ -4,8 +4,8 @@
 pub struct PlayerDataFileManagerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _defaultLastSelectedBeatmapCharacteristic: *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
-    pub _buildInSongPackSerializedName: *mut crate::System::String,
-    pub _allSongPackSerializedName: *mut crate::System::String,
+    pub _buildInSongPackSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _allSongPackSerializedName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "PlayerDataFileManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -46,21 +46,21 @@ impl crate::GlobalNamespace::PlayerDataFileManagerSO {
     }
     pub fn get_allSongPackSerializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_allSongPackSerializedName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_buildInSongPackSerializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_buildInSongPackSerializedName", ())?;
         Ok(__cordl_ret)
     }

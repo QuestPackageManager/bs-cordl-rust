@@ -40,7 +40,7 @@ impl crate::Org::BouncyCastle::Utilities::Encoders::IEncoder {
     }
     pub fn DecodeString(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         outStream: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

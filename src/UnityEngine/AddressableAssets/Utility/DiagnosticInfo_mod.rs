@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiagnosticInfo {
-    __cordl_parent: crate::System::Object,
-    pub DisplayName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
     pub ObjectId: i32,
     pub Dependencies: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+Utility+DiagnosticInfo")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ for crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
 impl crate::UnityEngine::AddressableAssets::Utility::DiagnosticInfo {
     pub fn CreateEvent(
         &mut self,
-        category: *mut crate::System::String,
+        category: *mut quest_hook::libil2cpp::Il2CppString,
         eventType: crate::UnityEngine::ResourceManagement::ResourceManager_DiagnosticEventType,
         frame: i32,
         val: i32,

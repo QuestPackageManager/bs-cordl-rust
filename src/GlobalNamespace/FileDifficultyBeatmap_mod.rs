@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileDifficultyBeatmap {
-    __cordl_parent: crate::System::Object,
-    pub _beatmapPath: *mut crate::System::String,
-    pub _lightshowPath: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _beatmapPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _lightshowPath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "FileDifficultyBeatmap")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "FileDifficultyBeatmap")]
 impl std::ops::Deref for crate::GlobalNamespace::FileDifficultyBeatmap {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,53 +28,57 @@ impl std::ops::DerefMut for crate::GlobalNamespace::FileDifficultyBeatmap {
 impl crate::GlobalNamespace::FileDifficultyBeatmap {
     pub fn GetBeatmapString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetBeatmapString", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetBeatmapStringAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetBeatmapStringAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetLightshowString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetLightshowString", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetLightshowStringAsync(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetLightshowStringAsync", ())?;
         Ok(__cordl_ret)
     }
     pub fn New(
-        beatmapPath: *mut crate::System::String,
-        lightshowPath: *mut crate::System::String,
+        beatmapPath: *mut quest_hook::libil2cpp::Il2CppString,
+        lightshowPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -84,8 +88,8 @@ impl crate::GlobalNamespace::FileDifficultyBeatmap {
     }
     pub fn _ctor(
         &mut self,
-        beatmapPath: *mut crate::System::String,
-        lightshowPath: *mut crate::System::String,
+        beatmapPath: *mut quest_hook::libil2cpp::Il2CppString,
+        lightshowPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

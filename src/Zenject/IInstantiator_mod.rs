@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Zenject::IInstantiator {
 impl crate::Zenject::IInstantiator {
     pub fn CreateEmptyGameObject(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,7 +52,7 @@ impl crate::Zenject::IInstantiator {
     pub fn InstantiateComponentOnNewGameObject_IEnumerable_1_2<T>(
         &mut self,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -66,9 +66,9 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiateComponentOnNewGameObject", (extraArgs))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateComponentOnNewGameObject_String1<T>(
+    pub fn InstantiateComponentOnNewGameObject_Il2CppString1<T>(
         &mut self,
-        gameObjectName: *mut crate::System::String,
+        gameObjectName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -81,11 +81,11 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiateComponentOnNewGameObject", (gameObjectName))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateComponentOnNewGameObject_String_IEnumerable_1_3<T>(
+    pub fn InstantiateComponentOnNewGameObject_Il2CppString_IEnumerable_1_3<T>(
         &mut self,
-        gameObjectName: *mut crate::System::String,
+        gameObjectName: *mut quest_hook::libil2cpp::Il2CppString,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -118,7 +118,7 @@ impl crate::Zenject::IInstantiator {
         &mut self,
         gameObject: *mut crate::UnityEngine::GameObject,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<TContract>
     where
@@ -149,7 +149,7 @@ impl crate::Zenject::IInstantiator {
         componentType: *mut crate::System::Type,
         gameObject: *mut crate::UnityEngine::GameObject,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Component> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -178,7 +178,7 @@ impl crate::Zenject::IInstantiator {
         &mut self,
         prefab: *mut crate::UnityEngine::Object,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -213,7 +213,7 @@ impl crate::Zenject::IInstantiator {
         prefab: *mut crate::UnityEngine::Object,
         parentTransform: *mut crate::UnityEngine::Transform,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -260,7 +260,7 @@ impl crate::Zenject::IInstantiator {
         rotation: crate::UnityEngine::Quaternion,
         parentTransform: *mut crate::UnityEngine::Transform,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -283,22 +283,22 @@ impl crate::Zenject::IInstantiator {
         prefab: *mut crate::UnityEngine::Object,
         parentTransform: *mut crate::UnityEngine::Transform,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "InstantiatePrefabForComponent",
                 (concreteType, prefab, parentTransform, extraArgs),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_String0<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString0<T>(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -311,11 +311,11 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiatePrefabResourceForComponent", (resourcePath))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_String_IEnumerable_1_1<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_IEnumerable_1_1<T>(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -329,9 +329,9 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiatePrefabResourceForComponent", (resourcePath, extraArgs))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_String_Transform2<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Transform2<T>(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         parentTransform: *mut crate::UnityEngine::Transform,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -348,12 +348,14 @@ impl crate::Zenject::IInstantiator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_String_Transform_IEnumerable_1_3<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Transform_IEnumerable_1_3<
+        T,
+    >(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         parentTransform: *mut crate::UnityEngine::Transform,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -370,9 +372,11 @@ impl crate::Zenject::IInstantiator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_String_Vector3_Quaternion_Transform4<T>(
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Vector3_Quaternion_Transform4<
+        T,
+    >(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         parentTransform: *mut crate::UnityEngine::Transform,
@@ -391,16 +395,16 @@ impl crate::Zenject::IInstantiator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_String_Vector3_Quaternion_Transform_IEnumerable_1_5<
+    pub fn InstantiatePrefabResourceForComponent_Il2CppString_Vector3_Quaternion_Transform_IEnumerable_1_5<
         T,
     >(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         parentTransform: *mut crate::UnityEngine::Transform,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -417,28 +421,28 @@ impl crate::Zenject::IInstantiator {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResourceForComponent_Type_String_Transform_IEnumerable_1_6(
+    pub fn InstantiatePrefabResourceForComponent_Type_Il2CppString_Transform_IEnumerable_1_6(
         &mut self,
         concreteType: *mut crate::System::Type,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         parentTransform: *mut crate::UnityEngine::Transform,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "InstantiatePrefabResourceForComponent",
                 (concreteType, resourcePath, parentTransform, extraArgs),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiatePrefabResource_String0(
+    pub fn InstantiatePrefabResource_Il2CppString0(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -449,7 +453,7 @@ impl crate::Zenject::IInstantiator {
     }
     pub fn InstantiatePrefabResource_Transform1(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         parentTransform: *mut crate::UnityEngine::Transform,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::GameObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -461,7 +465,7 @@ impl crate::Zenject::IInstantiator {
     }
     pub fn InstantiatePrefabResource_Vector3_Quaternion_Transform2(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         parentTransform: *mut crate::UnityEngine::Transform,
@@ -513,9 +517,9 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiatePrefab", (prefab, position, rotation, parentTransform))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateScriptableObjectResource_String0<T>(
+    pub fn InstantiateScriptableObjectResource_Il2CppString0<T>(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -528,11 +532,11 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiateScriptableObjectResource", (resourcePath))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateScriptableObjectResource_String_IEnumerable_1_1<T>(
+    pub fn InstantiateScriptableObjectResource_Il2CppString_IEnumerable_1_1<T>(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -546,33 +550,33 @@ impl crate::Zenject::IInstantiator {
             .invoke("InstantiateScriptableObjectResource", (resourcePath, extraArgs))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateScriptableObjectResource_Type_String2(
+    pub fn InstantiateScriptableObjectResource_Type_Il2CppString2(
         &mut self,
         scriptableObjectType: *mut crate::System::Type,
-        resourcePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "InstantiateScriptableObjectResource",
                 (scriptableObjectType, resourcePath),
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateScriptableObjectResource_Type_String_IEnumerable_1_3(
+    pub fn InstantiateScriptableObjectResource_Type_Il2CppString_IEnumerable_1_3(
         &mut self,
         scriptableObjectType: *mut crate::System::Type,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "InstantiateScriptableObjectResource",
                 (scriptableObjectType, resourcePath, extraArgs),
@@ -593,7 +597,7 @@ impl crate::Zenject::IInstantiator {
     pub fn Instantiate_IEnumerable_1_1<T>(
         &mut self,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<T>
     where
@@ -609,11 +613,11 @@ impl crate::Zenject::IInstantiator {
     pub fn Instantiate_Type2(
         &mut self,
         concreteType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Instantiate", (concreteType))?;
         Ok(__cordl_ret)
     }
@@ -621,13 +625,13 @@ impl crate::Zenject::IInstantiator {
         &mut self,
         concreteType: *mut crate::System::Type,
         extraArgs: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Instantiate", (concreteType, extraArgs))?;
         Ok(__cordl_ret)
     }

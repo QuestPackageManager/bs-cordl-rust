@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
 impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     pub fn CanResetValue(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,17 +36,17 @@ impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     }
     pub fn GetValue(
         &mut self,
-        component: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (component))?;
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -56,7 +56,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     }
     pub fn ResetValue(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -67,8 +67,8 @@ impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     }
     pub fn SetValue(
         &mut self,
-        component: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +79,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     }
     pub fn ShouldSerializeValue(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +90,7 @@ impl crate::Newtonsoft::Json::Linq::JPropertyDescriptor {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

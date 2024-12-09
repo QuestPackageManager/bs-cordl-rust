@@ -2,28 +2,30 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectProgress {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isInitial: bool,
     pub count: i32,
     pub expectedType: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-    pub expectedTypeInformation: *mut crate::System::Object,
-    pub name: *mut crate::System::String,
+    pub expectedTypeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub objectTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalObjectTypeE,
     pub memberTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberTypeE,
     pub memberValueEnum: crate::System::Runtime::Serialization::Formatters::Binary::InternalMemberValueE,
     pub dtType: *mut crate::System::Type,
     pub numItems: i32,
     pub binaryTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-    pub typeInformation: *mut crate::System::Object,
+    pub typeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
     pub nullCount: i32,
     pub memberLength: i32,
     pub binaryTypeEnumA: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
     >,
     pub typeInformationA: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
-    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     pub pr: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
 }
@@ -36,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectProgress")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +68,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectProgress {
         outBinaryTypeEnum: quest_hook::libil2cpp::ByRefMut<
             crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
         >,
-        outTypeInformation: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        outTypeInformation: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

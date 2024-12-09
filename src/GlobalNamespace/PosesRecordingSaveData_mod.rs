@@ -2,8 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingSaveData {
-    __cordl_parent: crate::System::Object,
-    pub objectIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub objectIds: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
     >,
@@ -16,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PosesRecordingSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +38,9 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
     #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
     pub type TransformsSaveKeyframe = crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe;
     pub fn New(
-        objectIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        objectIds: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
         >,
@@ -50,7 +54,9 @@ impl crate::GlobalNamespace::PosesRecordingSaveData {
     }
     pub fn _ctor(
         &mut self,
-        objectIds: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        objectIds: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         keyframes: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe,
         >,
@@ -78,7 +84,7 @@ for crate::GlobalNamespace::PosesRecordingSaveData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub fieldOfVision: f32,
     pub nearClip: f32,
     pub farClip: f32,
@@ -94,7 +100,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PosesRecordingSaveData+ExternalCameraCalibrationSaveData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -154,7 +160,7 @@ for crate::GlobalNamespace::PosesRecordingSaveData_ExternalCameraCalibrationSave
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingSaveData_PoseSaveData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub posX: f32,
     pub posY: f32,
     pub posZ: f32,
@@ -171,7 +177,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PosesRecordingSaveData+PoseSaveData")]
 impl std::ops::Deref for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -231,7 +237,7 @@ for crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PosesRecordingSaveData_TransformsSaveKeyframe {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub poses: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::PosesRecordingSaveData_PoseSaveData,
     >,
@@ -246,7 +252,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PosesRecordingSaveData+TransformsSaveKeyframe")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PosesRecordingSaveData_TransformsSaveKeyframe {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

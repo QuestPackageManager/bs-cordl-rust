@@ -41,7 +41,7 @@ impl crate::System::Net::NetworkInformation::LinuxIPInterfaceProperties {
     }
     pub fn ParseRouteInfo(
         &mut self,
-        iface: *mut crate::System::String,
+        iface: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Net::NetworkInformation::IPAddressCollection,
     > {

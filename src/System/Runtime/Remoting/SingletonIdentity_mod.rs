@@ -49,7 +49,7 @@ impl crate::System::Runtime::Remoting::SingletonIdentity {
         Ok(__cordl_ret)
     }
     pub fn New(
-        objectUri: *mut crate::System::String,
+        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
         context: *mut crate::System::Runtime::Remoting::Contexts::Context,
         objectType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -74,7 +74,7 @@ impl crate::System::Runtime::Remoting::SingletonIdentity {
     }
     pub fn _ctor(
         &mut self,
-        objectUri: *mut crate::System::String,
+        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
         context: *mut crate::System::Runtime::Remoting::Contexts::Context,
         objectType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

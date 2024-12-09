@@ -3,13 +3,15 @@
 #[derive(Debug)]
 pub struct VisualElementAsset {
     __cordl_parent: crate::UnityEngine::UIElements::UxmlAsset,
-    pub m_Name: *mut crate::System::String,
+    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_RuleIndex: i32,
-    pub m_Text: *mut crate::System::String,
+    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_PickingMode: crate::UnityEngine::UIElements::PickingMode,
-    pub m_Classes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub m_Classes: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub m_StylesheetPaths: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_Stylesheets: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::UIElements::StyleSheet,
@@ -59,13 +61,13 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
     pub fn get_classes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_classes", ())?;
         Ok(__cordl_ret)
     }
@@ -100,13 +102,15 @@ impl crate::UnityEngine::UIElements::VisualElementAsset {
     pub fn get_stylesheetPaths(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_stylesheetPaths", ())?;
         Ok(__cordl_ret)
     }

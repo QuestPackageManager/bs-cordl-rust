@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_tokenizer: *mut crate::System::Net::CookieTokenizer,
 }
 #[cfg(feature = "System+Net+CookieParser")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+CookieParser")]
 impl std::ops::Deref for crate::System::Net::CookieParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::System::Net::CookieParser {
         Ok(__cordl_ret)
     }
     pub fn New(
-        cookieString: *mut crate::System::String,
+        cookieString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -46,7 +46,7 @@ impl crate::System::Net::CookieParser {
     }
     pub fn _ctor(
         &mut self,
-        cookieString: *mut crate::System::String,
+        cookieString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

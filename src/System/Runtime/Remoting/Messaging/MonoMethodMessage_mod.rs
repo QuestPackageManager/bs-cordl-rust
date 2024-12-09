@@ -2,17 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MonoMethodMessage {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub method: *mut crate::System::Reflection::RuntimeMethodInfo,
-    pub args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    pub names: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub args: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub names: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub arg_types: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub ctx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
-    pub rval: *mut crate::System::Object,
+    pub rval: *mut quest_hook::libil2cpp::Il2CppObject,
     pub exc: *mut crate::System::Exception,
     pub asyncResult: *mut crate::System::Runtime::Remoting::Messaging::AsyncResult,
     pub call_type: crate::System::Runtime::Remoting::Messaging::CallType,
-    pub uri: *mut crate::System::String,
+    pub uri: *mut quest_hook::libil2cpp::Il2CppString,
     pub properties: *mut crate::System::Runtime::Remoting::Messaging::MCMDictionary,
     pub identity: *mut crate::System::Runtime::Remoting::Identity,
     pub methodSignature: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -27,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Messaging+MonoMethodMessage")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,18 +48,20 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     pub fn GetArg(
         &mut self,
         arg_num: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetArg", (arg_num))?;
         Ok(__cordl_ret)
     }
     pub fn InitMessage(
         &mut self,
         method: *mut crate::System::Reflection::RuntimeMethodInfo,
-        out_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        out_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,7 +82,9 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     }
     pub fn New_MethodBase_Il2CppArray0(
         method: *mut crate::System::Reflection::MethodBase,
-        out_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        out_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,8 +94,12 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     }
     pub fn New_MethodInfo_Il2CppArray_Il2CppArray1(
         minfo: *mut crate::System::Reflection::MethodInfo,
-        in_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        out_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        in_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        out_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -95,10 +107,12 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
             .invoke_void(".ctor", (minfo, in_args, out_args))?;
         Ok(__cordl_object)
     }
-    pub fn New_Type_String_Il2CppArray2(
+    pub fn New_Type_Il2CppString_Il2CppArray2(
         _cordl_type: *mut crate::System::Type,
-        methodName: *mut crate::System::String,
-        in_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        in_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -136,7 +150,9 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     pub fn _ctor_MethodBase_Il2CppArray0(
         &mut self,
         method: *mut crate::System::Reflection::MethodBase,
-        out_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        out_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -148,8 +164,12 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     pub fn _ctor_MethodInfo_Il2CppArray_Il2CppArray1(
         &mut self,
         minfo: *mut crate::System::Reflection::MethodInfo,
-        in_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        out_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        in_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        out_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -158,11 +178,13 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
             .invoke(".ctor", (minfo, in_args, out_args))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Type_String_Il2CppArray2(
+    pub fn _ctor_Type_Il2CppString_Il2CppArray2(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        methodName: *mut crate::System::String,
-        in_args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        in_args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -181,13 +203,13 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     pub fn get_Args(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_Args", ())?;
         Ok(__cordl_ret)
     }
@@ -249,21 +271,21 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     }
     pub fn get_MethodName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_MethodName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_MethodSignature(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_MethodSignature", ())?;
         Ok(__cordl_ret)
     }
@@ -277,13 +299,13 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     pub fn get_OutArgs(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_OutArgs", ())?;
         Ok(__cordl_ret)
     }
@@ -299,31 +321,31 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     }
     pub fn get_ReturnValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_ReturnValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_TypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TypeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Uri(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Uri", ())?;
         Ok(__cordl_ret)
     }
@@ -340,7 +362,7 @@ impl crate::System::Runtime::Remoting::Messaging::MonoMethodMessage {
     }
     pub fn set_Uri(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

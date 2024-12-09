@@ -5,7 +5,7 @@ pub struct AchievementsModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _platformAchievementsHandler: *mut crate::GlobalNamespace::IPlatformAchievementsHandler,
     pub _unlockedAchievementIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _initialized: bool,
 }
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::AchievementsModelSO {
         &mut self,
         result: crate::GlobalNamespace::IPlatformAchievementsHandler_GetUnlockedAchievementsResult,
         achievementIds: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

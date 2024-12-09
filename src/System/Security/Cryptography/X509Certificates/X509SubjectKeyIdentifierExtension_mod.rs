@@ -6,7 +6,7 @@
 pub struct X509SubjectKeyIdentifierExtension {
     __cordl_parent: crate::System::Security::Cryptography::X509Certificates::X509Extension,
     pub _subjectKeyIdentifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _ski: *mut crate::System::String,
+    pub _ski: *mut quest_hook::libil2cpp::Il2CppString,
     pub _status: crate::System::Security::Cryptography::AsnDecodeStatus,
 }
 #[cfg(
@@ -104,6 +104,16 @@ impl crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIden
             .invoke_void(".ctor", (subjectKeyIdentifier, critical))?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString__cordl_bool3(
+        subjectKeyIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
+        critical: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (subjectKeyIdentifier, critical))?;
+        Ok(__cordl_object)
+    }
     pub fn New_PublicKey_X509SubjectKeyIdentifierHashAlgorithm__cordl_bool5(
         key: *mut crate::System::Security::Cryptography::X509Certificates::PublicKey,
         algorithm: crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIdentifierHashAlgorithm,
@@ -125,24 +135,14 @@ impl crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIden
             .invoke_void(".ctor", (key, critical))?;
         Ok(__cordl_object)
     }
-    pub fn New_String__cordl_bool3(
-        subjectKeyIdentifier: *mut crate::System::String,
-        critical: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (subjectKeyIdentifier, critical))?;
-        Ok(__cordl_object)
-    }
     pub fn ToString(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (multiLine))?;
         Ok(__cordl_ret)
     }
@@ -180,6 +180,18 @@ impl crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIden
             .invoke(".ctor", (subjectKeyIdentifier, critical))?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppString__cordl_bool3(
+        &mut self,
+        subjectKeyIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
+        critical: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (subjectKeyIdentifier, critical))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_PublicKey_X509SubjectKeyIdentifierHashAlgorithm__cordl_bool5(
         &mut self,
         key: *mut crate::System::Security::Cryptography::X509Certificates::PublicKey,
@@ -205,25 +217,13 @@ impl crate::System::Security::Cryptography::X509Certificates::X509SubjectKeyIden
             .invoke(".ctor", (key, critical))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String__cordl_bool3(
-        &mut self,
-        subjectKeyIdentifier: *mut crate::System::String,
-        critical: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (subjectKeyIdentifier, critical))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_SubjectKeyIdentifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SubjectKeyIdentifier", ())?;
         Ok(__cordl_ret)
     }

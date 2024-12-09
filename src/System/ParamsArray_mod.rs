@@ -2,10 +2,12 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ParamsArray {
-    pub _arg0: *mut crate::System::Object,
-    pub _arg1: *mut crate::System::Object,
-    pub _arg2: *mut crate::System::Object,
-    pub _args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub _arg0: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _arg1: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _arg2: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _args: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
 }
 #[cfg(feature = "System+ParamsArray")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -26,8 +28,8 @@ impl crate::System::ParamsArray {
     pub fn GetAtSlow(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetAtSlow",
             (index),
@@ -36,7 +38,9 @@ impl crate::System::ParamsArray {
     }
     pub fn _ctor_Il2CppArray3(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -45,9 +49,9 @@ impl crate::System::ParamsArray {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object0(
+    pub fn _ctor_Il2CppObject0(
         &mut self,
-        arg0: *mut crate::System::Object,
+        arg0: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -56,10 +60,10 @@ impl crate::System::ParamsArray {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_Object1(
+    pub fn _ctor_Il2CppObject_Il2CppObject1(
         &mut self,
-        arg0: *mut crate::System::Object,
-        arg1: *mut crate::System::Object,
+        arg0: *mut quest_hook::libil2cpp::Il2CppObject,
+        arg1: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -68,11 +72,11 @@ impl crate::System::ParamsArray {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_Object_Object2(
+    pub fn _ctor_Il2CppObject_Il2CppObject_Il2CppObject2(
         &mut self,
-        arg0: *mut crate::System::Object,
-        arg1: *mut crate::System::Object,
-        arg2: *mut crate::System::Object,
+        arg0: *mut quest_hook::libil2cpp::Il2CppObject,
+        arg1: *mut quest_hook::libil2cpp::Il2CppObject,
+        arg2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -84,8 +88,8 @@ impl crate::System::ParamsArray {
     pub fn get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Item",
             (index),

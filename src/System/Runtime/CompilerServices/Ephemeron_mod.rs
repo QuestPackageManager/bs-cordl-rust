@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct Ephemeron {
-    pub key: *mut crate::System::Object,
-    pub value: *mut crate::System::Object,
+    pub key: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+Ephemeron")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

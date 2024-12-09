@@ -66,9 +66,9 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
     }
     pub fn Init_Action_1_0(
         &mut self,
-        title: *mut crate::System::String,
-        message: *mut crate::System::String,
-        buttonText: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        buttonText: *mut quest_hook::libil2cpp::Il2CppString,
         didFinishAction: *mut crate::System::Action_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,12 +78,12 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
             .invoke("Init", (title, message, buttonText, didFinishAction))?;
         Ok(__cordl_ret)
     }
-    pub fn Init_String_Action_1_1(
+    pub fn Init_Il2CppString_Action_1_1(
         &mut self,
-        title: *mut crate::System::String,
-        message: *mut crate::System::String,
-        firstButtonText: *mut crate::System::String,
-        secondButtonText: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        firstButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+        secondButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         didFinishAction: *mut crate::System::Action_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -96,13 +96,13 @@ impl crate::GlobalNamespace::SimpleDialogPromptViewController {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn Init_String_String_Action_1_2(
+    pub fn Init_Il2CppString_Il2CppString_Action_1_2(
         &mut self,
-        title: *mut crate::System::String,
-        message: *mut crate::System::String,
-        firstButtonText: *mut crate::System::String,
-        secondButtonText: *mut crate::System::String,
-        thirdButtonText: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        firstButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+        secondButtonText: *mut quest_hook::libil2cpp::Il2CppString,
+        thirdButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         didFinishAction: *mut crate::System::Action_1<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

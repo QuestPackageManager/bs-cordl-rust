@@ -2,9 +2,11 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ArgumentOption {
-    pub name: *mut crate::System::String,
-    pub identifiers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub hint: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub identifiers: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub hint: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_type: crate::BGLib::DotnetExtension::CommandLine::ArgumentType,
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+ArgumentOption")]
@@ -28,7 +30,7 @@ for crate::BGLib::DotnetExtension::CommandLine::ArgumentOption {
 impl crate::BGLib::DotnetExtension::CommandLine::ArgumentOption {
     pub fn ValidateArgumentValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -39,10 +41,12 @@ impl crate::BGLib::DotnetExtension::CommandLine::ArgumentOption {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
-        hint: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        hint: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::BGLib::DotnetExtension::CommandLine::ArgumentType,
-        identifiers: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        identifiers: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

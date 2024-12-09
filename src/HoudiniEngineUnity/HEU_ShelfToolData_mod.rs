@@ -2,15 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_ShelfToolData {
-    __cordl_parent: crate::System::Object,
-    pub _name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _toolType: crate::HoudiniEngineUnity::HEU_ShelfToolData_ToolType,
-    pub _toolTip: *mut crate::System::String,
-    pub _iconPath: *mut crate::System::String,
-    pub _assetPath: *mut crate::System::String,
-    pub _helpURL: *mut crate::System::String,
-    pub _targets: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub _jsonPath: *mut crate::System::String,
+    pub _toolTip: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _iconPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _helpURL: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _targets: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _jsonPath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_ShelfToolData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_ShelfToolData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

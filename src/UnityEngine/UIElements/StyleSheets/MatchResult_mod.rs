@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct MatchResult {
     pub errorCode: crate::UnityEngine::UIElements::StyleSheets::MatchResultErrorCode,
-    pub errorValue: *mut crate::System::String,
+    pub errorValue: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+MatchResult")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

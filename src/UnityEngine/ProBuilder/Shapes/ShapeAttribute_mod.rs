@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ShapeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+ShapeAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::ShapeAttribu
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+ShapeAttribute")]
 impl crate::UnityEngine::ProBuilder::Shapes::ShapeAttribute {
     pub fn New(
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ShapeAttribute {
     }
     pub fn _ctor(
         &mut self,
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

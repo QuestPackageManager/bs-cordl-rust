@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderVariant_ShaderVariantsSO_Variant {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _passType: crate::UnityEngine::Rendering::PassType,
-    pub _keywords: *mut crate::System::String,
+    pub _keywords: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant+Variant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ for crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
 impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     pub fn New(
         passType: crate::UnityEngine::Rendering::PassType,
-        keywords: *mut crate::System::String,
+        keywords: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,7 +41,7 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     pub fn _ctor(
         &mut self,
         passType: crate::UnityEngine::Rendering::PassType,
-        keywords: *mut crate::System::String,
+        keywords: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,11 +52,11 @@ impl crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant {
     }
     pub fn get_keywords(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_keywords", ())?;
         Ok(__cordl_ret)
     }
@@ -171,7 +171,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ShaderVariant
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShaderVariantsSO_ShaderVariant {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _variants: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::ShaderVariant_ShaderVariantsSO_Variant,
     >,
@@ -184,7 +184,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ShaderVariantsSO+ShaderVariant")]
 impl std::ops::Deref for crate::GlobalNamespace::ShaderVariantsSO_ShaderVariant {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

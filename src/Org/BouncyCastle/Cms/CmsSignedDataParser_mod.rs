@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
 impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
     pub fn GetAttributeCertificates(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
     > {
@@ -51,7 +51,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
     }
     pub fn GetCertificates(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
     > {
@@ -64,7 +64,7 @@ impl crate::Org::BouncyCastle::Cms::CmsSignedDataParser {
     }
     pub fn GetCrls(
         &mut self,
-        _cordl_type: *mut crate::System::String,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::X509::Store::IX509Store,
     > {

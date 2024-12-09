@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AddressablesImpl {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ResourceManager: *mut crate::UnityEngine::ResourceManagement::ResourceManager,
     pub m_InstanceProvider: *mut crate::UnityEngine::ResourceManagement::ResourceProviders::IInstanceProvider,
     pub m_CatalogRequestsTimeout: i32,
@@ -14,7 +14,9 @@ pub struct AddressablesImpl {
         *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
     >,
     pub m_ActiveCheckUpdateOperation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     >,
     pub m_ActiveUpdateOperation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
         *mut crate::System::Collections::Generic::List_1<
@@ -31,7 +33,7 @@ pub struct AddressablesImpl {
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     >,
     pub m_resultToHandle: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
     >,
     pub m_SceneInstances: *mut crate::System::Collections::Generic::HashSet_1<
@@ -49,7 +51,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+AddressablesImpl")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AddressablesImpl {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -204,7 +206,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     pub fn AddResourceLocator(
         &mut self,
         loc: *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
-        localCatalogHash: *mut crate::System::String,
+        localCatalogHash: *mut quest_hook::libil2cpp::Il2CppString,
         remoteCatalogLocation: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -288,14 +290,18 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         autoReleaseHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object.invoke("CheckForCatalogUpdates", (autoReleaseHandle))?;
         Ok(__cordl_ret)
     }
@@ -304,14 +310,18 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         autoReleaseHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         > = __cordl_object
             .invoke("CheckForCatalogUpdatesWithChain", (autoReleaseHandle))?;
         Ok(__cordl_ret)
@@ -341,7 +351,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     pub fn CleanBundleCacheWithChain_IEnumerable_1_1(
         &mut self,
         catalogIds: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         forceSingleThreading: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -382,7 +392,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     pub fn CleanBundleCache_IEnumerable_1_0(
         &mut self,
         catalogIds: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         forceSingleThreading: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -437,9 +447,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("ClearDependencyCacheAsync", (locations, autoReleaseHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn ClearDependencyCacheAsync_Object0(
+    pub fn ClearDependencyCacheAsync_Il2CppObject0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         autoReleaseHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -457,7 +467,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn ClearDependencyCacheForKey(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -519,9 +529,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("CreateCatalogLocationWithHashDependencies", (catalogLocation))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateCatalogLocationWithHashDependencies_String1<T>(
+    pub fn CreateCatalogLocationWithHashDependencies_Il2CppString1<T>(
         &mut self,
-        catalogLocation: *mut crate::System::String,
+        catalogLocation: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase,
     >
@@ -536,10 +546,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("CreateCatalogLocationWithHashDependencies", (catalogLocation))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateCatalogLocationWithHashDependencies_String_String2<T>(
+    pub fn CreateCatalogLocationWithHashDependencies_Il2CppString_Il2CppString2<T>(
         &mut self,
-        catalogPath: *mut crate::System::String,
-        hashFilePath: *mut crate::System::String,
+        catalogPath: *mut quest_hook::libil2cpp::Il2CppString,
+        hashFilePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::ResourceManagement::ResourceLocations::ResourceLocationBase,
     >
@@ -642,10 +652,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn DownloadDependenciesAsyncWithChain_Object__cordl_bool0(
+    pub fn DownloadDependenciesAsyncWithChain_Il2CppObject__cordl_bool0(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         autoReleaseHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
@@ -691,9 +701,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("DownloadDependenciesAsync", (locations, autoReleaseHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn DownloadDependenciesAsync_Object__cordl_bool0(
+    pub fn DownloadDependenciesAsync_Il2CppObject__cordl_bool0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         autoReleaseHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
@@ -718,12 +728,12 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn EvaluateKey(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("EvaluateKey", (obj))?;
         Ok(__cordl_ret)
     }
@@ -743,9 +753,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("GetDownloadSizeAsync", (keys))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDownloadSizeAsync_Object0(
+    pub fn GetDownloadSizeAsync_Il2CppObject0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
@@ -776,10 +786,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("GetDownloadSizeWithChain", (dep, keys))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDownloadSizeWithChain_Object0(
+    pub fn GetDownloadSizeWithChain_Il2CppObject0(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             i64,
@@ -805,7 +815,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn GetLocatorInfo(
         &mut self,
-        c: *mut crate::System::String,
+        c: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::AddressableAssets::ResourceLocatorInfo,
     > {
@@ -850,9 +860,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("GetResourceLocations", (keys, _cordl_type, merge, locations))?;
         Ok(__cordl_ret)
     }
-    pub fn GetResourceLocations_Object_ByRefMut0(
+    pub fn GetResourceLocations_Il2CppObject_ByRefMut0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
         locations: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::IList_1<
@@ -882,10 +892,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("InitializeAsync", ())?;
         Ok(__cordl_ret)
     }
-    pub fn InitializeAsync_String_String__cordl_bool0(
+    pub fn InitializeAsync_Il2CppString_Il2CppString__cordl_bool0(
         &mut self,
-        runtimeDataPath: *mut crate::System::String,
-        providerSuffix: *mut crate::System::String,
+        runtimeDataPath: *mut quest_hook::libil2cpp::Il2CppString,
+        providerSuffix: *mut quest_hook::libil2cpp::Il2CppString,
         autoReleaseHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -986,9 +996,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateAsync_Object_InstantiationParameters__cordl_bool4(
+    pub fn InstantiateAsync_Il2CppObject_InstantiationParameters__cordl_bool4(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateParameters: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
         trackHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -1005,9 +1015,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("InstantiateAsync", (key, instantiateParameters, trackHandle))?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateAsync_Object_Transform__cordl_bool__cordl_bool2(
+    pub fn InstantiateAsync_Il2CppObject_Transform__cordl_bool__cordl_bool2(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         parent: *mut crate::UnityEngine::Transform,
         instantiateInWorldSpace: bool,
         trackHandle: bool,
@@ -1028,9 +1038,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateAsync_Object_Vector3_Quaternion_Transform__cordl_bool3(
+    pub fn InstantiateAsync_Il2CppObject_Vector3_Quaternion_Transform__cordl_bool3(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
         parent: *mut crate::UnityEngine::Transform,
@@ -1072,10 +1082,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn InstantiateWithChain_Object0(
+    pub fn InstantiateWithChain_Il2CppObject0(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateParameters: crate::UnityEngine::ResourceManagement::ResourceProviders::InstantiationParameters,
         trackHandle: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -1148,9 +1158,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("LoadAssetAsync", (location))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAssetAsync_Object1<TObject>(
+    pub fn LoadAssetAsync_Il2CppObject1<TObject>(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
@@ -1189,10 +1199,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("LoadAssetWithChain", (dep, loc))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAssetWithChain_Object1<TObject>(
+    pub fn LoadAssetWithChain_Il2CppObject1<TObject>(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             TObject,
@@ -1265,9 +1275,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAssetsAsync_Object__cordl_bool2<TObject>(
+    pub fn LoadAssetsAsync_Il2CppObject__cordl_bool2<TObject>(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action_1<TObject>,
         releaseDependenciesOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -1345,10 +1355,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn LoadAssetsWithChain_Object__cordl_bool2<TObject>(
+    pub fn LoadAssetsWithChain_Il2CppObject__cordl_bool2<TObject>(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action_1<TObject>,
         releaseDependenciesOnFailure: bool,
     ) -> quest_hook::libil2cpp::Result<
@@ -1374,9 +1384,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn LoadContentCatalogAsync(
         &mut self,
-        catalogPath: *mut crate::System::String,
+        catalogPath: *mut quest_hook::libil2cpp::Il2CppString,
         autoReleaseHandle: bool,
-        providerSuffix: *mut crate::System::String,
+        providerSuffix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             *mut crate::UnityEngine::AddressableAssets::ResourceLocators::IResourceLocator,
@@ -1417,9 +1427,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("LoadResourceLocationsAsync", (keys, mode, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadResourceLocationsAsync_Object_Type1(
+    pub fn LoadResourceLocationsAsync_Il2CppObject_Type1(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -1462,10 +1472,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             .invoke("LoadResourceLocationsWithChain", (dep, keys, mode, _cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadResourceLocationsWithChain_Object_Type1(
+    pub fn LoadResourceLocationsWithChain_Il2CppObject_Type1(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
@@ -1549,9 +1559,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn LoadSceneAsync_Object0(
+    pub fn LoadSceneAsync_Il2CppObject0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
             crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
@@ -1565,9 +1575,9 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         > = __cordl_object.invoke("LoadSceneAsync", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn LoadSceneAsync_Object_LoadSceneParameters__cordl_bool_i32__cordl_bool1(
+    pub fn LoadSceneAsync_Il2CppObject_LoadSceneParameters__cordl_bool_i32__cordl_bool1(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         loadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
         activateOnLoad: bool,
         priority: i32,
@@ -1613,10 +1623,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn LoadSceneWithChain_Object_LoadSceneParameters0(
+    pub fn LoadSceneWithChain_Il2CppObject_LoadSceneParameters0(
         &mut self,
         dep: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         loadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
         activateOnLoad: bool,
         priority: i32,
@@ -1639,7 +1649,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn Log(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1650,7 +1660,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn LogError(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1661,8 +1671,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn LogErrorFormat(
         &mut self,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1696,8 +1708,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn LogFormat(
         &mut self,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1708,7 +1722,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn LogWarning(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1719,8 +1733,10 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn LogWarningFormat(
         &mut self,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1868,12 +1884,12 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn ResolveInternalId(
         &mut self,
-        id: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ResolveInternalId", (id))?;
         Ok(__cordl_ret)
     }
@@ -1992,7 +2008,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     pub fn UpdateCatalogs(
         &mut self,
         catalogIds: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         autoReleaseHandle: bool,
         autoCleanBundleCache: bool,
@@ -2104,11 +2120,11 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn get_BuildPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_BuildPath", ())?;
         Ok(__cordl_ret)
     }
@@ -2123,14 +2139,14 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_CatalogsWithAvailableUpdates", ())?;
         Ok(__cordl_ret)
     }
@@ -2163,7 +2179,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Func_2<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2171,17 +2187,17 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         );
         let __cordl_ret: *mut crate::System::Func_2<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_InternalIdTransformFunc", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_PlayerBuildDataPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_PlayerBuildDataPath", ())?;
         Ok(__cordl_ret)
     }
@@ -2214,11 +2230,11 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn get_RuntimePath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_RuntimePath", ())?;
         Ok(__cordl_ret)
     }
@@ -2238,11 +2254,11 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
     }
     pub fn get_StreamingAssetsSubFolder(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_StreamingAssetsSubFolder", ())?;
         Ok(__cordl_ret)
     }
@@ -2294,7 +2310,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl {
         &mut self,
         value: *mut crate::System::Func_2<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -2339,7 +2355,7 @@ pub struct AddressablesImpl_LoadResourceLocationKeyOp {
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
     >,
-    pub m_Keys: *mut crate::System::Object,
+    pub m_Keys: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_locations: *mut crate::System::Collections::Generic::IList_1<
         *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
@@ -2395,7 +2411,7 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
         &mut self,
         aa: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
         t: *mut crate::System::Type,
-        keys: *mut crate::System::Object,
+        keys: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -2430,11 +2446,11 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }
@@ -2555,11 +2571,11 @@ impl crate::UnityEngine::AddressableAssets::AddressablesImpl_LoadResourceLocatio
     }
     pub fn get_DebugName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DebugName", ())?;
         Ok(__cordl_ret)
     }

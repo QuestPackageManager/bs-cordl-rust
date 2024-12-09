@@ -51,9 +51,9 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S1ParametersGenerator {
             .invoke("GenerateDerivedMacParameters", (keySize))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateDerivedParameters_String_i32_1(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_1(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         keySize: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
@@ -65,9 +65,9 @@ impl crate::Org::BouncyCastle::Crypto::Generators::Pkcs5S1ParametersGenerator {
             .invoke("GenerateDerivedParameters", (algorithm, keySize))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateDerivedParameters_String_i32_i32_3(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         keySize: i32,
         ivSize: i32,
     ) -> quest_hook::libil2cpp::Result<

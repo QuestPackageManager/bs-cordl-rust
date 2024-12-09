@@ -73,7 +73,7 @@ for crate::GlobalNamespace::Noise3DTexturesGenerator {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct Noise3DTexturesGenerator_MaterialPropertyNameCouple {
-    pub texturePropertyName: *mut crate::System::String,
+    pub texturePropertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub material: *mut crate::UnityEngine::Material,
 }
 #[cfg(feature = "Noise3DTexturesGenerator+MaterialPropertyNameCouple")]
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct Noise3DTexturesGenerator_MaterialTextureParamsCouple {
-    pub globalPropertyName: *mut crate::System::String,
+    pub globalPropertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub materialPropertyNameCouples: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::GlobalNamespace::Noise3DTexturesGenerator_MaterialPropertyNameCouple,
     >,

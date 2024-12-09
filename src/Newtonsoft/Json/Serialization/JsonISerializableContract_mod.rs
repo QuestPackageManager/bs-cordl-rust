@@ -4,7 +4,7 @@
 pub struct JsonISerializableContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
     pub _ISerializableCreator_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonISerializableContract")]
@@ -54,21 +54,21 @@ impl crate::Newtonsoft::Json::Serialization::JsonISerializableContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_ISerializableCreator", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_ISerializableCreator(
         &mut self,
         value: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

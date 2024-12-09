@@ -102,8 +102,8 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_f32_f32_f32_f32_1(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString_f32_f32_f32_f32_1(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         minValue: f32,
         maxValue: f32,
         minLimit: f32,
@@ -243,9 +243,9 @@ impl crate::UnityEngine::UIElements::MinMaxSlider {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_f32_f32_f32_f32_1(
+    pub fn _ctor_Il2CppString_f32_f32_f32_f32_1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         minValue: f32,
         maxValue: f32,
         minLimit: f32,

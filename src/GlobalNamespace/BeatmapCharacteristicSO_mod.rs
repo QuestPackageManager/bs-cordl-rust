@@ -4,10 +4,10 @@
 pub struct BeatmapCharacteristicSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _icon: *mut crate::UnityEngine::Sprite,
-    pub _descriptionLocalizationKey: *mut crate::System::String,
-    pub _characteristicNameLocalizationKey: *mut crate::System::String,
-    pub _serializedName: *mut crate::System::String,
-    pub _compoundIdPartName: *mut crate::System::String,
+    pub _descriptionLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _characteristicNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _compoundIdPartName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _sortingOrder: i32,
     pub _containsRotationEvents: bool,
     pub _requires360Movement: bool,
@@ -52,21 +52,21 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSO {
     }
     pub fn get_characteristicNameLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_characteristicNameLocalizationKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_compoundIdPartName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_compoundIdPartName", ())?;
         Ok(__cordl_ret)
     }
@@ -79,11 +79,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSO {
     }
     pub fn get_descriptionLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_descriptionLocalizationKey", ())?;
         Ok(__cordl_ret)
     }
@@ -113,11 +113,11 @@ impl crate::GlobalNamespace::BeatmapCharacteristicSO {
     }
     pub fn get_serializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_serializedName", ())?;
         Ok(__cordl_ret)
     }

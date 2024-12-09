@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::UnityEngine::AndroidJavaRunnableProxy {
 impl crate::UnityEngine::AndroidJavaRunnableProxy {
     pub fn Invoke(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         javaArgs: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

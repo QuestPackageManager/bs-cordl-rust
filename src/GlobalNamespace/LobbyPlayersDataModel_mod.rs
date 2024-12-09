@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LobbyPlayersDataModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _menuRpcManager: *mut crate::GlobalNamespace::IMenuRpcManager,
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _beatmapLevelsModel: *mut crate::GlobalNamespace::BeatmapLevelsModel,
@@ -10,12 +10,14 @@ pub struct LobbyPlayersDataModel {
     pub _lobbyPlayerPermissionsModel: *mut crate::GlobalNamespace::LobbyPlayerPermissionsModel,
     pub _emptyLobbyPlayerData: *mut crate::GlobalNamespace::LobbyPlayerData,
     pub _playersData: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::LobbyPlayerData,
     >,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
-    pub _partyOwnerId_k__BackingField: *mut crate::System::String,
-    pub didChangeEvent: *mut crate::System::Action_1<*mut crate::System::String>,
+    pub _partyOwnerId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub didChangeEvent: *mut crate::System::Action_1<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "LobbyPlayersDataModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -24,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LobbyPlayersDataModel")]
 impl std::ops::Deref for crate::GlobalNamespace::LobbyPlayersDataModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -95,7 +97,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn ContainsKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +130,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
                 *mut crate::GlobalNamespace::ILobbyPlayerData,
             >,
         >,
@@ -138,7 +140,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
                 *mut crate::GlobalNamespace::ILobbyPlayerData,
             >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
@@ -146,7 +148,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn GetOrCreateLobbyPlayerDataModel(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         alreadyExists: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::LobbyPlayerData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,7 +160,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerClearBeatmap(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +171,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerClearRecommendedGameplayModifiers(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,7 +182,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerGetIsInLobby(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -191,7 +193,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerGetIsReady(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -202,7 +204,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerGetOwnedSongPacks(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -213,7 +215,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerGetRecommendedBeatmap(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,7 +226,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerGetRecommendedGameplayModifiers(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -235,7 +237,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerRecommendBeatmap(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKeySerializable: *mut crate::GlobalNamespace::BeatmapKeyNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -250,7 +252,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerRecommendGameplayModifiers(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -265,7 +267,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerSetIsInLobby(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isInLobby: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -277,7 +279,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerSetIsReady(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isReady: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -289,7 +291,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn HandleMenuRpcManagerSetPlayersPermissionConfiguration(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         playersLobbyPermissionConfiguration: *mut crate::GlobalNamespace::PlayersLobbyPermissionConfigurationNetSerializable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -364,7 +366,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn NotifyModelChange(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -375,7 +377,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn RequestKickPlayer(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -487,7 +489,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn SetPlayerBeatmapLevel(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -499,7 +501,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn SetPlayerGameplayModifiers(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         modifiers: *mut crate::GlobalNamespace::GameplayModifiers,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -511,7 +513,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn SetPlayerIsActive(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isActive: bool,
         notifyChange: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -524,7 +526,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn SetPlayerIsInLobby(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isInLobby: bool,
         notifyChange: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -537,7 +539,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn SetPlayerIsPartyOwner(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isPartyOwner: bool,
         notifyChange: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -550,7 +552,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn SetPlayerIsReady(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         isReady: bool,
         notifyChange: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -573,7 +575,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn TryGetValue(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<
             *mut crate::GlobalNamespace::ILobbyPlayerData,
         >,
@@ -596,7 +598,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn add_didChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -614,7 +616,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn get_Item(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ILobbyPlayerData> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -627,14 +629,14 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Keys", ())?;
         Ok(__cordl_ret)
     }
@@ -655,27 +657,27 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn get_localUserId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_localUserId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_partyOwnerId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_partyOwnerId", ())?;
         Ok(__cordl_ret)
     }
     pub fn remove_didChangeEvent(
         &mut self,
-        value: *mut crate::System::Action_1<*mut crate::System::String>,
+        value: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -686,7 +688,7 @@ impl crate::GlobalNamespace::LobbyPlayersDataModel {
     }
     pub fn set_partyOwnerId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

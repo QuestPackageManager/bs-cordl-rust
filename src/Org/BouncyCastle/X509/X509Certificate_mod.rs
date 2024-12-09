@@ -4,11 +4,11 @@
 pub struct X509Certificate {
     __cordl_parent: crate::Org::BouncyCastle::X509::X509ExtensionBase,
     pub c: *mut crate::Org::BouncyCastle::Asn1::X509::X509CertificateStructure,
-    pub sigAlgName: *mut crate::System::String,
+    pub sigAlgName: *mut quest_hook::libil2cpp::Il2CppString,
     pub sigAlgParams: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub basicConstraints: *mut crate::Org::BouncyCastle::Asn1::X509::BasicConstraints,
     pub keyUsage: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
-    pub cacheLock: *mut crate::System::Object,
+    pub cacheLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub publicKeyValue: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
     pub hashValueSet: bool,
     pub hashValue: i32,
@@ -67,7 +67,7 @@ impl crate::Org::BouncyCastle::X509::X509Certificate {
     }
     pub fn Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +77,7 @@ impl crate::Org::BouncyCastle::X509::X509Certificate {
     }
     pub fn GetAlternativeNames(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::ICollection> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -232,11 +232,11 @@ impl crate::Org::BouncyCastle::X509::X509Certificate {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -358,21 +358,21 @@ impl crate::Org::BouncyCastle::X509::X509Certificate {
     }
     pub fn get_SigAlgName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SigAlgName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SigAlgOid(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SigAlgOid", ())?;
         Ok(__cordl_ret)
     }

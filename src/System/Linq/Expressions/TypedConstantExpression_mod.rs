@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Linq::Expressions::TypedConstantExpre
 #[cfg(feature = "System+Linq+Expressions+TypedConstantExpression")]
 impl crate::System::Linq::Expressions::TypedConstantExpression {
     pub fn New(
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -38,7 +38,7 @@ impl crate::System::Linq::Expressions::TypedConstantExpression {
     }
     pub fn _ctor(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

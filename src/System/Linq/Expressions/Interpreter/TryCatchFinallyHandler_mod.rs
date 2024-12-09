@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TryCatchFinallyHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub TryStartIndex: i32,
     pub TryEndIndex: i32,
     pub FinallyStartIndex: i32,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Linq+Expressions+Interpreter+TryCatchFinallyHandler")]
 impl std::ops::Deref
 for crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,7 +42,9 @@ impl crate::System::Linq::Expressions::Interpreter::TryCatchFinallyHandler {
         handler: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Linq::Expressions::Interpreter::ExceptionHandler,
         >,
-        unwrappedException: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        unwrappedException: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

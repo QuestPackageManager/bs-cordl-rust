@@ -50,7 +50,7 @@ impl crate::System::IO::CStreamWriter {
     }
     pub fn InternalWriteString(
         &mut self,
-        val: *mut crate::System::String,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,7 +72,7 @@ impl crate::System::IO::CStreamWriter {
     }
     pub fn WriteLine(
         &mut self,
-        val: *mut crate::System::String,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -105,9 +105,9 @@ impl crate::System::IO::CStreamWriter {
             .invoke("Write", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn Write_String3(
+    pub fn Write_Il2CppString3(
         &mut self,
-        val: *mut crate::System::String,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

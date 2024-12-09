@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PluginStorage {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dataMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData,
     >,
     pub _envPathMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _requiresSave: bool,
 }
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PluginStorage {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,23 +46,23 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     >;
     pub fn ConvertEnvKeyedPathToReal(
         &mut self,
-        inPath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        inPath: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ConvertEnvKeyedPathToReal", (inPath))?;
         Ok(__cordl_ret)
     }
     pub fn ConvertRealPathToEnvKeyedPath(
         &mut self,
-        inPath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        inPath: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ConvertRealPathToEnvKeyedPath", (inPath))?;
         Ok(__cordl_ret)
     }
@@ -70,22 +70,22 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetEnvironmentPathMap", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetJSONArray<T>(
         &mut self,
-        jsonArray: *mut crate::System::String,
+        jsonArray: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -98,11 +98,11 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
             .invoke("GetJSONArray", (jsonArray))?;
         Ok(__cordl_ret)
     }
-    pub fn Get_String4(
+    pub fn Get_Il2CppString4(
         &mut self,
-        key: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        defaultValue: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
+        defaultValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,7 +113,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Get__cordl_bool0(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<bool>,
         defaultValue: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -126,9 +126,11 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Get__cordl_char5(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         values: quest_hook::libil2cpp::ByRefMut<
-            *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+            *mut crate::System::Collections::Generic::List_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         delimiter: char,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -140,7 +142,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Get_f32_3(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<f32>,
         defaultValue: f32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -153,7 +155,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Get_i32_1(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<i32>,
         defaultValue: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -166,7 +168,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Get_i64_2(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: quest_hook::libil2cpp::ByRefMut<i64>,
         defaultValue: i64,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -225,11 +227,23 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
         let __cordl_ret: bool = __cordl_object.invoke("SavePluginData", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Set_Il2CppString4(
+        &mut self,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("Set", (key, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn Set_List_1__cordl_char5(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         values: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         delimiter: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -240,21 +254,9 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
             .invoke("Set", (key, values, delimiter))?;
         Ok(__cordl_ret)
     }
-    pub fn Set_String4(
-        &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("Set", (key, value))?;
-        Ok(__cordl_ret)
-    }
     pub fn Set__cordl_bool0(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -266,7 +268,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Set_f32_3(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -278,7 +280,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Set_i32_1(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -290,7 +292,7 @@ impl crate::HoudiniEngineUnity::HEU_PluginStorage {
     }
     pub fn Set_i64_2(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -346,9 +348,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PluginStorage_StoreData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: crate::HoudiniEngineUnity::HEU_PluginStorage_DataType,
-    pub _valueStr: *mut crate::System::String,
+    pub _valueStr: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -357,7 +359,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -402,7 +404,7 @@ for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_PluginStorage_StoreDataArray_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _array: *mut quest_hook::libil2cpp::Il2CppArray<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -415,7 +417,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_PluginStorage+StoreDataArray_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_PluginStorage_StoreDataArray_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

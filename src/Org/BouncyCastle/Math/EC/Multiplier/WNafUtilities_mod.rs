@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WNafUtilities {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities {
 #[repr(C)]
 #[derive(Debug)]
 pub struct WNafUtilities_ConfigureBasepointCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_curve: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
     pub m_confWidth: i32,
 }
@@ -93,7 +93,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasepointCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -163,7 +163,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_ConfigureBasep
 #[repr(C)]
 #[derive(Debug)]
 pub struct WNafUtilities_MapPointCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_infoP: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
     pub m_includeNegated: bool,
     pub m_pointMap: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap,
@@ -177,7 +177,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+MapPointCallback")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -243,7 +243,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_MapPointCallba
 #[repr(C)]
 #[derive(Debug)]
 pub struct WNafUtilities_PrecomputeCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_p: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
     pub m_minWidth: i32,
     pub m_includeNegated: bool,
@@ -257,7 +257,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Math+EC+Multiplier+WNafUtilities+PrecomputeCallback")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -355,7 +355,7 @@ for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeCall
 #[repr(C)]
 #[derive(Debug)]
 pub struct WNafUtilities_PrecomputeWithPointMapCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
     pub m_pointMap: *mut crate::Org::BouncyCastle::Math::EC::ECPointMap,
     pub m_fromWNaf: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::WNafPreCompInfo,
@@ -375,7 +375,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Math::EC::Multiplier::WNafUtilities_PrecomputeWithPointMapCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct XRFeatureDescriptor {
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub usageHints: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::InputSystem::XR::UsageHint,
     >,

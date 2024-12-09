@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct AssemblyFullName {
-    pub Name: *mut crate::System::String,
+    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub Version: crate::UnityEngine::AssemblyVersion,
-    pub PublicKeyToken: *mut crate::System::String,
-    pub Culture: *mut crate::System::String,
+    pub PublicKeyToken: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Culture: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+AssemblyFullName")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -27,7 +27,7 @@ for crate::UnityEngine::AssemblyFullName {
 impl crate::UnityEngine::AssemblyFullName {
     pub fn Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -46,8 +46,8 @@ impl crate::UnityEngine::AssemblyFullName {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

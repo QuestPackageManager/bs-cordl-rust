@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
     pub _maxStringLength: i32,
     pub _registeredTypes: *mut crate::System::Collections::Generic::Dictionary_2<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -698,7 +698,7 @@ for crate::LiteNetLib::Utils::NetSerializer_CharSerializer_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_ClassInfo_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _serializers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T>,
     >,
@@ -713,7 +713,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+ClassInfo_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -808,7 +808,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ClassInfo_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_CustomType {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -817,7 +817,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+CustomType")]
 impl std::ops::Deref for crate::LiteNetLib::Utils::NetSerializer_CustomType {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2376,7 +2376,7 @@ for crate::LiteNetLib::Utils::NetSerializer_FastCallStruct_2<TClass, TProperty> 
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetSerializer_FastCall_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsArray: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -2388,7 +2388,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLib+Utils+NetSerializer+FastCall_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_FastCall_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -3278,7 +3278,7 @@ for crate::LiteNetLib::Utils::NetSerializer_ShortSerializer_1<T> {
 pub struct NetSerializer_StringSerializer_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
         T,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _maxLength: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -3294,7 +3294,7 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::LiteNetLib::Utils::NetSerializer_StringSerializer_1<T> {
     type Target = crate::LiteNetLib::Utils::NetSerializer_FastCallSpecific_2<
         T,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }

@@ -26,11 +26,11 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Cms::CmsProcessable {
 impl crate::Org::BouncyCastle::Cms::CmsProcessable {
     pub fn GetContent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetContent", ())?;
         Ok(__cordl_ret)
     }

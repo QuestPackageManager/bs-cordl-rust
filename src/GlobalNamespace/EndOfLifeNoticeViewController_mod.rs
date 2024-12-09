@@ -6,7 +6,7 @@ pub struct EndOfLifeNoticeViewController {
     pub _okButton: *mut crate::UnityEngine::UI::Button,
     pub _duration: f32,
     pub _endOfLifeNoticeTextMesh: *mut crate::TMPro::TextMeshProUGUI,
-    pub _endOfLifeNoticeLocalizationKey: *mut crate::System::String,
+    pub _endOfLifeNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _coroutineStarter: *mut crate::GlobalNamespace::ICoroutineStarter,
     pub didFinishEvent: *mut crate::System::Action,
     pub _enableOkButtonCoroutine: *mut crate::UnityEngine::Coroutine,

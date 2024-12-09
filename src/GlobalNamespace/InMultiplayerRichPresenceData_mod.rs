@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InMultiplayerRichPresenceData {
-    __cordl_parent: crate::System::Object,
-    pub _apiName_k__BackingField: *mut crate::System::String,
-    pub _localizedDescription_k__BackingField: *mut crate::System::String,
-    pub _multiplayerSecret_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _apiName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _localizedDescription_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _multiplayerSecret_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _atMaxPartySize_k__BackingField: bool,
     pub _canInvite_k__BackingField: bool,
 }
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "InMultiplayerRichPresenceData")]
 impl std::ops::Deref for crate::GlobalNamespace::InMultiplayerRichPresenceData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::InMultiplayerRichPresenceDat
 impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     pub const kInMultiplayerLobbyRichPresenceLocalizationKey: &'static str = "IN_MULTIPLAYER_LOBBY_PRESENCE";
     pub fn New(
-        multiplayerSecret: *mut crate::System::String,
+        multiplayerSecret: *mut quest_hook::libil2cpp::Il2CppString,
         canInvite: bool,
         atMaxPartySize: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     }
     pub fn _ctor(
         &mut self,
-        multiplayerSecret: *mut crate::System::String,
+        multiplayerSecret: *mut quest_hook::libil2cpp::Il2CppString,
         canInvite: bool,
         atMaxPartySize: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,11 +56,11 @@ impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     }
     pub fn get_apiName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_apiName", ())?;
         Ok(__cordl_ret)
     }
@@ -87,27 +87,27 @@ impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     }
     pub fn get_localizedDescription(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_localizedDescription", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_multiplayerSecret(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_multiplayerSecret", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_apiName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +140,7 @@ impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     }
     pub fn set_localizedDescription(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::InMultiplayerRichPresenceData {
     }
     pub fn set_multiplayerSecret(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

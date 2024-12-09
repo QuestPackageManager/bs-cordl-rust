@@ -76,13 +76,13 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvi
 #[repr(C)]
 #[derive(Debug)]
 pub struct BundledAssetProvider_InternalOp {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AssetBundle: *mut crate::UnityEngine::AssetBundle,
     pub m_PreloadRequest: *mut crate::UnityEngine::AssetBundleRequest,
     pub m_RequestOperation: *mut crate::UnityEngine::AssetBundleRequest,
-    pub m_Result: *mut crate::System::Object,
+    pub m_Result: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_ProvideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
-    pub subObjectName: *mut crate::System::String,
+    pub subObjectName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(
     feature = "UnityEngine+ResourceManagement+ResourceProviders+BundledAssetProvider+InternalOp"
@@ -98,7 +98,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProvider_InternalOp {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

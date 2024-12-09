@@ -40,7 +40,9 @@ impl crate::System::Dynamic::DynamicMetaObjectBinder {
     }
     pub fn Bind_Il2CppArray_ReadOnlyCollection_1_LabelTarget0(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         parameters: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
             *mut crate::System::Linq::Expressions::ParameterExpression,
         >,

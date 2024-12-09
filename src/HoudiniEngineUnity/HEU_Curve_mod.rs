@@ -11,7 +11,7 @@ pub struct HEU_Curve {
     pub _isEditable: bool,
     pub _parameters: *mut crate::HoudiniEngineUnity::HEU_Parameters,
     pub _bUploadParameterPreset: bool,
-    pub _curveName: *mut crate::System::String,
+    pub _curveName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _targetGameObject: *mut crate::UnityEngine::GameObject,
     pub _isGeoCurve: bool,
     pub _editState: crate::HoudiniEngineUnity::HEU_Curve_CurveEditState,
@@ -280,7 +280,7 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     }
     pub fn SetCurveName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -433,11 +433,11 @@ impl crate::HoudiniEngineUnity::HEU_Curve {
     }
     pub fn get_CurveName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_CurveName", ())?;
         Ok(__cordl_ret)
     }

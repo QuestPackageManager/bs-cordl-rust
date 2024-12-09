@@ -13,8 +13,8 @@ pub struct PlayerInput {
         *mut crate::UnityEngine::InputSystem::PlayerInput_ActionEvent,
     >,
     pub m_NeverAutoSwitchControlSchemes: bool,
-    pub m_DefaultControlScheme: *mut crate::System::String,
-    pub m_DefaultActionMap: *mut crate::System::String,
+    pub m_DefaultControlScheme: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_DefaultActionMap: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_SplitScreenIndex: i32,
     pub m_Camera: *mut crate::UnityEngine::Camera,
     pub m_InputValueObject: *mut crate::UnityEngine::InputSystem::InputValue,
@@ -24,8 +24,8 @@ pub struct PlayerInput {
     pub m_Enabled: bool,
     pub m_ActionsInitialized: bool,
     pub m_ActionMessageNames: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_InputUser: crate::UnityEngine::InputSystem::Users::InputUser,
     pub m_ActionTriggeredDelegate: *mut crate::System::Action_1<
@@ -364,7 +364,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
     }
     pub fn SwitchCurrentActionMap(
         &mut self,
-        mapNameOrId: *mut crate::System::String,
+        mapNameOrId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -386,9 +386,9 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
             .invoke("SwitchCurrentControlScheme", (devices))?;
         Ok(__cordl_ret)
     }
-    pub fn SwitchCurrentControlScheme_String_Il2CppArray1(
+    pub fn SwitchCurrentControlScheme_Il2CppString_Il2CppArray1(
         &mut self,
-        controlScheme: *mut crate::System::String,
+        controlScheme: *mut quest_hook::libil2cpp::Il2CppString,
         devices: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::UnityEngine::InputSystem::InputDevice,
         >,
@@ -573,31 +573,31 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
     }
     pub fn get_currentControlScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_currentControlScheme", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_defaultActionMap(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultActionMap", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_defaultControlScheme(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_defaultControlScheme", ())?;
         Ok(__cordl_ret)
     }
@@ -817,7 +817,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
     }
     pub fn set_defaultActionMap(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -828,7 +828,7 @@ impl crate::UnityEngine::InputSystem::PlayerInput {
     }
     pub fn set_defaultControlScheme(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -887,8 +887,8 @@ pub struct PlayerInput_ActionEvent {
     __cordl_parent: crate::UnityEngine::Events::UnityEvent_1<
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
-    pub m_ActionId: *mut crate::System::String,
-    pub m_ActionName: *mut crate::System::String,
+    pub m_ActionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ActionName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+InputSystem+PlayerInput+ActionEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -920,9 +920,9 @@ impl crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Guid_String2(
+    pub fn New_Guid_Il2CppString2(
         actionGUID: crate::System::Guid,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -949,10 +949,10 @@ impl crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Guid_String2(
+    pub fn _ctor_Guid_Il2CppString2(
         &mut self,
         actionGUID: crate::System::Guid,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -974,21 +974,21 @@ impl crate::UnityEngine::InputSystem::PlayerInput_ActionEvent {
     }
     pub fn get_actionId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_actionId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_actionName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_actionName", ())?;
         Ok(__cordl_ret)
     }

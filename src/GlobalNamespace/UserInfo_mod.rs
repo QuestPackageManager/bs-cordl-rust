@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub platform: crate::GlobalNamespace::UserInfo_Platform,
-    pub platformUserId: *mut crate::System::String,
-    pub userName: *mut crate::System::String,
+    pub platformUserId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UserInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UserInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::UserInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,8 +30,8 @@ impl crate::GlobalNamespace::UserInfo {
     pub type Platform = crate::GlobalNamespace::UserInfo_Platform;
     pub fn New(
         platform: crate::GlobalNamespace::UserInfo_Platform,
-        platformUserId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        platformUserId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -42,8 +42,8 @@ impl crate::GlobalNamespace::UserInfo {
     pub fn _ctor(
         &mut self,
         platform: crate::GlobalNamespace::UserInfo_Platform,
-        platformUserId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        platformUserId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

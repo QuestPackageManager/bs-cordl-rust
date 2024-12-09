@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Collections::IHashCodeProvider {
 impl crate::System::Collections::IHashCodeProvider {
     pub fn GetHashCode(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

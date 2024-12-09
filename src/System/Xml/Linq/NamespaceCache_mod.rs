@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct NamespaceCache {
     pub _ns: *mut crate::System::Xml::Linq::XNamespace,
-    pub _namespaceName: *mut crate::System::String,
+    pub _namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Linq+NamespaceCache")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -25,7 +25,7 @@ for crate::System::Xml::Linq::NamespaceCache {
 impl crate::System::Xml::Linq::NamespaceCache {
     pub fn Get(
         &mut self,
-        namespaceName: *mut crate::System::String,
+        namespaceName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Linq::XNamespace> {
         let __cordl_ret: *mut crate::System::Xml::Linq::XNamespace = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

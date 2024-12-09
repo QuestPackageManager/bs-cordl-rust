@@ -10,14 +10,14 @@ pub struct MobileAuthenticatedStream {
     pub asyncWriteRequest: *mut crate::Mono::Net::Security::AsyncProtocolRequest,
     pub readBuffer: *mut crate::Mono::Net::Security::BufferOffsetSize2,
     pub writeBuffer: *mut crate::Mono::Net::Security::BufferOffsetSize2,
-    pub ioLock: *mut crate::System::Object,
+    pub ioLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub closeRequested: i32,
     pub shutdown: bool,
     pub operation: crate::Mono::Net::Security::MobileAuthenticatedStream_Operation,
     pub _SslStream_k__BackingField: *mut crate::System::Net::Security::SslStream,
     pub _Settings_k__BackingField: *mut crate::Mono::Security::Interface::MonoTlsSettings,
     pub _Provider_k__BackingField: *mut crate::Mono::Net::Security::MobileTlsProvider,
-    pub _TargetHost_k__BackingField: *mut crate::System::String,
+    pub _TargetHost_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_ID: i32,
 }
 #[cfg(feature = "Mono+Net+Security+MobileAuthenticatedStream")]
@@ -58,7 +58,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     pub type __c__DisplayClass66_0 = crate::Mono::Net::Security::MobileAuthenticatedStream___c__DisplayClass66_0;
     pub fn AuthenticateAsClient(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
@@ -80,7 +80,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     }
     pub fn AuthenticateAsClientAsync(
         &mut self,
-        targetHost: *mut crate::System::String,
+        targetHost: *mut quest_hook::libil2cpp::Il2CppString,
         clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
         enabledSslProtocols: crate::System::Security::Authentication::SslProtocols,
         checkCertificateRevocation: bool,
@@ -575,11 +575,11 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     }
     pub fn get_TargetHost(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TargetHost", ())?;
         Ok(__cordl_ret)
     }
@@ -614,7 +614,7 @@ impl crate::Mono::Net::Security::MobileAuthenticatedStream {
     }
     pub fn set_TargetHost(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

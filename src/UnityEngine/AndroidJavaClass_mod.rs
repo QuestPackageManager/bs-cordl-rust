@@ -24,6 +24,15 @@ impl std::ops::DerefMut for crate::UnityEngine::AndroidJavaClass {
 }
 #[cfg(feature = "UnityEngine+AndroidJavaClass")]
 impl crate::UnityEngine::AndroidJavaClass {
+    pub fn New_Il2CppString0(
+        className: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (className))?;
+        Ok(__cordl_object)
+    }
     pub fn New_IntPtr1(
         jclass: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -33,24 +42,26 @@ impl crate::UnityEngine::AndroidJavaClass {
             .invoke_void(".ctor", (jclass))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        className: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (className))?;
-        Ok(__cordl_object)
-    }
     pub fn _AndroidJavaClass(
         &mut self,
-        className: *mut crate::System::String,
+        className: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("_AndroidJavaClass", (className))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString0(
+        &mut self,
+        className: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (className))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_IntPtr1(
@@ -62,17 +73,6 @@ impl crate::UnityEngine::AndroidJavaClass {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (jclass))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String0(
-        &mut self,
-        className: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (className))?;
         Ok(__cordl_ret)
     }
 }

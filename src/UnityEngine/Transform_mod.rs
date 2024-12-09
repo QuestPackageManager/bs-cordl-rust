@@ -38,7 +38,7 @@ impl crate::UnityEngine::Transform {
     }
     pub fn Find(
         &mut self,
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -49,7 +49,7 @@ impl crate::UnityEngine::Transform {
     }
     pub fn FindChild(
         &mut self,
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Transform> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1737,7 +1737,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Transform {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Transform_Enumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: *mut crate::UnityEngine::Transform,
     pub currentIndex: i32,
 }
@@ -1748,7 +1748,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Transform+Enumerator")]
 impl std::ops::Deref for crate::UnityEngine::Transform_Enumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1800,11 +1800,11 @@ impl crate::UnityEngine::Transform_Enumerator {
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }

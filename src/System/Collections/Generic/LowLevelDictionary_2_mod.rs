@@ -5,7 +5,7 @@ pub struct LowLevelDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
             TKey,
@@ -30,7 +30,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::System::Collections::Generic::LowLevelDictionary_2<TKey, TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -276,7 +276,7 @@ pub struct LowLevelDictionary_2_DefaultComparer_1<
     TValue: quest_hook::libil2cpp::Type,
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -299,7 +299,7 @@ for crate::System::Collections::Generic::LowLevelDictionary_2_DefaultComparer_1<
     TValue,
     T,
 > {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -416,7 +416,7 @@ pub struct LowLevelDictionary_2_Entry<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _key: TKey,
     pub _value: TValue,
     pub _next: *mut crate::System::Collections::Generic::LowLevelDictionary_2_Entry<
@@ -438,7 +438,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::System::Collections::Generic::LowLevelDictionary_2_Entry<TKey, TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

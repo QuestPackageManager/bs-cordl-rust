@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockBeatmapData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _numberOfLines_k__BackingField: i32,
     pub _songEndTime_k__BackingField: f32,
     pub _leftNotes_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockBeatmapData")]
 impl std::ops::Deref for crate::GlobalNamespace::MockBeatmapData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

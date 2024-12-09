@@ -39,7 +39,7 @@ impl crate::System::Threading::Tasks::ContinuationTaskFromTask {
     pub fn New(
         antecedent: *mut crate::System::Threading::Tasks::Task,
         action: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -56,7 +56,7 @@ impl crate::System::Threading::Tasks::ContinuationTaskFromTask {
         &mut self,
         antecedent: *mut crate::System::Threading::Tasks::Task,
         action: *mut crate::System::Delegate,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         internalOptions: crate::System::Threading::Tasks::InternalTaskOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

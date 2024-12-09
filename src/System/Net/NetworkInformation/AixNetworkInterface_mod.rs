@@ -40,7 +40,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterface {
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ifa_flags: u32,
         ifru_mtu: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -52,7 +52,7 @@ impl crate::System::Net::NetworkInformation::AixNetworkInterface {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ifa_flags: u32,
         ifru_mtu: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

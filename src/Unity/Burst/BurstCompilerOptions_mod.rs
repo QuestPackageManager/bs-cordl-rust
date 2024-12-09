@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BurstCompilerOptions {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enableBurstCompilation: bool,
     pub _enableBurstCompileSynchronously: bool,
     pub _enableBurstSafetyChecks: bool,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Unity+Burst+BurstCompilerOptions")]
 impl std::ops::Deref for crate::Unity::Burst::BurstCompilerOptions {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -151,11 +151,11 @@ impl crate::Unity::Burst::BurstCompilerOptions {
         attr: *mut crate::Unity::Burst::BurstCompileAttribute,
         isForILPostProcessing: bool,
         isForCompilerClient: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetOptions", (attr, isForILPostProcessing, isForCompilerClient))?;
         Ok(__cordl_ret)
     }
@@ -196,7 +196,9 @@ impl crate::Unity::Burst::BurstCompilerOptions {
     pub fn TryGetOptions(
         &mut self,
         member: *mut crate::System::Reflection::MemberInfo,
-        flagsOut: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        flagsOut: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         isForILPostProcessing: bool,
         isForCompilerClient: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {

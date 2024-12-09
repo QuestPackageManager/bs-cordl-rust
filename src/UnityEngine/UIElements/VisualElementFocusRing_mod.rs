@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusRing {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub root: *mut crate::UnityEngine::UIElements::VisualElement,
     pub _defaultFocusOrder_k__BackingField: crate::UnityEngine::UIElements::VisualElementFocusRing_DefaultFocusOrder,
     pub m_FocusRing: *mut crate::System::Collections::Generic::List_1<
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::VisualElementFocusRing {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -215,7 +215,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct VisualElementFocusRing_FocusRingRecord {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AutoIndex: i32,
     pub m_Focusable: *mut crate::UnityEngine::UIElements::Focusable,
     pub m_IsSlot: bool,
@@ -232,7 +232,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+VisualElementFocusRing+FocusRingRecord")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::VisualElementFocusRing_FocusRingRecord {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

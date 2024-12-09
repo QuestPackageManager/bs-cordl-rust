@@ -148,7 +148,7 @@ for crate::GlobalNamespace::SpawnRotationChevronManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SpawnRotationChevronManager_DirectionData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub chevron: *mut crate::GlobalNamespace::SpawnRotationChevron,
     pub fullyLid: bool,
     pub fadeOutStartTime: f32,
@@ -163,7 +163,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SpawnRotationChevronManager+DirectionData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SpawnRotationChevronManager_DirectionData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

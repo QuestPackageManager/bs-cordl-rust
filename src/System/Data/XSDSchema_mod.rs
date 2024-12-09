@@ -6,7 +6,7 @@ pub struct XSDSchema {
     pub _schemaSet: *mut crate::System::Xml::Schema::XmlSchemaSet,
     pub _dsElement: *mut crate::System::Xml::Schema::XmlSchemaElement,
     pub _ds: *mut crate::System::Data::DataSet,
-    pub _schemaName: *mut crate::System::String,
+    pub _schemaName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _columnExpressions: *mut crate::System::Collections::ArrayList,
     pub _constraintNodes: *mut crate::System::Collections::Hashtable,
     pub _refTables: *mut crate::System::Collections::ArrayList,
@@ -128,7 +128,7 @@ impl crate::System::Data::XSDSchema {
     pub fn FindField(
         &mut self,
         table: *mut crate::System::Data::DataTable,
-        field: *mut crate::System::String,
+        field: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::DataColumn> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,7 +153,7 @@ impl crate::System::Data::XSDSchema {
     pub fn GetBooleanAttribute(
         &mut self,
         element: *mut crate::System::Xml::Schema::XmlSchemaAnnotated,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
         defVal: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -166,22 +166,22 @@ impl crate::System::Data::XSDSchema {
     pub fn GetInstanceName(
         &mut self,
         node: *mut crate::System::Xml::Schema::XmlSchemaAnnotated,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetInstanceName", (node))?;
         Ok(__cordl_ret)
     }
     pub fn GetNamespaceFromPrefix(
         &mut self,
-        prefix: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetNamespaceFromPrefix", (prefix))?;
         Ok(__cordl_ret)
     }
@@ -213,47 +213,47 @@ impl crate::System::Data::XSDSchema {
     }
     pub fn GetPrefix(
         &mut self,
-        ns: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPrefix", (ns))?;
         Ok(__cordl_ret)
     }
     pub fn GetStringAttribute(
         &mut self,
         element: *mut crate::System::Xml::Schema::XmlSchemaAnnotated,
-        attrName: *mut crate::System::String,
-        defVal: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
+        defVal: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetStringAttribute", (element, attrName, defVal))?;
         Ok(__cordl_ret)
     }
     pub fn GetTableName(
         &mut self,
         key: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTableName", (key))?;
         Ok(__cordl_ret)
     }
     pub fn GetTableNamespace(
         &mut self,
         key: *mut crate::System::Xml::Schema::XmlSchemaIdentityConstraint,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTableNamespace", (key))?;
         Ok(__cordl_ret)
     }
@@ -298,7 +298,7 @@ impl crate::System::Data::XSDSchema {
     }
     pub fn HandleColumnExpression(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         attrs: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Xml::XmlAttribute,
         >,
@@ -423,7 +423,7 @@ impl crate::System::Data::XSDSchema {
     }
     pub fn HandleSimpleContentColumn(
         &mut self,
-        strType: *mut crate::System::String,
+        strType: *mut quest_hook::libil2cpp::Il2CppString,
         table: *mut crate::System::Data::DataTable,
         isBase: bool,
         attrs: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -444,7 +444,7 @@ impl crate::System::Data::XSDSchema {
     pub fn HandleSimpleTypeSimpleContentColumn(
         &mut self,
         typeNode: *mut crate::System::Xml::Schema::XmlSchemaSimpleType,
-        strType: *mut crate::System::String,
+        strType: *mut quest_hook::libil2cpp::Il2CppString,
         table: *mut crate::System::Data::DataTable,
         isBase: bool,
         attrs: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -560,7 +560,7 @@ impl crate::System::Data::XSDSchema {
     }
     pub fn ParseDataType(
         &mut self,
-        dt: *mut crate::System::String,
+        dt: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -611,8 +611,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XSDSchema {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XSDSchema_NameType {
-    __cordl_parent: crate::System::Object,
-    pub name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_type: *mut crate::System::Type,
 }
 #[cfg(feature = "System+Data+XSDSchema+NameType")]
@@ -622,7 +622,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XSDSchema+NameType")]
 impl std::ops::Deref for crate::System::Data::XSDSchema_NameType {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -637,7 +637,7 @@ impl std::ops::DerefMut for crate::System::Data::XSDSchema_NameType {
 impl crate::System::Data::XSDSchema_NameType {
     pub fn CompareTo(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -646,7 +646,7 @@ impl crate::System::Data::XSDSchema_NameType {
         Ok(__cordl_ret)
     }
     pub fn New(
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
         t: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -657,7 +657,7 @@ impl crate::System::Data::XSDSchema_NameType {
     }
     pub fn _ctor(
         &mut self,
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
         t: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

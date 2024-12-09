@@ -4,7 +4,7 @@
 pub struct FieldMultipleFilter {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::PathFilter,
     pub Names: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+FieldMultipleFilter")]
@@ -57,7 +57,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
     }
     pub fn New(
         names: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -69,7 +69,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::FieldMultipleFilter {
     pub fn _ctor(
         &mut self,
         names: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

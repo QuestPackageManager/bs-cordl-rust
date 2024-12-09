@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_AssetPreset {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _identifier: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     pub _version: i32,
-    pub _assetOPName: *mut crate::System::String,
+    pub _assetOPName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _parameterPreset: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _curveNames: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _curvePresets: *mut crate::System::Collections::Generic::List_1<
         *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetPreset")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_AssetPreset {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

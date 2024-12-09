@@ -30,7 +30,7 @@ pub struct LIV {
     pub _disableStandardAssets: bool,
     pub _spectatorLayerMask: crate::UnityEngine::LayerMask,
     pub _excludeBehaviours: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _fixPostEffectsAlpha: bool,
     pub _isActive: bool,
@@ -41,7 +41,7 @@ pub struct LIV {
     pub _HMDCameraCandidate: *mut crate::UnityEngine::Camera,
     pub _MRCameraPrefabCandidate: *mut crate::UnityEngine::Camera,
     pub _excludeBehavioursCandidate: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _enabled: bool,
     pub _waitForEndOfFrameCoroutine: *mut crate::UnityEngine::Coroutine,
@@ -272,13 +272,13 @@ impl crate::LIV::SDK::Unity::LIV {
     pub fn get_excludeBehaviours(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_excludeBehaviours", ())?;
         Ok(__cordl_ret)
     }
@@ -408,7 +408,9 @@ impl crate::LIV::SDK::Unity::LIV {
     }
     pub fn set_excludeBehaviours(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

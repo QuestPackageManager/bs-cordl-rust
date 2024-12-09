@@ -3,9 +3,9 @@
 #[derive(Debug, Clone)]
 pub struct AuthenticationToken {
     pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-    pub userId: *mut crate::System::String,
-    pub userName: *mut crate::System::String,
-    pub sessionToken: *mut crate::System::String,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub sessionToken: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "AuthenticationToken")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -52,9 +52,9 @@ impl crate::GlobalNamespace::AuthenticationToken {
     pub fn _ctor(
         &mut self,
         platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
-        sessionToken: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
+        sessionToken: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct AbTestExperimentDefinitionSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _experimentName: *mut crate::System::String,
+    pub _experimentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _test1GroupSize: f32,
     pub _test2GroupSize: f32,
     pub _controlGroupSize: f32,
-    pub _salt: *mut crate::System::String,
+    pub _salt: *mut quest_hook::libil2cpp::Il2CppString,
     pub _currentUserTreatmentGroup: crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
 }
 #[cfg(feature = "AbTestExperimentDefinitionSO")]
@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     pub type Group = crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group;
     pub fn AbSplit(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::AbTestExperimentDefinitionSO_Group,
     > {
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     }
     pub fn ComputeCurrentUserTreatment(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -108,11 +108,11 @@ impl crate::GlobalNamespace::AbTestExperimentDefinitionSO {
     }
     pub fn get_experimentName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_experimentName", ())?;
         Ok(__cordl_ret)
     }

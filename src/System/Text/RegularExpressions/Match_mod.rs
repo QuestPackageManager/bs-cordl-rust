@@ -108,10 +108,10 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_Regex_i32_String_i32_i32_i32_0(
+    pub fn New_Regex_i32_Il2CppString_i32_i32_i32_0(
         regex: *mut crate::System::Text::RegularExpressions::Regex,
         capcount: i32,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         begpos: i32,
         len: i32,
         startpos: i32,
@@ -148,7 +148,7 @@ impl crate::System::Text::RegularExpressions::Match {
     pub fn Reset(
         &mut self,
         regex: *mut crate::System::Text::RegularExpressions::Regex,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         textbeg: i32,
         textend: i32,
         textstart: i32,
@@ -181,11 +181,11 @@ impl crate::System::Text::RegularExpressions::Match {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Regex_i32_String_i32_i32_i32_0(
+    pub fn _ctor_Regex_i32_Il2CppString_i32_i32_i32_0(
         &mut self,
         regex: *mut crate::System::Text::RegularExpressions::Regex,
         capcount: i32,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         begpos: i32,
         len: i32,
         startpos: i32,

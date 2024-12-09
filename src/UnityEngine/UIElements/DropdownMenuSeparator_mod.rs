@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DropdownMenuSeparator {
     __cordl_parent: crate::UnityEngine::UIElements::DropdownMenuItem,
-    pub _subMenuPath_k__BackingField: *mut crate::System::String,
+    pub _subMenuPath_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuSeparator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::DropdownMenuSeparato
 #[cfg(feature = "UnityEngine+UIElements+DropdownMenuSeparator")]
 impl crate::UnityEngine::UIElements::DropdownMenuSeparator {
     pub fn New(
-        subMenuPath: *mut crate::System::String,
+        subMenuPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::DropdownMenuSeparator {
     }
     pub fn _ctor(
         &mut self,
-        subMenuPath: *mut crate::System::String,
+        subMenuPath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

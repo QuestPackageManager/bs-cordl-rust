@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SerializationEntry {
-    pub _name: *mut crate::System::String,
-    pub _value: *mut crate::System::Object,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _type: *mut crate::System::Type,
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationEntry")]
@@ -27,8 +27,8 @@ for crate::System::Runtime::Serialization::SerializationEntry {
 impl crate::System::Runtime::Serialization::SerializationEntry {
     pub fn _ctor(
         &mut self,
-        entryName: *mut crate::System::String,
-        entryValue: *mut crate::System::Object,
+        entryName: *mut quest_hook::libil2cpp::Il2CppString,
+        entryValue: *mut quest_hook::libil2cpp::Il2CppObject,
         entryType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -40,8 +40,8 @@ impl crate::System::Runtime::Serialization::SerializationEntry {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Name",
             (),
@@ -50,8 +50,8 @@ impl crate::System::Runtime::Serialization::SerializationEntry {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Value",
             (),

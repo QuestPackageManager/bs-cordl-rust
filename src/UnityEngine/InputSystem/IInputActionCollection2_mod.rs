@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::IInputActionCollect
 impl crate::UnityEngine::InputSystem::IInputActionCollection2 {
     pub fn FindAction(
         &mut self,
-        actionNameOrId: *mut crate::System::String,
+        actionNameOrId: *mut quest_hook::libil2cpp::Il2CppString,
         throwIfNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputAction,

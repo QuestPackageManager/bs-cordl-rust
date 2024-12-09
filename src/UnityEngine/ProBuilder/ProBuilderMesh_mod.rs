@@ -40,7 +40,7 @@ pub struct ProBuilderMesh {
     pub _userCollisions_k__BackingField: bool,
     pub m_UnwrapParameters: *mut crate::UnityEngine::ProBuilder::UnwrapParameters,
     pub m_PreserveMeshAssetOnDestroy: bool,
-    pub assetGuid: *mut crate::System::String,
+    pub assetGuid: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Mesh: *mut crate::UnityEngine::Mesh,
     pub m_MeshRenderer: *mut crate::UnityEngine::MeshRenderer,
     pub m_MeshFilter: *mut crate::UnityEngine::MeshFilter,

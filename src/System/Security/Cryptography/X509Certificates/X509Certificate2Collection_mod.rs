@@ -71,7 +71,7 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Co
     pub fn Find(
         &mut self,
         findType: crate::System::Security::Cryptography::X509Certificates::X509FindType,
-        findValue: *mut crate::System::Object,
+        findValue: *mut quest_hook::libil2cpp::Il2CppObject,
         validOnly: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2Collection,
@@ -98,11 +98,11 @@ impl crate::System::Security::Cryptography::X509Certificates::X509Certificate2Co
     pub fn GetKeyIdentifier(
         &mut self,
         x: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate2,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetKeyIdentifier", (x))?;
         Ok(__cordl_ret)
     }

@@ -10,7 +10,7 @@ pub struct MissionGameplaySceneSetupData {
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     pub gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-    pub backButtonText: *mut crate::System::String,
+    pub backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "MissionGameplaySceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -40,7 +40,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -67,7 +67,7 @@ impl crate::GlobalNamespace::MissionGameplaySceneSetupData {
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

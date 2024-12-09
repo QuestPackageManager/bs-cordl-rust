@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WeakReference_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub handle: crate::System::Runtime::InteropServices::GCHandle,
     pub trackResurrection: bool,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+WeakReference_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::WeakReference_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

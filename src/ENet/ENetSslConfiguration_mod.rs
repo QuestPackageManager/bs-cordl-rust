@@ -3,14 +3,14 @@
 #[derive(Debug, Clone)]
 pub struct ENetSslConfiguration {
     pub mode: crate::ENet::SslMode,
-    pub certificatePath: *mut crate::System::String,
-    pub certificate: *mut crate::System::String,
-    pub privateKeyPath: *mut crate::System::String,
-    pub privateKey: *mut crate::System::String,
+    pub certificatePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub certificate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateKeyPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub privateKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub validateCertificate: i32,
-    pub rootCertificatePath: *mut crate::System::String,
-    pub rootCertificate: *mut crate::System::String,
-    pub hostName: *mut crate::System::String,
+    pub rootCertificatePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub rootCertificate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub hostName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "ENet+ENetSslConfiguration")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

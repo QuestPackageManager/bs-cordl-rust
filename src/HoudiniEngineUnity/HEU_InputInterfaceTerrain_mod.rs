@@ -92,7 +92,7 @@ impl crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
         volumeNodeID: i32,
         partID: i32,
         heightValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-        heightFieldName: *mut crate::System::String,
+        heightFieldName: *mut quest_hook::libil2cpp::Il2CppString,
         baseVolumeInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_VolumeInfo,
         >,
@@ -248,7 +248,7 @@ for crate::HoudiniEngineUnity::HEU_InputInterfaceTerrain {
 #[derive(Debug)]
 pub struct HEU_InputInterfaceTerrain_HEU_InputDataTerrain {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_InputData,
-    pub _heightFieldName: *mut crate::System::String,
+    pub _heightFieldName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _parentNodeID: i32,
     pub _voxelSize: f32,
     pub _terrain: *mut crate::UnityEngine::Terrain,

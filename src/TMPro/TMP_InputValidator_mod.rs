@@ -33,7 +33,7 @@ impl crate::TMPro::TMP_InputValidator {
     }
     pub fn Validate(
         &mut self,
-        text: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        text: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
         pos: quest_hook::libil2cpp::ByRefMut<i32>,
         ch: char,
     ) -> quest_hook::libil2cpp::Result<char> {

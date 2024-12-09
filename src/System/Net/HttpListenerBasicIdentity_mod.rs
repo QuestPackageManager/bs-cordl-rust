@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HttpListenerBasicIdentity {
     __cordl_parent: crate::System::Security::Principal::GenericIdentity,
-    pub password: *mut crate::System::String,
+    pub password: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::Net::HttpListenerBasicIdentity {
 #[cfg(feature = "System+Net+HttpListenerBasicIdentity")]
 impl crate::System::Net::HttpListenerBasicIdentity {
     pub fn New(
-        username: *mut crate::System::String,
-        password: *mut crate::System::String,
+        username: *mut quest_hook::libil2cpp::Il2CppString,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,8 +37,8 @@ impl crate::System::Net::HttpListenerBasicIdentity {
     }
     pub fn _ctor(
         &mut self,
-        username: *mut crate::System::String,
-        password: *mut crate::System::String,
+        username: *mut quest_hook::libil2cpp::Il2CppString,
+        password: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

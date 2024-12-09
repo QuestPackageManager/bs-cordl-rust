@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DisconnectedPlayer {
-    __cordl_parent: crate::System::Object,
-    pub _userId_k__BackingField: *mut crate::System::String,
-    pub _userName_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _userId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _sortIndex_k__BackingField: i32,
     pub _multiplayerAvatarsData_k__BackingField: crate::GlobalNamespace::MultiplayerAvatarsData,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DisconnectedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::DisconnectedPlayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DisconnectedPlayer {
 impl crate::GlobalNamespace::DisconnectedPlayer {
     pub fn HasState(
         &mut self,
-        state: *mut crate::System::String,
+        state: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -39,8 +39,8 @@ impl crate::GlobalNamespace::DisconnectedPlayer {
         Ok(__cordl_ret)
     }
     pub fn New(
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         sortIndex: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -51,8 +51,8 @@ impl crate::GlobalNamespace::DisconnectedPlayer {
     }
     pub fn _ctor(
         &mut self,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         sortIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -147,27 +147,27 @@ impl crate::GlobalNamespace::DisconnectedPlayer {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_userId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,7 +178,7 @@ impl crate::GlobalNamespace::DisconnectedPlayer {
     }
     pub fn set_userName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

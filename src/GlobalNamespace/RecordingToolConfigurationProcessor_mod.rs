@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     pub _logger: *mut crate::GlobalNamespace::IBeatSaberLogger,
     pub _posesSerializer: *mut crate::GlobalNamespace::IPosesSerializer,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RecordingToolConfigurationProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,7 +94,7 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     }
     pub fn DeserializeConfigurationFile(
         &mut self,
-        jsonData: *mut crate::System::String,
+        jsonData: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
     > {
@@ -107,17 +107,17 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     }
     pub fn GetConfigFilePath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetConfigFilePath", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetLayerMask(
         &mut self,
-        layerName: *mut crate::System::String,
+        layerName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,7 +128,9 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     }
     pub fn GetLayersMask(
         &mut self,
-        layerNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        layerNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::LayerMask> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +148,7 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     }
     pub fn LoadConfiguration(
         &mut self,
-        filePath: *mut crate::System::String,
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration,
     > {
@@ -159,12 +161,12 @@ impl crate::GlobalNamespace::RecordingToolConfigurationProcessor {
     }
     pub fn LoadConfigurationFile(
         &mut self,
-        filePath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        filePath: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("LoadConfigurationFile", (filePath))?;
         Ok(__cordl_ret)
     }
@@ -229,7 +231,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_ColorSaveData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub r: f32,
     pub g: f32,
     pub b: f32,
@@ -243,7 +245,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RecordingToolConfigurationProcessor+ColorSaveData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -289,14 +291,14 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_PlaybackScreenshot {
-    __cordl_parent: crate::System::Object,
-    pub name: *mut crate::System::String,
-    pub _cordl_type: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     pub includedLayers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub excludedLayers: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub backgroundColor: *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_ColorSaveData,
 }
@@ -309,7 +311,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RecordingToolConfigurationProcessor+PlaybackScreenshot")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreenshot {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -355,17 +357,17 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_PlaybackScreensh
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_RecordingConfiguration {
-    __cordl_parent: crate::System::Object,
-    pub mode: *mut crate::System::String,
-    pub packID: *mut crate::System::String,
-    pub levelID: *mut crate::System::String,
-    pub difficulty: *mut crate::System::String,
-    pub characteristic: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub mode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub packID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub levelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub difficulty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub characteristic: *mut quest_hook::libil2cpp::Il2CppString,
     pub runLevel: bool,
     pub recordPerformance: bool,
-    pub recordingMode: *mut crate::System::String,
-    pub recordingPath: *mut crate::System::String,
-    pub cameraView: *mut crate::System::String,
+    pub recordingMode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub cameraView: *mut quest_hook::libil2cpp::Il2CppString,
     pub addDateTimeSuffixToRecordingName: bool,
     pub screenshotRecording: bool,
     pub screenshotWidth: i32,
@@ -378,8 +380,8 @@ pub struct RecordingToolConfigurationProcessor_RecordingConfiguration {
     pub startSongTime: f32,
     pub songSpeedMultiplier: f32,
     pub overrideEnvironments: bool,
-    pub environmentType: *mut crate::System::String,
-    pub environmentName: *mut crate::System::String,
+    pub environmentType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub saveToOldFormat: bool,
 }
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
@@ -391,7 +393,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingConfiguration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -437,7 +439,7 @@ for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfigu
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolConfigurationProcessor_RecordingToolConfiguration {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recordingConfigurations: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingConfiguration,
     >,
@@ -451,7 +453,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RecordingToolConfigurationProcessor+RecordingToolConfiguration")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolConfigurationProcessor_RecordingToolConfiguration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

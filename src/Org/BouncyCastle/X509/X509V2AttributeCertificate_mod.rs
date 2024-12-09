@@ -62,7 +62,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
     }
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,9 +85,9 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificate {
         > = __cordl_object.invoke("GetAttributes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAttributes_String1(
+    pub fn GetAttributes_Il2CppString1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::X509::X509Attribute,

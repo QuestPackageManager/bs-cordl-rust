@@ -67,7 +67,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     pub fn AddName(
         &mut self,
         name: *mut crate::System::Xml::XmlQualifiedName,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +79,7 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
     pub fn AddNamespaceList(
         &mut self,
         namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -336,11 +336,11 @@ impl crate::System::Xml::Schema::ParticleContentValidator {
         name: *mut crate::System::Xml::XmlQualifiedName,
         context: *mut crate::System::Xml::Schema::ValidationState,
         errorCode: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ValidateElement", (name, context, errorCode))?;
         Ok(__cordl_ret)
     }

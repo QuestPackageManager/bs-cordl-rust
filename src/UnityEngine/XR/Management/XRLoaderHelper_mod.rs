@@ -31,7 +31,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     pub fn CreateIntegratedSubsystem<TDescriptor, TSubsystem>(
         &mut self,
         descriptors: *mut crate::System::Collections::Generic::List_1<TDescriptor>,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -49,7 +49,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     pub fn CreateStandaloneSubsystem<TDescriptor, TSubsystem>(
         &mut self,
         descriptors: *mut crate::System::Collections::Generic::List_1<TDescriptor>,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -67,7 +67,7 @@ impl crate::UnityEngine::XR::Management::XRLoaderHelper {
     pub fn CreateSubsystem<TDescriptor, TSubsystem>(
         &mut self,
         descriptors: *mut crate::System::Collections::Generic::List_1<TDescriptor>,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

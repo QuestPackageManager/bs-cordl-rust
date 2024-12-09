@@ -26,11 +26,11 @@ impl std::ops::DerefMut for crate::System::Xml::IDtdParser {
 impl crate::System::Xml::IDtdParser {
     pub fn ParseFreeFloatingDtd(
         &mut self,
-        baseUri: *mut crate::System::String,
-        docTypeName: *mut crate::System::String,
-        publicId: *mut crate::System::String,
-        systemId: *mut crate::System::String,
-        internalSubset: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
+        docTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+        publicId: *mut quest_hook::libil2cpp::Il2CppString,
+        systemId: *mut quest_hook::libil2cpp::Il2CppString,
+        internalSubset: *mut quest_hook::libil2cpp::Il2CppString,
         adapter: *mut crate::System::Xml::IDtdParserAdapter,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::IDtdInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -4,9 +4,9 @@
 pub struct FileSystemInfo {
     __cordl_parent: crate::System::MarshalByRefObject,
     pub _fileStatus: crate::System::IO::FileStatus,
-    pub FullPath: *mut crate::System::String,
-    pub OriginalPath: *mut crate::System::String,
-    pub _name: *mut crate::System::String,
+    pub FullPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub OriginalPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+IO+FileSystemInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -90,11 +90,11 @@ impl crate::System::IO::FileSystemInfo {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -146,11 +146,11 @@ impl crate::System::IO::FileSystemInfo {
     }
     pub fn get_FullName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FullName", ())?;
         Ok(__cordl_ret)
     }
@@ -193,21 +193,21 @@ impl crate::System::IO::FileSystemInfo {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_NormalizedPath(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NormalizedPath", ())?;
         Ok(__cordl_ret)
     }

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct Preprocessor {
     __cordl_parent: crate::System::Xml::Schema::BaseProcessor,
-    pub Xmlns: *mut crate::System::String,
-    pub NsXsi: *mut crate::System::String,
-    pub targetNamespace: *mut crate::System::String,
+    pub Xmlns: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
+    pub targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     pub rootSchema: *mut crate::System::Xml::Schema::XmlSchema,
     pub currentSchema: *mut crate::System::Xml::Schema::XmlSchema,
     pub elementFormDefault: crate::System::Xml::Schema::XmlSchemaForm,
@@ -158,7 +158,7 @@ impl crate::System::Xml::Schema::Preprocessor {
     pub fn Execute(
         &mut self,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         loadExternals: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,7 +170,7 @@ impl crate::System::Xml::Schema::Preprocessor {
     }
     pub fn GetChameleonSchema(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -195,11 +195,11 @@ impl crate::System::Xml::Schema::Preprocessor {
     pub fn GetSchemaEntity(
         &mut self,
         ruri: *mut crate::System::Uri,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetSchemaEntity", (ruri))?;
         Ok(__cordl_ret)
     }
@@ -231,8 +231,8 @@ impl crate::System::Xml::Schema::Preprocessor {
     }
     pub fn ParseUri(
         &mut self,
-        uri: *mut crate::System::String,
-        code: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         sourceSchemaObject: *mut crate::System::Xml::Schema::XmlSchemaObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -245,7 +245,7 @@ impl crate::System::Xml::Schema::Preprocessor {
     pub fn Preprocess(
         &mut self,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         imports: *mut crate::System::Collections::ArrayList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -449,7 +449,7 @@ impl crate::System::Xml::Schema::Preprocessor {
     pub fn ResolveSchemaLocationUri(
         &mut self,
         enclosingSchema: *mut crate::System::Xml::Schema::XmlSchema,
-        location: *mut crate::System::String,
+        location: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Uri> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -506,7 +506,7 @@ impl crate::System::Xml::Schema::Preprocessor {
     pub fn ValidateQNameAttribute(
         &mut self,
         xso: *mut crate::System::Xml::Schema::XmlSchemaObject,
-        attributeName: *mut crate::System::String,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::System::Xml::XmlQualifiedName,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

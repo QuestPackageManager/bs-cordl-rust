@@ -21,8 +21,8 @@ pub struct LevelListTableCell {
     pub _refreshingAvailabilityCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _settingDataCancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _notOwned: bool,
-    pub _refreshingAvailabilityLevelID: *mut crate::System::String,
-    pub _settingDataFromLevelId: *mut crate::System::String,
+    pub _refreshingAvailabilityLevelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _settingDataFromLevelId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LevelListTableCell")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::LevelListTableCell {
     pub fn RefreshAvailabilityAsync(
         &mut self,
         entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
-        levelID: *mut crate::System::String,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

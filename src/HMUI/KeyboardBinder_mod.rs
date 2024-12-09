@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KeyboardBinder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _enabled_k__BackingField: bool,
     pub _shouldClearBindings: bool,
     pub _newBindings: *mut crate::System::Collections::Generic::List_1<
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+KeyboardBinder")]
 impl std::ops::Deref for crate::HMUI::KeyboardBinder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

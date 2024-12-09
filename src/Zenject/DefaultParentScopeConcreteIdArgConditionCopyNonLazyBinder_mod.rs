@@ -40,7 +40,7 @@ impl crate::Zenject::DefaultParentScopeConcreteIdArgConditionCopyNonLazyBinder {
     }
     pub fn WithDefaultGameObjectParent(
         &mut self,
-        defaultParentName: *mut crate::System::String,
+        defaultParentName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {

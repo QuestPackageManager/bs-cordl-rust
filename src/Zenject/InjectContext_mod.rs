@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InjectContext {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindingId: crate::Zenject::BindingId,
     pub _objectType: *mut crate::System::Type,
     pub _parentContext: *mut crate::Zenject::InjectContext,
-    pub _objectInstance: *mut crate::System::Object,
-    pub _memberName: *mut crate::System::String,
+    pub _objectInstance: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _memberName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _optional: bool,
     pub _sourceType: crate::Zenject::InjectSources,
-    pub _fallBackValue: *mut crate::System::Object,
-    pub _concreteIdentifier: *mut crate::System::Object,
+    pub _fallBackValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
 }
 #[cfg(feature = "Zenject+InjectContext")]
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InjectContext")]
 impl std::ops::Deref for crate::Zenject::InjectContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -50,10 +50,10 @@ impl crate::Zenject::InjectContext {
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateSubContext_Object1(
+    pub fn CreateSubContext_Il2CppObject1(
         &mut self,
         memberType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::InjectContext> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -85,11 +85,11 @@ impl crate::Zenject::InjectContext {
     }
     pub fn GetObjectGraphString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetObjectGraphString", ())?;
         Ok(__cordl_ret)
     }
@@ -110,10 +110,10 @@ impl crate::Zenject::InjectContext {
             .invoke_void(".ctor", (container, memberType))?;
         Ok(__cordl_object)
     }
-    pub fn New_DiContainer_Type_Object2(
+    pub fn New_DiContainer_Type_Il2CppObject2(
         container: *mut crate::Zenject::DiContainer,
         memberType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -121,10 +121,10 @@ impl crate::Zenject::InjectContext {
             .invoke_void(".ctor", (container, memberType, identifier))?;
         Ok(__cordl_object)
     }
-    pub fn New_DiContainer_Type_Object__cordl_bool3(
+    pub fn New_DiContainer_Type_Il2CppObject__cordl_bool3(
         container: *mut crate::Zenject::DiContainer,
         memberType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         optional: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -165,11 +165,11 @@ impl crate::Zenject::InjectContext {
             .invoke(".ctor", (container, memberType))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_DiContainer_Type_Object2(
+    pub fn _ctor_DiContainer_Type_Il2CppObject2(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
         memberType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,11 +178,11 @@ impl crate::Zenject::InjectContext {
             .invoke(".ctor", (container, memberType, identifier))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_DiContainer_Type_Object__cordl_bool3(
+    pub fn _ctor_DiContainer_Type_Il2CppObject__cordl_bool3(
         &mut self,
         container: *mut crate::Zenject::DiContainer,
         memberType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         optional: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -217,11 +217,11 @@ impl crate::Zenject::InjectContext {
     }
     pub fn get_ConcreteIdentifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_ConcreteIdentifier", ())?;
         Ok(__cordl_ret)
     }
@@ -237,31 +237,31 @@ impl crate::Zenject::InjectContext {
     }
     pub fn get_FallBackValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_FallBackValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Identifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Identifier", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_MemberName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_MemberName", ())?;
         Ok(__cordl_ret)
     }
@@ -277,11 +277,11 @@ impl crate::Zenject::InjectContext {
     }
     pub fn get_ObjectInstance(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_ObjectInstance", ())?;
         Ok(__cordl_ret)
     }
@@ -354,7 +354,7 @@ impl crate::Zenject::InjectContext {
     }
     pub fn set_ConcreteIdentifier(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -376,7 +376,7 @@ impl crate::Zenject::InjectContext {
     }
     pub fn set_FallBackValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -387,7 +387,7 @@ impl crate::Zenject::InjectContext {
     }
     pub fn set_Identifier(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -398,7 +398,7 @@ impl crate::Zenject::InjectContext {
     }
     pub fn set_MemberName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -420,7 +420,7 @@ impl crate::Zenject::InjectContext {
     }
     pub fn set_ObjectInstance(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

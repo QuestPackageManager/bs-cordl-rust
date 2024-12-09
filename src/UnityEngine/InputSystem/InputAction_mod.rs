@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputAction {
-    __cordl_parent: crate::System::Object,
-    pub m_Name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Type: crate::UnityEngine::InputSystem::InputActionType,
-    pub m_ExpectedControlType: *mut crate::System::String,
-    pub m_Id: *mut crate::System::String,
-    pub m_Processors: *mut crate::System::String,
-    pub m_Interactions: *mut crate::System::String,
+    pub m_ExpectedControlType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Id: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Processors: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Interactions: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_SingletonActionBindings: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::InputSystem::InputBinding,
     >,
@@ -45,7 +45,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputAction")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputAction {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -211,11 +211,11 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn MakeSureIdIsInPlace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("MakeSureIdIsInPlace", ())?;
         Ok(__cordl_ret)
     }
@@ -226,13 +226,13 @@ impl crate::UnityEngine::InputSystem::InputAction {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_InputActionType_String_String_String_String1(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString_InputActionType_Il2CppString_Il2CppString_Il2CppString_Il2CppString1(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::UnityEngine::InputSystem::InputActionType,
-        binding: *mut crate::System::String,
-        interactions: *mut crate::System::String,
-        processors: *mut crate::System::String,
-        expectedControlType: *mut crate::System::String,
+        binding: *mut quest_hook::libil2cpp::Il2CppString,
+        interactions: *mut quest_hook::libil2cpp::Il2CppString,
+        processors: *mut quest_hook::libil2cpp::Il2CppString,
+        expectedControlType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -263,11 +263,11 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn ReadValueAsObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadValueAsObject", ())?;
         Ok(__cordl_ret)
     }
@@ -293,21 +293,21 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn System_ICloneable_Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.ICloneable.Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -342,14 +342,14 @@ impl crate::UnityEngine::InputSystem::InputAction {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_InputActionType_String_String_String_String1(
+    pub fn _ctor_Il2CppString_InputActionType_Il2CppString_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::UnityEngine::InputSystem::InputActionType,
-        binding: *mut crate::System::String,
-        interactions: *mut crate::System::String,
-        processors: *mut crate::System::String,
-        expectedControlType: *mut crate::System::String,
+        binding: *mut quest_hook::libil2cpp::Il2CppString,
+        interactions: *mut quest_hook::libil2cpp::Il2CppString,
+        processors: *mut quest_hook::libil2cpp::Il2CppString,
+        expectedControlType: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -495,11 +495,11 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn get_expectedControlType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_expectedControlType", ())?;
         Ok(__cordl_ret)
     }
@@ -529,11 +529,11 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn get_interactions(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_interactions", ())?;
         Ok(__cordl_ret)
     }
@@ -546,11 +546,11 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn get_name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_name", ())?;
         Ok(__cordl_ret)
     }
@@ -568,11 +568,11 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn get_processors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_processors", ())?;
         Ok(__cordl_ret)
     }
@@ -654,7 +654,7 @@ impl crate::UnityEngine::InputSystem::InputAction {
     }
     pub fn set_expectedControlType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -732,8 +732,8 @@ impl crate::UnityEngine::InputSystem::InputAction_CallbackContext {
     }
     pub fn ReadValueAsObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ReadValueAsObject",
             (),
@@ -766,8 +766,8 @@ impl crate::UnityEngine::InputSystem::InputAction_CallbackContext {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

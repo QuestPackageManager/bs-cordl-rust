@@ -3,10 +3,10 @@
 #[derive(Debug)]
 pub struct XmlArrayItemAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dataType: *mut crate::System::String,
-    pub elementName: *mut crate::System::String,
+    pub dataType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub elementName: *mut quest_hook::libil2cpp::Il2CppString,
     pub form: crate::System::Xml::Schema::XmlSchemaForm,
-    pub ns: *mut crate::System::String,
+    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
     pub isNullable: bool,
     pub isNullableSpecified: bool,
     pub nestingLevel: i32,
@@ -46,21 +46,21 @@ impl crate::System::Xml::Serialization::XmlArrayItemAttribute {
     }
     pub fn get_DataType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_DataType", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_ElementName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ElementName", ())?;
         Ok(__cordl_ret)
     }
@@ -90,11 +90,11 @@ impl crate::System::Xml::Serialization::XmlArrayItemAttribute {
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }

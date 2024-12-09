@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortKeyBuffer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub l1b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub l2b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub l3b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -11,7 +11,7 @@ pub struct SortKeyBuffer {
     pub l4kb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub l4wb: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub l5b: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub source: *mut crate::System::String,
+    pub source: *mut quest_hook::libil2cpp::Il2CppString,
     pub l1: i32,
     pub l2: i32,
     pub l3: i32,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Globalization+Unicode+SortKeyBuffer")]
 impl std::ops::Deref for crate::Mono::Globalization::Unicode::SortKeyBuffer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -157,7 +157,7 @@ impl crate::Mono::Globalization::Unicode::SortKeyBuffer {
         &mut self,
         options: crate::System::Globalization::CompareOptions,
         lcid: i32,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         frenchSort: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TextGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
-    pub m_LastString: *mut crate::System::String,
+    pub m_LastString: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_LastSettings: crate::UnityEngine::TextGenerationSettings,
     pub m_HasGenerated: bool,
     pub m_LastValid: crate::UnityEngine::TextGenerationError,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+TextGenerator")]
 impl std::ops::Deref for crate::UnityEngine::TextGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +66,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetCharactersInternal(
         &mut self,
-        characters: *mut crate::System::Object,
+        characters: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,7 +90,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetLinesInternal(
         &mut self,
-        lines: *mut crate::System::Object,
+        lines: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,7 +101,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetPreferredHeight(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         settings: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -113,7 +113,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetPreferredWidth(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         settings: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -138,7 +138,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn GetVerticesInternal(
         &mut self,
-        vertices: *mut crate::System::Object,
+        vertices: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,7 +173,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn Populate(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         settings: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -184,7 +184,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn PopulateAlways(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         settings: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextGenerationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -196,7 +196,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn PopulateWithError(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         settings: crate::UnityEngine::TextGenerationSettings,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextGenerationError> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -208,7 +208,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn PopulateWithErrors(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         settings: crate::UnityEngine::TextGenerationSettings,
         context: *mut crate::UnityEngine::GameObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -221,7 +221,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn Populate_Internal_Injected(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         font: *mut crate::UnityEngine::Font,
         color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
         fontSize: i32,
@@ -279,7 +279,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn Populate_Internal_VerticalWrapMode_HorizontalWrapMode_Vector2_Vector2__cordl_bool__cordl_bool_ByRefMut1(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         font: *mut crate::UnityEngine::Font,
         color: crate::UnityEngine::Color,
         fontSize: i32,
@@ -333,7 +333,7 @@ impl crate::UnityEngine::TextGenerator {
     }
     pub fn Populate_Internal_i32_i32_f32_f32_f32_f32__cordl_bool__cordl_bool_ByRefMut0(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         font: *mut crate::UnityEngine::Font,
         color: crate::UnityEngine::Color,
         fontSize: i32,

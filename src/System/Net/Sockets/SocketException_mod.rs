@@ -58,9 +58,9 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke_void(".ctor", (errorCode))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String1(
+    pub fn New_i32_Il2CppString1(
         error: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -112,10 +112,10 @@ impl crate::System::Net::Sockets::SocketException {
             .invoke(".ctor", (errorCode))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String1(
+    pub fn _ctor_i32_Il2CppString1(
         &mut self,
         error: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -133,11 +133,11 @@ impl crate::System::Net::Sockets::SocketException {
     }
     pub fn get_Message(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Message", ())?;
         Ok(__cordl_ret)
     }

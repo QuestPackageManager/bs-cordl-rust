@@ -40,7 +40,7 @@ impl crate::System::Runtime::Remoting::Proxies::ProxyAttribute {
         &mut self,
         objRef: *mut crate::System::Runtime::Remoting::ObjRef,
         serverType: *mut crate::System::Type,
-        serverObject: *mut crate::System::Object,
+        serverObject: *mut quest_hook::libil2cpp::Il2CppObject,
         serverContext: *mut crate::System::Runtime::Remoting::Contexts::Context,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Runtime::Remoting::Proxies::RealProxy,

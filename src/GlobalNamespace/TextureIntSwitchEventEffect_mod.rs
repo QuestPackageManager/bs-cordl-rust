@@ -4,7 +4,7 @@
 pub struct TextureIntSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _texturePropertyName: *mut crate::System::String,
+    pub _texturePropertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
     pub _defaultIndex: i32,
     pub _textureValueTuples: *mut quest_hook::libil2cpp::Il2CppArray<

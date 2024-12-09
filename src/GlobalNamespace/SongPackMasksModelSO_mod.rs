@@ -4,7 +4,7 @@
 pub struct SongPackMasksModelSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
     pub _defaultSongPackMaskItems: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _customSongPackMaskItems: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::SongPackMasksModelItem,
@@ -66,14 +66,14 @@ impl crate::GlobalNamespace::SongPackMasksModelSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_defaultSongPackMaskItems", ())?;
         Ok(__cordl_ret)
     }

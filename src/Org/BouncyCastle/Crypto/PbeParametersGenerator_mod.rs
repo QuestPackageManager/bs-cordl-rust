@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PbeParametersGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mPassword: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub mSalt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub mIterationCount: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+PbeParametersGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,9 +41,9 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke("GenerateDerivedMacParameters", (keySize))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateDerivedParameters_String_i32_1(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_1(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         keySize: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::ICipherParameters,
@@ -55,9 +55,9 @@ impl crate::Org::BouncyCastle::Crypto::PbeParametersGenerator {
             .invoke("GenerateDerivedParameters", (algorithm, keySize))?;
         Ok(__cordl_ret)
     }
-    pub fn GenerateDerivedParameters_String_i32_i32_3(
+    pub fn GenerateDerivedParameters_Il2CppString_i32_i32_3(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         keySize: i32,
         ivSize: i32,
     ) -> quest_hook::libil2cpp::Result<

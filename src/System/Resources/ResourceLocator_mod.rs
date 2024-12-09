@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ResourceLocator {
-    pub _value: *mut crate::System::Object,
+    pub _value: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _dataPos: i32,
 }
 #[cfg(feature = "System+Resources+ResourceLocator")]
@@ -26,7 +26,7 @@ impl crate::System::Resources::ResourceLocator {
     pub fn _ctor(
         &mut self,
         dataPos: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -45,8 +45,8 @@ impl crate::System::Resources::ResourceLocator {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Value",
             (),
@@ -55,7 +55,7 @@ impl crate::System::Resources::ResourceLocator {
     }
     pub fn set_Value(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

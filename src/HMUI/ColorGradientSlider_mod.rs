@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ColorGradientSlider {
     __cordl_parent: crate::HMUI::TextSlider,
-    pub _textPrefix: *mut crate::System::String,
+    pub _textPrefix: *mut quest_hook::libil2cpp::Il2CppString,
     pub _color0: crate::UnityEngine::Color,
     pub _color1: crate::UnityEngine::Color,
     pub _gradientImages: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -102,11 +102,11 @@ impl crate::HMUI::ColorGradientSlider {
     pub fn TextForNormalizedValue(
         &mut self,
         normalizedValue: f32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TextForNormalizedValue", (normalizedValue))?;
         Ok(__cordl_ret)
     }

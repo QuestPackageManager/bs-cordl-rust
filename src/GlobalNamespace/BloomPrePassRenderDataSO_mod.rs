@@ -59,7 +59,7 @@ for crate::GlobalNamespace::BloomPrePassRenderDataSO {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRenderDataSO_Data {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub bloomPrePassRenderTexture: *mut crate::UnityEngine::RenderTexture,
     pub textureToScreenRatio: crate::UnityEngine::Vector2,
     pub viewMatrix: crate::UnityEngine::Matrix4x4,
@@ -74,7 +74,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BloomPrePassRenderDataSO+Data")]
 impl std::ops::Deref for crate::GlobalNamespace::BloomPrePassRenderDataSO_Data {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

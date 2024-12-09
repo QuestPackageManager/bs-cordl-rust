@@ -9,7 +9,7 @@ pub struct GameplayModifiersDropdown {
     pub _gameplayModifiersData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::System::Tuple_2<
             crate::GlobalNamespace::GameplayModifierMask,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     >,
 }
@@ -125,7 +125,7 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Tuple_2<
             crate::GlobalNamespace::GameplayModifierMask,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
         );
         let __cordl_ret: *mut crate::System::Tuple_2<
             crate::GlobalNamespace::GameplayModifierMask,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("<get_gameplayModifiersData>b__7_0", (value))?;
         Ok(__cordl_ret)
     }
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
                 crate::GlobalNamespace::GameplayModifierMask,
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -164,7 +164,7 @@ impl crate::GlobalNamespace::GameplayModifiersDropdown {
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
                 crate::GlobalNamespace::GameplayModifierMask,
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("get_gameplayModifiersData", ())?;
         Ok(__cordl_ret)

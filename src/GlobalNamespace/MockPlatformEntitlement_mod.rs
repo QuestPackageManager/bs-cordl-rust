@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MockPlatformEntitlement {
-    __cordl_parent: crate::System::Object,
-    pub _id: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _id: *mut quest_hook::libil2cpp::Il2CppString,
     pub _status: crate::GlobalNamespace::EntitlementStatus,
 }
 #[cfg(feature = "MockPlatformEntitlement")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MockPlatformEntitlement")]
 impl std::ops::Deref for crate::GlobalNamespace::MockPlatformEntitlement {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::GlobalNamespace::MockPlatformEntitlement {
         Ok(__cordl_ret)
     }
     pub fn New(
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::GlobalNamespace::EntitlementStatus,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::MockPlatformEntitlement {
     }
     pub fn _ctor(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::GlobalNamespace::EntitlementStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -60,11 +60,11 @@ impl crate::GlobalNamespace::MockPlatformEntitlement {
     }
     pub fn get_id(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_id", ())?;
         Ok(__cordl_ret)
     }

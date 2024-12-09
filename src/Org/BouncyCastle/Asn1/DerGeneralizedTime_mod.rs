@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DerGeneralizedTime {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Object,
-    pub _cordl_time: *mut crate::System::String,
+    pub _cordl_time: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+DerGeneralizedTime")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -44,11 +44,11 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
     }
     pub fn CalculateGmtOffset(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CalculateGmtOffset", ())?;
         Ok(__cordl_ret)
     }
@@ -66,11 +66,11 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
     pub fn FString(
         &mut self,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FString", (count))?;
         Ok(__cordl_ret)
     }
@@ -86,11 +86,11 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
     }
     pub fn GetTime(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetTime", ())?;
         Ok(__cordl_ret)
     }
@@ -112,8 +112,8 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
             .invoke_void(".ctor", (bytes))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        _cordl_time: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        _cordl_time: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -123,8 +123,8 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
     }
     pub fn ParseDateString(
         &mut self,
-        s: *mut crate::System::String,
-        format: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         makeUniversal: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -166,9 +166,9 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
             .invoke(".ctor", (bytes))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        _cordl_time: *mut crate::System::String,
+        _cordl_time: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -186,11 +186,11 @@ impl crate::Org::BouncyCastle::Asn1::DerGeneralizedTime {
     }
     pub fn get_TimeString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TimeString", ())?;
         Ok(__cordl_ret)
     }

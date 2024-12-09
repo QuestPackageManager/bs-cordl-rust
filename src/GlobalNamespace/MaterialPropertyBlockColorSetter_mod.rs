@@ -5,7 +5,7 @@ pub struct MaterialPropertyBlockColorSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _useTestColor: bool,
     pub _testColor: crate::UnityEngine::Color,
-    pub _property: *mut crate::System::String,
+    pub _property: *mut quest_hook::libil2cpp::Il2CppString,
     pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub _inverseAlpha: bool,
     pub _multiplyWithAlpha: bool,

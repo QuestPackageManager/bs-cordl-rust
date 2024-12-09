@@ -8,7 +8,7 @@ pub struct MultiplayerLobbyAvatarManager {
     pub _innerCircleRadius: f32,
     pub _minOuterCircleRadius: f32,
     pub _playerIdToAvatarMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     >,
     pub _inProgressDespawnAnimations: *mut crate::System::Collections::Generic::HashSet_1<
@@ -122,7 +122,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     }
     pub fn RemovePlayerAndDestroy(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         multiplayerAvatar: *mut crate::GlobalNamespace::MultiplayerLobbyAvatarController,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IEnumerator> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CaseInsensitiveAscii {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Net+CaseInsensitiveAscii")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+CaseInsensitiveAscii")]
 impl std::ops::Deref for crate::System::Net::CaseInsensitiveAscii {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::Net::CaseInsensitiveAscii {
 impl crate::System::Net::CaseInsensitiveAscii {
     pub fn Compare(
         &mut self,
-        firstObject: *mut crate::System::Object,
-        secondObject: *mut crate::System::Object,
+        firstObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        secondObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -38,8 +38,8 @@ impl crate::System::Net::CaseInsensitiveAscii {
     }
     pub fn Equals(
         &mut self,
-        firstObject: *mut crate::System::Object,
-        secondObject: *mut crate::System::Object,
+        firstObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        secondObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +50,7 @@ impl crate::System::Net::CaseInsensitiveAscii {
     }
     pub fn FastGetHashCode(
         &mut self,
-        myString: *mut crate::System::String,
+        myString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,7 +60,7 @@ impl crate::System::Net::CaseInsensitiveAscii {
     }
     pub fn GetHashCode(
         &mut self,
-        myObject: *mut crate::System::Object,
+        myObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _escape: char,
     pub _decimalSeparator: char,
     pub _listSeparator: char,
@@ -32,7 +32,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+ExpressionParser")]
 impl std::ops::Deref for crate::System::Data::ExpressionParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -99,7 +99,7 @@ impl crate::System::Data::ExpressionParser {
     }
     pub fn LoadExpression(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -209,11 +209,11 @@ impl crate::System::Data::ExpressionParser {
             .invoke("ScanName", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ScanName__cordl_char__cordl_char_String1(
+    pub fn ScanName__cordl_char__cordl_char_Il2CppString1(
         &mut self,
         chEnd: char,
         esc: char,
-        charsToEscape: *mut crate::System::String,
+        charsToEscape: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -309,7 +309,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::ExpressionParser
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ExpressionParser_ReservedWords {
-    pub _word: *mut crate::System::String,
+    pub _word: *mut quest_hook::libil2cpp::Il2CppString,
     pub _token: crate::System::Data::Tokens,
     pub _op: i32,
 }
@@ -333,7 +333,7 @@ for crate::System::Data::ExpressionParser_ReservedWords {
 impl crate::System::Data::ExpressionParser_ReservedWords {
     pub fn _ctor(
         &mut self,
-        word: *mut crate::System::String,
+        word: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Data::Tokens,
         op: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

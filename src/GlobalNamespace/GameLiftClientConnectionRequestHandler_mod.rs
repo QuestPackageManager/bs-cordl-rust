@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftClientConnectionRequestHandler {
-    __cordl_parent: crate::System::Object,
-    pub _playerSessionId_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _playerSessionId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "GameLiftClientConnectionRequestHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,8 +30,8 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     pub fn GetConnectionMessage(
         &mut self,
         writer: *mut crate::LiteNetLib::Utils::NetDataWriter,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -54,8 +54,12 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     pub fn ValidateConnectionMessage(
         &mut self,
         reader: *mut crate::LiteNetLib::Utils::NetDataReader,
-        userId: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
-        userName: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        userId: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        userName: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,17 +84,17 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
     }
     pub fn get_playerSessionId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_playerSessionId", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_playerSessionId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

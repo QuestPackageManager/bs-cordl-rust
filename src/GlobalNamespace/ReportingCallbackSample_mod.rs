@@ -35,7 +35,9 @@ impl crate::GlobalNamespace::ReportingCallbackSample {
     }
     pub fn OnReportButtonIntentNotif(
         &mut self,
-        message: *mut crate::Oculus::Platform::Message_1<*mut crate::System::String>,
+        message: *mut crate::Oculus::Platform::Message_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +58,7 @@ impl crate::GlobalNamespace::ReportingCallbackSample {
     }
     pub fn UpdateConsole(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

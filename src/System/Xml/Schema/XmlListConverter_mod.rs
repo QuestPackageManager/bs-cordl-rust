@@ -27,27 +27,27 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlListConverter {
 impl crate::System::Xml::Schema::XmlListConverter {
     pub fn ChangeListType(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeListType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }
     pub fn ChangeType(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }
@@ -77,11 +77,11 @@ impl crate::System::Xml::Schema::XmlListConverter {
         &mut self,
         list: *mut crate::System::Collections::IEnumerable,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ListAsString", (list, nsResolver))?;
         Ok(__cordl_ret)
     }
@@ -115,21 +115,23 @@ impl crate::System::Xml::Schema::XmlListConverter {
     }
     pub fn StringAsList(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("StringAsList", (value))?;
         Ok(__cordl_ret)
     }
     pub fn ToArray<T>(
         &mut self,
-        list: *mut crate::System::Object,
+        list: *mut quest_hook::libil2cpp::Il2CppObject,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<T>>
     where
@@ -145,7 +147,7 @@ impl crate::System::Xml::Schema::XmlListConverter {
     }
     pub fn ToList(
         &mut self,
-        list: *mut crate::System::Object,
+        list: *mut quest_hook::libil2cpp::Il2CppObject,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IList> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

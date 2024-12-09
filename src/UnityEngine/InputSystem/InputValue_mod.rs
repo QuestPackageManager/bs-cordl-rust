@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputValue {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Context: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::InputAction_CallbackContext,
     >,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputValue")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputValue {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,11 +29,12 @@ impl std::ops::DerefMut for crate::UnityEngine::InputSystem::InputValue {
 impl crate::UnityEngine::InputSystem::InputValue {
     pub fn Get_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Get", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Get", ())?;
         Ok(__cordl_ret)
     }
     pub fn Get_1<TValue>(&mut self) -> quest_hook::libil2cpp::Result<TValue>

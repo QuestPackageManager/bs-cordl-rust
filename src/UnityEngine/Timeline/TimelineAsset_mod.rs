@@ -68,7 +68,7 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
     pub fn AllocateTrack(
         &mut self,
         trackAssetParent: *mut crate::UnityEngine::Timeline::TrackAsset,
-        trackName: *mut crate::System::String,
+        trackName: *mut quest_hook::libil2cpp::Il2CppString,
         trackType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::TrackAsset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -121,9 +121,9 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: T = __cordl_object.invoke("CreateTrack", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CreateTrack_String2<T>(
+    pub fn CreateTrack_Il2CppString2<T>(
         &mut self,
-        trackName: *mut crate::System::String,
+        trackName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -135,10 +135,10 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: T = __cordl_object.invoke("CreateTrack", (trackName))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateTrack_TrackAsset_String1<T>(
+    pub fn CreateTrack_TrackAsset_Il2CppString1<T>(
         &mut self,
         parent: *mut crate::UnityEngine::Timeline::TrackAsset,
-        trackName: *mut crate::System::String,
+        trackName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -150,11 +150,11 @@ impl crate::UnityEngine::Timeline::TimelineAsset {
         let __cordl_ret: T = __cordl_object.invoke("CreateTrack", (parent, trackName))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateTrack_Type_TrackAsset_String0(
+    pub fn CreateTrack_Type_TrackAsset_Il2CppString0(
         &mut self,
         _cordl_type: *mut crate::System::Type,
         parent: *mut crate::UnityEngine::Timeline::TrackAsset,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Timeline::TrackAsset> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -567,7 +567,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset_EditorSettings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Framerate: f64,
     pub m_ScenePreview: bool,
 }
@@ -579,7 +579,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+EditorSettings")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TimelineAsset_EditorSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -705,7 +705,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimelineAsset_TimelineAssetUpgrade {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -716,7 +716,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+Timeline+TimelineAsset+TimelineAssetUpgrade")]
 impl std::ops::Deref
 for crate::UnityEngine::Timeline::TimelineAsset_TimelineAssetUpgrade {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

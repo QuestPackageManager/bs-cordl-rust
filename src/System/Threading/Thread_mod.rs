@@ -4,8 +4,8 @@
 pub struct Thread {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
     pub internal_thread: *mut crate::System::Threading::InternalThread,
-    pub m_ThreadStartArg: *mut crate::System::Object,
-    pub pending_exception: *mut crate::System::Object,
+    pub m_ThreadStartArg: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub pending_exception: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_Delegate: *mut crate::System::MulticastDelegate,
     pub m_ExecutionContext: *mut crate::System::Threading::ExecutionContext,
     pub m_ExecutionContextBelongsToOuterScope: bool,
@@ -228,7 +228,7 @@ impl crate::System::Threading::Thread {
     }
     pub fn StartInternal(
         &mut self,
-        principal: *mut crate::System::Object,
+        principal: *mut quest_hook::libil2cpp::Il2CppObject,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,
         >,
@@ -263,9 +263,9 @@ impl crate::System::Threading::Thread {
             .invoke("Start", (stackMark))?;
         Ok(__cordl_ret)
     }
-    pub fn Start_Object1(
+    pub fn Start_Il2CppObject1(
         &mut self,
-        parameter: *mut crate::System::Object,
+        parameter: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -455,7 +455,7 @@ impl crate::System::Threading::Thread {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

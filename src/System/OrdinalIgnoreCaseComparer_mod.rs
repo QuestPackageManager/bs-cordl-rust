@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::OrdinalIgnoreCaseComparer {
 impl crate::System::OrdinalIgnoreCaseComparer {
     pub fn Compare(
         &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
+        x: *mut quest_hook::libil2cpp::Il2CppString,
+        y: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,8 +37,8 @@ impl crate::System::OrdinalIgnoreCaseComparer {
     }
     pub fn Equals(
         &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
+        x: *mut quest_hook::libil2cpp::Il2CppString,
+        y: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +48,7 @@ impl crate::System::OrdinalIgnoreCaseComparer {
     }
     pub fn GetHashCode(
         &mut self,
-        obj: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

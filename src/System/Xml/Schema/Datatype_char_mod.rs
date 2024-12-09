@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_char {
 impl crate::System::Xml::Schema::Datatype_char {
     pub fn Compare(
         &mut self,
-        value1: *mut crate::System::Object,
-        value2: *mut crate::System::Object,
+        value1: *mut quest_hook::libil2cpp::Il2CppObject,
+        value2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,23 +44,25 @@ impl crate::System::Xml::Schema::Datatype_char {
     }
     pub fn ParseValue(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseValue", (s, nameTable, nsmgr))?;
         Ok(__cordl_ret)
     }
     pub fn TryParseValue(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        typedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Collections::IStructuralComparable {
 impl crate::System::Collections::IStructuralComparable {
     pub fn CompareTo(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
         comparer: *mut crate::System::Collections::IComparer,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

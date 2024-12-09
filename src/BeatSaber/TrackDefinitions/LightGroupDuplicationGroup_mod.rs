@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct LightGroupDuplicationGroup {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _duplicationGroupName: *mut crate::System::String,
+    pub _duplicationGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _lightGroups: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::LightGroupSO,
     >,
@@ -49,11 +49,11 @@ impl crate::BeatSaber::TrackDefinitions::LightGroupDuplicationGroup {
     }
     pub fn get_duplicationGroupName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_duplicationGroupName", ())?;
         Ok(__cordl_ret)
     }

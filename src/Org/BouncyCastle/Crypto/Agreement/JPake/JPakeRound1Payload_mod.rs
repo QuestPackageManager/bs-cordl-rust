@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JPakeRound1Payload {
-    __cordl_parent: crate::System::Object,
-    pub participantId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub participantId: *mut quest_hook::libil2cpp::Il2CppString,
     pub gx1: *mut crate::Org::BouncyCastle::Math::BigInteger,
     pub gx2: *mut crate::Org::BouncyCastle::Math::BigInteger,
     pub knowledgeProofForX1: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound1Payload")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ for crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+JPake+JPakeRound1Payload")]
 impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
     pub fn New(
-        participantId: *mut crate::System::String,
+        participantId: *mut quest_hook::libil2cpp::Il2CppString,
         gx1: *mut crate::Org::BouncyCastle::Math::BigInteger,
         gx2: *mut crate::Org::BouncyCastle::Math::BigInteger,
         knowledgeProofForX1: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
     }
     pub fn _ctor(
         &mut self,
-        participantId: *mut crate::System::String,
+        participantId: *mut quest_hook::libil2cpp::Il2CppString,
         gx1: *mut crate::Org::BouncyCastle::Math::BigInteger,
         gx2: *mut crate::Org::BouncyCastle::Math::BigInteger,
         knowledgeProofForX1: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -130,11 +130,11 @@ impl crate::Org::BouncyCastle::Crypto::Agreement::JPake::JPakeRound1Payload {
     }
     pub fn get_ParticipantId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ParticipantId", ())?;
         Ok(__cordl_ret)
     }

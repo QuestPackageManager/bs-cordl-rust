@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetReference {
-    __cordl_parent: crate::System::Object,
-    pub m_AssetGUID: *mut crate::System::String,
-    pub m_SubObjectName: *mut crate::System::String,
-    pub m_SubObjectType: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_AssetGUID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SubObjectName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SubObjectType: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Operation: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReference")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::AssetReference {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -185,8 +185,8 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        guid: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -224,11 +224,11 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -247,6 +247,16 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
         > = __cordl_object.invoke("UnLoadScene", ())?;
         Ok(__cordl_ret)
     }
+    pub fn ValidateAsset_Il2CppString1(
+        &mut self,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
+        Ok(__cordl_ret)
+    }
     pub fn ValidateAsset_Object0(
         &mut self,
         obj: *mut crate::UnityEngine::Object,
@@ -255,16 +265,6 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
-        Ok(__cordl_ret)
-    }
-    pub fn ValidateAsset_String1(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_0(
@@ -277,9 +277,9 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -300,11 +300,11 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
     }
     pub fn get_AssetGUID(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssetGUID", ())?;
         Ok(__cordl_ret)
     }
@@ -329,21 +329,21 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
     }
     pub fn get_RuntimeKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_RuntimeKey", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_SubObjectName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SubObjectName", ())?;
         Ok(__cordl_ret)
     }
@@ -370,7 +370,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReference {
     }
     pub fn set_SubObjectName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

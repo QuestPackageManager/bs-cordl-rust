@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaInference {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub rootSchema: *mut crate::System::Xml::Schema::XmlSchema,
     pub schemaSet: *mut crate::System::Xml::Schema::XmlSchemaSet,
     pub xtr: *mut crate::System::Xml::XmlReader,
     pub nametable: *mut crate::System::Xml::NameTable,
-    pub TargetNamespace: *mut crate::System::String,
+    pub TargetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     pub NamespaceManager: *mut crate::System::Xml::XmlNamespaceManager,
     pub schemaList: *mut crate::System::Collections::ArrayList,
     pub occurrence: crate::System::Xml::Schema::XmlSchemaInference_InferenceOption,
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaInference")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaInference {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,10 +37,10 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     pub type InferenceOption = crate::System::Xml::Schema::XmlSchemaInference_InferenceOption;
     pub fn AddAttribute(
         &mut self,
-        localName: *mut crate::System::String,
-        prefix: *mut crate::System::String,
-        childURI: *mut crate::System::String,
-        attrValue: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        childURI: *mut quest_hook::libil2cpp::Il2CppString,
+        attrValue: *mut quest_hook::libil2cpp::Il2CppString,
         bCreatingNewType: bool,
         parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
         addLocation: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
@@ -69,9 +69,9 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     }
     pub fn AddElement(
         &mut self,
-        localName: *mut crate::System::String,
-        prefix: *mut crate::System::String,
-        childURI: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        childURI: *mut quest_hook::libil2cpp::Il2CppString,
         parentSchema: *mut crate::System::Xml::Schema::XmlSchema,
         addLocation: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
         positionWithinCollection: i32,
@@ -123,7 +123,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     }
     pub fn CreateXmlSchema(
         &mut self,
-        targetNS: *mut crate::System::String,
+        targetNS: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +135,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     pub fn FindAttribute(
         &mut self,
         attributes: *mut crate::System::Collections::ICollection,
-        attrName: *mut crate::System::String,
+        attrName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::XmlSchemaAttribute,
     > {
@@ -149,8 +149,8 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     pub fn FindAttributeRef(
         &mut self,
         attributes: *mut crate::System::Collections::ICollection,
-        attributeName: *mut crate::System::String,
-        nsURI: *mut crate::System::String,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
+        nsURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::XmlSchemaAttribute,
     > {
@@ -164,7 +164,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     pub fn FindElement(
         &mut self,
         elements: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        elementName: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::XmlSchemaElement,
     > {
@@ -178,8 +178,8 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     pub fn FindElementRef(
         &mut self,
         elements: *mut crate::System::Xml::Schema::XmlSchemaObjectCollection,
-        elementName: *mut crate::System::String,
-        nsURI: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        nsURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::XmlSchemaElement,
     > {
@@ -192,8 +192,8 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     }
     pub fn FindGlobalElement(
         &mut self,
-        namespaceURI: *mut crate::System::String,
-        localName: *mut crate::System::String,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
         parentSchema: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::Schema::XmlSchema,
         >,
@@ -350,7 +350,7 @@ impl crate::System::Xml::Schema::XmlSchemaInference {
     }
     pub fn RefineSimpleType(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         iTypeFlags: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlQualifiedName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

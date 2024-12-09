@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexBoyerMoore {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Positive: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub NegativeASCII: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub NegativeUnicode: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
-    pub Pattern: *mut crate::System::String,
+    pub Pattern: *mut quest_hook::libil2cpp::Il2CppString,
     pub LowASCII: i32,
     pub HighASCII: i32,
     pub RightToLeft: bool,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexBoyerMoore")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexBoyerMoore {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::System::Text::RegularExpressions::RegexBoyerM
 impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
     pub fn IsMatch(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         index: i32,
         beglimit: i32,
         endlimit: i32,
@@ -52,7 +52,7 @@ impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
     }
     pub fn MatchPattern(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -62,7 +62,7 @@ impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
         Ok(__cordl_ret)
     }
     pub fn New(
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         caseInsensitive: bool,
         rightToLeft: bool,
         culture: *mut crate::System::Globalization::CultureInfo,
@@ -75,7 +75,7 @@ impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
     }
     pub fn Scan(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
         index: i32,
         beglimit: i32,
         endlimit: i32,
@@ -89,7 +89,7 @@ impl crate::System::Text::RegularExpressions::RegexBoyerMoore {
     }
     pub fn _ctor(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         caseInsensitive: bool,
         rightToLeft: bool,
         culture: *mut crate::System::Globalization::CultureInfo,

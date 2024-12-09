@@ -2,44 +2,50 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CalendarData {
-    __cordl_parent: crate::System::Object,
-    pub sNativeName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub sNativeName: *mut quest_hook::libil2cpp::Il2CppString,
     pub saShortDates: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saYearMonths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub saLongDates: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub sMonthDay: *mut crate::System::String,
-    pub saEraNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub saLongDates: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub sMonthDay: *mut quest_hook::libil2cpp::Il2CppString,
+    pub saEraNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub saAbbrevEraNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saAbbrevEnglishEraNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub saDayNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub saDayNames: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub saAbbrevDayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saSuperShortDayNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saAbbrevMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saMonthGenitiveNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saAbbrevMonthGenitiveNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub saLeapYearMonthNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub iTwoDigitYearMax: i32,
     pub iCurrentEra: i32,
@@ -52,7 +58,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+CalendarData")]
 impl std::ops::Deref for crate::System::Globalization::CalendarData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -68,7 +74,7 @@ impl crate::System::Globalization::CalendarData {
     pub const MAX_CALENDARS: i32 = 23i32;
     pub fn InitializeAbbreviatedEraNames(
         &mut self,
-        localeName: *mut crate::System::String,
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -80,7 +86,7 @@ impl crate::System::Globalization::CalendarData {
     }
     pub fn InitializeEraNames(
         &mut self,
-        localeName: *mut crate::System::String,
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
         calendarId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -97,8 +103,8 @@ impl crate::System::Globalization::CalendarData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_i32__cordl_bool1(
-        localeName: *mut crate::System::String,
+    pub fn New_Il2CppString_i32__cordl_bool1(
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
         calendarId: i32,
         bUseUserOverrides: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -118,9 +124,9 @@ impl crate::System::Globalization::CalendarData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_i32__cordl_bool1(
+    pub fn _ctor_Il2CppString_i32__cordl_bool1(
         &mut self,
-        localeName: *mut crate::System::String,
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
         calendarId: i32,
         bUseUserOverrides: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -133,7 +139,7 @@ impl crate::System::Globalization::CalendarData {
     }
     pub fn fill_calendar_data(
         &mut self,
-        localeName: *mut crate::System::String,
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
         datetimeIndex: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

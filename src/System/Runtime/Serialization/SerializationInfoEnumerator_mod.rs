@@ -2,9 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SerializationInfoEnumerator {
-    __cordl_parent: crate::System::Object,
-    pub _members: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _members: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _data: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     pub _numItems: i32,
     pub _currItem: i32,
@@ -19,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+SerializationInfoEnumerator")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SerializationInfoEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,8 +45,12 @@ impl crate::System::Runtime::Serialization::SerializationInfoEnumerator {
         Ok(__cordl_ret)
     }
     pub fn New(
-        members: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        info: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        members: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        info: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         numItems: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -64,18 +72,22 @@ impl crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
-        members: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        info: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        members: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        info: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         numItems: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,11 +112,11 @@ impl crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
@@ -120,11 +132,11 @@ impl crate::System::Runtime::Serialization::SerializationInfoEnumerator {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }

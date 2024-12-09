@@ -24,6 +24,17 @@ for crate::UnityEngine::InputSystem::InputActionProperty {
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionProperty")]
 impl crate::UnityEngine::InputSystem::InputActionProperty {
+    pub fn Equals_Il2CppObject3(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InputAction1(
         &mut self,
         other: *mut crate::UnityEngine::InputSystem::InputAction,
@@ -54,17 +65,6 @@ impl crate::UnityEngine::InputSystem::InputActionProperty {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object3(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }

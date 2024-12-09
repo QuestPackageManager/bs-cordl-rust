@@ -31,7 +31,7 @@ impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Linq::Expressions::PrimitiveParameterExpression_1<T> {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -45,7 +45,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebCompletionSource_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub completion: *mut crate::System::Threading::Tasks::TaskCompletionSource_1<
         *mut crate::System::Net::WebCompletionSource_1_Result<T>,
     >,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+WebCompletionSource_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::WebCompletionSource_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -202,7 +202,7 @@ for crate::System::Net::WebCompletionSource_1<T> {
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebCompletionSource_1_Result<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Status_k__BackingField: crate::System::Net::WebCompletionSource_1_Status<T>,
     pub _Error_k__BackingField: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
     pub _Argument_k__BackingField: T,
@@ -216,7 +216,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Net+WebCompletionSource_1+Result")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Net::WebCompletionSource_1_Result<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

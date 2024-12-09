@@ -4,7 +4,7 @@
 pub struct HEU_AssetSync {
     __cordl_parent: crate::HoudiniEngineUnity::HEU_BaseSync,
     pub _onAssetLoaded: *mut crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback,
-    pub _assetPath: *mut crate::System::String,
+    pub _assetPath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_AssetSync")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -43,8 +43,8 @@ impl crate::HoudiniEngineUnity::HEU_AssetSync {
     pub fn InitializeAsset(
         &mut self,
         session: *mut crate::HoudiniEngineUnity::HEU_SessionBase,
-        assetPath: *mut crate::System::String,
-        nodeName: *mut crate::System::String,
+        assetPath: *mut quest_hook::libil2cpp::Il2CppString,
+        nodeName: *mut quest_hook::libil2cpp::Il2CppString,
         parent: *mut crate::UnityEngine::Transform,
         startPosition: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -179,7 +179,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
         &mut self,
         assetSync: *mut crate::HoudiniEngineUnity::HEU_AssetSync,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -211,7 +211,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -222,7 +222,7 @@ impl crate::HoudiniEngineUnity::HEU_AssetSync_AssetSyncCallback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

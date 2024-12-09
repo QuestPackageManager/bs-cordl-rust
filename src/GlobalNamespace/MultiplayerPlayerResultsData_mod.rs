@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerPlayerResultsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectedPlayer: *mut crate::GlobalNamespace::IConnectedPlayer,
     pub multiplayerLevelCompletionResults: *mut crate::GlobalNamespace::MultiplayerLevelCompletionResults,
     pub badge: *mut crate::GlobalNamespace::MultiplayerBadgeAwardData,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerPlayerResultsData")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerPlayerResultsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MultiplayerPlayerResultsData
 impl crate::GlobalNamespace::MultiplayerPlayerResultsData {
     pub fn CompareTo(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

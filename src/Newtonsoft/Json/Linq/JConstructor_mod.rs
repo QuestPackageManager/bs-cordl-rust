@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct JConstructor {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JContainer,
-    pub _name: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _values: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Newtonsoft::Json::Linq::JToken,
     >,
@@ -72,7 +72,7 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
     }
     pub fn MergeItem(
         &mut self,
-        content: *mut crate::System::Object,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
         settings: *mut crate::Newtonsoft::Json::Linq::JsonMergeSettings,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -87,6 +87,37 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString5(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString_Il2CppArray3(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        content: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, content))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString_Il2CppObject4(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (name, content))?;
         Ok(__cordl_object)
     }
     pub fn New_JConstructor1(
@@ -106,35 +137,6 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (other, settings))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String5(
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Il2CppArray3(
-        name: *mut crate::System::String,
-        content: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, content))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Object4(
-        name: *mut crate::System::String,
-        content: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (name, content))?;
         Ok(__cordl_object)
     }
     pub fn WriteTo(
@@ -176,6 +178,43 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppString5(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Il2CppArray3(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        content: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, content))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Il2CppObject4(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        content: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (name, content))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_JConstructor1(
         &mut self,
         other: *mut crate::Newtonsoft::Json::Linq::JConstructor,
@@ -199,41 +238,6 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
             .invoke(".ctor", (other, settings))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String5(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Il2CppArray3(
-        &mut self,
-        name: *mut crate::System::String,
-        content: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, content))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Object4(
-        &mut self,
-        name: *mut crate::System::String,
-        content: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (name, content))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_ChildrenTokens(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -251,7 +255,7 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
     }
     pub fn get_Item(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Newtonsoft::Json::Linq::JToken> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -262,11 +266,11 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
@@ -282,7 +286,7 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
     }
     pub fn set_Item(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         value: *mut crate::Newtonsoft::Json::Linq::JToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -294,7 +298,7 @@ impl crate::Newtonsoft::Json::Linq::JConstructor {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

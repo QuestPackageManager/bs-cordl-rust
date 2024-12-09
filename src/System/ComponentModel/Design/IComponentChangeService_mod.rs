@@ -28,10 +28,10 @@ for crate::System::ComponentModel::Design::IComponentChangeService {
 impl crate::System::ComponentModel::Design::IComponentChangeService {
     pub fn OnComponentChanged(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
         member: *mut crate::System::ComponentModel::MemberDescriptor,
-        oldValue: *mut crate::System::Object,
-        newValue: *mut crate::System::Object,
+        oldValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        newValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,7 @@ impl crate::System::ComponentModel::Design::IComponentChangeService {
     }
     pub fn OnComponentChanging(
         &mut self,
-        component: *mut crate::System::Object,
+        component: *mut quest_hook::libil2cpp::Il2CppObject,
         member: *mut crate::System::ComponentModel::MemberDescriptor,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

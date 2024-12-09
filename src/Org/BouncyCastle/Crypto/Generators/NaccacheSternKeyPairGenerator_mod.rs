@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NaccacheSternKeyPairGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub param: *mut crate::Org::BouncyCastle::Crypto::Parameters::NaccacheSternKeyGenerationParameters,
 }
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+NaccacheSternKeyPairGenerator")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Generators+NaccacheSternKeyPairGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Generators::NaccacheSternKeyPairGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -31,8 +31,8 @@ impl crate::System::Data::BinaryNode {
     pub type DataTypePrecedence = crate::System::Data::BinaryNode_DataTypePrecedence;
     pub fn BinaryCompare_CompareInfo1(
         &mut self,
-        vLeft: *mut crate::System::Object,
-        vRight: *mut crate::System::Object,
+        vLeft: *mut quest_hook::libil2cpp::Il2CppObject,
+        vRight: *mut quest_hook::libil2cpp::Il2CppObject,
         resultType: crate::System::Data::Common::StorageType,
         op: i32,
         comparer: *mut crate::System::Globalization::CompareInfo,
@@ -44,10 +44,10 @@ impl crate::System::Data::BinaryNode {
             .invoke("BinaryCompare", (vLeft, vRight, resultType, op, comparer))?;
         Ok(__cordl_ret)
     }
-    pub fn BinaryCompare_Object_Object_StorageType_i32_0(
+    pub fn BinaryCompare_Il2CppObject_Il2CppObject_StorageType_i32_0(
         &mut self,
-        vLeft: *mut crate::System::Object,
-        vRight: *mut crate::System::Object,
+        vLeft: *mut quest_hook::libil2cpp::Il2CppObject,
+        vRight: *mut quest_hook::libil2cpp::Il2CppObject,
         resultType: crate::System::Data::Common::StorageType,
         op: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -90,43 +90,44 @@ impl crate::System::Data::BinaryNode {
         row: *mut crate::System::Data::DataRow,
         version: crate::System::Data::DataRowVersion,
         recordNos: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("EvalBinaryOp", (op, left, right, row, version, recordNos))?;
         Ok(__cordl_ret)
     }
     pub fn Eval_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Eval", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Eval", ())?;
         Ok(__cordl_ret)
     }
     pub fn Eval_DataRow_DataRowVersion1(
         &mut self,
         row: *mut crate::System::Data::DataRow,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (row, version))?;
         Ok(__cordl_ret)
     }
     pub fn Eval_Il2CppArray2(
         &mut self,
         recordNos: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (recordNos))?;
         Ok(__cordl_ret)
     }

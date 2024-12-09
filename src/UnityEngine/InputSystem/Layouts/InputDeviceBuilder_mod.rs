@@ -5,7 +5,7 @@ pub struct InputDeviceBuilder {
     pub m_Device: *mut crate::UnityEngine::InputSystem::InputDevice,
     pub m_LayoutCacheRef: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_CacheRefInstance,
     pub m_ChildControlOverrides: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
     >,
     pub m_StateOffsetToControlMap: *mut crate::System::Collections::Generic::List_1<u32>,
@@ -41,7 +41,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         haveChildrenUsingStateFromOtherControls: quest_hook::libil2cpp::ByRefMut<bool>,
         controlItem: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_ControlItem,
         childIndex: i32,
-        nameOverride: *mut crate::System::String,
+        nameOverride: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputControl,
     > {
@@ -129,8 +129,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
         &mut self,
         parent: *mut crate::UnityEngine::InputSystem::InputControl,
         controlName: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ChildControlOverridePath",
             (parent, controlName),
@@ -317,8 +317,8 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceBuilder {
     pub fn SetDisplayName(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-        longDisplayNameFromLayout: *mut crate::System::String,
-        shortDisplayNameFromLayout: *mut crate::System::String,
+        longDisplayNameFromLayout: *mut quest_hook::libil2cpp::Il2CppString,
+        shortDisplayNameFromLayout: *mut quest_hook::libil2cpp::Il2CppString,
         shortName: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

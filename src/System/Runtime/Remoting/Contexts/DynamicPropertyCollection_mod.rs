@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicPropertyCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _properties: *mut crate::System::Collections::ArrayList,
 }
 #[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Remoting+Contexts+DynamicPropertyCollection")]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     pub type DynamicPropertyReg = crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg;
     pub fn FindProperty(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,7 +76,7 @@ impl crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
     }
     pub fn UnregisterDynamicProperty(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +119,7 @@ for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicPropertyCollection_DynamicPropertyReg {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Property: *mut crate::System::Runtime::Remoting::Contexts::IDynamicProperty,
     pub Sink: *mut crate::System::Runtime::Remoting::Contexts::IDynamicMessageSink,
 }
@@ -136,7 +136,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Remoting::Contexts::DynamicPropertyCollection_DynamicPropertyReg {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

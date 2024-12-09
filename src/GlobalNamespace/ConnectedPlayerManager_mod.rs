@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectedEvent: *mut crate::System::Action,
     pub initializedEvent: *mut crate::System::Action,
     pub disconnectedEvent: *mut crate::System::Action_1<
@@ -43,7 +43,7 @@ pub struct ConnectedPlayerManager {
         *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
     >,
     pub _localPlayerState: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _localPlayerAvatars: crate::GlobalNamespace::MultiplayerAvatarsData,
     pub _encryptionKeys: *mut crate::GlobalNamespace::IDiffieHellmanKeyPair,
@@ -65,7 +65,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectedPlayerManager")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -207,9 +207,9 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
             .invoke("GetPlayer", (connection, remoteConnectionId))?;
         Ok(__cordl_ret)
     }
-    pub fn GetPlayer_String2(
+    pub fn GetPlayer_Il2CppString2(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
     > {
@@ -444,7 +444,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     }
     pub fn KickPlayer(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -456,7 +456,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     }
     pub fn Log(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -766,7 +766,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager {
     }
     pub fn SetLocalPlayerState(
         &mut self,
-        state: *mut crate::System::String,
+        state: *mut quest_hook::libil2cpp::Il2CppString,
         setState: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1241,9 +1241,9 @@ for crate::GlobalNamespace::ConnectedPlayerManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_ConnectedPlayer {
-    __cordl_parent: crate::System::Object,
-    pub _userId: *mut crate::System::String,
-    pub _userName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isMe: bool,
     pub _isConnectionOwner: bool,
     pub _manager: *mut crate::GlobalNamespace::ConnectedPlayerManager,
@@ -1270,7 +1270,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectedPlayerManager+ConnectedPlayer")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1358,7 +1358,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     }
     pub fn HasState(
         &mut self,
-        state: *mut crate::System::String,
+        state: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1372,8 +1372,8 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         remoteConnectionId: u8,
         connection: *mut crate::GlobalNamespace::IConnection,
         parent: *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
         isMe: bool,
         publicEncryptionKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -1434,11 +1434,11 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -1503,8 +1503,8 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
         remoteConnectionId: u8,
         connection: *mut crate::GlobalNamespace::IConnection,
         parent: *mut crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
         isMe: bool,
         publicEncryptionKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -1673,21 +1673,21 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_ConnectedPlayer {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
@@ -1741,7 +1741,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_KickPlayerPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
 }
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
@@ -1753,7 +1753,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+KickPlayerPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_KickPlayerPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1857,7 +1857,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PingPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pingTime: i64,
 }
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
@@ -1868,7 +1868,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectedPlayerManager+PingPacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1958,7 +1958,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PingPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerAvatarPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerAvatar: crate::GlobalNamespace::MultiplayerAvatarsData,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
@@ -1970,7 +1970,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+PlayerAvatarPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2061,10 +2061,10 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerAvatarPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerConnectedPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub remoteConnectionId: u8,
-    pub userId: *mut crate::System::String,
-    pub userName: *mut crate::System::String,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub isConnectionOwner: bool,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
@@ -2076,7 +2076,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+PlayerConnectedPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2104,8 +2104,8 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
     pub fn Init(
         &mut self,
         connectionId: u8,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket,
@@ -2170,7 +2170,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerConnectedPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerDisconnectedPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub disconnectedReason: crate::GlobalNamespace::DisconnectedReason,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
@@ -2182,7 +2182,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+PlayerDisconnectedPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2273,7 +2273,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerDisconnectedPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerIdentityPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerState: crate::GlobalNamespace::PlayerStateHash,
     pub playerAvatar: crate::GlobalNamespace::MultiplayerAvatarsData,
     pub random: *mut crate::GlobalNamespace::ByteArrayNetSerializable,
@@ -2288,7 +2288,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+PlayerIdentityPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2382,8 +2382,8 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerIdentityPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerSortOrderPacket {
-    __cordl_parent: crate::System::Object,
-    pub userId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
     pub sortIndex: i32,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
@@ -2395,7 +2395,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+PlayerSortOrderPacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2422,7 +2422,7 @@ impl crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
     }
     pub fn Init(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         sortIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket,
@@ -2487,7 +2487,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerSortOrderPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PlayerStatePacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub playerState: crate::GlobalNamespace::PlayerStateHash,
 }
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
@@ -2499,7 +2499,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ConnectedPlayerManager+PlayerStatePacket")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2590,7 +2590,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PlayerStatePacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_PongPacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub pingTime: i64,
 }
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
@@ -2601,7 +2601,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectedPlayerManager+PongPacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -2691,7 +2691,7 @@ for crate::GlobalNamespace::ConnectedPlayerManager_PongPacket {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ConnectedPlayerManager_SyncTimePacket {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub syncTime: i64,
 }
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
@@ -2702,7 +2702,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ConnectedPlayerManager+SyncTimePacket")]
 impl std::ops::Deref for crate::GlobalNamespace::ConnectedPlayerManager_SyncTimePacket {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

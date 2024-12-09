@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InstanceProvider {
-    __cordl_parent: crate::System::Object,
-    pub _instance: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _instance: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _instanceType: *mut crate::System::Type,
     pub _container: *mut crate::Zenject::DiContainer,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+InstanceProvider")]
 impl std::ops::Deref for crate::Zenject::InstanceProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,7 +35,7 @@ impl crate::Zenject::InstanceProvider {
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -61,7 +61,7 @@ impl crate::Zenject::InstanceProvider {
     }
     pub fn New(
         instanceType: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -83,7 +83,7 @@ impl crate::Zenject::InstanceProvider {
     pub fn _ctor(
         &mut self,
         instanceType: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CmsEnvelopedDataStreamGenerator {
     __cordl_parent: crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator,
-    pub _originatorInfo: *mut crate::System::Object,
-    pub _unprotectedAttributes: *mut crate::System::Object,
+    pub _originatorInfo: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _unprotectedAttributes: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _bufferSize: i32,
     pub _berEncodeRecipientSet: bool,
 }
@@ -64,10 +64,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
             .invoke("Open", (outStream, encAlgID, cipherParameters, recipientInfos))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_String2(
+    pub fn Open_Il2CppString2(
         &mut self,
         outStream: *mut crate::System::IO::Stream,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,10 +76,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
             .invoke("Open", (outStream, encryptionOid))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_String_CipherKeyGenerator0(
+    pub fn Open_Il2CppString_CipherKeyGenerator0(
         &mut self,
         outStream: *mut crate::System::IO::Stream,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
         keyGen: *mut crate::Org::BouncyCastle::Crypto::CipherKeyGenerator,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -89,10 +89,10 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedDataStreamGenerator {
             .invoke("Open", (outStream, encryptionOid, keyGen))?;
         Ok(__cordl_ret)
     }
-    pub fn Open_String_i32_3(
+    pub fn Open_Il2CppString_i32_3(
         &mut self,
         outStream: *mut crate::System::IO::Stream,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
         keySize: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IO::Stream> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TcpClient {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ClientSocket: *mut crate::System::Net::Sockets::Socket,
     pub m_Active: bool,
     pub m_DataStream: *mut crate::System::Net::Sockets::NetworkStream,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Sockets+TcpClient")]
 impl std::ops::Deref for crate::System::Net::Sockets::TcpClient {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,10 +31,10 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::TcpClient {
 impl crate::System::Net::Sockets::TcpClient {
     pub fn BeginConnect(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
         requestCallback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -55,7 +55,7 @@ impl crate::System::Net::Sockets::TcpClient {
     }
     pub fn ConnectAsync(
         &mut self,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -76,9 +76,9 @@ impl crate::System::Net::Sockets::TcpClient {
             .invoke("Connect", (remoteEP))?;
         Ok(__cordl_ret)
     }
-    pub fn Connect_String_i32_0(
+    pub fn Connect_Il2CppString_i32_0(
         &mut self,
-        hostname: *mut crate::System::String,
+        hostname: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

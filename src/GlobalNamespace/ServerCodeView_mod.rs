@@ -6,7 +6,7 @@ pub struct ServerCodeView {
     pub _serverCodeText: *mut crate::TMPro::TextMeshProUGUI,
     pub _button: *mut crate::UnityEngine::UI::Button,
     pub _buttonBinder: *mut crate::HMUI::ButtonBinder,
-    pub _serverCode: *mut crate::System::String,
+    pub _serverCode: *mut quest_hook::libil2cpp::Il2CppString,
     pub _codeIsShown: bool,
 }
 #[cfg(feature = "ServerCodeView")]
@@ -79,7 +79,7 @@ impl crate::GlobalNamespace::ServerCodeView {
     }
     pub fn SetCode(
         &mut self,
-        serverCode: *mut crate::System::String,
+        serverCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

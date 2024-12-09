@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusAnalyticsModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OculusAnalyticsModel")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OculusAnalyticsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::OculusAnalyticsModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OculusAnalyticsModel {
 impl crate::GlobalNamespace::OculusAnalyticsModel {
     pub fn LogClick(
         &mut self,
-        clickType: *mut crate::System::String,
+        clickType: *mut quest_hook::libil2cpp::Il2CppString,
         clickData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -41,10 +41,10 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
     }
     pub fn LogEditAvatarEvent(
         &mut self,
-        eventType: *mut crate::System::String,
+        eventType: *mut quest_hook::libil2cpp::Il2CppString,
         eventData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -56,10 +56,10 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
     }
     pub fn LogEvent(
         &mut self,
-        eventType: *mut crate::System::String,
+        eventType: *mut quest_hook::libil2cpp::Il2CppString,
         eventData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -71,10 +71,10 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
     }
     pub fn LogExposure(
         &mut self,
-        exposureType: *mut crate::System::String,
+        exposureType: *mut quest_hook::libil2cpp::Il2CppString,
         exposureData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -86,10 +86,10 @@ impl crate::GlobalNamespace::OculusAnalyticsModel {
     }
     pub fn LogImpression(
         &mut self,
-        impressionType: *mut crate::System::String,
+        impressionType: *mut quest_hook::libil2cpp::Il2CppString,
         impressionData: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

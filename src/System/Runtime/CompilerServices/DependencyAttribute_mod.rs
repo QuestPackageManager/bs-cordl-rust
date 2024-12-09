@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DependencyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub dependentAssembly: *mut crate::System::String,
+    pub dependentAssembly: *mut quest_hook::libil2cpp::Il2CppString,
     pub loadHint: crate::System::Runtime::CompilerServices::LoadHint,
 }
 #[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
@@ -29,7 +29,7 @@ for crate::System::Runtime::CompilerServices::DependencyAttribute {
 #[cfg(feature = "System+Runtime+CompilerServices+DependencyAttribute")]
 impl crate::System::Runtime::CompilerServices::DependencyAttribute {
     pub fn New(
-        dependentAssemblyArgument: *mut crate::System::String,
+        dependentAssemblyArgument: *mut quest_hook::libil2cpp::Il2CppString,
         loadHintArgument: crate::System::Runtime::CompilerServices::LoadHint,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,7 +40,7 @@ impl crate::System::Runtime::CompilerServices::DependencyAttribute {
     }
     pub fn _ctor(
         &mut self,
-        dependentAssemblyArgument: *mut crate::System::String,
+        dependentAssemblyArgument: *mut quest_hook::libil2cpp::Il2CppString,
         loadHintArgument: crate::System::Runtime::CompilerServices::LoadHint,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

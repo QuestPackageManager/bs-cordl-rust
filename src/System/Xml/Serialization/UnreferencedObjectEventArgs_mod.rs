@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct UnreferencedObjectEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub o: *mut crate::System::Object,
-    pub id: *mut crate::System::String,
+    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub id: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+UnreferencedObjectEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,8 +29,8 @@ for crate::System::Xml::Serialization::UnreferencedObjectEventArgs {
 #[cfg(feature = "System+Xml+Serialization+UnreferencedObjectEventArgs")]
 impl crate::System::Xml::Serialization::UnreferencedObjectEventArgs {
     pub fn New(
-        o: *mut crate::System::Object,
-        id: *mut crate::System::String,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -40,8 +40,8 @@ impl crate::System::Xml::Serialization::UnreferencedObjectEventArgs {
     }
     pub fn _ctor(
         &mut self,
-        o: *mut crate::System::Object,
-        id: *mut crate::System::String,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

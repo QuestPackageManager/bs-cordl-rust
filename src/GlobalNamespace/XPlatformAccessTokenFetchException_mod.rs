@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::XPlatformAccessTokenFetchExc
 #[cfg(feature = "XPlatformAccessTokenFetchException")]
 impl crate::GlobalNamespace::XPlatformAccessTokenFetchException {
     pub fn New(
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::GlobalNamespace::XPlatformAccessTokenFetchException {
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

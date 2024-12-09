@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _buckets: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Collections::Hashtable_bucket,
     >,
@@ -15,7 +15,7 @@ pub struct Hashtable {
     pub _keys: *mut crate::System::Collections::ICollection,
     pub _values: *mut crate::System::Collections::ICollection,
     pub _keycomparer: *mut crate::System::Collections::IEqualityComparer,
-    pub _syncRoot: *mut crate::System::Object,
+    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Hashtable")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable")]
 impl std::ops::Deref for crate::System::Collections::Hashtable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -61,8 +61,8 @@ impl crate::System::Collections::Hashtable {
     pub type bucket = crate::System::Collections::Hashtable_bucket;
     pub fn Add(
         &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -83,17 +83,17 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
     pub fn Contains(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -103,7 +103,7 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn ContainsKey(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -173,7 +173,7 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn GetHash(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -195,7 +195,7 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn InitHash(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         hashsize: i32,
         seed: quest_hook::libil2cpp::ByRefMut<u32>,
         incr: quest_hook::libil2cpp::ByRefMut<u32>,
@@ -209,8 +209,8 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn Insert(
         &mut self,
-        key: *mut crate::System::Object,
-        nvalue: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        nvalue: *mut quest_hook::libil2cpp::Il2CppObject,
         add: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -222,8 +222,8 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn KeyEquals(
         &mut self,
-        item: *mut crate::System::Object,
-        key: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -334,7 +334,7 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn OnDeserialization(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -345,7 +345,7 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn Remove(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -542,12 +542,12 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn get_Item(
         &mut self,
-        key: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (key))?;
         Ok(__cordl_ret)
     }
@@ -563,11 +563,11 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -586,8 +586,8 @@ impl crate::System::Collections::Hashtable {
         newBuckets: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Collections::Hashtable_bucket,
         >,
-        key: *mut crate::System::Object,
-        nvalue: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        nvalue: *mut quest_hook::libil2cpp::Il2CppObject,
         hashcode: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -620,8 +620,8 @@ impl crate::System::Collections::Hashtable {
     }
     pub fn set_Item(
         &mut self,
-        key: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -644,7 +644,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Hashtable
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_HashtableDebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -654,7 +654,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableDebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -681,14 +681,14 @@ for crate::System::Collections::Hashtable_HashtableDebugView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_HashtableEnumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: *mut crate::System::Collections::Hashtable,
     pub _bucket: i32,
     pub _version: i32,
     pub _current: bool,
     pub _getObjectRetType: i32,
-    pub _currentKey: *mut crate::System::Object,
-    pub _currentValue: *mut crate::System::Object,
+    pub _currentKey: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _currentValue: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -698,7 +698,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_HashtableEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -713,11 +713,11 @@ impl std::ops::DerefMut for crate::System::Collections::Hashtable_HashtableEnume
 impl crate::System::Collections::Hashtable_HashtableEnumerator {
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
@@ -762,11 +762,11 @@ impl crate::System::Collections::Hashtable_HashtableEnumerator {
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }
@@ -782,21 +782,21 @@ impl crate::System::Collections::Hashtable_HashtableEnumerator {
     }
     pub fn get_Key(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Key", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
@@ -815,7 +815,7 @@ for crate::System::Collections::Hashtable_HashtableEnumerator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_KeyCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: *mut crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
@@ -825,7 +825,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+KeyCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_KeyCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -896,11 +896,11 @@ impl crate::System::Collections::Hashtable_KeyCollection {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -919,7 +919,7 @@ for crate::System::Collections::Hashtable_KeyCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Hashtable_ValueCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _hashtable: *mut crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
@@ -929,7 +929,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Hashtable+ValueCollection")]
 impl std::ops::Deref for crate::System::Collections::Hashtable_ValueCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1000,11 +1000,11 @@ impl crate::System::Collections::Hashtable_ValueCollection {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -1023,8 +1023,8 @@ for crate::System::Collections::Hashtable_ValueCollection {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct Hashtable_bucket {
-    pub key: *mut crate::System::Object,
-    pub val: *mut crate::System::Object,
+    pub key: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub val: *mut quest_hook::libil2cpp::Il2CppObject,
     pub hash_coll: i32,
 }
 #[cfg(feature = "System+Collections+Hashtable+bucket")]

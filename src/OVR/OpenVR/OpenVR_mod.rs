@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenVR {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVR+OpenVR+OpenVR")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -10,7 +10,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+OpenVR")]
 impl std::ops::Deref for crate::OVR::OpenVR::OpenVR {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -276,7 +276,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::OVR::OpenVR::OpenVR {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OpenVR_COpenVRContext {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_pVRSystem: *mut crate::OVR::OpenVR::CVRSystem,
     pub m_pVRChaperone: *mut crate::OVR::OpenVR::CVRChaperone,
     pub m_pVRChaperoneSetup: *mut crate::OVR::OpenVR::CVRChaperoneSetup,
@@ -298,7 +298,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+OpenVR+COpenVRContext")]
 impl std::ops::Deref for crate::OVR::OpenVR::OpenVR_COpenVRContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

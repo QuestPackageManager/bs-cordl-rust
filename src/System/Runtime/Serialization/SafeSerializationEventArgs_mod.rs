@@ -5,7 +5,7 @@ pub struct SafeSerializationEventArgs {
     __cordl_parent: crate::System::EventArgs,
     pub m_streamingContext: crate::System::Runtime::Serialization::StreamingContext,
     pub m_serializedStates: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationEventArgs")]
@@ -54,13 +54,15 @@ impl crate::System::Runtime::Serialization::SafeSerializationEventArgs {
     pub fn get_SerializedStates(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::IList_1<*mut crate::System::Object>,
+        *mut crate::System::Collections::Generic::IList_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_SerializedStates", ())?;
         Ok(__cordl_ret)
     }

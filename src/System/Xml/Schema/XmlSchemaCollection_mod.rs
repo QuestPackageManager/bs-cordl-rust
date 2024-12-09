@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub collection: *mut crate::System::Collections::Hashtable,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
     pub schemaNames: *mut crate::System::Xml::Schema::SchemaNames,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollection")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlSchemaCollection {
 impl crate::System::Xml::Schema::XmlSchemaCollection {
     pub fn Add_SchemaInfo_XmlSchema__cordl_bool0(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::SchemaInfo,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
         compile: bool,
@@ -48,7 +48,7 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
     }
     pub fn Add_SchemaInfo_XmlSchema__cordl_bool_XmlResolver1(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::SchemaInfo,
         schema: *mut crate::System::Xml::Schema::XmlSchema,
         compile: bool,
@@ -63,7 +63,7 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
     }
     pub fn Add_XmlSchemaCollectionNode2(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         node: *mut crate::System::Xml::Schema::XmlSchemaCollectionNode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -87,7 +87,7 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
     }
     pub fn GetSchemaInfo(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::SchemaInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -150,11 +150,11 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -200,7 +200,7 @@ impl crate::System::Xml::Schema::XmlSchemaCollection {
     }
     pub fn get_Item(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::Schema::XmlSchema> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

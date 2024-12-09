@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetry {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRTelemetry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetry")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::OVRTelemetry_MarkerPoint {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -125,7 +125,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_NullTelemetryCl
 impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
     pub fn CreateMarkerHandle(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -149,8 +149,8 @@ impl crate::GlobalNamespace::OVRTelemetry_NullTelemetryClient {
     pub fn MarkerAnnotation(
         &mut self,
         markerId: i32,
-        annotationKey: *mut crate::System::String,
-        annotationValue: *mut crate::System::String,
+        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -263,7 +263,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryCli
 impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
     pub fn CreateMarkerHandle(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -287,8 +287,8 @@ impl crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
     pub fn MarkerAnnotation(
         &mut self,
         markerId: i32,
-        annotationKey: *mut crate::System::String,
-        annotationValue: *mut crate::System::String,
+        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -377,7 +377,7 @@ for crate::GlobalNamespace::OVRTelemetry_QPLTelemetryClient {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRTelemetry_TelemetryClient {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRTelemetry+TelemetryClient")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -386,7 +386,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRTelemetry+TelemetryClient")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -401,7 +401,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRTelemetry_TelemetryClient
 impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
     pub fn CreateMarkerHandle(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -425,8 +425,8 @@ impl crate::GlobalNamespace::OVRTelemetry_TelemetryClient {
     pub fn MarkerAnnotation(
         &mut self,
         markerId: i32,
-        annotationKey: *mut crate::System::String,
-        annotationValue: *mut crate::System::String,
+        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
         instanceKey: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

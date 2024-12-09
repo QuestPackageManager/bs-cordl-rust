@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct StyleVariable {
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
     pub handles: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::UIElements::StyleValueHandle,
@@ -36,7 +36,7 @@ impl crate::UnityEngine::UIElements::StyleVariable {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         sheet: *mut crate::UnityEngine::UIElements::StyleSheet,
         handles: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::UnityEngine::UIElements::StyleValueHandle,

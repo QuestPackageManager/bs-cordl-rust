@@ -27,9 +27,11 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::Channels::IChannel
 impl crate::System::Runtime::Remoting::Channels::IChannelSender {
     pub fn CreateMessageSink(
         &mut self,
-        url: *mut crate::System::String,
-        remoteChannelData: *mut crate::System::Object,
-        objectURI: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
+        remoteChannelData: *mut quest_hook::libil2cpp::Il2CppObject,
+        objectURI: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Runtime::Remoting::Messaging::IMessageSink,
     > {

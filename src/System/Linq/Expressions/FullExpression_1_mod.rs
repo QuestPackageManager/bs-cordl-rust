@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FullExpression_1<TDelegate: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionN_1<TDelegate>,
-    pub _NameCore_k__BackingField: *mut crate::System::String,
+    pub _NameCore_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _TailCallCore_k__BackingField: bool,
     __cordl_phantom_TDelegate: std::marker::PhantomData<TDelegate>,
 }
@@ -33,7 +33,7 @@ impl<
 > crate::System::Linq::Expressions::FullExpression_1<TDelegate> {
     pub fn New(
         body: *mut crate::System::Linq::Expressions::Expression,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         tailCall: bool,
         parameters: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Linq::Expressions::ParameterExpression,
@@ -52,7 +52,7 @@ impl<
     pub fn _ctor(
         &mut self,
         body: *mut crate::System::Linq::Expressions::Expression,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         tailCall: bool,
         parameters: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Linq::Expressions::ParameterExpression,
@@ -71,7 +71,7 @@ impl<
     }
     pub fn get_NameCore(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TDelegate: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -79,7 +79,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NameCore", ())?;
         Ok(__cordl_ret)
     }

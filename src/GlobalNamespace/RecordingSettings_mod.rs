@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingSettings {
-    __cordl_parent: crate::System::Object,
-    pub gameMode: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub gameMode: *mut quest_hook::libil2cpp::Il2CppString,
     pub pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     pub level: *mut crate::GlobalNamespace::BeatmapLevel,
     pub difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -11,7 +11,7 @@ pub struct RecordingSettings {
     pub runLevel: bool,
     pub recordPerformance: bool,
     pub recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-    pub recordingPath: *mut crate::System::String,
+    pub recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
     pub addDateTimeSuffixToRecordingName: bool,
     pub screenshotRecording: bool,
@@ -38,7 +38,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RecordingSettings")]
 impl std::ops::Deref for crate::GlobalNamespace::RecordingSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -52,7 +52,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RecordingSettings {
 #[cfg(feature = "RecordingSettings")]
 impl crate::GlobalNamespace::RecordingSettings {
     pub fn New(
-        gameMode: *mut crate::System::String,
+        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
         pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         level: *mut crate::GlobalNamespace::BeatmapLevel,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -60,7 +60,7 @@ impl crate::GlobalNamespace::RecordingSettings {
         runLevel: bool,
         recordPerformance: bool,
         recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut crate::System::String,
+        recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         addDateTimeSuffixToRecordingName: bool,
         screenshotRecording: bool,
@@ -115,17 +115,17 @@ impl crate::GlobalNamespace::RecordingSettings {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
-        gameMode: *mut crate::System::String,
+        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
         pack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         level: *mut crate::GlobalNamespace::BeatmapLevel,
         difficulty: crate::GlobalNamespace::BeatmapDifficulty,
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::RecordingSettings {
         runLevel: bool,
         recordPerformance: bool,
         recordingMode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut crate::System::String,
+        recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         addDateTimeSuffixToRecordingName: bool,
         screenshotRecording: bool,

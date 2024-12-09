@@ -9,7 +9,7 @@ pub struct MissionLevelScenesTransitionSetupDataSO {
         *mut crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
         *mut crate::GlobalNamespace::MissionCompletionResults,
     >,
-    pub _missionId_k__BackingField: *mut crate::System::String,
+    pub _missionId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "MissionLevelScenesTransitionSetupDataSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     }
     pub fn Init_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel_BeatmapLevelsModel1(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         missionObjectives: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
         performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
         beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     }
     pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel0(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
@@ -103,7 +103,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         audioClipAsyncLoader: *mut crate::GlobalNamespace::AudioClipAsyncLoader,
         performancePreset: *mut crate::BeatSaber::PerformancePresets::PerformancePreset,
         beatmapDataLoader: *mut crate::GlobalNamespace::BeatmapDataLoader,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -162,11 +162,11 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     }
     pub fn get_missionId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_missionId", ())?;
         Ok(__cordl_ret)
     }
@@ -186,7 +186,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
     }
     pub fn set_missionId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -35,7 +35,9 @@ impl crate::GlobalNamespace::OVRCustomFace {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         crate::System::ValueTuple_2<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
             *mut quest_hook::libil2cpp::Il2CppArray<
                 crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
             >,
@@ -45,7 +47,9 @@ impl crate::GlobalNamespace::OVRCustomFace {
             self,
         );
         let __cordl_ret: crate::System::ValueTuple_2<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
             *mut quest_hook::libil2cpp::Il2CppArray<
                 crate::GlobalNamespace::OVRFaceExpressions_FaceExpression,
             >,

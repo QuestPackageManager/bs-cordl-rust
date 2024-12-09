@@ -6,9 +6,9 @@ pub struct LevelCollectionTableView {
     pub _tableView: *mut crate::HMUI::TableView,
     pub _alphabetScrollbar: *mut crate::HMUI::AlphabetScrollbar,
     pub _levelCellPrefab: *mut crate::GlobalNamespace::LevelListTableCell,
-    pub _levelCellsReuseIdentifier: *mut crate::System::String,
+    pub _levelCellsReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub _packCellPrefab: *mut crate::GlobalNamespace::LevelPackHeaderTableCell,
-    pub _packCellsReuseIdentifier: *mut crate::System::String,
+    pub _packCellsReuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cellHeight: f32,
     pub _additionalContentModel: *mut crate::GlobalNamespace::IAdditionalContentModel,
     pub _entitlementModel: *mut crate::GlobalNamespace::IEntitlementModel,
@@ -25,10 +25,10 @@ pub struct LevelCollectionTableView {
         *mut crate::GlobalNamespace::BeatmapLevel,
     >,
     pub _headerSprite: *mut crate::UnityEngine::Sprite,
-    pub _headerText: *mut crate::System::String,
+    pub _headerText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _showLevelPackHeader: bool,
     pub _favoriteLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _selectedRow: i32,
     pub _selectedBeatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
@@ -124,9 +124,9 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
             .invoke("Init", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Init_String_Sprite0(
+    pub fn Init_Il2CppString_Sprite0(
         &mut self,
-        headerText: *mut crate::System::String,
+        headerText: *mut quest_hook::libil2cpp::Il2CppString,
         headerSprite: *mut crate::UnityEngine::Sprite,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,7 +183,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
     pub fn RefreshFavorites(
         &mut self,
         favoriteLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -230,7 +230,7 @@ impl crate::GlobalNamespace::LevelCollectionTableView {
             *mut crate::GlobalNamespace::BeatmapLevel,
         >,
         favoriteLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         beatmapLevelsAreSorted: bool,
         sortBeatmapLevels: bool,

@@ -46,18 +46,8 @@ impl crate::System::Net::WebException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_SerializationInfo_StreamingContext9(
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -65,8 +55,8 @@ impl crate::System::Net::WebException {
             .invoke_void(".ctor", (message))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Exception2(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString_Exception2(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,8 +65,8 @@ impl crate::System::Net::WebException {
             .invoke_void(".ctor", (message, innerException))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Exception_WebExceptionStatus_WebResponse5(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString_Exception_WebExceptionStatus_WebResponse5(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -87,8 +77,8 @@ impl crate::System::Net::WebException {
             .invoke_void(".ctor", (message, innerException, status, response))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus7(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus7(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -103,9 +93,9 @@ impl crate::System::Net::WebException {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_Exception_WebExceptionStatus_WebResponse6(
-        message: *mut crate::System::String,
-        data: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Exception_WebExceptionStatus_WebResponse6(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -116,9 +106,9 @@ impl crate::System::Net::WebException {
             .invoke_void(".ctor", (message, data, innerException, status, response))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus8(
-        message: *mut crate::System::String,
-        data: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus8(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -133,8 +123,8 @@ impl crate::System::Net::WebException {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_String_WebExceptionStatus3(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString_WebExceptionStatus3(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::WebExceptionStatus,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -143,8 +133,8 @@ impl crate::System::Net::WebException {
             .invoke_void(".ctor", (message, status))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_WebExceptionStatus_WebExceptionInternalStatus_Exception4(
-        message: *mut crate::System::String,
+    pub fn New_Il2CppString_WebExceptionStatus_WebExceptionInternalStatus_Exception4(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::WebExceptionStatus,
         internalStatus: crate::System::Net::WebExceptionInternalStatus,
         innerException: *mut crate::System::Exception,
@@ -153,6 +143,16 @@ impl crate::System::Net::WebException {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (message, status, internalStatus, innerException))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_SerializationInfo_StreamingContext9(
+        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_object)
     }
     pub fn System_Runtime_Serialization_ISerializable_GetObjectData(
@@ -180,21 +180,9 @@ impl crate::System::Net::WebException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_SerializationInfo_StreamingContext9(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String1(
-        &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -203,9 +191,9 @@ impl crate::System::Net::WebException {
             .invoke(".ctor", (message))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Exception2(
+    pub fn _ctor_Il2CppString_Exception2(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -215,9 +203,9 @@ impl crate::System::Net::WebException {
             .invoke(".ctor", (message, innerException))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Exception_WebExceptionStatus_WebResponse5(
+    pub fn _ctor_Il2CppString_Exception_WebExceptionStatus_WebResponse5(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -229,9 +217,9 @@ impl crate::System::Net::WebException {
             .invoke(".ctor", (message, innerException, status, response))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus7(
+    pub fn _ctor_Il2CppString_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus7(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -247,10 +235,10 @@ impl crate::System::Net::WebException {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_Exception_WebExceptionStatus_WebResponse6(
+    pub fn _ctor_Il2CppString_Il2CppString_Exception_WebExceptionStatus_WebResponse6(
         &mut self,
-        message: *mut crate::System::String,
-        data: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -262,10 +250,10 @@ impl crate::System::Net::WebException {
             .invoke(".ctor", (message, data, innerException, status, response))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus8(
+    pub fn _ctor_Il2CppString_Il2CppString_Exception_WebExceptionStatus_WebResponse_WebExceptionInternalStatus8(
         &mut self,
-        message: *mut crate::System::String,
-        data: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
         innerException: *mut crate::System::Exception,
         status: crate::System::Net::WebExceptionStatus,
         response: *mut crate::System::Net::WebResponse,
@@ -281,9 +269,9 @@ impl crate::System::Net::WebException {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_WebExceptionStatus3(
+    pub fn _ctor_Il2CppString_WebExceptionStatus3(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::WebExceptionStatus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -293,9 +281,9 @@ impl crate::System::Net::WebException {
             .invoke(".ctor", (message, status))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_WebExceptionStatus_WebExceptionInternalStatus_Exception4(
+    pub fn _ctor_Il2CppString_WebExceptionStatus_WebExceptionInternalStatus_Exception4(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         status: crate::System::Net::WebExceptionStatus,
         internalStatus: crate::System::Net::WebExceptionInternalStatus,
         innerException: *mut crate::System::Exception,
@@ -305,6 +293,18 @@ impl crate::System::Net::WebException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (message, status, internalStatus, innerException))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_SerializationInfo_StreamingContext9(
+        &mut self,
+        serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
+        streamingContext: crate::System::Runtime::Serialization::StreamingContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (serializationInfo, streamingContext))?;
         Ok(__cordl_ret)
     }
     pub fn get_Response(

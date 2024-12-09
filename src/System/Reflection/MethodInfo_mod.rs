@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::System::Reflection::MethodInfo {
 }
 #[cfg(feature = "System+Reflection+MethodInfo")]
 impl crate::System::Reflection::MethodInfo {
-    pub fn CreateDelegate_Object1(
+    pub fn CreateDelegate_Il2CppObject1(
         &mut self,
         delegateType: *mut crate::System::Type,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Delegate> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -49,7 +49,7 @@ impl crate::System::Reflection::MethodInfo {
     }
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

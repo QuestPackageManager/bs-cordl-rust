@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformancePreset {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dataVersion: u32,
-    pub _presetName: *mut crate::System::String,
-    pub _presetNameLocalizationTag: *mut crate::System::String,
+    pub _presetName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _presetNameLocalizationTag: *mut quest_hook::libil2cpp::Il2CppString,
     pub _renderViewportScale: f32,
     pub _vrResolutionScale: f32,
     pub _menuVRResolutionScaleMultiplier: f32,
@@ -36,7 +36,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+PerformancePresets+PerformancePreset")]
 impl std::ops::Deref for crate::BeatSaber::PerformancePresets::PerformancePreset {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -200,21 +200,21 @@ impl crate::BeatSaber::PerformancePresets::PerformancePreset {
     }
     pub fn get_presetName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_presetName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_presetNameLocalizationTag(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_presetNameLocalizationTag", ())?;
         Ok(__cordl_ret)
     }

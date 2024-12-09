@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LocalDataStoreMgr {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_SlotInfoTable: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
     pub m_FirstAvailableSlot: i32,
     pub m_ManagedLocalDataStores: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::LocalDataStore,
     >,
     pub m_KeyToSlotMap: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::LocalDataStoreSlot,
     >,
     pub m_CookieGenerator: i64,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+LocalDataStoreMgr")]
 impl std::ops::Deref for crate::System::LocalDataStoreMgr {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::System::LocalDataStoreMgr {
     }
     pub fn AllocateNamedDataSlot(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::LocalDataStoreSlot> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,7 +93,7 @@ impl crate::System::LocalDataStoreMgr {
     }
     pub fn FreeNamedDataSlot(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -104,7 +104,7 @@ impl crate::System::LocalDataStoreMgr {
     }
     pub fn GetNamedDataSlot(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::LocalDataStoreSlot> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

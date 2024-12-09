@@ -137,7 +137,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PlayerHeightD
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerHeightDetector_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub headPosToPlayerHeightOffset: f32,
     pub startPlayerHeight: f32,
 }
@@ -148,7 +148,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerHeightDetector+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerHeightDetector_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -13,7 +13,7 @@ pub struct TMP_Settings {
     pub m_missingGlyphCharacter: i32,
     pub m_warningsDisabled: bool,
     pub m_defaultFontAsset: *mut crate::TMPro::TMP_FontAsset,
-    pub m_defaultFontAssetPath: *mut crate::System::String,
+    pub m_defaultFontAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_defaultFontSize: f32,
     pub m_defaultAutoSizeMinRatio: f32,
     pub m_defaultAutoSizeMaxRatio: f32,
@@ -26,12 +26,12 @@ pub struct TMP_Settings {
     >,
     pub m_matchMaterialPreset: bool,
     pub m_defaultSpriteAsset: *mut crate::TMPro::TMP_SpriteAsset,
-    pub m_defaultSpriteAssetPath: *mut crate::System::String,
+    pub m_defaultSpriteAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_enableEmojiSupport: bool,
     pub m_MissingCharacterSpriteUnicode: u32,
-    pub m_defaultColorGradientPresetsPath: *mut crate::System::String,
+    pub m_defaultColorGradientPresetsPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_defaultStyleSheet: *mut crate::TMPro::TMP_StyleSheet,
-    pub m_StyleSheetsResourcePath: *mut crate::System::String,
+    pub m_StyleSheetsResourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_leadingCharacters: *mut crate::UnityEngine::TextAsset,
     pub m_followingCharacters: *mut crate::UnityEngine::TextAsset,
     pub m_linebreakingRules: *mut crate::TMPro::TMP_Settings_LineBreakingTable,
@@ -89,7 +89,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::TMPro::TMP_Settings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct TMP_Settings_LineBreakingTable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub leadingCharacters: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
         char,
@@ -106,7 +106,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+TMP_Settings+LineBreakingTable")]
 impl std::ops::Deref for crate::TMPro::TMP_Settings_LineBreakingTable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

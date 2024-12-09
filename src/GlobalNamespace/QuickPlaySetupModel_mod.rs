@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _client: *mut crate::System::Net::Http::HttpClient,
     pub _request: *mut crate::System::Threading::Tasks::Task_1<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "QuickPlaySetupModel")]
 impl std::ops::Deref for crate::GlobalNamespace::QuickPlaySetupModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::QuickPlaySetupModel {
     }
     pub fn IsUrlValid(
         &mut self,
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -135,7 +135,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::QuickPlaySetu
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySetupModel_QuickPlaySetupDataFB {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub data: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::QuickPlaySetupData,
     >,
@@ -149,7 +149,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySetupModel+QuickPlaySetupDataFB")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySetupModel_QuickPlaySetupDataFB {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

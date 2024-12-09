@@ -118,7 +118,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub OriginalJoint: *mut crate::UnityEngine::Transform,
     pub FromPosition: crate::UnityEngine::Vector3,
     pub ToPosition: crate::UnityEngine::Vector3,
@@ -138,7 +138,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata+BoneData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -526,7 +526,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Joint: crate::UnityEngine::HumanBodyBones,
     pub RotationChange: crate::UnityEngine::Quaternion,
     pub DisableRotationTransform: bool,
@@ -542,7 +542,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+JointAdjustment")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -588,7 +588,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_JointAdjustment {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -599,7 +599,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRHumanBodyBonesMappings")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBonesMappings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -636,7 +636,7 @@ for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRHumanBodyBones
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _BodyToBoneData_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::HumanBodyBones,
         *mut crate::GlobalNamespace::OVRSkeletonMetadata_OVRUnityHumanoidSkeletonRetargeter_BoneData,
@@ -654,7 +654,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRUnityHumanoidSkeletonRetargeter+OVRSkeletonMetadata")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRUnityHumanoidSkeletonRetargeter_OVRSkeletonMetadata {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ISerializableJsonDic
 impl crate::UnityEngine::UIElements::ISerializableJsonDictionary {
     pub fn ContainsKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -37,7 +37,7 @@ impl crate::UnityEngine::UIElements::ISerializableJsonDictionary {
     }
     pub fn Get<T>(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -51,8 +51,8 @@ impl crate::UnityEngine::UIElements::ISerializableJsonDictionary {
     }
     pub fn Overwrite(
         &mut self,
-        obj: *mut crate::System::Object,
-        key: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::UIElements::ISerializableJsonDictionary {
     }
     pub fn Set<T>(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
         value: T,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

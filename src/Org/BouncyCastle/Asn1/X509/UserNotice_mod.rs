@@ -45,9 +45,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::UserNotice {
             .invoke_void(".ctor", (noticeRef, explicitText))?;
         Ok(__cordl_object)
     }
-    pub fn New_NoticeReference_String1(
+    pub fn New_NoticeReference_Il2CppString1(
         noticeRef: *mut crate::Org::BouncyCastle::Asn1::X509::NoticeReference,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -88,10 +88,10 @@ impl crate::Org::BouncyCastle::Asn1::X509::UserNotice {
             .invoke(".ctor", (noticeRef, explicitText))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_NoticeReference_String1(
+    pub fn _ctor_NoticeReference_Il2CppString1(
         &mut self,
         noticeRef: *mut crate::Org::BouncyCastle::Asn1::X509::NoticeReference,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

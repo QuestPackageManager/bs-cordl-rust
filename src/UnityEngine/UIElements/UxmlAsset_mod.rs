@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UxmlAsset {
-    __cordl_parent: crate::System::Object,
-    pub m_FullTypeName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_FullTypeName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Id: i32,
     pub m_OrderInDocument: i32,
     pub m_ParentId: i32,
     pub m_Properties: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UxmlAsset")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UxmlAsset {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,8 +33,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UxmlAsset {
 impl crate::UnityEngine::UIElements::UxmlAsset {
     pub fn SetAttribute(
         &mut self,
-        name: *mut crate::System::String,
-        value: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -45,8 +45,8 @@ impl crate::UnityEngine::UIElements::UxmlAsset {
     }
     pub fn SetOrAddProperty(
         &mut self,
-        propertyName: *mut crate::System::String,
-        propertyValue: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        propertyValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,8 +57,8 @@ impl crate::UnityEngine::UIElements::UxmlAsset {
     }
     pub fn TryGetAttributeValue(
         &mut self,
-        propertyName: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,11 +69,11 @@ impl crate::UnityEngine::UIElements::UxmlAsset {
     }
     pub fn get_fullTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_fullTypeName", ())?;
         Ok(__cordl_ret)
     }

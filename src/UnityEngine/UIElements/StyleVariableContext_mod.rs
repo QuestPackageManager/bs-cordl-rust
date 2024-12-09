@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleVariableContext {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VariableHash: i32,
     pub m_Variables: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::UIElements::StyleVariable,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+StyleVariableContext")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::StyleVariableContext {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -89,7 +89,7 @@ impl crate::UnityEngine::UIElements::StyleVariableContext {
     }
     pub fn TryFindVariable(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         v: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::UIElements::StyleVariable>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

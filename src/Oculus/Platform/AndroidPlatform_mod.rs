@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidPlatform {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Oculus+Platform+AndroidPlatform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+AndroidPlatform")]
 impl std::ops::Deref for crate::Oculus::Platform::AndroidPlatform {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Oculus::Platform::AndroidPlatform {
 impl crate::Oculus::Platform::AndroidPlatform {
     pub fn AsyncInitialize(
         &mut self,
-        appId: *mut crate::System::String,
+        appId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Oculus::Platform::Request_1<
             *mut crate::Oculus::Platform::Models::PlatformInitialize,
@@ -42,7 +42,7 @@ impl crate::Oculus::Platform::AndroidPlatform {
     }
     pub fn Initialize(
         &mut self,
-        appId: *mut crate::System::String,
+        appId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

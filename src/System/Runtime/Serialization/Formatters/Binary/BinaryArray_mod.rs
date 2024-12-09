@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryArray {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub objectId: i32,
     pub rank: i32,
     pub lengthA: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub lowerBoundA: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub binaryTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-    pub typeInformation: *mut crate::System::Object,
+    pub typeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
     pub assemId: i32,
     pub binaryHeaderEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryHeaderEnum,
     pub binaryArrayTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryArrayTypeEnum,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryArray")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryArray {
         lengthA: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         lowerBoundA: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
         binaryTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryTypeEnum,
-        typeInformation: *mut crate::System::Object,
+        typeInformation: *mut quest_hook::libil2cpp::Il2CppObject,
         binaryArrayTypeEnum: crate::System::Runtime::Serialization::Formatters::Binary::BinaryArrayTypeEnum,
         assemId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

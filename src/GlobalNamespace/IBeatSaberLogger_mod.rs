@@ -24,10 +24,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IBeatSaberLogger {
 }
 #[cfg(feature = "IBeatSaberLogger")]
 impl crate::GlobalNamespace::IBeatSaberLogger {
-    pub fn LogError_Object1(
+    pub fn LogError_Il2CppObject1(
         &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,9 +36,9 @@ impl crate::GlobalNamespace::IBeatSaberLogger {
             .invoke("LogError", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogError_String0(
+    pub fn LogError_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -58,10 +58,10 @@ impl crate::GlobalNamespace::IBeatSaberLogger {
             .invoke("LogException", (exception))?;
         Ok(__cordl_ret)
     }
-    pub fn LogException_Object1(
+    pub fn LogException_Il2CppObject1(
         &mut self,
         exception: *mut crate::System::Exception,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,10 +70,10 @@ impl crate::GlobalNamespace::IBeatSaberLogger {
             .invoke("LogException", (exception, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogWarning_Object1(
+    pub fn LogWarning_Il2CppObject1(
         &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,9 +82,9 @@ impl crate::GlobalNamespace::IBeatSaberLogger {
             .invoke("LogWarning", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn LogWarning_String0(
+    pub fn LogWarning_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -93,10 +93,10 @@ impl crate::GlobalNamespace::IBeatSaberLogger {
             .invoke("LogWarning", (message))?;
         Ok(__cordl_ret)
     }
-    pub fn Log_Object1(
+    pub fn Log_Il2CppObject1(
         &mut self,
-        message: *mut crate::System::String,
-        context: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -105,9 +105,9 @@ impl crate::GlobalNamespace::IBeatSaberLogger {
             .invoke("Log", (message, context))?;
         Ok(__cordl_ret)
     }
-    pub fn Log_String0(
+    pub fn Log_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

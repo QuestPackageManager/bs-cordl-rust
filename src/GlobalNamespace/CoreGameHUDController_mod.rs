@@ -125,7 +125,7 @@ for crate::GlobalNamespace::CoreGameHUDController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CoreGameHUDController_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hide: bool,
     pub showEnergyPanel: bool,
     pub advancedHUD: bool,
@@ -137,7 +137,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CoreGameHUDController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::CoreGameHUDController_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

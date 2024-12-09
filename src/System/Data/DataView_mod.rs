@@ -8,10 +8,10 @@ pub struct DataView {
     pub _locked: bool,
     pub _index: *mut crate::System::Data::Index,
     pub _findIndexes: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Data::Index,
     >,
-    pub _sort: *mut crate::System::String,
+    pub _sort: *mut quest_hook::libil2cpp::Il2CppString,
     pub _comparison: *mut crate::System::Comparison_1<*mut crate::System::Data::DataRow>,
     pub _rowFilter: *mut crate::System::Data::IFilter,
     pub _recordStates: crate::System::Data::DataViewRowState,
@@ -24,7 +24,7 @@ pub struct DataView {
     pub _addNewRow: *mut crate::System::Data::DataRow,
     pub _addNewMoved: *mut crate::System::ComponentModel::ListChangedEventArgs,
     pub _onListChanged: *mut crate::System::ComponentModel::ListChangedEventHandler,
-    pub _delayedSort: *mut crate::System::String,
+    pub _delayedSort: *mut quest_hook::libil2cpp::Il2CppString,
     pub _delayedRecordStates: crate::System::Data::DataViewRowState,
     pub _fInitInProgress: bool,
     pub _fEndInitInProgress: bool,
@@ -83,7 +83,7 @@ impl crate::System::Data::DataView {
     }
     pub fn CheckSort(
         &mut self,
-        sort: *mut crate::System::String,
+        sort: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -94,7 +94,7 @@ impl crate::System::Data::DataView {
     }
     pub fn ChildRelationCollectionChanged(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -116,7 +116,7 @@ impl crate::System::Data::DataView {
     }
     pub fn ColumnCollectionChanged(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -128,7 +128,7 @@ impl crate::System::Data::DataView {
     }
     pub fn ColumnCollectionChangedInternal(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -168,11 +168,11 @@ impl crate::System::Data::DataView {
         &mut self,
         property: *mut crate::System::ComponentModel::PropertyDescriptor,
         direction: crate::System::ComponentModel::ListSortDirection,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateSortString", (property, direction))?;
         Ok(__cordl_ret)
     }
@@ -242,7 +242,7 @@ impl crate::System::Data::DataView {
     }
     pub fn GetFindIndex(
         &mut self,
-        column: *mut crate::System::String,
+        column: *mut quest_hook::libil2cpp::Il2CppString,
         keepIndex: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Data::Index> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -306,7 +306,7 @@ impl crate::System::Data::DataView {
     }
     pub fn IndexListChanged(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::ComponentModel::ListChangedEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -392,7 +392,7 @@ impl crate::System::Data::DataView {
     }
     pub fn ParentRelationCollectionChanged(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
         e: *mut crate::System::ComponentModel::CollectionChangeEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -435,7 +435,7 @@ impl crate::System::Data::DataView {
     }
     pub fn SetIndex(
         &mut self,
-        newSort: *mut crate::System::String,
+        newSort: *mut quest_hook::libil2cpp::Il2CppString,
         newRowStates: crate::System::Data::DataViewRowState,
         newRowFilter: *mut crate::System::Data::IFilter,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -448,7 +448,7 @@ impl crate::System::Data::DataView {
     }
     pub fn SetIndex2(
         &mut self,
-        newSort: *mut crate::System::String,
+        newSort: *mut quest_hook::libil2cpp::Il2CppString,
         newRowStates: crate::System::Data::DataViewRowState,
         newRowFilter: *mut crate::System::Data::IFilter,
         fireEvent: bool,
@@ -472,17 +472,17 @@ impl crate::System::Data::DataView {
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IList_Add(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -503,7 +503,7 @@ impl crate::System::Data::DataView {
     }
     pub fn System_Collections_IList_Contains(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -514,7 +514,7 @@ impl crate::System::Data::DataView {
     }
     pub fn System_Collections_IList_IndexOf(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -526,7 +526,7 @@ impl crate::System::Data::DataView {
     pub fn System_Collections_IList_Insert(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -537,7 +537,7 @@ impl crate::System::Data::DataView {
     }
     pub fn System_Collections_IList_Remove(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -580,18 +580,18 @@ impl crate::System::Data::DataView {
     pub fn System_Collections_IList_get_Item(
         &mut self,
         recordIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IList.get_Item", (recordIndex))?;
         Ok(__cordl_ret)
     }
     pub fn System_Collections_IList_set_Item(
         &mut self,
         recordIndex: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -613,11 +613,11 @@ impl crate::System::Data::DataView {
     }
     pub fn System_ComponentModel_IBindingList_AddNew(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.ComponentModel.IBindingList.AddNew", ())?;
         Ok(__cordl_ret)
     }
@@ -639,7 +639,7 @@ impl crate::System::Data::DataView {
     pub fn System_ComponentModel_IBindingList_Find(
         &mut self,
         property: *mut crate::System::ComponentModel::PropertyDescriptor,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -789,11 +789,11 @@ impl crate::System::Data::DataView {
         listAccessors: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::ComponentModel::PropertyDescriptor,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("System.ComponentModel.ITypedList.GetListName", (listAccessors))?;
         Ok(__cordl_ret)
     }
@@ -935,11 +935,11 @@ impl crate::System::Data::DataView {
     }
     pub fn get_Sort(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Sort", ())?;
         Ok(__cordl_ret)
     }
@@ -968,7 +968,7 @@ impl crate::System::Data::DataView {
     }
     pub fn set_Sort(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -991,7 +991,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::DataView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataView_DataRowReferenceComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1000,7 +1000,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataView+DataRowReferenceComparer")]
 impl std::ops::Deref for crate::System::Data::DataView_DataRowReferenceComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SkeletonBone {
-    pub name: *mut crate::System::String,
-    pub parentName: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub parentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub position: crate::UnityEngine::Vector3,
     pub rotation: crate::UnityEngine::Quaternion,
     pub scale: crate::UnityEngine::Vector3,

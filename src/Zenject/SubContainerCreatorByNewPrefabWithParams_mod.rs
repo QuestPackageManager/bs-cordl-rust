@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SubContainerCreatorByNewPrefabWithParams {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _prefabProvider: *mut crate::Zenject::IPrefabProvider,
     pub _installerType: *mut crate::System::Type,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SubContainerCreatorByNewPrefabWithParams")]
 impl std::ops::Deref for crate::Zenject::SubContainerCreatorByNewPrefabWithParams {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

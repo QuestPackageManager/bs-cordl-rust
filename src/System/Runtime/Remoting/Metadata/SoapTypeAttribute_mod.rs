@@ -4,10 +4,10 @@
 pub struct SoapTypeAttribute {
     __cordl_parent: crate::System::Runtime::Remoting::Metadata::SoapAttribute,
     pub _useAttribute: bool,
-    pub _xmlElementName: *mut crate::System::String,
-    pub _xmlNamespace: *mut crate::System::String,
-    pub _xmlTypeName: *mut crate::System::String,
-    pub _xmlTypeNamespace: *mut crate::System::String,
+    pub _xmlElementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xmlNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xmlTypeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _xmlTypeNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isType: bool,
     pub _isElement: bool,
 }
@@ -42,7 +42,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
     }
     pub fn SetReflectionObject(
         &mut self,
-        reflectionObject: *mut crate::System::Object,
+        reflectionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -84,41 +84,41 @@ impl crate::System::Runtime::Remoting::Metadata::SoapTypeAttribute {
     }
     pub fn get_XmlElementName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlElementName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_XmlNamespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlNamespace", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_XmlTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlTypeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_XmlTypeNamespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlTypeNamespace", ())?;
         Ok(__cordl_ret)
     }

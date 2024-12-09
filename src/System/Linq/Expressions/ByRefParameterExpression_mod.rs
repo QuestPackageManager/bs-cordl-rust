@@ -34,7 +34,7 @@ impl crate::System::Linq::Expressions::ByRefParameterExpression {
     }
     pub fn New(
         _cordl_type: *mut crate::System::Type,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,7 +45,7 @@ impl crate::System::Linq::Expressions::ByRefParameterExpression {
     pub fn _ctor(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

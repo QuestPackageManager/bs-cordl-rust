@@ -48,7 +48,7 @@ impl crate::GlobalNamespace::DepthTextureController {
     }
     pub fn SetShaderKeyword(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
         value: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -29,8 +29,8 @@ impl crate::GlobalNamespace::OVRTelemetryMarker {
     pub type OVRTelemetryMarkerState = crate::GlobalNamespace::OVRTelemetryMarker_OVRTelemetryMarkerState;
     pub fn AddAnnotation(
         &mut self,
-        annotationKey: *mut crate::System::String,
-        annotationValue: *mut crate::System::String,
+        annotationKey: *mut quest_hook::libil2cpp::Il2CppString,
+        annotationValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTelemetryMarker> {
         let __cordl_ret: crate::GlobalNamespace::OVRTelemetryMarker = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

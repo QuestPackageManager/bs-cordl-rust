@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RpcHandler_1<TType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
     pub _messageType: crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
     pub _rpcSerializer: *mut crate::GlobalNamespace::NetworkPacketSerializer_2<
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "RpcHandler_1")]
 impl<TType: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::RpcHandler_1<TType> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -267,7 +267,10 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallbackWithTime_Action_2_0<T>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_2<*mut crate::System::String, i64>,
+        callback: *mut crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i64,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -285,7 +288,11 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallbackWithTime_Action_3_1<T, T0>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_3<*mut crate::System::String, i64, T0>,
+        callback: *mut crate::System::Action_3<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i64,
+            T0,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -305,7 +312,12 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallbackWithTime_Action_4_2<T, T0, T1>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_4<*mut crate::System::String, i64, T0, T1>,
+        callback: *mut crate::System::Action_4<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            i64,
+            T0,
+            T1,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -328,7 +340,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         &mut self,
         _cordl_type: TType,
         callback: *mut crate::System::Action_5<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             i64,
             T0,
             T1,
@@ -358,7 +370,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         &mut self,
         _cordl_type: TType,
         callback: *mut crate::System::Action_6<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             i64,
             T0,
             T1,
@@ -390,7 +402,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallback_Action_1_0<T>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_1<*mut crate::System::String>,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -408,7 +420,10 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallback_Action_2_1<T, T0>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_2<*mut crate::System::String, T0>,
+        callback: *mut crate::System::Action_2<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            T0,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -449,7 +464,11 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallback_Action_3_2<T, T0, T1>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_3<*mut crate::System::String, T0, T1>,
+        callback: *mut crate::System::Action_3<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            T0,
+            T1,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -471,7 +490,12 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
     pub fn RegisterCallback_Action_4_3<T, T0, T1, T2>(
         &mut self,
         _cordl_type: TType,
-        callback: *mut crate::System::Action_4<*mut crate::System::String, T0, T1, T2>,
+        callback: *mut crate::System::Action_4<
+            *mut quest_hook::libil2cpp::Il2CppString,
+            T0,
+            T1,
+            T2,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -496,7 +520,7 @@ impl<TType: quest_hook::libil2cpp::Type> crate::GlobalNamespace::RpcHandler_1<TT
         &mut self,
         _cordl_type: TType,
         callback: *mut crate::System::Action_5<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             T0,
             T1,
             T2,

@@ -40,11 +40,11 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::QuickPlaySongPacksDropdown___c__DisplayClass13_0;
     pub fn GetSelectedSerializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetSelectedSerializedName", ())?;
         Ok(__cordl_ret)
     }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn SelectCellWithSerializedName(
         &mut self,
-        serializedName: *mut crate::System::String,
+        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +124,7 @@ impl crate::GlobalNamespace::QuickPlaySongPacksDropdown {
     }
     pub fn _LazyInit_b__15_0(
         &mut self,
-        serializedName: *mut crate::System::String,
+        serializedName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem,
     > {
@@ -195,9 +195,9 @@ for crate::GlobalNamespace::QuickPlaySongPacksDropdown {
 #[repr(C)]
 #[derive(Debug)]
 pub struct QuickPlaySongPacksDropdown_SongPackMaskItem {
-    __cordl_parent: crate::System::Object,
-    pub serializedName: *mut crate::System::String,
-    pub localizedName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub serializedName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub localizedName: *mut quest_hook::libil2cpp::Il2CppString,
     pub order: i32,
     pub songPackMask: crate::GlobalNamespace::SongPackMask,
 }
@@ -210,7 +210,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "QuickPlaySongPacksDropdown+SongPackMaskItem")]
 impl std::ops::Deref
 for crate::GlobalNamespace::QuickPlaySongPacksDropdown_SongPackMaskItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

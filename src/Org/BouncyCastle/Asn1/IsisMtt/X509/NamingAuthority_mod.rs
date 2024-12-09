@@ -4,7 +4,7 @@
 pub struct NamingAuthority {
     __cordl_parent: crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     pub namingAuthorityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-    pub namingAuthorityUrl: *mut crate::System::String,
+    pub namingAuthorityUrl: *mut quest_hook::libil2cpp::Il2CppString,
     pub namingAuthorityText: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+NamingAuthority")]
@@ -38,9 +38,9 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object)
     }
-    pub fn New_DerObjectIdentifier_String_DirectoryString1(
+    pub fn New_DerObjectIdentifier_Il2CppString_DirectoryString1(
         namingAuthorityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        namingAuthorityUrl: *mut crate::System::String,
+        namingAuthorityUrl: *mut quest_hook::libil2cpp::Il2CppString,
         namingAuthorityText: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -73,10 +73,10 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_DerObjectIdentifier_String_DirectoryString1(
+    pub fn _ctor_DerObjectIdentifier_Il2CppString_DirectoryString1(
         &mut self,
         namingAuthorityID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
-        namingAuthorityUrl: *mut crate::System::String,
+        namingAuthorityUrl: *mut quest_hook::libil2cpp::Il2CppString,
         namingAuthorityText: *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -115,11 +115,11 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority {
     }
     pub fn get_NamingAuthorityUrl(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NamingAuthorityUrl", ())?;
         Ok(__cordl_ret)
     }

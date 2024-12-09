@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DisplayStringFormatAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _formatString_k__BackingField: *mut crate::System::String,
+    pub _formatString_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,7 +29,7 @@ for crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+DisplayStringFormatAttribute")]
 impl crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     pub fn New(
-        formatString: *mut crate::System::String,
+        formatString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     }
     pub fn _ctor(
         &mut self,
-        formatString: *mut crate::System::String,
+        formatString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,17 +50,17 @@ impl crate::UnityEngine::InputSystem::Utilities::DisplayStringFormatAttribute {
     }
     pub fn get_formatString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_formatString", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_formatString(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

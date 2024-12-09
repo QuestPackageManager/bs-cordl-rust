@@ -22,6 +22,17 @@ for crate::UnityEngine::ProBuilder::IntVec2 {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+IntVec2")]
 impl crate::UnityEngine::ProBuilder::IntVec2 {
+    pub fn Equals_Il2CppObject2(
+        &mut self,
+        b: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (b),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_IntVec2_0(
         &mut self,
         p: crate::UnityEngine::ProBuilder::IntVec2,
@@ -30,17 +41,6 @@ impl crate::UnityEngine::ProBuilder::IntVec2 {
             self,
             "Equals",
             (p),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object2(
-        &mut self,
-        b: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (b),
         )?;
         Ok(__cordl_ret)
     }
@@ -65,8 +65,8 @@ impl crate::UnityEngine::ProBuilder::IntVec2 {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

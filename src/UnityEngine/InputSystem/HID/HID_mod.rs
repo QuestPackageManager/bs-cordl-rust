@@ -276,8 +276,8 @@ for crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
 impl crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor {
     pub fn ToJson(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToJson",
             (),
@@ -475,7 +475,7 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
         element: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor,
         >,
-        controlName: *mut crate::System::String,
+        controlName: *mut quest_hook::libil2cpp::Il2CppString,
         builder: quest_hook::libil2cpp::ByRefMut<
             *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Builder,
         >,
@@ -489,8 +489,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     pub fn DetermineAxisNormalizationParameters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DetermineAxisNormalizationParameters",
             (),
@@ -511,8 +511,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     pub fn DetermineDisplayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DetermineDisplayName",
             (),
@@ -533,8 +533,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     pub fn DetermineLayout(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DetermineLayout",
             (),
@@ -543,8 +543,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     pub fn DetermineName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DetermineName",
             (),
@@ -553,8 +553,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     pub fn DetermineParameters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DetermineParameters",
             (),
@@ -563,8 +563,8 @@ impl crate::UnityEngine::InputSystem::HID::HID_HIDElementDescriptor {
     }
     pub fn DetermineProcessors(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "DetermineProcessors",
             (),
@@ -708,10 +708,10 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct HID_HIDLayoutBuilder {
-    __cordl_parent: crate::System::Object,
-    pub displayName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub displayName: *mut quest_hook::libil2cpp::Il2CppString,
     pub hidDescriptor: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
-    pub parentLayout: *mut crate::System::String,
+    pub parentLayout: *mut quest_hook::libil2cpp::Il2CppString,
     pub deviceType: *mut crate::System::Type,
 }
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
@@ -722,7 +722,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+HID+HID+HIDLayoutBuilder")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::HID::HID_HIDLayoutBuilder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

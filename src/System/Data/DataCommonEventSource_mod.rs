@@ -24,9 +24,9 @@ impl std::ops::DerefMut for crate::System::Data::DataCommonEventSource {
 }
 #[cfg(feature = "System+Data+DataCommonEventSource")]
 impl crate::System::Data::DataCommonEventSource {
-    pub fn EnterScope_String0(
+    pub fn EnterScope_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -36,7 +36,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn EnterScope_T1_1<T1>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<i64>
     where
@@ -51,7 +51,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn EnterScope_T1_T2_2<T1, T2>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg1: T1,
         arg2: T2,
     ) -> quest_hook::libil2cpp::Result<i64>
@@ -70,7 +70,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn EnterScope_T1_T2_T3_3<T1, T2, T3>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg1: T1,
         arg2: T2,
         arg3: T3,
@@ -92,7 +92,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn EnterScope_T1_T2_T3_T4_4<T1, T2, T3, T4>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg1: T1,
         arg2: T2,
         arg3: T3,
@@ -133,9 +133,9 @@ impl crate::System::Data::DataCommonEventSource {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn Trace_String0(
+    pub fn Trace_Il2CppString0(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -146,7 +146,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn Trace_T0_1<T0>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg0: T0,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -162,7 +162,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn Trace_T0_T1_2<T0, T1>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg0: T0,
         arg1: T1,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -181,7 +181,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn Trace_T0_T1_T2_3<T0, T1, T2>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -203,7 +203,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn Trace_T0_T1_T2_T3_4<T0, T1, T2, T3>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -228,7 +228,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn Trace_T0_T1_T2_T3_T4_5<T0, T1, T2, T3, T4>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg0: T0,
         arg1: T1,
         arg2: T2,
@@ -256,7 +256,7 @@ impl crate::System::Data::DataCommonEventSource {
     }
     pub fn Trace_T0_T1_T2_T3_T4_T5_T6_6<T0, T1, T2, T3, T4, T5, T6>(
         &mut self,
-        format: *mut crate::System::String,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
         arg0: T0,
         arg1: T1,
         arg2: T2,

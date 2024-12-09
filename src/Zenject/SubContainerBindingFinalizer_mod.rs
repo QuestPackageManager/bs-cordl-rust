@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct SubContainerBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
-    pub _subIdentifier: *mut crate::System::Object,
+    pub _subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _resolveAll: bool,
     pub _creatorFactory: *mut crate::System::Func_2<
         *mut crate::Zenject::DiContainer,
@@ -65,7 +65,7 @@ impl crate::Zenject::SubContainerBindingFinalizer {
     }
     pub fn New(
         bindInfo: *mut crate::Zenject::BindInfo,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         resolveAll: bool,
         creatorFactory: *mut crate::System::Func_2<
             *mut crate::Zenject::DiContainer,
@@ -95,7 +95,7 @@ impl crate::Zenject::SubContainerBindingFinalizer {
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         resolveAll: bool,
         creatorFactory: *mut crate::System::Func_2<
             *mut crate::Zenject::DiContainer,

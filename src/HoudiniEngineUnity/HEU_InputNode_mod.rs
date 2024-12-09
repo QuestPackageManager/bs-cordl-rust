@@ -21,9 +21,9 @@ pub struct HEU_InputNode {
     pub _inputIndex: i32,
     pub _requiresCook: bool,
     pub _requiresUpload: bool,
-    pub _inputName: *mut crate::System::String,
-    pub _labelName: *mut crate::System::String,
-    pub _paramName: *mut crate::System::String,
+    pub _inputName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _labelName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _paramName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _connectedNodeID: i32,
     pub _keepWorldTransform: bool,
     pub _packGeometryBeforeMerging: bool,
@@ -206,7 +206,7 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
     }
     pub fn FindAddToInputHDA(
         &mut self,
-        gameObjectName: *mut crate::System::String,
+        gameObjectName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -533,11 +533,11 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
     }
     pub fn get_InputName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InputName", ())?;
         Ok(__cordl_ret)
     }
@@ -584,11 +584,11 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
     }
     pub fn get_LabelName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LabelName", ())?;
         Ok(__cordl_ret)
     }
@@ -604,11 +604,11 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
     }
     pub fn get_ParamName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ParamName", ())?;
         Ok(__cordl_ret)
     }
@@ -698,7 +698,7 @@ impl crate::HoudiniEngineUnity::HEU_InputNode {
     }
     pub fn set_ParamName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

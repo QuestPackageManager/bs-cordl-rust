@@ -4,7 +4,7 @@
 pub struct MaterialPropertyBlockControllerRandomValueSetter {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
-    pub _propertyName: *mut crate::System::String,
+    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _min: f32,
     pub _max: f32,
     pub _materialPropertyBlocks: *mut quest_hook::libil2cpp::Il2CppArray<

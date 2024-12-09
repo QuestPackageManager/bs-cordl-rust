@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FacetsChecker {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+FacetsChecker")]
 impl std::ops::Deref for crate::System::Xml::Schema::FacetsChecker {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,9 @@ impl crate::System::Xml::Schema::FacetsChecker {
     pub type FacetsCompiler = crate::System::Xml::Schema::FacetsChecker_FacetsCompiler;
     pub fn CheckLexicalFacets(
         &mut self,
-        parseString: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        parseString: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -41,7 +43,7 @@ impl crate::System::Xml::Schema::FacetsChecker {
     pub fn CheckPatternFacets(
         &mut self,
         restriction: *mut crate::System::Xml::Schema::RestrictionFacets,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,9 +88,9 @@ impl crate::System::Xml::Schema::FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValueFacets_Object0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -98,9 +100,9 @@ impl crate::System::Xml::Schema::FacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValueFacets_String8(
+    pub fn CheckValueFacets_Il2CppString8(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -196,7 +198,7 @@ impl crate::System::Xml::Schema::FacetsChecker {
     }
     pub fn CheckWhitespaceFacets(
         &mut self,
-        s: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        s: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -223,7 +225,7 @@ impl crate::System::Xml::Schema::FacetsChecker {
     }
     pub fn MatchEnumeration(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         enumeration: *mut crate::System::Collections::ArrayList,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -302,7 +304,7 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         &mut self,
         facet: *mut crate::System::Xml::Schema::XmlSchemaFacet,
         flag: crate::System::Xml::Schema::RestrictionFlags,
-        errorCode: *mut crate::System::String,
+        errorCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -315,7 +317,7 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         &mut self,
         facet: *mut crate::System::Xml::Schema::XmlSchemaFacet,
         flag: crate::System::Xml::Schema::RestrictionFlags,
-        errorCode: *mut crate::System::String,
+        errorCode: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -326,7 +328,7 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
     }
     pub fn CheckValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         facet: *mut crate::System::Xml::Schema::XmlSchemaFacet,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -504,11 +506,11 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
         &mut self,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
         facet: *mut crate::System::Xml::Schema::XmlSchemaFacet,
-        code: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
         nameTable: *mut crate::System::Xml::XmlNameTable,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ParseFacetValue",
             (datatype, facet, code, nsmgr, nameTable),
@@ -556,7 +558,7 @@ impl crate::System::Xml::Schema::FacetsChecker_FacetsCompiler {
 #[derive(Debug, Clone)]
 pub struct FacetsCompiler_FacetsChecker_Map {
     pub _cordl_match: char,
-    pub replacement: *mut crate::System::String,
+    pub replacement: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Schema+FacetsChecker+FacetsCompiler+Map")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -580,7 +582,7 @@ impl crate::System::Xml::Schema::FacetsCompiler_FacetsChecker_Map {
     pub fn _ctor(
         &mut self,
         m: char,
-        r: *mut crate::System::String,
+        r: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

@@ -51,6 +51,19 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn ActivateControlScheme_Il2CppString0(
+        &mut self,
+        schemeName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
+    > {
+        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "ActivateControlScheme",
+            (schemeName),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn ActivateControlScheme_InputControlScheme1(
         &mut self,
         scheme: crate::UnityEngine::InputSystem::InputControlScheme,
@@ -61,19 +74,6 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
             self,
             "ActivateControlScheme",
             (scheme),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn ActivateControlScheme_String0(
-        &mut self,
-        schemeName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax,
-    > {
-        let __cordl_ret: crate::UnityEngine::InputSystem::Users::InputUser_ControlSchemeChangeSyntax = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "ActivateControlScheme",
-            (schemeName),
         )?;
         Ok(__cordl_ret)
     }
@@ -88,6 +88,17 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InputUser0(
         &mut self,
         other: crate::UnityEngine::InputSystem::Users::InputUser,
@@ -99,20 +110,9 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
-        )?;
-        Ok(__cordl_ret)
-    }
     pub fn FindControlScheme(
         &mut self,
-        schemeName: *mut crate::System::String,
+        schemeName: *mut quest_hook::libil2cpp::Il2CppString,
         scheme: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlScheme,
         >,
@@ -134,8 +134,8 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -144,7 +144,7 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn TryFindControlScheme(
         &mut self,
-        schemeName: *mut crate::System::String,
+        schemeName: *mut quest_hook::libil2cpp::Il2CppString,
         scheme: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlScheme,
         >,
@@ -289,8 +289,8 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn get_platformUserAccountId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_platformUserAccountId",
             (),
@@ -299,8 +299,8 @@ impl crate::UnityEngine::InputSystem::Users::InputUser {
     }
     pub fn get_platformUserAccountName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_platformUserAccountName",
             (),
@@ -437,7 +437,7 @@ pub struct InputUser_GlobalState {
         >,
     >,
     pub actionChangeDelegate: *mut crate::System::Action_2<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
         crate::UnityEngine::InputSystem::InputActionChange,
     >,
     pub onDeviceChangeDelegate: *mut crate::System::Action_2<
@@ -505,8 +505,8 @@ pub struct InputUser_UserData {
     pub platformUserAccountHandle: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::Users::InputUserAccountHandle,
     >,
-    pub platformUserAccountName: *mut crate::System::String,
-    pub platformUserAccountId: *mut crate::System::String,
+    pub platformUserAccountName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub platformUserAccountId: *mut quest_hook::libil2cpp::Il2CppString,
     pub deviceCount: i32,
     pub deviceStartIndex: i32,
     pub actions: *mut crate::UnityEngine::InputSystem::IInputActionCollection,

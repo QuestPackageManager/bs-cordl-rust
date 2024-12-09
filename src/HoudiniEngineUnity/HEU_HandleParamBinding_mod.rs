@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_HandleParamBinding {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _paramType: crate::HoudiniEngineUnity::HEU_HandleParamBinding_HEU_HandleParamType,
     pub _parmID: i32,
-    pub _paramName: *mut crate::System::String,
+    pub _paramName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _bDisabled: bool,
     pub _boundChannels: *mut quest_hook::libil2cpp::Il2CppArray<bool>,
 }
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_HandleParamBinding")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_HandleParamBinding {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

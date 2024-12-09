@@ -5,7 +5,9 @@ pub struct TabBarViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _segmentedControll: *mut crate::HMUI::TextSegmentedControl,
     pub _contentSizeFilter: *mut crate::UnityEngine::UI::ContentSizeFitter,
-    pub _labels: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _labels: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _items: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::TabBarViewController_TabBarItem,
     >,
@@ -161,8 +163,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::TabBarViewCon
 #[repr(C)]
 #[derive(Debug)]
 pub struct TabBarViewController_TabBarItem {
-    __cordl_parent: crate::System::Object,
-    pub title: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub title: *mut quest_hook::libil2cpp::Il2CppString,
     pub action: *mut crate::System::Action,
 }
 #[cfg(feature = "TabBarViewController+TabBarItem")]
@@ -172,7 +174,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TabBarViewController+TabBarItem")]
 impl std::ops::Deref for crate::GlobalNamespace::TabBarViewController_TabBarItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -186,7 +188,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TabBarViewController_TabBarI
 #[cfg(feature = "TabBarViewController+TabBarItem")]
 impl crate::GlobalNamespace::TabBarViewController_TabBarItem {
     pub fn New(
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
         action: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -197,7 +199,7 @@ impl crate::GlobalNamespace::TabBarViewController_TabBarItem {
     }
     pub fn _ctor(
         &mut self,
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
         action: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

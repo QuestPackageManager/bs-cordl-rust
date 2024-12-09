@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::NetworkPlayerTableCell {
     }
     pub fn SetData(
         &mut self,
-        userName: *mut crate::System::String,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isOpenParty: bool,
         wantsToPlayNextLevel: bool,
         isMyPartyOwner: bool,

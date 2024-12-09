@@ -5,7 +5,7 @@ pub struct LRUCache_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub itemWillBeRemovedFromCacheEvent: *mut crate::System::Action_2<TKey, TValue>,
     pub _cacheContent: *mut crate::System::Collections::Generic::LinkedList_1<
         *mut crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<
@@ -37,7 +37,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::BGLib::DotnetExtension::Collections::LRUCache_2<TKey, TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -260,7 +260,7 @@ pub struct LRUCache_2_CacheElement<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _key: TKey,
     pub value: TValue,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
@@ -278,7 +278,7 @@ impl<
     TValue: quest_hook::libil2cpp::Type,
 > std::ops::Deref
 for crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TValue> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

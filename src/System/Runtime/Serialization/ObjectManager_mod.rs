@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_onDeserializationHandler: *mut crate::System::Runtime::Serialization::DeserializationEventHandler,
     pub m_onDeserializedHandler: *mut crate::System::Runtime::Serialization::SerializationEventHandler,
     pub m_objects: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Runtime::Serialization::ObjectHolder,
     >,
-    pub m_topObject: *mut crate::System::Object,
+    pub m_topObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_specialFixupObjects: *mut crate::System::Runtime::Serialization::ObjectHolderList,
     pub m_fixupCount: i64,
     pub m_selector: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+ObjectManager")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ObjectManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn AddOnDeserialized(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -69,7 +69,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn CanCallGetType(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -79,7 +79,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn CompleteISerializableObject(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,7 +127,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
         &mut self,
         memberToFix: *mut crate::System::Reflection::FieldInfo,
         holder: *mut crate::System::Runtime::Serialization::ObjectHolder,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -179,7 +179,9 @@ impl crate::System::Runtime::Serialization::ObjectManager {
         holder: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Runtime::Serialization::ObjectHolder,
         >,
-        member: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        member: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         bThrowIfMissing: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -192,11 +194,11 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     pub fn GetObject(
         &mut self,
         objectID: i64,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetObject", (objectID))?;
         Ok(__cordl_ret)
     }
@@ -224,7 +226,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn RaiseOnDeserializedEvent(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -235,7 +237,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn RaiseOnDeserializingEvent(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -263,7 +265,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     pub fn RecordDelayedFixup(
         &mut self,
         objectToBeFixed: i64,
-        memberName: *mut crate::System::String,
+        memberName: *mut quest_hook::libil2cpp::Il2CppString,
         objectRequired: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -304,7 +306,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn RegisterObject(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         objectID: i64,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         idOfContainingObj: i64,
@@ -323,7 +325,7 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn RegisterString(
         &mut self,
-        obj: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppString,
         objectID: i64,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         idOfContainingObj: i64,
@@ -375,17 +377,17 @@ impl crate::System::Runtime::Serialization::ObjectManager {
     }
     pub fn get_TopObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_TopObject", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_TopObject(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

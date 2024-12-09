@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TimeSpanFormat {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+TimeSpanFormat")]
 impl std::ops::Deref for crate::System::Globalization::TimeSpanFormat {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -42,13 +42,15 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Globalization::TimeSpa
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct TimeSpanFormat_FormatLiterals {
-    pub AppCompatLiteral: *mut crate::System::String,
+    pub AppCompatLiteral: *mut quest_hook::libil2cpp::Il2CppString,
     pub dd: i32,
     pub hh: i32,
     pub mm: i32,
     pub ss: i32,
     pub ff: i32,
-    pub _literals: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _literals: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "System+Globalization+TimeSpanFormat+FormatLiterals")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -83,8 +85,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
     pub fn get_DayHourSep(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_DayHourSep",
             (),
@@ -93,8 +95,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
     pub fn get_End(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_End",
             (),
@@ -103,8 +105,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
     pub fn get_HourMinuteSep(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_HourMinuteSep",
             (),
@@ -113,8 +115,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
     pub fn get_MinuteSecondSep(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_MinuteSecondSep",
             (),
@@ -123,8 +125,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
     pub fn get_SecondFractionSep(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_SecondFractionSep",
             (),
@@ -133,8 +135,8 @@ impl crate::System::Globalization::TimeSpanFormat_FormatLiterals {
     }
     pub fn get_Start(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Start",
             (),

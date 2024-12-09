@@ -248,7 +248,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
     pub fn HandleServerCodeEntryViewControllerDidFinish(
         &mut self,
         success: bool,
-        code: *mut crate::System::String,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -281,7 +281,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         reason: crate::GlobalNamespace::MultiplayerUnavailableReason,
         exception: *mut crate::System::Exception,
         maintenanceWindowEndTime: crate::System::Nullable_1<i64>,
-        remoteLocalizedMessage: *mut crate::System::String,
+        remoteLocalizedMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

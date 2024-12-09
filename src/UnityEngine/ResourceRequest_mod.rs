@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ResourceRequest {
     __cordl_parent: crate::UnityEngine::AsyncOperation,
-    pub m_Path: *mut crate::System::String,
+    pub m_Path: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Type: *mut crate::System::Type,
 }
 #[cfg(feature = "UnityEngine+ResourceRequest")]

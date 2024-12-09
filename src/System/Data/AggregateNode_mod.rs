@@ -6,8 +6,8 @@ pub struct AggregateNode {
     pub _type: crate::System::Data::AggregateType,
     pub _aggregate: crate::System::Data::Aggregate,
     pub _local: bool,
-    pub _relationName: *mut crate::System::String,
-    pub _columnName: *mut crate::System::String,
+    pub _relationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _columnName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _childTable: *mut crate::System::Data::DataTable,
     pub _column: *mut crate::System::Data::DataColumn,
     pub _relation: *mut crate::System::Data::DataRelation,
@@ -58,33 +58,34 @@ impl crate::System::Data::AggregateNode {
     }
     pub fn Eval_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Eval", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Eval", ())?;
         Ok(__cordl_ret)
     }
     pub fn Eval_DataRow_DataRowVersion1(
         &mut self,
         row: *mut crate::System::Data::DataRow,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (row, version))?;
         Ok(__cordl_ret)
     }
     pub fn Eval_Il2CppArray2(
         &mut self,
         records: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (records))?;
         Ok(__cordl_ret)
     }
@@ -116,10 +117,10 @@ impl crate::System::Data::AggregateNode {
         let __cordl_ret: bool = __cordl_object.invoke("IsTableConstant", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_DataTable_FunctionId_String0(
+    pub fn New_DataTable_FunctionId_Il2CppString0(
         table: *mut crate::System::Data::DataTable,
         aggregateType: crate::System::Data::FunctionId,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -127,12 +128,12 @@ impl crate::System::Data::AggregateNode {
             .invoke_void(".ctor", (table, aggregateType, columnName))?;
         Ok(__cordl_object)
     }
-    pub fn New__cordl_bool_String1(
+    pub fn New__cordl_bool_Il2CppString1(
         table: *mut crate::System::Data::DataTable,
         aggregateType: crate::System::Data::FunctionId,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         local: bool,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -153,11 +154,11 @@ impl crate::System::Data::AggregateNode {
             .invoke("Optimize", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_DataTable_FunctionId_String0(
+    pub fn _ctor_DataTable_FunctionId_Il2CppString0(
         &mut self,
         table: *mut crate::System::Data::DataTable,
         aggregateType: crate::System::Data::FunctionId,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,13 +167,13 @@ impl crate::System::Data::AggregateNode {
             .invoke(".ctor", (table, aggregateType, columnName))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor__cordl_bool_String1(
+    pub fn _ctor__cordl_bool_Il2CppString1(
         &mut self,
         table: *mut crate::System::Data::DataTable,
         aggregateType: crate::System::Data::FunctionId,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         local: bool,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

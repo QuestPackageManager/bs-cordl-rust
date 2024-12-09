@@ -23,6 +23,17 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
 }
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventPtr")]
 impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_InputEventPtr0(
         &mut self,
         other: crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -31,17 +42,6 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -89,8 +89,8 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventPtr {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

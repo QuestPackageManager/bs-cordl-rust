@@ -11,7 +11,7 @@ pub struct MultiplayerResultsPyramidView {
     pub _evenCountOffset: f32,
     pub _avatarsFactory: *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory,
     pub _avatarsDictionary: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
     >,
     pub _resultAvatarDirectors: *mut quest_hook::libil2cpp::Il2CppArray<

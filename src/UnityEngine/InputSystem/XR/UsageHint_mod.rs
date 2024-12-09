@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct UsageHint {
-    pub content: *mut crate::System::String,
+    pub content: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+UsageHint")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

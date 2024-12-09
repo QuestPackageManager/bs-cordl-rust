@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct CultureNotFoundException {
     __cordl_parent: crate::System::ArgumentException,
-    pub _invalidCultureName: *mut crate::System::String,
+    pub _invalidCultureName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _invalidCultureId: crate::System::Nullable_1<i32>,
 }
 #[cfg(feature = "System+Globalization+CultureNotFoundException")]
@@ -45,6 +45,16 @@ impl crate::System::Globalization::CultureNotFoundException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString_Il2CppString1(
+        paramName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (paramName, message))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext2(
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
@@ -55,16 +65,6 @@ impl crate::System::Globalization::CultureNotFoundException {
             .invoke_void(".ctor", (info, context))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String1(
-        paramName: *mut crate::System::String,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (paramName, message))?;
-        Ok(__cordl_object)
-    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -73,6 +73,18 @@ impl crate::System::Globalization::CultureNotFoundException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Il2CppString1(
+        &mut self,
+        paramName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (paramName, message))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_SerializationInfo_StreamingContext2(
@@ -87,25 +99,13 @@ impl crate::System::Globalization::CultureNotFoundException {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String1(
-        &mut self,
-        paramName: *mut crate::System::String,
-        message: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (paramName, message))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_FormatedInvalidCultureId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FormatedInvalidCultureId", ())?;
         Ok(__cordl_ret)
     }
@@ -121,21 +121,21 @@ impl crate::System::Globalization::CultureNotFoundException {
     }
     pub fn get_InvalidCultureName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InvalidCultureName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Message(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Message", ())?;
         Ok(__cordl_ret)
     }

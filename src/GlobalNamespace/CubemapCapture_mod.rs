@@ -6,7 +6,7 @@ pub struct CubemapCapture {
     pub _camera: *mut crate::UnityEngine::Camera,
     pub _triggerKey: crate::UnityEngine::InputSystem::Key,
     pub _cubemapSize: i32,
-    pub _saveDirectoryAbsolutePath: *mut crate::System::String,
+    pub _saveDirectoryAbsolutePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _imageType: crate::GlobalNamespace::CubemapCapture_ImageType,
     pub _jpegCompression: i32,
     pub _exrFlags: crate::UnityEngine::Texture2D_EXRFlags,
@@ -68,7 +68,7 @@ impl crate::GlobalNamespace::CubemapCapture {
     pub fn SaveCubemapTexture(
         &mut self,
         cubemap: *mut crate::UnityEngine::Cubemap,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

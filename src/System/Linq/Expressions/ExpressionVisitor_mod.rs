@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpressionVisitor {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Linq+Expressions+ExpressionVisitor")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+ExpressionVisitor")]
 impl std::ops::Deref for crate::System::Linq::Expressions::ExpressionVisitor {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     pub fn VisitAndConvert_ReadOnlyCollection_1_1<T>(
         &mut self,
         nodes: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
-        callerName: *mut crate::System::String,
+        callerName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<T>,
     >
@@ -53,7 +53,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     pub fn VisitAndConvert_T0<T>(
         &mut self,
         node: T,
-        callerName: *mut crate::System::String,
+        callerName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -321,7 +321,7 @@ impl crate::System::Linq::Expressions::ExpressionVisitor {
     pub fn VisitParameters(
         &mut self,
         nodes: *mut crate::System::Linq::Expressions::IParameterProvider,
-        callerName: *mut crate::System::String,
+        callerName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Linq::Expressions::ParameterExpression,

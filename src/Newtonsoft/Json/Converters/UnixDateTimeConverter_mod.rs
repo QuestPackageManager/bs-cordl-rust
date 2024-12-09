@@ -46,20 +46,20 @@ impl crate::Newtonsoft::Json::Converters::UnixDateTimeConverter {
         &mut self,
         reader: *mut crate::Newtonsoft::Json::JsonReader,
         objectType: *mut crate::System::Type,
-        existingValue: *mut crate::System::Object,
+        existingValue: *mut quest_hook::libil2cpp::Il2CppObject,
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadJson", (reader, objectType, existingValue, serializer))?;
         Ok(__cordl_ret)
     }
     pub fn WriteJson(
         &mut self,
         writer: *mut crate::Newtonsoft::Json::JsonWriter,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct MovedFromAttributeData {
-    pub className: *mut crate::System::String,
-    pub nameSpace: *mut crate::System::String,
-    pub assembly: *mut crate::System::String,
+    pub className: *mut quest_hook::libil2cpp::Il2CppString,
+    pub nameSpace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub assembly: *mut quest_hook::libil2cpp::Il2CppString,
     pub classHasChanged: bool,
     pub nameSpaceHasChanged: bool,
     pub assemblyHasChanged: bool,
@@ -32,9 +32,9 @@ impl crate::UnityEngine::Scripting::APIUpdating::MovedFromAttributeData {
     pub fn Set(
         &mut self,
         autoUpdateAPI: bool,
-        sourceNamespace: *mut crate::System::String,
-        sourceAssembly: *mut crate::System::String,
-        sourceClassName: *mut crate::System::String,
+        sourceNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceAssembly: *mut quest_hook::libil2cpp::Il2CppString,
+        sourceClassName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

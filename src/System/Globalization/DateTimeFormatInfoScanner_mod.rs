@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DateTimeFormatInfoScanner {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_dateWords: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _ymdFlags: crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+DateTimeFormatInfoScanner")]
 impl std::ops::Deref for crate::System::Globalization::DateTimeFormatInfoScanner {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +32,8 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
     pub type FoundDatePattern = crate::System::Globalization::DateTimeFormatInfoScanner_FoundDatePattern;
     pub fn AddDateWordOrPostfix(
         &mut self,
-        formatPostfix: *mut crate::System::String,
-        str: *mut crate::System::String,
+        formatPostfix: *mut quest_hook::libil2cpp::Il2CppString,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,9 +44,9 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
     }
     pub fn AddDateWords(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
         index: i32,
-        formatPostfix: *mut crate::System::String,
+        formatPostfix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -57,7 +57,7 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
     }
     pub fn AddIgnorableSymbols(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,13 +70,13 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
         &mut self,
         dtfi: *mut crate::System::Globalization::DateTimeFormatInfo,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetDateWordsOfDTFI", (dtfi))?;
         Ok(__cordl_ret)
     }
@@ -89,7 +89,7 @@ impl crate::System::Globalization::DateTimeFormatInfoScanner {
     }
     pub fn ScanDateWord(
         &mut self,
-        pattern: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

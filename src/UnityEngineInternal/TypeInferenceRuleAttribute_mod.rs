@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TypeInferenceRuleAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _rule: *mut crate::System::String,
+    pub _rule: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -25,8 +25,8 @@ impl std::ops::DerefMut for crate::UnityEngineInternal::TypeInferenceRuleAttribu
 }
 #[cfg(feature = "UnityEngineInternal+TypeInferenceRuleAttribute")]
 impl crate::UnityEngineInternal::TypeInferenceRuleAttribute {
-    pub fn New_String1(
-        rule: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        rule: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,17 +45,17 @@ impl crate::UnityEngineInternal::TypeInferenceRuleAttribute {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        rule: *mut crate::System::String,
+        rule: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

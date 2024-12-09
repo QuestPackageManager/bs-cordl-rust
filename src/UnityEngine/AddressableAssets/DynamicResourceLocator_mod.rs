@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicResourceLocator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Addressables: *mut crate::UnityEngine::AddressableAssets::AddressablesImpl,
-    pub m_AtlasSpriteProviderId: *mut crate::System::String,
+    pub m_AtlasSpriteProviderId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AddressableAssets+DynamicResourceLocator")]
 impl std::ops::Deref for crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,8 +34,8 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         locations: *mut crate::System::Collections::Generic::IList_1<
             *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
         >,
-        locName: *mut crate::System::String,
-        subKey: *mut crate::System::String,
+        locName: *mut quest_hook::libil2cpp::Il2CppString,
+        subKey: *mut quest_hook::libil2cpp::Il2CppString,
         mainLoc: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -50,7 +50,7 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
     }
     pub fn Locate(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: *mut crate::System::Type,
         locations: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Collections::Generic::IList_1<
@@ -102,11 +102,11 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
     }
     pub fn get_AtlasSpriteProviderId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AtlasSpriteProviderId", ())?;
         Ok(__cordl_ret)
     }
@@ -114,24 +114,24 @@ impl crate::UnityEngine::AddressableAssets::DynamicResourceLocator {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_Keys", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_LocatorId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_LocatorId", ())?;
         Ok(__cordl_ret)
     }

@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Mono::Security::Interface::TlsException {
 impl crate::Mono::Security::Interface::TlsException {
     pub fn New_Alert0(
         alert: *mut crate::Mono::Security::Interface::Alert,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +37,7 @@ impl crate::Mono::Security::Interface::TlsException {
     }
     pub fn New_AlertDescription1(
         description: crate::Mono::Security::Interface::AlertDescription,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -48,7 +48,7 @@ impl crate::Mono::Security::Interface::TlsException {
     pub fn _ctor_Alert0(
         &mut self,
         alert: *mut crate::Mono::Security::Interface::Alert,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,7 +60,7 @@ impl crate::Mono::Security::Interface::TlsException {
     pub fn _ctor_AlertDescription1(
         &mut self,
         description: crate::Mono::Security::Interface::AlertDescription,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

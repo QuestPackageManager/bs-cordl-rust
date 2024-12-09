@@ -29,7 +29,7 @@ for crate::System::Runtime::Serialization::IDeserializationCallback {
 impl crate::System::Runtime::Serialization::IDeserializationCallback {
     pub fn OnDeserialization(
         &mut self,
-        sender: *mut crate::System::Object,
+        sender: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

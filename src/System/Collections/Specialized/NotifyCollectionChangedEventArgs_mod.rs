@@ -101,19 +101,10 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
             .invoke_void(".ctor", (action, newItems, oldItems, startingIndex))?;
         Ok(__cordl_object)
     }
-    pub fn New_NotifyCollectionChangedAction0(
+    pub fn New_Il2CppObject_Il2CppObject_i32_2(
         action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (action))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_Object_Object_i32_2(
-        action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-        newItem: *mut crate::System::Object,
-        oldItem: *mut crate::System::Object,
+        newItem: *mut quest_hook::libil2cpp::Il2CppObject,
+        oldItem: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -122,15 +113,24 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
             .invoke_void(".ctor", (action, newItem, oldItem, index))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_i32_1(
+    pub fn New_Il2CppObject_i32_1(
         action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-        changedItem: *mut crate::System::Object,
+        changedItem: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (action, changedItem, index))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_NotifyCollectionChangedAction0(
+        action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (action))?;
         Ok(__cordl_object)
     }
     pub fn _ctor_IList_IList_i32_3(
@@ -147,22 +147,11 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
             .invoke(".ctor", (action, newItems, oldItems, startingIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_NotifyCollectionChangedAction0(
+    pub fn _ctor_Il2CppObject_Il2CppObject_i32_2(
         &mut self,
         action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (action))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_Object_Object_i32_2(
-        &mut self,
-        action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-        newItem: *mut crate::System::Object,
-        oldItem: *mut crate::System::Object,
+        newItem: *mut quest_hook::libil2cpp::Il2CppObject,
+        oldItem: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -172,10 +161,10 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
             .invoke(".ctor", (action, newItem, oldItem, index))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_i32_1(
+    pub fn _ctor_Il2CppObject_i32_1(
         &mut self,
         action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
-        changedItem: *mut crate::System::Object,
+        changedItem: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -183,6 +172,17 @@ impl crate::System::Collections::Specialized::NotifyCollectionChangedEventArgs {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (action, changedItem, index))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_NotifyCollectionChangedAction0(
+        &mut self,
+        action: crate::System::Collections::Specialized::NotifyCollectionChangedAction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (action))?;
         Ok(__cordl_ret)
     }
 }

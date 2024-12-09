@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectHolder {
-    __cordl_parent: crate::System::Object,
-    pub m_object: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_object: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_id: i64,
     pub m_missingElementsRemaining: i32,
     pub m_missingDecendents: i32,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Serialization+ObjectHolder")]
 impl std::ops::Deref for crate::System::Runtime::Serialization::ObjectHolder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,8 +93,8 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             .invoke("MarkForCompletionWhenAvailable", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_Object_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray1(
-        obj: *mut crate::System::Object,
+    pub fn New_Il2CppObject_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray1(
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         objID: i64,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         surrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
@@ -111,8 +111,8 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_String_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray2(
-        obj: *mut crate::System::String,
+    pub fn New_Il2CppString_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray2(
+        obj: *mut quest_hook::libil2cpp::Il2CppString,
         objID: i64,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         surrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
@@ -159,7 +159,7 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
     }
     pub fn SetObjectValue(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         manager: *mut crate::System::Runtime::Serialization::ObjectManager,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -171,7 +171,7 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
     }
     pub fn UpdateData(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         surrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
         idOfContainer: i64,
@@ -201,9 +201,9 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             .invoke("UpdateDescendentDependencyChain", (amount, manager))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray1(
+    pub fn _ctor_Il2CppObject_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         objID: i64,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         surrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
@@ -221,9 +221,9 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray2(
+    pub fn _ctor_Il2CppString_i64_SerializationInfo_ISerializationSurrogate_i64_FieldInfo_Il2CppArray2(
         &mut self,
-        obj: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppString,
         objID: i64,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         surrogate: *mut crate::System::Runtime::Serialization::ISerializationSurrogate,
@@ -331,11 +331,11 @@ impl crate::System::Runtime::Serialization::ObjectHolder {
     }
     pub fn get_ObjectValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_ObjectValue", ())?;
         Ok(__cordl_ret)
     }

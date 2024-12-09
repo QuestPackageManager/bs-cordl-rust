@@ -39,7 +39,7 @@ impl crate::Zenject::NameTransformScopeConcreteIdArgConditionCopyNonLazyBinder {
     }
     pub fn WithGameObjectName(
         &mut self,
-        gameObjectName: *mut crate::System::String,
+        gameObjectName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::TransformScopeConcreteIdArgConditionCopyNonLazyBinder,
     > {

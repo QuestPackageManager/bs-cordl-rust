@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Stores {
-    __cordl_parent: crate::System::Object,
-    pub _storePath: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _storePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _newFormat: bool,
     pub _trusted: *mut crate::Mono::Security::X509::X509Store,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Stores")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Stores {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::Mono::Security::X509::X509Stores {
 #[cfg(feature = "Mono+Security+X509+X509Stores")]
 impl crate::Mono::Security::X509::X509Stores {
     pub fn New(
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         newFormat: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -39,7 +39,7 @@ impl crate::Mono::Security::X509::X509Stores {
     }
     pub fn Open(
         &mut self,
-        storeName: *mut crate::System::String,
+        storeName: *mut quest_hook::libil2cpp::Il2CppString,
         create: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Mono::Security::X509::X509Store> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,7 +51,7 @@ impl crate::Mono::Security::X509::X509Stores {
     }
     pub fn _ctor(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         newFormat: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

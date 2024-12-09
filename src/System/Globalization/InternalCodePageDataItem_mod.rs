@@ -5,7 +5,7 @@ pub struct InternalCodePageDataItem {
     pub codePage: u16,
     pub uiFamilyCodePage: u16,
     pub flags: u32,
-    pub Names: *mut crate::System::String,
+    pub Names: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Globalization+InternalCodePageDataItem")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

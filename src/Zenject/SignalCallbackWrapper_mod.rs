@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalCallbackWrapper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signalBus: *mut crate::Zenject::SignalBus,
-    pub _action: *mut crate::System::Action_1<*mut crate::System::Object>,
+    pub _action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     pub _signalType: *mut crate::System::Type,
-    pub _identifier: *mut crate::System::Object,
+    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Zenject+SignalCallbackWrapper")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalCallbackWrapper")]
 impl std::ops::Deref for crate::Zenject::SignalCallbackWrapper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::Zenject::SignalCallbackWrapper {
     }
     pub fn New(
         bindInfo: *mut crate::Zenject::SignalBindingBindInfo,
-        action: *mut crate::System::Action_1<*mut crate::System::Object>,
+        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
         signalBus: *mut crate::Zenject::SignalBus,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -51,7 +51,7 @@ impl crate::Zenject::SignalCallbackWrapper {
     }
     pub fn OnSignalFired(
         &mut self,
-        signal: *mut crate::System::Object,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +63,7 @@ impl crate::Zenject::SignalCallbackWrapper {
     pub fn _ctor(
         &mut self,
         bindInfo: *mut crate::Zenject::SignalBindingBindInfo,
-        action: *mut crate::System::Action_1<*mut crate::System::Object>,
+        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
         signalBus: *mut crate::Zenject::SignalBus,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

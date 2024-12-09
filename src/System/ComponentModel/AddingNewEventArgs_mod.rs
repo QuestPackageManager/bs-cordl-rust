@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AddingNewEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _NewObject_k__BackingField: *mut crate::System::Object,
+    pub _NewObject_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+ComponentModel+AddingNewEventArgs")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -44,11 +44,11 @@ impl crate::System::ComponentModel::AddingNewEventArgs {
     }
     pub fn get_NewObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_NewObject", ())?;
         Ok(__cordl_ret)
     }

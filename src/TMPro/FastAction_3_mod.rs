@@ -6,7 +6,7 @@ pub struct FastAction_3<
     B: quest_hook::libil2cpp::Type,
     C: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub delegates: *mut crate::System::Collections::Generic::LinkedList_1<
         *mut crate::System::Action_3<A, B, C>,
     >,
@@ -31,7 +31,7 @@ impl<
     B: quest_hook::libil2cpp::Type,
     C: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::TMPro::FastAction_3<A, B, C> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

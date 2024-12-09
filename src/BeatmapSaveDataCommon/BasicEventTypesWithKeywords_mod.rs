@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicEventTypesWithKeywords {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub d: *mut crate::System::Collections::Generic::List_1<
         *mut crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword,
     >,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapSaveDataCommon+BasicEventTypesWithKeywords")]
 impl std::ops::Deref for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -88,8 +88,8 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
-    __cordl_parent: crate::System::Object,
-    pub k: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub k: *mut quest_hook::libil2cpp::Il2CppString,
     pub e: *mut crate::System::Collections::Generic::List_1<
         crate::BeatmapSaveDataCommon::BeatmapEventType,
     >,
@@ -107,7 +107,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -126,7 +126,7 @@ for crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFor
 )]
 impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesForKeyword {
     pub fn New(
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
         eventTypes: *mut crate::System::Collections::Generic::List_1<
             crate::BeatmapSaveDataCommon::BeatmapEventType,
         >,
@@ -139,7 +139,7 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
     }
     pub fn _ctor(
         &mut self,
-        keyword: *mut crate::System::String,
+        keyword: *mut quest_hook::libil2cpp::Il2CppString,
         eventTypes: *mut crate::System::Collections::Generic::List_1<
             crate::BeatmapSaveDataCommon::BeatmapEventType,
         >,
@@ -168,11 +168,11 @@ impl crate::BeatmapSaveDataCommon::BasicEventTypesWithKeywords_BasicEventTypesFo
     }
     pub fn get_keyword(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_keyword", ())?;
         Ok(__cordl_ret)
     }

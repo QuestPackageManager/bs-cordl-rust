@@ -276,13 +276,15 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("DoReadAsStringAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -397,22 +399,22 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     pub fn FinishReadQuotedNumber(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("FinishReadQuotedNumber", (readType))?;
         Ok(__cordl_ret)
     }
     pub fn FinishReadQuotedStringValue(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("FinishReadQuotedStringValue", (readType))?;
         Ok(__cordl_ret)
     }
@@ -469,9 +471,9 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     }
     pub fn MatchAndSetAsync(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         newToken: crate::Newtonsoft::Json::JsonToken,
-        tokenValue: *mut crate::System::Object,
+        tokenValue: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -486,7 +488,7 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     }
     pub fn MatchValueAsync(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
@@ -500,7 +502,7 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     }
     pub fn MatchValueWithTrailingSeparator(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -511,7 +513,7 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     }
     pub fn MatchValueWithTrailingSeparatorAsync(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<bool>,
@@ -523,9 +525,9 @@ impl crate::Newtonsoft::Json::JsonTextReader {
             .invoke("MatchValueWithTrailingSeparatorAsync", (value, cancellationToken))?;
         Ok(__cordl_ret)
     }
-    pub fn MatchValue_String0(
+    pub fn MatchValue_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -533,10 +535,10 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         let __cordl_ret: bool = __cordl_object.invoke("MatchValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn MatchValue__cordl_bool_String1(
+    pub fn MatchValue__cordl_bool_Il2CppString1(
         &mut self,
         enoughChars: bool,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -679,24 +681,26 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         readType: crate::Newtonsoft::Json::ReadType,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::Object>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("ParseNumberNaNAsync", (readType, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn ParseNumberNaN_ReadType0(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseNumberNaN", (readType))?;
         Ok(__cordl_ret)
     }
@@ -704,11 +708,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
         matched: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseNumberNaN", (readType, matched))?;
         Ok(__cordl_ret)
     }
@@ -717,13 +721,15 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         readType: crate::Newtonsoft::Json::ReadType,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::Object>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object
             .invoke("ParseNumberNegativeInfinityAsync", (readType, cancellationToken))?;
         Ok(__cordl_ret)
@@ -731,11 +737,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     pub fn ParseNumberNegativeInfinity_ReadType0(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseNumberNegativeInfinity", (readType))?;
         Ok(__cordl_ret)
     }
@@ -743,11 +749,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
         matched: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseNumberNegativeInfinity", (readType, matched))?;
         Ok(__cordl_ret)
     }
@@ -756,13 +762,15 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         readType: crate::Newtonsoft::Json::ReadType,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::Object>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object
             .invoke("ParseNumberPositiveInfinityAsync", (readType, cancellationToken))?;
         Ok(__cordl_ret)
@@ -770,11 +778,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     pub fn ParseNumberPositiveInfinity_ReadType0(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseNumberPositiveInfinity", (readType))?;
         Ok(__cordl_ret)
     }
@@ -782,11 +790,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
         matched: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ParseNumberPositiveInfinity", (readType, matched))?;
         Ok(__cordl_ret)
     }
@@ -1265,11 +1273,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     }
     pub fn ReadAsString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadAsString", ())?;
         Ok(__cordl_ret)
     }
@@ -1277,13 +1285,15 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ReadAsStringAsync", (cancellationToken))?;
         Ok(__cordl_ret)
     }
@@ -1479,11 +1489,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     pub fn ReadNumberValue(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadNumberValue", (readType))?;
         Ok(__cordl_ret)
     }
@@ -1492,13 +1502,15 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         readType: crate::Newtonsoft::Json::ReadType,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::Object>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object
             .invoke("ReadNumberValueAsync", (readType, cancellationToken))?;
         Ok(__cordl_ret)
@@ -1529,11 +1541,11 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     pub fn ReadStringValue(
         &mut self,
         readType: crate::Newtonsoft::Json::ReadType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ReadStringValue", (readType))?;
         Ok(__cordl_ret)
     }
@@ -1542,13 +1554,15 @@ impl crate::Newtonsoft::Json::JsonTextReader {
         readType: crate::Newtonsoft::Json::ReadType,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::Object>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object
             .invoke("ReadStringValueAsync", (readType, cancellationToken))?;
         Ok(__cordl_ret)
@@ -1588,7 +1602,7 @@ impl crate::Newtonsoft::Json::JsonTextReader {
     }
     pub fn ThrowReaderError(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         ex: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::JsonReaderException,

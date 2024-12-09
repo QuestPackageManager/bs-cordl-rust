@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BinaryFormatter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_surrogates: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
     pub m_context: crate::System::Runtime::Serialization::StreamingContext,
     pub m_binder: *mut crate::System::Runtime::Serialization::SerializationBinder,
@@ -10,7 +10,7 @@ pub struct BinaryFormatter {
     pub m_assemblyFormat: crate::System::Runtime::Serialization::Formatters::FormatterAssemblyStyle,
     pub m_securityLevel: crate::System::Runtime::Serialization::Formatters::TypeFilterLevel,
     pub m_crossAppDomainArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryFormatter")]
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+BinaryFormatter")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,11 +40,11 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
         handler: *mut crate::System::Runtime::Remoting::Messaging::HeaderHandler,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Deserialize", (serializationStream, handler))?;
         Ok(__cordl_ret)
     }
@@ -53,22 +53,22 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
         serializationStream: *mut crate::System::IO::Stream,
         handler: *mut crate::System::Runtime::Remoting::Messaging::HeaderHandler,
         fCheck: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Deserialize", (serializationStream, handler, fCheck))?;
         Ok(__cordl_ret)
     }
     pub fn Deserialize_Stream0(
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Deserialize", (serializationStream))?;
         Ok(__cordl_ret)
     }
@@ -92,7 +92,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
     pub fn Serialize_Il2CppArray1(
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
-        graph: *mut crate::System::Object,
+        graph: *mut quest_hook::libil2cpp::Il2CppObject,
         headers: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Runtime::Remoting::Messaging::Header,
         >,
@@ -107,7 +107,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
     pub fn Serialize_Il2CppArray__cordl_bool2(
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
-        graph: *mut crate::System::Object,
+        graph: *mut quest_hook::libil2cpp::Il2CppObject,
         headers: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Runtime::Remoting::Messaging::Header,
         >,
@@ -120,10 +120,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::BinaryFormatter 
             .invoke("Serialize", (serializationStream, graph, headers, fCheck))?;
         Ok(__cordl_ret)
     }
-    pub fn Serialize_Stream_Object0(
+    pub fn Serialize_Stream_Il2CppObject0(
         &mut self,
         serializationStream: *mut crate::System::IO::Stream,
-        graph: *mut crate::System::Object,
+        graph: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

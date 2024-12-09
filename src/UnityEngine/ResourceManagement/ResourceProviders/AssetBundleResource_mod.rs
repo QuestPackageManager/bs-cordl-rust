@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AssetBundleResource {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_AssetBundle: *mut crate::UnityEngine::AssetBundle,
     pub m_RequestOperation: *mut crate::UnityEngine::AsyncOperation,
     pub m_WebRequestQueueOperation: *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
@@ -15,7 +15,7 @@ pub struct AssetBundleResource {
     pub m_DownloadedBytes: i64,
     pub m_Completed: bool,
     pub m_UnloadOperation: *mut crate::UnityEngine::AssetBundleUnloadOperation,
-    pub m_TransformedInternalId: *mut crate::System::String,
+    pub m_TransformedInternalId: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_PreloadRequest: *mut crate::UnityEngine::AssetBundleRequest,
     pub m_PreloadCompleted: bool,
     pub m_LastDownloadedByteCount: u64,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource")]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResource {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -118,9 +118,9 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
             .invoke("CreateWebRequest", (loc))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateWebRequest_String1(
+    pub fn CreateWebRequest_Il2CppString1(
         &mut self,
-        url: *mut crate::System::String,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::Networking::UnityWebRequest,
     > {
@@ -133,7 +133,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
     }
     pub fn EnqueueWebRequest(
         &mut self,
-        internalId: *mut crate::System::String,
+        internalId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::ResourceManagement::WebRequestQueueOperation,
     > {

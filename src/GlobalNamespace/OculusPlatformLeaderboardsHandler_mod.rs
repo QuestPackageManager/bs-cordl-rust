@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
         count: i32,
         fromRank: i32,
         scope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
-        referencePlayerId: *mut crate::System::String,
+        referencePlayerId: *mut quest_hook::libil2cpp::Il2CppString,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::HMAsyncRequest> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

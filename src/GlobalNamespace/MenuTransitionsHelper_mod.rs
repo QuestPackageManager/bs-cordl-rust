@@ -285,7 +285,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
     }
     pub fn StartMissionLevel(
         &mut self,
-        missionId: *mut crate::System::String,
+        missionId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         overrideColorScheme: *mut crate::GlobalNamespace::ColorScheme,
@@ -329,7 +329,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
     }
     pub fn StartMultiplayerLevel_Action_1_Action_2_Action_1_1(
         &mut self,
-        gameMode: *mut crate::System::String,
+        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
@@ -337,7 +337,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
         practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         useTestNoteCutSoundEffects: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,
         afterSceneSwitchCallback: *mut crate::System::Action_1<
@@ -378,7 +378,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
     }
     pub fn StartMultiplayerLevel_Action_2_Action_1_0(
         &mut self,
-        gameMode: *mut crate::System::String,
+        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
@@ -386,7 +386,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         gameplayModifiers: *mut crate::GlobalNamespace::GameplayModifiers,
         playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
         practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         useTestNoteCutSoundEffects: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,
         levelFinishedCallback: *mut crate::System::Action_2<
@@ -421,9 +421,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_String__cordl_bool_Action_Action_1_Action_2_Nullable_1_1(
+    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_1(
         &mut self,
-        gameMode: *mut crate::System::String,
+        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         beatmapLevelData: *mut crate::GlobalNamespace::IBeatmapLevelData,
@@ -434,7 +434,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
         practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
         environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         useTestNoteCutSoundEffects: bool,
         startPaused: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,
@@ -483,9 +483,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_String__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
+    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
         &mut self,
-        gameMode: *mut crate::System::String,
+        gameMode: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
         overrideEnvironmentSettings: *mut crate::GlobalNamespace::OverrideEnvironmentSettings,
@@ -495,7 +495,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         playerSpecificSettings: *mut crate::GlobalNamespace::PlayerSpecificSettings,
         practiceSettings: *mut crate::GlobalNamespace::PracticeSettings,
         environmentsListModel: *mut crate::GlobalNamespace::EnvironmentsListModel,
-        backButtonText: *mut crate::System::String,
+        backButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         useTestNoteCutSoundEffects: bool,
         startPaused: bool,
         beforeSceneSwitchCallback: *mut crate::System::Action,

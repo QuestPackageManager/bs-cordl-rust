@@ -34,8 +34,8 @@ impl crate::System::Xml::Schema::XsdDuration {
     pub type Parts = crate::System::Xml::Schema::XsdDuration_Parts;
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -45,8 +45,8 @@ impl crate::System::Xml::Schema::XsdDuration {
     pub fn ToString_XsdDuration_DurationType1(
         &mut self,
         durationType: crate::System::Xml::Schema::XsdDuration_DurationType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (durationType),
@@ -97,9 +97,9 @@ impl crate::System::Xml::Schema::XsdDuration {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String3(
+    pub fn _ctor_Il2CppString3(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -108,9 +108,9 @@ impl crate::System::Xml::Schema::XsdDuration {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_XsdDuration_DurationType4(
+    pub fn _ctor_Il2CppString_XsdDuration_DurationType4(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         durationType: crate::System::Xml::Schema::XsdDuration_DurationType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

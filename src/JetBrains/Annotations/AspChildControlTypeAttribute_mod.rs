@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AspChildControlTypeAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _TagName_k__BackingField: *mut crate::System::String,
+    pub _TagName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _ControlType_k__BackingField: *mut crate::System::Type,
 }
 #[cfg(feature = "JetBrains+Annotations+AspChildControlTypeAttribute")]
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::JetBrains::Annotations::AspChildControlTypeAt
 #[cfg(feature = "JetBrains+Annotations+AspChildControlTypeAttribute")]
 impl crate::JetBrains::Annotations::AspChildControlTypeAttribute {
     pub fn New(
-        tagName: *mut crate::System::String,
+        tagName: *mut quest_hook::libil2cpp::Il2CppString,
         controlType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -39,7 +39,7 @@ impl crate::JetBrains::Annotations::AspChildControlTypeAttribute {
     }
     pub fn _ctor(
         &mut self,
-        tagName: *mut crate::System::String,
+        tagName: *mut quest_hook::libil2cpp::Il2CppString,
         controlType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -61,11 +61,11 @@ impl crate::JetBrains::Annotations::AspChildControlTypeAttribute {
     }
     pub fn get_TagName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TagName", ())?;
         Ok(__cordl_ret)
     }
@@ -82,7 +82,7 @@ impl crate::JetBrains::Annotations::AspChildControlTypeAttribute {
     }
     pub fn set_TagName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

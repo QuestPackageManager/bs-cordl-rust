@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SupportedRenderingFeatures {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _reflectionProbeModes_k__BackingField: crate::UnityEngine::Rendering::SupportedRenderingFeatures_ReflectionProbeModes,
     pub _defaultMixedLightingModes_k__BackingField: crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
     pub _mixedLightingModes_k__BackingField: crate::UnityEngine::Rendering::SupportedRenderingFeatures_LightmapMixedBakeModes,
@@ -32,7 +32,7 @@ pub struct SupportedRenderingFeatures {
     pub _overridesShadowmask_k__BackingField: bool,
     pub _overridesLightProbeSystem_k__BackingField: bool,
     pub _supportsHDR_k__BackingField: bool,
-    pub _overridesLightProbeSystemWarningMessage_k__BackingField: *mut crate::System::String,
+    pub _overridesLightProbeSystemWarningMessage_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -42,7 +42,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Rendering+SupportedRenderingFeatures")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::SupportedRenderingFeatures {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

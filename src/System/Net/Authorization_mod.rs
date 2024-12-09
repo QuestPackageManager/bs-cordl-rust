@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Authorization {
-    __cordl_parent: crate::System::Object,
-    pub m_Message: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub m_Message: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Complete: bool,
-    pub ModuleAuthenticationType: *mut crate::System::String,
+    pub ModuleAuthenticationType: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+Authorization")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+Authorization")]
 impl std::ops::Deref for crate::System::Net::Authorization {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::System::Net::Authorization {
 }
 #[cfg(feature = "System+Net+Authorization")]
 impl crate::System::Net::Authorization {
-    pub fn New_String0(
-        token: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        token: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +37,7 @@ impl crate::System::Net::Authorization {
         Ok(__cordl_object)
     }
     pub fn New__cordl_bool1(
-        token: *mut crate::System::String,
+        token: *mut quest_hook::libil2cpp::Il2CppString,
         finished: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -46,9 +46,9 @@ impl crate::System::Net::Authorization {
             .invoke_void(".ctor", (token, finished))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        token: *mut crate::System::String,
+        token: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,7 +59,7 @@ impl crate::System::Net::Authorization {
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
-        token: *mut crate::System::String,
+        token: *mut quest_hook::libil2cpp::Il2CppString,
         finished: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,11 +78,11 @@ impl crate::System::Net::Authorization {
     }
     pub fn get_Message(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Message", ())?;
         Ok(__cordl_ret)
     }

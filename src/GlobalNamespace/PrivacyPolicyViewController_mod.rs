@@ -7,7 +7,7 @@ pub struct PrivacyPolicyViewController {
     pub _iAcceptButton: *mut crate::UnityEngine::UI::Button,
     pub _textPageScrollView: *mut crate::HMUI::TextPageScrollView,
     pub _privacyPolicyLocalizedTextAsset: *mut crate::GlobalNamespace::LocalizedTextAsset,
-    pub _updateNoticeLocalizationKey: *mut crate::System::String,
+    pub _updateNoticeLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub didFinishEvent: *mut crate::System::Action_1<
         crate::GlobalNamespace::PrivacyPolicyViewController_ButtonType,
     >,

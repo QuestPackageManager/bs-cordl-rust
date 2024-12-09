@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
     pub mPredictionResistant: bool,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Prng+CryptoApiEntropySourceProvider")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -102,7 +102,7 @@ for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct CryptoApiEntropySourceProvider_CryptoApiEntropySource {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mRng: *mut crate::System::Security::Cryptography::RandomNumberGenerator,
     pub mPredictionResistant: bool,
     pub mEntropySize: i32,
@@ -121,7 +121,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Prng::CryptoApiEntropySourceProvider_CryptoApiEntropySource {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

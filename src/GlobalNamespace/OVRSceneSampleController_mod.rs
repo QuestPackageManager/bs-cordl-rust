@@ -8,7 +8,7 @@ pub struct OVRSceneSampleController {
     pub speedRotationIncrement: f32,
     pub playerController: *mut crate::GlobalNamespace::OVRPlayerController,
     pub cameraController: *mut crate::GlobalNamespace::OVRCameraRig,
-    pub layerName: *mut crate::System::String,
+    pub layerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub visionMode: bool,
     pub gridCube: *mut crate::GlobalNamespace::OVRGridCube,
 }

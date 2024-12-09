@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TweakableBlockCipherParameters {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tweak: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+Crypto+Parameters+TweakableBlockCipherParameters")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::Crypto::Parameters::TweakableBlockCipherParameters {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

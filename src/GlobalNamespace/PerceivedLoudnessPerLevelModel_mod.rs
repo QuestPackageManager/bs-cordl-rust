@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerceivedLoudnessPerLevelModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _loudnessLevelPerLevelId: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         f32,
     >,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerceivedLoudnessPerLevelModel")]
 impl std::ops::Deref for crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     pub const kSfxLoudnessTarget: f32 = -10f32;
     pub fn GetLoudnessByLevelId(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     }
     pub fn GetLoudnessByLevelIdOrNull(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     }
     pub fn GetLoudnessCorrectionByLevelId(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessPerLevelModel {
     }
     pub fn GetMaxSfxVolumeByLevelId(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct CommandLineParserResult {
-    pub applicationPath: *mut crate::System::String,
+    pub applicationPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _parsed: *mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
         crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub unexpectedArguments: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "BGLib+DotnetExtension+CommandLine+CommandLineParserResult")]
@@ -49,9 +49,9 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Contains_String1(
+    pub fn Contains_Il2CppString1(
         &mut self,
-        identifier: *mut crate::System::String,
+        identifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -63,8 +63,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
     pub fn GetValueOrDefault(
         &mut self,
         option: crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetValueOrDefault",
             (option),
@@ -73,8 +73,8 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -83,13 +83,13 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
     }
     pub fn _ctor(
         &mut self,
-        applicationPath: *mut crate::System::String,
+        applicationPath: *mut quest_hook::libil2cpp::Il2CppString,
         parsed: *mut crate::System::Collections::Generic::IReadOnlyDictionary_2<
             crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         unexpectedArguments: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -102,19 +102,19 @@ impl crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult {
     pub fn get_Item_ArgumentOption0(
         &mut self,
         option: crate::BGLib::DotnetExtension::CommandLine::ArgumentOption,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Item",
             (option),
         )?;
         Ok(__cordl_ret)
     }
-    pub fn get_Item_String1(
+    pub fn get_Item_Il2CppString1(
         &mut self,
-        identifier: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        identifier: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Item",
             (identifier),

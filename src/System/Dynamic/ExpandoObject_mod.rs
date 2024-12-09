@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandoObject {
-    __cordl_parent: crate::System::Object,
-    pub LockObject: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub LockObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _data: *mut crate::System::Dynamic::ExpandoObject_ExpandoData,
     pub _count: i32,
     pub _propertyChanged: *mut crate::System::ComponentModel::PropertyChangedEventHandler,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ExpandoObject")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::System::Dynamic::ExpandoObject {
     pub type _GetExpandoEnumerator_d__51 = crate::System::Dynamic::ExpandoObject__GetExpandoEnumerator_d__51;
     pub fn ExpandoContainsKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -59,8 +59,8 @@ impl crate::System::Dynamic::ExpandoObject {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     > {
@@ -69,8 +69,8 @@ impl crate::System::Dynamic::ExpandoObject {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         > = __cordl_object.invoke("GetExpandoEnumerator", (data, version))?;
         Ok(__cordl_ret)
@@ -94,8 +94,8 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn PromoteClass(
         &mut self,
-        oldClass: *mut crate::System::Object,
-        newClass: *mut crate::System::Object,
+        oldClass: *mut quest_hook::libil2cpp::Il2CppObject,
+        newClass: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,8 +121,8 @@ impl crate::System::Dynamic::ExpandoObject {
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Add(
         &mut self,
         item: crate::System::Collections::Generic::KeyValuePair_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -151,8 +151,8 @@ impl crate::System::Dynamic::ExpandoObject {
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Contains(
         &mut self,
         item: crate::System::Collections::Generic::KeyValuePair_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -169,8 +169,8 @@ impl crate::System::Dynamic::ExpandoObject {
         &mut self,
         array: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
         arrayIndex: i32,
@@ -188,8 +188,8 @@ impl crate::System::Dynamic::ExpandoObject {
     pub fn System_Collections_Generic_ICollection_System_Collections_Generic_KeyValuePair_System_String_System_Object___Remove(
         &mut self,
         item: crate::System::Collections::Generic::KeyValuePair_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -230,8 +230,8 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__Add(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -245,7 +245,7 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__ContainsKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -259,7 +259,7 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__Remove(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -273,8 +273,8 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__TryGetValue(
         &mut self,
-        key: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -288,12 +288,12 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__get_Item(
         &mut self,
-        key: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item",
                 (key),
@@ -304,14 +304,14 @@ impl crate::System::Dynamic::ExpandoObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::ICollection_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Keys",
@@ -323,14 +323,14 @@ impl crate::System::Dynamic::ExpandoObject {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::ICollection_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::ICollection_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object
             .invoke(
                 "System.Collections.Generic.IDictionary<System.String,System.Object>.get_Values",
@@ -340,8 +340,8 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn System_Collections_Generic_IDictionary_System_String_System_Object__set_Item(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -358,8 +358,8 @@ impl crate::System::Dynamic::ExpandoObject {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     > {
@@ -368,8 +368,8 @@ impl crate::System::Dynamic::ExpandoObject {
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::String,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppString,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         > = __cordl_object
             .invoke(
@@ -404,8 +404,8 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn TryAddMember(
         &mut self,
-        key: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -416,11 +416,11 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn TryDeleteValue(
         &mut self,
-        indexClass: *mut crate::System::Object,
+        indexClass: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreCase: bool,
-        deleteValue: *mut crate::System::Object,
+        deleteValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -434,11 +434,11 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn TryGetValue(
         &mut self,
-        indexClass: *mut crate::System::Object,
+        indexClass: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreCase: bool,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -449,8 +449,8 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn TryGetValueForKey(
         &mut self,
-        key: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -461,10 +461,10 @@ impl crate::System::Dynamic::ExpandoObject {
     }
     pub fn TrySetValue(
         &mut self,
-        indexClass: *mut crate::System::Object,
+        indexClass: *mut quest_hook::libil2cpp::Il2CppObject,
         index: i32,
-        value: *mut crate::System::Object,
-        name: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreCase: bool,
         add: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -509,9 +509,11 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Dynamic::ExpandoObject
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandoObject_ExpandoData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Class: *mut crate::System::Dynamic::ExpandoClass,
-    pub _dataArray: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub _dataArray: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _version: i32,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
@@ -521,7 +523,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ExpandoObject+ExpandoData")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ExpandoData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -543,7 +545,9 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
     }
     pub fn New_ExpandoClass_Il2CppArray_i32_1(
         klass: *mut crate::System::Dynamic::ExpandoClass,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -578,7 +582,9 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
     pub fn _ctor_ExpandoClass_Il2CppArray_i32_1(
         &mut self,
         klass: *mut crate::System::Dynamic::ExpandoClass,
-        data: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        data: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         version: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -591,11 +597,11 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
     pub fn get_Item(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Item", (index))?;
         Ok(__cordl_ret)
     }
@@ -616,7 +622,7 @@ impl crate::System::Dynamic::ExpandoObject_ExpandoData {
     pub fn set_Item(
         &mut self,
         index: i32,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -640,7 +646,7 @@ for crate::System::Dynamic::ExpandoObject_ExpandoData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandoObject_KeyCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _expando: *mut crate::System::Dynamic::ExpandoObject,
     pub _expandoVersion: i32,
     pub _expandoCount: i32,
@@ -653,7 +659,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollection")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_KeyCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -670,7 +676,7 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
     pub type _GetEnumerator_d__15 = crate::System::Dynamic::KeyCollection_ExpandoObject__GetEnumerator_d__15;
     pub fn Add(
         &mut self,
-        item: *mut crate::System::String,
+        item: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -701,7 +707,7 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
     }
     pub fn Contains(
         &mut self,
-        item: *mut crate::System::String,
+        item: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -711,7 +717,9 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
     }
     pub fn CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -725,14 +733,14 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
@@ -747,7 +755,7 @@ impl crate::System::Dynamic::ExpandoObject_KeyCollection {
     }
     pub fn Remove(
         &mut self,
-        item: *mut crate::System::String,
+        item: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -805,7 +813,7 @@ for crate::System::Dynamic::ExpandoObject_KeyCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandoObject_KeyCollectionDebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -815,7 +823,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ExpandoObject+KeyCollectionDebugView")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_KeyCollectionDebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -910,7 +918,7 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
     pub fn BindGetOrInvokeMember(
         &mut self,
         binder: *mut crate::System::Dynamic::DynamicMetaObjectBinder,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreCase: bool,
         fallback: *mut crate::System::Dynamic::DynamicMetaObject,
         fallbackInvoke: *mut crate::System::Func_2<
@@ -956,7 +964,7 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
     }
     pub fn GetClassEnsureIndex(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         caseInsensitive: bool,
         obj: *mut crate::System::Dynamic::ExpandoObject,
         klass: quest_hook::libil2cpp::ByRefMut<
@@ -975,14 +983,14 @@ impl crate::System::Dynamic::ExpandoObject_MetaExpando {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetDynamicMemberNames", ())?;
         Ok(__cordl_ret)
     }
@@ -1057,7 +1065,7 @@ for crate::System::Dynamic::ExpandoObject_MetaExpando {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandoObject_ValueCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _expando: *mut crate::System::Dynamic::ExpandoObject,
     pub _expandoVersion: i32,
     pub _expandoCount: i32,
@@ -1070,7 +1078,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollection")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ValueCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1087,7 +1095,7 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
     pub type _GetEnumerator_d__15 = crate::System::Dynamic::ValueCollection_ExpandoObject__GetEnumerator_d__15;
     pub fn Add(
         &mut self,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1118,7 +1126,7 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
     }
     pub fn Contains(
         &mut self,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1128,7 +1136,9 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
     }
     pub fn CopyTo(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         arrayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1142,14 +1152,14 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)
     }
@@ -1164,7 +1174,7 @@ impl crate::System::Dynamic::ExpandoObject_ValueCollection {
     }
     pub fn Remove(
         &mut self,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1222,7 +1232,7 @@ for crate::System::Dynamic::ExpandoObject_ValueCollection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ExpandoObject_ValueCollectionDebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1232,7 +1242,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Dynamic+ExpandoObject+ValueCollectionDebugView")]
 impl std::ops::Deref for crate::System::Dynamic::ExpandoObject_ValueCollectionDebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

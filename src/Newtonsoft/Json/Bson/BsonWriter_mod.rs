@@ -6,7 +6,7 @@ pub struct BsonWriter {
     pub _writer: *mut crate::Newtonsoft::Json::Bson::BsonBinaryWriter,
     pub _root: *mut crate::Newtonsoft::Json::Bson::BsonToken,
     pub _parent: *mut crate::Newtonsoft::Json::Bson::BsonToken,
-    pub _propertyName: *mut crate::System::String,
+    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Newtonsoft+Json+Bson+BsonWriter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -52,7 +52,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn AddValue(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         _cordl_type: crate::Newtonsoft::Json::Bson::BsonType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -112,7 +112,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn WriteComment(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -155,7 +155,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn WritePropertyName(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -166,7 +166,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn WriteRaw(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -177,7 +177,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn WriteRawValue(
         &mut self,
-        json: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -188,8 +188,8 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn WriteRegex(
         &mut self,
-        pattern: *mut crate::System::String,
-        options: *mut crate::System::String,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
+        options: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,7 +210,7 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
     }
     pub fn WriteStartConstructor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -294,9 +294,9 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteValue_Object0(
+    pub fn WriteValue_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -305,9 +305,9 @@ impl crate::Newtonsoft::Json::Bson::BsonWriter {
             .invoke("WriteValue", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteValue_String1(
+    pub fn WriteValue_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

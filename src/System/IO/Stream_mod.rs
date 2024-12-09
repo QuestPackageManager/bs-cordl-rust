@@ -76,7 +76,7 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,7 +91,7 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         serializeAsynchronously: bool,
         apm: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -111,7 +111,7 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,7 +126,7 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         serializeAsynchronously: bool,
         apm: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
@@ -146,7 +146,7 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -161,7 +161,7 @@ impl crate::System::IO::Stream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -773,8 +773,11 @@ impl crate::System::IO::Stream_ReadWriteTask {
     pub fn New(
         isRead: bool,
         apm: bool,
-        function: *mut crate::System::Func_2<*mut crate::System::Object, i32>,
-        state: *mut crate::System::Object,
+        function: *mut crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            i32,
+        >,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         stream: *mut crate::System::IO::Stream,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
@@ -821,8 +824,11 @@ impl crate::System::IO::Stream_ReadWriteTask {
         &mut self,
         isRead: bool,
         apm: bool,
-        function: *mut crate::System::Func_2<*mut crate::System::Object, i32>,
-        state: *mut crate::System::Object,
+        function: *mut crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            i32,
+        >,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         stream: *mut crate::System::IO::Stream,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
@@ -853,8 +859,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::IO::Stream_ReadWriteTa
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stream_SynchronousAsyncResult {
-    __cordl_parent: crate::System::Object,
-    pub _stateObject: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _stateObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _isWrite: bool,
     pub _waitHandle: *mut crate::System::Threading::ManualResetEvent,
     pub _exceptionInfo: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
@@ -868,7 +874,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult")]
 impl std::ops::Deref for crate::System::IO::Stream_SynchronousAsyncResult {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -883,9 +889,9 @@ impl std::ops::DerefMut for crate::System::IO::Stream_SynchronousAsyncResult {
 impl crate::System::IO::Stream_SynchronousAsyncResult {
     #[cfg(feature = "System+IO+Stream+SynchronousAsyncResult+__c")]
     pub type __c = crate::System::IO::SynchronousAsyncResult_Stream___c;
-    pub fn New_Exception_Object__cordl_bool2(
+    pub fn New_Exception_Il2CppObject__cordl_bool2(
         ex: *mut crate::System::Exception,
-        asyncStateObject: *mut crate::System::Object,
+        asyncStateObject: *mut quest_hook::libil2cpp::Il2CppObject,
         isWrite: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -894,8 +900,8 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
             .invoke_void(".ctor", (ex, asyncStateObject, isWrite))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object1(
-        asyncStateObject: *mut crate::System::Object,
+    pub fn New_Il2CppObject1(
+        asyncStateObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -903,9 +909,9 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
             .invoke_void(".ctor", (asyncStateObject))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_Object0(
+    pub fn New_i32_Il2CppObject0(
         bytesRead: i32,
-        asyncStateObject: *mut crate::System::Object,
+        asyncStateObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -923,10 +929,10 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
             .invoke("ThrowIfError", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Exception_Object__cordl_bool2(
+    pub fn _ctor_Exception_Il2CppObject__cordl_bool2(
         &mut self,
         ex: *mut crate::System::Exception,
-        asyncStateObject: *mut crate::System::Object,
+        asyncStateObject: *mut quest_hook::libil2cpp::Il2CppObject,
         isWrite: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -936,9 +942,9 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
             .invoke(".ctor", (ex, asyncStateObject, isWrite))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object1(
+    pub fn _ctor_Il2CppObject1(
         &mut self,
-        asyncStateObject: *mut crate::System::Object,
+        asyncStateObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -947,10 +953,10 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
             .invoke(".ctor", (asyncStateObject))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_Object0(
+    pub fn _ctor_i32_Il2CppObject0(
         &mut self,
         bytesRead: i32,
-        asyncStateObject: *mut crate::System::Object,
+        asyncStateObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -961,11 +967,11 @@ impl crate::System::IO::Stream_SynchronousAsyncResult {
     }
     pub fn get_AsyncState(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_AsyncState", ())?;
         Ok(__cordl_ret)
     }

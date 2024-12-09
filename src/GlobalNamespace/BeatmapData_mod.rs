@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _updateAllBeatmapDataOnInsert_k__BackingField: bool,
     pub _cuttableNotesCount_k__BackingField: i32,
     pub _obstaclesCount_k__BackingField: i32,
@@ -36,7 +36,7 @@ pub struct BeatmapData {
     >,
     pub _numberOfLines: i32,
     pub _specialBasicBeatmapEventKeywords: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _beatmapObjectsInTimeRowProcessor: *mut crate::GlobalNamespace::BeatmapObjectsInTimeRowProcessor,
     pub _prevAddedBeatmapObjectDataTime: f32,
@@ -48,7 +48,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapData")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::BeatmapData {
     }
     pub fn AddSpecialBasicBeatmapEventKeyword(
         &mut self,
-        specialBasicBeatmapEventKeyword: *mut crate::System::String,
+        specialBasicBeatmapEventKeyword: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -384,14 +384,14 @@ impl crate::GlobalNamespace::BeatmapData {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_specialBasicBeatmapEventKeywords", ())?;
         Ok(__cordl_ret)
     }
@@ -508,7 +508,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::BeatmapData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapData_BeatmapDataBinaryHeapItem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub node: *mut crate::System::Collections::Generic::LinkedListNode_1<
         *mut crate::GlobalNamespace::BeatmapDataItem,
     >,
@@ -521,7 +521,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapData+BeatmapDataBinaryHeapItem")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapData_BeatmapDataBinaryHeapItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

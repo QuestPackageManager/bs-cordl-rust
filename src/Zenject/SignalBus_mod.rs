@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SignalBus {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _subscriptionPool: *mut crate::Zenject::SignalSubscription_Pool,
     pub _localDeclarationMap: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::Zenject::BindingId,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+SignalBus")]
 impl std::ops::Deref for crate::Zenject::SignalBus {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,9 +46,9 @@ impl crate::Zenject::SignalBus {
     pub type __c__DisplayClass27_0_1<TSignal: quest_hook::libil2cpp::Type> = crate::Zenject::SignalBus___c__DisplayClass27_0_1<
         TSignal,
     >;
-    pub fn DeclareSignal_Object_Nullable_1_0<T>(
+    pub fn DeclareSignal_Il2CppObject_Nullable_1_0<T>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         missingHandlerResponse: crate::System::Nullable_1<
             crate::Zenject::SignalMissingHandlerResponses,
         >,
@@ -69,10 +69,10 @@ impl crate::Zenject::SignalBus {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn DeclareSignal_Type_Object_Nullable_1_1(
+    pub fn DeclareSignal_Type_Il2CppObject_Nullable_1_1(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         missingHandlerResponse: crate::System::Nullable_1<
             crate::Zenject::SignalMissingHandlerResponses,
         >,
@@ -95,9 +95,9 @@ impl crate::Zenject::SignalBus {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn FireId_Object1<TSignal>(
+    pub fn FireId_Il2CppObject1<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -110,10 +110,10 @@ impl crate::Zenject::SignalBus {
             .invoke("FireId", (identifier))?;
         Ok(__cordl_ret)
     }
-    pub fn FireId_Object2(
+    pub fn FireId_Il2CppObject2(
         &mut self,
-        identifier: *mut crate::System::Object,
-        signal: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -124,7 +124,7 @@ impl crate::Zenject::SignalBus {
     }
     pub fn FireId_TSignal0<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         signal: TSignal,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -152,9 +152,9 @@ impl crate::Zenject::SignalBus {
             .invoke("Fire", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Fire_Object2(
+    pub fn Fire_Il2CppObject2(
         &mut self,
-        signal: *mut crate::System::Object,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -190,10 +190,10 @@ impl crate::Zenject::SignalBus {
             .invoke("GetDeclaration", (signalId, requireDeclaration))?;
         Ok(__cordl_ret)
     }
-    pub fn GetDeclaration_Type_Object__cordl_bool0(
+    pub fn GetDeclaration_Type_Il2CppObject__cordl_bool0(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         requireDeclaration: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::SignalDeclaration> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -239,9 +239,9 @@ impl crate::Zenject::SignalBus {
             )?;
         Ok(__cordl_object)
     }
-    pub fn SubscribeId_Object_Action0<TSignal>(
+    pub fn SubscribeId_Il2CppObject_Action0<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -255,9 +255,9 @@ impl crate::Zenject::SignalBus {
             .invoke("SubscribeId", (identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn SubscribeId_Object_Action_1_1<TSignal>(
+    pub fn SubscribeId_Il2CppObject_Action_1_1<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action_1<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -271,11 +271,11 @@ impl crate::Zenject::SignalBus {
             .invoke("SubscribeId", (identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn SubscribeId_Type_Object_Action_1_2(
+    pub fn SubscribeId_Type_Il2CppObject_Action_1_2(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -284,11 +284,11 @@ impl crate::Zenject::SignalBus {
             .invoke("SubscribeId", (signalType, identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn SubscribeInternal_BindingId_Object_Action_1_1(
+    pub fn SubscribeInternal_BindingId_Il2CppObject_Action_1_1(
         &mut self,
         signalId: crate::Zenject::BindingId,
-        token: *mut crate::System::Object,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        token: *mut quest_hook::libil2cpp::Il2CppObject,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -300,7 +300,7 @@ impl crate::Zenject::SignalBus {
     pub fn SubscribeInternal_SignalSubscriptionId_Action_1_2(
         &mut self,
         id: crate::Zenject::SignalSubscriptionId,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -309,12 +309,12 @@ impl crate::Zenject::SignalBus {
             .invoke("SubscribeInternal", (id, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn SubscribeInternal_Type_Object_Object_Action_1_0(
+    pub fn SubscribeInternal_Type_Il2CppObject_Il2CppObject_Action_1_0(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
-        token: *mut crate::System::Object,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        token: *mut quest_hook::libil2cpp::Il2CppObject,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -356,7 +356,7 @@ impl crate::Zenject::SignalBus {
     pub fn Subscribe_Type_Action_1_2(
         &mut self,
         signalType: *mut crate::System::Type,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -365,9 +365,9 @@ impl crate::Zenject::SignalBus {
             .invoke("Subscribe", (signalType, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn TryFireId_Object1<TSignal>(
+    pub fn TryFireId_Il2CppObject1<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TSignal: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -380,10 +380,10 @@ impl crate::Zenject::SignalBus {
             .invoke("TryFireId", (identifier))?;
         Ok(__cordl_ret)
     }
-    pub fn TryFireId_Object2(
+    pub fn TryFireId_Il2CppObject2(
         &mut self,
-        identifier: *mut crate::System::Object,
-        signal: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -394,7 +394,7 @@ impl crate::Zenject::SignalBus {
     }
     pub fn TryFireId_TSignal0<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         signal: TSignal,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -422,9 +422,9 @@ impl crate::Zenject::SignalBus {
             .invoke("TryFire", ())?;
         Ok(__cordl_ret)
     }
-    pub fn TryFire_Object2(
+    pub fn TryFire_Il2CppObject2(
         &mut self,
-        signal: *mut crate::System::Object,
+        signal: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -448,9 +448,9 @@ impl crate::Zenject::SignalBus {
             .invoke("TryFire", (signal))?;
         Ok(__cordl_ret)
     }
-    pub fn TryUnsubscribeId_Object_Action0<TSignal>(
+    pub fn TryUnsubscribeId_Il2CppObject_Action0<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -464,9 +464,9 @@ impl crate::Zenject::SignalBus {
             .invoke("TryUnsubscribeId", (identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn TryUnsubscribeId_Object_Action_1_3<TSignal>(
+    pub fn TryUnsubscribeId_Il2CppObject_Action_1_3<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action_1<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -480,10 +480,10 @@ impl crate::Zenject::SignalBus {
             .invoke("TryUnsubscribeId", (identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn TryUnsubscribeId_Type_Object_Action1(
+    pub fn TryUnsubscribeId_Type_Il2CppObject_Action1(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -493,11 +493,11 @@ impl crate::Zenject::SignalBus {
             .invoke("TryUnsubscribeId", (signalType, identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn TryUnsubscribeId_Type_Object_Action_1_2(
+    pub fn TryUnsubscribeId_Type_Il2CppObject_Action_1_2(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -551,7 +551,7 @@ impl crate::Zenject::SignalBus {
     pub fn TryUnsubscribe_Type_Action_1_2(
         &mut self,
         signalType: *mut crate::System::Type,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -560,9 +560,9 @@ impl crate::Zenject::SignalBus {
             .invoke("TryUnsubscribe", (signalType, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn UnsubscribeId_Object_Action0<TSignal>(
+    pub fn UnsubscribeId_Il2CppObject_Action0<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -576,9 +576,9 @@ impl crate::Zenject::SignalBus {
             .invoke("UnsubscribeId", (identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn UnsubscribeId_Object_Action_1_3<TSignal>(
+    pub fn UnsubscribeId_Il2CppObject_Action_1_3<TSignal>(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action_1<TSignal>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -592,10 +592,10 @@ impl crate::Zenject::SignalBus {
             .invoke("UnsubscribeId", (identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn UnsubscribeId_Type_Object_Action1(
+    pub fn UnsubscribeId_Type_Il2CppObject_Action1(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         callback: *mut crate::System::Action,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -605,11 +605,11 @@ impl crate::Zenject::SignalBus {
             .invoke("UnsubscribeId", (signalType, identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn UnsubscribeId_Type_Object_Action_1_2(
+    pub fn UnsubscribeId_Type_Il2CppObject_Action_1_2(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -618,10 +618,10 @@ impl crate::Zenject::SignalBus {
             .invoke("UnsubscribeId", (signalType, identifier, callback))?;
         Ok(__cordl_ret)
     }
-    pub fn UnsubscribeInternal_BindingId_Object__cordl_bool1(
+    pub fn UnsubscribeInternal_BindingId_Il2CppObject__cordl_bool1(
         &mut self,
         signalId: crate::Zenject::BindingId,
-        token: *mut crate::System::Object,
+        token: *mut quest_hook::libil2cpp::Il2CppObject,
         throwIfMissing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -643,11 +643,11 @@ impl crate::Zenject::SignalBus {
             .invoke("UnsubscribeInternal", (id, throwIfMissing))?;
         Ok(__cordl_ret)
     }
-    pub fn UnsubscribeInternal_Type_Object_Object__cordl_bool0(
+    pub fn UnsubscribeInternal_Type_Il2CppObject_Il2CppObject__cordl_bool0(
         &mut self,
         signalType: *mut crate::System::Type,
-        identifier: *mut crate::System::Object,
-        token: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
+        token: *mut quest_hook::libil2cpp::Il2CppObject,
         throwIfMissing: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -705,7 +705,7 @@ impl crate::Zenject::SignalBus {
     pub fn Unsubscribe_Type_Action_1_2(
         &mut self,
         signalType: *mut crate::System::Type,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -11,7 +11,7 @@ pub struct BurstCompileAttribute {
     pub _disableDirectCall: crate::System::Nullable_1<bool>,
     pub _OptimizeFor_k__BackingField: crate::Unity::Burst::OptimizeFor,
     pub _Options_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "Unity+Burst+BurstCompileAttribute")]
@@ -52,7 +52,9 @@ impl crate::Unity::Burst::BurstCompileAttribute {
         Ok(__cordl_object)
     }
     pub fn New_Il2CppArray2(
-        options: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        options: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -84,7 +86,9 @@ impl crate::Unity::Burst::BurstCompileAttribute {
     }
     pub fn _ctor_Il2CppArray2(
         &mut self,
-        options: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        options: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -154,13 +158,13 @@ impl crate::Unity::Burst::BurstCompileAttribute {
     pub fn get_Options(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_Options", ())?;
         Ok(__cordl_ret)
     }
@@ -243,7 +247,9 @@ impl crate::Unity::Burst::BurstCompileAttribute {
     }
     pub fn set_Options(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -604,7 +604,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BCSStyleHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_BaseGeneratedStyleHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colorMapDataHandle: crate::System::Runtime::InteropServices::GCHandle,
     pub _colorMapData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -617,7 +617,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRPassthroughLayer+BaseGeneratedStyleHandler")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -765,7 +765,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_BaseGeneratedStyleHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_ColorLutHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentFlipLutY: bool,
     pub _currentColorLutSourceTexture: *mut crate::UnityEngine::Texture2D,
     pub _Lut_k__BackingField: *mut crate::GlobalNamespace::OVRPassthroughColorLut,
@@ -780,7 +780,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPassthroughLayer+ColorLutHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1415,7 +1415,7 @@ for crate::GlobalNamespace::OVRPassthroughLayer_MonoToRgbaStyleHandler {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_NoneStyleHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1425,7 +1425,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPassthroughLayer+NoneStyleHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1641,7 +1641,7 @@ impl crate::GlobalNamespace::OVRPassthroughLayer_Settings {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughLayer_StylesHandler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _noneHandler: *mut crate::GlobalNamespace::OVRPassthroughLayer_NoneStyleHandler,
     pub _lutHandler: *mut crate::GlobalNamespace::OVRPassthroughLayer_ColorLutHandler,
     pub _interpolatedLutHandler: *mut crate::GlobalNamespace::OVRPassthroughLayer_InterpolatedColorLutHandler,
@@ -1660,7 +1660,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPassthroughLayer+StylesHandler")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughLayer_StylesHandler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

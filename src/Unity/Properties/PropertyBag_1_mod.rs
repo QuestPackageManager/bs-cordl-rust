@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PropertyBag_1<TContainer: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _InstantiationKind_k__BackingField: crate::Unity::Properties::InstantiationKind,
     __cordl_phantom_TContainer: std::marker::PhantomData<TContainer>,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Unity+Properties+PropertyBag_1")]
 impl<TContainer: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Unity::Properties::PropertyBag_1<TContainer> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

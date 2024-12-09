@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NativeMethodAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Name_k__BackingField: *mut crate::System::String,
+    pub _Name_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _IsThreadSafe_k__BackingField: bool,
     pub _IsFreeFunction_k__BackingField: bool,
     pub _ThrowsException_k__BackingField: bool,
@@ -36,8 +36,8 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,8 +45,8 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
             .invoke_void(".ctor", (name))?;
         Ok(__cordl_object)
     }
-    pub fn New_String__cordl_bool2(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString__cordl_bool2(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         isFreeFunction: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -55,8 +55,8 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
             .invoke_void(".ctor", (name, isFreeFunction))?;
         Ok(__cordl_object)
     }
-    pub fn New_String__cordl_bool__cordl_bool3(
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString__cordl_bool__cordl_bool3(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         isFreeFunction: bool,
         isThreadSafe: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -76,9 +76,9 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -87,9 +87,9 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
             .invoke(".ctor", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String__cordl_bool2(
+    pub fn _ctor_Il2CppString__cordl_bool2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         isFreeFunction: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -99,9 +99,9 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
             .invoke(".ctor", (name, isFreeFunction))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String__cordl_bool__cordl_bool3(
+    pub fn _ctor_Il2CppString__cordl_bool__cordl_bool3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         isFreeFunction: bool,
         isThreadSafe: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -147,7 +147,7 @@ impl crate::UnityEngine::Bindings::NativeMethodAttribute {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

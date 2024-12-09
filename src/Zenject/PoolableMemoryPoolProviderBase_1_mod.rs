@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PoolableMemoryPoolProviderBase_1<TContract: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _PoolId_k__BackingField: crate::System::Guid,
     pub _Container_k__BackingField: *mut crate::Zenject::DiContainer,
     __cordl_phantom_TContract: std::marker::PhantomData<TContract>,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+PoolableMemoryPoolProviderBase_1")]
 impl<TContract: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Zenject::PoolableMemoryPoolProviderBase_1<TContract> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl<
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

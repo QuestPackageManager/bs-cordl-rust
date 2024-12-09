@@ -5,10 +5,10 @@ pub struct Type3Message {
     __cordl_parent: crate::Mono::Security::Protocol::Ntlm::MessageBase,
     pub _level: crate::Mono::Security::Protocol::Ntlm::NtlmAuthLevel,
     pub _challenge: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _host: *mut crate::System::String,
-    pub _domain: *mut crate::System::String,
-    pub _username: *mut crate::System::String,
-    pub _password: *mut crate::System::String,
+    pub _host: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _domain: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _username: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _password: *mut quest_hook::libil2cpp::Il2CppString,
     pub _type2: *mut crate::Mono::Security::Protocol::Ntlm::Type2Message,
     pub _lm: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _nt: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
@@ -49,17 +49,17 @@ impl crate::Mono::Security::Protocol::Ntlm::Type3Message {
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
         len: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("DecodeString", (buffer, offset, len))?;
         Ok(__cordl_ret)
     }
     pub fn EncodeString(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppArray<u8>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -110,7 +110,7 @@ impl crate::Mono::Security::Protocol::Ntlm::Type3Message {
     }
     pub fn set_Domain(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,7 +121,7 @@ impl crate::Mono::Security::Protocol::Ntlm::Type3Message {
     }
     pub fn set_Password(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +132,7 @@ impl crate::Mono::Security::Protocol::Ntlm::Type3Message {
     }
     pub fn set_Username(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

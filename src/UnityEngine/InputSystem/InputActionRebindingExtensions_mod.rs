@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionRebindingExtensions {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+InputActionRebindingExtensions")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,7 +70,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionRebindingExtensions_DeferBindingResolutionWrapper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+DeferBindingResolutionWrapper"
@@ -86,7 +86,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBindingResolutionWrapper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -158,7 +158,7 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_DeferBinding
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputActionRebindingExtensions_Parameter {
-    pub instance: *mut crate::System::Object,
+    pub instance: *mut quest_hook::libil2cpp::Il2CppObject,
     pub field: *mut crate::System::Reflection::FieldInfo,
     pub bindingIndex: i32,
 }
@@ -284,12 +284,12 @@ pub struct InputActionRebindingExtensions_ParameterEnumerator {
     pub m_ProcessorEndIndex: i32,
     pub m_BindingMask: crate::UnityEngine::InputSystem::InputBinding,
     pub m_ObjectType: *mut crate::System::Type,
-    pub m_ParameterName: *mut crate::System::String,
+    pub m_ParameterName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_MayBeInteraction: bool,
     pub m_MayBeProcessor: bool,
     pub m_MayBeComposite: bool,
     pub m_CurrentBindingIsComposite: bool,
-    pub m_CurrentObject: *mut crate::System::Object,
+    pub m_CurrentObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_CurrentParameter: *mut crate::System::Reflection::FieldInfo,
 }
 #[cfg(
@@ -329,7 +329,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     }
     pub fn FindParameter(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -382,8 +382,8 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "System.Collections.IEnumerator.get_Current",
             (),
@@ -422,8 +422,8 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterEn
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct InputActionRebindingExtensions_ParameterOverride {
-    pub objectRegistrationName: *mut crate::System::String,
-    pub parameter: *mut crate::System::String,
+    pub objectRegistrationName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub parameter: *mut quest_hook::libil2cpp::Il2CppString,
     pub bindingMask: crate::UnityEngine::InputSystem::InputBinding,
     pub value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
 }
@@ -452,23 +452,10 @@ for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOve
     feature = "UnityEngine+InputSystem+InputActionRebindingExtensions+ParameterOverride"
 )]
 impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOverride {
-    pub fn _ctor_InputBinding_PrimitiveValue0(
+    pub fn _ctor_Il2CppString_InputBinding_PrimitiveValue1(
         &mut self,
-        parameterName: *mut crate::System::String,
-        bindingMask: crate::UnityEngine::InputSystem::InputBinding,
-        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (parameterName, bindingMask, value),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_InputBinding_PrimitiveValue1(
-        &mut self,
-        objectRegistrationName: *mut crate::System::String,
-        parameterName: *mut crate::System::String,
+        objectRegistrationName: *mut quest_hook::libil2cpp::Il2CppString,
+        parameterName: *mut quest_hook::libil2cpp::Il2CppString,
         bindingMask: crate::UnityEngine::InputSystem::InputBinding,
         value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -476,6 +463,19 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
             self,
             ".ctor",
             (objectRegistrationName, parameterName, bindingMask, value),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_InputBinding_PrimitiveValue0(
+        &mut self,
+        parameterName: *mut quest_hook::libil2cpp::Il2CppString,
+        bindingMask: crate::UnityEngine::InputSystem::InputBinding,
+        value: crate::UnityEngine::InputSystem::Utilities::PrimitiveValue,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (parameterName, bindingMask, value),
         )?;
         Ok(__cordl_ret)
     }
@@ -496,7 +496,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_ParameterOv
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputActionRebindingExtensions_RebindingOperation {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ActionToRebind: *mut crate::UnityEngine::InputSystem::InputAction,
     pub m_BindingMask: crate::System::Nullable_1<
         crate::UnityEngine::InputSystem::InputBinding,
@@ -505,15 +505,15 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
     pub m_ExpectedLayout: crate::UnityEngine::InputSystem::Utilities::InternedString,
     pub m_IncludePathCount: i32,
     pub m_IncludePaths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_ExcludePathCount: i32,
     pub m_ExcludePaths: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_TargetBindingIndex: i32,
-    pub m_BindingGroupForNewBinding: *mut crate::System::String,
-    pub m_CancelBinding: *mut crate::System::String,
+    pub m_BindingGroupForNewBinding: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CancelBinding: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_MagnitudeThreshold: f32,
     pub m_Scores: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     pub m_Magnitudes: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -535,7 +535,7 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
     >,
     pub m_OnGeneratePath: *mut crate::System::Func_2<
         *mut crate::UnityEngine::InputSystem::InputControl,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_OnComputeScore: *mut crate::System::Func_3<
         *mut crate::UnityEngine::InputSystem::InputControl,
@@ -544,7 +544,7 @@ pub struct InputActionRebindingExtensions_RebindingOperation {
     >,
     pub m_OnApplyBinding: *mut crate::System::Action_2<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_OnEventDelegate: *mut crate::System::Action_2<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -572,7 +572,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -655,11 +655,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     pub fn GeneratePathForControl(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GeneratePathForControl", (control))?;
         Ok(__cordl_ret)
     }
@@ -704,7 +704,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         &mut self,
         callback: *mut crate::System::Action_2<
             *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
@@ -799,7 +799,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
         &mut self,
         callback: *mut crate::System::Func_2<
             *mut crate::UnityEngine::InputSystem::InputControl,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
@@ -939,7 +939,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     }
     pub fn WithBindingGroup(
         &mut self,
-        group: *mut crate::System::String,
+        group: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
     > {
@@ -965,6 +965,19 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             .invoke("WithBindingMask", (bindingMask))?;
         Ok(__cordl_ret)
     }
+    pub fn WithCancelingThrough_Il2CppString0(
+        &mut self,
+        binding: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation = __cordl_object
+            .invoke("WithCancelingThrough", (binding))?;
+        Ok(__cordl_ret)
+    }
     pub fn WithCancelingThrough_InputControl1(
         &mut self,
         control: *mut crate::UnityEngine::InputSystem::InputControl,
@@ -978,22 +991,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             .invoke("WithCancelingThrough", (control))?;
         Ok(__cordl_ret)
     }
-    pub fn WithCancelingThrough_String0(
-        &mut self,
-        binding: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation = __cordl_object
-            .invoke("WithCancelingThrough", (binding))?;
-        Ok(__cordl_ret)
-    }
     pub fn WithControlsExcluding(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
     > {
@@ -1006,7 +1006,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     }
     pub fn WithControlsHavingToMatchPath(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
     > {
@@ -1033,9 +1033,9 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
             .invoke("WithExpectedControlType", ())?;
         Ok(__cordl_ret)
     }
-    pub fn WithExpectedControlType_String0(
+    pub fn WithExpectedControlType_Il2CppString0(
         &mut self,
-        layoutName: *mut crate::System::String,
+        layoutName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
     > {
@@ -1087,7 +1087,7 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     }
     pub fn WithRebindAddingNewBinding(
         &mut self,
-        group: *mut crate::System::String,
+        group: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOperation,
     > {
@@ -1214,11 +1214,11 @@ impl crate::UnityEngine::InputSystem::InputActionRebindingExtensions_RebindingOp
     }
     pub fn get_expectedControlType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_expectedControlType", ())?;
         Ok(__cordl_ret)
     }

@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelsEntitlementModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _additionalContentEntitlementModel: *mut crate::GlobalNamespace::IAdditionalContentEntitlementModel,
     pub _alwaysOwnedBeatmapLevelIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _alwaysOwnedPacksIds: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelsEntitlementModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
     }
     pub fn GetLevelDataVersionAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
     }
     pub fn GetLevelEntitlementStatusAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -78,7 +78,7 @@ impl crate::GlobalNamespace::BeatmapLevelsEntitlementModel {
     }
     pub fn GetPackEntitlementStatusAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<

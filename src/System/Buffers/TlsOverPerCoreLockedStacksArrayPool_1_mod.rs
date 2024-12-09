@@ -164,7 +164,7 @@ for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1<T> {
 pub struct TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _arrays: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut quest_hook::libil2cpp::Il2CppArray<T>,
     >,
@@ -181,7 +181,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Buffers+TlsOverPerCoreLockedStacksArrayPool_1+LockedStack")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -301,7 +301,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 pub struct TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
     T: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _perCoreStacks: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_LockedStack<T>,
     >,
@@ -322,7 +322,7 @@ impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Buffers::TlsOverPerCoreLockedStacksArrayPool_1_PerCoreLockedStacks<
     T,
 > {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

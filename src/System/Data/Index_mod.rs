@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Index {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _table: *mut crate::System::Data::DataTable,
     pub _indexFields: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Data::IndexField,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+Index")]
 impl std::ops::Deref for crate::System::Data::Index {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -124,7 +124,9 @@ impl crate::System::Data::Index {
     pub fn CompareRecordToKey(
         &mut self,
         record1: i32,
-        vals: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        vals: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -196,7 +198,7 @@ impl crate::System::Data::Index {
     }
     pub fn FindNodeByKey(
         &mut self,
-        originalKey: *mut crate::System::Object,
+        originalKey: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -216,7 +218,9 @@ impl crate::System::Data::Index {
     }
     pub fn FindNodeByKeys(
         &mut self,
-        originalKey: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        originalKey: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -226,7 +230,9 @@ impl crate::System::Data::Index {
     }
     pub fn FindRecords_Il2CppArray1(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -235,9 +241,9 @@ impl crate::System::Data::Index {
             .invoke("FindRecords", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn FindRecords_Object0(
+    pub fn FindRecords_Il2CppObject0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<crate::System::Data::Range> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -331,7 +337,9 @@ impl crate::System::Data::Index {
     }
     pub fn GetRows_Il2CppArray0(
         &mut self,
-        values: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        values: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Data::DataRow>,
     > {
@@ -360,20 +368,22 @@ impl crate::System::Data::Index {
     pub fn GetUniqueKeyValues_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetUniqueKeyValues", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetUniqueKeyValues_List_1_i32_1(
         &mut self,
         list: *mut crate::System::Collections::Generic::List_1<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppObject,
+            >,
         >,
         curNodeId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -419,7 +429,9 @@ impl crate::System::Data::Index {
     }
     pub fn IsKeyInIndex_Il2CppArray1(
         &mut self,
-        key: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        key: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -427,9 +439,9 @@ impl crate::System::Data::Index {
         let __cordl_ret: bool = __cordl_object.invoke("IsKeyInIndex", (key))?;
         Ok(__cordl_ret)
     }
-    pub fn IsKeyInIndex_Object0(
+    pub fn IsKeyInIndex_Il2CppObject0(
         &mut self,
-        key: *mut crate::System::Object,
+        key: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

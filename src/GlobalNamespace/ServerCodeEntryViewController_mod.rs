@@ -7,7 +7,10 @@ pub struct ServerCodeEntryViewController {
     pub _codeInputField: *mut crate::HMUI::InputFieldView,
     pub _joinButton: *mut crate::UnityEngine::UI::Button,
     pub _cancelButton: *mut crate::UnityEngine::UI::Button,
-    pub didFinishEvent: *mut crate::System::Action_2<bool, *mut crate::System::String>,
+    pub didFinishEvent: *mut crate::System::Action_2<
+        bool,
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _inputFieldViewChangeBinder: *mut crate::HMUI::InputFieldViewChangeBinder,
 }
 #[cfg(feature = "ServerCodeEntryViewController")]
@@ -118,7 +121,10 @@ impl crate::GlobalNamespace::ServerCodeEntryViewController {
     }
     pub fn add_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<bool, *mut crate::System::String>,
+        value: *mut crate::System::Action_2<
+            bool,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +135,10 @@ impl crate::GlobalNamespace::ServerCodeEntryViewController {
     }
     pub fn remove_didFinishEvent(
         &mut self,
-        value: *mut crate::System::Action_2<bool, *mut crate::System::String>,
+        value: *mut crate::System::Action_2<
+            bool,
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -16,7 +16,9 @@ pub struct StyleSheet {
         crate::UnityEngine::UIElements::StyleSheets::Dimension,
     >,
     pub colors: *mut quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
-    pub strings: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub strings: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub assets: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::UnityEngine::Object>,
     pub imports: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::UIElements::StyleSheet_ImportStruct,
@@ -29,15 +31,15 @@ pub struct StyleSheet {
         crate::UnityEngine::UIElements::StyleSheets::ScalableImage,
     >,
     pub orderedNameSelectors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::StyleComplexSelector,
     >,
     pub orderedTypeSelectors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::StyleComplexSelector,
     >,
     pub orderedClassSelectors: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::StyleComplexSelector,
     >,
     pub m_IsDefaultStyleSheet: bool,
@@ -157,11 +159,11 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn ReadEnum(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadEnum", (handle))?;
         Ok(__cordl_ret)
     }
@@ -191,11 +193,11 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn ReadFunctionName(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadFunctionName", (handle))?;
         Ok(__cordl_ret)
     }
@@ -215,22 +217,22 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn ReadMissingAssetReferenceUrl(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadMissingAssetReferenceUrl", (handle))?;
         Ok(__cordl_ret)
     }
     pub fn ReadResourcePath(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadResourcePath", (handle))?;
         Ok(__cordl_ret)
     }
@@ -250,22 +252,22 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn ReadString(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadString", (handle))?;
         Ok(__cordl_ret)
     }
     pub fn ReadVariable(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReadVariable", (handle))?;
         Ok(__cordl_ret)
     }
@@ -337,7 +339,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadEnum(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -359,7 +361,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadResourcePath(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -371,7 +373,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadString(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -382,7 +384,7 @@ impl crate::UnityEngine::UIElements::StyleSheet {
     pub fn TryReadVariable(
         &mut self,
         handle: crate::UnityEngine::UIElements::StyleValueHandle,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -560,7 +562,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Style
 pub struct StyleSheet_ImportStruct {
     pub styleSheet: *mut crate::UnityEngine::UIElements::StyleSheet,
     pub mediaQueries: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]

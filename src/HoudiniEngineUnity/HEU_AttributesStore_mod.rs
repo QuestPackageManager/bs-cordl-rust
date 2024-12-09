@@ -5,7 +5,7 @@ pub struct HEU_AttributesStore {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub _geoID: i32,
     pub _partID: i32,
-    pub _geoName: *mut crate::System::String,
+    pub _geoName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _attributeDatas: *mut crate::System::Collections::Generic::List_1<
         *mut crate::HoudiniEngineUnity::HEU_AttributeData,
     >,
@@ -70,7 +70,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
     }
     pub fn CreateAttribute(
         &mut self,
-        attributeName: *mut crate::System::String,
+        attributeName: *mut quest_hook::libil2cpp::Il2CppString,
         attributeInfo: quest_hook::libil2cpp::ByRefMut<
             crate::HoudiniEngineUnity::HAPI_AttributeInfo,
         >,
@@ -127,9 +127,9 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
             .invoke("FillAttribute", (attributeData, sourceTools))?;
         Ok(__cordl_ret)
     }
-    pub fn GetAttributeData_String0(
+    pub fn GetAttributeData_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::HoudiniEngineUnity::HEU_AttributeData,
     > {
@@ -156,13 +156,15 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
     pub fn GetAttributeNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetAttributeNames", ())?;
         Ok(__cordl_ret)
     }
@@ -446,11 +448,11 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore {
     }
     pub fn get_GeoName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_GeoName", ())?;
         Ok(__cordl_ret)
     }
@@ -529,7 +531,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
         sourceIndex: i32,
         factor: f32,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -579,7 +581,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -590,7 +592,7 @@ impl crate::HoudiniEngineUnity::HEU_AttributesStore_SetAttributeValueFunc {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

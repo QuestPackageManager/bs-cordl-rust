@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ECKeyParameters {
     __cordl_parent: crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
-    pub algorithm: *mut crate::System::String,
+    pub algorithm: *mut quest_hook::libil2cpp::Il2CppString,
     pub parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
     pub publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
 }
@@ -52,9 +52,9 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
         Ok(__cordl_ret)
     }
     pub fn New_DerObjectIdentifier1(
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         isPrivate: bool,
         publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -81,7 +81,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
         Ok(__cordl_object)
     }
     pub fn New_ECDomainParameters0(
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         isPrivate: bool,
         parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -93,7 +93,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
     }
     pub fn _ctor_DerObjectIdentifier1(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         isPrivate: bool,
         publicKeyParamSet: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -106,7 +106,7 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
     }
     pub fn _ctor_ECDomainParameters0(
         &mut self,
-        algorithm: *mut crate::System::String,
+        algorithm: *mut quest_hook::libil2cpp::Il2CppString,
         isPrivate: bool,
         parameters: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECDomainParameters,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -119,11 +119,11 @@ impl crate::Org::BouncyCastle::Crypto::Parameters::ECKeyParameters {
     }
     pub fn get_AlgorithmName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AlgorithmName", ())?;
         Ok(__cordl_ret)
     }

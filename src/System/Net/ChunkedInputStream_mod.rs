@@ -36,7 +36,7 @@ impl crate::System::Net::ChunkedInputStream {
         offset: i32,
         count: i32,
         cback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -132,7 +132,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::ChunkedInputStrea
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChunkedInputStream_ReadBufferState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub Offset: i32,
     pub Count: i32,
@@ -146,7 +146,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+ChunkedInputStream+ReadBufferState")]
 impl std::ops::Deref for crate::System::Net::ChunkedInputStream_ReadBufferState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskFactory_1<TResult: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_defaultCancellationToken: crate::System::Threading::CancellationToken,
     pub m_defaultScheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
     pub m_defaultCreationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Threading+Tasks+TaskFactory_1")]
 impl<TResult: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Threading::Tasks::TaskFactory_1<TResult> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,15 +56,15 @@ impl<
         TArg1,
         TArg2,
     >;
-    pub fn FromAsync_Func_3_Object0(
+    pub fn FromAsync_Func_3_Il2CppObject0(
         &mut self,
         beginMethod: *mut crate::System::Func_3<
             *mut crate::System::AsyncCallback,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
             *mut crate::System::IAsyncResult,
         >,
         endMethod: *mut crate::System::Func_2<*mut crate::System::IAsyncResult, TResult>,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<TResult>,
     >
@@ -79,17 +79,17 @@ impl<
             .invoke("FromAsync", (beginMethod, endMethod, state))?;
         Ok(__cordl_ret)
     }
-    pub fn FromAsync_Func_4_TArg1_Object1<TArg1>(
+    pub fn FromAsync_Func_4_TArg1_Il2CppObject1<TArg1>(
         &mut self,
         beginMethod: *mut crate::System::Func_4<
             TArg1,
             *mut crate::System::AsyncCallback,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
             *mut crate::System::IAsyncResult,
         >,
         endMethod: *mut crate::System::Func_2<*mut crate::System::IAsyncResult, TResult>,
         arg1: TArg1,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<TResult>,
     >
@@ -138,8 +138,11 @@ impl<
     }
     pub fn StartNew(
         &mut self,
-        function: *mut crate::System::Func_2<*mut crate::System::Object, TResult>,
-        state: *mut crate::System::Object,
+        function: *mut crate::System::Func_2<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+            TResult,
+        >,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         cancellationToken: crate::System::Threading::CancellationToken,
         creationOptions: crate::System::Threading::Tasks::TaskCreationOptions,
         scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,

@@ -2,23 +2,23 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SchemaNames {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
-    pub NsDataType: *mut crate::System::String,
-    pub NsDataTypeAlias: *mut crate::System::String,
-    pub NsDataTypeOld: *mut crate::System::String,
-    pub NsXml: *mut crate::System::String,
-    pub NsXmlNs: *mut crate::System::String,
-    pub NsXdr: *mut crate::System::String,
-    pub NsXdrAlias: *mut crate::System::String,
-    pub NsXs: *mut crate::System::String,
-    pub NsXsi: *mut crate::System::String,
-    pub XsiType: *mut crate::System::String,
-    pub XsiNil: *mut crate::System::String,
-    pub XsiSchemaLocation: *mut crate::System::String,
-    pub XsiNoNamespaceSchemaLocation: *mut crate::System::String,
-    pub XsdSchema: *mut crate::System::String,
-    pub XdrSchema: *mut crate::System::String,
+    pub NsDataType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsDataTypeAlias: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsDataTypeOld: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXml: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXmlNs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXdr: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXdrAlias: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiNil: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiNoNamespaceSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsdSchema: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XdrSchema: *mut quest_hook::libil2cpp::Il2CppString,
     pub QnPCData: *mut crate::System::Xml::XmlQualifiedName,
     pub QnXml: *mut crate::System::Xml::XmlQualifiedName,
     pub QnXmlNs: *mut crate::System::Xml::XmlQualifiedName,
@@ -154,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+SchemaNames")]
 impl std::ops::Deref for crate::System::Xml::Schema::SchemaNames {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -181,8 +181,8 @@ impl crate::System::Xml::Schema::SchemaNames {
     }
     pub fn IsXDRRoot(
         &mut self,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -192,8 +192,8 @@ impl crate::System::Xml::Schema::SchemaNames {
     }
     pub fn IsXSDRoot(
         &mut self,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -212,8 +212,8 @@ impl crate::System::Xml::Schema::SchemaNames {
     }
     pub fn SchemaTypeFromRoot(
         &mut self,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Xml::Schema::SchemaType> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

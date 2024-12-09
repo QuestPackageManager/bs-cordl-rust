@@ -69,7 +69,7 @@ impl crate::UnityEngine::InputSystem::InputBindingResolver {
     pub fn InstantiateWithParameters<TType>(
         &mut self,
         registrations: crate::UnityEngine::InputSystem::Utilities::TypeTable,
-        namesAndParameters: *mut crate::System::String,
+        namesAndParameters: *mut quest_hook::libil2cpp::Il2CppString,
         array: quest_hook::libil2cpp::ByRefMut<
             *mut quest_hook::libil2cpp::Il2CppArray<TType>,
         >,

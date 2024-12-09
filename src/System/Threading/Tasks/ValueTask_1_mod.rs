@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct ValueTask_1<TResult: quest_hook::libil2cpp::Type> {
-    pub _obj: *mut crate::System::Object,
+    pub _obj: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _result: TResult,
     pub _token: i16,
     pub _continueOnCapturedContext: bool,
@@ -67,9 +67,9 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -142,12 +142,12 @@ impl<
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -172,9 +172,9 @@ impl<
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_TResult_i16__cordl_bool3(
+    pub fn _ctor_Il2CppObject_TResult_i16__cordl_bool3(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         result: TResult,
         token: i16,
         continueOnCapturedContext: bool,

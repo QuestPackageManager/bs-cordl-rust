@@ -25,8 +25,8 @@ impl std::ops::DerefMut for crate::UnityEngine::ILogger {
 impl crate::UnityEngine::ILogger {
     pub fn LogError(
         &mut self,
-        tag: *mut crate::System::String,
-        message: *mut crate::System::Object,
+        tag: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -38,8 +38,10 @@ impl crate::UnityEngine::ILogger {
     pub fn LogFormat(
         &mut self,
         logType: crate::UnityEngine::LogType,
-        format: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        format: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,10 +50,10 @@ impl crate::UnityEngine::ILogger {
             .invoke("LogFormat", (logType, format, args))?;
         Ok(__cordl_ret)
     }
-    pub fn Log_LogType_Object0(
+    pub fn Log_LogType_Il2CppObject0(
         &mut self,
         logType: crate::UnityEngine::LogType,
-        message: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,7 +65,7 @@ impl crate::UnityEngine::ILogger {
     pub fn Log_Object1(
         &mut self,
         logType: crate::UnityEngine::LogType,
-        message: *mut crate::System::Object,
+        message: *mut quest_hook::libil2cpp::Il2CppObject,
         context: *mut crate::UnityEngine::Object,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -112,8 +112,8 @@ impl crate::System::Xml::XmlAttributeCollection {
     }
     pub fn PrepareParentInElementIdAttrMap(
         &mut self,
-        attrPrefix: *mut crate::System::String,
-        attrLocalName: *mut crate::System::String,
+        attrPrefix: *mut quest_hook::libil2cpp::Il2CppString,
+        attrLocalName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,8 +189,8 @@ impl crate::System::Xml::XmlAttributeCollection {
     }
     pub fn ResetParentInElementIdAttrMap(
         &mut self,
-        oldVal: *mut crate::System::String,
-        newVal: *mut crate::System::String,
+        oldVal: *mut quest_hook::libil2cpp::Il2CppString,
+        newVal: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -244,11 +244,11 @@ impl crate::System::Xml::XmlAttributeCollection {
     }
     pub fn System_Collections_ICollection_get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.ICollection.get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -263,9 +263,9 @@ impl crate::System::Xml::XmlAttributeCollection {
             .invoke(".ctor", (parent))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ItemOf_String1(
+    pub fn get_ItemOf_Il2CppString1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -274,10 +274,10 @@ impl crate::System::Xml::XmlAttributeCollection {
             .invoke("get_ItemOf", (name))?;
         Ok(__cordl_ret)
     }
-    pub fn get_ItemOf_String_String2(
+    pub fn get_ItemOf_Il2CppString_Il2CppString2(
         &mut self,
-        localName: *mut crate::System::String,
-        namespaceURI: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        namespaceURI: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlAttribute> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

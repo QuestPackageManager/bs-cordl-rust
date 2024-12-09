@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct PlaybackScreenshotRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _directory: *mut crate::System::String,
+    pub _directory: *mut quest_hook::libil2cpp::Il2CppString,
     pub _playbackRenderer: *mut crate::GlobalNamespace::PlaybackRenderer,
     pub _frameNumber: i32,
 }
@@ -39,7 +39,7 @@ impl crate::GlobalNamespace::PlaybackScreenshotRecorder {
     }
     pub fn Init(
         &mut self,
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
         framerate: i32,
         playbackRenderer: *mut crate::GlobalNamespace::PlaybackRenderer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::PlaybackScreenshotRecorder {
     pub fn SaveScreenshot(
         &mut self,
         renderTexture: *mut crate::UnityEngine::RenderTexture,
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -101,11 +101,11 @@ impl crate::GlobalNamespace::PlaybackScreenshotRecorder {
     }
     pub fn get_directory(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_directory", ())?;
         Ok(__cordl_ret)
     }

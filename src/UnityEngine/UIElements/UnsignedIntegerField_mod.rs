@@ -45,7 +45,7 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField {
     }
     pub fn CanTryParse(
         &mut self,
-        textString: *mut crate::System::String,
+        textString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,8 +60,8 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_i32_1(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString_i32_1(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -72,7 +72,7 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField {
     }
     pub fn StringToValue(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -83,11 +83,11 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField {
     pub fn ValueToString(
         &mut self,
         v: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ValueToString", (v))?;
         Ok(__cordl_ret)
     }
@@ -101,9 +101,9 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_i32_1(
+    pub fn _ctor_Il2CppString_i32_1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         maxLength: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -187,7 +187,7 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
     }
     pub fn StringToValue(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<u32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,11 +198,11 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
     pub fn ValueToString(
         &mut self,
         v: u32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ValueToString", (v))?;
         Ok(__cordl_ret)
     }
@@ -218,11 +218,11 @@ impl crate::UnityEngine::UIElements::UnsignedIntegerField_UnsignedIntegerInput {
     }
     pub fn get_allowedCharacters(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_allowedCharacters", ())?;
         Ok(__cordl_ret)
     }

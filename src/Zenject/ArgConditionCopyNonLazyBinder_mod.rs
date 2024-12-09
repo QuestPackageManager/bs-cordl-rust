@@ -50,7 +50,9 @@ impl crate::Zenject::ArgConditionCopyNonLazyBinder {
     }
     pub fn WithArguments_Il2CppArray6(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::InstantiateCallbackConditionCopyNonLazyBinder,
     > {

@@ -5,27 +5,27 @@ pub struct JsonDynamicContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
     pub _Properties_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
     pub _PropertyNameResolver_k__BackingField: *mut crate::System::Func_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _callSiteGetters: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Runtime::CompilerServices::CallSite_1<
             *mut crate::System::Func_3<
                 *mut crate::System::Runtime::CompilerServices::CallSite,
-                *mut crate::System::Object,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     >,
     pub _callSiteSetters: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Runtime::CompilerServices::CallSite_1<
             *mut crate::System::Func_4<
                 *mut crate::System::Runtime::CompilerServices::CallSite,
-                *mut crate::System::Object,
-                *mut crate::System::Object,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     >,
@@ -63,8 +63,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
     pub fn TryGetMember(
         &mut self,
         dynamicProvider: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
-        name: *mut crate::System::String,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -76,8 +76,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
     pub fn TrySetMember(
         &mut self,
         dynamicProvider: *mut crate::System::Dynamic::IDynamicMetaObjectProvider,
-        name: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -113,24 +113,24 @@ impl crate::Newtonsoft::Json::Serialization::JsonDynamicContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_PropertyNameResolver", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_PropertyNameResolver(
         &mut self,
         value: *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

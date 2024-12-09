@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::System::Runtime::InteropServices::ICustomMars
 impl crate::System::Runtime::InteropServices::ICustomMarshaler {
     pub fn CleanUpManagedData(
         &mut self,
-        ManagedObj: *mut crate::System::Object,
+        ManagedObj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -56,7 +56,7 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
     }
     pub fn MarshalManagedToNative(
         &mut self,
-        ManagedObj: *mut crate::System::Object,
+        ManagedObj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -68,11 +68,11 @@ impl crate::System::Runtime::InteropServices::ICustomMarshaler {
     pub fn MarshalNativeToManaged(
         &mut self,
         pNativeData: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("MarshalNativeToManaged", (pNativeData))?;
         Ok(__cordl_ret)
     }

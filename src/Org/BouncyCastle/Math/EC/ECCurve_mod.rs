@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_field: *mut crate::Org::BouncyCastle::Math::Field::IFiniteField,
     pub m_a: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
     pub m_b: *mut crate::Org::BouncyCastle::Math::EC::ECFieldElement,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -235,9 +235,9 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -292,7 +292,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
     pub fn GetPreCompInfo(
         &mut self,
         point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
     > {
@@ -367,7 +367,7 @@ impl crate::Org::BouncyCastle::Math::EC::ECCurve {
     pub fn Precompute(
         &mut self,
         point: *mut crate::Org::BouncyCastle::Math::EC::ECPoint,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         callback: *mut crate::Org::BouncyCastle::Math::EC::Multiplier::IPreCompCallback,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Math::EC::Multiplier::PreCompInfo,
@@ -552,7 +552,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Org::BouncyCastle::Math::EC::E
 #[repr(C)]
 #[derive(Debug)]
 pub struct ECCurve_Config {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub outer: *mut crate::Org::BouncyCastle::Math::EC::ECCurve,
     pub coord: i32,
     pub endomorphism: *mut crate::Org::BouncyCastle::Math::EC::Endo::ECEndomorphism,
@@ -565,7 +565,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Math+EC+ECCurve+Config")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Math::EC::ECCurve_Config {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

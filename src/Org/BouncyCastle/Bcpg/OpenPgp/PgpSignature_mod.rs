@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PgpSignature {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub sigPck: *mut crate::Org::BouncyCastle::Bcpg::SignaturePacket,
     pub signatureType: i32,
     pub trustPck: *mut crate::Org::BouncyCastle::Bcpg::TrustPacket,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Bcpg+OpenPgp+PgpSignature")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -250,6 +250,17 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
         let __cordl_ret: bool = __cordl_object.invoke("Verify", ())?;
         Ok(__cordl_ret)
     }
+    pub fn VerifyCertification_Il2CppString_PgpPublicKey1(
+        &mut self,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
+        key: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("VerifyCertification", (id, key))?;
+        Ok(__cordl_ret)
+    }
     pub fn VerifyCertification_PgpPublicKey3(
         &mut self,
         pubKey: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
@@ -282,17 +293,6 @@ impl crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpSignature {
         );
         let __cordl_ret: bool = __cordl_object
             .invoke("VerifyCertification", (userAttributes, key))?;
-        Ok(__cordl_ret)
-    }
-    pub fn VerifyCertification_String_PgpPublicKey1(
-        &mut self,
-        id: *mut crate::System::String,
-        key: *mut crate::Org::BouncyCastle::Bcpg::OpenPgp::PgpPublicKey,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("VerifyCertification", (id, key))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor_BcpgInputStream0(

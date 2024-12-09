@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct XDRSchema {
     __cordl_parent: crate::System::Data::XMLSchema,
-    pub _schemaName: *mut crate::System::String,
-    pub _schemaUri: *mut crate::System::String,
+    pub _schemaName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _schemaUri: *mut quest_hook::libil2cpp::Il2CppString,
     pub _schemaRoot: *mut crate::System::Xml::XmlElement,
     pub _ds: *mut crate::System::Data::DataSet,
 }
@@ -44,11 +44,11 @@ impl crate::System::Data::XDRSchema {
     pub fn GetInstanceName(
         &mut self,
         node: *mut crate::System::Xml::XmlElement,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetInstanceName", (node))?;
         Ok(__cordl_ret)
     }
@@ -185,8 +185,8 @@ impl crate::System::Data::XDRSchema {
     }
     pub fn ParseDataType(
         &mut self,
-        dt: *mut crate::System::String,
-        dtValues: *mut crate::System::String,
+        dt: *mut quest_hook::libil2cpp::Il2CppString,
+        dtValues: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -221,8 +221,8 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Data::XDRSchema {
 #[repr(C)]
 #[derive(Debug)]
 pub struct XDRSchema_NameType {
-    __cordl_parent: crate::System::Object,
-    pub name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_type: *mut crate::System::Type,
 }
 #[cfg(feature = "System+Data+XDRSchema+NameType")]
@@ -232,7 +232,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+XDRSchema+NameType")]
 impl std::ops::Deref for crate::System::Data::XDRSchema_NameType {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -247,7 +247,7 @@ impl std::ops::DerefMut for crate::System::Data::XDRSchema_NameType {
 impl crate::System::Data::XDRSchema_NameType {
     pub fn CompareTo(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -256,7 +256,7 @@ impl crate::System::Data::XDRSchema_NameType {
         Ok(__cordl_ret)
     }
     pub fn New(
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
         t: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -267,7 +267,7 @@ impl crate::System::Data::XDRSchema_NameType {
     }
     pub fn _ctor(
         &mut self,
-        n: *mut crate::System::String,
+        n: *mut quest_hook::libil2cpp::Il2CppString,
         t: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

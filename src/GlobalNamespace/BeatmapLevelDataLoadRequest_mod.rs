@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelDataLoadRequest {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _task: *mut crate::System::Threading::Tasks::Task_1<
         *mut crate::GlobalNamespace::IBeatmapLevelData,
     >,
-    pub _assetBundlePath: *mut crate::System::String,
-    pub _levelDataAssetName: *mut crate::System::String,
+    pub _assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _levelDataAssetName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _internalCancellationSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _externalCancellationTokens: *mut crate::System::Collections::Generic::List_1<
         crate::System::Threading::CancellationToken,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelDataLoadRequest")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,8 +79,8 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
         Ok(__cordl_ret)
     }
     pub fn New(
-        assetBundlePath: *mut crate::System::String,
-        levelDataAssetName: *mut crate::System::String,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+        levelDataAssetName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -110,8 +110,8 @@ impl crate::GlobalNamespace::BeatmapLevelDataLoadRequest {
     }
     pub fn _ctor(
         &mut self,
-        assetBundlePath: *mut crate::System::String,
-        levelDataAssetName: *mut crate::System::String,
+        assetBundlePath: *mut quest_hook::libil2cpp::Il2CppString,
+        levelDataAssetName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

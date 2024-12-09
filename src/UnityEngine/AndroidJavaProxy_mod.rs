@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AndroidJavaProxy {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub javaInterface: *mut crate::UnityEngine::AndroidJavaClass,
     pub proxyObject: crate::System::IntPtr,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+AndroidJavaProxy")]
 impl std::ops::Deref for crate::UnityEngine::AndroidJavaProxy {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,8 +58,10 @@ impl crate::UnityEngine::AndroidJavaProxy {
     }
     pub fn Invoke_Il2CppArray0(
         &mut self,
-        methodName: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::AndroidJavaObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +72,7 @@ impl crate::UnityEngine::AndroidJavaProxy {
     }
     pub fn Invoke_Il2CppArray1(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         javaArgs: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::UnityEngine::AndroidJavaObject,
         >,
@@ -84,7 +86,7 @@ impl crate::UnityEngine::AndroidJavaProxy {
     }
     pub fn Invoke_IntPtr2(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         javaArgs: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -103,8 +105,8 @@ impl crate::UnityEngine::AndroidJavaProxy {
             .invoke_void(".ctor", (javaInterface))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        javaInterface: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        javaInterface: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -123,9 +125,9 @@ impl crate::UnityEngine::AndroidJavaProxy {
             .invoke(".ctor", (javaInterface))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        javaInterface: *mut crate::System::String,
+        javaInterface: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,11 +155,11 @@ impl crate::UnityEngine::AndroidJavaProxy {
     }
     pub fn toString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("toString", ())?;
         Ok(__cordl_ret)
     }

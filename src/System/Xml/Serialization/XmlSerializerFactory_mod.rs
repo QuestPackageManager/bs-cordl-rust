@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSerializerFactory {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlSerializerFactory")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlSerializerFactory")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlSerializerFactory {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,13 +37,13 @@ impl crate::System::Xml::Serialization::XmlSerializerFactory {
             .invoke("CreateSerializer", (_cordl_type))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateSerializer_XmlAttributeOverrides_Il2CppArray_XmlRootAttribute_String2(
+    pub fn CreateSerializer_XmlAttributeOverrides_Il2CppArray_XmlRootAttribute_Il2CppString2(
         &mut self,
         _cordl_type: *mut crate::System::Type,
         overrides: *mut crate::System::Xml::Serialization::XmlAttributeOverrides,
         extraTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         root: *mut crate::System::Xml::Serialization::XmlRootAttribute,
-        defaultNamespace: *mut crate::System::String,
+        defaultNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Serialization::XmlSerializer,
     > {

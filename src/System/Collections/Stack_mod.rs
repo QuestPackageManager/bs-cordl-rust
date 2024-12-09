@@ -2,11 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack {
-    __cordl_parent: crate::System::Object,
-    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _array: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _size: i32,
     pub _version: i32,
-    pub _syncRoot: *mut crate::System::Object,
+    pub _syncRoot: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Stack")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Stack")]
 impl std::ops::Deref for crate::System::Collections::Stack {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,11 +47,11 @@ impl crate::System::Collections::Stack {
     }
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
@@ -89,23 +91,29 @@ impl crate::System::Collections::Stack {
             .invoke_void(".ctor", (initialCapacity))?;
         Ok(__cordl_object)
     }
-    pub fn Peek(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn Peek(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Peek", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Peek", ())?;
         Ok(__cordl_ret)
     }
-    pub fn Pop(&mut self) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    pub fn Pop(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object.invoke("Pop", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
+            .invoke("Pop", ())?;
         Ok(__cordl_ret)
     }
     pub fn Push(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,11 +159,11 @@ impl crate::System::Collections::Stack {
     }
     pub fn get_SyncRoot(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_SyncRoot", ())?;
         Ok(__cordl_ret)
     }
@@ -173,7 +181,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Collections::Stack {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack_StackDebugView {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Stack+StackDebugView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -182,7 +190,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Stack+StackDebugView")]
 impl std::ops::Deref for crate::System::Collections::Stack_StackDebugView {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -209,11 +217,11 @@ for crate::System::Collections::Stack_StackDebugView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct Stack_StackEnumerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: *mut crate::System::Collections::Stack,
     pub _index: i32,
     pub _version: i32,
-    pub _currentElement: *mut crate::System::Object,
+    pub _currentElement: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Collections+Stack+StackEnumerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -222,7 +230,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Collections+Stack+StackEnumerator")]
 impl std::ops::Deref for crate::System::Collections::Stack_StackEnumerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -237,11 +245,11 @@ impl std::ops::DerefMut for crate::System::Collections::Stack_StackEnumerator {
 impl crate::System::Collections::Stack_StackEnumerator {
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
@@ -284,11 +292,11 @@ impl crate::System::Collections::Stack_StackEnumerator {
     }
     pub fn get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_Current", ())?;
         Ok(__cordl_ret)
     }

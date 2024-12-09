@@ -13,7 +13,7 @@ pub struct MultiplayerScoreRingManager {
     pub _scoreProvider: *mut crate::GlobalNamespace::MultiplayerScoreProvider,
     pub _scoreRingItemPool: *mut crate::GlobalNamespace::MultiplayerScoreRingItem_Pool,
     pub _scoreRingItems: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
     >,
     pub _allActivePlayers: *mut crate::System::Collections::Generic::List_1<
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
     }
     pub fn AnimateColorsForPlayer(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         nameColor: crate::UnityEngine::Color,
         scoreColor: crate::UnityEngine::Color,
         duration: f32,
@@ -82,7 +82,7 @@ impl crate::GlobalNamespace::MultiplayerScoreRingManager {
     }
     pub fn GetScoreRingItem(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::MultiplayerScoreRingItem,
     > {

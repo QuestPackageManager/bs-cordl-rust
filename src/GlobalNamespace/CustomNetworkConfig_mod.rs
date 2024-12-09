@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CustomNetworkConfig {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _maxPartySize_k__BackingField: i32,
     pub _discoveryPort_k__BackingField: i32,
     pub _partyPort_k__BackingField: i32,
     pub _multiplayerPort_k__BackingField: i32,
     pub _masterServerEndPoint_k__BackingField: *mut crate::GlobalNamespace::DnsEndPoint,
-    pub _multiplayerStatusUrl_k__BackingField: *mut crate::System::String,
-    pub _graphUrl_k__BackingField: *mut crate::System::String,
-    pub _graphAccessToken_k__BackingField: *mut crate::System::String,
+    pub _multiplayerStatusUrl_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _graphUrl_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _graphAccessToken_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _forceGameLift_k__BackingField: bool,
     pub _serviceEnvironment_k__BackingField: crate::GlobalNamespace::ServiceEnvironment,
 }
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "CustomNetworkConfig")]
 impl std::ops::Deref for crate::GlobalNamespace::CustomNetworkConfig {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CustomNetworkConfig {
 impl crate::GlobalNamespace::CustomNetworkConfig {
     pub fn New(
         fromNetworkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-        customServerHostName: *mut crate::System::String,
+        customServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
         forceGameLift: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
     pub fn _ctor(
         &mut self,
         fromNetworkConfig: *mut crate::GlobalNamespace::INetworkConfig,
-        customServerHostName: *mut crate::System::String,
+        customServerHostName: *mut quest_hook::libil2cpp::Il2CppString,
         port: i32,
         forceGameLift: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -68,11 +68,11 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
     }
     pub fn get_appId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_appId", ())?;
         Ok(__cordl_ret)
     }
@@ -92,21 +92,21 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
     }
     pub fn get_graphAccessToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_graphAccessToken", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_graphUrl(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_graphUrl", ())?;
         Ok(__cordl_ret)
     }
@@ -136,11 +136,11 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
     }
     pub fn get_multiplayerStatusUrl(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_multiplayerStatusUrl", ())?;
         Ok(__cordl_ret)
     }
@@ -153,11 +153,11 @@ impl crate::GlobalNamespace::CustomNetworkConfig {
     }
     pub fn get_quickPlaySetupUrl(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_quickPlaySetupUrl", ())?;
         Ok(__cordl_ret)
     }

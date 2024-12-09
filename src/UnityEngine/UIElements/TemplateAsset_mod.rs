@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct TemplateAsset {
     __cordl_parent: crate::UnityEngine::UIElements::VisualElementAsset,
-    pub m_TemplateAlias: *mut crate::System::String,
+    pub m_TemplateAlias: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_AttributeOverrides: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::UIElements::TemplateAsset_AttributeOverride,
     >,
@@ -78,9 +78,9 @@ for crate::UnityEngine::UIElements::TemplateAsset {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct TemplateAsset_AttributeOverride {
-    pub m_ElementName: *mut crate::System::String,
-    pub m_AttributeName: *mut crate::System::String,
-    pub m_Value: *mut crate::System::String,
+    pub m_ElementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_AttributeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_Value: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+TemplateAsset+AttributeOverride")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

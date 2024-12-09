@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsTypedStream {
-    __cordl_parent: crate::System::Object,
-    pub _oid: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _oid: *mut quest_hook::libil2cpp::Il2CppString,
     pub _in: *mut crate::System::IO::Stream,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsTypedStream")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsTypedStream {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,6 +39,27 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke("Drain", ())?;
         Ok(__cordl_ret)
     }
+    pub fn New_Il2CppString_Stream1(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        inStream: *mut crate::System::IO::Stream,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid, inStream))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString_Stream_i32_2(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
+        inStream: *mut crate::System::IO::Stream,
+        bufSize: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (oid, inStream, bufSize))?;
+        Ok(__cordl_object)
+    }
     pub fn New_Stream0(
         inStream: *mut crate::System::IO::Stream,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -48,26 +69,30 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
             .invoke_void(".ctor", (inStream))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Stream1(
-        oid: *mut crate::System::String,
+    pub fn _ctor_Il2CppString_Stream1(
+        &mut self,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid, inStream))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (oid, inStream))?;
+        Ok(__cordl_ret)
     }
-    pub fn New_String_Stream_i32_2(
-        oid: *mut crate::System::String,
+    pub fn _ctor_Il2CppString_Stream_i32_2(
+        &mut self,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         inStream: *mut crate::System::IO::Stream,
         bufSize: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (oid, inStream, bufSize))?;
-        Ok(__cordl_object)
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (oid, inStream, bufSize))?;
+        Ok(__cordl_ret)
     }
     pub fn _ctor_Stream0(
         &mut self,
@@ -78,31 +103,6 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (inStream))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Stream1(
-        &mut self,
-        oid: *mut crate::System::String,
-        inStream: *mut crate::System::IO::Stream,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oid, inStream))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Stream_i32_2(
-        &mut self,
-        oid: *mut crate::System::String,
-        inStream: *mut crate::System::IO::Stream,
-        bufSize: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (oid, inStream, bufSize))?;
         Ok(__cordl_ret)
     }
     pub fn get_ContentStream(
@@ -117,11 +117,11 @@ impl crate::Org::BouncyCastle::Cms::CmsTypedStream {
     }
     pub fn get_ContentType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ContentType", ())?;
         Ok(__cordl_ret)
     }

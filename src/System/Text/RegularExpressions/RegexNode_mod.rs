@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexNode {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub NType: i32,
     pub Children: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Text::RegularExpressions::RegexNode,
     >,
-    pub Str: *mut crate::System::String,
+    pub Str: *mut quest_hook::libil2cpp::Il2CppString,
     pub Ch: char,
     pub M: i32,
     pub N: i32,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexNode")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexNode {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -93,10 +93,10 @@ impl crate::System::Text::RegularExpressions::RegexNode {
             .invoke("MakeRep", (_cordl_type, min, max))?;
         Ok(__cordl_ret)
     }
-    pub fn New_String2(
+    pub fn New_Il2CppString2(
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -259,11 +259,11 @@ impl crate::System::Text::RegularExpressions::RegexNode {
         let __cordl_ret: bool = __cordl_object.invoke("UseOptionR", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String2(
+    pub fn _ctor_Il2CppString2(
         &mut self,
         _cordl_type: i32,
         options: crate::System::Text::RegularExpressions::RegexOptions,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

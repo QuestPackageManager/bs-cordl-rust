@@ -14,7 +14,7 @@ pub struct XmlEventCache {
     pub pageSize: i32,
     pub hasRootNode: bool,
     pub singleText: crate::System::Xml::Xsl::Runtime::StringConcat,
-    pub baseUri: *mut crate::System::String,
+    pub baseUri: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+XmlEventCache")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -40,10 +40,10 @@ impl crate::System::Xml::XmlEventCache {
     pub type XmlEvent = crate::System::Xml::XmlEventCache_XmlEvent;
     #[cfg(feature = "System+Xml+XmlEventCache+XmlEventType")]
     pub type XmlEventType = crate::System::Xml::XmlEventCache_XmlEventType;
-    pub fn AddEvent_Object5(
+    pub fn AddEvent_Il2CppObject5(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,10 +52,10 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, o))?;
         Ok(__cordl_ret)
     }
-    pub fn AddEvent_String1(
+    pub fn AddEvent_Il2CppString1(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -64,11 +64,11 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, s1))?;
         Ok(__cordl_ret)
     }
-    pub fn AddEvent_String_String2(
+    pub fn AddEvent_Il2CppString_Il2CppString2(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,12 +77,12 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, s1, s2))?;
         Ok(__cordl_ret)
     }
-    pub fn AddEvent_String_String_String3(
+    pub fn AddEvent_Il2CppString_Il2CppString_Il2CppString3(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-        s3: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
+        s3: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,13 +91,13 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("AddEvent", (eventType, s1, s2, s3))?;
         Ok(__cordl_ret)
     }
-    pub fn AddEvent_String_String_String_Object4(
+    pub fn AddEvent_Il2CppString_Il2CppString_Il2CppString_Il2CppObject4(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-        s3: *mut crate::System::String,
-        o: *mut crate::System::Object,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
+        s3: *mut quest_hook::libil2cpp::Il2CppString,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,7 +170,7 @@ impl crate::System::Xml::XmlEventCache {
         Ok(__cordl_ret)
     }
     pub fn New(
-        baseUri: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
         hasRootNode: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -224,7 +224,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteCData(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -259,7 +259,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteComment(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -270,10 +270,10 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteDocType(
         &mut self,
-        name: *mut crate::System::String,
-        pubid: *mut crate::System::String,
-        sysid: *mut crate::System::String,
-        subset: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        pubid: *mut quest_hook::libil2cpp::Il2CppString,
+        sysid: *mut quest_hook::libil2cpp::Il2CppString,
+        subset: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -304,9 +304,9 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteEndElement(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -317,7 +317,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteEntityRef(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -328,9 +328,9 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteFullEndElement(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -341,8 +341,8 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteNamespaceDeclaration(
         &mut self,
-        prefix: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -353,8 +353,8 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteProcessingInstruction(
         &mut self,
-        name: *mut crate::System::String,
-        text: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -376,9 +376,9 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("WriteRaw", (buffer, index, count))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteRaw_String1(
+    pub fn WriteRaw_Il2CppString1(
         &mut self,
-        data: *mut crate::System::String,
+        data: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -389,9 +389,9 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteStartAttribute(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -402,9 +402,9 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteStartElement(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -415,7 +415,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteString(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -438,7 +438,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -449,7 +449,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn WriteWhitespace(
         &mut self,
-        ws: *mut crate::System::String,
+        ws: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -458,9 +458,9 @@ impl crate::System::Xml::XmlEventCache {
             .invoke("WriteWhitespace", (ws))?;
         Ok(__cordl_ret)
     }
-    pub fn WriteXmlDeclaration_String1(
+    pub fn WriteXmlDeclaration_Il2CppString1(
         &mut self,
-        xmldecl: *mut crate::System::String,
+        xmldecl: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -482,7 +482,7 @@ impl crate::System::Xml::XmlEventCache {
     }
     pub fn _ctor(
         &mut self,
-        baseUri: *mut crate::System::String,
+        baseUri: *mut quest_hook::libil2cpp::Il2CppString,
         hasRootNode: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -507,10 +507,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlEventCache {
 #[derive(Debug, Clone)]
 pub struct XmlEventCache_XmlEvent {
     pub eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-    pub s1: *mut crate::System::String,
-    pub s2: *mut crate::System::String,
-    pub s3: *mut crate::System::String,
-    pub o: *mut crate::System::Object,
+    pub s1: *mut quest_hook::libil2cpp::Il2CppString,
+    pub s2: *mut quest_hook::libil2cpp::Il2CppString,
+    pub s3: *mut quest_hook::libil2cpp::Il2CppString,
+    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -530,10 +530,10 @@ for crate::System::Xml::XmlEventCache_XmlEvent {
 }
 #[cfg(feature = "System+Xml+XmlEventCache+XmlEvent")]
 impl crate::System::Xml::XmlEventCache_XmlEvent {
-    pub fn InitEvent_Object5(
+    pub fn InitEvent_Il2CppObject5(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -542,10 +542,10 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn InitEvent_String1(
+    pub fn InitEvent_Il2CppString1(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -554,11 +554,11 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn InitEvent_String_String2(
+    pub fn InitEvent_Il2CppString_Il2CppString2(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -567,12 +567,12 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn InitEvent_String_String_String3(
+    pub fn InitEvent_Il2CppString_Il2CppString_Il2CppString3(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-        s3: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
+        s3: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -581,13 +581,13 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn InitEvent_String_String_String_Object4(
+    pub fn InitEvent_Il2CppString_Il2CppString_Il2CppString_Il2CppObject4(
         &mut self,
         eventType: crate::System::Xml::XmlEventCache_XmlEventType,
-        s1: *mut crate::System::String,
-        s2: *mut crate::System::String,
-        s3: *mut crate::System::String,
-        o: *mut crate::System::Object,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
+        s3: *mut quest_hook::libil2cpp::Il2CppString,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -619,8 +619,8 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
     }
     pub fn get_Object(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
-        let __cordl_ret: *mut crate::System::Object = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_Object",
             (),
@@ -629,8 +629,8 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
     }
     pub fn get_String1(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_String1",
             (),
@@ -639,8 +639,8 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
     }
     pub fn get_String2(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_String2",
             (),
@@ -649,8 +649,8 @@ impl crate::System::Xml::XmlEventCache_XmlEvent {
     }
     pub fn get_String3(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_String3",
             (),

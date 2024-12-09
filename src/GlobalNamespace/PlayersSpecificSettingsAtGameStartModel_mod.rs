@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayersSpecificSettingsAtGameStartModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _localPlayerSpecificSettings_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
     pub _playersAtGameStartNetSerializable_k__BackingField: *mut crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
     pub _multiplayerSessionManager: *mut crate::GlobalNamespace::IMultiplayerSessionManager,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayersSpecificSettingsAtGameStartModel")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     pub type __c__DisplayClass13_0 = crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel___c__DisplayClass13_0;
     pub fn GetPlayerSpecificSettingsForUserId(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
     > {

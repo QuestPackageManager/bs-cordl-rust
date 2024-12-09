@@ -5,7 +5,7 @@ pub struct ExpressionStringBuilder {
     __cordl_parent: crate::System::Linq::Expressions::ExpressionVisitor,
     pub _out: *mut crate::System::Text::StringBuilder,
     pub _ids: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
         i32,
     >,
 }
@@ -43,7 +43,7 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
     }
     pub fn GetId(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -90,9 +90,9 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             .invoke("OutMember", (instance, member))?;
         Ok(__cordl_ret)
     }
-    pub fn Out_String0(
+    pub fn Out_Il2CppString0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,11 +114,11 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -200,14 +200,14 @@ impl crate::System::Linq::Expressions::ExpressionStringBuilder {
             .invoke("VisitDefault", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn VisitExpressions_String1<T>(
+    pub fn VisitExpressions_Il2CppString1<T>(
         &mut self,
         open: char,
         expressions: *mut crate::System::Collections::ObjectModel::ReadOnlyCollection_1<
             T,
         >,
         close: char,
-        seperator: *mut crate::System::String,
+        seperator: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument

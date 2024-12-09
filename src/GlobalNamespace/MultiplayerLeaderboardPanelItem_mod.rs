@@ -12,7 +12,7 @@ pub struct MultiplayerLeaderboardPanelItem {
     pub _firstPlayerBackgroundColor: crate::UnityEngine::Color,
     pub _lastPlayerBackgroundColor: crate::UnityEngine::Color,
     pub _prevPosition: i32,
-    pub _prevPlayerName: *mut crate::System::String,
+    pub _prevPlayerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _prevScore: i32,
     pub _prevFailed: bool,
     pub _prevNumberOfPlayers: i32,
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::MultiplayerLeaderboardPanelItem {
     pub fn SetData(
         &mut self,
         position: i32,
-        playerName: *mut crate::System::String,
+        playerName: *mut quest_hook::libil2cpp::Il2CppString,
         score: i32,
         failed: bool,
         numberOfPlayers: i32,

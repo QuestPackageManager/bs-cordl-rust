@@ -4,7 +4,7 @@
 pub struct SpanAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _IsReadOnly_k__BackingField: bool,
-    pub _SizeParameter_k__BackingField: *mut crate::System::String,
+    pub _SizeParameter_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Bindings::SpanAttribute {
 #[cfg(feature = "UnityEngine+Bindings+SpanAttribute")]
 impl crate::UnityEngine::Bindings::SpanAttribute {
     pub fn New(
-        sizeParameter: *mut crate::System::String,
+        sizeParameter: *mut quest_hook::libil2cpp::Il2CppString,
         isReadOnly: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -38,7 +38,7 @@ impl crate::UnityEngine::Bindings::SpanAttribute {
     }
     pub fn _ctor(
         &mut self,
-        sizeParameter: *mut crate::System::String,
+        sizeParameter: *mut quest_hook::libil2cpp::Il2CppString,
         isReadOnly: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

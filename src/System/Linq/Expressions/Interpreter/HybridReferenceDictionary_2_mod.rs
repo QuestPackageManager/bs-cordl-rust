@@ -5,7 +5,7 @@ pub struct HybridReferenceDictionary_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _keysAndValues: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::System::Collections::Generic::KeyValuePair_2<TKey, TValue>,
     >,
@@ -29,7 +29,7 @@ for crate::System::Linq::Expressions::Interpreter::HybridReferenceDictionary_2<
     TKey,
     TValue,
 > {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

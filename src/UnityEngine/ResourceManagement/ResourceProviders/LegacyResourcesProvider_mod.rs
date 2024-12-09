@@ -62,7 +62,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesP
     pub fn Release(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        asset: *mut crate::System::Object,
+        asset: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,7 +100,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesPr
 #[repr(C)]
 #[derive(Debug)]
 pub struct LegacyResourcesProvider_InternalOp {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_RequestOperation: *mut crate::UnityEngine::ResourceRequest,
     pub m_ProvideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
 }
@@ -118,7 +118,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::ResourceManagement::ResourceProviders::LegacyResourcesProvider_InternalOp {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

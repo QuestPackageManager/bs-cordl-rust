@@ -25,9 +25,9 @@ impl std::ops::DerefMut for crate::System::Type {
 #[cfg(feature = "System+Type")]
 impl crate::System::Type {
     pub const DefaultTypeNameWhenMissingMetadata: &'static str = "UnknownType";
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,22 +47,22 @@ impl crate::System::Type {
     }
     pub fn FormatTypeName_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FormatTypeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn FormatTypeName__cordl_bool1(
         &mut self,
         serialization: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FormatTypeName", (serialization))?;
         Ok(__cordl_ret)
     }
@@ -194,7 +194,9 @@ impl crate::System::Type {
     pub fn GetEnumData(
         &mut self,
         enumNames: quest_hook::libil2cpp::ByRefMut<
-            *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+            *mut quest_hook::libil2cpp::Il2CppArray<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
         >,
         enumValues: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Array>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -207,25 +209,25 @@ impl crate::System::Type {
     }
     pub fn GetEnumName(
         &mut self,
-        value: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetEnumName", (value))?;
         Ok(__cordl_ret)
     }
     pub fn GetEnumNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetEnumNames", ())?;
         Ok(__cordl_ret)
     }
@@ -261,7 +263,7 @@ impl crate::System::Type {
     }
     pub fn GetEvent_BindingFlags1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::EventInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -271,9 +273,9 @@ impl crate::System::Type {
             .invoke("GetEvent", (name, bindingAttr))?;
         Ok(__cordl_ret)
     }
-    pub fn GetEvent_String0(
+    pub fn GetEvent_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::EventInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -300,7 +302,7 @@ impl crate::System::Type {
     }
     pub fn GetField_BindingFlags1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::FieldInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -310,9 +312,9 @@ impl crate::System::Type {
             .invoke("GetField", (name, bindingAttr))?;
         Ok(__cordl_ret)
     }
-    pub fn GetField_String0(
+    pub fn GetField_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::FieldInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -410,7 +412,7 @@ impl crate::System::Type {
     }
     pub fn GetMember_BindingFlags1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
@@ -425,9 +427,25 @@ impl crate::System::Type {
         > = __cordl_object.invoke("GetMember", (name, bindingAttr))?;
         Ok(__cordl_ret)
     }
+    pub fn GetMember_Il2CppString0(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Reflection::MemberInfo,
+        >,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut crate::System::Reflection::MemberInfo,
+        > = __cordl_object.invoke("GetMember", (name))?;
+        Ok(__cordl_ret)
+    }
     pub fn GetMember_MemberTypes_BindingFlags2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::System::Reflection::MemberTypes,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<
@@ -441,22 +459,6 @@ impl crate::System::Type {
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Reflection::MemberInfo,
         > = __cordl_object.invoke("GetMember", (name, _cordl_type, bindingAttr))?;
-        Ok(__cordl_ret)
-    }
-    pub fn GetMember_String0(
-        &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::MemberInfo,
-        >,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Reflection::MemberInfo,
-        > = __cordl_object.invoke("GetMember", (name))?;
         Ok(__cordl_ret)
     }
     pub fn GetMembers(
@@ -477,7 +479,7 @@ impl crate::System::Type {
     }
     pub fn GetMethodImpl(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         callConvention: crate::System::Reflection::CallingConventions,
@@ -498,7 +500,7 @@ impl crate::System::Type {
     }
     pub fn GetMethod_BindingFlags1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -510,7 +512,7 @@ impl crate::System::Type {
     }
     pub fn GetMethod_BindingFlags_Binder_CallingConventions_Il2CppArray_Il2CppArray5(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         callConvention: crate::System::Reflection::CallingConventions,
@@ -531,7 +533,7 @@ impl crate::System::Type {
     }
     pub fn GetMethod_BindingFlags_Binder_Il2CppArray_Il2CppArray4(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
@@ -548,7 +550,7 @@ impl crate::System::Type {
     }
     pub fn GetMethod_Il2CppArray2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -560,7 +562,7 @@ impl crate::System::Type {
     }
     pub fn GetMethod_Il2CppArray_Il2CppArray3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Reflection::ParameterModifier,
@@ -573,9 +575,9 @@ impl crate::System::Type {
             .invoke("GetMethod", (name, types, modifiers))?;
         Ok(__cordl_ret)
     }
-    pub fn GetMethod_String0(
+    pub fn GetMethod_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -617,7 +619,7 @@ impl crate::System::Type {
     }
     pub fn GetNestedType(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -645,7 +647,7 @@ impl crate::System::Type {
     }
     pub fn GetPropertyImpl(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         returnType: *mut crate::System::Type,
@@ -666,7 +668,7 @@ impl crate::System::Type {
     }
     pub fn GetProperty_BindingFlags1(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::PropertyInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -678,7 +680,7 @@ impl crate::System::Type {
     }
     pub fn GetProperty_BindingFlags_Binder_Type_Il2CppArray_Il2CppArray5(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         bindingAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         returnType: *mut crate::System::Type,
@@ -697,9 +699,9 @@ impl crate::System::Type {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn GetProperty_String0(
+    pub fn GetProperty_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::PropertyInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -710,7 +712,7 @@ impl crate::System::Type {
     }
     pub fn GetProperty_Type2(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         returnType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::PropertyInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -722,7 +724,7 @@ impl crate::System::Type {
     }
     pub fn GetProperty_Type_Il2CppArray3(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         returnType: *mut crate::System::Type,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::PropertyInfo> {
@@ -735,7 +737,7 @@ impl crate::System::Type {
     }
     pub fn GetProperty_Type_Il2CppArray_Il2CppArray4(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         returnType: *mut crate::System::Type,
         types: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
         modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -800,33 +802,35 @@ impl crate::System::Type {
     pub fn InternalGetNameIfAvailable(
         &mut self,
         rootCauseForFailure: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Type>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalGetNameIfAvailable", (rootCauseForFailure))?;
         Ok(__cordl_ret)
     }
     pub fn InvokeMember(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
-        target: *mut crate::System::Object,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         modifiers: *mut quest_hook::libil2cpp::Il2CppArray<
             crate::System::Reflection::ParameterModifier,
         >,
         culture: *mut crate::System::Globalization::CultureInfo,
         namedParameters: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "InvokeMember",
                 (
@@ -882,7 +886,7 @@ impl crate::System::Type {
     }
     pub fn IsEnumDefined(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -902,7 +906,7 @@ impl crate::System::Type {
     }
     pub fn IsInstanceOfType(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1016,11 +1020,11 @@ impl crate::System::Type {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -1046,11 +1050,11 @@ impl crate::System::Type {
     }
     pub fn get_AssemblyQualifiedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AssemblyQualifiedName", ())?;
         Ok(__cordl_ret)
     }
@@ -1106,21 +1110,21 @@ impl crate::System::Type {
     }
     pub fn get_FullName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FullName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_FullNameOrDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FullNameOrDefault", ())?;
         Ok(__cordl_ret)
     }
@@ -1175,11 +1179,11 @@ impl crate::System::Type {
     }
     pub fn get_InternalNameIfAvailable(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_InternalNameIfAvailable", ())?;
         Ok(__cordl_ret)
     }
@@ -1431,21 +1435,21 @@ impl crate::System::Type {
     }
     pub fn get_NameOrDefault(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_NameOrDefault", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }

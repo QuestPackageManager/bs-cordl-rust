@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HEU_ObjectNode {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
-    pub _objName: *mut crate::System::String,
+    pub _objName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _parentAsset: *mut crate::HoudiniEngineUnity::HEU_HoudiniAsset,
     pub _objectInfo: crate::HoudiniEngineUnity::HAPI_ObjectInfo,
     pub _geoNodes: *mut crate::System::Collections::Generic::List_1<
@@ -190,7 +190,7 @@ impl crate::HoudiniEngineUnity::HEU_ObjectNode {
     }
     pub fn GetGeoNode(
         &mut self,
-        geoName: *mut crate::System::String,
+        geoName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::HoudiniEngineUnity::HEU_GeoNode> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -380,11 +380,11 @@ impl crate::HoudiniEngineUnity::HEU_ObjectNode {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -419,11 +419,11 @@ impl crate::HoudiniEngineUnity::HEU_ObjectNode {
     }
     pub fn get_ObjectName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ObjectName", ())?;
         Ok(__cordl_ret)
     }

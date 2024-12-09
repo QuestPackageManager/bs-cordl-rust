@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct XmlElementEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub o: *mut crate::System::Object,
+    pub o: *mut quest_hook::libil2cpp::Il2CppObject,
     pub elem: *mut crate::System::Xml::XmlElement,
-    pub qnames: *mut crate::System::String,
+    pub qnames: *mut quest_hook::libil2cpp::Il2CppString,
     pub lineNumber: i32,
     pub linePosition: i32,
 }
@@ -33,8 +33,8 @@ impl crate::System::Xml::Serialization::XmlElementEventArgs {
         elem: *mut crate::System::Xml::XmlElement,
         lineNumber: i32,
         linePosition: i32,
-        o: *mut crate::System::Object,
-        qnames: *mut crate::System::String,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        qnames: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -47,8 +47,8 @@ impl crate::System::Xml::Serialization::XmlElementEventArgs {
         elem: *mut crate::System::Xml::XmlElement,
         lineNumber: i32,
         linePosition: i32,
-        o: *mut crate::System::Object,
-        qnames: *mut crate::System::String,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
+        qnames: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

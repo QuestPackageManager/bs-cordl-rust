@@ -26,10 +26,10 @@ impl std::ops::DerefMut for crate::System::Globalization::ISimpleCollator {
 impl crate::System::Globalization::ISimpleCollator {
     pub fn Compare(
         &mut self,
-        s1: *mut crate::System::String,
+        s1: *mut quest_hook::libil2cpp::Il2CppString,
         idx1: i32,
         len1: i32,
-        s2: *mut crate::System::String,
+        s2: *mut quest_hook::libil2cpp::Il2CppString,
         idx2: i32,
         len2: i32,
         options: crate::System::Globalization::CompareOptions,
@@ -43,7 +43,7 @@ impl crate::System::Globalization::ISimpleCollator {
     }
     pub fn GetSortKey(
         &mut self,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Globalization::SortKey> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -55,8 +55,8 @@ impl crate::System::Globalization::ISimpleCollator {
     }
     pub fn IndexOf(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         opt: crate::System::Globalization::CompareOptions,
@@ -70,8 +70,8 @@ impl crate::System::Globalization::ISimpleCollator {
     }
     pub fn IsPrefix(
         &mut self,
-        src: *mut crate::System::String,
-        target: *mut crate::System::String,
+        src: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,8 +82,8 @@ impl crate::System::Globalization::ISimpleCollator {
     }
     pub fn IsSuffix(
         &mut self,
-        src: *mut crate::System::String,
-        target: *mut crate::System::String,
+        src: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -94,8 +94,8 @@ impl crate::System::Globalization::ISimpleCollator {
     }
     pub fn LastIndexOf(
         &mut self,
-        s: *mut crate::System::String,
-        target: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+        target: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
         opt: crate::System::Globalization::CompareOptions,

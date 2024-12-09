@@ -69,7 +69,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -80,6 +80,20 @@ impl<
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (guid))?;
         Ok(__cordl_object)
+    }
+    pub fn ValidateAsset_Il2CppString1(
+        &mut self,
+        mainAssetPath: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (mainAssetPath))?;
+        Ok(__cordl_ret)
     }
     pub fn ValidateAsset_Object0(
         &mut self,
@@ -95,23 +109,9 @@ impl<
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateAsset_String1(
-        &mut self,
-        mainAssetPath: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (mainAssetPath))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

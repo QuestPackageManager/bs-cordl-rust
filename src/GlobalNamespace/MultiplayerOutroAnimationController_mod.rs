@@ -5,13 +5,13 @@ pub struct MultiplayerOutroAnimationController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _outroPlayableDirector: *mut crate::UnityEngine::Playables::PlayableDirector,
     pub _playerTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _ringTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _resultsTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _playerTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::PropertyName,
@@ -19,18 +19,18 @@ pub struct MultiplayerOutroAnimationController {
     pub _resultsTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::PropertyName,
     >,
-    pub _localPlayerTrackName: *mut crate::System::String,
+    pub _localPlayerTrackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _localPlayerTimelinePropertyName: crate::UnityEngine::PropertyName,
     pub _badgeTimelineTrackNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _badgeTimelinePropertyNames: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::PropertyName,
     >,
     pub _badgeStartTransform: *mut crate::UnityEngine::Transform,
     pub _badgeMidTransform: *mut crate::UnityEngine::Transform,
-    pub _songPreviewTrackName: *mut crate::System::String,
-    pub _resultsMocksActivationTrack: *mut crate::System::String,
+    pub _songPreviewTrackName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _resultsMocksActivationTrack: *mut quest_hook::libil2cpp::Il2CppString,
     pub _multiplayerScoreRingManager: *mut crate::GlobalNamespace::MultiplayerScoreRingManager,
     pub _multiplayerResultsPyramidView: *mut crate::GlobalNamespace::MultiplayerResultsPyramidView,
     pub _multiplayerPlayersManager: *mut crate::GlobalNamespace::MultiplayerPlayersManager,

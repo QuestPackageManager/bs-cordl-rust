@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::IAdditionalContentEntitlemen
 impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
     pub fn GetLevelDataVersionAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
     }
     pub fn GetLevelEntitlementStatusAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -61,7 +61,7 @@ impl crate::GlobalNamespace::IAdditionalContentEntitlementModel {
     }
     pub fn GetPackEntitlementStatusAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<

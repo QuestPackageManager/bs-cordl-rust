@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TexturePacker_JsonArray {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray")]
 impl std::ops::Deref for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -69,7 +69,7 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct TexturePacker_JsonArray_Frame {
-    pub filename: *mut crate::System::String,
+    pub filename: *mut quest_hook::libil2cpp::Il2CppString,
     pub frame: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame,
     pub rotated: bool,
     pub trimmed: bool,
@@ -100,13 +100,13 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame {}
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct TexturePacker_JsonArray_Meta {
-    pub app: *mut crate::System::String,
-    pub version: *mut crate::System::String,
-    pub image: *mut crate::System::String,
-    pub format: *mut crate::System::String,
+    pub app: *mut quest_hook::libil2cpp::Il2CppString,
+    pub version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub image: *mut quest_hook::libil2cpp::Il2CppString,
+    pub format: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_size: crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize,
     pub scale: f32,
-    pub smartupdate: *mut crate::System::String,
+    pub smartupdate: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+Meta")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(
@@ -131,7 +131,7 @@ impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Meta {}
 #[repr(C)]
 #[derive(Debug)]
 pub struct TexturePacker_JsonArray_SpriteDataObject {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub frames: *mut crate::System::Collections::Generic::List_1<
         crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_Frame,
     >,
@@ -146,7 +146,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "TMPro+SpriteAssetUtilities+TexturePacker_JsonArray+SpriteDataObject")]
 impl std::ops::Deref
 for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteDataObject {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -218,8 +218,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteFrame {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -255,8 +255,8 @@ for crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
 impl crate::TMPro::SpriteAssetUtilities::TexturePacker_JsonArray_SpriteSize {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),

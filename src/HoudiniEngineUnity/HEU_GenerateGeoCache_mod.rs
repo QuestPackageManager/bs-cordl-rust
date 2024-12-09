@@ -20,11 +20,11 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GenerateGeoCache {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _AssetID_k__BackingField: i32,
     pub _geoInfo: crate::HoudiniEngineUnity::HAPI_GeoInfo,
     pub _partInfo: crate::HoudiniEngineUnity::HAPI_PartInfo,
-    pub _partName: *mut crate::System::String,
+    pub _partName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _vertexList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _faceCounts: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _houdiniMaterialIDs: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -38,13 +38,13 @@ pub struct HEU_GenerateGeoCache {
     pub _unityMaterialAttrName: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _unityMaterialAttrStringsMap: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _substanceMaterialAttrNameInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
     pub _substanceMaterialAttrName: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     pub _substanceMaterialAttrStringsMap: *mut crate::System::Collections::Generic::Dictionary_2<
         i32,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _substanceMaterialAttrIndexInfo: crate::HoudiniEngineUnity::HAPI_AttributeInfo,
     pub _substanceMaterialAttrIndex: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -67,18 +67,20 @@ pub struct HEU_GenerateGeoCache {
     pub _colorAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     pub _alphaAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     pub _tangentAttr: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _groups: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+    pub _groups: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _hasGroupGeometry: bool,
     pub _groupSplitVertexIndices: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut quest_hook::libil2cpp::Il2CppArray<i32>,
     >,
     pub _groupSplitFaceIndices: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Collections::Generic::List_1<i32>,
     >,
     pub _groupVertexOffsets: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::System::Collections::Generic::List_1<i32>,
     >,
     pub _allCollisionVertexList: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
@@ -97,7 +99,7 @@ pub struct HEU_GenerateGeoCache {
         i32,
         *mut crate::HoudiniEngineUnity::HEU_MaterialData,
     >,
-    pub _assetCacheFolderPath: *mut crate::System::String,
+    pub _assetCacheFolderPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _meshIndexFormat: *mut crate::HoudiniEngineUnity::HEU_MeshIndexFormat,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
@@ -107,7 +109,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -211,13 +213,13 @@ for crate::HoudiniEngineUnity::HEU_GenerateGeoCache {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_GenerateGeoCache_HEU_ColliderInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _colliderType: crate::HoudiniEngineUnity::HEU_ColliderInfo_HEU_GenerateGeoCache_ColliderType,
     pub _colliderCenter: crate::UnityEngine::Vector3,
     pub _colliderSize: crate::UnityEngine::Vector3,
     pub _colliderRadius: f32,
     pub _convexCollider: bool,
-    pub _collisionGroupName: *mut crate::System::String,
+    pub _collisionGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _collisionVertices: *mut quest_hook::libil2cpp::Il2CppArray<
         crate::UnityEngine::Vector3,
     >,
@@ -234,7 +236,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "HoudiniEngineUnity+HEU_GenerateGeoCache+HEU_ColliderInfo")]
 impl std::ops::Deref
 for crate::HoudiniEngineUnity::HEU_GenerateGeoCache_HEU_ColliderInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

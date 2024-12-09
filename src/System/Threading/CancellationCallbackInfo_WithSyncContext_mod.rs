@@ -29,8 +29,8 @@ for crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
 #[cfg(feature = "System+Threading+CancellationCallbackInfo+WithSyncContext")]
 impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     pub fn New(
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        stateForCallback: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
         targetExecutionContext: *mut crate::System::Threading::ExecutionContext,
         cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
         targetSyncContext: *mut crate::System::Threading::SynchronizationContext,
@@ -52,8 +52,8 @@ impl crate::GlobalNamespace::CancellationCallbackInfo_WithSyncContext {
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        stateForCallback: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
         targetExecutionContext: *mut crate::System::Threading::ExecutionContext,
         cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
         targetSyncContext: *mut crate::System::Threading::SynchronizationContext,

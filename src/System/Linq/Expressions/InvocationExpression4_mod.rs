@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InvocationExpression4 {
     __cordl_parent: crate::System::Linq::Expressions::InvocationExpression,
-    pub _arg0: *mut crate::System::Object,
+    pub _arg0: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _arg1: *mut crate::System::Linq::Expressions::Expression,
     pub _arg2: *mut crate::System::Linq::Expressions::Expression,
     pub _arg3: *mut crate::System::Linq::Expressions::Expression,

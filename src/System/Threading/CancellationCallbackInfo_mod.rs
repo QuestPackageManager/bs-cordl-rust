@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CancellationCallbackInfo {
-    __cordl_parent: crate::System::Object,
-    pub Callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-    pub StateForCallback: *mut crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+    pub StateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
     pub TargetExecutionContext: *mut crate::System::Threading::ExecutionContext,
     pub CancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+CancellationCallbackInfo")]
 impl std::ops::Deref for crate::System::Threading::CancellationCallbackInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,8 +41,8 @@ impl crate::System::Threading::CancellationCallbackInfo {
         Ok(__cordl_ret)
     }
     pub fn New(
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        stateForCallback: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
         targetExecutionContext: *mut crate::System::Threading::ExecutionContext,
         cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -62,8 +62,8 @@ impl crate::System::Threading::CancellationCallbackInfo {
     }
     pub fn _ctor(
         &mut self,
-        callback: *mut crate::System::Action_1<*mut crate::System::Object>,
-        stateForCallback: *mut crate::System::Object,
+        callback: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        stateForCallback: *mut quest_hook::libil2cpp::Il2CppObject,
         targetExecutionContext: *mut crate::System::Threading::ExecutionContext,
         cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

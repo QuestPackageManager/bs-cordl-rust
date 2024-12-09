@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V2AttributeCertificateGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub extGenerator: *mut crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator,
     pub acInfoGen: *mut crate::Org::BouncyCastle::Asn1::X509::V2AttributeCertificateInfoGenerator,
     pub sigOID: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     pub sigAlgId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub signatureAlgorithm: *mut crate::System::String,
+    pub signatureAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificateGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Org+BouncyCastle+X509+X509V2AttributeCertificateGenerator")]
 impl std::ops::Deref
 for crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
     }
     pub fn AddExtension_Asn1Encodable0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
         extensionValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -58,7 +58,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
     }
     pub fn AddExtension_Il2CppArray1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
         extensionValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -194,7 +194,7 @@ impl crate::Org::BouncyCastle::X509::X509V2AttributeCertificateGenerator {
     }
     pub fn SetSignatureAlgorithm(
         &mut self,
-        signatureAlgorithm: *mut crate::System::String,
+        signatureAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

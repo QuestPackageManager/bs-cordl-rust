@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CodePageDataItem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_dataIndex: i32,
     pub m_uiFamilyCodePage: i32,
-    pub m_webName: *mut crate::System::String,
+    pub m_webName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_flags: u32,
 }
 #[cfg(feature = "System+Globalization+CodePageDataItem")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+CodePageDataItem")]
 impl std::ops::Deref for crate::System::Globalization::CodePageDataItem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,11 +48,11 @@ impl crate::System::Globalization::CodePageDataItem {
     }
     pub fn get_WebName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_WebName", ())?;
         Ok(__cordl_ret)
     }

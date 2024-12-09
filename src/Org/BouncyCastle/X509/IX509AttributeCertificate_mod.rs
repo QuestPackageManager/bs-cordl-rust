@@ -61,9 +61,9 @@ impl crate::Org::BouncyCastle::X509::IX509AttributeCertificate {
         > = __cordl_object.invoke("GetAttributes", ())?;
         Ok(__cordl_ret)
     }
-    pub fn GetAttributes_String1(
+    pub fn GetAttributes_Il2CppString1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::X509::X509Attribute,

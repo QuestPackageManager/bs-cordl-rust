@@ -6,7 +6,7 @@ pub struct ProfessionInfo {
     pub namingAuthority: *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
     pub professionItems: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
     pub professionOids: *mut crate::Org::BouncyCastle::Asn1::Asn1Sequence,
-    pub registrationNumber: *mut crate::System::String,
+    pub registrationNumber: *mut quest_hook::libil2cpp::Il2CppString,
     pub addProfessionInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
 }
 #[cfg(feature = "Org+BouncyCastle+Asn1+IsisMtt+X509+ProfessionInfo")]
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object)
     }
-    pub fn New_NamingAuthority_Il2CppArray_Il2CppArray_String_Asn1OctetString1(
+    pub fn New_NamingAuthority_Il2CppArray_Il2CppArray_Il2CppString_Asn1OctetString1(
         namingAuthority: *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
         professionItems: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::Asn1::X500::DirectoryString,
@@ -78,7 +78,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
         professionOids: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
-        registrationNumber: *mut crate::System::String,
+        registrationNumber: *mut quest_hook::libil2cpp::Il2CppString,
         addProfessionInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -117,7 +117,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_NamingAuthority_Il2CppArray_Il2CppArray_String_Asn1OctetString1(
+    pub fn _ctor_NamingAuthority_Il2CppArray_Il2CppArray_Il2CppString_Asn1OctetString1(
         &mut self,
         namingAuthority: *mut crate::Org::BouncyCastle::Asn1::IsisMtt::X509::NamingAuthority,
         professionItems: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -126,7 +126,7 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
         professionOids: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
         >,
-        registrationNumber: *mut crate::System::String,
+        registrationNumber: *mut quest_hook::libil2cpp::Il2CppString,
         addProfessionInfo: *mut crate::Org::BouncyCastle::Asn1::Asn1OctetString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -171,11 +171,11 @@ impl crate::Org::BouncyCastle::Asn1::IsisMtt::X509::ProfessionInfo {
     }
     pub fn get_RegistrationNumber(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_RegistrationNumber", ())?;
         Ok(__cordl_ret)
     }

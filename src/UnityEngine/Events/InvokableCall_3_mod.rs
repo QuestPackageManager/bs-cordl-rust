@@ -46,7 +46,7 @@ impl<
 > crate::UnityEngine::Events::InvokableCall_3<T1, T2, T3> {
     pub fn Find(
         &mut self,
-        targetObj: *mut crate::System::Object,
+        targetObj: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
@@ -65,7 +65,9 @@ impl<
     }
     pub fn Invoke_Il2CppArray0(
         &mut self,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -103,8 +105,8 @@ impl<
             .invoke("Invoke", (args0, args1, args2))?;
         Ok(__cordl_ret)
     }
-    pub fn New_Object_MethodInfo0(
-        target: *mut crate::System::Object,
+    pub fn New_Il2CppObject_MethodInfo0(
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         theFunction: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -138,9 +140,9 @@ impl<
             .invoke_void(".ctor", (action))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_Object_MethodInfo0(
+    pub fn _ctor_Il2CppObject_MethodInfo0(
         &mut self,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         theFunction: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

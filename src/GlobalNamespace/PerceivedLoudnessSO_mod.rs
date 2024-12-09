@@ -33,7 +33,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
     pub type __c__DisplayClass6_0 = crate::GlobalNamespace::PerceivedLoudnessSO___c__DisplayClass6_0;
     pub fn GetLoudnessData(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<f32>> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
         >,
     > {
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair,
         > = __cordl_object.invoke("ToDictionary", ())?;
         Ok(__cordl_ret)
@@ -118,10 +118,10 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::PerceivedLoud
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
-    __cordl_parent: crate::System::Object,
-    pub _levelId: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _levelId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _perceivedLoudness: f32,
-    pub _checkSum: *mut crate::System::String,
+    pub _checkSum: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -132,7 +132,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,7 +147,7 @@ for crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
 #[cfg(feature = "PerceivedLoudnessSO+PerceivedLevelLoudnessPair")]
 impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
     pub fn New(
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
     pub fn SetLoudness(
         &mut self,
         newPerceivedLoudness: f32,
-        newChecksum: *mut crate::System::String,
+        newChecksum: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -169,7 +169,7 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
     }
     pub fn _ctor(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -180,21 +180,21 @@ impl crate::GlobalNamespace::PerceivedLoudnessSO_PerceivedLevelLoudnessPair {
     }
     pub fn get_checksum(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_checksum", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_levelId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_levelId", ())?;
         Ok(__cordl_ret)
     }

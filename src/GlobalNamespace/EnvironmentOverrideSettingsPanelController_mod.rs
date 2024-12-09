@@ -150,11 +150,11 @@ for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentOverrideSettingsPanelController_Elements {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub label: *mut crate::TMPro::TextMeshProUGUI,
     pub simpleTextDropdown: *mut crate::HMUI::SimpleTextDropdown,
     pub environmentType: crate::GlobalNamespace::EnvironmentType,
-    pub localizationKey: *mut crate::System::String,
+    pub localizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _environmentInfos_k__BackingField: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::EnvironmentInfoSO,
     >,
@@ -168,7 +168,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EnvironmentOverrideSettingsPanelController+Elements")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EnvironmentOverrideSettingsPanelController_Elements {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

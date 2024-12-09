@@ -102,7 +102,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
     pub fn OnInsert(
         &mut self,
         index: i32,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -114,7 +114,7 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
     pub fn OnRemove(
         &mut self,
         index: i32,
-        item: *mut crate::System::Object,
+        item: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -126,8 +126,8 @@ impl crate::System::Xml::Schema::XmlSchemaObjectCollection {
     pub fn OnSet(
         &mut self,
         index: i32,
-        oldValue: *mut crate::System::Object,
-        newValue: *mut crate::System::Object,
+        oldValue: *mut quest_hook::libil2cpp::Il2CppObject,
+        newValue: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

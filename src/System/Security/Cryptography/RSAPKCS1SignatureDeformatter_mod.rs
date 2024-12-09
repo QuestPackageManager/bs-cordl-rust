@@ -4,7 +4,7 @@
 pub struct RSAPKCS1SignatureDeformatter {
     __cordl_parent: crate::System::Security::Cryptography::AsymmetricSignatureDeformatter,
     pub rsa: *mut crate::System::Security::Cryptography::RSA,
-    pub hashName: *mut crate::System::String,
+    pub hashName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Security+Cryptography+RSAPKCS1SignatureDeformatter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -47,7 +47,7 @@ impl crate::System::Security::Cryptography::RSAPKCS1SignatureDeformatter {
     }
     pub fn SetHashAlgorithm(
         &mut self,
-        strName: *mut crate::System::String,
+        strName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

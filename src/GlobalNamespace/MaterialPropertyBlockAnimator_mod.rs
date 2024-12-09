@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MaterialPropertyBlockAnimator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _property: *mut crate::System::String,
+    pub _property: *mut quest_hook::libil2cpp::Il2CppString,
     pub _materialPropertyBlockController: *mut crate::GlobalNamespace::MaterialPropertyBlockController,
     pub propertyId: i32,
     pub _isInitialized: bool,

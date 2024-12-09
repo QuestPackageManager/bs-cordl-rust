@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelMissionParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _functions: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::LevelMissionParser_ParserFunction,
     >,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelMissionParser")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelMissionParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl crate::GlobalNamespace::LevelMissionParser {
     pub type ParserFunction = crate::GlobalNamespace::LevelMissionParser_ParserFunction;
     pub fn AddFunction(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         function: *mut crate::GlobalNamespace::LevelMissionParser_ParserFunction,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::LevelMissionParser {
     }
     pub fn ParseFunction(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -62,9 +62,9 @@ impl crate::GlobalNamespace::LevelMissionParser {
             .invoke("ParseFunction", (s, start, length))?;
         Ok(__cordl_ret)
     }
-    pub fn Parse_String0(
+    pub fn Parse_Il2CppString0(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::LevelMissionParser {
     }
     pub fn Parse_i32_i32_1(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::LevelMissionParser_ParserFunction {
         functionParams: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
         paramCount: i32,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -168,7 +168,7 @@ impl crate::GlobalNamespace::LevelMissionParser_ParserFunction {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -179,7 +179,7 @@ impl crate::GlobalNamespace::LevelMissionParser_ParserFunction {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
                 crate::GlobalNamespace::PlayerSensitivityFlag,
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -44,7 +44,7 @@ impl crate::GlobalNamespace::PlayerSensitivityDropdown {
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
                 crate::GlobalNamespace::PlayerSensitivityFlag,
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret)

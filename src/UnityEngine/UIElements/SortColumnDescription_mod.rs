@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortColumnDescription {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ColumnIndex: i32,
-    pub m_ColumnName: *mut crate::System::String,
+    pub m_ColumnName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_SortDirection: crate::UnityEngine::UIElements::SortDirection,
     pub _column_k__BackingField: *mut crate::UnityEngine::UIElements::Column,
     pub changed: *mut crate::System::Action_1<
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescription")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SortColumnDescription {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,8 +46,8 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_SortDirection2(
-        columnName: *mut crate::System::String,
+    pub fn New_Il2CppString_SortDirection2(
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         direction: crate::UnityEngine::UIElements::SortDirection,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -76,9 +76,9 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_SortDirection2(
+    pub fn _ctor_Il2CppString_SortDirection2(
         &mut self,
-        columnName: *mut crate::System::String,
+        columnName: *mut quest_hook::libil2cpp::Il2CppString,
         direction: crate::UnityEngine::UIElements::SortDirection,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -132,11 +132,11 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
     }
     pub fn get_columnName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_columnName", ())?;
         Ok(__cordl_ret)
     }
@@ -187,7 +187,7 @@ impl crate::UnityEngine::UIElements::SortColumnDescription {
     }
     pub fn set_columnName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

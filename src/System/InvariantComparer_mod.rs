@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InvariantComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_compareInfo: *mut crate::System::Globalization::CompareInfo,
 }
 #[cfg(feature = "System+InvariantComparer")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+InvariantComparer")]
 impl std::ops::Deref for crate::System::InvariantComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::System::InvariantComparer {
 impl crate::System::InvariantComparer {
     pub fn Compare(
         &mut self,
-        a: *mut crate::System::Object,
-        b: *mut crate::System::Object,
+        a: *mut quest_hook::libil2cpp::Il2CppObject,
+        b: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

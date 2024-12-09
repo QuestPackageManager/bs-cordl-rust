@@ -4,7 +4,7 @@
 pub struct StyleValueManaged {
     pub id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
     pub keyword: crate::UnityEngine::UIElements::StyleKeyword,
-    pub value: *mut crate::System::Object,
+    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+StyleValueManaged")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

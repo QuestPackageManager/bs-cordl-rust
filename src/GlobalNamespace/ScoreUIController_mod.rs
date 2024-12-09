@@ -138,7 +138,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ScoreUIContro
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScoreUIController_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scoreDisplayType: crate::GlobalNamespace::ScoreUIController_ScoreDisplayType,
 }
 #[cfg(feature = "ScoreUIController+InitData")]
@@ -148,7 +148,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ScoreUIController+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ScoreUIController_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

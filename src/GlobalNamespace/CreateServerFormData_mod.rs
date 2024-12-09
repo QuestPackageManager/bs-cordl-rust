@@ -3,7 +3,7 @@
 #[derive(Debug, Clone)]
 pub struct CreateServerFormData {
     pub usePassword: bool,
-    pub password: *mut crate::System::String,
+    pub password: *mut quest_hook::libil2cpp::Il2CppString,
     pub maxPlayers: i32,
     pub allowInviteOthers: bool,
     pub netDiscoverable: bool,

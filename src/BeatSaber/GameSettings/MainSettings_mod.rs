@@ -8,7 +8,7 @@ pub struct MainSettings {
     pub _controllerSettings_k__BackingField: *mut crate::BeatSaber::GameSettings::Controllers,
     pub _customServerSettings_k__BackingField: *mut crate::BeatSaber::GameSettings::CustomServer,
     pub _debugSettings_k__BackingField: *mut crate::BeatSaber::GameSettings::DebugSettings,
-    pub _language: *mut crate::System::String,
+    pub _language: *mut quest_hook::libil2cpp::Il2CppString,
     pub _pauseButtonPressDurationLevel: i32,
     pub _roomCenter: crate::UnityEngine::Vector3,
     pub _roomRotation: f32,

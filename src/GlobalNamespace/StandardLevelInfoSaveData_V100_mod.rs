@@ -2,21 +2,21 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData_V100 {
-    __cordl_parent: crate::System::Object,
-    pub _version: *mut crate::System::String,
-    pub _songName: *mut crate::System::String,
-    pub _songSubName: *mut crate::System::String,
-    pub _songAuthorName: *mut crate::System::String,
-    pub _levelAuthorName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _version: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _songName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _songSubName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _songAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _levelAuthorName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _beatsPerMinute: f32,
     pub _songTimeOffset: f32,
     pub _shuffle: f32,
     pub _shufflePeriod: f32,
     pub _previewStartTime: f32,
     pub _previewDuration: f32,
-    pub _songFilename: *mut crate::System::String,
-    pub _coverImageFilename: *mut crate::System::String,
-    pub _environmentName: *mut crate::System::String,
+    pub _songFilename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _coverImageFilename: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _environmentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _difficultyBeatmaps: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap,
     >,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "StandardLevelInfoSaveData_V100")]
 impl std::ops::Deref for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -70,11 +70,11 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     }
     pub fn get_coverImageFilename(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_coverImageFilename", ())?;
         Ok(__cordl_ret)
     }
@@ -95,21 +95,21 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     }
     pub fn get_environmentName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_environmentName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_levelAuthorName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_levelAuthorName", ())?;
         Ok(__cordl_ret)
     }
@@ -143,41 +143,41 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     }
     pub fn get_songAuthorName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_songAuthorName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_songFilename(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_songFilename", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_songName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_songName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_songSubName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_songSubName", ())?;
         Ok(__cordl_ret)
     }
@@ -190,11 +190,11 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
     }
     pub fn get_version(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_version", ())?;
         Ok(__cordl_ret)
     }
@@ -213,10 +213,10 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_V100 {
 #[repr(C)]
 #[derive(Debug)]
 pub struct StandardLevelInfoSaveData_V100_DifficultyBeatmap {
-    __cordl_parent: crate::System::Object,
-    pub _difficulty: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _difficulty: *mut quest_hook::libil2cpp::Il2CppString,
     pub _difficultyRank: i32,
-    pub _beatmapFilename: *mut crate::System::String,
+    pub _beatmapFilename: *mut quest_hook::libil2cpp::Il2CppString,
     pub _noteJumpMovementSpeed: f32,
     pub _noteJumpStartBeatOffset: i32,
 }
@@ -229,7 +229,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
 impl std::ops::Deref
 for crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -244,9 +244,9 @@ for crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
 #[cfg(feature = "StandardLevelInfoSaveData_V100+DifficultyBeatmap")]
 impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     pub fn New(
-        difficultyName: *mut crate::System::String,
+        difficultyName: *mut quest_hook::libil2cpp::Il2CppString,
         difficultyRank: i32,
-        beatmapFilename: *mut crate::System::String,
+        beatmapFilename: *mut quest_hook::libil2cpp::Il2CppString,
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -267,9 +267,9 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     }
     pub fn _ctor(
         &mut self,
-        difficultyName: *mut crate::System::String,
+        difficultyName: *mut quest_hook::libil2cpp::Il2CppString,
         difficultyRank: i32,
-        beatmapFilename: *mut crate::System::String,
+        beatmapFilename: *mut quest_hook::libil2cpp::Il2CppString,
         noteJumpMovementSpeed: f32,
         noteJumpStartBeatOffset: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -291,21 +291,21 @@ impl crate::GlobalNamespace::StandardLevelInfoSaveData_V100_DifficultyBeatmap {
     }
     pub fn get_beatmapFilename(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_beatmapFilename", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_difficulty(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_difficulty", ())?;
         Ok(__cordl_ret)
     }

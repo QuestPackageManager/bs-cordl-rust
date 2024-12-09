@@ -25,7 +25,7 @@ for crate::System::Net::Sockets::IPPacketInformation {
 impl crate::System::Net::Sockets::IPPacketInformation {
     pub fn Equals(
         &mut self,
-        comparand: *mut crate::System::Object,
+        comparand: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

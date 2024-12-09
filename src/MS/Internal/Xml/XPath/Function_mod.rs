@@ -7,8 +7,8 @@ pub struct Function {
     pub _argumentList: *mut crate::System::Collections::Generic::List_1<
         *mut crate::MS::Internal::Xml::XPath::AstNode,
     >,
-    pub _name: *mut crate::System::String,
-    pub _prefix: *mut crate::System::String,
+    pub _name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _prefix: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "MS+Internal+Xml+XPath+Function")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -54,9 +54,9 @@ impl crate::MS::Internal::Xml::XPath::Function {
             .invoke_void(".ctor", (ftype, argumentList))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_List_1_1(
-        prefix: *mut crate::System::String,
-        name: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_List_1_1(
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         argumentList: *mut crate::System::Collections::Generic::List_1<
             *mut crate::MS::Internal::Xml::XPath::AstNode,
         >,
@@ -93,10 +93,10 @@ impl crate::MS::Internal::Xml::XPath::Function {
             .invoke(".ctor", (ftype, argumentList))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_List_1_1(
+    pub fn _ctor_Il2CppString_Il2CppString_List_1_1(
         &mut self,
-        prefix: *mut crate::System::String,
-        name: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         argumentList: *mut crate::System::Collections::Generic::List_1<
             *mut crate::MS::Internal::Xml::XPath::AstNode,
         >,

@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct CrashManagerSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _logString: *mut crate::System::String,
-    pub _stackTrace: *mut crate::System::String,
+    pub _logString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _stackTrace: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "CrashManagerSO")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,8 +28,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::CrashManagerSO {
 impl crate::GlobalNamespace::CrashManagerSO {
     pub fn HandleLog(
         &mut self,
-        logString: *mut crate::System::String,
-        stackTrace: *mut crate::System::String,
+        logString: *mut quest_hook::libil2cpp::Il2CppString,
+        stackTrace: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::UnityEngine::LogType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -78,21 +78,21 @@ impl crate::GlobalNamespace::CrashManagerSO {
     }
     pub fn get_logString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_logString", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_stackTrace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_stackTrace", ())?;
         Ok(__cordl_ret)
     }

@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::ColorLutTextureConverter_OVRPassthroughColorLut_Tex
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughColorLut {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _Resolution_k__BackingField: u32,
     pub _Channels_k__BackingField: crate::GlobalNamespace::OVRPassthroughColorLut_ColorChannels,
     pub _IsInitialized_k__BackingField: bool,
@@ -145,7 +145,7 @@ pub struct OVRPassthroughColorLut {
     pub _lutData: crate::GlobalNamespace::OVRPlugin_PassthroughColorLutData,
     pub _channelCount: i32,
     pub _colorBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-    pub _locker: *mut crate::System::Object,
+    pub _locker: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPassthroughColorLut")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -154,7 +154,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRPassthroughColorLut")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRPassthroughColorLut {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -585,7 +585,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRPassthroughColorLut_ColorLutTextureConverter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -596,7 +596,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRPassthroughColorLut+ColorLutTextureConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRPassthroughColorLut_ColorLutTextureConverter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _scanner: *mut crate::MS::Internal::Xml::XPath::XPathScanner,
     pub _parseDepth: i32,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -292,7 +292,7 @@ impl crate::MS::Internal::Xml::XPath::XPathParser {
     }
     pub fn TestOp(
         &mut self,
-        op: *mut crate::System::String,
+        op: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -325,7 +325,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::MS::Internal::Xml::XPath::XPat
 #[repr(C)]
 #[derive(Debug)]
 pub struct XPathParser_ParamInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ftype: crate::MS::Internal::Xml::XPath::Function_FunctionType,
     pub _minargs: i32,
     pub _maxargs: i32,
@@ -340,7 +340,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MS+Internal+Xml+XPath+XPathParser+ParamInfo")]
 impl std::ops::Deref for crate::MS::Internal::Xml::XPath::XPathParser_ParamInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

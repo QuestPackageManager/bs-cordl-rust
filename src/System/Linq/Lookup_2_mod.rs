@@ -5,7 +5,7 @@ pub struct Lookup_2<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub comparer: *mut crate::System::Collections::Generic::IEqualityComparer_1<TKey>,
     pub groupings: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Linq::Lookup_2_Grouping<TKey, TElement>,
@@ -25,7 +25,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Linq::Lookup_2<TKey, TElement> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -192,7 +192,7 @@ pub struct Lookup_2_Grouping<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub key: TKey,
     pub hashCode: i32,
     pub elements: *mut quest_hook::libil2cpp::Il2CppArray<TElement>,
@@ -212,7 +212,7 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TElement: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::System::Linq::Lookup_2_Grouping<TKey, TElement> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

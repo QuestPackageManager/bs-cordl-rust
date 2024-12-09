@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GenericIdentity {
     __cordl_parent: crate::System::Security::Claims::ClaimsIdentity,
-    pub m_name: *mut crate::System::String,
-    pub m_type: *mut crate::System::String,
+    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_type: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Security+Principal+GenericIdentity")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -64,9 +64,9 @@ impl crate::System::Security::Principal::GenericIdentity {
             .invoke_void(".ctor", (identity))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String0(
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString0(
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -95,10 +95,10 @@ impl crate::System::Security::Principal::GenericIdentity {
             .invoke(".ctor", (identity))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String0(
+    pub fn _ctor_Il2CppString_Il2CppString0(
         &mut self,
-        name: *mut crate::System::String,
-        _cordl_type: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -109,11 +109,11 @@ impl crate::System::Security::Principal::GenericIdentity {
     }
     pub fn get_AuthenticationType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_AuthenticationType", ())?;
         Ok(__cordl_ret)
     }
@@ -134,11 +134,11 @@ impl crate::System::Security::Principal::GenericIdentity {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

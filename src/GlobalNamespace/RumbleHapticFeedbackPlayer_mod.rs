@@ -7,7 +7,7 @@ pub struct RumbleHapticFeedbackPlayer {
     pub _rumblesByNode: *mut crate::System::Collections::Generic::Dictionary_2<
         crate::UnityEngine::XR::XRNode,
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
             *mut crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData,
         >,
     >,
@@ -50,7 +50,7 @@ impl crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
     pub fn GetRumble(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
-        preset: *mut crate::System::Object,
+        preset: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData,
     > {
@@ -125,7 +125,7 @@ for crate::GlobalNamespace::RumbleHapticFeedbackPlayer {
 #[repr(C)]
 #[derive(Debug)]
 pub struct RumbleHapticFeedbackPlayer_RumbleData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub active: bool,
     pub continuous: bool,
     pub strength: f32,
@@ -140,7 +140,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "RumbleHapticFeedbackPlayer+RumbleData")]
 impl std::ops::Deref for crate::GlobalNamespace::RumbleHapticFeedbackPlayer_RumbleData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

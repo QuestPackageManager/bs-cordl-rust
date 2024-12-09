@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OculusXPlatformAccessTokenRequestOperation {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _tokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
     pub _operationState: crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation_OculusTokenRequestOperationState,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OculusXPlatformAccessTokenRequestOperation")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,9 @@ impl crate::GlobalNamespace::OculusXPlatformAccessTokenRequestOperation {
     }
     pub fn OnCompleteLoadingOculusAccessToken(
         &mut self,
-        message: *mut crate::Oculus::Platform::Message_1<*mut crate::System::String>,
+        message: *mut crate::Oculus::Platform::Message_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

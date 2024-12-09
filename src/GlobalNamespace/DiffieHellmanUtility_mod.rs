@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "DiffieHellmanUtility")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -11,7 +11,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DiffieHellmanUtility")]
 impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::DiffieHellman
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_DiffieHellmanKeyPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dhBasicAgreement: *mut crate::Org::BouncyCastle::Crypto::Agreement::DHBasicAgreement,
     pub _publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -61,7 +61,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DiffieHellmanUtility+DiffieHellmanKeyPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -153,7 +153,7 @@ for crate::GlobalNamespace::DiffieHellmanUtility_DiffieHellmanKeyPair {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_ElipticalCurveKeyPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _ecdhBasicAgreement: *mut crate::Org::BouncyCastle::Crypto::Agreement::ECDHBasicAgreement,
     pub _publicKey: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -166,7 +166,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "DiffieHellmanUtility+ElipticalCurveKeyPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DiffieHellmanUtility_ElipticalCurveKeyPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -270,9 +270,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct DiffieHellmanUtility_OperationTimer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stopwatch: *mut crate::System::Diagnostics::Stopwatch,
-    pub _operationName: *mut crate::System::String,
+    pub _operationName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -282,7 +282,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DiffieHellmanUtility+OperationTimer")]
 impl std::ops::Deref for crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -306,7 +306,7 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
         Ok(__cordl_ret)
     }
     pub fn New(
-        operationName: *mut crate::System::String,
+        operationName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -316,7 +316,7 @@ impl crate::GlobalNamespace::DiffieHellmanUtility_OperationTimer {
     }
     pub fn _ctor(
         &mut self,
-        operationName: *mut crate::System::String,
+        operationName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

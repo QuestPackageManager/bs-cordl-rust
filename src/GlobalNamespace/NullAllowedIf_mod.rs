@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NullAllowedIf {
     __cordl_parent: crate::GlobalNamespace::NullAllowed,
-    pub propertyName: *mut crate::System::String,
-    pub _valueToCompare: *mut crate::System::Object,
+    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _valueToCompare: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
 }
 #[cfg(feature = "NullAllowedIf")]
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NullAllowedIf {
 impl crate::GlobalNamespace::NullAllowedIf {
     pub fn IsNullAllowedFor(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -39,10 +39,10 @@ impl crate::GlobalNamespace::NullAllowedIf {
             .invoke("IsNullAllowedFor", (value, context))?;
         Ok(__cordl_ret)
     }
-    pub fn New_ComparisonOperation_Object_NullAllowed_Context1(
-        propertyName: *mut crate::System::String,
+    pub fn New_ComparisonOperation_Il2CppObject_NullAllowed_Context1(
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
-        valueToCompare: *mut crate::System::Object,
+        valueToCompare: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -54,9 +54,9 @@ impl crate::GlobalNamespace::NullAllowedIf {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_NullAllowed_Context0(
-        propertyName: *mut crate::System::String,
-        equalsTo: *mut crate::System::Object,
+    pub fn New_Il2CppObject_NullAllowed_Context0(
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        equalsTo: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -65,11 +65,11 @@ impl crate::GlobalNamespace::NullAllowedIf {
             .invoke_void(".ctor", (propertyName, equalsTo, context))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_ComparisonOperation_Object_NullAllowed_Context1(
+    pub fn _ctor_ComparisonOperation_Il2CppObject_NullAllowed_Context1(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonOperation: crate::GlobalNamespace::ComparisonOperation,
-        valueToCompare: *mut crate::System::Object,
+        valueToCompare: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,10 +82,10 @@ impl crate::GlobalNamespace::NullAllowedIf {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_NullAllowed_Context0(
+    pub fn _ctor_Il2CppObject_NullAllowed_Context0(
         &mut self,
-        propertyName: *mut crate::System::String,
-        equalsTo: *mut crate::System::Object,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        equalsTo: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::GlobalNamespace::NullAllowed_Context,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

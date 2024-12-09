@@ -102,7 +102,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     }
     pub fn InNamespace(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ConventionFilterTypesBinder,
     > {
@@ -116,7 +116,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     pub fn InNamespaces_IEnumerable_1_1(
         &mut self,
         namespaces: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ConventionFilterTypesBinder,
@@ -130,7 +130,9 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     }
     pub fn InNamespaces_Il2CppArray0(
         &mut self,
-        namespaces: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        namespaces: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ConventionFilterTypesBinder,
     > {
@@ -139,6 +141,33 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         );
         let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
             .invoke("InNamespaces", (namespaces))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchingRegex_Il2CppString0(
+        &mut self,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::ConventionFilterTypesBinder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
+            .invoke("MatchingRegex", (pattern))?;
+        Ok(__cordl_ret)
+    }
+    pub fn MatchingRegex_Il2CppString_RegexOptions1(
+        &mut self,
+        pattern: *mut quest_hook::libil2cpp::Il2CppString,
+        options: crate::System::Text::RegularExpressions::RegexOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::Zenject::ConventionFilterTypesBinder,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
+            .invoke("MatchingRegex", (pattern, options))?;
         Ok(__cordl_ret)
     }
     pub fn MatchingRegex_Regex2(
@@ -152,33 +181,6 @@ impl crate::Zenject::ConventionFilterTypesBinder {
         );
         let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
             .invoke("MatchingRegex", (regex))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchingRegex_String0(
-        &mut self,
-        pattern: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ConventionFilterTypesBinder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
-            .invoke("MatchingRegex", (pattern))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MatchingRegex_String_RegexOptions1(
-        &mut self,
-        pattern: *mut crate::System::String,
-        options: crate::System::Text::RegularExpressions::RegexOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::Zenject::ConventionFilterTypesBinder,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::Zenject::ConventionFilterTypesBinder = __cordl_object
-            .invoke("MatchingRegex", (pattern, options))?;
         Ok(__cordl_ret)
     }
     pub fn New(
@@ -247,7 +249,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     }
     pub fn WithPrefix(
         &mut self,
-        prefix: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ConventionFilterTypesBinder,
     > {
@@ -260,7 +262,7 @@ impl crate::Zenject::ConventionFilterTypesBinder {
     }
     pub fn WithSuffix(
         &mut self,
-        suffix: *mut crate::System::String,
+        suffix: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::ConventionFilterTypesBinder,
     > {

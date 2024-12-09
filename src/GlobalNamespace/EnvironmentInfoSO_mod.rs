@@ -3,16 +3,16 @@
 #[derive(Debug)]
 pub struct EnvironmentInfoSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _environmentName: *mut crate::System::String,
+    pub _environmentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _colorScheme: *mut crate::GlobalNamespace::ColorSchemeSO,
     pub _sceneInfo: *mut crate::GlobalNamespace::SceneInfo,
-    pub _serializedName: *mut crate::System::String,
+    pub _serializedName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _tags: crate::GlobalNamespace::EnvironmentInfoSO_Tags,
     pub _environmentType: crate::GlobalNamespace::EnvironmentType,
     pub _environmentSizeData: *mut crate::GlobalNamespace::EnvironmentSizeData,
     pub _environmentIntensityReductionOptions: *mut crate::GlobalNamespace::EnvironmentIntensityReductionOptions,
     pub _environmentKeywords: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _lightGroups: *mut crate::GlobalNamespace::EnvironmentLightGroups,
     pub _defaultLightshowAsset: *mut crate::UnityEngine::TextAsset,
@@ -94,14 +94,14 @@ impl crate::GlobalNamespace::EnvironmentInfoSO {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_environmentKeywords", ())?;
         Ok(__cordl_ret)
     }
@@ -119,11 +119,11 @@ impl crate::GlobalNamespace::EnvironmentInfoSO {
     }
     pub fn get_environmentName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_environmentName", ())?;
         Ok(__cordl_ret)
     }
@@ -182,11 +182,11 @@ impl crate::GlobalNamespace::EnvironmentInfoSO {
     }
     pub fn get_serializedName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_serializedName", ())?;
         Ok(__cordl_ret)
     }

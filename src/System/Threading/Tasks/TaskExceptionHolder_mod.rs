@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TaskExceptionHolder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_task: *mut crate::System::Threading::Tasks::Task,
     pub m_faultExceptions: *mut crate::System::Collections::Generic::LowLevelListWithIList_1<
         *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+Tasks+TaskExceptionHolder")]
 impl std::ops::Deref for crate::System::Threading::Tasks::TaskExceptionHolder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,7 +32,7 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::TaskExceptionHolder
 impl crate::System::Threading::Tasks::TaskExceptionHolder {
     pub fn Add(
         &mut self,
-        exceptionObject: *mut crate::System::Object,
+        exceptionObject: *mut quest_hook::libil2cpp::Il2CppObject,
         representsCancellation: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -44,7 +44,7 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
     }
     pub fn AddFaultException(
         &mut self,
-        exceptionObject: *mut crate::System::Object,
+        exceptionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,7 +137,7 @@ impl crate::System::Threading::Tasks::TaskExceptionHolder {
     }
     pub fn SetCancellationException(
         &mut self,
-        exceptionObject: *mut crate::System::Object,
+        exceptionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AuthenticodeDeformatter {
     __cordl_parent: crate::Mono::Security::Authenticode::AuthenticodeBase,
-    pub filename: *mut crate::System::String,
+    pub filename: *mut quest_hook::libil2cpp::Il2CppString,
     pub rawdata: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub hash: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub coll: *mut crate::Mono::Security::X509::X509CertificateCollection,
@@ -48,7 +48,7 @@ impl crate::Mono::Security::Authenticode::AuthenticodeDeformatter {
     }
     pub fn CompareIssuerSerial(
         &mut self,
-        issuer: *mut crate::System::String,
+        issuer: *mut quest_hook::libil2cpp::Il2CppString,
         serial: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         x509: *mut crate::Mono::Security::X509::X509Certificate,
     ) -> quest_hook::libil2cpp::Result<bool> {

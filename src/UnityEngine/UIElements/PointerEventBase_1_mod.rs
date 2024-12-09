@@ -10,7 +10,7 @@ pub struct PointerEventBase_1<T: quest_hook::libil2cpp::Type> {
     pub m_TiltNeeded: bool,
     pub m_Tilt: crate::UnityEngine::Vector2,
     pub _pointerId_k__BackingField: i32,
-    pub _pointerType_k__BackingField: *mut crate::System::String,
+    pub _pointerType_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isPrimary_k__BackingField: bool,
     pub _button_k__BackingField: i32,
     pub _pressedButtons_k__BackingField: i32,
@@ -398,7 +398,7 @@ impl<
     }
     pub fn get_pointerType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -406,7 +406,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_pointerType", ())?;
         Ok(__cordl_ret)
     }
@@ -703,7 +703,7 @@ impl<
     }
     pub fn set_pointerType(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

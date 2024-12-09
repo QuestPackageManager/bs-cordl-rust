@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LabelInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _node: *mut crate::System::Linq::Expressions::LabelTarget,
     pub _label: *mut crate::System::Linq::Expressions::Interpreter::BranchLabel,
-    pub _definitions: *mut crate::System::Object,
+    pub _definitions: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _references: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Linq::Expressions::Interpreter::LabelScopeInfo,
     >,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Linq+Expressions+Interpreter+LabelInfo")]
 impl std::ops::Deref for crate::System::Linq::Expressions::Interpreter::LabelInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

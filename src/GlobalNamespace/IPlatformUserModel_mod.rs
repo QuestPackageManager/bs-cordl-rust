@@ -45,7 +45,7 @@ impl crate::GlobalNamespace::IPlatformUserModel {
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -54,7 +54,7 @@ impl crate::GlobalNamespace::IPlatformUserModel {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetUserFriendsUserIds", (cached))?;
         Ok(__cordl_ret)
@@ -78,12 +78,12 @@ impl crate::GlobalNamespace::IPlatformUserModel {
     pub fn GetUserNamesForUserIds(
         &mut self,
         userIds: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::IPlatformUserModel {
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
             *mut crate::System::Collections::Generic::IReadOnlyList_1<
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("GetUserNamesForUserIds", (userIds))?;
         Ok(__cordl_ret)

@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::StringFacetsChecker {
 impl crate::System::Xml::Schema::StringFacetsChecker {
     pub fn CheckBuiltInFacets(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         typeCode: crate::System::Xml::Schema::XmlTypeCode,
         verifyUri: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
@@ -37,9 +37,9 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckBuiltInFacets", (s, typeCode, verifyUri))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValueFacets_Object0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -49,9 +49,9 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValueFacets_String1(
+    pub fn CheckValueFacets_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -61,9 +61,9 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret)
     }
-    pub fn CheckValueFacets_String__cordl_bool2(
+    pub fn CheckValueFacets_Il2CppString__cordl_bool2(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
         verifyUri: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
@@ -74,9 +74,9 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype, verifyUri))?;
         Ok(__cordl_ret)
     }
-    pub fn MatchEnumeration_Object0(
+    pub fn MatchEnumeration_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         enumeration: *mut crate::System::Collections::ArrayList,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -87,9 +87,9 @@ impl crate::System::Xml::Schema::StringFacetsChecker {
             .invoke("MatchEnumeration", (value, enumeration, datatype))?;
         Ok(__cordl_ret)
     }
-    pub fn MatchEnumeration_String1(
+    pub fn MatchEnumeration_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         enumeration: *mut crate::System::Collections::ArrayList,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<bool> {

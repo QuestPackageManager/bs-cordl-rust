@@ -135,7 +135,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
         &mut self,
         playerIndex: i32,
         splitScreenIndex: i32,
-        controlScheme: *mut crate::System::String,
+        controlScheme: *mut quest_hook::libil2cpp::Il2CppString,
         pairWithDevices: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::UnityEngine::InputSystem::InputDevice,
         >,
@@ -156,7 +156,7 @@ impl crate::UnityEngine::InputSystem::PlayerInputManager {
         &mut self,
         playerIndex: i32,
         splitScreenIndex: i32,
-        controlScheme: *mut crate::System::String,
+        controlScheme: *mut quest_hook::libil2cpp::Il2CppString,
         pairWithDevice: *mut crate::UnityEngine::InputSystem::InputDevice,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::PlayerInput,

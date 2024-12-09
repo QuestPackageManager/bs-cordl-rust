@@ -7,12 +7,12 @@ pub struct FtpWebResponse {
     pub _contentLength: i64,
     pub _responseUri: *mut crate::System::Uri,
     pub _statusCode: crate::System::Net::FtpStatusCode,
-    pub _statusLine: *mut crate::System::String,
+    pub _statusLine: *mut quest_hook::libil2cpp::Il2CppString,
     pub _ftpRequestHeaders: *mut crate::System::Net::WebHeaderCollection,
     pub _lastModified: crate::System::DateTime,
-    pub _bannerMessage: *mut crate::System::String,
-    pub _welcomeMessage: *mut crate::System::String,
-    pub _exitMessage: *mut crate::System::String,
+    pub _bannerMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _welcomeMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _exitMessage: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+FtpWebResponse")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -61,11 +61,11 @@ impl crate::System::Net::FtpWebResponse {
         contentLength: i64,
         responseUri: *mut crate::System::Uri,
         statusCode: crate::System::Net::FtpStatusCode,
-        statusLine: *mut crate::System::String,
+        statusLine: *mut quest_hook::libil2cpp::Il2CppString,
         lastModified: crate::System::DateTime,
-        bannerMessage: *mut crate::System::String,
-        welcomeMessage: *mut crate::System::String,
-        exitMessage: *mut crate::System::String,
+        bannerMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        welcomeMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        exitMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -100,8 +100,8 @@ impl crate::System::Net::FtpWebResponse {
     pub fn UpdateStatus(
         &mut self,
         statusCode: crate::System::Net::FtpStatusCode,
-        statusLine: *mut crate::System::String,
-        exitMessage: *mut crate::System::String,
+        statusLine: *mut quest_hook::libil2cpp::Il2CppString,
+        exitMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,11 +116,11 @@ impl crate::System::Net::FtpWebResponse {
         contentLength: i64,
         responseUri: *mut crate::System::Uri,
         statusCode: crate::System::Net::FtpStatusCode,
-        statusLine: *mut crate::System::String,
+        statusLine: *mut quest_hook::libil2cpp::Il2CppString,
         lastModified: crate::System::DateTime,
-        bannerMessage: *mut crate::System::String,
-        welcomeMessage: *mut crate::System::String,
-        exitMessage: *mut crate::System::String,
+        bannerMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        welcomeMessage: *mut quest_hook::libil2cpp::Il2CppString,
+        exitMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

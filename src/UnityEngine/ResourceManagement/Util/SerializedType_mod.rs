@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct SerializedType {
-    pub m_AssemblyName: *mut crate::System::String,
-    pub m_ClassName: *mut crate::System::String,
+    pub m_AssemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_ClassName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_CachedType: *mut crate::System::Type,
     pub _ValueChanged_k__BackingField: bool,
 }
@@ -28,8 +28,8 @@ for crate::UnityEngine::ResourceManagement::Util::SerializedType {
 impl crate::UnityEngine::ResourceManagement::Util::SerializedType {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -38,8 +38,8 @@ impl crate::UnityEngine::ResourceManagement::Util::SerializedType {
     }
     pub fn get_AssemblyName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_AssemblyName",
             (),
@@ -48,8 +48,8 @@ impl crate::UnityEngine::ResourceManagement::Util::SerializedType {
     }
     pub fn get_ClassName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "get_ClassName",
             (),

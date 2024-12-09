@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     }
     pub fn HandleNoteWasSpawned(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         noteSpawnInfoNetSerializable: *mut crate::GlobalNamespace::NoteSpawnInfoNetSerializable,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     }
     pub fn HandleObstacleWasSpawned(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         obstacleSpawnInfoNetSerializable: *mut crate::GlobalNamespace::ObstacleSpawnInfoNetSerializable,
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGeneratorAI {
     }
     pub fn HandleSliderWasSpawned(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         syncTime: i64,
         songTime: f32,
         sliderSpawnInfoNetSerializable: *mut crate::GlobalNamespace::SliderSpawnInfoNetSerializable,

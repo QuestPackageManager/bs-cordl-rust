@@ -20,7 +20,7 @@ pub struct HealthWarningFlowCoordinator {
     pub _platformInit: *mut crate::GlobalNamespace::IPlatformInit,
     pub _viewControllerTitles: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::HMUI::ViewController,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _selectedRegion: crate::GlobalNamespace::SelectRegionViewController_Region,
 }
@@ -291,7 +291,7 @@ for crate::GlobalNamespace::HealthWarningFlowCoordinator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct HealthWarningFlowCoordinator_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub nextScenesTransitionSetupData: *mut crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
@@ -302,7 +302,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HealthWarningFlowCoordinator+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::HealthWarningFlowCoordinator_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

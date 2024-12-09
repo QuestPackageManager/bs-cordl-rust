@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaAnyAttribute {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaAnnotated,
-    pub ns: *mut crate::System::String,
+    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
     pub processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
     pub namespaceList: *mut crate::System::Xml::Schema::NamespaceList,
 }
@@ -39,7 +39,7 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     }
     pub fn BuildNamespaceList(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +50,7 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     }
     pub fn BuildNamespaceListV1Compat(
         &mut self,
-        targetNamespace: *mut crate::System::String,
+        targetNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -112,7 +112,7 @@ impl crate::System::Xml::Schema::XmlSchemaAnyAttribute {
     }
     pub fn set_Namespace(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

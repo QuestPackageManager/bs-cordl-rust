@@ -157,7 +157,7 @@ for crate::GlobalNamespace::EventsTestGameplayManager {
 #[repr(C)]
 #[derive(Debug)]
 pub struct EventsTestGameplayManager_MockBeatToTimeConverter {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bpm: f32,
 }
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
@@ -169,7 +169,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "EventsTestGameplayManager+MockBeatToTimeConverter")]
 impl std::ops::Deref
 for crate::GlobalNamespace::EventsTestGameplayManager_MockBeatToTimeConverter {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

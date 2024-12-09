@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
         &mut self,
         selectableCell: *mut crate::HMUI::SelectableCell,
         transition: crate::HMUI::SelectableCell_TransitionType,
-        changeOwner: *mut crate::System::Object,
+        changeOwner: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

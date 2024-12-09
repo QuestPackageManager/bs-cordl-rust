@@ -46,7 +46,7 @@ impl<
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

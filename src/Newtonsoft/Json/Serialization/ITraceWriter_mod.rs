@@ -27,7 +27,7 @@ impl crate::Newtonsoft::Json::Serialization::ITraceWriter {
     pub fn Trace(
         &mut self,
         level: crate::System::Diagnostics::TraceLevel,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         ex: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnityEventBase {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Calls: *mut crate::UnityEngine::Events::InvokableCallList,
     pub m_PersistentCalls: *mut crate::UnityEngine::Events::PersistentCallGroup,
     pub m_CallsDirty: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Events+UnityEventBase")]
 impl std::ops::Deref for crate::UnityEngine::Events::UnityEventBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,9 +48,23 @@ impl crate::UnityEngine::Events::UnityEventBase {
             .invoke("DirtyPersistentCalls", ())?;
         Ok(__cordl_ret)
     }
+    pub fn FindMethod_Il2CppString_Type_PersistentListenerMode_Type1(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        listenerType: *mut crate::System::Type,
+        mode: crate::UnityEngine::Events::PersistentListenerMode,
+        argumentType: *mut crate::System::Type,
+    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
+            .invoke("FindMethod", (name, listenerType, mode, argumentType))?;
+        Ok(__cordl_ret)
+    }
     pub fn FindMethod_Impl(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         targetObjType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -71,23 +85,9 @@ impl crate::UnityEngine::Events::UnityEventBase {
             .invoke("FindMethod", (call))?;
         Ok(__cordl_ret)
     }
-    pub fn FindMethod_String_Type_PersistentListenerMode_Type1(
-        &mut self,
-        name: *mut crate::System::String,
-        listenerType: *mut crate::System::Type,
-        mode: crate::UnityEngine::Events::PersistentListenerMode,
-        argumentType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Reflection::MethodInfo> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::System::Reflection::MethodInfo = __cordl_object
-            .invoke("FindMethod", (name, listenerType, mode, argumentType))?;
-        Ok(__cordl_ret)
-    }
     pub fn GetDelegate(
         &mut self,
-        target: *mut crate::System::Object,
+        target: *mut quest_hook::libil2cpp::Il2CppObject,
         theFunction: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::Events::BaseInvokableCall,
@@ -150,7 +150,7 @@ impl crate::UnityEngine::Events::UnityEventBase {
     }
     pub fn RemoveListener(
         &mut self,
-        targetObj: *mut crate::System::Object,
+        targetObj: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Reflection::MethodInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -162,11 +162,11 @@ impl crate::UnityEngine::Events::UnityEventBase {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }

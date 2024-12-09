@@ -5,7 +5,7 @@ pub struct CollectionPool_2<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_TCollection: std::marker::PhantomData<TCollection>,
     __cordl_phantom_TItem: std::marker::PhantomData<TItem>,
 }
@@ -19,7 +19,7 @@ impl<
     TCollection: quest_hook::libil2cpp::Type,
     TItem: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::UnityEngine::Pool::CollectionPool_2<TCollection, TItem> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

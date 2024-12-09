@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct DebuggerTypeProxyAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub typeName: *mut crate::System::String,
+    pub typeName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+DebuggerTypeProxyAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

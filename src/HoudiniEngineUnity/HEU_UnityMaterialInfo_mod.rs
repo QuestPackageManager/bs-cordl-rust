@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_UnityMaterialInfo {
-    __cordl_parent: crate::System::Object,
-    pub _unityMaterialPath: *mut crate::System::String,
-    pub _substancePath: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _unityMaterialPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _substancePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _substanceIndex: i32,
 }
 #[cfg(feature = "HoudiniEngineUnity+HEU_UnityMaterialInfo")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_UnityMaterialInfo")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,8 +28,8 @@ impl std::ops::DerefMut for crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
 #[cfg(feature = "HoudiniEngineUnity+HEU_UnityMaterialInfo")]
 impl crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
     pub fn New(
-        unityMaterialPath: *mut crate::System::String,
-        substancePath: *mut crate::System::String,
+        unityMaterialPath: *mut quest_hook::libil2cpp::Il2CppString,
+        substancePath: *mut quest_hook::libil2cpp::Il2CppString,
         substanceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -40,8 +40,8 @@ impl crate::HoudiniEngineUnity::HEU_UnityMaterialInfo {
     }
     pub fn _ctor(
         &mut self,
-        unityMaterialPath: *mut crate::System::String,
-        substancePath: *mut crate::System::String,
+        unityMaterialPath: *mut quest_hook::libil2cpp::Il2CppString,
+        substancePath: *mut quest_hook::libil2cpp::Il2CppString,
         substanceIndex: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlSchemaCollectionNode {
-    __cordl_parent: crate::System::Object,
-    pub namespaceUri: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub namespaceUri: *mut quest_hook::libil2cpp::Il2CppString,
     pub schemaInfo: *mut crate::System::Xml::Schema::SchemaInfo,
     pub schema: *mut crate::System::Xml::Schema::XmlSchema,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Schema+XmlSchemaCollectionNode")]
 impl std::ops::Deref for crate::System::Xml::Schema::XmlSchemaCollectionNode {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -66,7 +66,7 @@ impl crate::System::Xml::Schema::XmlSchemaCollectionNode {
     }
     pub fn set_NamespaceURI(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

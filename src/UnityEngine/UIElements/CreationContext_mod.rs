@@ -5,7 +5,7 @@ pub struct CreationContext {
     pub _target_k__BackingField: *mut crate::UnityEngine::UIElements::VisualElement,
     pub _visualTreeAsset_k__BackingField: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
     pub _slotInsertionPoints_k__BackingField: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::VisualElement,
     >,
     pub _attributeOverrides_k__BackingField: *mut crate::System::Collections::Generic::List_1<
@@ -41,9 +41,9 @@ impl crate::UnityEngine::UIElements::CreationContext {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -63,7 +63,7 @@ impl crate::UnityEngine::UIElements::CreationContext {
     pub fn _ctor_List_1_VisualTreeAsset_VisualElement1(
         &mut self,
         slotInsertionPoints: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::UnityEngine::UIElements::VisualElement,
         >,
         attributeOverrides: *mut crate::System::Collections::Generic::List_1<
@@ -82,7 +82,7 @@ impl crate::UnityEngine::UIElements::CreationContext {
     pub fn _ctor_VisualTreeAsset_VisualElement0(
         &mut self,
         slotInsertionPoints: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::UnityEngine::UIElements::VisualElement,
         >,
         vta: *mut crate::UnityEngine::UIElements::VisualTreeAsset,
@@ -115,12 +115,12 @@ impl crate::UnityEngine::UIElements::CreationContext {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::UnityEngine::UIElements::VisualElement,
         >,
     > {
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::UnityEngine::UIElements::VisualElement,
         > = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -169,7 +169,7 @@ impl crate::UnityEngine::UIElements::CreationContext {
     pub fn set_slotInsertionPoints(
         &mut self,
         value: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::UnityEngine::UIElements::VisualElement,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

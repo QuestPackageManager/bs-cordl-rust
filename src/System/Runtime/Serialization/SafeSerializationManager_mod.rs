@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SafeSerializationManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_serializedStates: *mut crate::System::Collections::Generic::IList_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub m_savedSerializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
-    pub m_realObject: *mut crate::System::Object,
+    pub m_realObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_realType: *mut crate::System::RuntimeType,
     pub SerializeObjectState: *mut crate::System::EventHandler_1<
         *mut crate::System::Runtime::Serialization::SafeSerializationEventArgs,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::SafeSerializationManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl crate::System::Runtime::Serialization::SafeSerializationManager {
     pub const RealTypeSerializationName: &'static str = "CLR_SafeSerializationManager_RealType";
     pub fn CompleteDeserialization(
         &mut self,
-        deserializedObject: *mut crate::System::Object,
+        deserializedObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -50,7 +50,7 @@ impl crate::System::Runtime::Serialization::SafeSerializationManager {
     }
     pub fn CompleteSerialization(
         &mut self,
-        serializedObject: *mut crate::System::Object,
+        serializedObject: *mut quest_hook::libil2cpp::Il2CppObject,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -92,11 +92,11 @@ impl crate::System::Runtime::Serialization::SafeSerializationManager {
     pub fn System_Runtime_Serialization_IObjectReference_GetRealObject(
         &mut self,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke(
                 "System.Runtime.Serialization.IObjectReference.GetRealObject",
                 (context),

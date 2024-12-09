@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CmsEnvelopedGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub recipientInfoGenerators: *mut crate::System::Collections::IList,
     pub _cordl_rand: *mut crate::Org::BouncyCastle::Security::SecureRandom,
     pub unprotectedAttributeGenerator: *mut crate::Org::BouncyCastle::Cms::CmsAttributeTableGenerator,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+CmsEnvelopedGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -31,7 +31,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     pub const IdeaCbc: &'static str = "1.3.6.1.4.1.188.7.1.1.2";
     pub fn AddKekRecipient_Il2CppArray0(
         &mut self,
-        keyAlgorithm: *mut crate::System::String,
+        keyAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
         key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
         keyIdentifier: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -44,7 +44,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     }
     pub fn AddKekRecipient_KekIdentifier1(
         &mut self,
-        keyAlgorithm: *mut crate::System::String,
+        keyAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
         key: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
         kekIdentifier: *mut crate::Org::BouncyCastle::Asn1::Cms::KekIdentifier,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -57,11 +57,11 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     }
     pub fn AddKeyAgreementRecipient(
         &mut self,
-        agreementAlgorithm: *mut crate::System::String,
+        agreementAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
         senderPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         senderPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         recipientCert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
-        cekWrapAlgorithm: *mut crate::System::String,
+        cekWrapAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,11 +81,11 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     }
     pub fn AddKeyAgreementRecipients(
         &mut self,
-        agreementAlgorithm: *mut crate::System::String,
+        agreementAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
         senderPrivateKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         senderPublicKey: *mut crate::Org::BouncyCastle::Crypto::AsymmetricKeyParameter,
         recipientCerts: *mut crate::System::Collections::ICollection,
-        cekWrapAlgorithm: *mut crate::System::String,
+        cekWrapAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     pub fn AddPasswordRecipient(
         &mut self,
         pbeKey: *mut crate::Org::BouncyCastle::Cms::CmsPbeKey,
-        kekAlgorithmOid: *mut crate::System::String,
+        kekAlgorithmOid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -151,7 +151,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     }
     pub fn GenerateAsn1Parameters(
         &mut self,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
         encKeyBytes: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
@@ -165,7 +165,7 @@ impl crate::Org::BouncyCastle::Cms::CmsEnvelopedGenerator {
     }
     pub fn GetAlgorithmIdentifier(
         &mut self,
-        encryptionOid: *mut crate::System::String,
+        encryptionOid: *mut quest_hook::libil2cpp::Il2CppString,
         encKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
         asn1Params: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
         cipherParameters: quest_hook::libil2cpp::ByRefMut<

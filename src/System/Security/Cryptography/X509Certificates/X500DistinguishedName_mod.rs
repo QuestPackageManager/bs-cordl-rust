@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct X500DistinguishedName {
     __cordl_parent: crate::System::Security::Cryptography::AsnEncodedData,
-    pub name: *mut crate::System::String,
+    pub name: *mut quest_hook::libil2cpp::Il2CppString,
     pub canonEncoding: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
 #[cfg(feature = "System+Security+Cryptography+X509Certificates+X500DistinguishedName")]
@@ -32,11 +32,11 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
     pub fn Decode(
         &mut self,
         flag: crate::System::Security::Cryptography::X509Certificates::X500DistinguishedNameFlags,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Decode", (flag))?;
         Ok(__cordl_ret)
     }
@@ -53,11 +53,11 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
     pub fn Format(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Format", (multiLine))?;
         Ok(__cordl_ret)
     }
@@ -83,11 +83,11 @@ impl crate::System::Security::Cryptography::X509Certificates::X500DistinguishedN
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

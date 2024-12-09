@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Painter2D {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ctx: *mut crate::UnityEngine::UIElements::MeshGenerationContext,
     pub m_DetachedAllocator: *mut crate::UnityEngine::UIElements::UIR::DetachedAllocator,
     pub m_Handle: crate::UnityEngine::UIElements::SafeHandleAccess,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+Painter2D")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::Painter2D {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

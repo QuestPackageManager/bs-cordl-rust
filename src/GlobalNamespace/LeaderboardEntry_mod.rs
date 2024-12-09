@@ -38,7 +38,7 @@ impl crate::GlobalNamespace::LeaderboardEntry {
     pub fn SetScore(
         &mut self,
         score: i32,
-        playerName: *mut crate::System::String,
+        playerName: *mut quest_hook::libil2cpp::Il2CppString,
         rank: i32,
         highlighted: bool,
         showSeparator: bool,

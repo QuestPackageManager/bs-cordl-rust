@@ -5,7 +5,7 @@ pub struct BaseListView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
     pub m_ShowBoundCollectionSize: bool,
     pub m_ShowFoldoutHeader: bool,
-    pub m_HeaderTitle: *mut crate::System::String,
+    pub m_HeaderTitle: *mut quest_hook::libil2cpp::Il2CppString,
     pub itemsAdded: *mut crate::System::Action_1<
         *mut crate::System::Collections::Generic::IEnumerable_1<i32>,
     >,
@@ -29,7 +29,7 @@ pub struct BaseListView {
     pub m_ItemsSourceSizeChangedCallback: *mut crate::System::Action,
     pub m_ReorderMode: crate::UnityEngine::UIElements::ListViewReorderMode,
     pub reorderModeChanged: *mut crate::System::Action,
-    pub m_MaxMultiEditStr: *mut crate::System::String,
+    pub m_MaxMultiEditStr: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+BaseListView")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -141,7 +141,7 @@ impl crate::UnityEngine::UIElements::BaseListView {
     pub fn OnArraySizeFieldChanged(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::ChangeEvent_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -348,7 +348,7 @@ impl crate::UnityEngine::UIElements::BaseListView {
     }
     pub fn set_headerTitle(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataStrobeFilterTransform {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapDataStrobeFilterTransform")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,7 +43,7 @@ for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform {
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapDataStrobeFilterTransform_StrobeStreakData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub isActive: bool,
     pub strobeStartTime: f32,
     pub startColorType: crate::GlobalNamespace::EnvironmentColorType,
@@ -62,7 +62,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "BeatmapDataStrobeFilterTransform+StrobeStreakData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapDataStrobeFilterTransform_StrobeStreakData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

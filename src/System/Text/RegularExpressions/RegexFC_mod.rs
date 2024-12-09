@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexFC {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cc: *mut crate::System::Text::RegularExpressions::RegexCharClass,
     pub _nullable: bool,
     pub _CaseInsensitive_k__BackingField: bool,
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexFC")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexFC {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -41,16 +41,16 @@ impl crate::System::Text::RegularExpressions::RegexFC {
     pub fn GetFirstChars(
         &mut self,
         culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetFirstChars", (culture))?;
         Ok(__cordl_ret)
     }
-    pub fn New_String__cordl_bool__cordl_bool2(
-        charClass: *mut crate::System::String,
+    pub fn New_Il2CppString__cordl_bool__cordl_bool2(
+        charClass: *mut quest_hook::libil2cpp::Il2CppString,
         nullable: bool,
         caseInsensitive: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -79,9 +79,9 @@ impl crate::System::Text::RegularExpressions::RegexFC {
             .invoke_void(".ctor", (ch, _cordl_not, nullable, caseInsensitive))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String__cordl_bool__cordl_bool2(
+    pub fn _ctor_Il2CppString__cordl_bool__cordl_bool2(
         &mut self,
-        charClass: *mut crate::System::String,
+        charClass: *mut quest_hook::libil2cpp::Il2CppString,
         nullable: bool,
         caseInsensitive: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct NtlmSession {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub message: *mut crate::Mono::Security::Protocol::Ntlm::MessageBase,
 }
 #[cfg(feature = "Mono+Http+NtlmSession")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Http+NtlmSession")]
 impl std::ops::Deref for crate::Mono::Http::NtlmSession {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Mono::Http::NtlmSession {
 impl crate::Mono::Http::NtlmSession {
     pub fn Authenticate(
         &mut self,
-        challenge: *mut crate::System::String,
+        challenge: *mut quest_hook::libil2cpp::Il2CppString,
         webRequest: *mut crate::System::Net::WebRequest,
         credentials: *mut crate::System::Net::ICredentials,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Net::Authorization> {

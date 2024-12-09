@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Reflection::FieldInfo {
 impl crate::System::Reflection::FieldInfo {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -51,13 +51,13 @@ impl crate::System::Reflection::FieldInfo {
     pub fn GetPseudoCustomAttributes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("GetPseudoCustomAttributes", ())?;
         Ok(__cordl_ret)
     }
@@ -78,22 +78,22 @@ impl crate::System::Reflection::FieldInfo {
     }
     pub fn GetRawConstantValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetRawConstantValue", ())?;
         Ok(__cordl_ret)
     }
     pub fn GetValue(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (obj))?;
         Ok(__cordl_ret)
     }
@@ -107,7 +107,7 @@ impl crate::System::Reflection::FieldInfo {
     pub fn SetValueDirect(
         &mut self,
         obj: crate::System::TypedReference,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,8 +118,8 @@ impl crate::System::Reflection::FieldInfo {
     }
     pub fn SetValue_BindingFlags_Binder_CultureInfo1(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
         culture: *mut crate::System::Globalization::CultureInfo,
@@ -131,10 +131,10 @@ impl crate::System::Reflection::FieldInfo {
             .invoke("SetValue", (obj, value, invokeAttr, binder, culture))?;
         Ok(__cordl_ret)
     }
-    pub fn SetValue_Object_Object0(
+    pub fn SetValue_Il2CppObject_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

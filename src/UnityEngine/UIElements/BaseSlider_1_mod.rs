@@ -203,7 +203,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         start: TValueType,
         end: TValueType,
         direction: crate::UnityEngine::UIElements::SliderDirection,
@@ -297,7 +297,7 @@ impl<
     pub fn OnTextFieldValueChange(
         &mut self,
         evt: *mut crate::UnityEngine::UIElements::ChangeEvent_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -327,8 +327,8 @@ impl<
     }
     pub fn ParseStringToValue(
         &mut self,
-        previousValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
+        previousValue: *mut quest_hook::libil2cpp::Il2CppString,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<TValueType>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -595,7 +595,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         start: TValueType,
         end: TValueType,
         direction: crate::UnityEngine::UIElements::SliderDirection,

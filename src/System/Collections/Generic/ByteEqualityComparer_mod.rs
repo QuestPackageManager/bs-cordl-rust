@@ -25,9 +25,9 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::ByteEqualityCom
 }
 #[cfg(feature = "System+Collections+Generic+ByteEqualityComparer")]
 impl crate::System::Collections::Generic::ByteEqualityComparer {
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

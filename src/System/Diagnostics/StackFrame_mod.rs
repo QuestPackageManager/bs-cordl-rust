@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StackFrame {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ilOffset: i32,
     pub nativeOffset: i32,
     pub methodAddress: i64,
     pub methodIndex: u32,
     pub methodBase: *mut crate::System::Reflection::MethodBase,
-    pub fileName: *mut crate::System::String,
+    pub fileName: *mut quest_hook::libil2cpp::Il2CppString,
     pub lineNumber: i32,
     pub columnNumber: i32,
-    pub internalMethodName: *mut crate::System::String,
+    pub internalMethodName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Diagnostics+StackFrame")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+StackFrame")]
 impl std::ops::Deref for crate::System::Diagnostics::StackFrame {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -43,11 +43,11 @@ impl crate::System::Diagnostics::StackFrame {
     }
     pub fn GetFileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetFileName", ())?;
         Ok(__cordl_ret)
     }
@@ -60,11 +60,11 @@ impl crate::System::Diagnostics::StackFrame {
     }
     pub fn GetInternalMethodName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetInternalMethodName", ())?;
         Ok(__cordl_ret)
     }
@@ -101,11 +101,11 @@ impl crate::System::Diagnostics::StackFrame {
     }
     pub fn GetSecureFileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetSecureFileName", ())?;
         Ok(__cordl_ret)
     }
@@ -128,11 +128,11 @@ impl crate::System::Diagnostics::StackFrame {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }

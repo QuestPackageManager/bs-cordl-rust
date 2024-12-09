@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct XmlSchemaImport {
     __cordl_parent: crate::System::Xml::Schema::XmlSchemaExternal,
-    pub ns: *mut crate::System::String,
+    pub ns: *mut quest_hook::libil2cpp::Il2CppString,
     pub annotation: *mut crate::System::Xml::Schema::XmlSchemaAnnotation,
 }
 #[cfg(feature = "System+Xml+Schema+XmlSchemaImport")]
@@ -56,17 +56,17 @@ impl crate::System::Xml::Schema::XmlSchemaImport {
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Namespace(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

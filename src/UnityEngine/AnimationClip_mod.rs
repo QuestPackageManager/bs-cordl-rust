@@ -37,7 +37,7 @@ impl crate::UnityEngine::AnimationClip {
     }
     pub fn AddEventInternal(
         &mut self,
-        evt: *mut crate::System::Object,
+        evt: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,9 +97,9 @@ impl crate::UnityEngine::AnimationClip {
     }
     pub fn SetCurve(
         &mut self,
-        relativePath: *mut crate::System::String,
+        relativePath: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
         curve: *mut crate::UnityEngine::AnimationCurve,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

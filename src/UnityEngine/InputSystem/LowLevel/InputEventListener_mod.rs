@@ -47,7 +47,7 @@ impl crate::UnityEngine::InputSystem::LowLevel::InputEventListener {
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventListener_DisposableObserver {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub observer: *mut crate::System::IObserver_1<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     >,
@@ -65,7 +65,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObserver {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +127,7 @@ for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_DisposableObse
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputEventListener_ObserverState {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub observers: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         *mut crate::System::IObserver_1<
             crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
@@ -147,7 +147,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+LowLevel+InputEventListener+ObserverState")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::LowLevel::InputEventListener_ObserverState {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -12,7 +12,7 @@ pub struct ArmoredOutputStream {
     pub start: bool,
     pub clearText: bool,
     pub newLine: bool,
-    pub _cordl_type: *mut crate::System::String,
+    pub _cordl_type: *mut quest_hook::libil2cpp::Il2CppString,
     pub headers: *mut crate::System::Collections::IDictionary,
 }
 #[cfg(feature = "Org+BouncyCastle+Bcpg+ArmoredOutputStream")]
@@ -37,8 +37,8 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream 
 impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
     pub fn AddHeader(
         &mut self,
-        name: *mut crate::System::String,
-        val: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -80,7 +80,7 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
     }
     pub fn DoWrite(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -130,8 +130,8 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
     }
     pub fn SetHeader(
         &mut self,
-        name: *mut crate::System::String,
-        val: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        val: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,8 +153,8 @@ impl crate::Org::BouncyCastle::Bcpg::ArmoredOutputStream {
     }
     pub fn WriteHeaderEntry(
         &mut self,
-        name: *mut crate::System::String,
-        v: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        v: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

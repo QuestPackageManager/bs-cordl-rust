@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
     pub type GetAdditionalContentEntitlementsResult = crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult;
     pub fn DisplayCategoryBrowseDialogAsync(
         &mut self,
-        categoryLabel: *mut crate::System::String,
+        categoryLabel: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -52,7 +52,7 @@ impl crate::GlobalNamespace::ISonyCommerceHelper {
     }
     pub fn DisplayProductBrowseDialogAsync(
         &mut self,
-        productLabel: *mut crate::System::String,
+        productLabel: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -106,7 +106,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::ISonyCommerce
 pub struct ISonyCommerceHelper_AdditionalContentEntitlementsAsyncResult {
     pub result: crate::GlobalNamespace::ISonyCommerceHelper_GetAdditionalContentEntitlementsResult,
     pub entitlementsLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "ISonyCommerceHelper+AdditionalContentEntitlementsAsyncResult")]

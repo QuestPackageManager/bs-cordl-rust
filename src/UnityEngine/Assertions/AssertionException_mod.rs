@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AssertionException {
     __cordl_parent: crate::System::Exception,
-    pub m_UserMessage: *mut crate::System::String,
+    pub m_UserMessage: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+Assertions+AssertionException")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::UnityEngine::Assertions::AssertionException {
 #[cfg(feature = "UnityEngine+Assertions+AssertionException")]
 impl crate::UnityEngine::Assertions::AssertionException {
     pub fn New(
-        message: *mut crate::System::String,
-        userMessage: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        userMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,8 +37,8 @@ impl crate::UnityEngine::Assertions::AssertionException {
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
-        userMessage: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        userMessage: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -49,11 +49,11 @@ impl crate::UnityEngine::Assertions::AssertionException {
     }
     pub fn get_Message(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Message", ())?;
         Ok(__cordl_ret)
     }

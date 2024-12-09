@@ -2,12 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputFieldDataBinder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindings: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Tuple_4<
             *mut crate::UnityEngine::UI::InputField,
             *mut crate::GlobalNamespace::IObservableChange,
-            *mut crate::UnityEngine::Events::UnityAction_1<*mut crate::System::String>,
+            *mut crate::UnityEngine::Events::UnityAction_1<
+                *mut quest_hook::libil2cpp::Il2CppString,
+            >,
             *mut crate::System::Action,
         >,
     >,
@@ -19,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HMUI+InputFieldDataBinder")]
 impl std::ops::Deref for crate::HMUI::InputFieldDataBinder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,8 +49,8 @@ impl crate::HMUI::InputFieldDataBinder {
             *mut crate::System::Tuple_4<
                 *mut crate::UnityEngine::UI::InputField,
                 T0,
-                *mut crate::System::Func_2<*mut crate::System::String, T1>,
-                *mut crate::System::Func_2<T1, *mut crate::System::String>,
+                *mut crate::System::Func_2<*mut quest_hook::libil2cpp::Il2CppString, T1>,
+                *mut crate::System::Func_2<T1, *mut quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

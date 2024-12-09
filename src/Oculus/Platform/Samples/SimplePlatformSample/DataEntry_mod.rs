@@ -47,7 +47,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn SubmitCommand(
         &mut self,
-        command: *mut crate::System::String,
+        command: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -137,8 +137,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn addCountAchievement(
         &mut self,
-        achievementName: *mut crate::System::String,
-        count: *mut crate::System::String,
+        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
+        count: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -149,8 +149,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn addFieldsAchievement(
         &mut self,
-        achievementName: *mut crate::System::String,
-        fields: *mut crate::System::String,
+        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
+        fields: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -171,7 +171,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn getAchievementDefinition(
         &mut self,
-        achievementName: *mut crate::System::String,
+        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -182,7 +182,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn getAchievementProgress(
         &mut self,
-        achievementName: *mut crate::System::String,
+        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -217,7 +217,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn getLeaderboardEntries(
         &mut self,
-        leaderboardName: *mut crate::System::String,
+        leaderboardName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -248,7 +248,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn getUser(
         &mut self,
-        userID: *mut crate::System::String,
+        userID: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -317,7 +317,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn printOutputLine(
         &mut self,
-        newLine: *mut crate::System::String,
+        newLine: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -328,7 +328,7 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn unlockAchievement(
         &mut self,
-        achievementName: *mut crate::System::String,
+        achievementName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -352,8 +352,8 @@ impl crate::Oculus::Platform::Samples::SimplePlatformSample::DataEntry {
     }
     pub fn writeLeaderboardEntry(
         &mut self,
-        leaderboardName: *mut crate::System::String,
-        value: *mut crate::System::String,
+        leaderboardName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

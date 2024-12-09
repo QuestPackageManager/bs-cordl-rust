@@ -25,6 +25,17 @@ for crate::UnityEngine::UIElements::ManipulatorActivationFilter {
 }
 #[cfg(feature = "UnityEngine+UIElements+ManipulatorActivationFilter")]
 impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_ManipulatorActivationFilter1(
         &mut self,
         other: crate::UnityEngine::UIElements::ManipulatorActivationFilter,
@@ -33,17 +44,6 @@ impl crate::UnityEngine::UIElements::ManipulatorActivationFilter {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }

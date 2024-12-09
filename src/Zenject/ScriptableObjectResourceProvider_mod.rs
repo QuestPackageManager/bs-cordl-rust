@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ScriptableObjectResourceProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _resourceType: *mut crate::System::Type,
-    pub _resourcePath: *mut crate::System::String,
+    pub _resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _extraArguments: *mut crate::System::Collections::Generic::List_1<
         crate::Zenject::TypeValuePair,
     >,
     pub _createNew: bool,
-    pub _concreteIdentifier: *mut crate::System::Object,
+    pub _concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _instantiateCallback: *mut crate::System::Action_2<
         *mut crate::Zenject::InjectContext,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+ScriptableObjectResourceProvider")]
 impl std::ops::Deref for crate::Zenject::ScriptableObjectResourceProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -46,7 +46,7 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -71,17 +71,17 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
         Ok(__cordl_ret)
     }
     pub fn New(
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         resourceType: *mut crate::System::Type,
         container: *mut crate::Zenject::DiContainer,
         extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::Zenject::TypeValuePair,
         >,
         createNew: bool,
-        concreteIdentifier: *mut crate::System::Object,
+        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateCallback: *mut crate::System::Action_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,17 +103,17 @@ impl crate::Zenject::ScriptableObjectResourceProvider {
     }
     pub fn _ctor(
         &mut self,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         resourceType: *mut crate::System::Type,
         container: *mut crate::Zenject::DiContainer,
         extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::Zenject::TypeValuePair,
         >,
         createNew: bool,
-        concreteIdentifier: *mut crate::System::Object,
+        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateCallback: *mut crate::System::Action_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

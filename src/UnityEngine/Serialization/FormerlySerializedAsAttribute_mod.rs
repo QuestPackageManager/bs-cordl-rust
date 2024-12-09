@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct FormerlySerializedAsAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub m_oldName: *mut crate::System::String,
+    pub m_oldName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -29,7 +29,7 @@ for crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
 #[cfg(feature = "UnityEngine+Serialization+FormerlySerializedAsAttribute")]
 impl crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     pub fn New(
-        oldName: *mut crate::System::String,
+        oldName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -39,7 +39,7 @@ impl crate::UnityEngine::Serialization::FormerlySerializedAsAttribute {
     }
     pub fn _ctor(
         &mut self,
-        oldName: *mut crate::System::String,
+        oldName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

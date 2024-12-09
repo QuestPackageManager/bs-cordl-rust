@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HeaderInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsRequestRestricted: bool,
     pub IsResponseRestricted: bool,
     pub Parser: *mut crate::System::Net::HeaderParser,
-    pub HeaderName: *mut crate::System::String,
+    pub HeaderName: *mut quest_hook::libil2cpp::Il2CppString,
     pub AllowMultiValues: bool,
 }
 #[cfg(feature = "System+Net+HeaderInfo")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HeaderInfo")]
 impl std::ops::Deref for crate::System::Net::HeaderInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Net::HeaderInfo {
 #[cfg(feature = "System+Net+HeaderInfo")]
 impl crate::System::Net::HeaderInfo {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         requestRestricted: bool,
         responseRestricted: bool,
         multi: bool,
@@ -47,7 +47,7 @@ impl crate::System::Net::HeaderInfo {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         requestRestricted: bool,
         responseRestricted: bool,
         multi: bool,

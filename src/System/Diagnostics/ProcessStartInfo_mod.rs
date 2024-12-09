@@ -2,19 +2,19 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ProcessStartInfo {
-    __cordl_parent: crate::System::Object,
-    pub fileName: *mut crate::System::String,
-    pub arguments: *mut crate::System::String,
-    pub directory: *mut crate::System::String,
-    pub verb: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub fileName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub arguments: *mut quest_hook::libil2cpp::Il2CppString,
+    pub directory: *mut quest_hook::libil2cpp::Il2CppString,
+    pub verb: *mut quest_hook::libil2cpp::Il2CppString,
     pub windowStyle: crate::System::Diagnostics::ProcessWindowStyle,
     pub errorDialog: bool,
     pub errorDialogParentHandle: crate::System::IntPtr,
     pub useShellExecute: bool,
-    pub userName: *mut crate::System::String,
-    pub domain: *mut crate::System::String,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub domain: *mut quest_hook::libil2cpp::Il2CppString,
     pub password: *mut crate::System::Security::SecureString,
-    pub passwordInClearText: *mut crate::System::String,
+    pub passwordInClearText: *mut quest_hook::libil2cpp::Il2CppString,
     pub loadUserProfile: bool,
     pub redirectStandardInput: bool,
     pub redirectStandardOutput: bool,
@@ -25,11 +25,11 @@ pub struct ProcessStartInfo {
     pub weakParentProcess: *mut crate::System::WeakReference,
     pub environmentVariables: *mut crate::System::Collections::Specialized::StringDictionary,
     pub _argumentList: *mut crate::System::Collections::ObjectModel::Collection_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub environment: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _StandardInputEncoding_k__BackingField: *mut crate::System::Text::Encoding,
 }
@@ -40,7 +40,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Diagnostics+ProcessStartInfo")]
 impl std::ops::Deref for crate::System::Diagnostics::ProcessStartInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -94,34 +94,34 @@ impl crate::System::Diagnostics::ProcessStartInfo {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::ObjectModel::Collection_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::ObjectModel::Collection_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ArgumentList", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Arguments(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Arguments", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_Domain(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Domain", ())?;
         Ok(__cordl_ret)
     }
@@ -139,11 +139,11 @@ impl crate::System::Diagnostics::ProcessStartInfo {
     }
     pub fn get_FileName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_FileName", ())?;
         Ok(__cordl_ret)
     }
@@ -231,27 +231,27 @@ impl crate::System::Diagnostics::ProcessStartInfo {
     }
     pub fn get_UserName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_UserName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_WorkingDirectory(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_WorkingDirectory", ())?;
         Ok(__cordl_ret)
     }
     pub fn set_Arguments(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -262,7 +262,7 @@ impl crate::System::Diagnostics::ProcessStartInfo {
     }
     pub fn set_FileName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

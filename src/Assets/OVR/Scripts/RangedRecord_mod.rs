@@ -29,8 +29,8 @@ impl std::ops::DerefMut for crate::Assets::OVR::Scripts::RangedRecord {
 impl crate::Assets::OVR::Scripts::RangedRecord {
     pub fn New(
         order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        cat: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         val: f32,
         minVal: f32,
         maxVal: f32,
@@ -44,8 +44,8 @@ impl crate::Assets::OVR::Scripts::RangedRecord {
     pub fn _ctor(
         &mut self,
         order: i32,
-        cat: *mut crate::System::String,
-        msg: *mut crate::System::String,
+        cat: *mut quest_hook::libil2cpp::Il2CppString,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         val: f32,
         minVal: f32,
         maxVal: f32,

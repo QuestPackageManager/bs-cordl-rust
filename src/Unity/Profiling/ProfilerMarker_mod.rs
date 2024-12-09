@@ -36,26 +36,26 @@ impl crate::Unity::Profiling::ProfilerMarker {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_ProfilerCategory_String1(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        category: crate::Unity::Profiling::ProfilerCategory,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            ".ctor",
-            (category, name),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String0(
-        &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             ".ctor",
             (name),
+        )?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_ProfilerCategory_Il2CppString1(
+        &mut self,
+        category: crate::Unity::Profiling::ProfilerCategory,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            ".ctor",
+            (category, name),
         )?;
         Ok(__cordl_ret)
     }

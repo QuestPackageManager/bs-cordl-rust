@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UriParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Flags: crate::System::UriSyntaxFlags,
     pub m_UpdatableFlags: crate::System::UriSyntaxFlags,
     pub m_UpdatableFlagsUsed: bool,
     pub m_Port: i32,
-    pub m_Scheme: *mut crate::System::String,
+    pub m_Scheme: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+UriParser")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UriParser")]
 impl std::ops::Deref for crate::System::UriParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,11 +40,11 @@ impl crate::System::UriParser {
         uri: *mut crate::System::Uri,
         components: crate::System::UriComponents,
         format: crate::System::UriFormat,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetComponents", (uri, components, format))?;
         Ok(__cordl_ret)
     }
@@ -77,11 +77,11 @@ impl crate::System::UriParser {
         thisUri: *mut crate::System::Uri,
         uriComponents: crate::System::UriComponents,
         uriFormat: crate::System::UriFormat,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalGetComponents", (thisUri, uriComponents, uriFormat))?;
         Ok(__cordl_ret)
     }
@@ -125,11 +125,11 @@ impl crate::System::UriParser {
         parsingError: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::UriFormatException,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalResolve", (thisBaseUri, uriLink, parsingError))?;
         Ok(__cordl_ret)
     }
@@ -227,11 +227,11 @@ impl crate::System::UriParser {
         parsingError: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::UriFormatException,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Resolve", (baseUri, relativeUri, parsingError))?;
         Ok(__cordl_ret)
     }
@@ -272,11 +272,11 @@ impl crate::System::UriParser {
     }
     pub fn get_SchemeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_SchemeName", ())?;
         Ok(__cordl_ret)
     }

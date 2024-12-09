@@ -34,9 +34,9 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        p: *mut crate::System::Object,
+        p: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -116,7 +116,7 @@ impl crate::UnityEngine::Playables::PlayableOutputHandle {
         &mut self,
         origin: crate::UnityEngine::Playables::PlayableHandle,
         notification: *mut crate::UnityEngine::Playables::INotification,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

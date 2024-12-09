@@ -5,7 +5,7 @@ pub struct XmlRegisteredNonCachedStream {
     __cordl_parent: crate::System::IO::Stream,
     pub stream: *mut crate::System::IO::Stream,
     pub downloadManager: *mut crate::System::Xml::XmlDownloadManager,
-    pub host: *mut crate::System::String,
+    pub host: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+XmlRegisteredNonCachedStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -33,7 +33,7 @@ impl crate::System::Xml::XmlRegisteredNonCachedStream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,7 +48,7 @@ impl crate::System::Xml::XmlRegisteredNonCachedStream {
         offset: i32,
         count: i32,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -112,7 +112,7 @@ impl crate::System::Xml::XmlRegisteredNonCachedStream {
     pub fn New(
         stream: *mut crate::System::IO::Stream,
         downloadManager: *mut crate::System::Xml::XmlDownloadManager,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -189,7 +189,7 @@ impl crate::System::Xml::XmlRegisteredNonCachedStream {
         &mut self,
         stream: *mut crate::System::IO::Stream,
         downloadManager: *mut crate::System::Xml::XmlDownloadManager,
-        host: *mut crate::System::String,
+        host: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

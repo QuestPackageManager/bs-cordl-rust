@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Deeplink {
-    __cordl_parent: crate::System::Object,
-    pub Destination: *mut crate::System::String,
-    pub LevelID: *mut crate::System::String,
-    pub PackID: *mut crate::System::String,
-    pub Difficulty: *mut crate::System::String,
-    pub Characteristic: *mut crate::System::String,
-    pub MultiplayerLobbyCode: *mut crate::System::String,
-    pub MultiplayerSecret: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Destination: *mut quest_hook::libil2cpp::Il2CppString,
+    pub LevelID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PackID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Difficulty: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Characteristic: *mut quest_hook::libil2cpp::Il2CppString,
+    pub MultiplayerLobbyCode: *mut quest_hook::libil2cpp::Il2CppString,
+    pub MultiplayerSecret: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Deeplink")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Deeplink")]
 impl std::ops::Deref for crate::GlobalNamespace::Deeplink {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

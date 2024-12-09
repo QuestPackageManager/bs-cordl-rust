@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PasswordRecipientInfoGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub keyDerivationAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
     pub keyEncryptionKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::KeyParameter,
-    pub keyEncryptionKeyOID: *mut crate::System::String,
+    pub keyEncryptionKeyOID: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInfoGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Cms+PasswordRecipientInfoGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Cms::PasswordRecipientInfoGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -84,7 +84,7 @@ impl crate::Org::BouncyCastle::Cms::PasswordRecipientInfoGenerator {
     }
     pub fn set_KeyEncryptionKeyOID(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

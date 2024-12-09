@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct HeaderAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub header: *mut crate::System::String,
+    pub header: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+HeaderAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::HeaderAttribute {
 #[cfg(feature = "UnityEngine+HeaderAttribute")]
 impl crate::UnityEngine::HeaderAttribute {
     pub fn New(
-        header: *mut crate::System::String,
+        header: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::HeaderAttribute {
     }
     pub fn _ctor(
         &mut self,
-        header: *mut crate::System::String,
+        header: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

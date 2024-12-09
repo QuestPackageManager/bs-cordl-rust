@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct BooleanQueryExpression {
     __cordl_parent: crate::Newtonsoft::Json::Linq::JsonPath::QueryExpression,
-    pub Left: *mut crate::System::Object,
-    pub Right: *mut crate::System::Object,
+    pub Left: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub Right: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "Newtonsoft+Json+Linq+JsonPath+BooleanQueryExpression")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -33,7 +33,7 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
         &mut self,
         root: *mut crate::Newtonsoft::Json::Linq::JToken,
         t: *mut crate::Newtonsoft::Json::Linq::JToken,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::Newtonsoft::Json::Linq::JToken,
@@ -74,8 +74,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
     }
     pub fn New(
         _cordl_operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
-        left: *mut crate::System::Object,
-        right: *mut crate::System::Object,
+        left: *mut quest_hook::libil2cpp::Il2CppObject,
+        right: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -86,8 +86,8 @@ impl crate::Newtonsoft::Json::Linq::JsonPath::BooleanQueryExpression {
     pub fn _ctor(
         &mut self,
         _cordl_operator: crate::Newtonsoft::Json::Linq::JsonPath::QueryOperator,
-        left: *mut crate::System::Object,
-        right: *mut crate::System::Object,
+        left: *mut quest_hook::libil2cpp::Il2CppObject,
+        right: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -26,7 +26,7 @@ pub struct NetworkPlayersTableView {
         *mut crate::GlobalNamespace::NetworkPlayersTableView_CellInfo,
     >,
     pub _selectedCellIndex: i32,
-    pub _selectedPlayerID: *mut crate::System::String,
+    pub _selectedPlayerID: *mut quest_hook::libil2cpp::Il2CppString,
     pub _selectedCellHasOptions: bool,
 }
 #[cfg(feature = "NetworkPlayersTableView")]
@@ -59,7 +59,7 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
         players: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::GlobalNamespace::INetworkPlayer,
         >,
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -121,8 +121,8 @@ impl crate::GlobalNamespace::NetworkPlayersTableView {
         otherPlayers: *mut crate::System::Collections::Generic::IEnumerable_1<
             *mut crate::GlobalNamespace::INetworkPlayer,
         >,
-        myPartyTitle: *mut crate::System::String,
-        otherPlayersTitle: *mut crate::System::String,
+        myPartyTitle: *mut quest_hook::libil2cpp::Il2CppString,
+        otherPlayersTitle: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -159,9 +159,9 @@ for crate::GlobalNamespace::NetworkPlayersTableView {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NetworkPlayersTableView_CellInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: crate::GlobalNamespace::CellInfo_NetworkPlayersTableView_CellType,
-    pub headerString: *mut crate::System::String,
+    pub headerString: *mut quest_hook::libil2cpp::Il2CppString,
     pub player: *mut crate::GlobalNamespace::INetworkPlayer,
     pub lastCellInParty: bool,
 }
@@ -173,7 +173,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "NetworkPlayersTableView+CellInfo")]
 impl std::ops::Deref for crate::GlobalNamespace::NetworkPlayersTableView_CellInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

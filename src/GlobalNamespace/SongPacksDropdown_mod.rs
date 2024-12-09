@@ -8,7 +8,7 @@ pub struct SongPacksDropdown {
     pub didSelectCellWithIdxEvent: *mut crate::System::Action_1<i32>,
     pub _initialized: bool,
     pub _songPackSerializedNames: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "SongPacksDropdown")]
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::SongPacksDropdown {
     pub fn SetOverrideSongPacks(
         &mut self,
         songPackSerializedNames: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

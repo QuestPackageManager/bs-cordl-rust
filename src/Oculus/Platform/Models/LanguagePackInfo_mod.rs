@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LanguagePackInfo {
-    __cordl_parent: crate::System::Object,
-    pub EnglishName: *mut crate::System::String,
-    pub NativeName: *mut crate::System::String,
-    pub Tag: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub EnglishName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NativeName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Tag: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+LanguagePackInfo")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+LanguagePackInfo")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::LanguagePackInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

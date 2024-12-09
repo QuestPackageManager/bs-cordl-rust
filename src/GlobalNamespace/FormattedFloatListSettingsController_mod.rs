@@ -4,7 +4,7 @@
 pub struct FormattedFloatListSettingsController {
     __cordl_parent: crate::GlobalNamespace::ListSettingsController,
     pub _values: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
-    pub _formattingString: *mut crate::System::String,
+    pub _formattingString: *mut quest_hook::libil2cpp::Il2CppString,
     pub valueType: crate::GlobalNamespace::FormattedFloatListSettingsController_ValueType,
     pub valueDidChangeEvent: *mut crate::System::Action_2<
         *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
@@ -84,11 +84,11 @@ impl crate::GlobalNamespace::FormattedFloatListSettingsController {
     pub fn TextForValue(
         &mut self,
         idx: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TextForValue", (idx))?;
         Ok(__cordl_ret)
     }

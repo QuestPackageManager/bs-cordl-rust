@@ -44,8 +44,8 @@ impl crate::Org::BouncyCastle::Asn1::Esf::SignerAttribute {
             .invoke_void(".ctor", (certifiedAttributes))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object0(
-        obj: *mut crate::System::Object,
+    pub fn New_Il2CppObject0(
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -85,9 +85,9 @@ impl crate::Org::BouncyCastle::Asn1::Esf::SignerAttribute {
             .invoke(".ctor", (certifiedAttributes))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object0(
+    pub fn _ctor_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodProviderUntyped {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _method: *mut crate::System::Func_2<
         *mut crate::Zenject::InjectContext,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Zenject+MethodProviderUntyped")]
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+MethodProviderUntyped")]
 impl std::ops::Deref for crate::Zenject::MethodProviderUntyped {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -37,7 +37,7 @@ impl crate::Zenject::MethodProviderUntyped {
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -64,7 +64,7 @@ impl crate::Zenject::MethodProviderUntyped {
     pub fn New(
         method: *mut crate::System::Func_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -78,7 +78,7 @@ impl crate::Zenject::MethodProviderUntyped {
         &mut self,
         method: *mut crate::System::Func_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
         container: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

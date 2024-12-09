@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TermInfoReader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub boolSize: i32,
     pub numSize: i32,
     pub strOffsets: i32,
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+TermInfoReader")]
 impl std::ops::Deref for crate::System::TermInfoReader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,11 +56,11 @@ impl crate::System::TermInfoReader {
         &mut self,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         offset: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetString", (buffer, offset))?;
         Ok(__cordl_ret)
     }
@@ -100,16 +100,16 @@ impl crate::System::TermInfoReader {
     pub fn Get_TermInfoStrings1(
         &mut self,
         tstr: crate::System::TermInfoStrings,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Get", (tstr))?;
         Ok(__cordl_ret)
     }
     pub fn New_Il2CppArray1(
-        term: *mut crate::System::String,
+        term: *mut quest_hook::libil2cpp::Il2CppString,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -118,9 +118,9 @@ impl crate::System::TermInfoReader {
             .invoke_void(".ctor", (term, buffer))?;
         Ok(__cordl_object)
     }
-    pub fn New_String0(
-        term: *mut crate::System::String,
-        filename: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        term: *mut quest_hook::libil2cpp::Il2CppString,
+        filename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -154,7 +154,7 @@ impl crate::System::TermInfoReader {
     }
     pub fn _ctor_Il2CppArray1(
         &mut self,
-        term: *mut crate::System::String,
+        term: *mut quest_hook::libil2cpp::Il2CppString,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -164,10 +164,10 @@ impl crate::System::TermInfoReader {
             .invoke(".ctor", (term, buffer))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        term: *mut crate::System::String,
-        filename: *mut crate::System::String,
+        term: *mut quest_hook::libil2cpp::Il2CppString,
+        filename: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

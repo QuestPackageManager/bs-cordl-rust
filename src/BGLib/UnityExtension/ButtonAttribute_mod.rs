@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ButtonAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub title: *mut crate::System::String,
+    pub title: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BGLib+UnityExtension+ButtonAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::BGLib::UnityExtension::ButtonAttribute {
 #[cfg(feature = "BGLib+UnityExtension+ButtonAttribute")]
 impl crate::BGLib::UnityExtension::ButtonAttribute {
     pub fn New(
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::BGLib::UnityExtension::ButtonAttribute {
     }
     pub fn _ctor(
         &mut self,
-        title: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

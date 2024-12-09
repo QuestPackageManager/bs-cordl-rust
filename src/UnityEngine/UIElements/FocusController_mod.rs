@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FocusController {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _focusRing_k__BackingField: *mut crate::UnityEngine::UIElements::IFocusRing,
     pub m_SelectedTextElement: *mut crate::UnityEngine::UIElements::TextElement,
     pub m_FocusedElements: *mut crate::System::Collections::Generic::List_1<
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+FocusController")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::FocusController {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

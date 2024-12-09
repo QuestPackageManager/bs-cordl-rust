@@ -5,8 +5,8 @@ pub struct InputEvent {
     __cordl_parent: crate::UnityEngine::UIElements::EventBase_1<
         *mut crate::UnityEngine::UIElements::InputEvent,
     >,
-    pub _previousData_k__BackingField: *mut crate::System::String,
-    pub _newData_k__BackingField: *mut crate::System::String,
+    pub _previousData_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _newData_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+UIElements+InputEvent")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -71,7 +71,7 @@ impl crate::UnityEngine::UIElements::InputEvent {
     }
     pub fn set_newData(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -82,7 +82,7 @@ impl crate::UnityEngine::UIElements::InputEvent {
     }
     pub fn set_previousData(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

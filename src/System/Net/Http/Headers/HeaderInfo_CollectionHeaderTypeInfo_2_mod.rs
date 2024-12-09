@@ -7,7 +7,7 @@ pub struct HeaderInfo_CollectionHeaderTypeInfo_2<
 > {
     __cordl_parent: crate::GlobalNamespace::HeaderInfo_HeaderTypeInfo_2<T, U>,
     pub minimalCount: i32,
-    pub separator: *mut crate::System::String,
+    pub separator: *mut quest_hook::libil2cpp::Il2CppString,
     pub parser: *mut crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
     __cordl_phantom_U: std::marker::PhantomData<U>,
@@ -39,11 +39,11 @@ impl<
     U: quest_hook::libil2cpp::Type,
 > crate::GlobalNamespace::HeaderInfo_CollectionHeaderTypeInfo_2<T, U> {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         parser: *mut crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
         minimalCount: i32,
-        separator: *mut crate::System::String,
+        separator: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -59,8 +59,8 @@ impl<
     }
     pub fn TryParse(
         &mut self,
-        value: *mut crate::System::String,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,11 +76,11 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         parser: *mut crate::System::Net::Http::Headers::TryParseListDelegate_1<T>,
         headerKind: crate::System::Net::Http::Headers::HttpHeaderKind,
         minimalCount: i32,
-        separator: *mut crate::System::String,
+        separator: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -97,7 +97,7 @@ impl<
     }
     pub fn get_Separator(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -107,7 +107,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Separator", ())?;
         Ok(__cordl_ret)
     }

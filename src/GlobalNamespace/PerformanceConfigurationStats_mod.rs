@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PerformanceConfigurationStats {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub processorFrequency: crate::GlobalNamespace::PerformanceConfigurationStats_IntStats,
     pub batteryStatus: crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<
         crate::UnityEngine::BatteryStatus,
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PerformanceConfigurationStats")]
 impl std::ops::Deref for crate::GlobalNamespace::PerformanceConfigurationStats {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -111,8 +111,8 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
 impl crate::GlobalNamespace::PerformanceConfigurationStats_BoolStats {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateLogValue",
             (),
@@ -161,12 +161,12 @@ impl<
 > crate::GlobalNamespace::PerformanceConfigurationStats_EnumStats_1<T> {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateLogValue",
             (),
@@ -217,8 +217,8 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
 impl crate::GlobalNamespace::PerformanceConfigurationStats_FloatStats {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateLogValue",
             (),
@@ -265,8 +265,8 @@ for crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
 impl crate::GlobalNamespace::PerformanceConfigurationStats_IntStats {
     pub fn CreateLogValue(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "CreateLogValue",
             (),

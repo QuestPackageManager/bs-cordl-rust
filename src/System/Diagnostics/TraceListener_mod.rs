@@ -7,7 +7,7 @@ pub struct TraceListener {
     pub indentSize: i32,
     pub traceOptions: crate::System::Diagnostics::TraceOptions,
     pub needIndent: bool,
-    pub listenerName: *mut crate::System::String,
+    pub listenerName: *mut quest_hook::libil2cpp::Il2CppString,
     pub filter: *mut crate::System::Diagnostics::TraceFilter,
 }
 #[cfg(feature = "System+Diagnostics+TraceListener")]
@@ -72,7 +72,7 @@ impl crate::System::Diagnostics::TraceListener {
         Ok(__cordl_ret)
     }
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -83,10 +83,10 @@ impl crate::System::Diagnostics::TraceListener {
     pub fn TraceEvent(
         &mut self,
         eventCache: *mut crate::System::Diagnostics::TraceEventCache,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         eventType: crate::System::Diagnostics::TraceEventType,
         id: i32,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,7 +97,7 @@ impl crate::System::Diagnostics::TraceListener {
     }
     pub fn Write(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -119,7 +119,7 @@ impl crate::System::Diagnostics::TraceListener {
     }
     pub fn WriteHeader(
         &mut self,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         eventType: crate::System::Diagnostics::TraceEventType,
         id: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -142,7 +142,7 @@ impl crate::System::Diagnostics::TraceListener {
     }
     pub fn WriteLine(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -153,7 +153,7 @@ impl crate::System::Diagnostics::TraceListener {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

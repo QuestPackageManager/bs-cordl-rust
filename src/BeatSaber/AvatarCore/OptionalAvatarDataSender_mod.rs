@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct OptionalAvatarDataSender {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _avatarSystemCollection: *mut crate::BeatSaber::AvatarCore::AvatarSystemCollection,
     pub _optionalAvatarDataSyncHandler: *mut crate::BeatSaber::AvatarCore::OptionalAvatarDataSyncHandler,
     pub _optionalAvatarDataProvider: *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
     pub _currentAvatarDisplayContext: crate::BeatSaber::AvatarCore::AvatarDisplayContext,
-    pub _selectedAvatarTypeId: *mut crate::System::String,
+    pub _selectedAvatarTypeId: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSender")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+OptionalAvatarDataSender")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::OptionalAvatarDataSender {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -76,7 +76,7 @@ impl crate::BeatSaber::AvatarCore::OptionalAvatarDataSender {
     }
     pub fn SetSelectedAvatarTypeId(
         &mut self,
-        selectedAvatarTypeId: *mut crate::System::String,
+        selectedAvatarTypeId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -24,7 +24,7 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Data::IndexFi
 impl crate::System::Data::IndexField {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

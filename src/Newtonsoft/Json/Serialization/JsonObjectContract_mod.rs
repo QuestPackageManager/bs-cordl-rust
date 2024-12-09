@@ -17,16 +17,16 @@ pub struct JsonObjectContract {
     pub _ExtensionDataSetter_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ExtensionDataSetter,
     pub _ExtensionDataGetter_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ExtensionDataGetter,
     pub _ExtensionDataNameResolver_k__BackingField: *mut crate::System::Func_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub ExtensionDataIsJToken: bool,
     pub _hasRequiredOrDefaultValueProperties: crate::System::Nullable_1<bool>,
     pub _overrideCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _parameterizedCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _creatorParameters: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
     pub _extensionDataValueType: *mut crate::System::Type,
@@ -54,11 +54,11 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::JsonObjectCo
 impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
     pub fn GetUninitializedObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetUninitializedObject", ())?;
         Ok(__cordl_ret)
     }
@@ -110,16 +110,16 @@ impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ExtensionDataNameResolver", ())?;
         Ok(__cordl_ret)
     }
@@ -207,14 +207,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_OverrideCreator", ())?;
         Ok(__cordl_ret)
     }
@@ -222,14 +222,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_ParameterizedCreator", ())?;
         Ok(__cordl_ret)
     }
@@ -259,8 +259,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
     pub fn set_ExtensionDataNameResolver(
         &mut self,
         value: *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -339,7 +339,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
     pub fn set_OverrideCreator(
         &mut self,
         value: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -352,7 +352,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonObjectContract {
     pub fn set_ParameterizedCreator(
         &mut self,
         value: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SortKey {
-    __cordl_parent: crate::System::Object,
-    pub source: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub source: *mut quest_hook::libil2cpp::Il2CppString,
     pub key: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub options: crate::System::Globalization::CompareOptions,
     pub lcid: i32,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Globalization+SortKey")]
 impl std::ops::Deref for crate::System::Globalization::SortKey {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Globalization::SortKey {
 impl crate::System::Globalization::SortKey {
     pub fn Equals(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,9 +52,9 @@ impl crate::System::Globalization::SortKey {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_CompareOptions_Il2CppArray2(
-        localeName: *mut crate::System::String,
-        str: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_CompareOptions_Il2CppArray2(
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::System::Globalization::CompareOptions,
         keyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -64,9 +64,9 @@ impl crate::System::Globalization::SortKey {
             .invoke_void(".ctor", (localeName, str, options, keyData))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String_CompareOptions0(
+    pub fn New_i32_Il2CppString_CompareOptions0(
         lcid: i32,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -75,9 +75,9 @@ impl crate::System::Globalization::SortKey {
             .invoke_void(".ctor", (lcid, source, opt))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String_Il2CppArray_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
+    pub fn New_i32_Il2CppString_Il2CppArray_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
         lcid: i32,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         opt: crate::System::Globalization::CompareOptions,
         lv1Length: i32,
@@ -113,11 +113,11 @@ impl crate::System::Globalization::SortKey {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -131,10 +131,10 @@ impl crate::System::Globalization::SortKey {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_CompareOptions_Il2CppArray2(
+    pub fn _ctor_Il2CppString_Il2CppString_CompareOptions_Il2CppArray2(
         &mut self,
-        localeName: *mut crate::System::String,
-        str: *mut crate::System::String,
+        localeName: *mut quest_hook::libil2cpp::Il2CppString,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         options: crate::System::Globalization::CompareOptions,
         keyData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -145,10 +145,10 @@ impl crate::System::Globalization::SortKey {
             .invoke(".ctor", (localeName, str, options, keyData))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String_CompareOptions0(
+    pub fn _ctor_i32_Il2CppString_CompareOptions0(
         &mut self,
         lcid: i32,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         opt: crate::System::Globalization::CompareOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -158,10 +158,10 @@ impl crate::System::Globalization::SortKey {
             .invoke(".ctor", (lcid, source, opt))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String_Il2CppArray_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
+    pub fn _ctor_i32_Il2CppString_Il2CppArray_CompareOptions_i32_i32_i32_i32_i32_i32_i32_i32_1(
         &mut self,
         lcid: i32,
-        source: *mut crate::System::String,
+        source: *mut quest_hook::libil2cpp::Il2CppString,
         buffer: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
         opt: crate::System::Globalization::CompareOptions,
         lv1Length: i32,
@@ -208,11 +208,11 @@ impl crate::System::Globalization::SortKey {
     }
     pub fn get_OriginalString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_OriginalString", ())?;
         Ok(__cordl_ret)
     }

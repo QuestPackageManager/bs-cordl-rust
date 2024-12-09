@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UserCapability {
-    __cordl_parent: crate::System::Object,
-    pub Description: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Description: *mut quest_hook::libil2cpp::Il2CppString,
     pub IsEnabled: bool,
-    pub Name: *mut crate::System::String,
-    pub ReasonCode: *mut crate::System::String,
+    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ReasonCode: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+UserCapability")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+UserCapability")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::UserCapability {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

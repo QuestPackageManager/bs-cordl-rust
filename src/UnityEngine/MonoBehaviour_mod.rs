@@ -35,9 +35,9 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("CancelInvoke", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CancelInvoke_String1(
+    pub fn CancelInvoke_Il2CppString1(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -48,17 +48,17 @@ impl crate::UnityEngine::MonoBehaviour {
     }
     pub fn GetScriptClassName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetScriptClassName", ())?;
         Ok(__cordl_ret)
     }
     pub fn Invoke(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_time: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -70,7 +70,7 @@ impl crate::UnityEngine::MonoBehaviour {
     }
     pub fn InvokeRepeating(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_time: f32,
         repeatRate: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -88,9 +88,9 @@ impl crate::UnityEngine::MonoBehaviour {
         let __cordl_ret: bool = __cordl_object.invoke("IsInvoking", ())?;
         Ok(__cordl_ret)
     }
-    pub fn IsInvoking_String1(
+    pub fn IsInvoking_Il2CppString1(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,8 +127,8 @@ impl crate::UnityEngine::MonoBehaviour {
     }
     pub fn StartCoroutineManaged(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -170,9 +170,9 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StartCoroutine", (routine))?;
         Ok(__cordl_ret)
     }
-    pub fn StartCoroutine_String0(
+    pub fn StartCoroutine_Il2CppString0(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -181,10 +181,10 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StartCoroutine", (methodName))?;
         Ok(__cordl_ret)
     }
-    pub fn StartCoroutine_String_Object1(
+    pub fn StartCoroutine_Il2CppString_Il2CppObject1(
         &mut self,
-        methodName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::UnityEngine::Coroutine> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -247,9 +247,9 @@ impl crate::UnityEngine::MonoBehaviour {
             .invoke("StopCoroutine", (routine))?;
         Ok(__cordl_ret)
     }
-    pub fn StopCoroutine_String2(
+    pub fn StopCoroutine_Il2CppString2(
         &mut self,
-        methodName: *mut crate::System::String,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

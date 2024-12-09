@@ -36,12 +36,14 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
         provider: *mut crate::System::IServiceProvider,
         objectType: *mut crate::System::Type,
         argTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("CreateInstance", (provider, objectType, argTypes, args))?;
         Ok(__cordl_ret)
     }
@@ -60,7 +62,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetCache(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Collections::IDictionary> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -72,30 +74,30 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     pub fn GetClassName(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetClassName", (_cordl_type))?;
         Ok(__cordl_ret)
     }
     pub fn GetComponentName(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetComponentName", (_cordl_type, instance))?;
         Ok(__cordl_ret)
     }
     pub fn GetConverter(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::TypeConverter,
     > {
@@ -109,7 +111,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     pub fn GetDefaultEvent(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::EventDescriptor,
     > {
@@ -123,7 +125,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     pub fn GetDefaultProperty(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptor,
     > {
@@ -137,13 +139,13 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     pub fn GetEditor(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         editorBaseType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetEditor", (_cordl_type, instance, editorBaseType))?;
         Ok(__cordl_ret)
     }
@@ -162,7 +164,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedAttributes(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::AttributeCollection,
     > {
@@ -175,29 +177,29 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedClassName(
         &mut self,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetExtendedClassName", (instance))?;
         Ok(__cordl_ret)
     }
     pub fn GetExtendedComponentName(
         &mut self,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetExtendedComponentName", (instance))?;
         Ok(__cordl_ret)
     }
     pub fn GetExtendedConverter(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::TypeConverter,
     > {
@@ -210,7 +212,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedDefaultEvent(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::EventDescriptor,
     > {
@@ -223,7 +225,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedDefaultProperty(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptor,
     > {
@@ -236,19 +238,19 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedEditor(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         editorBaseType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetExtendedEditor", (instance, editorBaseType))?;
         Ok(__cordl_ret)
     }
     pub fn GetExtendedEvents(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::EventDescriptorCollection,
     > {
@@ -261,7 +263,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedProperties(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptorCollection,
     > {
@@ -274,19 +276,19 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtendedPropertyOwner(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         pd: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetExtendedPropertyOwner", (instance, pd))?;
         Ok(__cordl_ret)
     }
     pub fn GetExtendedTypeDescriptor(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::ICustomTypeDescriptor,
     > {
@@ -299,7 +301,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     }
     pub fn GetExtenderProviders(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::ComponentModel::IExtenderProvider,
@@ -329,20 +331,20 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     pub fn GetPropertyOwner(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         pd: *mut crate::System::ComponentModel::PropertyDescriptor,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetPropertyOwner", (_cordl_type, instance, pd))?;
         Ok(__cordl_ret)
     }
     pub fn GetReflectionType(
         &mut self,
         objectType: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -368,7 +370,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider {
     pub fn GetTypeDescriptor(
         &mut self,
         objectType: *mut crate::System::Type,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::ICustomTypeDescriptor,
     > {
@@ -434,13 +436,15 @@ for crate::System::ComponentModel::ReflectTypeDescriptionProvider {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectTypeDescriptionProvider_ReflectedTypeData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _type: *mut crate::System::Type,
     pub _attributes: *mut crate::System::ComponentModel::AttributeCollection,
     pub _events: *mut crate::System::ComponentModel::EventDescriptorCollection,
     pub _properties: *mut crate::System::ComponentModel::PropertyDescriptorCollection,
     pub _converter: *mut crate::System::ComponentModel::TypeConverter,
-    pub _editors: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+    pub _editors: *mut quest_hook::libil2cpp::Il2CppArray<
+        *mut quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub _editorTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     pub _editorCount: i32,
 }
@@ -457,7 +461,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedTypeData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -489,29 +493,29 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedType
     }
     pub fn GetClassName(
         &mut self,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetClassName", (instance))?;
         Ok(__cordl_ret)
     }
     pub fn GetComponentName(
         &mut self,
-        instance: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetComponentName", (instance))?;
         Ok(__cordl_ret)
     }
     pub fn GetConverter(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::TypeConverter,
     > {
@@ -524,7 +528,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedType
     }
     pub fn GetDefaultEvent(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::EventDescriptor,
     > {
@@ -537,7 +541,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedType
     }
     pub fn GetDefaultProperty(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::ComponentModel::PropertyDescriptor,
     > {
@@ -550,13 +554,13 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedType
     }
     pub fn GetEditor(
         &mut self,
-        instance: *mut crate::System::Object,
+        instance: *mut quest_hook::libil2cpp::Il2CppObject,
         editorBaseType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetEditor", (instance, editorBaseType))?;
         Ok(__cordl_ret)
     }
@@ -586,7 +590,7 @@ impl crate::System::ComponentModel::ReflectTypeDescriptionProvider_ReflectedType
     }
     pub fn GetTypeFromName(
         &mut self,
-        typeName: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

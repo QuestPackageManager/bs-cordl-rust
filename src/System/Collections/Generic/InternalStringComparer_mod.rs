@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct InternalStringComparer {
     __cordl_parent: crate::System::Collections::Generic::EqualityComparer_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
 }
 #[cfg(feature = "System+Collections+Generic+InternalStringComparer")]
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Generic+InternalStringComparer")]
 impl std::ops::Deref for crate::System::Collections::Generic::InternalStringComparer {
     type Target = crate::System::Collections::Generic::EqualityComparer_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
@@ -31,8 +31,8 @@ impl std::ops::DerefMut for crate::System::Collections::Generic::InternalStringC
 impl crate::System::Collections::Generic::InternalStringComparer {
     pub fn Equals(
         &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
+        x: *mut quest_hook::libil2cpp::Il2CppString,
+        y: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -42,7 +42,7 @@ impl crate::System::Collections::Generic::InternalStringComparer {
     }
     pub fn GetHashCode(
         &mut self,
-        obj: *mut crate::System::String,
+        obj: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -52,8 +52,10 @@ impl crate::System::Collections::Generic::InternalStringComparer {
     }
     pub fn IndexOf(
         &mut self,
-        array: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        value: *mut crate::System::String,
+        array: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {

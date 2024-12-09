@@ -22,8 +22,8 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::ENet::Address {
 impl crate::ENet::Address {
     pub fn GetHost(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetHost",
             (),
@@ -32,8 +32,8 @@ impl crate::ENet::Address {
     }
     pub fn GetIP(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetIP",
             (),
@@ -42,7 +42,7 @@ impl crate::ENet::Address {
     }
     pub fn SetHost(
         &mut self,
-        hostName: *mut crate::System::String,
+        hostName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -53,7 +53,7 @@ impl crate::ENet::Address {
     }
     pub fn SetIP(
         &mut self,
-        ip: *mut crate::System::String,
+        ip: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

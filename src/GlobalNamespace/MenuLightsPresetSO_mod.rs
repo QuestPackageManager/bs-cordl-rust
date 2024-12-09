@@ -97,7 +97,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MenuLightsPre
 #[repr(C)]
 #[derive(Debug)]
 pub struct MenuLightsPresetSO_LightIdColorPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub lightId: i32,
     pub baseColor: *mut crate::GlobalNamespace::ColorSO,
     pub intensity: f32,
@@ -110,7 +110,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MenuLightsPresetSO+LightIdColorPair")]
 impl std::ops::Deref for crate::GlobalNamespace::MenuLightsPresetSO_LightIdColorPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

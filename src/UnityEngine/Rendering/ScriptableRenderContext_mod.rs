@@ -22,9 +22,9 @@ for crate::UnityEngine::Rendering::ScriptableRenderContext {
 }
 #[cfg(feature = "UnityEngine+Rendering+ScriptableRenderContext")]
 impl crate::UnityEngine::Rendering::ScriptableRenderContext {
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -60,7 +60,7 @@ impl crate::UnityEngine::Rendering::ScriptableRenderContext {
     pub fn GetCameras_Internal(
         &mut self,
         listType: *mut crate::System::Type,
-        resultList: *mut crate::System::Object,
+        resultList: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,

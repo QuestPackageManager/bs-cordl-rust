@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct GameplayModifierParamsSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _modifierNameLocalizationKey: *mut crate::System::String,
-    pub _descriptionLocalizationKey: *mut crate::System::String,
+    pub _modifierNameLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _descriptionLocalizationKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub _multiplier: f32,
     pub _multiplierConditionallyValid: bool,
     pub _icon: *mut crate::UnityEngine::Sprite,
@@ -58,11 +58,11 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
     }
     pub fn get_descriptionLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_descriptionLocalizationKey", ())?;
         Ok(__cordl_ret)
     }
@@ -85,11 +85,11 @@ impl crate::GlobalNamespace::GameplayModifierParamsSO {
     }
     pub fn get_modifierNameLocalizationKey(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_modifierNameLocalizationKey", ())?;
         Ok(__cordl_ret)
     }

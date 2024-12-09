@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LaunchDetails {
-    __cordl_parent: crate::System::Object,
-    pub DeeplinkMessage: *mut crate::System::String,
-    pub DestinationApiName: *mut crate::System::String,
-    pub LaunchSource: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub DeeplinkMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub DestinationApiName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub LaunchSource: *mut quest_hook::libil2cpp::Il2CppString,
     pub LaunchType: crate::Oculus::Platform::LaunchType,
-    pub TrackingID: *mut crate::System::String,
+    pub TrackingID: *mut quest_hook::libil2cpp::Il2CppString,
     pub UsersOptional: *mut crate::Oculus::Platform::Models::UserList,
     pub Users: *mut crate::Oculus::Platform::Models::UserList,
 }
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+LaunchDetails")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::LaunchDetails {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

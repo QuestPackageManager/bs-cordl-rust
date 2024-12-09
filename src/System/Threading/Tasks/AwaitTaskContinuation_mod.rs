@@ -28,8 +28,8 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::AwaitTaskContinuati
 impl crate::System::Threading::Tasks::AwaitTaskContinuation {
     pub fn CreateTask(
         &mut self,
-        action: *mut crate::System::Action_1<*mut crate::System::Object>,
-        state: *mut crate::System::Object,
+        action: *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         scheduler: *mut crate::System::Threading::Tasks::TaskScheduler,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,7 +75,7 @@ impl crate::System::Threading::Tasks::AwaitTaskContinuation {
     pub fn RunCallback(
         &mut self,
         callback: *mut crate::System::Threading::ContextCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
         currentTask: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Threading::Tasks::Task,
         >,

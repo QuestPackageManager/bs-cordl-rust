@@ -60,8 +60,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke_void(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Asn1EncodableVector1(
-        organization: *mut crate::System::String,
+    pub fn New_Il2CppString_Asn1EncodableVector1(
+        organization: *mut quest_hook::libil2cpp::Il2CppString,
         noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -70,8 +70,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke_void(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_IList0(
-        organization: *mut crate::System::String,
+    pub fn New_Il2CppString_IList0(
+        organization: *mut quest_hook::libil2cpp::Il2CppString,
         numbers: *mut crate::System::Collections::IList,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -113,9 +113,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Asn1EncodableVector1(
+    pub fn _ctor_Il2CppString_Asn1EncodableVector1(
         &mut self,
-        organization: *mut crate::System::String,
+        organization: *mut quest_hook::libil2cpp::Il2CppString,
         noticeNumbers: *mut crate::Org::BouncyCastle::Asn1::Asn1EncodableVector,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -125,9 +125,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::NoticeReference {
             .invoke(".ctor", (organization, noticeNumbers))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_IList0(
+    pub fn _ctor_Il2CppString_IList0(
         &mut self,
-        organization: *mut crate::System::String,
+        organization: *mut quest_hook::libil2cpp::Il2CppString,
         numbers: *mut crate::System::Collections::IList,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

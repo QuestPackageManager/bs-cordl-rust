@@ -5,9 +5,9 @@ pub struct GetterProvider_2<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
-    pub _identifier: *mut crate::System::Object,
+    pub _identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _method: *mut crate::System::Func_2<TObj, TResult>,
     pub _matchAll: bool,
     pub _sourceType: crate::Zenject::InjectSources,
@@ -24,7 +24,7 @@ impl<
     TObj: quest_hook::libil2cpp::Type,
     TResult: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::GetterProvider_2<TObj, TResult> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,7 +51,7 @@ impl<
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -105,7 +105,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TResult>,
         container: *mut crate::Zenject::DiContainer,
         sourceType: crate::Zenject::InjectSources,
@@ -128,7 +128,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        identifier: *mut crate::System::Object,
+        identifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TResult>,
         container: *mut crate::Zenject::DiContainer,
         sourceType: crate::Zenject::InjectSources,

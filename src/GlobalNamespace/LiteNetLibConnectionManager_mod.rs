@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _unconnectedPacketHeader: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub _netManager: *mut crate::LiteNetLib::NetManager,
     pub _encryptionLayer: *mut crate::GlobalNamespace::PacketEncryptionLayer,
@@ -19,8 +19,8 @@ pub struct LiteNetLibConnectionManager {
     pub _pendingReconnections: *mut crate::System::Collections::Generic::HashSet_1<
         *mut crate::System::Net::IPEndPoint,
     >,
-    pub _userId: *mut crate::System::String,
-    pub _userName: *mut crate::System::String,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _connectionRequestHandler: *mut crate::GlobalNamespace::IConnectionRequestHandler,
     pub _mode: crate::GlobalNamespace::LiteNetLibConnectionManager_NetworkMode,
     pub _connectionState: crate::GlobalNamespace::LiteNetLibConnectionManager_ConnectionState,
@@ -63,7 +63,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LiteNetLibConnectionManager")]
 impl std::ops::Deref for crate::GlobalNamespace::LiteNetLibConnectionManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -143,11 +143,11 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     }
     pub fn ConnectToEndPoint(
         &mut self,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         remoteEndPoint: *mut crate::System::Net::IPEndPoint,
-        remoteUserId: *mut crate::System::String,
-        remoteUserName: *mut crate::System::String,
+        remoteUserId: *mut quest_hook::libil2cpp::Il2CppString,
+        remoteUserName: *mut quest_hook::libil2cpp::Il2CppString,
         remoteUserIsConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -170,8 +170,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     pub fn CreatePendingConnection(
         &mut self,
         peer: *mut crate::LiteNetLib::NetPeer,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -309,7 +309,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     }
     pub fn IsConnectedToUser(
         &mut self,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -418,7 +418,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     }
     pub fn Log(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -429,7 +429,7 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     }
     pub fn LogError(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -549,8 +549,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     pub fn TryAccept(
         &mut self,
         request: *mut crate::LiteNetLib::ConnectionRequest,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -842,21 +842,21 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
@@ -987,11 +987,11 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager {
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_ConnectToServerParams {
     __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
-    pub userId: *mut crate::System::String,
-    pub userName: *mut crate::System::String,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub endPoint: *mut crate::System::Net::IPEndPoint,
-    pub serverUserId: *mut crate::System::String,
-    pub serverUserName: *mut crate::System::String,
+    pub serverUserId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub serverUserName: *mut quest_hook::libil2cpp::Il2CppString,
     pub serverIsConnectionOwner: bool,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+ConnectToServerParams")]
@@ -1064,7 +1064,7 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectionRequestHandler: *mut crate::GlobalNamespace::IConnectionRequestHandler,
     pub port: i32,
     pub filterUnencryptedTraffic: bool,
@@ -1082,7 +1082,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLibConnectionManager+LiteNetLibConnectionParamsBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1128,9 +1128,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionPara
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_NetPeerConnection {
-    __cordl_parent: crate::System::Object,
-    pub _userId: *mut crate::System::String,
-    pub _userName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isConnectionOwner: bool,
     pub netPeer: *mut crate::LiteNetLib::NetPeer,
 }
@@ -1143,7 +1143,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnection")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1167,6 +1167,16 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
             .invoke("Disconnect", ())?;
         Ok(__cordl_ret)
     }
+    pub fn Equals_Il2CppObject1(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_LiteNetLibConnectionManager_NetPeerConnection0(
         &mut self,
         other: *mut crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection,
@@ -1175,16 +1185,6 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
             self,
         );
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object1(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -1196,8 +1196,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     }
     pub fn New(
         netPeer: *mut crate::LiteNetLib::NetPeer,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1221,8 +1221,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     pub fn _ctor(
         &mut self,
         netPeer: *mut crate::LiteNetLib::NetPeer,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1241,21 +1241,21 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
@@ -1274,9 +1274,9 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnection {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_NetPeerConnectionRequest {
-    __cordl_parent: crate::System::Object,
-    pub _userId: *mut crate::System::String,
-    pub _userName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _userName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isConnectionOwner: bool,
     pub _request: *mut crate::LiteNetLib::ConnectionRequest,
 }
@@ -1289,7 +1289,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LiteNetLibConnectionManager+NetPeerConnectionRequest")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionRequest {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -1315,8 +1315,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
     }
     pub fn New(
         request: *mut crate::LiteNetLib::ConnectionRequest,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1328,8 +1328,8 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
     pub fn _ctor(
         &mut self,
         request: *mut crate::LiteNetLib::ConnectionRequest,
-        userId: *mut crate::System::String,
-        userName: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
+        userName: *mut quest_hook::libil2cpp::Il2CppString,
         isConnectionOwner: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1358,21 +1358,21 @@ impl crate::GlobalNamespace::LiteNetLibConnectionManager_NetPeerConnectionReques
     }
     pub fn get_userId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_userName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_userName", ())?;
         Ok(__cordl_ret)
     }
@@ -1463,8 +1463,8 @@ for crate::GlobalNamespace::LiteNetLibConnectionManager_StartClientParams {
 #[derive(Debug)]
 pub struct LiteNetLibConnectionManager_StartServerParams {
     __cordl_parent: crate::GlobalNamespace::LiteNetLibConnectionManager_LiteNetLibConnectionParamsBase,
-    pub userId: *mut crate::System::String,
-    pub userName: *mut crate::System::String,
+    pub userId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub userName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "LiteNetLibConnectionManager+StartServerParams")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(

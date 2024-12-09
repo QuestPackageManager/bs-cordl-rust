@@ -11,7 +11,7 @@ pub struct LeaderboardScoreUploader {
         *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
     >,
     pub _uploadScoreCallback: *mut crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
-    pub _playerId: *mut crate::System::String,
+    pub _playerId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _uploading: bool,
     pub _fileStorage: *mut crate::GlobalNamespace::IFileStorage,
 }
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
     pub fn Init(
         &mut self,
         uploadScoreCallback: *mut crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
-        playerId: *mut crate::System::String,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -187,8 +187,8 @@ for crate::GlobalNamespace::LeaderboardScoreUploader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoreData {
-    __cordl_parent: crate::System::Object,
-    pub _playerId_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _playerId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
     pub _gameplayModifiers_k__BackingField: *mut crate::GlobalNamespace::GameplayModifiers,
     pub _multipliedScore_k__BackingField: i32,
@@ -209,7 +209,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
 impl std::ops::Deref for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -223,7 +223,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardScoreUploader_Sco
 #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
 impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     pub fn New(
-        playerId: *mut crate::System::String,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
@@ -256,7 +256,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn _ctor(
         &mut self,
-        playerId: *mut crate::System::String,
+        playerId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
@@ -359,11 +359,11 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn get_playerId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_playerId", ())?;
         Ok(__cordl_ret)
     }
@@ -468,7 +468,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn set_playerId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -492,7 +492,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoresToUploadData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub scores: *mut crate::System::Collections::Generic::List_1<
         *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
     >,
@@ -506,7 +506,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "LeaderboardScoreUploader+ScoresToUploadData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::LeaderboardScoreUploader_ScoresToUploadData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -582,7 +582,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         scoreData: *mut crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData,
         completionHandler: *mut crate::GlobalNamespace::PlatformLeaderboardsModel_UploadScoreCompletionHandler,
         callback: *mut crate::System::AsyncCallback,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -615,7 +615,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -626,7 +626,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

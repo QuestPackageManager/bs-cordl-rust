@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Reflection::PropertyInfo {
 impl crate::System::Reflection::PropertyInfo {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,39 +100,43 @@ impl crate::System::Reflection::PropertyInfo {
     }
     pub fn GetValue_BindingFlags_Binder_Il2CppArray_CultureInfo2(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
-        index: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        index: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (obj, invokeAttr, binder, index, culture))?;
         Ok(__cordl_ret)
     }
     pub fn GetValue_Il2CppArray1(
         &mut self,
-        obj: *mut crate::System::Object,
-        index: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        index: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (obj, index))?;
         Ok(__cordl_ret)
     }
-    pub fn GetValue_Object0(
+    pub fn GetValue_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetValue", (obj))?;
         Ok(__cordl_ret)
     }
@@ -145,11 +149,13 @@ impl crate::System::Reflection::PropertyInfo {
     }
     pub fn SetValue_BindingFlags_Binder_Il2CppArray_CultureInfo2(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         invokeAttr: crate::System::Reflection::BindingFlags,
         binder: *mut crate::System::Reflection::Binder,
-        index: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        index: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
         culture: *mut crate::System::Globalization::CultureInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -161,9 +167,11 @@ impl crate::System::Reflection::PropertyInfo {
     }
     pub fn SetValue_Il2CppArray1(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
-        index: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        index: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -172,10 +180,10 @@ impl crate::System::Reflection::PropertyInfo {
             .invoke("SetValue", (obj, value, index))?;
         Ok(__cordl_ret)
     }
-    pub fn SetValue_Object_Object0(
+    pub fn SetValue_Il2CppObject_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
-        value: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

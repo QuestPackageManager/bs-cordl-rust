@@ -24,9 +24,9 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::QNameFacetsChecker {
 }
 #[cfg(feature = "System+Xml+Schema+QNameFacetsChecker")]
 impl crate::System::Xml::Schema::QNameFacetsChecker {
-    pub fn CheckValueFacets_Object0(
+    pub fn CheckValueFacets_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -48,9 +48,9 @@ impl crate::System::Xml::Schema::QNameFacetsChecker {
             .invoke("CheckValueFacets", (value, datatype))?;
         Ok(__cordl_ret)
     }
-    pub fn MatchEnumeration_Object_XmlSchemaDatatype0(
+    pub fn MatchEnumeration_Il2CppObject_XmlSchemaDatatype0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         enumeration: *mut crate::System::Collections::ArrayList,
         datatype: *mut crate::System::Xml::Schema::XmlSchemaDatatype,
     ) -> quest_hook::libil2cpp::Result<bool> {

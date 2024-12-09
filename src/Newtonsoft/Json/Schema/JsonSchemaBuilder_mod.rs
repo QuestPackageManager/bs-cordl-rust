@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSchemaBuilder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stack: *mut crate::System::Collections::Generic::IList_1<
         *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     >,
     pub _resolver: *mut crate::Newtonsoft::Json::Schema::JsonSchemaResolver,
     pub _documentSchemas: *mut crate::System::Collections::Generic::IDictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::Newtonsoft::Json::Schema::JsonSchema,
     >,
     pub _currentSchema: *mut crate::Newtonsoft::Json::Schema::JsonSchema,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Schema+JsonSchemaBuilder")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -130,7 +130,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
         token: *mut crate::Newtonsoft::Json::Linq::JToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchema,
         >,
     > {
@@ -138,7 +138,7 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IDictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::Newtonsoft::Json::Schema::JsonSchema,
         > = __cordl_object.invoke("ProcessProperties", (token))?;
         Ok(__cordl_ret)
@@ -207,12 +207,12 @@ impl crate::Newtonsoft::Json::Schema::JsonSchemaBuilder {
     }
     pub fn UnescapeReference(
         &mut self,
-        reference: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        reference: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("UnescapeReference", (reference))?;
         Ok(__cordl_ret)
     }

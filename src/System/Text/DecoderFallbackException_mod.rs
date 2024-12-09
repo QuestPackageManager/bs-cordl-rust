@@ -33,6 +33,17 @@ impl crate::System::Text::DecoderFallbackException {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString_Il2CppArray_i32_1(
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (message, bytesUnknown, index))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext2(
         serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
         streamingContext: crate::System::Runtime::Serialization::StreamingContext,
@@ -41,17 +52,6 @@ impl crate::System::Text::DecoderFallbackException {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_Il2CppArray_i32_1(
-        message: *mut crate::System::String,
-        bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (message, bytesUnknown, index))?;
         Ok(__cordl_object)
     }
     pub fn _ctor_0(
@@ -64,6 +64,19 @@ impl crate::System::Text::DecoderFallbackException {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppString_Il2CppArray_i32_1(
+        &mut self,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (message, bytesUnknown, index))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_SerializationInfo_StreamingContext2(
         &mut self,
         serializationInfo: *mut crate::System::Runtime::Serialization::SerializationInfo,
@@ -74,19 +87,6 @@ impl crate::System::Text::DecoderFallbackException {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(".ctor", (serializationInfo, streamingContext))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_Il2CppArray_i32_1(
-        &mut self,
-        message: *mut crate::System::String,
-        bytesUnknown: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
-        index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (message, bytesUnknown, index))?;
         Ok(__cordl_ret)
     }
 }

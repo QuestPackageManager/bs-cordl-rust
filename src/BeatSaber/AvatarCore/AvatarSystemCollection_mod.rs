@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarSystemCollection {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _availableAvatarSystems: *mut crate::System::Collections::Generic::Dictionary_2<
         u32,
         *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+AvatarCore+AvatarSystemCollection")]
 impl std::ops::Deref for crate::BeatSaber::AvatarCore::AvatarSystemCollection {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -87,9 +87,9 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
             .invoke("GetAvatarSystem", (avatarSystemMetadata))?;
         Ok(__cordl_ret)
     }
-    pub fn GetAvatarSystem_String2(
+    pub fn GetAvatarSystem_Il2CppString2(
         &mut self,
-        avatarTypeIdentifier: *mut crate::System::String,
+        avatarTypeIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::BeatSaber::AvatarCore::IAvatarSystem,
     > {
@@ -115,7 +115,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     }
     pub fn GetMultiplayerAvatarOptionalDataProvider(
         &mut self,
-        selectedAvatarTypeIdentifier: *mut crate::System::String,
+        selectedAvatarTypeIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::BeatSaber::AvatarCore::IOptionalAvatarDataProvider,
     > {
@@ -131,7 +131,7 @@ impl crate::BeatSaber::AvatarCore::AvatarSystemCollection {
     }
     pub fn GetMultiplayerAvatarsData(
         &mut self,
-        selectedAvatarTypeIdentifier: *mut crate::System::String,
+        selectedAvatarTypeIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
             crate::GlobalNamespace::MultiplayerAvatarsData,

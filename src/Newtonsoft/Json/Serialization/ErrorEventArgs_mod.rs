@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ErrorEventArgs {
     __cordl_parent: crate::System::EventArgs,
-    pub _CurrentObject_k__BackingField: *mut crate::System::Object,
+    pub _CurrentObject_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _ErrorContext_k__BackingField: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
 }
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorEventArgs")]
@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Newtonsoft::Json::Serialization::ErrorEventAr
 #[cfg(feature = "Newtonsoft+Json+Serialization+ErrorEventArgs")]
 impl crate::Newtonsoft::Json::Serialization::ErrorEventArgs {
     pub fn New(
-        currentObject: *mut crate::System::Object,
+        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
         errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -38,7 +38,7 @@ impl crate::Newtonsoft::Json::Serialization::ErrorEventArgs {
     }
     pub fn _ctor(
         &mut self,
-        currentObject: *mut crate::System::Object,
+        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
         errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -50,11 +50,11 @@ impl crate::Newtonsoft::Json::Serialization::ErrorEventArgs {
     }
     pub fn get_CurrentObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_CurrentObject", ())?;
         Ok(__cordl_ret)
     }

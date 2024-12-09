@@ -65,7 +65,7 @@ impl crate::GlobalNamespace::SelectableCellSelectableStateController {
         &mut self,
         selectableCell: *mut crate::HMUI::SelectableCell,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
-        owner: *mut crate::System::Object,
+        owner: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

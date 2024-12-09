@@ -5,7 +5,7 @@ pub struct BindSignalFromBinder_2<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _bindStatement: *mut crate::Zenject::BindStatement,
     pub _methodGetter: *mut crate::System::Func_2<
         TObject,
@@ -26,7 +26,7 @@ impl<
     TObject: quest_hook::libil2cpp::Type,
     TSignal: quest_hook::libil2cpp::Type,
 > std::ops::Deref for crate::Zenject::BindSignalFromBinder_2<TObject, TSignal> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -145,9 +145,9 @@ impl<
     }
     pub fn _From_b__8_0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Action_1<*mut crate::System::Object>,
+        *mut crate::System::Action_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     >
     where
         TObject: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -158,8 +158,9 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Action_1<*mut crate::System::Object> = __cordl_object
-            .invoke("<From>b__8_0", (obj))?;
+        let __cordl_ret: *mut crate::System::Action_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("<From>b__8_0", (obj))?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(

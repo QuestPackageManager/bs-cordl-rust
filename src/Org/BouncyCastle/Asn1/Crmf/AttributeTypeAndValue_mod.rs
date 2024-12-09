@@ -46,8 +46,8 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue {
             .invoke_void(".ctor", (_cordl_type, value))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Asn1Encodable1(
-        oid: *mut crate::System::String,
+    pub fn New_Il2CppString_Asn1Encodable1(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -89,9 +89,9 @@ impl crate::Org::BouncyCastle::Asn1::Crmf::AttributeTypeAndValue {
             .invoke(".ctor", (_cordl_type, value))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Asn1Encodable1(
+    pub fn _ctor_Il2CppString_Asn1Encodable1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         value: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

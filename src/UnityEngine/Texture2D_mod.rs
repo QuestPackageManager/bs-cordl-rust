@@ -442,12 +442,12 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height, format, flags))?;
         Ok(__cordl_object)
     }
-    pub fn New_DefaultFormat_i32_String_TextureCreationFlags3(
+    pub fn New_DefaultFormat_i32_Il2CppString_TextureCreationFlags3(
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
         mipCount: i32,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -484,14 +484,14 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height, format, flags))?;
         Ok(__cordl_object)
     }
-    pub fn New_GraphicsFormat_TextureCreationFlags_i32_IntPtr_String0(
+    pub fn New_GraphicsFormat_TextureCreationFlags_i32_IntPtr_Il2CppString0(
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
         nativeTex: crate::System::IntPtr,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -502,12 +502,12 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_GraphicsFormat_i32_String_TextureCreationFlags6(
+    pub fn New_GraphicsFormat_i32_Il2CppString_TextureCreationFlags6(
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         mipCount: i32,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -587,7 +587,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke_void(".ctor", (width, height, textureFormat, mipCount, linear))?;
         Ok(__cordl_object)
     }
-    pub fn New_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_String7(
+    pub fn New_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_Il2CppString7(
         width: i32,
         height: i32,
         textureFormat: crate::UnityEngine::TextureFormat,
@@ -596,7 +596,7 @@ impl crate::UnityEngine::Texture2D {
         nativeTex: crate::System::IntPtr,
         createUninitialized: bool,
         ignoreMipmapLimit: bool,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -634,7 +634,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_String10(
+    pub fn New_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_Il2CppString10(
         width: i32,
         height: i32,
         textureFormat: crate::UnityEngine::TextureFormat,
@@ -642,7 +642,7 @@ impl crate::UnityEngine::Texture2D {
         linear: bool,
         createUninitialized: bool,
         ignoreMipmapLimit: bool,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1244,13 +1244,13 @@ impl crate::UnityEngine::Texture2D {
             .invoke(".ctor", (width, height, format, flags))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_DefaultFormat_i32_String_TextureCreationFlags3(
+    pub fn _ctor_DefaultFormat_i32_Il2CppString_TextureCreationFlags3(
         &mut self,
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::DefaultFormat,
         mipCount: i32,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1292,7 +1292,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke(".ctor", (width, height, format, flags))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_GraphicsFormat_TextureCreationFlags_i32_IntPtr_String0(
+    pub fn _ctor_GraphicsFormat_TextureCreationFlags_i32_IntPtr_Il2CppString0(
         &mut self,
         width: i32,
         height: i32,
@@ -1300,7 +1300,7 @@ impl crate::UnityEngine::Texture2D {
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
         mipCount: i32,
         nativeTex: crate::System::IntPtr,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1312,13 +1312,13 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_GraphicsFormat_i32_String_TextureCreationFlags6(
+    pub fn _ctor_GraphicsFormat_i32_Il2CppString_TextureCreationFlags6(
         &mut self,
         width: i32,
         height: i32,
         format: crate::UnityEngine::Experimental::Rendering::GraphicsFormat,
         mipCount: i32,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
         flags: crate::UnityEngine::Experimental::Rendering::TextureCreationFlags,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1409,7 +1409,7 @@ impl crate::UnityEngine::Texture2D {
             .invoke(".ctor", (width, height, textureFormat, mipCount, linear))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_String7(
+    pub fn _ctor_TextureFormat_i32__cordl_bool_IntPtr__cordl_bool__cordl_bool_Il2CppString7(
         &mut self,
         width: i32,
         height: i32,
@@ -1419,7 +1419,7 @@ impl crate::UnityEngine::Texture2D {
         nativeTex: crate::System::IntPtr,
         createUninitialized: bool,
         ignoreMipmapLimit: bool,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1460,7 +1460,7 @@ impl crate::UnityEngine::Texture2D {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_String10(
+    pub fn _ctor_TextureFormat_i32__cordl_bool__cordl_bool__cordl_bool_Il2CppString10(
         &mut self,
         width: i32,
         height: i32,
@@ -1469,7 +1469,7 @@ impl crate::UnityEngine::Texture2D {
         linear: bool,
         createUninitialized: bool,
         ignoreMipmapLimit: bool,
-        mipmapLimitGroupName: *mut crate::System::String,
+        mipmapLimitGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1584,11 +1584,11 @@ impl crate::UnityEngine::Texture2D {
     }
     pub fn get_mipmapLimitGroup(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_mipmapLimitGroup", ())?;
         Ok(__cordl_ret)
     }

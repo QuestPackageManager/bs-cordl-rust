@@ -12,8 +12,8 @@ pub struct RunLevelMenuDestination {
     pub startSongTime: f32,
     pub songSpeedMultiplier: f32,
     pub overrideEnvironments: bool,
-    pub environmentType: *mut crate::System::String,
-    pub environmentName: *mut crate::System::String,
+    pub environmentType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub environmentName: *mut quest_hook::libil2cpp::Il2CppString,
     pub quitAppAfterRun: bool,
 }
 #[cfg(feature = "RunLevelMenuDestination")]
@@ -46,8 +46,8 @@ impl crate::GlobalNamespace::RunLevelMenuDestination {
         startSongTime: f32,
         songSpeedMultiplier: f32,
         overrideEnvironments: bool,
-        environmentType: *mut crate::System::String,
-        environmentName: *mut crate::System::String,
+        environmentType: *mut quest_hook::libil2cpp::Il2CppString,
+        environmentName: *mut quest_hook::libil2cpp::Il2CppString,
         quitAppAfterRun: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -83,8 +83,8 @@ impl crate::GlobalNamespace::RunLevelMenuDestination {
         startSongTime: f32,
         songSpeedMultiplier: f32,
         overrideEnvironments: bool,
-        environmentType: *mut crate::System::String,
-        environmentName: *mut crate::System::String,
+        environmentType: *mut quest_hook::libil2cpp::Il2CppString,
+        environmentName: *mut quest_hook::libil2cpp::Il2CppString,
         quitAppAfterRun: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

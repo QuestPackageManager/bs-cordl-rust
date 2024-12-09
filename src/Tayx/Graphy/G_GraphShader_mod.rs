@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct G_GraphShader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ArrayMaxSize: i32,
     pub ShaderArrayValues: *mut quest_hook::libil2cpp::Il2CppArray<f32>,
     pub Image: *mut crate::UnityEngine::UI::Image,
-    pub Name: *mut crate::System::String,
-    pub Name_Length: *mut crate::System::String,
+    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Name_Length: *mut quest_hook::libil2cpp::Il2CppString,
     pub Average: f32,
     pub m_averagePropertyId: i32,
     pub GoodThreshold: f32,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Tayx+Graphy+G_GraphShader")]
 impl std::ops::Deref for crate::Tayx::Graphy::G_GraphShader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

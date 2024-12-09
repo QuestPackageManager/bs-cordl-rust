@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ArgumentCache {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ObjectArgument: *mut crate::UnityEngine::Object,
-    pub m_ObjectArgumentAssemblyTypeName: *mut crate::System::String,
+    pub m_ObjectArgumentAssemblyTypeName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_IntArgument: i32,
     pub m_FloatArgument: f32,
-    pub m_StringArgument: *mut crate::System::String,
+    pub m_StringArgument: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_BoolArgument: bool,
 }
 #[cfg(feature = "UnityEngine+Events+ArgumentCache")]
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Events+ArgumentCache")]
 impl std::ops::Deref for crate::UnityEngine::Events::ArgumentCache {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -90,11 +90,11 @@ impl crate::UnityEngine::Events::ArgumentCache {
     }
     pub fn get_stringArgument(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_stringArgument", ())?;
         Ok(__cordl_ret)
     }
@@ -110,11 +110,11 @@ impl crate::UnityEngine::Events::ArgumentCache {
     }
     pub fn get_unityObjectArgumentAssemblyTypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_unityObjectArgumentAssemblyTypeName", ())?;
         Ok(__cordl_ret)
     }

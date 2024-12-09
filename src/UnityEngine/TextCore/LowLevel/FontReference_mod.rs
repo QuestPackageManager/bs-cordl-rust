@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct FontReference {
-    pub familyName: *mut crate::System::String,
-    pub styleName: *mut crate::System::String,
+    pub familyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub styleName: *mut quest_hook::libil2cpp::Il2CppString,
     pub faceIndex: i32,
-    pub filePath: *mut crate::System::String,
+    pub filePath: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+TextCore+LowLevel+FontReference")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

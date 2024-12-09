@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DomNameTable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub entries: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Xml::XmlName,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+DomNameTable")]
 impl std::ops::Deref for crate::System::Xml::DomNameTable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -33,9 +33,9 @@ impl std::ops::DerefMut for crate::System::Xml::DomNameTable {
 impl crate::System::Xml::DomNameTable {
     pub fn AddName(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -47,9 +47,9 @@ impl crate::System::Xml::DomNameTable {
     }
     pub fn GetName(
         &mut self,
-        prefix: *mut crate::System::String,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
         schemaInfo: *mut crate::System::Xml::Schema::IXmlSchemaInfo,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlName> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

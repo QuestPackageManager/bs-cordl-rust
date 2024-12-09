@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerAllOverallStatsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _campaignOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
     pub _soloFreePlayOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
     pub _partyFreePlayOverallStatsData_k__BackingField: *mut crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData,
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "PlayerAllOverallStatsData")]
 impl std::ops::Deref for crate::GlobalNamespace::PlayerAllOverallStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -316,7 +316,7 @@ for crate::GlobalNamespace::PlayerAllOverallStatsData {
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlayerAllOverallStatsData_PlayerOverallStatsData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _goodCutsCount_k__BackingField: i32,
     pub _badCutsCount_k__BackingField: i32,
     pub _missedCutsCount_k__BackingField: i32,
@@ -338,7 +338,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "PlayerAllOverallStatsData+PlayerOverallStatsData")]
 impl std::ops::Deref
 for crate::GlobalNamespace::PlayerAllOverallStatsData_PlayerOverallStatsData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

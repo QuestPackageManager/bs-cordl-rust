@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MultiplayerLayoutProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _layout_k__BackingField: crate::GlobalNamespace::MultiplayerPlayerLayout,
     pub _activePlayerSpotsCount_k__BackingField: i32,
     pub playersLayoutWasCalculatedEvent: *mut crate::System::Action_2<
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "MultiplayerLayoutProvider")]
 impl std::ops::Deref for crate::GlobalNamespace::MultiplayerLayoutProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

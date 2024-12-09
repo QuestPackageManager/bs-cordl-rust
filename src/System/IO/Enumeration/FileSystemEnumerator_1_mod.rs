@@ -3,15 +3,15 @@
 #[derive(Debug)]
 pub struct FileSystemEnumerator_1<TResult: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::System::Runtime::ConstrainedExecution::CriticalFinalizerObject,
-    pub _originalRootDirectory: *mut crate::System::String,
-    pub _rootDirectory: *mut crate::System::String,
+    pub _originalRootDirectory: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _rootDirectory: *mut quest_hook::libil2cpp::Il2CppString,
     pub _options: *mut crate::System::IO::EnumerationOptions,
-    pub _lock: *mut crate::System::Object,
-    pub _currentPath: *mut crate::System::String,
+    pub _lock: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub _currentPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _directoryHandle: crate::System::IntPtr,
     pub _lastEntryFound: bool,
     pub _pending: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _entry: crate::GlobalNamespace::Sys_Interop_DirectoryEntry,
     pub _current: TResult,
@@ -70,7 +70,7 @@ impl<
     }
     pub fn CreateDirectoryHandle(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreNotFound: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
     where
@@ -225,7 +225,7 @@ impl<
         Ok(__cordl_ret)
     }
     pub fn New(
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
         options: *mut crate::System::IO::EnumerationOptions,
     ) -> quest_hook::libil2cpp::Result<*mut Self>
     where
@@ -300,7 +300,7 @@ impl<
     }
     pub fn System_Collections_IEnumerator_get_Current(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject>
     where
         TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -308,7 +308,7 @@ impl<
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.Collections.IEnumerator.get_Current", ())?;
         Ok(__cordl_ret)
     }
@@ -330,7 +330,7 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        directory: *mut crate::System::String,
+        directory: *mut quest_hook::libil2cpp::Il2CppString,
         options: *mut crate::System::IO::EnumerationOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where

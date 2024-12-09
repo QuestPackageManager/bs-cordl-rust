@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DebugConsoleController {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub onNewMessageToOutput: *mut crate::System::Action_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         crate::UnityEngine::LogType,
     >,
     pub _stringsFromSTDIN: *mut crate::System::Collections::Generic::Queue_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _commands: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::ConsoleCommandBase,
     >,
     pub _commandsExecutionTask: *mut crate::System::Threading::Tasks::Task,
@@ -24,7 +24,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "DebugConsoleController")]
 impl std::ops::Deref for crate::GlobalNamespace::DebugConsoleController {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -58,7 +58,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     }
     pub fn CommandNotFoundMessage(
         &mut self,
-        command: *mut crate::System::String,
+        command: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
     > {
@@ -130,7 +130,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     }
     pub fn GetCommand(
         &mut self,
-        commandName: *mut crate::System::String,
+        commandName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::ConsoleCommandBase> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::ConsoleCommandBase,
         >,
     > {
@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             *mut crate::GlobalNamespace::ConsoleCommandBase,
         > = __cordl_object.invoke("GetCommands", ())?;
         Ok(__cordl_ret)
@@ -185,7 +185,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     }
     pub fn QueueNewInput(
         &mut self,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -196,12 +196,12 @@ impl crate::GlobalNamespace::DebugConsoleController {
     }
     pub fn StripExtraWhitespace(
         &mut self,
-        commandText: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        commandText: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("StripExtraWhitespace", (commandText))?;
         Ok(__cordl_ret)
     }
@@ -217,7 +217,7 @@ impl crate::GlobalNamespace::DebugConsoleController {
     }
     pub fn TryExecuteCommand(
         &mut self,
-        commandText: *mut crate::System::String,
+        commandText: *mut quest_hook::libil2cpp::Il2CppString,
         messages: *mut crate::System::Collections::Generic::List_1<
             crate::GlobalNamespace::DebugConsoleController_ConsoleMessage,
         >,
@@ -254,7 +254,7 @@ for crate::GlobalNamespace::DebugConsoleController {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct DebugConsoleController_ConsoleMessage {
-    pub Message: *mut crate::System::String,
+    pub Message: *mut quest_hook::libil2cpp::Il2CppString,
     pub Type: crate::UnityEngine::LogType,
 }
 #[cfg(feature = "DebugConsoleController+ConsoleMessage")]
@@ -278,8 +278,8 @@ for crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
 impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -288,7 +288,7 @@ impl crate::GlobalNamespace::DebugConsoleController_ConsoleMessage {
     }
     pub fn _ctor(
         &mut self,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: crate::UnityEngine::LogType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

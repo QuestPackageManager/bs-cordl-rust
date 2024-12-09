@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEventSystem {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Input: *mut crate::UnityEngine::UIElements::DefaultEventSystem_IInput,
-    pub m_HorizontalAxis: *mut crate::System::String,
-    pub m_VerticalAxis: *mut crate::System::String,
-    pub m_SubmitButton: *mut crate::System::String,
-    pub m_CancelButton: *mut crate::System::String,
+    pub m_HorizontalAxis: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_VerticalAxis: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_SubmitButton: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_CancelButton: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_InputActionsPerSecond: f32,
     pub m_RepeatDelay: f32,
     pub m_SendingTouchEvents: bool,
@@ -34,7 +34,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -422,7 +422,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
     }
     pub fn GetAxisRaw(
         &mut self,
-        axis: *mut crate::System::String,
+        axis: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -432,7 +432,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
     }
     pub fn GetButtonDown(
         &mut self,
-        button: *mut crate::System::String,
+        button: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -553,7 +553,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_IInput {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEventSystem_Input {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -563,7 +563,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+Input")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -588,7 +588,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
     }
     pub fn GetAxisRaw(
         &mut self,
-        axis: *mut crate::System::String,
+        axis: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -598,7 +598,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_Input {
     }
     pub fn GetButtonDown(
         &mut self,
-        button: *mut crate::System::String,
+        button: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -731,7 +731,7 @@ for crate::UnityEngine::UIElements::DefaultEventSystem_Input {
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultEventSystem_NoInput {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -741,7 +741,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+DefaultEventSystem+NoInput")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -766,7 +766,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     }
     pub fn GetAxisRaw(
         &mut self,
-        axis: *mut crate::System::String,
+        axis: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -776,7 +776,7 @@ impl crate::UnityEngine::UIElements::DefaultEventSystem_NoInput {
     }
     pub fn GetButtonDown(
         &mut self,
-        button: *mut crate::System::String,
+        button: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct BeatmapLevelPackSO {
     __cordl_parent: crate::GlobalNamespace::PersistentScriptableObject,
-    pub _packID: *mut crate::System::String,
-    pub _packName: *mut crate::System::String,
-    pub _shortPackName: *mut crate::System::String,
+    pub _packID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _packName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _shortPackName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _coverImage: *mut crate::UnityEngine::Sprite,
     pub _smallCoverImage: *mut crate::UnityEngine::Sprite,
     pub _contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
@@ -62,11 +62,11 @@ impl crate::GlobalNamespace::BeatmapLevelPackSO {
     }
     pub fn get_collectionName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_collectionName", ())?;
         Ok(__cordl_ret)
     }
@@ -92,31 +92,31 @@ impl crate::GlobalNamespace::BeatmapLevelPackSO {
     }
     pub fn get_packID(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_packID", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_packName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_packName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_shortPackName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_shortPackName", ())?;
         Ok(__cordl_ret)
     }

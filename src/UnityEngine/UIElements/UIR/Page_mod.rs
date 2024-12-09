@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct Page {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed_k__BackingField: bool,
     pub vertices: *mut crate::UnityEngine::UIElements::UIR::Page_DataSet_1<
         crate::UnityEngine::UIElements::Vertex,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::Page {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -127,7 +127,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::UIR::
 #[repr(C)]
 #[derive(Debug)]
 pub struct Page_DataSet_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _disposed_k__BackingField: bool,
     pub gpuData: *mut crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
     pub cpuData: crate::Unity::Collections::NativeArray_1<T>,
@@ -152,7 +152,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+UIR+Page+DataSet_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::UIElements::UIR::Page_DataSet_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct IgnoranceServer {
-    __cordl_parent: crate::System::Object,
-    pub BindAddress: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub BindAddress: *mut quest_hook::libil2cpp::Il2CppString,
     pub BindPort: i32,
     pub MaximumChannels: i32,
     pub MaximumPeers: i32,
@@ -15,10 +15,10 @@ pub struct IgnoranceServer {
     pub IsFruityDevice: bool,
     pub BindAllInterfaces: bool,
     pub UseSsl: bool,
-    pub CertificatePath: *mut crate::System::String,
-    pub Certificate: *mut crate::System::String,
-    pub PrivateKeyPath: *mut crate::System::String,
-    pub PrivateKey: *mut crate::System::String,
+    pub CertificatePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Certificate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PrivateKeyPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PrivateKey: *mut quest_hook::libil2cpp::Il2CppString,
     pub CeaseOperation: bool,
     pub Incoming: *mut crate::IgnoranceThirdparty::RingBuffer_1<
         crate::IgnoranceCore::IgnoranceIncomingPacket,
@@ -50,7 +50,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "IgnoranceCore+IgnoranceServer")]
 impl std::ops::Deref for crate::IgnoranceCore::IgnoranceServer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -104,7 +104,7 @@ impl crate::IgnoranceCore::IgnoranceServer {
     }
     pub fn ThreadWorker(
         &mut self,
-        parameters: *mut crate::System::Object,
+        parameters: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -152,12 +152,12 @@ pub struct IgnoranceServer_ThreadParamInfo {
     pub Port: i32,
     pub PacketSizeLimit: i32,
     pub Verbosity: i32,
-    pub Address: *mut crate::System::String,
+    pub Address: *mut quest_hook::libil2cpp::Il2CppString,
     pub UseSsl: bool,
-    pub CertificatePath: *mut crate::System::String,
-    pub Certificate: *mut crate::System::String,
-    pub PrivateKeyPath: *mut crate::System::String,
-    pub PrivateKey: *mut crate::System::String,
+    pub CertificatePath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Certificate: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PrivateKeyPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PrivateKey: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "IgnoranceCore+IgnoranceServer+ThreadParamInfo")]
 quest_hook::libil2cpp::unsafe_impl_value_type!(

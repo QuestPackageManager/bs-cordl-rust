@@ -55,7 +55,7 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     pub fn CanCastTo(
         &mut self,
         fromType: *mut crate::System::Type,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -96,11 +96,11 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
             .invoke_void(".ctor", (_cordl_type, identity))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray1(
+    pub fn New_Il2CppString_Il2CppArray1(
         _cordl_type: *mut crate::System::Type,
-        activationUrl: *mut crate::System::String,
+        activationUrl: *mut quest_hook::libil2cpp::Il2CppString,
         activationAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -121,12 +121,12 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
             .invoke(".ctor", (_cordl_type, identity))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray1(
+    pub fn _ctor_Il2CppString_Il2CppArray1(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        activationUrl: *mut crate::System::String,
+        activationUrl: *mut quest_hook::libil2cpp::Il2CppString,
         activationAttributes: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -138,11 +138,11 @@ impl crate::System::Runtime::Remoting::Proxies::RemotingProxy {
     }
     pub fn get_TypeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_TypeName", ())?;
         Ok(__cordl_ret)
     }

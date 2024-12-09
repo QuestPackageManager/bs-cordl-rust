@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CommandBuffer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Ptr: crate::System::IntPtr,
 }
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Rendering+CommandBuffer")]
 impl std::ops::Deref for crate::UnityEngine::Rendering::CommandBuffer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -563,6 +563,18 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
             .invoke("SetGlobalFloat", (nameID, value))?;
         Ok(__cordl_ret)
     }
+    pub fn SetGlobalTexture_Il2CppString0(
+        &mut self,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        value: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("SetGlobalTexture", (name, value))?;
+        Ok(__cordl_ret)
+    }
     pub fn SetGlobalTexture_Impl(
         &mut self,
         nameID: i32,
@@ -576,18 +588,6 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("SetGlobalTexture_Impl", (nameID, rt, element))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SetGlobalTexture_String0(
-        &mut self,
-        name: *mut crate::System::String,
-        value: crate::UnityEngine::Rendering::RenderTargetIdentifier,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetGlobalTexture", (name, value))?;
         Ok(__cordl_ret)
     }
     pub fn SetGlobalTexture_i32_RenderTextureSubElement1(
@@ -736,7 +736,7 @@ impl crate::UnityEngine::Rendering::CommandBuffer {
     }
     pub fn set_name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

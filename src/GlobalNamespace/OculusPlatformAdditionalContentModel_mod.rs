@@ -5,7 +5,7 @@ pub struct OculusPlatformAdditionalContentModel {
     __cordl_parent: crate::GlobalNamespace::AdditionalContentModel,
     pub _oculusLevelProductCollectionModel: *mut crate::GlobalNamespace::OculusLevelProductCollectionModel,
     pub _entitlementsSKU: *mut crate::System::Collections::Generic::HashSet_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _semaphoreSlim: *mut crate::System::Threading::SemaphoreSlim,
     pub _isDataValid: bool,
@@ -80,7 +80,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn GetLevelDataVersion(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn GetLevelDataVersionInternalAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -108,7 +108,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn GetLevelEntitlementStatusInternalAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -129,7 +129,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn GetLevelProductData(
         &mut self,
-        GetLevelProductData: *mut crate::System::String,
+        GetLevelProductData: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
     > {
@@ -142,7 +142,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn GetPackEntitlementStatusInternalAsync(
         &mut self,
-        packId: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -163,23 +163,25 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn GetRedirectedLevelPackProductData(
         &mut self,
-        packId: *mut crate::System::String,
+        packId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Threading::Tasks::Task_1<*mut crate::System::String>,
+        *mut crate::System::Threading::Tasks::Task_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke("GetRedirectedLevelPackProductData", (packId, cancellationToken))?;
         Ok(__cordl_ret)
     }
     pub fn HasLevelEntitlement(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,7 +191,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn HasLevelPackEntitlement(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -223,7 +225,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn IsPackBetterBuyThanLevelAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -248,7 +250,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn OpenLevelPackProductStoreAsync(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -266,7 +268,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
     }
     pub fn OpenLevelProductStoreAsync(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<

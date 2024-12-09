@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DefaultContractResolver {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _nameTable: *mut crate::Newtonsoft::Json::DefaultJsonNameTable,
     pub _contractCache: *mut crate::Newtonsoft::Json::Utilities::ThreadSafeStore_2<
         *mut crate::System::Type,
@@ -25,7 +25,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+DefaultContractResolver")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -271,13 +271,14 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         &mut self,
         member: *mut crate::System::Reflection::MemberInfo,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Predicate_1<*mut crate::System::Object>,
+        *mut crate::System::Predicate_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Predicate_1<*mut crate::System::Object> = __cordl_object
-            .invoke("CreateShouldSerializeTest", (member))?;
+        let __cordl_ret: *mut crate::System::Predicate_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("CreateShouldSerializeTest", (member))?;
         Ok(__cordl_ret)
     }
     pub fn CreateStringContract(
@@ -368,13 +369,14 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
         &mut self,
         createdType: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_1<*mut crate::System::Object>,
+        *mut crate::System::Func_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_1<*mut crate::System::Object> = __cordl_object
-            .invoke("GetDefaultCreator", (createdType))?;
+        let __cordl_ret: *mut crate::System::Func_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("GetDefaultCreator", (createdType))?;
         Ok(__cordl_ret)
     }
     pub fn GetExtensionDataMemberForType(
@@ -425,12 +427,12 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     }
     pub fn GetResolvedPropertyName(
         &mut self,
-        propertyName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetResolvedPropertyName", (propertyName))?;
         Ok(__cordl_ret)
     }
@@ -464,7 +466,7 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     pub fn MatchProperty(
         &mut self,
         properties: *mut crate::Newtonsoft::Json::Serialization::JsonPropertyCollection,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
@@ -521,34 +523,34 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     }
     pub fn ResolveDictionaryKey(
         &mut self,
-        dictionaryKey: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        dictionaryKey: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ResolveDictionaryKey", (dictionaryKey))?;
         Ok(__cordl_ret)
     }
     pub fn ResolveExtensionDataName(
         &mut self,
-        extensionDataName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        extensionDataName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ResolveExtensionDataName", (extensionDataName))?;
         Ok(__cordl_ret)
     }
     pub fn ResolvePropertyName(
         &mut self,
-        propertyName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ResolvePropertyName", (propertyName))?;
         Ok(__cordl_ret)
     }
@@ -568,8 +570,8 @@ impl crate::Newtonsoft::Json::Serialization::DefaultContractResolver {
     pub fn SetPropertySettingsFromAttributes(
         &mut self,
         property: *mut crate::Newtonsoft::Json::Serialization::JsonProperty,
-        attributeProvider: *mut crate::System::Object,
-        name: *mut crate::System::String,
+        attributeProvider: *mut quest_hook::libil2cpp::Il2CppObject,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         declaringType: *mut crate::System::Type,
         memberSerialization: crate::Newtonsoft::Json::MemberSerialization,
         allowNonPublicAccess: quest_hook::libil2cpp::ByRefMut<bool>,
@@ -788,7 +790,7 @@ pub struct DefaultContractResolver_EnumerableDictionaryWrapper_2<
     TEnumeratorKey: quest_hook::libil2cpp::Type,
     TEnumeratorValue: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _e: *mut crate::System::Collections::Generic::IEnumerable_1<
         crate::System::Collections::Generic::KeyValuePair_2<
             TEnumeratorKey,
@@ -819,7 +821,7 @@ for crate::Newtonsoft::Json::Serialization::DefaultContractResolver_EnumerableDi
     TEnumeratorKey,
     TEnumeratorValue,
 > {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -861,8 +863,8 @@ impl<
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::Object,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
     >
@@ -877,8 +879,8 @@ impl<
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerator_1<
             crate::System::Collections::Generic::KeyValuePair_2<
-                *mut crate::System::Object,
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         > = __cordl_object.invoke("GetEnumerator", ())?;
         Ok(__cordl_ret)

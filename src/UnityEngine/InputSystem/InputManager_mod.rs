@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct InputManager {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_LayoutRegistrationVersion: i32,
     pub m_PollingFrequency: f32,
     pub m_Layouts: crate::UnityEngine::InputSystem::Layouts::InputControlLayout_Collection,
@@ -48,7 +48,7 @@ pub struct InputManager {
     >,
     pub m_LayoutChangeListeners: crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
         *mut crate::System::Action_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             crate::UnityEngine::InputSystem::InputControlLayoutChange,
         >,
     >,
@@ -91,7 +91,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+InputSystem+InputManager")]
 impl std::ops::Deref for crate::UnityEngine::InputSystem::InputManager {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -156,6 +156,21 @@ impl crate::UnityEngine::InputSystem::InputManager {
             .invoke("AddDeviceUsage", (device, usage))?;
         Ok(__cordl_ret)
     }
+    pub fn AddDevice_Il2CppString_Il2CppString_InternedString1(
+        &mut self,
+        layout: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut crate::UnityEngine::InputSystem::InputDevice,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputDevice = __cordl_object
+            .invoke("AddDevice", (layout, name, variants))?;
+        Ok(__cordl_ret)
+    }
     pub fn AddDevice_InputDevice3(
         &mut self,
         device: *mut crate::UnityEngine::InputSystem::InputDevice,
@@ -180,11 +195,11 @@ impl crate::UnityEngine::InputSystem::InputManager {
             .invoke("AddDevice", (description))?;
         Ok(__cordl_ret)
     }
-    pub fn AddDevice_InputDeviceDescription_InternedString_String_i32_InputDevice_DeviceFlags6(
+    pub fn AddDevice_InputDeviceDescription_InternedString_Il2CppString_i32_InputDevice_DeviceFlags6(
         &mut self,
         description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
-        deviceName: *mut crate::System::String,
+        deviceName: *mut quest_hook::libil2cpp::Il2CppString,
         deviceId: i32,
         deviceFlags: crate::UnityEngine::InputSystem::InputDevice_DeviceFlags,
     ) -> quest_hook::libil2cpp::Result<
@@ -200,11 +215,11 @@ impl crate::UnityEngine::InputSystem::InputManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AddDevice_InputDeviceDescription__cordl_bool_String_i32_InputDevice_DeviceFlags5(
+    pub fn AddDevice_InputDeviceDescription__cordl_bool_Il2CppString_i32_InputDevice_DeviceFlags5(
         &mut self,
         description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
         throwIfNoLayoutFound: bool,
-        deviceName: *mut crate::System::String,
+        deviceName: *mut quest_hook::libil2cpp::Il2CppString,
         deviceId: i32,
         deviceFlags: crate::UnityEngine::InputSystem::InputDevice_DeviceFlags,
     ) -> quest_hook::libil2cpp::Result<
@@ -220,11 +235,11 @@ impl crate::UnityEngine::InputSystem::InputManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AddDevice_InternedString_i32_String_InputDeviceDescription_InputDevice_DeviceFlags_InternedString2(
+    pub fn AddDevice_InternedString_i32_Il2CppString_InputDeviceDescription_InputDevice_DeviceFlags_InternedString2(
         &mut self,
         layout: crate::UnityEngine::InputSystem::Utilities::InternedString,
         deviceId: i32,
-        deviceName: *mut crate::System::String,
+        deviceName: *mut quest_hook::libil2cpp::Il2CppString,
         deviceDescription: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
         deviceFlags: crate::UnityEngine::InputSystem::InputDevice_DeviceFlags,
         variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
@@ -241,25 +256,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn AddDevice_String_String_InternedString1(
-        &mut self,
-        layout: *mut crate::System::String,
-        name: *mut crate::System::String,
-        variants: crate::UnityEngine::InputSystem::Utilities::InternedString,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut crate::UnityEngine::InputSystem::InputDevice,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut crate::UnityEngine::InputSystem::InputDevice = __cordl_object
-            .invoke("AddDevice", (layout, name, variants))?;
-        Ok(__cordl_ret)
-    }
-    pub fn AddDevice_Type_String0(
+    pub fn AddDevice_Type_Il2CppString0(
         &mut self,
         _cordl_type: *mut crate::System::Type,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputDevice,
     > {
@@ -436,7 +436,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn GetControls<TControl>(
         &mut self,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         controls: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputControlList_1<TControl>,
         >,
@@ -453,7 +453,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn GetDevice(
         &mut self,
-        nameOrLayout: *mut crate::System::String,
+        nameOrLayout: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputDevice,
     > {
@@ -600,17 +600,17 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn ListControlLayouts(
         &mut self,
-        basedOn: *mut crate::System::String,
+        basedOn: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("ListControlLayouts", (basedOn))?;
         Ok(__cordl_ret)
     }
@@ -668,7 +668,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn OnNativeDeviceDiscovered(
         &mut self,
         deviceId: i32,
-        deviceDescriptor: *mut crate::System::String,
+        deviceDescriptor: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -838,8 +838,8 @@ impl crate::UnityEngine::InputSystem::InputManager {
         method: *mut crate::System::Func_1<
             *mut crate::UnityEngine::InputSystem::Layouts::InputControlLayout,
         >,
-        name: *mut crate::System::String,
-        baseLayout: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        baseLayout: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -848,9 +848,9 @@ impl crate::UnityEngine::InputSystem::InputManager {
             .invoke("RegisterControlLayoutBuilder", (method, name, baseLayout))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterControlLayoutMatcher_String0(
+    pub fn RegisterControlLayoutMatcher_Il2CppString0(
         &mut self,
-        layoutName: *mut crate::System::String,
+        layoutName: *mut quest_hook::libil2cpp::Il2CppString,
         matcher: crate::UnityEngine::InputSystem::Layouts::InputDeviceMatcher,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -872,10 +872,10 @@ impl crate::UnityEngine::InputSystem::InputManager {
             .invoke("RegisterControlLayoutMatcher", (_cordl_type, matcher))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterControlLayout_String__cordl_bool1(
+    pub fn RegisterControlLayout_Il2CppString__cordl_bool1(
         &mut self,
-        json: *mut crate::System::String,
-        name: *mut crate::System::String,
+        json: *mut quest_hook::libil2cpp::Il2CppString,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         isOverride: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -887,7 +887,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn RegisterControlLayout_Type0(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         _cordl_type: *mut crate::System::Type,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -899,7 +899,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn RegisterPrecompiledLayout<TDevice>(
         &mut self,
-        metadata: *mut crate::System::String,
+        metadata: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TDevice: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -914,7 +914,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn RemoveControlLayout(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1098,9 +1098,9 @@ impl crate::UnityEngine::InputSystem::InputManager {
             .invoke("TryGetDeviceById", (id))?;
         Ok(__cordl_ret)
     }
-    pub fn TryGetDevice_String0(
+    pub fn TryGetDevice_Il2CppString0(
         &mut self,
-        nameOrLayout: *mut crate::System::String,
+        nameOrLayout: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputDevice,
     > {
@@ -1152,7 +1152,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     }
     pub fn TryMatchDisconnectedDevice(
         &mut self,
-        deviceDescriptor: *mut crate::System::String,
+        deviceDescriptor: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::InputSystem::InputDevice,
     > {
@@ -1387,7 +1387,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn add_onLayoutChange(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             crate::UnityEngine::InputSystem::InputControlLayoutChange,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1635,7 +1635,7 @@ impl crate::UnityEngine::InputSystem::InputManager {
     pub fn remove_onLayoutChange(
         &mut self,
         value: *mut crate::System::Action_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             crate::UnityEngine::InputSystem::InputControlLayoutChange,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

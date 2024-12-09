@@ -28,7 +28,7 @@ for crate::System::Runtime::Serialization::ISafeSerializationData {
 impl crate::System::Runtime::Serialization::ISafeSerializationData {
     pub fn CompleteDeserialization(
         &mut self,
-        deserialized: *mut crate::System::Object,
+        deserialized: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

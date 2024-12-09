@@ -8,7 +8,7 @@ pub struct BeatmapDifficultyDropdown {
     pub _beatmapDifficultyData: *mut crate::System::Collections::Generic::IReadOnlyList_1<
         *mut crate::System::Tuple_2<
             crate::GlobalNamespace::BeatmapDifficultyMask,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     >,
     pub _includeAllDifficulties_k__BackingField: bool,
@@ -136,7 +136,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
                 crate::GlobalNamespace::BeatmapDifficultyMask,
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         >,
     > {
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::BeatmapDifficultyDropdown {
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
             *mut crate::System::Tuple_2<
                 crate::GlobalNamespace::BeatmapDifficultyMask,
-                *mut crate::System::String,
+                *mut quest_hook::libil2cpp::Il2CppString,
             >,
         > = __cordl_object.invoke("get_beatmapDifficultyData", ())?;
         Ok(__cordl_ret)

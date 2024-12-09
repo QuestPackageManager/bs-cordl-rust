@@ -351,8 +351,8 @@ for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyNameVectorValue
 #[repr(C)]
 #[derive(Debug)]
 pub struct MaterialPropertyValuesSetter_PropertyValuePairBase {
-    __cordl_parent: crate::System::Object,
-    pub _propertyName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _propertyId_k__BackingField: i32,
 }
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
@@ -364,7 +364,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MaterialPropertyValuesSetter+PropertyValuePairBase")]
 impl std::ops::Deref
 for crate::GlobalNamespace::MaterialPropertyValuesSetter_PropertyValuePairBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

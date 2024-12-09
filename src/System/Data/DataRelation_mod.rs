@@ -2,24 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DataRelation {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _dataSet: *mut crate::System::Data::DataSet,
     pub _extendedProperties: *mut crate::System::Data::PropertyCollection,
-    pub _relationName: *mut crate::System::String,
+    pub _relationName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _childKey: crate::System::Data::DataKey,
     pub _parentKey: crate::System::Data::DataKey,
     pub _parentKeyConstraint: *mut crate::System::Data::UniqueConstraint,
     pub _childKeyConstraint: *mut crate::System::Data::ForeignKeyConstraint,
     pub _parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _parentTableName: *mut crate::System::String,
-    pub _childTableName: *mut crate::System::String,
-    pub _parentTableNamespace: *mut crate::System::String,
-    pub _childTableNamespace: *mut crate::System::String,
+    pub _parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _childTableName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _parentTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _childTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
     pub _nested: bool,
     pub _createConstraints: bool,
     pub _checkMultipleNested: bool,
@@ -33,7 +33,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Data+DataRelation")]
 impl std::ops::Deref for crate::System::Data::DataRelation {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -48,7 +48,7 @@ impl std::ops::DerefMut for crate::System::Data::DataRelation {
 impl crate::System::Data::DataRelation {
     pub fn CheckNamespaceValidityForNestedRelations(
         &mut self,
-        ns: *mut crate::System::String,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -100,7 +100,7 @@ impl crate::System::Data::DataRelation {
     }
     pub fn Create(
         &mut self,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -130,7 +130,7 @@ impl crate::System::Data::DataRelation {
         Ok(__cordl_ret)
     }
     pub fn New_DataColumn_DataColumn__cordl_bool0(
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumn: *mut crate::System::Data::DataColumn,
         childColumn: *mut crate::System::Data::DataColumn,
         createConstraints: bool,
@@ -145,7 +145,7 @@ impl crate::System::Data::DataRelation {
         Ok(__cordl_object)
     }
     pub fn New_Il2CppArray_Il2CppArray1(
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -160,7 +160,7 @@ impl crate::System::Data::DataRelation {
         Ok(__cordl_object)
     }
     pub fn New_Il2CppArray_Il2CppArray__cordl_bool2(
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -178,15 +178,15 @@ impl crate::System::Data::DataRelation {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_Il2CppArray_Il2CppArray__cordl_bool3(
-        relationName: *mut crate::System::String,
-        parentTableName: *mut crate::System::String,
-        childTableName: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Il2CppArray_Il2CppArray__cordl_bool3(
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
+        childTableName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         nested: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -206,17 +206,17 @@ impl crate::System::Data::DataRelation {
             )?;
         Ok(__cordl_object)
     }
-    pub fn New_String_String_String_String_Il2CppArray_Il2CppArray__cordl_bool4(
-        relationName: *mut crate::System::String,
-        parentTableName: *mut crate::System::String,
-        parentTableNamespace: *mut crate::System::String,
-        childTableName: *mut crate::System::String,
-        childTableNamespace: *mut crate::System::String,
+    pub fn New_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppArray_Il2CppArray__cordl_bool4(
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        childTableName: *mut quest_hook::libil2cpp::Il2CppString,
+        childTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         nested: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -251,7 +251,7 @@ impl crate::System::Data::DataRelation {
     }
     pub fn RaisePropertyChanging(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -295,11 +295,11 @@ impl crate::System::Data::DataRelation {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
@@ -315,7 +315,7 @@ impl crate::System::Data::DataRelation {
     }
     pub fn _ctor_DataColumn_DataColumn__cordl_bool0(
         &mut self,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumn: *mut crate::System::Data::DataColumn,
         childColumn: *mut crate::System::Data::DataColumn,
         createConstraints: bool,
@@ -332,7 +332,7 @@ impl crate::System::Data::DataRelation {
     }
     pub fn _ctor_Il2CppArray_Il2CppArray1(
         &mut self,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -349,7 +349,7 @@ impl crate::System::Data::DataRelation {
     }
     pub fn _ctor_Il2CppArray_Il2CppArray__cordl_bool2(
         &mut self,
-        relationName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumns: *mut quest_hook::libil2cpp::Il2CppArray<
             *mut crate::System::Data::DataColumn,
         >,
@@ -368,16 +368,16 @@ impl crate::System::Data::DataRelation {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_Il2CppArray_Il2CppArray__cordl_bool3(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppArray_Il2CppArray__cordl_bool3(
         &mut self,
-        relationName: *mut crate::System::String,
-        parentTableName: *mut crate::System::String,
-        childTableName: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
+        childTableName: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         nested: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -398,18 +398,18 @@ impl crate::System::Data::DataRelation {
             )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_String_String_String_Il2CppArray_Il2CppArray__cordl_bool4(
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString_Il2CppString_Il2CppArray_Il2CppArray__cordl_bool4(
         &mut self,
-        relationName: *mut crate::System::String,
-        parentTableName: *mut crate::System::String,
-        parentTableNamespace: *mut crate::System::String,
-        childTableName: *mut crate::System::String,
-        childTableNamespace: *mut crate::System::String,
+        relationName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableName: *mut quest_hook::libil2cpp::Il2CppString,
+        parentTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+        childTableName: *mut quest_hook::libil2cpp::Il2CppString,
+        childTableNamespace: *mut quest_hook::libil2cpp::Il2CppString,
         parentColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         childColumnNames: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
         nested: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -442,13 +442,13 @@ impl crate::System::Data::DataRelation {
     pub fn get_ChildColumnNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ChildColumnNames", ())?;
         Ok(__cordl_ret)
     }
@@ -545,13 +545,13 @@ impl crate::System::Data::DataRelation {
     pub fn get_ParentColumnNames(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_ParentColumnNames", ())?;
         Ok(__cordl_ret)
     }
@@ -613,11 +613,11 @@ impl crate::System::Data::DataRelation {
     }
     pub fn get_RelationName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_RelationName", ())?;
         Ok(__cordl_ret)
     }

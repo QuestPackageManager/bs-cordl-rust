@@ -5,7 +5,7 @@ pub struct DictionaryDebugView_2<
     K: quest_hook::libil2cpp::Type,
     V: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_K: std::marker::PhantomData<K>,
     __cordl_phantom_V: std::marker::PhantomData<V>,
 }
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Collections+Generic+DictionaryDebugView_2")]
 impl<K: quest_hook::libil2cpp::Type, V: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::System::Collections::Generic::DictionaryDebugView_2<K, V> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

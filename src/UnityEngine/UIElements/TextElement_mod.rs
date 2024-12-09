@@ -4,12 +4,12 @@
 pub struct TextElement {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub _uitkTextHandle_k__BackingField: *mut crate::UnityEngine::UIElements::UITKTextHandle,
-    pub m_Text: *mut crate::System::String,
+    pub m_Text: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_EnableRichText: bool,
     pub m_ParseEscapeSequences: bool,
     pub m_DisplayTooltipWhenElided: bool,
     pub _isElided_k__BackingField: bool,
-    pub elidedText: *mut crate::System::String,
+    pub elidedText: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_WasElided: bool,
     pub editingManipulator: *mut crate::UnityEngine::UIElements::TextEditingManipulator,
     pub m_Multiline: bool,
@@ -29,8 +29,8 @@ pub struct TextElement {
     pub _UnityEngine_UIElements_ITextEdition_UpdateValueFromText_k__BackingField: *mut crate::System::Action,
     pub _UnityEngine_UIElements_ITextEdition_UpdateTextFromValue_k__BackingField: *mut crate::System::Action,
     pub _UnityEngine_UIElements_ITextEdition_MoveFocusToCompositeRoot_k__BackingField: *mut crate::System::Action,
-    pub m_RenderedText: *mut crate::System::String,
-    pub m_OriginalText: *mut crate::System::String,
+    pub m_RenderedText: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_OriginalText: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_MaskChar: char,
     pub m_IsPassword: bool,
     pub m_AutoCorrection: bool,
@@ -165,15 +165,15 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn ElideText(
         &mut self,
-        drawText: *mut crate::System::String,
-        ellipsisText: *mut crate::System::String,
+        drawText: *mut quest_hook::libil2cpp::Il2CppString,
+        ellipsisText: *mut quest_hook::libil2cpp::Il2CppString,
         width: f32,
         textOverflowPosition: crate::UnityEngine::UIElements::TextOverflowPosition,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ElideText", (drawText, ellipsisText, width, textOverflowPosition))?;
         Ok(__cordl_ret)
     }
@@ -200,7 +200,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn MeasureTextSize(
         &mut self,
-        textToMeasure: *mut crate::System::String,
+        textToMeasure: *mut quest_hook::libil2cpp::Il2CppString,
         width: f32,
         widthMode: crate::UnityEngine::UIElements::VisualElement_MeasureMode,
         height: f32,
@@ -271,7 +271,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn ProcessMenuCommand(
         &mut self,
-        command: *mut crate::System::String,
+        command: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -289,7 +289,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_INotifyValueChanged_System_String__SetValueWithoutNotify(
         &mut self,
-        newValue: *mut crate::System::String,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -303,11 +303,11 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_INotifyValueChanged_System_String__get_value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke(
                 "UnityEngine.UIElements.INotifyValueChanged<System.String>.get_value",
                 (),
@@ -316,7 +316,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_INotifyValueChanged_System_String__set_value(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -330,12 +330,12 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_ITextEdition_CullString(
         &mut self,
-        s: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        s: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("UnityEngine.UIElements.ITextEdition.CullString", (s))?;
         Ok(__cordl_ret)
     }
@@ -361,7 +361,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn UnityEngine_UIElements_ITextEdition_UpdateText(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -996,11 +996,11 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn get_originalText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_originalText", ())?;
         Ok(__cordl_ret)
     }
@@ -1013,11 +1013,11 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn get_renderedText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_renderedText", ())?;
         Ok(__cordl_ret)
     }
@@ -1047,11 +1047,11 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn get_text(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_text", ())?;
         Ok(__cordl_ret)
     }
@@ -1113,7 +1113,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn set_renderedText(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1124,7 +1124,7 @@ impl crate::UnityEngine::UIElements::TextElement {
     }
     pub fn set_text(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

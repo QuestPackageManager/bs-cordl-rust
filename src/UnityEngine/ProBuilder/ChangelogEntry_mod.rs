@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ChangelogEntry {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_VersionInfo: *mut crate::UnityEngine::ProBuilder::SemVer,
-    pub m_ReleaseNotes: *mut crate::System::String,
+    pub m_ReleaseNotes: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ChangelogEntry")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+ProBuilder+ChangelogEntry")]
 impl std::ops::Deref for crate::UnityEngine::ProBuilder::ChangelogEntry {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ChangelogEntry {
 impl crate::UnityEngine::ProBuilder::ChangelogEntry {
     pub fn New(
         version: *mut crate::UnityEngine::ProBuilder::SemVer,
-        releaseNotes: *mut crate::System::String,
+        releaseNotes: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,18 +38,18 @@ impl crate::UnityEngine::ProBuilder::ChangelogEntry {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
         version: *mut crate::UnityEngine::ProBuilder::SemVer,
-        releaseNotes: *mut crate::System::String,
+        releaseNotes: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -60,11 +60,11 @@ impl crate::UnityEngine::ProBuilder::ChangelogEntry {
     }
     pub fn get_releaseNotes(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_releaseNotes", ())?;
         Ok(__cordl_ret)
     }

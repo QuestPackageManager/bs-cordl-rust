@@ -2,16 +2,16 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct TransientProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _concreteType: *mut crate::System::Type,
     pub _extraArguments: *mut crate::System::Collections::Generic::List_1<
         crate::Zenject::TypeValuePair,
     >,
-    pub _concreteIdentifier: *mut crate::System::Object,
+    pub _concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _instantiateCallback: *mut crate::System::Action_2<
         *mut crate::Zenject::InjectContext,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Zenject+TransientProvider")]
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+TransientProvider")]
 impl std::ops::Deref for crate::Zenject::TransientProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,7 +44,7 @@ impl crate::Zenject::TransientProvider {
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -85,11 +85,11 @@ impl crate::Zenject::TransientProvider {
         extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::Zenject::TypeValuePair,
         >,
-        bindingContext: *mut crate::System::String,
-        concreteIdentifier: *mut crate::System::Object,
+        bindingContext: *mut quest_hook::libil2cpp::Il2CppString,
+        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateCallback: *mut crate::System::Action_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -115,11 +115,11 @@ impl crate::Zenject::TransientProvider {
         extraArguments: *mut crate::System::Collections::Generic::IEnumerable_1<
             crate::Zenject::TypeValuePair,
         >,
-        bindingContext: *mut crate::System::String,
-        concreteIdentifier: *mut crate::System::Object,
+        bindingContext: *mut quest_hook::libil2cpp::Il2CppString,
+        concreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         instantiateCallback: *mut crate::System::Action_2<
             *mut crate::Zenject::InjectContext,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

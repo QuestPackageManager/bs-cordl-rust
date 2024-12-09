@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsnEncodedData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _oid: *mut crate::System::Security::Cryptography::Oid,
     pub _raw: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
 }
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Security+Cryptography+AsnEncodedData")]
 impl std::ops::Deref for crate::System::Security::Cryptography::AsnEncodedData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,11 +29,11 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
     pub fn BasicConstraintsExtension(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("BasicConstraintsExtension", (multiLine))?;
         Ok(__cordl_ret)
     }
@@ -51,55 +51,55 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
     pub fn Default(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Default", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn EnhancedKeyUsageExtension(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("EnhancedKeyUsageExtension", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn Format(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Format", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn KeyUsageExtension(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("KeyUsageExtension", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn NetscapeCertType(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("NetscapeCertType", (multiLine))?;
         Ok(__cordl_ret)
     }
@@ -119,8 +119,8 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke_void(".ctor", (asnEncodedData))?;
         Ok(__cordl_object)
     }
-    pub fn New_Oid_Il2CppArray2(
-        oid: *mut crate::System::Security::Cryptography::Oid,
+    pub fn New_Il2CppString_Il2CppArray1(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -129,8 +129,8 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke_void(".ctor", (oid, rawData))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Il2CppArray1(
-        oid: *mut crate::System::String,
+    pub fn New_Oid_Il2CppArray2(
+        oid: *mut crate::System::Security::Cryptography::Oid,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -142,33 +142,33 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
     pub fn SubjectAltName(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("SubjectAltName", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn SubjectKeyIdentifierExtension(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("SubjectKeyIdentifierExtension", (multiLine))?;
         Ok(__cordl_ret)
     }
     pub fn ToString(
         &mut self,
         multiLine: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (multiLine))?;
         Ok(__cordl_ret)
     }
@@ -193,9 +193,9 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke(".ctor", (asnEncodedData))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Oid_Il2CppArray2(
+    pub fn _ctor_Il2CppString_Il2CppArray1(
         &mut self,
-        oid: *mut crate::System::Security::Cryptography::Oid,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -205,9 +205,9 @@ impl crate::System::Security::Cryptography::AsnEncodedData {
             .invoke(".ctor", (oid, rawData))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Il2CppArray1(
+    pub fn _ctor_Oid_Il2CppArray2(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut crate::System::Security::Cryptography::Oid,
         rawData: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

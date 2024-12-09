@@ -4,17 +4,17 @@
 pub struct InputControlLayoutAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _stateType_k__BackingField: *mut crate::System::Type,
-    pub _stateFormat_k__BackingField: *mut crate::System::String,
+    pub _stateFormat_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _commonUsages_k__BackingField: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _variants_k__BackingField: *mut crate::System::String,
+    pub _variants_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _isNoisy_k__BackingField: bool,
     pub canRunInBackgroundInternal: crate::System::Nullable_1<bool>,
     pub updateBeforeRenderInternal: crate::System::Nullable_1<bool>,
     pub _isGenericTypeOfDevice_k__BackingField: bool,
-    pub _displayName_k__BackingField: *mut crate::System::String,
-    pub _description_k__BackingField: *mut crate::System::String,
+    pub _displayName_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _description_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _hideInUI_k__BackingField: bool,
 }
 #[cfg(feature = "UnityEngine+InputSystem+Layouts+InputControlLayoutAttribute")]
@@ -67,33 +67,33 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     pub fn get_commonUsages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_commonUsages", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_description(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_description", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_displayName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_displayName", ())?;
         Ok(__cordl_ret)
     }
@@ -120,11 +120,11 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn get_stateFormat(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_stateFormat", ())?;
         Ok(__cordl_ret)
     }
@@ -147,11 +147,11 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn get_variants(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_variants", ())?;
         Ok(__cordl_ret)
     }
@@ -168,7 +168,9 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn set_commonUsages(
         &mut self,
-        value: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        value: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -179,7 +181,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn set_description(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -190,7 +192,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn set_displayName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -234,7 +236,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn set_stateFormat(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -267,7 +269,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputControlLayoutAttribute {
     }
     pub fn set_variants(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalBase {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _currentErrorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
     pub _mappings: *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-        *mut crate::System::String,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub Serializer: *mut crate::Newtonsoft::Json::JsonSerializer,
     pub TraceWriter: *mut crate::Newtonsoft::Json::Serialization::ITraceWriter,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase")]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -51,9 +51,9 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     }
     pub fn GetErrorContext(
         &mut self,
-        currentObject: *mut crate::System::Object,
-        member: *mut crate::System::Object,
-        path: *mut crate::System::String,
+        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        member: *mut quest_hook::libil2cpp::Il2CppObject,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         error: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
@@ -67,11 +67,11 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
     }
     pub fn IsErrorHandled(
         &mut self,
-        currentObject: *mut crate::System::Object,
+        currentObject: *mut quest_hook::libil2cpp::Il2CppObject,
         contract: *mut crate::Newtonsoft::Json::Serialization::JsonContract,
-        keyValue: *mut crate::System::Object,
+        keyValue: *mut quest_hook::libil2cpp::Il2CppObject,
         lineInfo: *mut crate::Newtonsoft::Json::IJsonLineInfo,
-        path: *mut crate::System::String,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
         ex: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -120,16 +120,16 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Utilities::BidirectionalDictionary_2<
-            *mut crate::System::String,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_DefaultReferenceMappings", ())?;
         Ok(__cordl_ret)
     }
@@ -150,7 +150,7 @@ for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase {
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(
     feature = "Newtonsoft+Json+Serialization+JsonSerializerInternalBase+ReferenceEqualsEqualityComparer"
@@ -166,7 +166,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_ReferenceEqualsEqualityComparer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -193,8 +193,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
     }
     pub fn System_Collections_Generic_IEqualityComparer_System_Object__Equals(
         &mut self,
-        x: *mut crate::System::Object,
-        y: *mut crate::System::Object,
+        x: *mut quest_hook::libil2cpp::Il2CppObject,
+        y: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -208,7 +208,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonSerializerInternalBase_Referenc
     }
     pub fn System_Collections_Generic_IEqualityComparer_System_Object__GetHashCode(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

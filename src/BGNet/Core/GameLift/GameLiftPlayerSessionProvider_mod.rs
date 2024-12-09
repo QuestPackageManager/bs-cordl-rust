@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct GameLiftPlayerSessionProvider {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _networkConfig: *mut crate::GlobalNamespace::INetworkConfig,
     pub _graphAPIClient: *mut crate::GlobalNamespace::GraphAPIClient,
     pub _xPlatformAuthFeatureFlag: *mut crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     pub _pingAverages: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::GlobalNamespace::RollingAverage,
     >,
     pub _pingCount: i32,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BGNet+Core+GameLift+GameLiftPlayerSessionProvider")]
 impl std::ops::Deref for crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +57,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             i64,
         >,
     > {
@@ -65,7 +65,7 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::Dictionary_2<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
             i64,
         > = __cordl_object.invoke("GetAverageLatencies", ())?;
         Ok(__cordl_ret)
@@ -73,11 +73,11 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     pub fn GetGameLiftPlayerSessionInfo(
         &mut self,
         authenticationTokenProvider: *mut crate::GlobalNamespace::IAuthenticationTokenProvider,
-        userId: *mut crate::System::String,
+        userId: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-        secret: *mut crate::System::String,
-        code: *mut crate::System::String,
+        secret: *mut quest_hook::libil2cpp::Il2CppString,
+        code: *mut quest_hook::libil2cpp::Il2CppString,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
@@ -148,17 +148,17 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
     pub fn PingRegionAsync(
         &mut self,
-        awsRegion: *mut crate::System::String,
+        awsRegion: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
+            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
+            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
         > = __cordl_object.invoke("PingRegionAsync", (awsRegion))?;
         Ok(__cordl_ret)
     }
@@ -174,17 +174,17 @@ impl crate::BGNet::Core::GameLift::GameLiftPlayerSessionProvider {
     }
     pub fn _PingAllAwsGameLiftRegions_b__15_0(
         &mut self,
-        region: *mut crate::System::String,
+        region: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
+            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<*mut crate::System::String, i64>,
+            crate::System::ValueTuple_2<*mut quest_hook::libil2cpp::Il2CppString, i64>,
         > = __cordl_object.invoke("<PingAllAwsGameLiftRegions>b__15_0", (region))?;
         Ok(__cordl_ret)
     }

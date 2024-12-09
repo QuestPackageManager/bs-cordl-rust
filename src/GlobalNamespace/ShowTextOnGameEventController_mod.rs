@@ -82,9 +82,9 @@ for crate::GlobalNamespace::ShowTextOnGameEventController {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ShowTextOnGameEventController_EventTextBinding {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _signal: *mut crate::GlobalNamespace::Signal,
-    pub _text: *mut crate::System::String,
+    pub _text: *mut quest_hook::libil2cpp::Il2CppString,
     pub _textFadeTransitions: *mut crate::GlobalNamespace::TextFadeTransitions,
 }
 #[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
@@ -96,7 +96,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "ShowTextOnGameEventController+EventTextBinding")]
 impl std::ops::Deref
 for crate::GlobalNamespace::ShowTextOnGameEventController_EventTextBinding {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

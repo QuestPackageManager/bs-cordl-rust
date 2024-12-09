@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SecureStringHasher {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub hashCodeRandomizer: i32,
 }
 #[cfg(feature = "System+Xml+SecureStringHasher")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+SecureStringHasher")]
 impl std::ops::Deref for crate::System::Xml::SecureStringHasher {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,8 +29,8 @@ impl crate::System::Xml::SecureStringHasher {
     pub type HashCodeOfStringDelegate = crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate;
     pub fn Equals(
         &mut self,
-        x: *mut crate::System::String,
-        y: *mut crate::System::String,
+        x: *mut quest_hook::libil2cpp::Il2CppString,
+        y: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -40,7 +40,7 @@ impl crate::System::Xml::SecureStringHasher {
     }
     pub fn GetHashCode(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -106,7 +106,7 @@ for crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
 impl crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
     pub fn Invoke(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         sLen: i32,
         additionalEntropy: i64,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -118,7 +118,7 @@ impl crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
         Ok(__cordl_ret)
     }
     pub fn New(
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -129,7 +129,7 @@ impl crate::System::Xml::SecureStringHasher_HashCodeOfStringDelegate {
     }
     pub fn _ctor(
         &mut self,
-        object: *mut crate::System::Object,
+        object: *mut quest_hook::libil2cpp::Il2CppObject,
         method: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

@@ -24,29 +24,29 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XmlBooleanConverter {
 }
 #[cfg(feature = "System+Xml+Schema+XmlBooleanConverter")]
 impl crate::System::Xml::Schema::XmlBooleanConverter {
-    pub fn ChangeType_Object_IXmlNamespaceResolver2(
+    pub fn ChangeType_Il2CppObject_IXmlNamespaceResolver2(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }
-    pub fn ChangeType_String_IXmlNamespaceResolver1(
+    pub fn ChangeType_Il2CppString_IXmlNamespaceResolver1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         destinationType: *mut crate::System::Type,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType, nsResolver))?;
         Ok(__cordl_ret)
     }
@@ -54,11 +54,11 @@ impl crate::System::Xml::Schema::XmlBooleanConverter {
         &mut self,
         value: bool,
         destinationType: *mut crate::System::Type,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ChangeType", (value, destinationType))?;
         Ok(__cordl_ret)
     }
@@ -71,9 +71,9 @@ impl crate::System::Xml::Schema::XmlBooleanConverter {
             .invoke_void(".ctor", (schemaType))?;
         Ok(__cordl_object)
     }
-    pub fn ToBoolean_Object1(
+    pub fn ToBoolean_Il2CppObject1(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -81,9 +81,9 @@ impl crate::System::Xml::Schema::XmlBooleanConverter {
         let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToBoolean_String0(
+    pub fn ToBoolean_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -91,26 +91,26 @@ impl crate::System::Xml::Schema::XmlBooleanConverter {
         let __cordl_ret: bool = __cordl_object.invoke("ToBoolean", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_Object_IXmlNamespaceResolver1(
+    pub fn ToString_Il2CppObject_IXmlNamespaceResolver1(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         nsResolver: *mut crate::System::Xml::IXmlNamespaceResolver,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value, nsResolver))?;
         Ok(__cordl_ret)
     }
     pub fn ToString__cordl_bool0(
         &mut self,
         value: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (value))?;
         Ok(__cordl_ret)
     }

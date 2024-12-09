@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub Type: *mut crate::System::Type,
     pub BaseType: *mut crate::System::Type,
     pub InjectProperties: *mut crate::System::Collections::Generic::List_1<
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -122,7 +122,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Zenject::Internal::ReflectionT
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeInfo_InjectConstructorInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ConstructorInfo: *mut crate::System::Reflection::ConstructorInfo,
     pub Parameters: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
@@ -137,7 +137,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectConstructorInfo")]
 impl std::ops::Deref
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -192,7 +192,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectConstructorInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeInfo_InjectFieldInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FieldInfo: *mut crate::System::Reflection::FieldInfo,
     pub InjectableInfo: *mut crate::Zenject::InjectableInfo,
 }
@@ -204,7 +204,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectFieldInfo")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -255,7 +255,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectFieldInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeInfo_InjectMethodInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MethodInfo: *mut crate::System::Reflection::MethodInfo,
     pub Parameters: *mut crate::System::Collections::Generic::List_1<
         *mut crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo,
@@ -269,7 +269,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectMethodInfo")]
 impl std::ops::Deref for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -324,7 +324,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectMethodInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeInfo_InjectParameterInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ParameterInfo: *mut crate::System::Reflection::ParameterInfo,
     pub InjectableInfo: *mut crate::Zenject::InjectableInfo,
 }
@@ -337,7 +337,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectParameterInfo")]
 impl std::ops::Deref
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -388,7 +388,7 @@ for crate::Zenject::Internal::ReflectionTypeInfo_InjectParameterInfo {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ReflectionTypeInfo_InjectPropertyInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub PropertyInfo: *mut crate::System::Reflection::PropertyInfo,
     pub InjectableInfo: *mut crate::Zenject::InjectableInfo,
 }
@@ -401,7 +401,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Zenject+Internal+ReflectionTypeInfo+InjectPropertyInfo")]
 impl std::ops::Deref
 for crate::Zenject::Internal::ReflectionTypeInfo_InjectPropertyInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,17 +2,17 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CookieTokenizer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_eofCookie: bool,
     pub m_index: i32,
     pub m_length: i32,
-    pub m_name: *mut crate::System::String,
+    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_quoted: bool,
     pub m_start: i32,
     pub m_token: crate::System::Net::CookieToken,
     pub m_tokenLength: i32,
-    pub m_tokenStream: *mut crate::System::String,
-    pub m_value: *mut crate::System::String,
+    pub m_tokenStream: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_value: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+CookieTokenizer")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+CookieTokenizer")]
 impl std::ops::Deref for crate::System::Net::CookieTokenizer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -38,11 +38,11 @@ impl crate::System::Net::CookieTokenizer {
     pub type RecognizedAttribute = crate::System::Net::CookieTokenizer_RecognizedAttribute;
     pub fn Extract(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Extract", ())?;
         Ok(__cordl_ret)
     }
@@ -59,7 +59,7 @@ impl crate::System::Net::CookieTokenizer {
         Ok(__cordl_ret)
     }
     pub fn New(
-        tokenStream: *mut crate::System::String,
+        tokenStream: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -102,7 +102,7 @@ impl crate::System::Net::CookieTokenizer {
     }
     pub fn _ctor(
         &mut self,
-        tokenStream: *mut crate::System::String,
+        tokenStream: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -127,11 +127,11 @@ impl crate::System::Net::CookieTokenizer {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }
@@ -154,11 +154,11 @@ impl crate::System::Net::CookieTokenizer {
     }
     pub fn get_Value(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Value", ())?;
         Ok(__cordl_ret)
     }
@@ -175,7 +175,7 @@ impl crate::System::Net::CookieTokenizer {
     }
     pub fn set_Name(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -208,7 +208,7 @@ impl crate::System::Net::CookieTokenizer {
     }
     pub fn set_Value(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -231,7 +231,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::System::Net::CookieTokenizer {
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct CookieTokenizer_RecognizedAttribute {
-    pub m_name: *mut crate::System::String,
+    pub m_name: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_token: crate::System::Net::CookieToken,
 }
 #[cfg(feature = "System+Net+CookieTokenizer+RecognizedAttribute")]
@@ -254,7 +254,7 @@ for crate::System::Net::CookieTokenizer_RecognizedAttribute {
 impl crate::System::Net::CookieTokenizer_RecognizedAttribute {
     pub fn IsEqualTo(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
@@ -265,7 +265,7 @@ impl crate::System::Net::CookieTokenizer_RecognizedAttribute {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         token: crate::System::Net::CookieToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

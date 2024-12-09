@@ -42,7 +42,7 @@ impl crate::UnityEngine::UIElements::EnumField {
     pub type __c = crate::UnityEngine::UIElements::EnumField___c;
     pub fn ChangeValueFromMenu(
         &mut self,
-        menuItem: *mut crate::System::Object,
+        menuItem: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -102,8 +102,8 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Enum1(
-        label: *mut crate::System::String,
+    pub fn New_Il2CppString_Enum1(
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         defaultValue: *mut crate::System::Enum,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -215,7 +215,7 @@ impl crate::UnityEngine::UIElements::EnumField {
     }
     pub fn _ShowMenu_b__33_0(
         &mut self,
-        contentView: *mut crate::System::Object,
+        contentView: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -234,9 +234,9 @@ impl crate::UnityEngine::UIElements::EnumField {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Enum1(
+    pub fn _ctor_Il2CppString_Enum1(
         &mut self,
-        label: *mut crate::System::String,
+        label: *mut quest_hook::libil2cpp::Il2CppString,
         defaultValue: *mut crate::System::Enum,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

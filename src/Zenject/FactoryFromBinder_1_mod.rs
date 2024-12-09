@@ -114,9 +114,9 @@ impl<
             .invoke("FromResolveGetter", (method))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveGetter_Object_Func_2_1<TObj>(
+    pub fn FromResolveGetter_Il2CppObject_Func_2_1<TObj>(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TContract>,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::ConditionCopyNonLazyBinder>
     where
@@ -132,9 +132,9 @@ impl<
             .invoke("FromResolveGetter", (subIdentifier, method))?;
         Ok(__cordl_ret)
     }
-    pub fn FromResolveGetter_Object_Func_2_InjectSources2<TObj>(
+    pub fn FromResolveGetter_Il2CppObject_Func_2_InjectSources2<TObj>(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
         method: *mut crate::System::Func_2<TObj, TContract>,
         source: crate::Zenject::InjectSources,
     ) -> quest_hook::libil2cpp::Result<*mut crate::Zenject::ConditionCopyNonLazyBinder>
@@ -167,9 +167,9 @@ impl<
             .invoke("FromSubContainerResolve", ())?;
         Ok(__cordl_ret)
     }
-    pub fn FromSubContainerResolve_Object1(
+    pub fn FromSubContainerResolve_Il2CppObject1(
         &mut self,
-        subIdentifier: *mut crate::System::Object,
+        subIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Zenject::FactorySubContainerBinder_1<TContract>,
     >

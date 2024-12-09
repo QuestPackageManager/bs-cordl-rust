@@ -103,9 +103,9 @@ impl crate::UnityEngine::UIElements::ICustomStyle {
     pub fn TryGetValue_CustomStyleProperty_1_ByRefMut6(
         &mut self,
         property: crate::UnityEngine::UIElements::CustomStyleProperty_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
-        value: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        value: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

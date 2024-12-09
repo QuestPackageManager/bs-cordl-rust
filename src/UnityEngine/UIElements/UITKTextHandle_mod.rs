@@ -77,7 +77,7 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
     }
     pub fn ComputeTextHeight(
         &mut self,
-        textToMeasure: *mut crate::System::String,
+        textToMeasure: *mut quest_hook::libil2cpp::Il2CppString,
         width: f32,
         height: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -90,7 +90,7 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
     }
     pub fn ComputeTextWidth(
         &mut self,
-        textToMeasure: *mut crate::System::String,
+        textToMeasure: *mut quest_hook::libil2cpp::Il2CppString,
         wordWrap: bool,
         width: f32,
         height: f32,

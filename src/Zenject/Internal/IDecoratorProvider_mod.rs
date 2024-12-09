@@ -29,7 +29,7 @@ impl crate::Zenject::Internal::IDecoratorProvider {
         provider: *mut crate::Zenject::IProvider,
         context: *mut crate::Zenject::InjectContext,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

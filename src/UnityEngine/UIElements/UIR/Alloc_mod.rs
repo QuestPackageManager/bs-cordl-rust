@@ -4,7 +4,7 @@
 pub struct Alloc {
     pub start: u32,
     pub _cordl_size: u32,
-    pub handle: *mut crate::System::Object,
+    pub handle: *mut quest_hook::libil2cpp::Il2CppObject,
     pub shortLived: bool,
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+Alloc")]

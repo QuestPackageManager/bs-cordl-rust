@@ -4,9 +4,9 @@
 pub struct AssetReferenceUILabelRestriction {
     __cordl_parent: crate::UnityEngine::AssetReferenceUIRestriction,
     pub m_AllowedLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
-    pub m_CachedToString: *mut crate::System::String,
+    pub m_CachedToString: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+AssetReferenceUILabelRestriction")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::UnityEngine::AssetReferenceUILabelRestriction
 impl crate::UnityEngine::AssetReferenceUILabelRestriction {
     pub fn New(
         allowedLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -41,12 +41,22 @@ impl crate::UnityEngine::AssetReferenceUILabelRestriction {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
+        Ok(__cordl_ret)
+    }
+    pub fn ValidateAsset_Il2CppString1(
+        &mut self,
+        path: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
         Ok(__cordl_ret)
     }
     pub fn ValidateAsset_Object0(
@@ -59,20 +69,10 @@ impl crate::UnityEngine::AssetReferenceUILabelRestriction {
         let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn ValidateAsset_String1(
-        &mut self,
-        path: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: bool = __cordl_object.invoke("ValidateAsset", (path))?;
-        Ok(__cordl_ret)
-    }
     pub fn _ctor(
         &mut self,
         allowedLabels: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

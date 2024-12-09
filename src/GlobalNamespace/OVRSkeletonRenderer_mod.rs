@@ -223,7 +223,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRSkeletonRe
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_BoneVisualization {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub BoneGO: *mut crate::UnityEngine::GameObject,
     pub BoneBegin: *mut crate::UnityEngine::Transform,
     pub BoneEnd: *mut crate::UnityEngine::Transform,
@@ -239,7 +239,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVRSkeletonRenderer+BoneVisualization")]
 impl std::ops::Deref for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -325,7 +325,7 @@ for crate::GlobalNamespace::OVRSkeletonRenderer_BoneVisualization {
 #[repr(C)]
 #[derive(Debug)]
 pub struct OVRSkeletonRenderer_CapsuleVisualization {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub CapsuleGO: *mut crate::UnityEngine::GameObject,
     pub BoneCapsule: *mut crate::GlobalNamespace::OVRBoneCapsule,
     pub capsuleScale: crate::UnityEngine::Vector3,
@@ -342,7 +342,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "OVRSkeletonRenderer+CapsuleVisualization")]
 impl std::ops::Deref
 for crate::GlobalNamespace::OVRSkeletonRenderer_CapsuleVisualization {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

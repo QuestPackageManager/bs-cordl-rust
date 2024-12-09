@@ -2,10 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct QueueUserWorkItemCallback {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub callback: *mut crate::System::Threading::WaitCallback,
     pub context: *mut crate::System::Threading::ExecutionContext,
-    pub state: *mut crate::System::Object,
+    pub state: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+QueueUserWorkItemCallback")]
 impl std::ops::Deref for crate::System::Threading::QueueUserWorkItemCallback {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -29,7 +29,7 @@ impl std::ops::DerefMut for crate::System::Threading::QueueUserWorkItemCallback 
 impl crate::System::Threading::QueueUserWorkItemCallback {
     pub fn New(
         waitCallback: *mut crate::System::Threading::WaitCallback,
-        stateObj: *mut crate::System::Object,
+        stateObj: *mut quest_hook::libil2cpp::Il2CppObject,
         compressStack: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,
@@ -65,7 +65,7 @@ impl crate::System::Threading::QueueUserWorkItemCallback {
     pub fn _ctor(
         &mut self,
         waitCallback: *mut crate::System::Threading::WaitCallback,
-        stateObj: *mut crate::System::Object,
+        stateObj: *mut quest_hook::libil2cpp::Il2CppObject,
         compressStack: bool,
         stackMark: quest_hook::libil2cpp::ByRefMut<
             crate::System::Threading::StackCrawlMark,

@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RegexReplacement {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _strings: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _rules: *mut crate::System::Collections::Generic::List_1<i32>,
-    pub _Pattern_k__BackingField: *mut crate::System::String,
+    pub _Pattern_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Text+RegularExpressions+RegexReplacement")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Text+RegularExpressions+RegexReplacement")]
 impl std::ops::Deref for crate::System::Text::RegularExpressions::RegexReplacement {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -36,7 +36,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     pub const Specials: i32 = 4i32;
     pub const WholeString: i32 = -4i32;
     pub fn New(
-        rep: *mut crate::System::String,
+        rep: *mut quest_hook::libil2cpp::Il2CppString,
         concat: *mut crate::System::Text::RegularExpressions::RegexNode,
         _caps: *mut crate::System::Collections::Hashtable,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -49,14 +49,14 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     pub fn Replace(
         &mut self,
         regex: *mut crate::System::Text::RegularExpressions::Regex,
-        input: *mut crate::System::String,
+        input: *mut quest_hook::libil2cpp::Il2CppString,
         count: i32,
         startat: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Replace", (regex, input, count, startat))?;
         Ok(__cordl_ret)
     }
@@ -74,7 +74,9 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     }
     pub fn ReplacementImplRTL(
         &mut self,
-        al: *mut crate::System::Collections::Generic::List_1<*mut crate::System::String>,
+        al: *mut crate::System::Collections::Generic::List_1<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         _cordl_match: *mut crate::System::Text::RegularExpressions::Match,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -86,7 +88,7 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     }
     pub fn _ctor(
         &mut self,
-        rep: *mut crate::System::String,
+        rep: *mut quest_hook::libil2cpp::Il2CppString,
         concat: *mut crate::System::Text::RegularExpressions::RegexNode,
         _caps: *mut crate::System::Collections::Hashtable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -99,11 +101,11 @@ impl crate::System::Text::RegularExpressions::RegexReplacement {
     }
     pub fn get_Pattern(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Pattern", ())?;
         Ok(__cordl_ret)
     }

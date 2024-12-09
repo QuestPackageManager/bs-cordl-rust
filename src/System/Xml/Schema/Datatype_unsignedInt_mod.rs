@@ -26,8 +26,8 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::Datatype_unsignedInt {
 impl crate::System::Xml::Schema::Datatype_unsignedInt {
     pub fn Compare(
         &mut self,
-        value1: *mut crate::System::Object,
-        value2: *mut crate::System::Object,
+        value1: *mut quest_hook::libil2cpp::Il2CppObject,
+        value2: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -44,10 +44,12 @@ impl crate::System::Xml::Schema::Datatype_unsignedInt {
     }
     pub fn TryParseValue(
         &mut self,
-        s: *mut crate::System::String,
+        s: *mut quest_hook::libil2cpp::Il2CppString,
         nameTable: *mut crate::System::Xml::XmlNameTable,
         nsmgr: *mut crate::System::Xml::IXmlNamespaceResolver,
-        typedValue: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        typedValue: quest_hook::libil2cpp::ByRefMut<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Exception> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

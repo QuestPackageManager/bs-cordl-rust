@@ -7,7 +7,7 @@ pub struct TextFadeTransitions {
     pub _canvasGroup: *mut crate::UnityEngine::CanvasGroup,
     pub _fadeDuration: f32,
     pub _state: crate::GlobalNamespace::TextFadeTransitions_State,
-    pub _nextText: *mut crate::System::String,
+    pub _nextText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _fade: f32,
 }
 #[cfg(feature = "TextFadeTransitions")]
@@ -71,7 +71,7 @@ impl crate::GlobalNamespace::TextFadeTransitions {
     }
     pub fn ShowText(
         &mut self,
-        text: *mut crate::System::String,
+        text: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

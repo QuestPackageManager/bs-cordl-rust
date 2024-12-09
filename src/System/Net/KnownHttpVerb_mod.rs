@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct KnownHttpVerb {
-    __cordl_parent: crate::System::Object,
-    pub Name: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Name: *mut quest_hook::libil2cpp::Il2CppString,
     pub RequireContentBody: bool,
     pub ContentBodyNotAllowed: bool,
     pub ConnectRequest: bool,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+KnownHttpVerb")]
 impl std::ops::Deref for crate::System::Net::KnownHttpVerb {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ impl std::ops::DerefMut for crate::System::Net::KnownHttpVerb {
 #[cfg(feature = "System+Net+KnownHttpVerb")]
 impl crate::System::Net::KnownHttpVerb {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         requireContentBody: bool,
         contentBodyNotAllowed: bool,
         connectRequest: bool,
@@ -53,7 +53,7 @@ impl crate::System::Net::KnownHttpVerb {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
         requireContentBody: bool,
         contentBodyNotAllowed: bool,
         connectRequest: bool,

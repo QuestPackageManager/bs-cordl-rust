@@ -27,7 +27,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Crypto::IDecryptorBuilderP
 impl crate::Org::BouncyCastle::Crypto::IDecryptorBuilderProvider {
     pub fn CreateDecryptorBuilder(
         &mut self,
-        algorithmDetails: *mut crate::System::Object,
+        algorithmDetails: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Org::BouncyCastle::Crypto::ICipherBuilder,
     > {

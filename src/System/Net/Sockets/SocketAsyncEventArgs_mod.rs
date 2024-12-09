@@ -21,7 +21,7 @@ pub struct SocketAsyncEventArgs {
     pub _SendPacketsSendSize_k__BackingField: i32,
     pub _SocketError_k__BackingField: crate::System::Net::Sockets::SocketError,
     pub _SocketFlags_k__BackingField: crate::System::Net::Sockets::SocketFlags,
-    pub _UserToken_k__BackingField: *mut crate::System::Object,
+    pub _UserToken_k__BackingField: *mut quest_hook::libil2cpp::Il2CppObject,
     pub Completed: *mut crate::System::EventHandler_1<
         *mut crate::System::Net::Sockets::SocketAsyncEventArgs,
     >,
@@ -280,11 +280,11 @@ impl crate::System::Net::Sockets::SocketAsyncEventArgs {
     }
     pub fn get_UserToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_UserToken", ())?;
         Ok(__cordl_ret)
     }
@@ -380,7 +380,7 @@ impl crate::System::Net::Sockets::SocketAsyncEventArgs {
     }
     pub fn set_UserToken(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

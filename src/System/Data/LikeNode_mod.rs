@@ -4,7 +4,7 @@
 pub struct LikeNode {
     __cordl_parent: crate::System::Data::BinaryNode,
     pub _kind: i32,
-    pub _pattern: *mut crate::System::String,
+    pub _pattern: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Data+LikeNode")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -28,12 +28,12 @@ impl std::ops::DerefMut for crate::System::Data::LikeNode {
 impl crate::System::Data::LikeNode {
     pub fn AnalyzePattern(
         &mut self,
-        pat: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        pat: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("AnalyzePattern", (pat))?;
         Ok(__cordl_ret)
     }
@@ -41,11 +41,11 @@ impl crate::System::Data::LikeNode {
         &mut self,
         row: *mut crate::System::Data::DataRow,
         version: crate::System::Data::DataRowVersion,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Eval", (row, version))?;
         Ok(__cordl_ret)
     }

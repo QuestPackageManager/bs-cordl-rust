@@ -4,7 +4,7 @@
 pub struct MissionNode {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _missionDataSO: *mut crate::GlobalNamespace::MissionDataSO,
-    pub _letterPartName: *mut crate::System::String,
+    pub _letterPartName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _numberPartName: i32,
     pub _rectTransform: *mut crate::UnityEngine::RectTransform,
     pub _missionNodeVisualController: *mut crate::GlobalNamespace::MissionNodeVisualController,
@@ -63,21 +63,21 @@ impl crate::GlobalNamespace::MissionNode {
     }
     pub fn get_formattedMissionNodeName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_formattedMissionNodeName", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_letterPartName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_letterPartName", ())?;
         Ok(__cordl_ret)
     }
@@ -93,11 +93,11 @@ impl crate::GlobalNamespace::MissionNode {
     }
     pub fn get_missionId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_missionId", ())?;
         Ok(__cordl_ret)
     }

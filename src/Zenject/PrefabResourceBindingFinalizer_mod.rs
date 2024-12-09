@@ -4,7 +4,7 @@
 pub struct PrefabResourceBindingFinalizer {
     __cordl_parent: crate::Zenject::ProviderBindingFinalizer,
     pub _gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-    pub _resourcePath: *mut crate::System::String,
+    pub _resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _providerFactory: *mut crate::System::Func_3<
         *mut crate::System::Type,
         *mut crate::Zenject::IPrefabInstantiator,
@@ -67,7 +67,7 @@ impl crate::Zenject::PrefabResourceBindingFinalizer {
     pub fn New(
         bindInfo: *mut crate::Zenject::BindInfo,
         gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         providerFactory: *mut crate::System::Func_3<
             *mut crate::System::Type,
             *mut crate::Zenject::IPrefabInstantiator,
@@ -98,7 +98,7 @@ impl crate::Zenject::PrefabResourceBindingFinalizer {
         &mut self,
         bindInfo: *mut crate::Zenject::BindInfo,
         gameObjectBindInfo: *mut crate::Zenject::GameObjectCreationParameters,
-        resourcePath: *mut crate::System::String,
+        resourcePath: *mut quest_hook::libil2cpp::Il2CppString,
         providerFactory: *mut crate::System::Func_3<
             *mut crate::System::Type,
             *mut crate::Zenject::IPrefabInstantiator,

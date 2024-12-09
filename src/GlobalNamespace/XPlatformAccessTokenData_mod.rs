@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct XPlatformAccessTokenData {
-    pub token: *mut crate::System::String,
+    pub token: *mut quest_hook::libil2cpp::Il2CppString,
     pub platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
 }
 #[cfg(feature = "XPlatformAccessTokenData")]
@@ -34,7 +34,7 @@ impl crate::GlobalNamespace::XPlatformAccessTokenData {
     }
     pub fn _ctor(
         &mut self,
-        token: *mut crate::System::String,
+        token: *mut quest_hook::libil2cpp::Il2CppString,
         platformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

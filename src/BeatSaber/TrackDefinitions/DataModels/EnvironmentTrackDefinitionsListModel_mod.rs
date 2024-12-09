@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct EnvironmentTrackDefinitionsListModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _environmentTracksTypeMap: *mut crate::System::Collections::Generic::Dictionary_2<
         *mut crate::GlobalNamespace::EnvironmentInfoSO,
         *mut crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionModel,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::BeatSaber::TrackDefinitions::DataModels::EnvironmentTrackDefinitionsListModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

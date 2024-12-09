@@ -130,7 +130,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::Ice::FloorLightStreakTileEffec
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloorLightStreakTileEffect_Element {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub didMoveToNextTile: *mut crate::System::Action_1<
         *mut crate::Ice::FloorLightStreakTileEffect_Element,
     >,
@@ -147,7 +147,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Ice+FloorLightStreakTileEffect+Element")]
 impl std::ops::Deref for crate::Ice::FloorLightStreakTileEffect_Element {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

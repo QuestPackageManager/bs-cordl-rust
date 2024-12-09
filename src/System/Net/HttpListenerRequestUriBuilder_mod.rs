@@ -2,15 +2,15 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListenerRequestUriBuilder {
-    __cordl_parent: crate::System::Object,
-    pub rawUri: *mut crate::System::String,
-    pub cookedUriScheme: *mut crate::System::String,
-    pub cookedUriHost: *mut crate::System::String,
-    pub cookedUriPath: *mut crate::System::String,
-    pub cookedUriQuery: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub rawUri: *mut quest_hook::libil2cpp::Il2CppString,
+    pub cookedUriScheme: *mut quest_hook::libil2cpp::Il2CppString,
+    pub cookedUriHost: *mut quest_hook::libil2cpp::Il2CppString,
+    pub cookedUriPath: *mut quest_hook::libil2cpp::Il2CppString,
+    pub cookedUriQuery: *mut quest_hook::libil2cpp::Il2CppString,
     pub requestUriString: *mut crate::System::Text::StringBuilder,
     pub rawOctets: *mut crate::System::Collections::Generic::List_1<u8>,
-    pub rawPath: *mut crate::System::String,
+    pub rawPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub requestUri: *mut crate::System::Uri,
 }
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListenerRequestUriBuilder")]
 impl std::ops::Deref for crate::System::Net::HttpListenerRequestUriBuilder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -40,7 +40,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     pub fn AddPercentEncodedOctetToRawOctetsList(
         &mut self,
         encoding: *mut crate::System::Text::Encoding,
-        escapedCharacter: *mut crate::System::String,
+        escapedCharacter: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,7 +54,7 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     }
     pub fn AppendUnicodeCodePointValuePercentEncoded(
         &mut self,
-        codePoint: *mut crate::System::String,
+        codePoint: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -116,9 +116,11 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     }
     pub fn LogWarning(
         &mut self,
-        methodName: *mut crate::System::String,
-        message: *mut crate::System::String,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        methodName: *mut quest_hook::libil2cpp::Il2CppString,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -128,11 +130,11 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
         Ok(__cordl_ret)
     }
     pub fn New(
-        rawUri: *mut crate::System::String,
-        cookedUriScheme: *mut crate::System::String,
-        cookedUriHost: *mut crate::System::String,
-        cookedUriPath: *mut crate::System::String,
-        cookedUriQuery: *mut crate::System::String,
+        rawUri: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriScheme: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriHost: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriPath: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriQuery: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -158,11 +160,11 @@ impl crate::System::Net::HttpListenerRequestUriBuilder {
     }
     pub fn _ctor(
         &mut self,
-        rawUri: *mut crate::System::String,
-        cookedUriScheme: *mut crate::System::String,
-        cookedUriHost: *mut crate::System::String,
-        cookedUriPath: *mut crate::System::String,
-        cookedUriQuery: *mut crate::System::String,
+        rawUri: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriScheme: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriHost: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriPath: *mut quest_hook::libil2cpp::Il2CppString,
+        cookedUriQuery: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

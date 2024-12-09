@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone)]
 pub struct Memory_1<T: quest_hook::libil2cpp::Type> {
-    pub _object: *mut crate::System::Object,
+    pub _object: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _index: i32,
     pub _length: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
@@ -26,6 +26,21 @@ for crate::System::Memory_1<T> {
 #[cfg(feature = "System+Memory_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
     pub const RemoveFlagsBitMask: i32 = 2147483647i32;
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
+            self,
+            "Equals",
+            (obj),
+        )?;
+        Ok(__cordl_ret)
+    }
     pub fn Equals_Memory_1_1(
         &mut self,
         other: crate::System::Memory_1<T>,
@@ -38,21 +53,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
             self,
             "Equals",
             (other),
-        )?;
-        Ok(__cordl_ret)
-    }
-    pub fn Equals_Object0(
-        &mut self,
-        obj: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        let __cordl_ret: bool = quest_hook::libil2cpp::ValueTypeExt::invoke(
-            self,
-            "Equals",
-            (obj),
         )?;
         Ok(__cordl_ret)
     }
@@ -129,12 +129,12 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String>
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
     {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "ToString",
             (),
@@ -173,9 +173,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
         )?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_i32_i32_2(
+    pub fn _ctor_Il2CppObject_i32_i32_2(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         start: i32,
         length: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

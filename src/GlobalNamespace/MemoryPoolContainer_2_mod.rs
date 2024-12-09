@@ -5,7 +5,7 @@ pub struct MemoryPoolContainer_2<
     T0: quest_hook::libil2cpp::Type,
     T1: quest_hook::libil2cpp::Type,
 > {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _activeItems: *mut crate::GlobalNamespace::LazyCopyHashSet_1<T1>,
     pub _memoryPool: *mut crate::Zenject::IMemoryPool_1<T0>,
     __cordl_phantom_T0: std::marker::PhantomData<T0>,
@@ -19,7 +19,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "MemoryPoolContainer_2")]
 impl<T0: quest_hook::libil2cpp::Type, T1: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::GlobalNamespace::MemoryPoolContainer_2<T0, T1> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DtlsRecordLayer {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mTransport: *mut crate::Org::BouncyCastle::Crypto::Tls::DatagramTransport,
     pub mContext: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsContext,
     pub mPeer: *mut crate::Org::BouncyCastle::Crypto::Tls::TlsPeer,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Tls+DtlsRecordLayer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -152,7 +152,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
         &mut self,
         alertLevel: u8,
         alertDescription: u8,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
         cause: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -266,7 +266,7 @@ impl crate::Org::BouncyCastle::Crypto::Tls::DtlsRecordLayer {
     pub fn Warn(
         &mut self,
         alertDescription: u8,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

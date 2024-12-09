@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ForDeviceEventObservable {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Source: *mut crate::System::IObservable_1<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     >,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -92,7 +92,7 @@ for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ForDeviceEventObservable_ForDevice {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Observer: *mut crate::System::IObserver_1<
         crate::UnityEngine::InputSystem::LowLevel::InputEventPtr,
     >,
@@ -108,7 +108,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+InputSystem+Utilities+ForDeviceEventObservable+ForDevice")]
 impl std::ops::Deref
 for crate::UnityEngine::InputSystem::Utilities::ForDeviceEventObservable_ForDevice {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DynamicProxy_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxy_1")]
@@ -13,7 +13,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "Newtonsoft+Json+Utilities+DynamicProxy_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::Newtonsoft::Json::Utilities::DynamicProxy_1<T> {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -34,7 +34,7 @@ impl<
         instance: T,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     >
     where
@@ -45,7 +45,7 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("GetDynamicMemberNames", (instance))?;
         Ok(__cordl_ret)
     }
@@ -64,8 +64,8 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::BinaryOperationBinder,
-        arg: *mut crate::System::Object,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        arg: *mut quest_hook::libil2cpp::Il2CppObject,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -82,7 +82,7 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::ConvertBinder,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -99,8 +99,10 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::CreateInstanceBinder,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -117,7 +119,9 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::DeleteIndexBinder,
-        indexes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
+        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -150,8 +154,10 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::GetIndexBinder,
-        indexes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -168,7 +174,7 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::GetMemberBinder,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -185,8 +191,10 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::InvokeBinder,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -203,8 +211,10 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::InvokeMemberBinder,
-        args: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        args: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -221,8 +231,10 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::SetIndexBinder,
-        indexes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Object>,
-        value: *mut crate::System::Object,
+        indexes: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        >,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -239,7 +251,7 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::SetMemberBinder,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -256,7 +268,7 @@ impl<
         &mut self,
         instance: T,
         binder: *mut crate::System::Dynamic::UnaryOperationBinder,
-        result: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Object>,
+        result: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type

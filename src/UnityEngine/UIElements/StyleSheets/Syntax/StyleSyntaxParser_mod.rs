@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct StyleSyntaxParser {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_ProcessExpressionList: *mut crate::System::Collections::Generic::List_1<
         *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
     >,
@@ -13,7 +13,7 @@ pub struct StyleSyntaxParser {
         crate::UnityEngine::UIElements::StyleSheets::Syntax::ExpressionCombinator,
     >,
     pub m_ParsedExpressionCache: *mut crate::System::Collections::Generic::Dictionary_2<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
         *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
     >,
 }
@@ -26,7 +26,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "UnityEngine+UIElements+StyleSheets+Syntax+StyleSyntaxParser")]
 impl std::ops::Deref
 for crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,7 +49,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
     }
     pub fn Parse(
         &mut self,
-        syntax: *mut crate::System::String,
+        syntax: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
     > {
@@ -128,7 +128,7 @@ impl crate::UnityEngine::UIElements::StyleSheets::Syntax::StyleSyntaxParser {
     }
     pub fn ParseNonTerminalValue(
         &mut self,
-        syntax: *mut crate::System::String,
+        syntax: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::UnityEngine::UIElements::StyleSheets::Syntax::Expression,
     > {

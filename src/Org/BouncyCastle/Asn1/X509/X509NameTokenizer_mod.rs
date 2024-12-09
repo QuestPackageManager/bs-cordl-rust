@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509NameTokenizer {
-    __cordl_parent: crate::System::Object,
-    pub value: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub value: *mut quest_hook::libil2cpp::Il2CppString,
     pub index: i32,
     pub separator: char,
     pub buffer: *mut crate::System::Text::StringBuilder,
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Asn1+X509+X509NameTokenizer")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Asn1::X509::X509NameTokenizer {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,8 +35,8 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameTokenizer {
         let __cordl_ret: bool = __cordl_object.invoke("HasMoreTokens", ())?;
         Ok(__cordl_ret)
     }
-    pub fn New_String0(
-        oid: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -45,7 +45,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameTokenizer {
         Ok(__cordl_object)
     }
     pub fn New__cordl_char1(
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         separator: char,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -56,17 +56,17 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameTokenizer {
     }
     pub fn NextToken(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("NextToken", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -77,7 +77,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::X509NameTokenizer {
     }
     pub fn _ctor__cordl_char1(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         separator: char,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

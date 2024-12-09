@@ -2,13 +2,13 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PkixPolicyNode {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mChildren: *mut crate::System::Collections::IList,
     pub mDepth: i32,
     pub mExpectedPolicies: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
     pub mParent: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
     pub mPolicyQualifiers: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-    pub mValidPolicy: *mut crate::System::String,
+    pub mValidPolicy: *mut quest_hook::libil2cpp::Il2CppString,
     pub mCritical: bool,
 }
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixPolicyNode")]
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Pkix+PkixPolicyNode")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Pkix::PkixPolicyNode {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -44,11 +44,11 @@ impl crate::Org::BouncyCastle::Pkix::PkixPolicyNode {
     }
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
@@ -70,7 +70,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixPolicyNode {
         expectedPolicies: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
         parent: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
         policyQualifiers: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        validPolicy: *mut crate::System::String,
+        validPolicy: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -103,22 +103,22 @@ impl crate::Org::BouncyCastle::Pkix::PkixPolicyNode {
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ToString_String1(
+    pub fn ToString_Il2CppString1(
         &mut self,
-        indent: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        indent: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (indent))?;
         Ok(__cordl_ret)
     }
@@ -129,7 +129,7 @@ impl crate::Org::BouncyCastle::Pkix::PkixPolicyNode {
         expectedPolicies: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
         parent: *mut crate::Org::BouncyCastle::Pkix::PkixPolicyNode,
         policyQualifiers: *mut crate::Org::BouncyCastle::Utilities::Collections::ISet,
-        validPolicy: *mut crate::System::String,
+        validPolicy: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -219,11 +219,11 @@ impl crate::Org::BouncyCastle::Pkix::PkixPolicyNode {
     }
     pub fn get_ValidPolicy(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ValidPolicy", ())?;
         Ok(__cordl_ret)
     }

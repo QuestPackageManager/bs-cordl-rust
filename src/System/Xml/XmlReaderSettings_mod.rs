@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlReaderSettings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub useAsync: bool,
     pub nameTable: *mut crate::System::Xml::XmlNameTable,
     pub xmlResolver: *mut crate::System::Xml::XmlResolver,
@@ -31,7 +31,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+XmlReaderSettings")]
 impl std::ops::Deref for crate::System::Xml::XmlReaderSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,7 +57,7 @@ impl crate::System::Xml::XmlReaderSettings {
     }
     pub fn CheckReadOnly(
         &mut self,
-        propertyName: *mut crate::System::String,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,11 +89,11 @@ impl crate::System::Xml::XmlReaderSettings {
             .invoke("CreateDtdValidatingReader", (baseReader))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateReader_Stream_Uri_String_XmlParserContext0(
+    pub fn CreateReader_Stream_Uri_Il2CppString_XmlParserContext0(
         &mut self,
         input: *mut crate::System::IO::Stream,
         baseUri: *mut crate::System::Uri,
-        baseUriString: *mut crate::System::String,
+        baseUriString: *mut quest_hook::libil2cpp::Il2CppString,
         inputContext: *mut crate::System::Xml::XmlParserContext,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlReader> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -103,10 +103,10 @@ impl crate::System::Xml::XmlReaderSettings {
             .invoke("CreateReader", (input, baseUri, baseUriString, inputContext))?;
         Ok(__cordl_ret)
     }
-    pub fn CreateReader_TextReader_String_XmlParserContext1(
+    pub fn CreateReader_TextReader_Il2CppString_XmlParserContext1(
         &mut self,
         input: *mut crate::System::IO::TextReader,
-        baseUriString: *mut crate::System::String,
+        baseUriString: *mut quest_hook::libil2cpp::Il2CppString,
         inputContext: *mut crate::System::Xml::XmlParserContext,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Xml::XmlReader> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

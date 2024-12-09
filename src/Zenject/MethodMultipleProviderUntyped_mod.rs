@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct MethodMultipleProviderUntyped {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _container: *mut crate::Zenject::DiContainer,
     pub _method: *mut crate::System::Func_2<
         *mut crate::Zenject::InjectContext,
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     >,
 }
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+MethodMultipleProviderUntyped")]
 impl std::ops::Deref for crate::Zenject::MethodMultipleProviderUntyped {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,7 +39,7 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
         >,
         injectAction: quest_hook::libil2cpp::ByRefMut<*mut crate::System::Action>,
         buffer: *mut crate::System::Collections::Generic::List_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,7 +67,7 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
         method: *mut crate::System::Func_2<
             *mut crate::Zenject::InjectContext,
             *mut crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
         container: *mut crate::Zenject::DiContainer,
@@ -83,7 +83,7 @@ impl crate::Zenject::MethodMultipleProviderUntyped {
         method: *mut crate::System::Func_2<
             *mut crate::Zenject::InjectContext,
             *mut crate::System::Collections::Generic::IEnumerable_1<
-                *mut crate::System::Object,
+                *mut quest_hook::libil2cpp::Il2CppObject,
             >,
         >,
         container: *mut crate::Zenject::DiContainer,

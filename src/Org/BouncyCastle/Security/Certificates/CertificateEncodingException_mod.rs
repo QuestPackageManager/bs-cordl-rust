@@ -34,8 +34,8 @@ impl crate::Org::BouncyCastle::Security::Certificates::CertificateEncodingExcept
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
-        msg: *mut crate::System::String,
+    pub fn New_Il2CppString1(
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,8 +43,8 @@ impl crate::Org::BouncyCastle::Security::Certificates::CertificateEncodingExcept
             .invoke_void(".ctor", (msg))?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Exception2(
-        msg: *mut crate::System::String,
+    pub fn New_Il2CppString_Exception2(
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         e: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -63,9 +63,9 @@ impl crate::Org::BouncyCastle::Security::Certificates::CertificateEncodingExcept
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -74,9 +74,9 @@ impl crate::Org::BouncyCastle::Security::Certificates::CertificateEncodingExcept
             .invoke(".ctor", (msg))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Exception2(
+    pub fn _ctor_Il2CppString_Exception2(
         &mut self,
-        msg: *mut crate::System::String,
+        msg: *mut quest_hook::libil2cpp::Il2CppString,
         e: *mut crate::System::Exception,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

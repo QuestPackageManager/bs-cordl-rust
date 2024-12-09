@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FileBasedResourceGroveler {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _mediator: *mut crate::System::Resources::ResourceManager_ResourceManagerMediator,
 }
 #[cfg(feature = "System+Resources+FileBasedResourceGroveler")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Resources+FileBasedResourceGroveler")]
 impl std::ops::Deref for crate::System::Resources::FileBasedResourceGroveler {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

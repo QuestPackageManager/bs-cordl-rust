@@ -2,9 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ThreadHelper {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _start: *mut crate::System::Delegate,
-    pub _startArg: *mut crate::System::Object,
+    pub _startArg: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _executionContext: *mut crate::System::Threading::ExecutionContext,
 }
 #[cfg(feature = "System+Threading+ThreadHelper")]
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+ThreadHelper")]
 impl std::ops::Deref for crate::System::Threading::ThreadHelper {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -57,9 +57,9 @@ impl crate::System::Threading::ThreadHelper {
             .invoke("ThreadStart", ())?;
         Ok(__cordl_ret)
     }
-    pub fn ThreadStart_Object0(
+    pub fn ThreadStart_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

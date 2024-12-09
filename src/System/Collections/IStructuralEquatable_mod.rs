@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::System::Collections::IStructuralEquatable {
 impl crate::System::Collections::IStructuralEquatable {
     pub fn Equals(
         &mut self,
-        other: *mut crate::System::Object,
+        other: *mut quest_hook::libil2cpp::Il2CppObject,
         comparer: *mut crate::System::Collections::IEqualityComparer,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

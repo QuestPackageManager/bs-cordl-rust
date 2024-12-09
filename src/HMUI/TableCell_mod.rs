@@ -4,7 +4,7 @@
 pub struct TableCell {
     __cordl_parent: crate::HMUI::SelectableCell,
     pub _idx_k__BackingField: i32,
-    pub _reuseIdentifier: *mut crate::System::String,
+    pub _reuseIdentifier: *mut quest_hook::libil2cpp::Il2CppString,
     pub _tableCellOwner: *mut crate::HMUI::ITableCellOwner,
 }
 #[cfg(feature = "HMUI+TableCell")]
@@ -105,11 +105,11 @@ impl crate::HMUI::TableCell {
     }
     pub fn get_reuseIdentifier(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_reuseIdentifier", ())?;
         Ok(__cordl_ret)
     }
@@ -136,7 +136,7 @@ impl crate::HMUI::TableCell {
     }
     pub fn set_reuseIdentifier(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

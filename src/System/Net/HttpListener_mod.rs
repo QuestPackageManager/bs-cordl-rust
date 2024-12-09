@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HttpListener {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tlsProvider: *mut crate::Mono::Security::Interface::MonoTlsProvider,
     pub tlsSettings: *mut crate::Mono::Security::Interface::MonoTlsSettings,
     pub certificate: *mut crate::System::Security::Cryptography::X509Certificates::X509Certificate,
     pub auth_schemes: crate::System::Net::AuthenticationSchemes,
     pub prefixes: *mut crate::System::Net::HttpListenerPrefixCollection,
     pub auth_selector: *mut crate::System::Net::AuthenticationSchemeSelector,
-    pub realm: *mut crate::System::String,
+    pub realm: *mut quest_hook::libil2cpp::Il2CppString,
     pub ignore_write_exceptions: bool,
     pub listening: bool,
     pub disposed: bool,
-    pub _internalLock: *mut crate::System::Object,
+    pub _internalLock: *mut quest_hook::libil2cpp::Il2CppObject,
     pub registry: *mut crate::System::Collections::Hashtable,
     pub ctx_queue: *mut crate::System::Collections::ArrayList,
     pub wait_queue: *mut crate::System::Collections::ArrayList,
@@ -28,7 +28,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+HttpListener")]
 impl std::ops::Deref for crate::System::Net::HttpListener {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -55,7 +55,7 @@ impl crate::System::Net::HttpListener {
     pub fn BeginGetContext(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -305,11 +305,11 @@ impl crate::System::Net::HttpListener {
     }
     pub fn get_Realm(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Realm", ())?;
         Ok(__cordl_ret)
     }

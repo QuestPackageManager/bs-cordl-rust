@@ -7,7 +7,7 @@ pub struct SimpleTextDropdown {
     pub _cellPrefab: *mut crate::GlobalNamespace::SimpleTextTableCell,
     pub _cellSize: f32,
     pub _texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _initialized: bool,
 }
@@ -122,7 +122,7 @@ impl crate::HMUI::SimpleTextDropdown {
     pub fn SetTexts(
         &mut self,
         texts: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

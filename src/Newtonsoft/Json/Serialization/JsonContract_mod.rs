@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct JsonContract {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub IsNullable: bool,
     pub IsConvertable: bool,
     pub IsEnum: bool,
@@ -33,7 +33,7 @@ pub struct JsonContract {
     pub _Converter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
     pub _InternalConverter_k__BackingField: *mut crate::Newtonsoft::Json::JsonConverter,
     pub _DefaultCreator_k__BackingField: *mut crate::System::Func_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _DefaultCreatorNonPublic_k__BackingField: bool,
 }
@@ -44,7 +44,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Newtonsoft+Json+Serialization+JsonContract")]
 impl std::ops::Deref for crate::Newtonsoft::Json::Serialization::JsonContract {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -63,7 +63,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     pub type __c__DisplayClass58_0 = crate::Newtonsoft::Json::Serialization::JsonContract___c__DisplayClass58_0;
     pub fn InvokeOnDeserialized(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -75,7 +75,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     }
     pub fn InvokeOnDeserializing(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -87,7 +87,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     }
     pub fn InvokeOnError(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
         errorContext: *mut crate::Newtonsoft::Json::Serialization::ErrorContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -100,7 +100,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     }
     pub fn InvokeOnSerialized(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -112,7 +112,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     }
     pub fn InvokeOnSerializing(
         &mut self,
-        o: *mut crate::System::Object,
+        o: *mut quest_hook::libil2cpp::Il2CppObject,
         context: crate::System::Runtime::Serialization::StreamingContext,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -165,13 +165,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     pub fn get_DefaultCreator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        *mut crate::System::Func_1<*mut crate::System::Object>,
+        *mut crate::System::Func_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Func_1<*mut crate::System::Object> = __cordl_object
-            .invoke("get_DefaultCreator", ())?;
+        let __cordl_ret: *mut crate::System::Func_1<
+            *mut quest_hook::libil2cpp::Il2CppObject,
+        > = __cordl_object.invoke("get_DefaultCreator", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_DefaultCreatorNonPublic(
@@ -313,7 +314,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonContract {
     }
     pub fn set_DefaultCreator(
         &mut self,
-        value: *mut crate::System::Func_1<*mut crate::System::Object>,
+        value: *mut crate::System::Func_1<*mut quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

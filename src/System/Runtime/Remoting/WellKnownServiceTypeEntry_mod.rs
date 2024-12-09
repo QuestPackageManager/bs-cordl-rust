@@ -4,7 +4,7 @@
 pub struct WellKnownServiceTypeEntry {
     __cordl_parent: crate::System::Runtime::Remoting::TypeEntry,
     pub obj_type: *mut crate::System::Type,
-    pub obj_uri: *mut crate::System::String,
+    pub obj_uri: *mut quest_hook::libil2cpp::Il2CppString,
     pub obj_mode: crate::System::Runtime::Remoting::WellKnownObjectMode,
 }
 #[cfg(feature = "System+Runtime+Remoting+WellKnownServiceTypeEntry")]
@@ -29,9 +29,9 @@ impl std::ops::DerefMut for crate::System::Runtime::Remoting::WellKnownServiceTy
 #[cfg(feature = "System+Runtime+Remoting+WellKnownServiceTypeEntry")]
 impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
     pub fn New(
-        typeName: *mut crate::System::String,
-        assemblyName: *mut crate::System::String,
-        objectUri: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
+        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
         mode: crate::System::Runtime::Remoting::WellKnownObjectMode,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -42,19 +42,19 @@ impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
     }
     pub fn ToString(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn _ctor(
         &mut self,
-        typeName: *mut crate::System::String,
-        assemblyName: *mut crate::System::String,
-        objectUri: *mut crate::System::String,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
+        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+        objectUri: *mut quest_hook::libil2cpp::Il2CppString,
         mode: crate::System::Runtime::Remoting::WellKnownObjectMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -88,11 +88,11 @@ impl crate::System::Runtime::Remoting::WellKnownServiceTypeEntry {
     }
     pub fn get_ObjectUri(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ObjectUri", ())?;
         Ok(__cordl_ret)
     }

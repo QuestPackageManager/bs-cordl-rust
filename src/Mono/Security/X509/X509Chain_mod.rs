@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509Chain {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub roots: *mut crate::Mono::Security::X509::X509CertificateCollection,
     pub certs: *mut crate::Mono::Security::X509::X509CertificateCollection,
     pub _root: *mut crate::Mono::Security::X509::X509Certificate,
@@ -16,7 +16,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Mono+Security+X509+X509Chain")]
 impl std::ops::Deref for crate::Mono::Security::X509::X509Chain {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

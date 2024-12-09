@@ -2,18 +2,18 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct User {
-    __cordl_parent: crate::System::Object,
-    pub DisplayName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub DisplayName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cordl_ID: u64,
-    pub ImageURL: *mut crate::System::String,
-    pub OculusID: *mut crate::System::String,
-    pub Presence: *mut crate::System::String,
-    pub PresenceDeeplinkMessage: *mut crate::System::String,
-    pub PresenceDestinationApiName: *mut crate::System::String,
-    pub PresenceLobbySessionId: *mut crate::System::String,
-    pub PresenceMatchSessionId: *mut crate::System::String,
+    pub ImageURL: *mut quest_hook::libil2cpp::Il2CppString,
+    pub OculusID: *mut quest_hook::libil2cpp::Il2CppString,
+    pub Presence: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PresenceDeeplinkMessage: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PresenceDestinationApiName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PresenceLobbySessionId: *mut quest_hook::libil2cpp::Il2CppString,
+    pub PresenceMatchSessionId: *mut quest_hook::libil2cpp::Il2CppString,
     pub PresenceStatus: crate::Oculus::Platform::UserPresenceStatus,
-    pub SmallImageUrl: *mut crate::System::String,
+    pub SmallImageUrl: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Oculus+Platform+Models+User")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -22,7 +22,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Oculus+Platform+Models+User")]
 impl std::ops::Deref for crate::Oculus::Platform::Models::User {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

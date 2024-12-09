@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct XmlMapping {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub map: *mut crate::System::Xml::Serialization::ObjectMap,
     pub relatedMaps: *mut crate::System::Collections::ArrayList,
     pub format: crate::System::Xml::Serialization::SerializationFormat,
     pub source: *mut crate::System::Xml::Serialization::SerializationSource,
-    pub _elementName: *mut crate::System::String,
-    pub _namespace: *mut crate::System::String,
-    pub key: *mut crate::System::String,
+    pub _elementName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _namespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub key: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Serialization+XmlMapping")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Xml+Serialization+XmlMapping")]
 impl std::ops::Deref for crate::System::Xml::Serialization::XmlMapping {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -32,8 +32,8 @@ impl std::ops::DerefMut for crate::System::Xml::Serialization::XmlMapping {
 #[cfg(feature = "System+Xml+Serialization+XmlMapping")]
 impl crate::System::Xml::Serialization::XmlMapping {
     pub fn New(
-        elementName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -43,7 +43,7 @@ impl crate::System::Xml::Serialization::XmlMapping {
     }
     pub fn SetKey(
         &mut self,
-        key: *mut crate::System::String,
+        key: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -54,8 +54,8 @@ impl crate::System::Xml::Serialization::XmlMapping {
     }
     pub fn _ctor(
         &mut self,
-        elementName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        elementName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -66,11 +66,11 @@ impl crate::System::Xml::Serialization::XmlMapping {
     }
     pub fn get_ElementName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ElementName", ())?;
         Ok(__cordl_ret)
     }
@@ -88,11 +88,11 @@ impl crate::System::Xml::Serialization::XmlMapping {
     }
     pub fn get_Namespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Namespace", ())?;
         Ok(__cordl_ret)
     }

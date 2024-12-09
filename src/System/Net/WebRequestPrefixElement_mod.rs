@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct WebRequestPrefixElement {
-    __cordl_parent: crate::System::Object,
-    pub Prefix: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub Prefix: *mut quest_hook::libil2cpp::Il2CppString,
     pub creator: *mut crate::System::Net::IWebRequestCreate,
     pub creatorType: *mut crate::System::Type,
 }
@@ -14,7 +14,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Net+WebRequestPrefixElement")]
 impl std::ops::Deref for crate::System::Net::WebRequestPrefixElement {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -28,7 +28,7 @@ impl std::ops::DerefMut for crate::System::Net::WebRequestPrefixElement {
 #[cfg(feature = "System+Net+WebRequestPrefixElement")]
 impl crate::System::Net::WebRequestPrefixElement {
     pub fn New(
-        P: *mut crate::System::String,
+        P: *mut quest_hook::libil2cpp::Il2CppString,
         C: *mut crate::System::Net::IWebRequestCreate,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -39,7 +39,7 @@ impl crate::System::Net::WebRequestPrefixElement {
     }
     pub fn _ctor(
         &mut self,
-        P: *mut crate::System::String,
+        P: *mut quest_hook::libil2cpp::Il2CppString,
         C: *mut crate::System::Net::IWebRequestCreate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

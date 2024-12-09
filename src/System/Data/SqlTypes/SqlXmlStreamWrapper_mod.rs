@@ -107,7 +107,7 @@ impl crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     }
     pub fn ThrowIfStreamCannotRead(
         &mut self,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -118,7 +118,7 @@ impl crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     }
     pub fn ThrowIfStreamCannotSeek(
         &mut self,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -129,7 +129,7 @@ impl crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     }
     pub fn ThrowIfStreamCannotWrite(
         &mut self,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -140,7 +140,7 @@ impl crate::System::Data::SqlTypes::SqlXmlStreamWrapper {
     }
     pub fn ThrowIfStreamClosed(
         &mut self,
-        method: *mut crate::System::String,
+        method: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -34,9 +34,9 @@ impl crate::GlobalNamespace::ConnectionFailedException {
             .invoke_void(".ctor", (reason))?;
         Ok(__cordl_object)
     }
-    pub fn New_String1(
+    pub fn New_Il2CppString1(
         reason: crate::GlobalNamespace::ConnectionFailedReason,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -55,10 +55,10 @@ impl crate::GlobalNamespace::ConnectionFailedException {
             .invoke(".ctor", (reason))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
+    pub fn _ctor_Il2CppString1(
         &mut self,
         reason: crate::GlobalNamespace::ConnectionFailedReason,
-        message: *mut crate::System::String,
+        message: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

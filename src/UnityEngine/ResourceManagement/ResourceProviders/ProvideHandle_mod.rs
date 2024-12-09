@@ -45,7 +45,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle {
     pub fn GetDependencies(
         &mut self,
         list: *mut crate::System::Collections::Generic::IList_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(

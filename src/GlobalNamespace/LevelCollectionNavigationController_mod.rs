@@ -31,7 +31,7 @@ pub struct LevelCollectionNavigationController {
         *mut crate::GlobalNamespace::LevelCollectionNavigationController,
     >,
     pub _showPracticeButtonInDetailView: bool,
-    pub _actionButtonTextInDetailView: *mut crate::System::String,
+    pub _actionButtonTextInDetailView: *mut quest_hook::libil2cpp::Il2CppString,
     pub _levelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub _beatmapLevelToBeSelectedAfterPresent: *mut crate::GlobalNamespace::BeatmapLevel,
@@ -318,7 +318,7 @@ impl crate::GlobalNamespace::LevelCollectionNavigationController {
         beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         showPackHeader: bool,
         showPracticeButton: bool,
-        actionButtonText: *mut crate::System::String,
+        actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         sortAlphabetically: bool,
         noDataInfoPrefab: *mut crate::UnityEngine::GameObject,
         allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
@@ -351,7 +351,7 @@ impl crate::GlobalNamespace::LevelCollectionNavigationController {
         &mut self,
         beatmapLevelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         showPracticeButton: bool,
-        actionButtonText: *mut crate::System::String,
+        actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         noDataInfoPrefab: *mut crate::UnityEngine::GameObject,
         sortBeatmapLevels: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -376,7 +376,7 @@ impl crate::GlobalNamespace::LevelCollectionNavigationController {
         levelPack: *mut crate::GlobalNamespace::BeatmapLevelPack,
         showPackHeader: bool,
         showPracticeButton: bool,
-        actionButtonText: *mut crate::System::String,
+        actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         sortBeatmapLevels: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

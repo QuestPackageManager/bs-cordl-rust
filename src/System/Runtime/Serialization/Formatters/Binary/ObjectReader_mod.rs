@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectReader {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_stream: *mut crate::System::IO::Stream,
     pub m_surrogates: *mut crate::System::Runtime::Serialization::ISurrogateSelector,
     pub m_context: crate::System::Runtime::Serialization::StreamingContext,
@@ -11,8 +11,8 @@ pub struct ObjectReader {
     pub m_binder: *mut crate::System::Runtime::Serialization::SerializationBinder,
     pub topId: i64,
     pub bSimpleAssembly: bool,
-    pub handlerObject: *mut crate::System::Object,
-    pub m_topObject: *mut crate::System::Object,
+    pub handlerObject: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub m_topObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub headers: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Runtime::Remoting::Messaging::Header,
     >,
@@ -22,14 +22,14 @@ pub struct ObjectReader {
     pub stack: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
     pub valueFixupStack: *mut crate::System::Runtime::Serialization::Formatters::Binary::SerStack,
     pub crossAppDomainArray: *mut quest_hook::libil2cpp::Il2CppArray<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub bFullDeserialization: bool,
     pub bOldFormatDetected: bool,
     pub valTypeObjectIdTable: *mut crate::System::Runtime::Serialization::Formatters::Binary::IntSizedArray,
     pub typeCache: *mut crate::System::Runtime::Serialization::Formatters::Binary::NameCache,
-    pub previousAssemblyString: *mut crate::System::String,
-    pub previousName: *mut crate::System::String,
+    pub previousAssemblyString: *mut quest_hook::libil2cpp::Il2CppString,
+    pub previousName: *mut quest_hook::libil2cpp::Il2CppString,
     pub previousType: *mut crate::System::Type,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
@@ -41,7 +41,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -65,8 +65,8 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     pub type TypeNAssembly = crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TypeNAssembly;
     pub fn Bind(
         &mut self,
-        assemblyString: *mut crate::System::String,
-        typeString: *mut crate::System::String,
+        assemblyString: *mut quest_hook::libil2cpp::Il2CppString,
+        typeString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -89,7 +89,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     pub fn CreateReadObjectInfo_Il2CppArray_Il2CppArray1(
         &mut self,
         objectType: *mut crate::System::Type,
-        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        memberNames: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         memberTypes: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
@@ -117,11 +119,11 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     pub fn CrossAppDomainArray(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("CrossAppDomainArray", (index))?;
         Ok(__cordl_ret)
     }
@@ -130,18 +132,18 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
         handler: *mut crate::System::Runtime::Remoting::Messaging::HeaderHandler,
         serParser: *mut crate::System::Runtime::Serialization::Formatters::Binary::__BinaryParser,
         fCheck: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Deserialize", (handler, serParser, fCheck))?;
         Ok(__cordl_ret)
     }
     pub fn FastBindToType(
         &mut self,
-        assemblyName: *mut crate::System::String,
-        typeName: *mut crate::System::String,
+        assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
+        typeName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -160,7 +162,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     pub fn GetType(
         &mut self,
         assemblyInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::BinaryAssemblyInfo,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -347,9 +349,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
             .invoke("ParseString", (pr, parentPr))?;
         Ok(__cordl_ret)
     }
-    pub fn RegisterObject_Object_ParseRecord_ParseRecord0(
+    pub fn RegisterObject_Il2CppObject_ParseRecord_ParseRecord0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         pr: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
         objectPr: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -362,7 +364,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     }
     pub fn RegisterObject__cordl_bool1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
         pr: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
         objectPr: *mut crate::System::Runtime::Serialization::Formatters::Binary::ParseRecord,
         bIsString: bool,
@@ -391,11 +393,11 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     }
     pub fn get_TopObject(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("get_TopObject", ())?;
         Ok(__cordl_ret)
     }
@@ -413,7 +415,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
     }
     pub fn set_TopObject(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -439,7 +441,7 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader {
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectReader_TopLevelAssemblyTypeResolver {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_topLevelAssembly: *mut crate::System::Reflection::Assembly,
 }
 #[cfg(
@@ -456,7 +458,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopLevelAssemblyTypeResolver {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -486,7 +488,7 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_Top
     pub fn ResolveType(
         &mut self,
         assembly: *mut crate::System::Reflection::Assembly,
-        simpleTypeName: *mut crate::System::String,
+        simpleTypeName: *mut quest_hook::libil2cpp::Il2CppString,
         ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Type> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -526,9 +528,9 @@ for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TopL
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectReader_TypeNAssembly {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _cordl_type: *mut crate::System::Type,
-    pub assemblyName: *mut crate::System::String,
+    pub assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(
     feature = "System+Runtime+Serialization+Formatters+Binary+ObjectReader+TypeNAssembly"
@@ -543,7 +545,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 )]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ObjectReader_TypeNAssembly {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

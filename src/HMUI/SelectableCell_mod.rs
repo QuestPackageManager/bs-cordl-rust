@@ -7,7 +7,7 @@ pub struct SelectableCell {
     pub selectionDidChangeEvent: *mut crate::System::Action_3<
         *mut crate::HMUI::SelectableCell,
         crate::HMUI::SelectableCell_TransitionType,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub highlightDidChangeEvent: *mut crate::System::Action_2<
         *mut crate::HMUI::SelectableCell,
@@ -158,7 +158,7 @@ impl crate::HMUI::SelectableCell {
         &mut self,
         value: bool,
         transitionType: crate::HMUI::SelectableCell_TransitionType,
-        changeOwner: *mut crate::System::Object,
+        changeOwner: *mut quest_hook::libil2cpp::Il2CppObject,
         ignoreCurrentValue: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -210,7 +210,7 @@ impl crate::HMUI::SelectableCell {
         value: *mut crate::System::Action_3<
             *mut crate::HMUI::SelectableCell,
             crate::HMUI::SelectableCell_TransitionType,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -253,7 +253,7 @@ impl crate::HMUI::SelectableCell {
         value: *mut crate::System::Action_3<
             *mut crate::HMUI::SelectableCell,
             crate::HMUI::SelectableCell_TransitionType,
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

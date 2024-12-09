@@ -10,17 +10,17 @@ pub struct FtpControlStream {
     pub _welcomeMessage: *mut crate::System::Text::StringBuilder,
     pub _exitMessage: *mut crate::System::Text::StringBuilder,
     pub _credentials: *mut crate::System::WeakReference,
-    pub _currentTypeSetting: *mut crate::System::String,
+    pub _currentTypeSetting: *mut quest_hook::libil2cpp::Il2CppString,
     pub _contentLength: i64,
     pub _lastModified: crate::System::DateTime,
     pub _dataHandshakeStarted: bool,
-    pub _loginDirectory: *mut crate::System::String,
-    pub _establishedServerDirectory: *mut crate::System::String,
-    pub _requestedServerDirectory: *mut crate::System::String,
+    pub _loginDirectory: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _establishedServerDirectory: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _requestedServerDirectory: *mut quest_hook::libil2cpp::Il2CppString,
     pub _responseUri: *mut crate::System::Uri,
     pub _loginState: crate::System::Net::FtpLoginState,
     pub StatusCode: crate::System::Net::FtpStatusCode,
-    pub StatusLine: *mut crate::System::String,
+    pub StatusLine: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Net+FtpControlStream")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -122,11 +122,11 @@ impl crate::System::Net::FtpControlStream {
         &mut self,
         address: *mut crate::System::Net::IPAddress,
         Port: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FormatAddress", (address, Port))?;
         Ok(__cordl_ret)
     }
@@ -134,29 +134,29 @@ impl crate::System::Net::FtpControlStream {
         &mut self,
         address: *mut crate::System::Net::IPAddress,
         port: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FormatAddressV6", (address, port))?;
         Ok(__cordl_ret)
     }
     pub fn FormatFtpCommand(
         &mut self,
-        command: *mut crate::System::String,
-        parameter: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        command: *mut quest_hook::libil2cpp::Il2CppString,
+        parameter: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("FormatFtpCommand", (command, parameter))?;
         Ok(__cordl_ret)
     }
     pub fn GetContentLengthFrom213Response(
         &mut self,
-        responseString: *mut crate::System::String,
+        responseString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -167,7 +167,7 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn GetLastModifiedFrom213Response(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -178,29 +178,29 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn GetLoginDirectory(
         &mut self,
-        str: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        str: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetLoginDirectory", (str))?;
         Ok(__cordl_ret)
     }
     pub fn GetPortCommandLine(
         &mut self,
         request: *mut crate::System::Net::FtpWebRequest,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetPortCommandLine", (request))?;
         Ok(__cordl_ret)
     }
     pub fn GetPortV4(
         &mut self,
-        responseString: *mut crate::System::String,
+        responseString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -210,7 +210,7 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn GetPortV6(
         &mut self,
-        responseString: *mut crate::System::String,
+        responseString: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -288,7 +288,7 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn TryUpdateContentLength(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -299,7 +299,7 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn TryUpdateResponseUri(
         &mut self,
-        str: *mut crate::System::String,
+        str: *mut quest_hook::libil2cpp::Il2CppString,
         request: *mut crate::System::Net::FtpWebRequest,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -322,11 +322,11 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn get_BannerMessage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_BannerMessage", ())?;
         Ok(__cordl_ret)
     }
@@ -349,11 +349,11 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn get_ExitMessage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_ExitMessage", ())?;
         Ok(__cordl_ret)
     }
@@ -379,11 +379,11 @@ impl crate::System::Net::FtpControlStream {
     }
     pub fn get_WelcomeMessage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_WelcomeMessage", ())?;
         Ok(__cordl_ret)
     }

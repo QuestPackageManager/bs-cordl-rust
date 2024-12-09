@@ -28,7 +28,7 @@ impl crate::System::Xml::Linq::NamespaceResolver {
     pub type NamespaceDeclaration = crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration;
     pub fn Add(
         &mut self,
-        prefix: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
         ns: *mut crate::System::Xml::Linq::XNamespace,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -40,7 +40,7 @@ impl crate::System::Xml::Linq::NamespaceResolver {
     }
     pub fn AddFirst(
         &mut self,
-        prefix: *mut crate::System::String,
+        prefix: *mut quest_hook::libil2cpp::Il2CppString,
         ns: *mut crate::System::Xml::Linq::XNamespace,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_ret: quest_hook::libil2cpp::Void = quest_hook::libil2cpp::ValueTypeExt::invoke(
@@ -54,8 +54,8 @@ impl crate::System::Xml::Linq::NamespaceResolver {
         &mut self,
         ns: *mut crate::System::Xml::Linq::XNamespace,
         allowDefaultNamespace: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
-        let __cordl_ret: *mut crate::System::String = quest_hook::libil2cpp::ValueTypeExt::invoke(
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = quest_hook::libil2cpp::ValueTypeExt::invoke(
             self,
             "GetPrefixOfNamespace",
             (ns, allowDefaultNamespace),
@@ -87,8 +87,8 @@ impl crate::System::Xml::Linq::NamespaceResolver {
 #[repr(C)]
 #[derive(Debug)]
 pub struct NamespaceResolver_NamespaceDeclaration {
-    __cordl_parent: crate::System::Object,
-    pub prefix: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub prefix: *mut quest_hook::libil2cpp::Il2CppString,
     pub ns: *mut crate::System::Xml::Linq::XNamespace,
     pub scope: i32,
     pub prev: *mut crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration,
@@ -102,7 +102,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Xml+Linq+NamespaceResolver+NamespaceDeclaration")]
 impl std::ops::Deref
 for crate::System::Xml::Linq::NamespaceResolver_NamespaceDeclaration {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

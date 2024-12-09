@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct String {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _stringLength: i32,
     pub _firstChar: char,
 }
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+String")]
 impl std::ops::Deref for crate::System::String {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -35,17 +35,17 @@ impl crate::System::String {
     pub type TrimType = crate::System::String_TrimType;
     pub fn Clone(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("Clone", ())?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_Object0(
+    pub fn CompareTo_Il2CppObject0(
         &mut self,
-        value: *mut crate::System::Object,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -53,9 +53,9 @@ impl crate::System::String {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn CompareTo_String1(
+    pub fn CompareTo_Il2CppString1(
         &mut self,
-        strB: *mut crate::System::String,
+        strB: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -63,9 +63,9 @@ impl crate::System::String {
         let __cordl_ret: i32 = __cordl_object.invoke("CompareTo", (strB))?;
         Ok(__cordl_ret)
     }
-    pub fn Contains_String0(
+    pub fn Contains_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -73,9 +73,9 @@ impl crate::System::String {
         let __cordl_ret: bool = __cordl_object.invoke("Contains", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Contains_String_StringComparison1(
+    pub fn Contains_Il2CppString_StringComparison1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -112,11 +112,11 @@ impl crate::System::String {
     pub fn CreateString_Il2CppArray3(
         &mut self,
         val: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (val))?;
         Ok(__cordl_ret)
     }
@@ -125,11 +125,11 @@ impl crate::System::String {
         val: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         startIndex: i32,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (val, startIndex, length))?;
         Ok(__cordl_ret)
     }
@@ -138,11 +138,11 @@ impl crate::System::String {
         value: *mut quest_hook::libil2cpp::Il2CppObject,
         startIndex: i32,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (value, startIndex, length))?;
         Ok(__cordl_ret)
     }
@@ -151,11 +151,11 @@ impl crate::System::String {
         value: *mut quest_hook::libil2cpp::Il2CppObject,
         startIndex: i32,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (value, startIndex, length))?;
         Ok(__cordl_ret)
     }
@@ -165,22 +165,22 @@ impl crate::System::String {
         startIndex: i32,
         length: i32,
         enc: *mut crate::System::Text::Encoding,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (value, startIndex, length, enc))?;
         Ok(__cordl_ret)
     }
     pub fn CreateString_ReadOnlySpan_1_6(
         &mut self,
         value: crate::System::ReadOnlySpan_1<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (value))?;
         Ok(__cordl_ret)
     }
@@ -188,11 +188,11 @@ impl crate::System::String {
         &mut self,
         c: char,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateString", (c, count))?;
         Ok(__cordl_ret)
     }
@@ -200,17 +200,17 @@ impl crate::System::String {
         &mut self,
         start: i32,
         end: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("CreateTrimmedString", (start, end))?;
         Ok(__cordl_ret)
     }
-    pub fn EndsWith_String0(
+    pub fn EndsWith_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -218,9 +218,9 @@ impl crate::System::String {
         let __cordl_ret: bool = __cordl_object.invoke("EndsWith", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn EndsWith_String_StringComparison1(
+    pub fn EndsWith_Il2CppString_StringComparison1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -240,9 +240,9 @@ impl crate::System::String {
         let __cordl_ret: bool = __cordl_object.invoke("EndsWith", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object0(
+    pub fn Equals_Il2CppObject0(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -250,9 +250,9 @@ impl crate::System::String {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (obj))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_String1(
+    pub fn Equals_Il2CppString1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -260,9 +260,9 @@ impl crate::System::String {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_String_StringComparison2(
+    pub fn Equals_Il2CppString_StringComparison2(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -387,7 +387,7 @@ impl crate::System::String {
     }
     pub fn IndexOfUnchecked(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -400,7 +400,7 @@ impl crate::System::String {
     }
     pub fn IndexOfUncheckedIgnoreCase(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -411,9 +411,9 @@ impl crate::System::String {
             .invoke("IndexOfUncheckedIgnoreCase", (value, startIndex, count))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOf_String3(
+    pub fn IndexOf_Il2CppString3(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -421,9 +421,9 @@ impl crate::System::String {
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOf_String_StringComparison5(
+    pub fn IndexOf_Il2CppString_StringComparison5(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -433,9 +433,9 @@ impl crate::System::String {
             .invoke("IndexOf", (value, comparisonType))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOf_String_i32_4(
+    pub fn IndexOf_Il2CppString_i32_4(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -444,9 +444,9 @@ impl crate::System::String {
         let __cordl_ret: i32 = __cordl_object.invoke("IndexOf", (value, startIndex))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOf_String_i32_StringComparison6(
+    pub fn IndexOf_Il2CppString_i32_StringComparison6(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -457,9 +457,9 @@ impl crate::System::String {
             .invoke("IndexOf", (value, startIndex, comparisonType))?;
         Ok(__cordl_ret)
     }
-    pub fn IndexOf_String_i32_i32_StringComparison7(
+    pub fn IndexOf_Il2CppString_i32_i32_StringComparison7(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
         comparisonType: crate::System::StringComparison,
@@ -508,12 +508,12 @@ impl crate::System::String {
     pub fn Insert(
         &mut self,
         startIndex: i32,
-        value: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        value: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Insert", (startIndex, value))?;
         Ok(__cordl_ret)
     }
@@ -521,11 +521,11 @@ impl crate::System::String {
         &mut self,
         startIndex: i32,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("InternalSubString", (startIndex, length))?;
         Ok(__cordl_ret)
     }
@@ -579,7 +579,7 @@ impl crate::System::String {
     }
     pub fn LastIndexOfUnchecked(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -592,7 +592,7 @@ impl crate::System::String {
     }
     pub fn LastIndexOfUncheckedIgnoreCase(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -603,9 +603,9 @@ impl crate::System::String {
             .invoke("LastIndexOfUncheckedIgnoreCase", (value, startIndex, count))?;
         Ok(__cordl_ret)
     }
-    pub fn LastIndexOf_String3(
+    pub fn LastIndexOf_Il2CppString3(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -613,9 +613,9 @@ impl crate::System::String {
         let __cordl_ret: i32 = __cordl_object.invoke("LastIndexOf", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn LastIndexOf_String_StringComparison4(
+    pub fn LastIndexOf_Il2CppString_StringComparison4(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -625,9 +625,9 @@ impl crate::System::String {
             .invoke("LastIndexOf", (value, comparisonType))?;
         Ok(__cordl_ret)
     }
-    pub fn LastIndexOf_String_i32_i32_StringComparison5(
+    pub fn LastIndexOf_Il2CppString_i32_i32_StringComparison5(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         startIndex: i32,
         count: i32,
         comparisonType: crate::System::StringComparison,
@@ -676,7 +676,9 @@ impl crate::System::String {
     }
     pub fn MakeSeparatorList_Il2CppArray_ByRefMut2(
         &mut self,
-        separators: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        separators: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         sepListBuilder: quest_hook::libil2cpp::ByRefMut<
             crate::System::Collections::Generic::ValueListBuilder_1<i32>,
         >,
@@ -694,6 +696,20 @@ impl crate::System::String {
             )?;
         Ok(__cordl_ret)
     }
+    pub fn MakeSeparatorList_Il2CppString1(
+        &mut self,
+        separator: *mut quest_hook::libil2cpp::Il2CppString,
+        sepListBuilder: quest_hook::libil2cpp::ByRefMut<
+            crate::System::Collections::Generic::ValueListBuilder_1<i32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke("MakeSeparatorList", (separator, sepListBuilder))?;
+        Ok(__cordl_ret)
+    }
     pub fn MakeSeparatorList_ReadOnlySpan_1_0(
         &mut self,
         separators: crate::System::ReadOnlySpan_1<char>,
@@ -706,20 +722,6 @@ impl crate::System::String {
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke("MakeSeparatorList", (separators, sepListBuilder))?;
-        Ok(__cordl_ret)
-    }
-    pub fn MakeSeparatorList_String1(
-        &mut self,
-        separator: *mut crate::System::String,
-        sepListBuilder: quest_hook::libil2cpp::ByRefMut<
-            crate::System::Collections::Generic::ValueListBuilder_1<i32>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("MakeSeparatorList", (separator, sepListBuilder))?;
         Ok(__cordl_ret)
     }
     pub fn New_Il2CppArray0(
@@ -798,11 +800,11 @@ impl crate::System::String {
     pub fn Normalize(
         &mut self,
         normalizationForm: crate::System::Text::NormalizationForm,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Normalize", (normalizationForm))?;
         Ok(__cordl_ret)
     }
@@ -810,11 +812,11 @@ impl crate::System::String {
         &mut self,
         totalWidth: i32,
         paddingChar: char,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("PadLeft", (totalWidth, paddingChar))?;
         Ok(__cordl_ret)
     }
@@ -822,11 +824,11 @@ impl crate::System::String {
         &mut self,
         totalWidth: i32,
         paddingChar: char,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("PadRight", (totalWidth, paddingChar))?;
         Ok(__cordl_ret)
     }
@@ -834,47 +836,47 @@ impl crate::System::String {
         &mut self,
         startIndex: i32,
         count: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Remove", (startIndex, count))?;
         Ok(__cordl_ret)
     }
     pub fn Remove_i32_1(
         &mut self,
         startIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Remove", (startIndex))?;
         Ok(__cordl_ret)
     }
     pub fn ReplaceHelper(
         &mut self,
         oldValueLength: i32,
-        newValue: *mut crate::System::String,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
         indices: crate::System::ReadOnlySpan_1<i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ReplaceHelper", (oldValueLength, newValue, indices))?;
         Ok(__cordl_ret)
     }
-    pub fn Replace_String_String1(
+    pub fn Replace_Il2CppString_Il2CppString1(
         &mut self,
-        oldValue: *mut crate::System::String,
-        newValue: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+        oldValue: *mut quest_hook::libil2cpp::Il2CppString,
+        newValue: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Replace", (oldValue, newValue))?;
         Ok(__cordl_ret)
     }
@@ -882,12 +884,48 @@ impl crate::System::String {
         &mut self,
         oldChar: char,
         newChar: char,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Replace", (oldChar, newChar))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SplitInternal_Il2CppString_Il2CppArray_i32_StringSplitOptions1(
+        &mut self,
+        separator: *mut quest_hook::libil2cpp::Il2CppString,
+        separators: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
+        count: i32,
+        options: crate::System::StringSplitOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object
+            .invoke("SplitInternal", (separator, separators, count, options))?;
+        Ok(__cordl_ret)
+    }
+    pub fn SplitInternal_Il2CppString_i32_StringSplitOptions2(
+        &mut self,
+        separator: *mut quest_hook::libil2cpp::Il2CppString,
+        count: i32,
+        options: crate::System::StringSplitOptions,
+    ) -> quest_hook::libil2cpp::Result<
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
+    > {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        > = __cordl_object.invoke("SplitInternal", (separator, count, options))?;
         Ok(__cordl_ret)
     }
     pub fn SplitInternal_ReadOnlySpan_1_i32_StringSplitOptions0(
@@ -896,48 +934,14 @@ impl crate::System::String {
         count: i32,
         options: crate::System::StringSplitOptions,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("SplitInternal", (separators, count, options))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SplitInternal_String_Il2CppArray_i32_StringSplitOptions1(
-        &mut self,
-        separator: *mut crate::System::String,
-        separators: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-        count: i32,
-        options: crate::System::StringSplitOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = __cordl_object
-            .invoke("SplitInternal", (separator, separators, count, options))?;
-        Ok(__cordl_ret)
-    }
-    pub fn SplitInternal_String_i32_StringSplitOptions2(
-        &mut self,
-        separator: *mut crate::System::String,
-        count: i32,
-        options: crate::System::StringSplitOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
-    > {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
-        > = __cordl_object.invoke("SplitInternal", (separator, count, options))?;
         Ok(__cordl_ret)
     }
     pub fn SplitKeepEmptyEntries(
@@ -947,13 +951,13 @@ impl crate::System::String {
         defaultLength: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke(
                 "SplitKeepEmptyEntries",
@@ -968,13 +972,13 @@ impl crate::System::String {
         defaultLength: i32,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object
             .invoke(
                 "SplitOmitEmptyEntries",
@@ -986,13 +990,13 @@ impl crate::System::String {
         &mut self,
         separator: *mut quest_hook::libil2cpp::Il2CppArray<char>,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Split", (separator))?;
         Ok(__cordl_ret)
     }
@@ -1001,28 +1005,30 @@ impl crate::System::String {
         separator: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         options: crate::System::StringSplitOptions,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Split", (separator, options))?;
         Ok(__cordl_ret)
     }
     pub fn Split_Il2CppArray_StringSplitOptions5(
         &mut self,
-        separator: *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        separator: *mut quest_hook::libil2cpp::Il2CppArray<
+            *mut quest_hook::libil2cpp::Il2CppString,
+        >,
         options: crate::System::StringSplitOptions,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Split", (separator, options))?;
         Ok(__cordl_ret)
     }
@@ -1031,13 +1037,13 @@ impl crate::System::String {
         separator: *mut quest_hook::libil2cpp::Il2CppArray<char>,
         count: i32,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Split", (separator, count))?;
         Ok(__cordl_ret)
     }
@@ -1047,13 +1053,13 @@ impl crate::System::String {
         count: i32,
         options: crate::System::StringSplitOptions,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Split", (separator, count, options))?;
         Ok(__cordl_ret)
     }
@@ -1062,19 +1068,19 @@ impl crate::System::String {
         separator: char,
         options: crate::System::StringSplitOptions,
     ) -> quest_hook::libil2cpp::Result<
-        *mut quest_hook::libil2cpp::Il2CppArray<*mut crate::System::String>,
+        *mut quest_hook::libil2cpp::Il2CppArray<*mut quest_hook::libil2cpp::Il2CppString>,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppArray<
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("Split", (separator, options))?;
         Ok(__cordl_ret)
     }
     pub fn StartsWithOrdinalUnchecked(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1083,9 +1089,9 @@ impl crate::System::String {
             .invoke("StartsWithOrdinalUnchecked", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn StartsWith_String0(
+    pub fn StartsWith_Il2CppString0(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1093,9 +1099,9 @@ impl crate::System::String {
         let __cordl_ret: bool = __cordl_object.invoke("StartsWith", (value))?;
         Ok(__cordl_ret)
     }
-    pub fn StartsWith_String_StringComparison1(
+    pub fn StartsWith_Il2CppString_StringComparison1(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         comparisonType: crate::System::StringComparison,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -1118,11 +1124,11 @@ impl crate::System::String {
     pub fn Substring_i32_0(
         &mut self,
         startIndex: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Substring", (startIndex))?;
         Ok(__cordl_ret)
     }
@@ -1130,11 +1136,11 @@ impl crate::System::String {
         &mut self,
         startIndex: i32,
         length: i32,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Substring", (startIndex, length))?;
         Ok(__cordl_ret)
     }
@@ -1288,11 +1294,11 @@ impl crate::System::String {
         &mut self,
         _cordl_type: *mut crate::System::Type,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("System.IConvertible.ToType", (_cordl_type, provider))?;
         Ok(__cordl_ret)
     }
@@ -1341,116 +1347,116 @@ impl crate::System::String {
     }
     pub fn ToLowerInvariant(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToLowerInvariant", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToLower_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToLower", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToLower_CultureInfo1(
         &mut self,
         culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToLower", (culture))?;
         Ok(__cordl_ret)
     }
     pub fn ToString_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToString_IFormatProvider1(
         &mut self,
         provider: *mut crate::System::IFormatProvider,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToString", (provider))?;
         Ok(__cordl_ret)
     }
     pub fn ToUpperInvariant(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToUpperInvariant", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToUpper_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToUpper", ())?;
         Ok(__cordl_ret)
     }
     pub fn ToUpper_CultureInfo1(
         &mut self,
         culture: *mut crate::System::Globalization::CultureInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("ToUpper", (culture))?;
         Ok(__cordl_ret)
     }
     pub fn TrimEnd_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimEnd", ())?;
         Ok(__cordl_ret)
     }
     pub fn TrimEnd_Il2CppArray2(
         &mut self,
         trimChars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimEnd", (trimChars))?;
         Ok(__cordl_ret)
     }
     pub fn TrimEnd__cordl_char1(
         &mut self,
         trimChar: char,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimEnd", (trimChar))?;
         Ok(__cordl_ret)
     }
@@ -1459,85 +1465,86 @@ impl crate::System::String {
         trimChars: *mut quest_hook::libil2cpp::Il2CppObject,
         trimCharsLength: i32,
         trimType: crate::System::String_TrimType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimHelper", (trimChars, trimCharsLength, trimType))?;
         Ok(__cordl_ret)
     }
     pub fn TrimStart_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimStart", ())?;
         Ok(__cordl_ret)
     }
     pub fn TrimStart_Il2CppArray2(
         &mut self,
         trimChars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimStart", (trimChars))?;
         Ok(__cordl_ret)
     }
     pub fn TrimStart__cordl_char1(
         &mut self,
         trimChar: char,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimStart", (trimChar))?;
         Ok(__cordl_ret)
     }
     pub fn TrimWhiteSpaceHelper(
         &mut self,
         trimType: crate::System::String_TrimType,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("TrimWhiteSpaceHelper", (trimType))?;
         Ok(__cordl_ret)
     }
     pub fn Trim_0(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object.invoke("Trim", ())?;
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
+            .invoke("Trim", ())?;
         Ok(__cordl_ret)
     }
     pub fn Trim_Il2CppArray2(
         &mut self,
         trimChars: *mut quest_hook::libil2cpp::Il2CppArray<char>,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Trim", (trimChars))?;
         Ok(__cordl_ret)
     }
     pub fn Trim__cordl_char1(
         &mut self,
         trimChar: char,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("Trim", (trimChar))?;
         Ok(__cordl_ret)
     }

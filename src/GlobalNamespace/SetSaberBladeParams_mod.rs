@@ -73,9 +73,9 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SetSaberBlade
 #[repr(C)]
 #[derive(Debug)]
 pub struct SetSaberBladeParams_PropertyTintColorPair {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub tintColor: crate::UnityEngine::Color,
-    pub property: *mut crate::System::String,
+    pub property: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "SetSaberBladeParams+PropertyTintColorPair")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -86,7 +86,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "SetSaberBladeParams+PropertyTintColorPair")]
 impl std::ops::Deref
 for crate::GlobalNamespace::SetSaberBladeParams_PropertyTintColorPair {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

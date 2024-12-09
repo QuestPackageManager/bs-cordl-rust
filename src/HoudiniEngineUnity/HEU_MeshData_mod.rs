@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct HEU_MeshData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _indices: *mut crate::System::Collections::Generic::List_1<i32>,
     pub _vertices: *mut crate::System::Collections::Generic::List_1<
         crate::UnityEngine::Vector3,
@@ -35,7 +35,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "HoudiniEngineUnity+HEU_MeshData")]
 impl std::ops::Deref for crate::HoudiniEngineUnity::HEU_MeshData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

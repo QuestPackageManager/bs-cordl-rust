@@ -7,7 +7,7 @@ pub struct TrackAsset {
     pub m_AnimClip: *mut crate::UnityEngine::AnimationClip,
     pub m_Locked: bool,
     pub m_Muted: bool,
-    pub m_CustomPlayableFullTypename: *mut crate::System::String,
+    pub m_CustomPlayableFullTypename: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_Curves: *mut crate::UnityEngine::AnimationClip,
     pub m_Parent: *mut crate::UnityEngine::Playables::PlayableAsset,
     pub m_Children: *mut crate::System::Collections::Generic::List_1<
@@ -263,7 +263,7 @@ impl crate::UnityEngine::Timeline::TrackAsset {
     }
     pub fn CreateCurves(
         &mut self,
-        curvesClipName: *mut crate::System::String,
+        curvesClipName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -783,11 +783,11 @@ impl crate::UnityEngine::Timeline::TrackAsset {
     }
     pub fn UnityEngine_Timeline_ICurvesOwner_get_defaultCurvesName(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("UnityEngine.Timeline.ICurvesOwner.get_defaultCurvesName", ())?;
         Ok(__cordl_ret)
     }
@@ -888,11 +888,11 @@ impl crate::UnityEngine::Timeline::TrackAsset {
     }
     pub fn get_customPlayableTypename(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_customPlayableTypename", ())?;
         Ok(__cordl_ret)
     }
@@ -1047,7 +1047,7 @@ impl crate::UnityEngine::Timeline::TrackAsset {
     }
     pub fn set_customPlayableTypename(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -1103,7 +1103,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Timeline::TrackAs
 #[repr(C)]
 #[derive(Debug)]
 pub struct TrackAsset_TrackAssetUpgrade {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -1113,7 +1113,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "UnityEngine+Timeline+TrackAsset+TrackAssetUpgrade")]
 impl std::ops::Deref for crate::UnityEngine::Timeline::TrackAsset_TrackAssetUpgrade {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

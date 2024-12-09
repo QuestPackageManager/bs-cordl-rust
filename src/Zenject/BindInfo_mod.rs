@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BindInfo {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub MarkAsCreationBinding: bool,
     pub MarkAsUniqueSingleton: bool,
-    pub ConcreteIdentifier: *mut crate::System::Object,
+    pub ConcreteIdentifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub SaveProvider: bool,
     pub OnlyBindIfNotBound: bool,
     pub RequireExplicitScope: bool,
-    pub Identifier: *mut crate::System::Object,
+    pub Identifier: *mut quest_hook::libil2cpp::Il2CppObject,
     pub ContractTypes: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Type,
     >,
@@ -18,7 +18,7 @@ pub struct BindInfo {
     pub NonLazy: bool,
     pub Condition: *mut crate::Zenject::BindingCondition,
     pub ToChoice: crate::Zenject::ToChoices,
-    pub ContextInfo: *mut crate::System::String,
+    pub ContextInfo: *mut quest_hook::libil2cpp::Il2CppString,
     pub ToTypes: *mut crate::System::Collections::Generic::List_1<
         *mut crate::System::Type,
     >,
@@ -28,7 +28,7 @@ pub struct BindInfo {
     >,
     pub InstantiatedCallback: *mut crate::System::Action_2<
         *mut crate::Zenject::InjectContext,
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
 }
 #[cfg(feature = "Zenject+BindInfo")]
@@ -37,7 +37,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Zenject+BindInfo")]
 impl std::ops::Deref for crate::Zenject::BindInfo {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -79,7 +79,7 @@ impl crate::Zenject::BindInfo {
     }
     pub fn SetContextInfo(
         &mut self,
-        contextInfo: *mut crate::System::String,
+        contextInfo: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

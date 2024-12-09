@@ -4,7 +4,7 @@
 pub struct ExecutionContextSwitcher {
     pub outerEC: crate::System::Threading::ExecutionContext_Reader,
     pub outerECBelongsToScope: bool,
-    pub hecsw: *mut crate::System::Object,
+    pub hecsw: *mut quest_hook::libil2cpp::Il2CppObject,
     pub thread: *mut crate::System::Threading::Thread,
 }
 #[cfg(feature = "System+Threading+ExecutionContextSwitcher")]

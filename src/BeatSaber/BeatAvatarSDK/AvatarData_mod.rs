@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AvatarData {
-    __cordl_parent: crate::System::Object,
-    pub _headTopId_k__BackingField: *mut crate::System::String,
-    pub _glassesId_k__BackingField: *mut crate::System::String,
-    pub _facialHairId_k__BackingField: *mut crate::System::String,
-    pub _handsId_k__BackingField: *mut crate::System::String,
-    pub _clothesId_k__BackingField: *mut crate::System::String,
-    pub _eyesId_k__BackingField: *mut crate::System::String,
-    pub _mouthId_k__BackingField: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub _headTopId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _glassesId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _facialHairId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _handsId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _clothesId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _eyesId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
+    pub _mouthId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
     pub _headTopPrimaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _headTopSecondaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _glassesColor_k__BackingField: crate::UnityEngine::Color,
@@ -18,7 +18,7 @@ pub struct AvatarData {
     pub _clothesPrimaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _clothesSecondaryColor_k__BackingField: crate::UnityEngine::Color,
     pub _clothesDetailColor_k__BackingField: crate::UnityEngine::Color,
-    pub _skinColorId_k__BackingField: *mut crate::System::String,
+    pub _skinColorId_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,7 +27,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatSaber+BeatAvatarSDK+AvatarData")]
 impl std::ops::Deref for crate::BeatSaber::BeatAvatarSDK::AvatarData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -62,9 +62,9 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
         let __cordl_ret: bool = __cordl_object.invoke("Equals", (other))?;
         Ok(__cordl_ret)
     }
-    pub fn Equals_Object1(
+    pub fn Equals_Il2CppObject1(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -86,23 +86,23 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
-    pub fn New_String_Color_Color_String_Color_String_Color_String_Color_String_Color_Color_Color_String_String_String1(
-        headTopId: *mut crate::System::String,
+    pub fn New_Il2CppString_Color_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Color_Color_Il2CppString_Il2CppString_Il2CppString1(
+        headTopId: *mut quest_hook::libil2cpp::Il2CppString,
         headTopPrimaryColor: crate::UnityEngine::Color,
         headTopSecondaryColor: crate::UnityEngine::Color,
-        glassesId: *mut crate::System::String,
+        glassesId: *mut quest_hook::libil2cpp::Il2CppString,
         glassesColor: crate::UnityEngine::Color,
-        facialHairId: *mut crate::System::String,
+        facialHairId: *mut quest_hook::libil2cpp::Il2CppString,
         facialHairColor: crate::UnityEngine::Color,
-        handsId: *mut crate::System::String,
+        handsId: *mut quest_hook::libil2cpp::Il2CppString,
         handsColor: crate::UnityEngine::Color,
-        clothesId: *mut crate::System::String,
+        clothesId: *mut quest_hook::libil2cpp::Il2CppString,
         clothesPrimaryColor: crate::UnityEngine::Color,
         clothesSecondaryColor: crate::UnityEngine::Color,
         clothesDetailColor: crate::UnityEngine::Color,
-        skinColorId: *mut crate::System::String,
-        eyesId: *mut crate::System::String,
-        mouthId: *mut crate::System::String,
+        skinColorId: *mut quest_hook::libil2cpp::Il2CppString,
+        eyesId: *mut quest_hook::libil2cpp::Il2CppString,
+        mouthId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -140,24 +140,24 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String_Color_Color_String_Color_String_Color_String_Color_String_Color_Color_Color_String_String_String1(
+    pub fn _ctor_Il2CppString_Color_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Il2CppString_Color_Color_Color_Il2CppString_Il2CppString_Il2CppString1(
         &mut self,
-        headTopId: *mut crate::System::String,
+        headTopId: *mut quest_hook::libil2cpp::Il2CppString,
         headTopPrimaryColor: crate::UnityEngine::Color,
         headTopSecondaryColor: crate::UnityEngine::Color,
-        glassesId: *mut crate::System::String,
+        glassesId: *mut quest_hook::libil2cpp::Il2CppString,
         glassesColor: crate::UnityEngine::Color,
-        facialHairId: *mut crate::System::String,
+        facialHairId: *mut quest_hook::libil2cpp::Il2CppString,
         facialHairColor: crate::UnityEngine::Color,
-        handsId: *mut crate::System::String,
+        handsId: *mut quest_hook::libil2cpp::Il2CppString,
         handsColor: crate::UnityEngine::Color,
-        clothesId: *mut crate::System::String,
+        clothesId: *mut quest_hook::libil2cpp::Il2CppString,
         clothesPrimaryColor: crate::UnityEngine::Color,
         clothesSecondaryColor: crate::UnityEngine::Color,
         clothesDetailColor: crate::UnityEngine::Color,
-        skinColorId: *mut crate::System::String,
-        eyesId: *mut crate::System::String,
-        mouthId: *mut crate::System::String,
+        skinColorId: *mut quest_hook::libil2cpp::Il2CppString,
+        eyesId: *mut quest_hook::libil2cpp::Il2CppString,
+        mouthId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -198,11 +198,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn get_clothesId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_clothesId", ())?;
         Ok(__cordl_ret)
     }
@@ -228,11 +228,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn get_eyesId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_eyesId", ())?;
         Ok(__cordl_ret)
     }
@@ -248,11 +248,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn get_facialHairId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_facialHairId", ())?;
         Ok(__cordl_ret)
     }
@@ -268,11 +268,11 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn get_glassesId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_glassesId", ())?;
         Ok(__cordl_ret)
     }
@@ -288,21 +288,21 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn get_handsId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_handsId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_headTopId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_headTopId", ())?;
         Ok(__cordl_ret)
     }
@@ -328,21 +328,21 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn get_mouthId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_mouthId", ())?;
         Ok(__cordl_ret)
     }
     pub fn get_skinColorId(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_skinColorId", ())?;
         Ok(__cordl_ret)
     }
@@ -359,7 +359,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_clothesId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -392,7 +392,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_eyesId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -414,7 +414,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_facialHairId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -436,7 +436,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_glassesId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -458,7 +458,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_handsId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -469,7 +469,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_headTopId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -502,7 +502,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_mouthId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -513,7 +513,7 @@ impl crate::BeatSaber::BeatAvatarSDK::AvatarData {
     }
     pub fn set_skinColorId(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

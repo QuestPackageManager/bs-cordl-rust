@@ -318,11 +318,11 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     }
     pub fn get_actionButtonText(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_actionButtonText", ())?;
         Ok(__cordl_ret)
     }
@@ -396,11 +396,11 @@ impl crate::GlobalNamespace::LevelSelectionFlowCoordinator {
     }
     pub fn get_mainTitle(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_mainTitle", ())?;
         Ok(__cordl_ret)
     }
@@ -496,7 +496,7 @@ for crate::GlobalNamespace::LevelSelectionFlowCoordinator {
 #[repr(C)]
 #[derive(Debug)]
 pub struct LevelSelectionFlowCoordinator_State {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub levelCategory: crate::System::Nullable_1<
         crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
     >,
@@ -512,7 +512,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "LevelSelectionFlowCoordinator+State")]
 impl std::ops::Deref for crate::GlobalNamespace::LevelSelectionFlowCoordinator_State {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

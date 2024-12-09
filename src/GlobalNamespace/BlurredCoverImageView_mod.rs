@@ -5,7 +5,7 @@ pub struct BlurredCoverImageView {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _coverImage: *mut crate::HMUI::ImageView,
     pub _kawaseBlurRenderer: *mut crate::GlobalNamespace::KawaseBlurRendererSO,
-    pub _settingTextureForLevelId: *mut crate::System::String,
+    pub _settingTextureForLevelId: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cancellationTokenSource: *mut crate::System::Threading::CancellationTokenSource,
     pub _blurredCoverTexture: *mut crate::UnityEngine::Texture2D,
 }

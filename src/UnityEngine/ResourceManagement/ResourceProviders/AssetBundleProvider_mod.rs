@@ -78,7 +78,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleProvi
     pub fn Release(
         &mut self,
         location: *mut crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
-        asset: *mut crate::System::Object,
+        asset: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

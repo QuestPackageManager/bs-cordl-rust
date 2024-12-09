@@ -26,7 +26,7 @@ pub struct LevelSelectionNavigationController {
     >,
     pub _hidePacksIfOneOrNone: bool,
     pub _hidePracticeButton: bool,
-    pub _actionButtonText: *mut crate::System::String,
+    pub _actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
     pub _allowedBeatmapDifficultyMask: crate::GlobalNamespace::BeatmapDifficultyMask,
     pub _notAllowedCharacteristics: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::GlobalNamespace::BeatmapCharacteristicSO,
@@ -276,7 +276,7 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
         >,
         hidePacksIfOneOrNone: bool,
         hidePracticeButton: bool,
-        actionButtonText: *mut crate::System::String,
+        actionButtonText: *mut quest_hook::libil2cpp::Il2CppString,
         levelPackToBeSelectedAfterPresent: *mut crate::GlobalNamespace::BeatmapLevelPack,
         startLevelCategory: crate::GlobalNamespace::SelectLevelCategoryViewController_LevelCategory,
         beatmapLevelToBeSelectedAfterPresent: *mut crate::GlobalNamespace::BeatmapLevel,

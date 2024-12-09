@@ -5,12 +5,12 @@ pub struct BaseVerticalCollectionView {
     __cordl_parent: crate::UnityEngine::UIElements::BindableElement,
     pub itemsChosen: *mut crate::System::Action_1<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     >,
     pub selectionChanged: *mut crate::System::Action_1<
         *mut crate::System::Collections::Generic::IEnumerable_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     >,
     pub selectedIndicesChanged: *mut crate::System::Action_1<
@@ -49,7 +49,7 @@ pub struct BaseVerticalCollectionView {
     pub m_SelectedIds: *mut crate::System::Collections::Generic::List_1<i32>,
     pub m_SelectedIndices: *mut crate::System::Collections::Generic::List_1<i32>,
     pub m_SelectedItems: *mut crate::System::Collections::Generic::List_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub m_LastHeight: f32,
     pub m_IsRangeSelectionDirectionUp: bool,

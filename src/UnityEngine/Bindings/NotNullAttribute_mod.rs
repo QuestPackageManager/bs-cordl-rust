@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct NotNullAttribute {
     __cordl_parent: crate::System::Attribute,
-    pub _Exception_k__BackingField: *mut crate::System::String,
+    pub _Exception_k__BackingField: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "UnityEngine+Bindings+NotNullAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::UnityEngine::Bindings::NotNullAttribute {
 #[cfg(feature = "UnityEngine+Bindings+NotNullAttribute")]
 impl crate::UnityEngine::Bindings::NotNullAttribute {
     pub fn New(
-        exception: *mut crate::System::String,
+        exception: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::UnityEngine::Bindings::NotNullAttribute {
     }
     pub fn _ctor(
         &mut self,
-        exception: *mut crate::System::String,
+        exception: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -47,7 +47,7 @@ impl crate::UnityEngine::Bindings::NotNullAttribute {
     }
     pub fn set_Exception(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SM2KeyExchange {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mDigest: *mut crate::Org::BouncyCastle::Crypto::IDigest,
     pub mUserID: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     pub mStaticKey: *mut crate::Org::BouncyCastle::Crypto::Parameters::ECPrivateKeyParameters,
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+Crypto+Agreement+SM2KeyExchange")]
 impl std::ops::Deref for crate::Org::BouncyCastle::Crypto::Agreement::SM2KeyExchange {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

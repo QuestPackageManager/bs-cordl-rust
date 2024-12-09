@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapLevelsModel {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub ostAndExtrasBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
     pub dlcBeatmapLevelsRepository: *mut crate::GlobalNamespace::BeatmapLevelsRepository,
     pub allPacksCount: i32,
@@ -23,7 +23,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "BeatmapLevelsModel")]
 impl std::ops::Deref for crate::GlobalNamespace::BeatmapLevelsModel {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -47,7 +47,7 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
     pub type __c__DisplayClass27_0 = crate::GlobalNamespace::BeatmapLevelsModel___c__DisplayClass27_0;
     pub fn CheckBeatmapLevelDataExistsAsync(
         &mut self,
-        levelID: *mut crate::System::String,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
@@ -100,7 +100,7 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
     }
     pub fn GetBeatmapLevel(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevel> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
     }
     pub fn GetLevelPack(
         &mut self,
-        levelPackId: *mut crate::System::String,
+        levelPackId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPack> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -122,7 +122,7 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
     }
     pub fn GetLevelPackForLevelId(
         &mut self,
-        levelId: *mut crate::System::String,
+        levelId: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut crate::GlobalNamespace::BeatmapLevelPack> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -143,7 +143,7 @@ impl crate::GlobalNamespace::BeatmapLevelsModel {
     }
     pub fn LoadBeatmapLevelDataAsync(
         &mut self,
-        levelID: *mut crate::System::String,
+        levelID: *mut quest_hook::libil2cpp::Il2CppString,
         beatmapLevelDataVersion: crate::GlobalNamespace::BeatmapLevelDataVersion,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<

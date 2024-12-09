@@ -40,9 +40,9 @@ impl crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo {
             .invoke_void(".ctor", (seq))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_String_AlgorithmIdentifier_Il2CppArray0(
+    pub fn New_i32_Il2CppString_AlgorithmIdentifier_Il2CppArray0(
         digestedObjectType: i32,
-        otherObjectTypeID: *mut crate::System::String,
+        otherObjectTypeID: *mut quest_hook::libil2cpp::Il2CppString,
         digestAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         objectDigest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -76,10 +76,10 @@ impl crate::Org::BouncyCastle::Asn1::X509::ObjectDigestInfo {
             .invoke(".ctor", (seq))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_i32_String_AlgorithmIdentifier_Il2CppArray0(
+    pub fn _ctor_i32_Il2CppString_AlgorithmIdentifier_Il2CppArray0(
         &mut self,
         digestedObjectType: i32,
-        otherObjectTypeID: *mut crate::System::String,
+        otherObjectTypeID: *mut quest_hook::libil2cpp::Il2CppString,
         digestAlgorithm: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
         objectDigest: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

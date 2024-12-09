@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct DrawIfAttribute {
     __cordl_parent: crate::UnityEngine::PropertyAttribute,
-    pub propertyName: *mut crate::System::String,
-    pub value: *mut crate::System::Object,
-    pub orValue: *mut crate::System::Object,
+    pub propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub value: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub orValue: *mut quest_hook::libil2cpp::Il2CppObject,
     pub disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
 }
 #[cfg(feature = "DrawIfAttribute")]
@@ -31,8 +31,8 @@ impl crate::GlobalNamespace::DrawIfAttribute {
     #[cfg(feature = "DrawIfAttribute+DisablingType")]
     pub type DisablingType = crate::GlobalNamespace::DrawIfAttribute_DisablingType;
     pub fn New_DrawIfAttribute_DisablingType0(
-        propertyName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -41,10 +41,10 @@ impl crate::GlobalNamespace::DrawIfAttribute {
             .invoke_void(".ctor", (propertyName, value, disablingType))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_DrawIfAttribute_DisablingType1(
-        propertyName: *mut crate::System::String,
-        value: *mut crate::System::Object,
-        orValue: *mut crate::System::Object,
+    pub fn New_Il2CppObject_DrawIfAttribute_DisablingType1(
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        orValue: *mut quest_hook::libil2cpp::Il2CppObject,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -55,8 +55,8 @@ impl crate::GlobalNamespace::DrawIfAttribute {
     }
     pub fn _ctor_DrawIfAttribute_DisablingType0(
         &mut self,
-        propertyName: *mut crate::System::String,
-        value: *mut crate::System::Object,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -66,11 +66,11 @@ impl crate::GlobalNamespace::DrawIfAttribute {
             .invoke(".ctor", (propertyName, value, disablingType))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_DrawIfAttribute_DisablingType1(
+    pub fn _ctor_Il2CppObject_DrawIfAttribute_DisablingType1(
         &mut self,
-        propertyName: *mut crate::System::String,
-        value: *mut crate::System::Object,
-        orValue: *mut crate::System::Object,
+        propertyName: *mut quest_hook::libil2cpp::Il2CppString,
+        value: *mut quest_hook::libil2cpp::Il2CppObject,
+        orValue: *mut quest_hook::libil2cpp::Il2CppObject,
         disablingType: crate::GlobalNamespace::DrawIfAttribute_DisablingType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

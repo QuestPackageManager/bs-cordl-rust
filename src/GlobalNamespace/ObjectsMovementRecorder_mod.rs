@@ -16,7 +16,7 @@ pub struct ObjectsMovementRecorder {
     pub _hmdCamera: *mut crate::UnityEngine::Camera,
     pub _initData: *mut crate::GlobalNamespace::ObjectsMovementRecorder_InitData,
     pub _mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-    pub _recordingPath: *mut crate::System::String,
+    pub _recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub _cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
     pub _externalCamera: *mut crate::UnityEngine::Camera,
     pub _playbackScreenshots: *mut quest_hook::libil2cpp::Il2CppArray<
@@ -126,9 +126,9 @@ quest_hook::libil2cpp::unsafe_impl_value_type!(
 #[repr(C)]
 #[derive(Debug)]
 pub struct ObjectsMovementRecorder_InitData {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-    pub recordingPath: *mut crate::System::String,
+    pub recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
     pub cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
     pub addDateTimeSuffixToRecordingName: bool,
     pub screenshotRecording: bool,
@@ -150,7 +150,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "ObjectsMovementRecorder+InitData")]
 impl std::ops::Deref for crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -165,7 +165,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ObjectsMovementRecorder_Init
 impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     pub fn New(
         mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut crate::System::String,
+        recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         addDateTimeSuffixToRecordingName: bool,
         screenshotRecording: bool,
@@ -204,7 +204,7 @@ impl crate::GlobalNamespace::ObjectsMovementRecorder_InitData {
     pub fn _ctor(
         &mut self,
         mode: crate::GlobalNamespace::ObjectsMovementRecorder_Mode,
-        recordingPath: *mut crate::System::String,
+        recordingPath: *mut quest_hook::libil2cpp::Il2CppString,
         cameraView: crate::GlobalNamespace::ObjectsMovementRecorder_CameraView,
         addDateTimeSuffixToRecordingName: bool,
         screenshotRecording: bool,

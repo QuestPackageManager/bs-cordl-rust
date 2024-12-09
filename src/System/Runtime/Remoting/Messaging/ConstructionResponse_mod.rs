@@ -37,8 +37,8 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionResponse {
             .invoke_void(".ctor", (e, msg))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_LogicalCallContext_IMethodCallMessage0(
-        resultObject: *mut crate::System::Object,
+    pub fn New_Il2CppObject_LogicalCallContext_IMethodCallMessage0(
+        resultObject: *mut quest_hook::libil2cpp::Il2CppObject,
         callCtx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -70,9 +70,9 @@ impl crate::System::Runtime::Remoting::Messaging::ConstructionResponse {
             .invoke(".ctor", (e, msg))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_LogicalCallContext_IMethodCallMessage0(
+    pub fn _ctor_Il2CppObject_LogicalCallContext_IMethodCallMessage0(
         &mut self,
-        resultObject: *mut crate::System::Object,
+        resultObject: *mut quest_hook::libil2cpp::Il2CppObject,
         callCtx: *mut crate::System::Runtime::Remoting::Messaging::LogicalCallContext,
         msg: *mut crate::System::Runtime::Remoting::Messaging::IMethodCallMessage,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

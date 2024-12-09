@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct UnitySerializationHolder {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_instantiation: *mut quest_hook::libil2cpp::Il2CppArray<
         *mut crate::System::Type,
     >,
@@ -10,8 +10,8 @@ pub struct UnitySerializationHolder {
     pub m_genericParameterPosition: i32,
     pub m_declaringType: *mut crate::System::Type,
     pub m_declaringMethod: *mut crate::System::Reflection::MethodBase,
-    pub m_data: *mut crate::System::String,
-    pub m_assemblyName: *mut crate::System::String,
+    pub m_data: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_assemblyName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_unityType: i32,
 }
 #[cfg(feature = "System+UnitySerializationHolder")]
@@ -21,7 +21,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+UnitySerializationHolder")]
 impl std::ops::Deref for crate::System::UnitySerializationHolder {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -49,11 +49,11 @@ impl crate::System::UnitySerializationHolder {
     pub fn GetRealObject(
         &mut self,
         context: crate::System::Runtime::Serialization::StreamingContext,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("GetRealObject", (context))?;
         Ok(__cordl_ret)
     }
@@ -80,7 +80,7 @@ impl crate::System::UnitySerializationHolder {
     }
     pub fn ThrowInsufficientInformation(
         &mut self,
-        field: *mut crate::System::String,
+        field: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

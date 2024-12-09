@@ -26,7 +26,7 @@ impl std::ops::DerefMut for crate::Org::BouncyCastle::Asn1::X509::PolicyQualifie
 impl crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
     pub const IdQt: &'static str = "1.3.6.1.5.5.7.2";
     pub fn New(
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -36,7 +36,7 @@ impl crate::Org::BouncyCastle::Asn1::X509::PolicyQualifierID {
     }
     pub fn _ctor(
         &mut self,
-        id: *mut crate::System::String,
+        id: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

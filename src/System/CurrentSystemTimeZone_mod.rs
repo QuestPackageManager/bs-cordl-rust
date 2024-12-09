@@ -4,8 +4,8 @@
 pub struct CurrentSystemTimeZone {
     __cordl_parent: crate::System::TimeZone,
     pub m_ticksOffset: i64,
-    pub m_standardName: *mut crate::System::String,
-    pub m_daylightName: *mut crate::System::String,
+    pub m_standardName: *mut quest_hook::libil2cpp::Il2CppString,
+    pub m_daylightName: *mut quest_hook::libil2cpp::Il2CppString,
     pub m_CachedDaylightChanges: *mut crate::System::Collections::Hashtable,
 }
 #[cfg(feature = "System+CurrentSystemTimeZone")]

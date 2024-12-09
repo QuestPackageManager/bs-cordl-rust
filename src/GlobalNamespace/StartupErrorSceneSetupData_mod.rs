@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct StartupErrorSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub title: *mut crate::System::String,
-    pub subtitle: *mut crate::System::String,
+    pub title: *mut quest_hook::libil2cpp::Il2CppString,
+    pub subtitle: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "StartupErrorSceneSetupData")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::StartupErrorSceneSetupData {
 #[cfg(feature = "StartupErrorSceneSetupData")]
 impl crate::GlobalNamespace::StartupErrorSceneSetupData {
     pub fn New(
-        title: *mut crate::System::String,
-        subtitle: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
+        subtitle: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -38,8 +38,8 @@ impl crate::GlobalNamespace::StartupErrorSceneSetupData {
     }
     pub fn _ctor(
         &mut self,
-        title: *mut crate::System::String,
-        subtitle: *mut crate::System::String,
+        title: *mut quest_hook::libil2cpp::Il2CppString,
+        subtitle: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

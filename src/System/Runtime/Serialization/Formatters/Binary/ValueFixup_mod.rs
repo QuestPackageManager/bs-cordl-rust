@@ -2,14 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ValueFixup {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub valueFixupEnum: crate::System::Runtime::Serialization::Formatters::Binary::ValueFixupEnum,
     pub arrayObj: *mut crate::System::Array,
     pub indexMap: *mut quest_hook::libil2cpp::Il2CppArray<i32>,
-    pub header: *mut crate::System::Object,
-    pub memberObject: *mut crate::System::Object,
+    pub header: *mut quest_hook::libil2cpp::Il2CppObject,
+    pub memberObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub objectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
-    pub memberName: *mut crate::System::String,
+    pub memberName: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ValueFixup")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -20,7 +20,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 #[cfg(feature = "System+Runtime+Serialization+Formatters+Binary+ValueFixup")]
 impl std::ops::Deref
 for crate::System::Runtime::Serialization::Formatters::Binary::ValueFixup {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,9 +56,9 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ValueFixup {
             .invoke_void(".ctor", (arrayObj, indexMap))?;
         Ok(__cordl_object)
     }
-    pub fn New_Object_String_ReadObjectInfo1(
-        memberObject: *mut crate::System::Object,
-        memberName: *mut crate::System::String,
+    pub fn New_Il2CppObject_Il2CppString_ReadObjectInfo1(
+        memberObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberName: *mut quest_hook::libil2cpp::Il2CppString,
         objectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -79,10 +79,10 @@ impl crate::System::Runtime::Serialization::Formatters::Binary::ValueFixup {
             .invoke(".ctor", (arrayObj, indexMap))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_Object_String_ReadObjectInfo1(
+    pub fn _ctor_Il2CppObject_Il2CppString_ReadObjectInfo1(
         &mut self,
-        memberObject: *mut crate::System::Object,
-        memberName: *mut crate::System::String,
+        memberObject: *mut quest_hook::libil2cpp::Il2CppObject,
+        memberName: *mut quest_hook::libil2cpp::Il2CppString,
         objectInfo: *mut crate::System::Runtime::Serialization::Formatters::Binary::ReadObjectInfo,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

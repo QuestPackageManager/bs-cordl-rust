@@ -28,14 +28,14 @@ impl crate::GlobalNamespace::NoteJumpStartBeatOffsetDropdown {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<f32, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<f32, *mut quest_hook::libil2cpp::Il2CppString>,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Collections::Generic::IReadOnlyList_1<
-            *mut crate::System::Tuple_2<f32, *mut crate::System::String>,
+            *mut crate::System::Tuple_2<f32, *mut quest_hook::libil2cpp::Il2CppString>,
         > = __cordl_object.invoke("GetNamedValues", ())?;
         Ok(__cordl_ret)
     }

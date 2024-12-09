@@ -2,8 +2,8 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SinkProviderData {
-    __cordl_parent: crate::System::Object,
-    pub sinkName: *mut crate::System::String,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub sinkName: *mut quest_hook::libil2cpp::Il2CppString,
     pub children: *mut crate::System::Collections::ArrayList,
     pub properties: *mut crate::System::Collections::Hashtable,
 }
@@ -15,7 +15,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
 impl std::ops::Deref for crate::System::Runtime::Remoting::Channels::SinkProviderData {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -30,7 +30,7 @@ for crate::System::Runtime::Remoting::Channels::SinkProviderData {
 #[cfg(feature = "System+Runtime+Remoting+Channels+SinkProviderData")]
 impl crate::System::Runtime::Remoting::Channels::SinkProviderData {
     pub fn New(
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -40,7 +40,7 @@ impl crate::System::Runtime::Remoting::Channels::SinkProviderData {
     }
     pub fn _ctor(
         &mut self,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

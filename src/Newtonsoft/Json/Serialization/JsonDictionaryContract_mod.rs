@@ -4,8 +4,8 @@
 pub struct JsonDictionaryContract {
     __cordl_parent: crate::Newtonsoft::Json::Serialization::JsonContainerContract,
     pub _DictionaryKeyResolver_k__BackingField: *mut crate::System::Func_2<
-        *mut crate::System::String,
-        *mut crate::System::String,
+        *mut quest_hook::libil2cpp::Il2CppString,
+        *mut quest_hook::libil2cpp::Il2CppString,
     >,
     pub _DictionaryKeyType_k__BackingField: *mut crate::System::Type,
     pub _DictionaryValueType_k__BackingField: *mut crate::System::Type,
@@ -13,18 +13,18 @@ pub struct JsonDictionaryContract {
     pub _genericCollectionDefinitionType: *mut crate::System::Type,
     pub _genericWrapperType: *mut crate::System::Type,
     pub _genericWrapperCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _genericTemporaryDictionaryCreator: *mut crate::System::Func_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _ShouldCreateWrapper_k__BackingField: bool,
     pub _parameterizedConstructor: *mut crate::System::Reflection::ConstructorInfo,
     pub _overrideCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _parameterizedCreator: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-        *mut crate::System::Object,
+        *mut quest_hook::libil2cpp::Il2CppObject,
     >,
     pub _HasParameterizedCreator_k__BackingField: bool,
 }
@@ -62,7 +62,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonDictionaryContract {
     }
     pub fn CreateWrapper(
         &mut self,
-        dictionary: *mut crate::System::Object,
+        dictionary: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Utilities::IWrappedDictionary,
     > {
@@ -97,16 +97,16 @@ impl crate::Newtonsoft::Json::Serialization::JsonDictionaryContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         > = __cordl_object.invoke("get_DictionaryKeyResolver", ())?;
         Ok(__cordl_ret)
     }
@@ -166,14 +166,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonDictionaryContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_OverrideCreator", ())?;
         Ok(__cordl_ret)
     }
@@ -181,14 +181,14 @@ impl crate::Newtonsoft::Json::Serialization::JsonDictionaryContract {
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     > {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         > = __cordl_object.invoke("get_ParameterizedCreator", ())?;
         Ok(__cordl_ret)
     }
@@ -202,8 +202,8 @@ impl crate::Newtonsoft::Json::Serialization::JsonDictionaryContract {
     pub fn set_DictionaryKeyResolver(
         &mut self,
         value: *mut crate::System::Func_2<
-            *mut crate::System::String,
-            *mut crate::System::String,
+            *mut quest_hook::libil2cpp::Il2CppString,
+            *mut quest_hook::libil2cpp::Il2CppString,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -238,7 +238,7 @@ impl crate::Newtonsoft::Json::Serialization::JsonDictionaryContract {
     pub fn set_OverrideCreator(
         &mut self,
         value: *mut crate::Newtonsoft::Json::Serialization::ObjectConstructor_1<
-            *mut crate::System::Object,
+            *mut quest_hook::libil2cpp::Il2CppObject,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(

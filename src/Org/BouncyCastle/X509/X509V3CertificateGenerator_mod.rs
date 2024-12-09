@@ -2,12 +2,12 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct X509V3CertificateGenerator {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub extGenerator: *mut crate::Org::BouncyCastle::Asn1::X509::X509ExtensionsGenerator,
     pub tbsGen: *mut crate::Org::BouncyCastle::Asn1::X509::V3TbsCertificateGenerator,
     pub sigOid: *mut crate::Org::BouncyCastle::Asn1::DerObjectIdentifier,
     pub sigAlgId: *mut crate::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier,
-    pub signatureAlgorithm: *mut crate::System::String,
+    pub signatureAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "Org+BouncyCastle+X509+X509V3CertificateGenerator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -17,7 +17,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "Org+BouncyCastle+X509+X509V3CertificateGenerator")]
 impl std::ops::Deref for crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -56,9 +56,9 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
             .invoke("AddExtension", (oid, critical, extensionValue))?;
         Ok(__cordl_ret)
     }
-    pub fn AddExtension_String_Asn1Encodable0(
+    pub fn AddExtension_Il2CppString_Asn1Encodable0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
         extensionValue: *mut crate::Org::BouncyCastle::Asn1::Asn1Encodable,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -69,9 +69,9 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
             .invoke("AddExtension", (oid, critical, extensionValue))?;
         Ok(__cordl_ret)
     }
-    pub fn AddExtension_String_Il2CppArray2(
+    pub fn AddExtension_Il2CppString_Il2CppArray2(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
         extensionValue: *mut quest_hook::libil2cpp::Il2CppArray<u8>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -95,9 +95,9 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
             .invoke("CopyAndAddExtension", (oid, critical, cert))?;
         Ok(__cordl_ret)
     }
-    pub fn CopyAndAddExtension_String0(
+    pub fn CopyAndAddExtension_Il2CppString0(
         &mut self,
-        oid: *mut crate::System::String,
+        oid: *mut quest_hook::libil2cpp::Il2CppString,
         critical: bool,
         cert: *mut crate::Org::BouncyCastle::X509::X509Certificate,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -248,7 +248,7 @@ impl crate::Org::BouncyCastle::X509::X509V3CertificateGenerator {
     }
     pub fn SetSignatureAlgorithm(
         &mut self,
-        signatureAlgorithm: *mut crate::System::String,
+        signatureAlgorithm: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

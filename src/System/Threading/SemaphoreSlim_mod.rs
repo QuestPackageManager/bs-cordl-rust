@@ -2,11 +2,11 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SemaphoreSlim {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_currentCount: i32,
     pub m_maxCount: i32,
     pub m_waitCount: i32,
-    pub m_lockObj: *mut crate::System::Object,
+    pub m_lockObj: *mut quest_hook::libil2cpp::Il2CppObject,
     pub m_waitHandle: *mut crate::System::Threading::ManualResetEvent,
     pub m_asyncHead: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
     pub m_asyncTail: *mut crate::System::Threading::SemaphoreSlim_TaskNode,
@@ -18,7 +18,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
 impl std::ops::Deref for crate::System::Threading::SemaphoreSlim {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }

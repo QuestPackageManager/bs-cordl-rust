@@ -12,14 +12,14 @@ pub struct XsdValidator {
     pub idRefListHead: *mut crate::System::Xml::Schema::IdRefNode,
     pub inlineSchemaParser: *mut crate::System::Xml::Schema::Parser,
     pub processContents: crate::System::Xml::Schema::XmlSchemaContentProcessing,
-    pub NsXmlNs: *mut crate::System::String,
-    pub NsXs: *mut crate::System::String,
-    pub NsXsi: *mut crate::System::String,
-    pub XsiType: *mut crate::System::String,
-    pub XsiNil: *mut crate::System::String,
-    pub XsiSchemaLocation: *mut crate::System::String,
-    pub XsiNoNamespaceSchemaLocation: *mut crate::System::String,
-    pub XsdSchema: *mut crate::System::String,
+    pub NsXmlNs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXs: *mut quest_hook::libil2cpp::Il2CppString,
+    pub NsXsi: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiType: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiNil: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsiNoNamespaceSchemaLocation: *mut quest_hook::libil2cpp::Il2CppString,
+    pub XsdSchema: *mut quest_hook::libil2cpp::Il2CppString,
 }
 #[cfg(feature = "System+Xml+Schema+XsdValidator")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -43,8 +43,8 @@ impl std::ops::DerefMut for crate::System::Xml::Schema::XsdValidator {
 impl crate::System::Xml::Schema::XsdValidator {
     pub fn AddID(
         &mut self,
-        name: *mut crate::System::String,
-        node: *mut crate::System::Object,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        node: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,10 +65,10 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn AttributeIdentityConstraints(
         &mut self,
-        name: *mut crate::System::String,
-        ns: *mut crate::System::String,
-        obj: *mut crate::System::Object,
-        sobj: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
+        sobj: *mut quest_hook::libil2cpp::Il2CppString,
         attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -90,7 +90,7 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn CheckValue(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
         attdef: *mut crate::System::Xml::Schema::SchemaAttDef,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -132,7 +132,7 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn FastGetElementDecl(
         &mut self,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::SchemaElementDecl,
     > {
@@ -145,12 +145,12 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn FindId(
         &mut self,
-        name: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        name: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("FindId", (name))?;
         Ok(__cordl_ret)
     }
@@ -166,8 +166,8 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn IsXSDRoot(
         &mut self,
-        localName: *mut crate::System::String,
-        ns: *mut crate::System::String,
+        localName: *mut quest_hook::libil2cpp::Il2CppString,
+        ns: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -177,8 +177,8 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn LoadSchema(
         &mut self,
-        uri: *mut crate::System::String,
-        url: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -189,8 +189,8 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn LoadSchemaFromLocation(
         &mut self,
-        uri: *mut crate::System::String,
-        url: *mut crate::System::String,
+        uri: *mut quest_hook::libil2cpp::Il2CppString,
+        url: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -228,7 +228,7 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn ProcessElement(
         &mut self,
-        particle: *mut crate::System::Object,
+        particle: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -250,7 +250,7 @@ impl crate::System::Xml::Schema::XsdValidator {
     pub fn ProcessTokenizedType(
         &mut self,
         ttype: crate::System::Xml::XmlTokenizedType,
-        name: *mut crate::System::String,
+        name: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -264,7 +264,7 @@ impl crate::System::Xml::Schema::XsdValidator {
         xsiType: quest_hook::libil2cpp::ByRefMut<
             *mut crate::System::Xml::XmlQualifiedName,
         >,
-        xsiNil: quest_hook::libil2cpp::ByRefMut<*mut crate::System::String>,
+        xsiNil: quest_hook::libil2cpp::ByRefMut<*mut quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -288,7 +288,7 @@ impl crate::System::Xml::Schema::XsdValidator {
         &mut self,
         elementDecl: *mut crate::System::Xml::Schema::SchemaElementDecl,
         xsiType: *mut crate::System::Xml::XmlQualifiedName,
-        xsiNil: *mut crate::System::String,
+        xsiNil: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<
         *mut crate::System::Xml::Schema::SchemaElementDecl,
     > {
@@ -301,12 +301,12 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn UnWrapUnion(
         &mut self,
-        typedValue: *mut crate::System::Object,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+        typedValue: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("UnWrapUnion", (typedValue))?;
         Ok(__cordl_ret)
     }
@@ -322,11 +322,11 @@ impl crate::System::Xml::Schema::XsdValidator {
     }
     pub fn ValidateChildElement(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::Object> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppObject> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::Object = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppObject = __cordl_object
             .invoke("ValidateChildElement", ())?;
         Ok(__cordl_ret)
     }

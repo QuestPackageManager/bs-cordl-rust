@@ -3,11 +3,11 @@
 #[derive(Debug)]
 pub struct FtpWebRequest {
     __cordl_parent: crate::System::Net::WebRequest,
-    pub _syncObject: *mut crate::System::Object,
+    pub _syncObject: *mut quest_hook::libil2cpp::Il2CppObject,
     pub _authInfo: *mut crate::System::Net::ICredentials,
     pub _uri: *mut crate::System::Uri,
     pub _methodInfo: *mut crate::System::Net::FtpMethodInfo,
-    pub _renameTo: *mut crate::System::String,
+    pub _renameTo: *mut quest_hook::libil2cpp::Il2CppString,
     pub _getRequestStreamStarted: bool,
     pub _getResponseStarted: bool,
     pub _startTime: crate::System::DateTime,
@@ -18,7 +18,7 @@ pub struct FtpWebRequest {
     pub _clientCertificates: *mut crate::System::Security::Cryptography::X509Certificates::X509CertificateCollection,
     pub _passive: bool,
     pub _binary: bool,
-    pub _connectionGroupName: *mut crate::System::String,
+    pub _connectionGroupName: *mut quest_hook::libil2cpp::Il2CppString,
     pub _async: bool,
     pub _aborted: bool,
     pub _timedOut: bool,
@@ -75,7 +75,7 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn AsyncRequestCallback(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -97,7 +97,7 @@ impl crate::System::Net::FtpWebRequest {
     pub fn BeginGetRequestStream(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -109,7 +109,7 @@ impl crate::System::Net::FtpWebRequest {
     pub fn BeginGetResponse(
         &mut self,
         callback: *mut crate::System::AsyncCallback,
-        state: *mut crate::System::Object,
+        state: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::IAsyncResult> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -224,7 +224,7 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn RequestCallback(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -257,7 +257,7 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn SyncRequestCallback(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -281,7 +281,7 @@ impl crate::System::Net::FtpWebRequest {
         &mut self,
         timer: *mut crate::System::Net::TimerThread_Timer,
         timeNoticed: i32,
-        context: *mut crate::System::Object,
+        context: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -381,11 +381,11 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn get_Method(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Method", ())?;
         Ok(__cordl_ret)
     }
@@ -425,11 +425,11 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn get_RenameTo(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_RenameTo", ())?;
         Ok(__cordl_ret)
     }
@@ -494,7 +494,7 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn set_ConnectionGroupName(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -527,7 +527,7 @@ impl crate::System::Net::FtpWebRequest {
     }
     pub fn set_Method(
         &mut self,
-        value: *mut crate::System::String,
+        value: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

@@ -31,7 +31,7 @@ for crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
 #[cfg(feature = "UnityEngine+AddressableAssets+AssetReferenceTexture3D")]
 impl crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
     pub fn New(
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -41,7 +41,7 @@ impl crate::UnityEngine::AddressableAssets::AssetReferenceTexture3D {
     }
     pub fn _ctor(
         &mut self,
-        guid: *mut crate::System::String,
+        guid: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

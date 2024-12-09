@@ -35,7 +35,7 @@ for crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
 impl crate::Org::BouncyCastle::Crypto::Parameters::RsaPrivateCrtKeyParameters {
     pub fn Equals(
         &mut self,
-        obj: *mut crate::System::Object,
+        obj: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,

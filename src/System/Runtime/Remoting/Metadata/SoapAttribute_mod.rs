@@ -4,8 +4,8 @@
 pub struct SoapAttribute {
     __cordl_parent: crate::System::Attribute,
     pub _useAttribute: bool,
-    pub ProtXmlNamespace: *mut crate::System::String,
-    pub ReflectInfo: *mut crate::System::Object,
+    pub ProtXmlNamespace: *mut quest_hook::libil2cpp::Il2CppString,
+    pub ReflectInfo: *mut quest_hook::libil2cpp::Il2CppObject,
 }
 #[cfg(feature = "System+Runtime+Remoting+Metadata+SoapAttribute")]
 quest_hook::libil2cpp::unsafe_impl_reference_type!(
@@ -37,7 +37,7 @@ impl crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     }
     pub fn SetReflectionObject(
         &mut self,
-        reflectionObject: *mut crate::System::Object,
+        reflectionObject: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -65,11 +65,11 @@ impl crate::System::Runtime::Remoting::Metadata::SoapAttribute {
     }
     pub fn get_XmlNamespace(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_XmlNamespace", ())?;
         Ok(__cordl_ret)
     }

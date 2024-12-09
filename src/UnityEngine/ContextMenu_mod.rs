@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct ContextMenu {
     __cordl_parent: crate::System::Attribute,
-    pub menuItem: *mut crate::System::String,
+    pub menuItem: *mut quest_hook::libil2cpp::Il2CppString,
     pub validate: bool,
     pub priority: i32,
 }
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::UnityEngine::ContextMenu {
 }
 #[cfg(feature = "UnityEngine+ContextMenu")]
 impl crate::UnityEngine::ContextMenu {
-    pub fn New_String0(
-        itemName: *mut crate::System::String,
+    pub fn New_Il2CppString0(
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -37,7 +37,7 @@ impl crate::UnityEngine::ContextMenu {
         Ok(__cordl_object)
     }
     pub fn New__cordl_bool1(
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isValidateFunction: bool,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -47,7 +47,7 @@ impl crate::UnityEngine::ContextMenu {
         Ok(__cordl_object)
     }
     pub fn New__cordl_bool_i32_2(
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isValidateFunction: bool,
         priority: i32,
     ) -> quest_hook::libil2cpp::Result<*mut Self> {
@@ -57,9 +57,9 @@ impl crate::UnityEngine::ContextMenu {
             .invoke_void(".ctor", (itemName, isValidateFunction, priority))?;
         Ok(__cordl_object)
     }
-    pub fn _ctor_String0(
+    pub fn _ctor_Il2CppString0(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -70,7 +70,7 @@ impl crate::UnityEngine::ContextMenu {
     }
     pub fn _ctor__cordl_bool1(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isValidateFunction: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -82,7 +82,7 @@ impl crate::UnityEngine::ContextMenu {
     }
     pub fn _ctor__cordl_bool_i32_2(
         &mut self,
-        itemName: *mut crate::System::String,
+        itemName: *mut quest_hook::libil2cpp::Il2CppString,
         isValidateFunction: bool,
         priority: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

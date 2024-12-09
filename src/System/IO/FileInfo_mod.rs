@@ -60,6 +60,27 @@ impl crate::System::IO::FileInfo {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object)
     }
+    pub fn New_Il2CppString1(
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (fileName))?;
+        Ok(__cordl_object)
+    }
+    pub fn New_Il2CppString_Il2CppString_Il2CppString__cordl_bool2(
+        originalPath: *mut quest_hook::libil2cpp::Il2CppString,
+        fullPath: *mut quest_hook::libil2cpp::Il2CppString,
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        isNormalized: bool,
+    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
+        Ok(__cordl_object)
+    }
     pub fn New_SerializationInfo_StreamingContext3(
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
         context: crate::System::Runtime::Serialization::StreamingContext,
@@ -68,27 +89,6 @@ impl crate::System::IO::FileInfo {
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (info, context))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String1(
-        fileName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (fileName))?;
-        Ok(__cordl_object)
-    }
-    pub fn New_String_String_String__cordl_bool2(
-        originalPath: *mut crate::System::String,
-        fullPath: *mut crate::System::String,
-        fileName: *mut crate::System::String,
-        isNormalized: bool,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
         Ok(__cordl_object)
     }
     pub fn OpenRead(
@@ -111,6 +111,31 @@ impl crate::System::IO::FileInfo {
             .invoke(".ctor", ())?;
         Ok(__cordl_ret)
     }
+    pub fn _ctor_Il2CppString1(
+        &mut self,
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (fileName))?;
+        Ok(__cordl_ret)
+    }
+    pub fn _ctor_Il2CppString_Il2CppString_Il2CppString__cordl_bool2(
+        &mut self,
+        originalPath: *mut quest_hook::libil2cpp::Il2CppString,
+        fullPath: *mut quest_hook::libil2cpp::Il2CppString,
+        fileName: *mut quest_hook::libil2cpp::Il2CppString,
+        isNormalized: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
+            self,
+        );
+        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
+            .invoke(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
+        Ok(__cordl_ret)
+    }
     pub fn _ctor_SerializationInfo_StreamingContext3(
         &mut self,
         info: *mut crate::System::Runtime::Serialization::SerializationInfo,
@@ -123,31 +148,6 @@ impl crate::System::IO::FileInfo {
             .invoke(".ctor", (info, context))?;
         Ok(__cordl_ret)
     }
-    pub fn _ctor_String1(
-        &mut self,
-        fileName: *mut crate::System::String,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (fileName))?;
-        Ok(__cordl_ret)
-    }
-    pub fn _ctor_String_String_String__cordl_bool2(
-        &mut self,
-        originalPath: *mut crate::System::String,
-        fullPath: *mut crate::System::String,
-        fileName: *mut crate::System::String,
-        isNormalized: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
-            self,
-        );
-        let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke(".ctor", (originalPath, fullPath, fileName, isNormalized))?;
-        Ok(__cordl_ret)
-    }
     pub fn get_Length(&mut self) -> quest_hook::libil2cpp::Result<i64> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
@@ -157,11 +157,11 @@ impl crate::System::IO::FileInfo {
     }
     pub fn get_Name(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("get_Name", ())?;
         Ok(__cordl_ret)
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct CVRSettings {
-    __cordl_parent: crate::System::Object,
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub FnTable: crate::OVR::OpenVR::IVRSettings,
 }
 #[cfg(feature = "OVR+OpenVR+CVRSettings")]
@@ -12,7 +12,7 @@ quest_hook::libil2cpp::unsafe_impl_reference_type!(
 );
 #[cfg(feature = "OVR+OpenVR+CVRSettings")]
 impl std::ops::Deref for crate::OVR::OpenVR::CVRSettings {
-    type Target = crate::System::Object;
+    type Target = quest_hook::libil2cpp::Il2CppObject;
     fn deref(&self) -> &Self::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -27,8 +27,8 @@ impl std::ops::DerefMut for crate::OVR::OpenVR::CVRSettings {
 impl crate::OVR::OpenVR::CVRSettings {
     pub fn GetBool(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -40,8 +40,8 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn GetFloat(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<f32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -53,8 +53,8 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn GetInt32(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<i32> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -67,18 +67,18 @@ impl crate::OVR::OpenVR::CVRSettings {
     pub fn GetSettingsErrorNameFromEnum(
         &mut self,
         eError: crate::OVR::OpenVR::EVRSettingsError,
-    ) -> quest_hook::libil2cpp::Result<*mut crate::System::String> {
+    ) -> quest_hook::libil2cpp::Result<*mut quest_hook::libil2cpp::Il2CppString> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
-        let __cordl_ret: *mut crate::System::String = __cordl_object
+        let __cordl_ret: *mut quest_hook::libil2cpp::Il2CppString = __cordl_object
             .invoke("GetSettingsErrorNameFromEnum", (eError))?;
         Ok(__cordl_ret)
     }
     pub fn GetString(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         pchValue: *mut crate::System::Text::StringBuilder,
         unValueLen: u32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
@@ -104,8 +104,8 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn RemoveKeyInSection(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -117,7 +117,7 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn RemoveSection(
         &mut self,
-        pchSection: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -129,8 +129,8 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn SetBool(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         bValue: bool,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -143,8 +143,8 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn SetFloat(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         flValue: f32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -157,8 +157,8 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn SetInt32(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
         nValue: i32,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -171,9 +171,9 @@ impl crate::OVR::OpenVR::CVRSettings {
     }
     pub fn SetString(
         &mut self,
-        pchSection: *mut crate::System::String,
-        pchSettingsKey: *mut crate::System::String,
-        pchValue: *mut crate::System::String,
+        pchSection: *mut quest_hook::libil2cpp::Il2CppString,
+        pchSettingsKey: *mut quest_hook::libil2cpp::Il2CppString,
+        pchValue: *mut quest_hook::libil2cpp::Il2CppString,
         peError: quest_hook::libil2cpp::ByRefMut<crate::OVR::OpenVR::EVRSettingsError>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
