@@ -47,7 +47,13 @@ impl<
         name: *mut crate::System::String,
         getter: *mut crate::Unity::Properties::PropertyGetter_2<TContainer, TValue>,
         setter: *mut crate::Unity::Properties::PropertySetter_2<TContainer, TValue>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

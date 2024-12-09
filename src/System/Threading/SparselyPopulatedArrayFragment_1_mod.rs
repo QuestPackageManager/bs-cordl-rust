@@ -37,14 +37,22 @@ impl<
     pub fn New_SparselyPopulatedArrayFragment_1_1(
         _cordl_size: i32,
         prev: *mut crate::System::Threading::SparselyPopulatedArrayFragment_1<T>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (_cordl_size, prev))?;
         Ok(__cordl_object)
     }
-    pub fn New_i32_0(_cordl_size: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_i32_0(_cordl_size: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

@@ -77,7 +77,11 @@ impl<
         let __cordl_ret: T = __cordl_object.invoke("Interpolate", (value0, value1, t))?;
         Ok(__cordl_ret)
     }
-    pub fn New(smooth: f32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(smooth: f32) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

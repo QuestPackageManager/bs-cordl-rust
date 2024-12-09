@@ -44,24 +44,24 @@ impl crate::UnityEngine::UIElements::UITKTextHandle {
     }
     pub fn ATagOnPointerOut(
         &mut self,
-        _: *mut crate::UnityEngine::UIElements::PointerOutEvent,
+        _cordl__: *mut crate::UnityEngine::UIElements::PointerOutEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ATagOnPointerOut", (_))?;
+            .invoke("ATagOnPointerOut", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn ATagOnPointerOver(
         &mut self,
-        _: *mut crate::UnityEngine::UIElements::PointerOverEvent,
+        _cordl__: *mut crate::UnityEngine::UIElements::PointerOverEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("ATagOnPointerOver", (_))?;
+            .invoke("ATagOnPointerOver", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn ATagOnPointerUp(

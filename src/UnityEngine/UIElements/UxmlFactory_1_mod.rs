@@ -35,7 +35,11 @@ for crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
 impl<
     TCreatedType: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UxmlFactory_1<TCreatedType> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TCreatedType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

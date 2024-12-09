@@ -129,7 +129,13 @@ impl<
             .invoke("MakeNodeMostRecentlyUsed", (node))?;
         Ok(__cordl_ret)
     }
-    pub fn New(maxNumberElements: i32) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(maxNumberElements: i32) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -292,7 +298,13 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::BGLib::DotnetExtension::Collections::LRUCache_2_CacheElement<TKey, TValue> {
-    pub fn New(key: TKey, value: TValue) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(key: TKey, value: TValue) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

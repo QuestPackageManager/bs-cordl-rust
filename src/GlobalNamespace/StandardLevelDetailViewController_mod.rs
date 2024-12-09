@@ -405,13 +405,13 @@ impl crate::GlobalNamespace::StandardLevelDetailViewController {
     }
     pub fn _OpenLevelProductStoreOrShowBuyInfo_b__56_0(
         &mut self,
-        _: crate::System::Threading::CancellationToken,
+        _cordl__: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("<OpenLevelProductStoreOrShowBuyInfo>b__56_0", (_))?;
+            .invoke("<OpenLevelProductStoreOrShowBuyInfo>b__56_0", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn _OpenLevelProductStore_b__57_0(

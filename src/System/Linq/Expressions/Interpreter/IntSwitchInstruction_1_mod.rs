@@ -33,7 +33,11 @@ impl<
 > crate::System::Linq::Expressions::Interpreter::IntSwitchInstruction_1<T> {
     pub fn New(
         cases: *mut crate::System::Collections::Generic::Dictionary_2<T, i32>,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

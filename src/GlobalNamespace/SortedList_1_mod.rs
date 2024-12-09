@@ -27,7 +27,11 @@ for crate::GlobalNamespace::SortedList_1<TBase> {
 }
 #[cfg(feature = "SortedList_1")]
 impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TBase> {
-    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_0() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -38,7 +42,11 @@ impl<TBase: quest_hook::libil2cpp::Type> crate::GlobalNamespace::SortedList_1<TB
         sortedListDataProcessor: *mut crate::GlobalNamespace::ISortedListItemProcessor_1<
             TBase,
         >,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TBase: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

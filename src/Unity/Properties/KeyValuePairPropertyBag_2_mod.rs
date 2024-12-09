@@ -45,7 +45,13 @@ impl<
 > crate::Unity::Properties::KeyValuePairPropertyBag_2<TKey, TValue> {
     #[cfg(feature = "Unity+Properties+KeyValuePairPropertyBag_2+__c")]
     pub type __c = crate::Unity::Properties::KeyValuePairPropertyBag_2___c<TKey, TValue>;
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TKey: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

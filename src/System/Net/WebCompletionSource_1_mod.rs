@@ -39,7 +39,11 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Net::WebCompletionSource_1<T
     pub type _WaitForCompletion_d__15 = crate::System::Net::WebCompletionSource_1__WaitForCompletion_d__15<
         T,
     >;
-    pub fn New(runAsync: bool) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New(runAsync: bool) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -228,7 +232,11 @@ for crate::System::Net::WebCompletionSource_1_Result<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::System::Net::WebCompletionSource_1_Result<T> {
-    pub fn New_T0(argument: T) -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New_T0(argument: T) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
@@ -238,7 +246,11 @@ impl<
     pub fn New_WebCompletionSource_1_Status_ExceptionDispatchInfo1(
         state: crate::System::Net::WebCompletionSource_1_Status<T>,
         error: *mut crate::System::Runtime::ExceptionServices::ExceptionDispatchInfo,
-    ) -> quest_hook::libil2cpp::Result<*mut Self> {
+    ) -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

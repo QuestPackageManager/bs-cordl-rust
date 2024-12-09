@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::OVRGazePointer {
     }
     pub fn SetCursorStartDest(
         &mut self,
-        _: crate::UnityEngine::Vector3,
+        _cordl__: crate::UnityEngine::Vector3,
         pos: crate::UnityEngine::Vector3,
         normal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::OVRGazePointer {
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("SetCursorStartDest", (_, pos, normal))?;
+            .invoke("SetCursorStartDest", (_cordl__, pos, normal))?;
         Ok(__cordl_ret)
     }
     pub fn Show(

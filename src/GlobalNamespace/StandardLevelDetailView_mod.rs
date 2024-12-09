@@ -311,13 +311,13 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
     }
     pub fn _Awake_b__47_0(
         &mut self,
-        _: bool,
+        _cordl__: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("<Awake>b__47_0", (_))?;
+            .invoke("<Awake>b__47_0", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn _CalculateAndSetContent_b__61_0(

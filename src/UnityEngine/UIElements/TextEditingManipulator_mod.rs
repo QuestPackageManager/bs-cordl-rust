@@ -61,24 +61,24 @@ impl crate::UnityEngine::UIElements::TextEditingManipulator {
     }
     pub fn OnFocusInEvent(
         &mut self,
-        _: *mut crate::UnityEngine::UIElements::FocusInEvent,
+        _cordl__: *mut crate::UnityEngine::UIElements::FocusInEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFocusInEvent", (_))?;
+            .invoke("OnFocusInEvent", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn OnFocusOutEvent(
         &mut self,
-        _: *mut crate::UnityEngine::UIElements::FocusOutEvent,
+        _cordl__: *mut crate::UnityEngine::UIElements::FocusOutEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFocusOutEvent", (_))?;
+            .invoke("OnFocusOutEvent", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn _OnFocusInEvent_b__10_0(

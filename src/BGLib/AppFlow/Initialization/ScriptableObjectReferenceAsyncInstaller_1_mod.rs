@@ -66,7 +66,7 @@ impl<
     pub fn LoadResourcesBeforeInstall(
         &mut self,
         registry: *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
-        _: *mut crate::Zenject::DiContainer,
+        _cordl__: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -76,13 +76,13 @@ impl<
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("LoadResourcesBeforeInstall", (registry, _))?;
+            .invoke("LoadResourcesBeforeInstall", (registry, _cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn LoadResourcesBeforeInstallAsync(
         &mut self,
         registry: *mut crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
-        _: *mut crate::Zenject::DiContainer,
+        _cordl__: *mut crate::Zenject::DiContainer,
     ) -> quest_hook::libil2cpp::Result<*mut crate::System::Threading::Tasks::Task>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -92,10 +92,14 @@ impl<
             self,
         );
         let __cordl_ret: *mut crate::System::Threading::Tasks::Task = __cordl_object
-            .invoke("LoadResourcesBeforeInstallAsync", (registry, _))?;
+            .invoke("LoadResourcesBeforeInstallAsync", (registry, _cordl__))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

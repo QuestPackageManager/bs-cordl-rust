@@ -30,7 +30,11 @@ for crate::Zenject::MonoPoolableMemoryPool_1<TValue> {
 impl<
     TValue: quest_hook::libil2cpp::Type,
 > crate::Zenject::MonoPoolableMemoryPool_1<TValue> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TValue: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

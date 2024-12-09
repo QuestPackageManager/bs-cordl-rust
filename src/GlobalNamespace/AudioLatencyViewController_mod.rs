@@ -65,14 +65,14 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
     }
     pub fn HandleAmbientVolumeChanged(
         &mut self,
-        _: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        _cordl__: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleAmbientVolumeChanged", (_, newValue))?;
+            .invoke("HandleAmbientVolumeChanged", (_cordl__, newValue))?;
         Ok(__cordl_ret)
     }
     pub fn HandleOverrideAudioLatencyToggleValueChanged(
@@ -88,14 +88,14 @@ impl crate::GlobalNamespace::AudioLatencyViewController {
     }
     pub fn HandleVolumeChanged(
         &mut self,
-        _: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
+        _cordl__: *mut crate::GlobalNamespace::FormattedFloatListSettingsController,
         newValue: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("HandleVolumeChanged", (_, newValue))?;
+            .invoke("HandleVolumeChanged", (_cordl__, newValue))?;
         Ok(__cordl_ret)
     }
     pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {

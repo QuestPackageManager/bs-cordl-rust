@@ -151,7 +151,7 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
     }
     pub fn HandleLevelCollectionNavigationControllerDidPressPracticeButton(
         &mut self,
-        _: *mut crate::GlobalNamespace::LevelCollectionNavigationController,
+        _cordl__: *mut crate::GlobalNamespace::LevelCollectionNavigationController,
         beatmapLevel: *mut crate::GlobalNamespace::BeatmapLevel,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
@@ -160,7 +160,7 @@ impl crate::GlobalNamespace::LevelSelectionNavigationController {
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
             .invoke(
                 "HandleLevelCollectionNavigationControllerDidPressPracticeButton",
-                (_, beatmapLevel),
+                (_cordl__, beatmapLevel),
             )?;
         Ok(__cordl_ret)
     }

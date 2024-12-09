@@ -30,7 +30,11 @@ for crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
 impl<
     TSubsystemDescriptor: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::IntegratedSubsystem_1<TSubsystemDescriptor> {
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TSubsystemDescriptor: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

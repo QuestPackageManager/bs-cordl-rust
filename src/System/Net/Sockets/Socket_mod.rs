@@ -1458,13 +1458,13 @@ impl crate::System::Net::Sockets::Socket_AwaitableSocketAsyncEventArgs {
     }
     pub fn OnCompleted_SocketAsyncEventArgs0(
         &mut self,
-        _: *mut crate::System::Net::Sockets::SocketAsyncEventArgs,
+        _cordl__: *mut crate::System::Net::Sockets::SocketAsyncEventArgs,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnCompleted", (_))?;
+            .invoke("OnCompleted", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn ReceiveAsync(
@@ -1769,7 +1769,11 @@ impl<
             .invoke("GetCompletionResponsibility", (responsibleForReturningToPool))?;
         Ok(__cordl_ret)
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self> {
+    pub fn New() -> quest_hook::libil2cpp::Result<*mut Self>
+    where
+        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)

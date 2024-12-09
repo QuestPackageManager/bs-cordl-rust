@@ -51,13 +51,13 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     }
     pub fn OnBlur(
         &mut self,
-        _: *mut crate::UnityEngine::UIElements::BlurEvent,
+        _cordl__: *mut crate::UnityEngine::UIElements::BlurEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnBlur", (_))?;
+            .invoke("OnBlur", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn OnExecuteCommandEvent(
@@ -73,13 +73,13 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     }
     pub fn OnFocus(
         &mut self,
-        _: *mut crate::UnityEngine::UIElements::FocusEvent,
+        _cordl__: *mut crate::UnityEngine::UIElements::FocusEvent,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         let __cordl_object: &mut quest_hook::libil2cpp::Il2CppObject = quest_hook::libil2cpp::ObjectType::as_object_mut(
             self,
         );
         let __cordl_ret: quest_hook::libil2cpp::Void = __cordl_object
-            .invoke("OnFocus", (_))?;
+            .invoke("OnFocus", (_cordl__))?;
         Ok(__cordl_ret)
     }
     pub fn OnKeyDown(
